@@ -12,7 +12,7 @@
     "progress.have": "Tenho {owned} de {total}",
     "progress.mastered": "Dominados",
     "progress.missing": "Faltam",
-    "progress.dust": "Pó para invocar o que tenho",
+    "progress.dust": "Poeira Elemental para invocar o que tenho",
     "status.missing": "Falta",
     "status.owned": "Tenho",
     "status.mastered": "Dominado",
@@ -22,7 +22,7 @@
     "filter.mastered": "Dominados",
     "filter.rarityAll": "Todas as raridades",
     "filter.variantAll": "Todas as variantes",
-    "filter.search": "Buscar sprite",
+    "filter.search": "Buscar elemental",
     "filter.unreleased": "Mostrar não lançados",
     "filter.clear": "Limpar filtros",
     "sort.label": "Ordenar",
@@ -44,7 +44,7 @@
     "detail.where": "Onde encontrar",
     "detail.variants": "Variantes",
     "detail.cost": "Custo de invocação",
-    "detail.drop": "Chance no Baú de Sprite",
+    "detail.drop": "Chance no Baú Elemental",
     "detail.costCommunity": "Estimativa da comunidade",
     "detail.unreleased": "Ainda não lançado",
     "detail.new": "Novo",
@@ -79,10 +79,10 @@
     "compare.theyHave": "{name} tem e você não",
     "compare.youHave": "Você tem e {name} não",
     "compare.none": "Nada aqui",
-    "empty.filters": "Nenhum sprite com esses filtros.",
+    "empty.filters": "Nenhum elemental com esses filtros.",
     "lang.label": "Idioma",
     "footer.disclaimer": "Fã-site sem vínculo com a Epic Games. Fortnite é marca registrada da Epic Games.",
-    "footer.data": "Dados: fortnite.gg e comunidade. Os custos de Pó da {season} são estimativas da comunidade.",
+    "footer.data": "Dados: fortnite.gg e comunidade. Os custos de Poeira Elemental da {season} são estimativas da comunidade.",
     "footer.offline": "Funciona offline e salva neste aparelho.",
     "install.button": "Instalar app",
     "install.title": "Instalar o Lockerdex",
@@ -97,9 +97,9 @@
     "feedback.type.idea": "Ideia",
     "feedback.type.bug": "Algo quebrou",
     "feedback.type.translation": "Tradução",
-    "feedback.type.data": "Dado de sprite errado",
+    "feedback.type.data": "Dado de elemental errado",
     "feedback.message": "Sua sugestão",
-    "feedback.placeholder": "Ex.: mostrar quais sprites aparecem à noite",
+    "feedback.placeholder": "Ex.: mostrar quais elementais aparecem à noite",
     "feedback.contact": "Contato (opcional): nome na Epic, Discord ou e-mail",
     "feedback.tech": "Incluir idioma, temporada e aparelho",
     "feedback.send": "Enviar sugestão",
@@ -108,7 +108,7 @@
     "feedback.error": "Não deu para enviar agora. Confira a internet e tente de novo.",
     "feedback.short": "Escreva pelo menos algumas palavras.",
     "feedback.footer": "Tem uma ideia para o Lockerdex?",
-    "nav.sprites": "Sprites",
+    "nav.sprites": "Elementais",
     "nav.shop": "Loja",
     "nav.cosmetics": "Cosméticos",
     "nav.lists": "Minhas listas",
@@ -124,7 +124,7 @@
     "more.items": "Loja e itens",
     "more.game": "O jogo",
     "more.app": "App",
-    "more.sprites": "Marque os sprites que você tem, estilo álbum",
+    "more.sprites": "Marque os elementais que você tem, estilo álbum",
     "more.shop": "A loja de itens de hoje, atualizada ao vivo",
     "more.cosmetics": "Todos os trajes, gestos e itens do jogo",
     "more.wishlist": "Itens que você quer, destacados quando estão na loja",
@@ -232,11 +232,11 @@
     },
     "reaper": {
       "label": "Bounty Hunter",
-      "bonus": "Chance de achar sprites ao eliminar oponentes. Só ganha XP de sprite com eliminações, salvo sprites com regra própria de XP."
+      "bonus": "Chance de achar elementais ao eliminar oponentes. Só ganha XP de elemental com eliminações, salvo elementais com regra própria de XP."
     },
     "candy": {
       "label": "Gelatina",
-      "bonus": "+20% de Pó de Sprite ao extrair."
+      "bonus": "+20% de Poeira Elemental ao extrair."
     },
     "galaxy": {
       "label": "Galáxia",
@@ -263,7 +263,7 @@
     "random": "Aleatório, em baús e entregas de suprimentos",
     "night": "Pelo mapa, à noite",
     "mountains": "Perto de áreas altas e montanhosas",
-    "spriteChest": "Raro em Baús de Sprite",
+    "spriteChest": "Raro em Baús Elementais",
     "water": "Perto de rios e praias",
     "forest": "Andando por florestas e matas",
     "urban": "Perto de áreas urbanas",
@@ -592,7 +592,7 @@
     "Peely": {
       "name": "Peeky Peely",
       "ability": [
-        "Emite um sinal que revela jogadores com sprites raros por perto, mas marca você no mapa."
+        "Emite um sinal que revela jogadores com elementais raros por perto, mas marca você no mapa."
       ],
       "levels": "Raio do sinal"
     }

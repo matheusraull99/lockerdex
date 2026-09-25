@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Lockerdex — sua coleção de Fortnite",
   "short_name": "Lockerdex",
-  "description": "Sua coleção de Fortnite com cara de álbum: sprites, loja do dia, cosméticos, listas, Jam Tracks e mapa.",
+  "description": "Sua coleção de Fortnite com cara de álbum: elementais (sprites), loja do dia, cosméticos, listas, Jam Tracks e mapa.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

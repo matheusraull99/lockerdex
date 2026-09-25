@@ -128,6 +128,12 @@ export default function App() {
               </a>
             ))}
           </nav>
+          {!inst.installed && (
+            <button type="button" className="btn btn-install" onClick={openInstall} aria-label={t("install.button")}>
+              <span aria-hidden>⬇</span>
+              <span className="btn-install-t">{t("install.button")}</span>
+            </button>
+          )}
           <label className="lang">
             <span className="sr">{t("lang.label")}</span>
             <select value={lang} onChange={(e) => setLang(e.target.value)}>

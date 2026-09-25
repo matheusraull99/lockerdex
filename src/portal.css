@@ -875,3 +875,35 @@
     scroll-snap-align: start;
   }
 }
+
+/* ---------- instalar app (cabeçalho) ---------- */
+.btn-install {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-color: var(--dust);
+  color: var(--dust);
+  background: none;
+}
+
+.btn-install:hover {
+  background: var(--dust);
+  color: var(--dust-ink);
+}
+
+@media (max-width: 720px) {
+  .btn-install {
+    margin-inline-start: auto;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    font-size: 17px;
+  }
+  .btn-install-t {
+    display: none;
+  }
+  .btn-install + .lang {
+    margin-inline-start: 0;
+  }
+}

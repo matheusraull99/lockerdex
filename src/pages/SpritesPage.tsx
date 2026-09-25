@@ -20,7 +20,6 @@ export function SpritesPage() {
   const [friend, setFriend] = useState(readShared);
   const [seasonId, setSeasonId] = useState(() => friend?.season ?? (storage.prefs().season as number) ?? CURRENT.id);
   const [mine, setMine] = useState<Collection>(storage.load);
-  const [name, setName] = useState(storage.name);
   const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, unreleased: !!storage.prefs().unreleased }));
   const [detail, setDetail] = useState<Sprite | null>(null);
   const [sharing, setSharing] = useState(false);
@@ -203,28 +202,7 @@ export function SpritesPage() {
       </div>
 
       {detail && <Detail season={season} sprite={detail} collection={viewing} readOnly={readOnly} onSet={setStatus} onClose={() => setDetail(null)} />}
-      {sharing && (
-        <ShareDialog
-          season={season}
-          slots={slots}
-          collection={mine}
-          name={name}
-          onName={(n) => {
-            setName(n);
-            storage.setName(n);
-          }}
-          onRestore={setMine}
-          onReset={() =>
-            setMine((m) => {
-              const n = { ...m };
-              for (const s of season.slots) delete n[s.id];
-              return n;
-            })
-          }
-          onClose={() => setSharing(false)}
-          toast={toast}
-        />
-      )}
+      {sharing && <ShareDialog season={season} slots={slots} collection={mine} onClose={() => setSharing(false)} />}
     </>
   );
 }

@@ -16,6 +16,8 @@ Junta o melhor de [fortnite.gg/sprites](https://fortnite.gg/sprites) (catálogo 
 - **Instala como app no celular e no computador** (PWA). O botão "Instalar app" instala direto no Android e no Chrome/Edge; no iPhone, mostra o passo a passo do Safari. Com rede cortada, abre offline.
 - **Sugestões de melhoria:** o usuário escolhe o tipo (ideia, erro, tradução, dado errado), escreve e envia.
 
+**No ar:** https://matheusraull99.github.io/lockerdex/. Cada push na `main` publica sozinho pelo GitHub Actions (`.github/workflows/deploy.yml`), e todo dia às 06:15 UTC o workflow recria o catálogo de cosméticos antes de publicar.
+
 ## Páginas
 
 | Rota | O que tem | Dados |

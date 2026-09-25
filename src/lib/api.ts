@@ -17,8 +17,10 @@ export function apiGet<T>(path: string, lang: string): Promise<T> {
   const key = `${path}|${al}`;
   if (!memo.has(key)) {
     const url = (l: string) => `${BASE}${path}${path.includes("?") ? "&" : "?"}language=${l}`;
-    const p = fetch(url(al))
-      .then((r) => (r.status === 400 && al !== "en" ? fetch(url("en")) : r))
+    // 20 s no máximo: rede travada vira erro com "Tentar de novo", não "Carregando…" para sempre.
+    const get = (u: string) => fetch(u, { signal: AbortSignal.timeout(20000) });
+    const p = get(url(al))
+      .then((r) => (r.status === 400 && al !== "en" ? get(url("en")) : r))
       .then(async (r) => {
         if (!r.ok) throw new Error(`fortnite-api ${r.status}`);
         return ((await r.json()) as { data: T }).data;

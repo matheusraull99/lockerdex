@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "name": "Português (Brasil)",
+    "dir": "ltr"
+  },
+  "ui": {
+    "app.tagline": "Sua coleção de Fortnite, estilo álbum",
+    "season.label": "Capítulo {chapter} · Temporada {season}",
+    "season.short": "C{chapter} T{season}",
+    "season.current": "Atual",
+    "season.ended": "Encerrada",
+    "progress.have": "Tenho {owned} de {total}",
+    "progress.mastered": "Dominados",
+    "progress.missing": "Faltam",
+    "progress.dust": "Pó para invocar o que tenho",
+    "status.missing": "Falta",
+    "status.owned": "Tenho",
+    "status.mastered": "Dominado",
+    "filter.all": "Todos",
+    "filter.owned": "Tenho",
+    "filter.missing": "Faltam",
+    "filter.mastered": "Dominados",
+    "filter.rarityAll": "Todas as raridades",
+    "filter.variantAll": "Todas as variantes",
+    "filter.search": "Buscar sprite",
+    "filter.unreleased": "Mostrar não lançados",
+    "filter.clear": "Limpar filtros",
+    "sort.label": "Ordenar",
+    "sort.album": "Ordem do álbum",
+    "sort.az": "A–Z",
+    "sort.closest": "Quase completos",
+    "sort.cost": "Mais caros",
+    "sticker.hint": "Toque na figurinha para marcar: falta → tenho → dominado",
+    "sticker.aria": "Nº {n} · {name} {variant}: {status}",
+    "quick.label": "Marcar por número",
+    "quick.placeholder": "Ex.: 3 7 12-15",
+    "quick.button": "Marcar",
+    "quick.done": "Marcados como Tenho: {list}",
+    "quick.invalid": "Nenhum número válido. Use os números do álbum, como 3 7 12-15.",
+    "detail.open": "Detalhes de {name}",
+    "detail.ability": "Habilidade",
+    "detail.levels": "Por nível",
+    "detail.level": "Nv. {n}",
+    "detail.where": "Onde encontrar",
+    "detail.variants": "Variantes",
+    "detail.cost": "Custo de invocação",
+    "detail.drop": "Chance no Baú de Sprite",
+    "detail.costCommunity": "Estimativa da comunidade",
+    "detail.unreleased": "Ainda não lançado",
+    "detail.new": "Novo",
+    "detail.noBonus": "Sem bônus extra",
+    "detail.close": "Fechar",
+    "stats.title": "Resumo",
+    "stats.byRarity": "Por raridade",
+    "stats.byVariant": "Por variante",
+    "stats.hardest": "Os mais difíceis que faltam",
+    "stats.complete": "Temporada completa!",
+    "share.button": "Compartilhar",
+    "share.title": "Compartilhar minha coleção",
+    "share.name": "Seu nome (aparece para quem abrir o link)",
+    "share.link": "Link da coleção",
+    "share.copy": "Copiar",
+    "share.copied": "Copiado",
+    "share.missing": "O que me falta",
+    "share.missingText": "Lockerdex {season} — faltam {n}: {list}",
+    "share.image": "Baixar imagem",
+    "share.backup": "Backup",
+    "share.backupHint": "Guarde este código para restaurar a coleção em outro aparelho.",
+    "share.restore": "Restaurar",
+    "share.restorePlaceholder": "Cole um código ou link",
+    "share.restored": "Coleção restaurada",
+    "share.restoreInvalid": "Código inválido. Cole o link ou o código gerado pelo Lockerdex.",
+    "share.reset": "Zerar esta temporada",
+    "share.resetConfirm": "Apagar todas as marcações desta temporada? Não dá para desfazer.",
+    "compare.viewing": "Você está vendo a coleção de {name}",
+    "compare.friend": "um amigo",
+    "compare.button": "Comparar com a minha",
+    "compare.back": "Voltar para a minha",
+    "compare.theyHave": "{name} tem e você não",
+    "compare.youHave": "Você tem e {name} não",
+    "compare.none": "Nada aqui",
+    "empty.filters": "Nenhum sprite com esses filtros.",
+    "lang.label": "Idioma",
+    "footer.disclaimer": "Fã-site sem vínculo com a Epic Games. Fortnite é marca registrada da Epic Games.",
+    "footer.data": "Dados: fortnite.gg e comunidade. Os custos de Pó da {season} são estimativas da comunidade.",
+    "footer.offline": "Funciona offline e salva neste aparelho.",
+    "install.button": "Instalar app",
+    "install.title": "Instalar o Lockerdex",
+    "install.intro": "Coloque o Lockerdex na tela inicial: abre como app, em tela cheia, e funciona sem internet.",
+    "install.ios": "iPhone e iPad (Safari): toque em Compartilhar e depois em “Adicionar à Tela de Início”.",
+    "install.android": "Android (Chrome): abra o menu ⋮ e toque em “Instalar app” ou “Adicionar à tela inicial”.",
+    "install.desktop": "Computador (Chrome ou Edge): clique no ícone de instalar no fim da barra de endereço.",
+    "install.done": "Lockerdex instalado. Procure o ícone na tela inicial.",
+    "feedback.button": "Sugerir melhoria",
+    "feedback.intro": "O que deixaria o Lockerdex melhor? Ideia, erro, tradução errada — toda mensagem é lida.",
+    "feedback.type": "Sobre",
+    "feedback.type.idea": "Ideia",
+    "feedback.type.bug": "Algo quebrou",
+    "feedback.type.translation": "Tradução",
+    "feedback.type.data": "Dado de sprite errado",
+    "feedback.message": "Sua sugestão",
+    "feedback.placeholder": "Ex.: mostrar quais sprites aparecem à noite",
+    "feedback.contact": "Contato (opcional): nome na Epic, Discord ou e-mail",
+    "feedback.tech": "Incluir idioma, temporada e aparelho",
+    "feedback.send": "Enviar sugestão",
+    "feedback.sent": "Sugestão enviada. Valeu!",
+    "feedback.mailOpened": "Seu app de e-mail abriu com a sugestão pronta — é só enviar.",
+    "feedback.error": "Não deu para enviar agora. Confira a internet e tente de novo.",
+    "feedback.short": "Escreva pelo menos algumas palavras.",
+    "feedback.footer": "Tem uma ideia para o Lockerdex?",
+    "nav.sprites": "Sprites",
+    "nav.shop": "Loja",
+    "nav.cosmetics": "Cosméticos",
+    "nav.lists": "Minhas listas",
+    "nav.map": "Mapa",
+    "nav.more": "Mais",
+    "nav.leaks": "Vazamentos",
+    "nav.tracks": "Jam Tracks",
+    "nav.news": "Notícias",
+    "nav.season": "Temporada",
+    "nav.wishlist": "Lista de desejos",
+    "nav.locker": "Meu armário",
+    "more.collection": "Minha coleção",
+    "more.items": "Loja e itens",
+    "more.game": "O jogo",
+    "more.app": "App",
+    "more.sprites": "Marque os sprites que você tem, estilo álbum",
+    "more.shop": "A loja de itens de hoje, atualizada ao vivo",
+    "more.cosmetics": "Todos os trajes, gestos e itens do jogo",
+    "more.wishlist": "Itens que você quer, destacados quando estão na loja",
+    "more.locker": "Itens que você já tem",
+    "more.leaks": "Itens novos achados nos arquivos do jogo",
+    "more.tracks": "Todas as Jam Tracks, e quais estão na loja",
+    "more.map": "A ilha atual com todos os locais nomeados",
+    "more.news": "As últimas notícias do jogo",
+    "more.season": "Quanto falta para a temporada acabar",
+    "common.loading": "Carregando…",
+    "common.error": "Não deu para carregar agora.",
+    "common.retry": "Tentar de novo",
+    "common.showMore": "Mostrar mais",
+    "common.source": "Dados ao vivo: fortnite-api.com",
+    "shop.title": "Loja de hoje",
+    "shop.resets": "A loja troca {time}",
+    "shop.leaves": "Sai {time}",
+    "shop.wished": "Na sua lista",
+    "shop.owned": "Tenho",
+    "shop.tracks": "Jam Tracks na loja",
+    "shop.other": "Mais itens",
+    "shop.wishToday": "Da sua lista de desejos na loja hoje: {n}",
+    "cos.title": "Cosméticos",
+    "cos.search": "Buscar cosmético",
+    "cos.typeAll": "Todos os tipos",
+    "cos.rarityAll": "Todas as raridades",
+    "cos.sort.new": "Mais novos",
+    "cos.sort.az": "A–Z",
+    "cos.sort.recent": "Vistos na loja recentemente",
+    "cos.sort.popular": "Mais vezes na loja",
+    "cos.sort.gone": "Sumidos da loja há mais tempo",
+    "cos.count": "{n} de {total}",
+    "cos.wish": "Quero",
+    "cos.own": "Tenho",
+    "cos.intro": "Chegou no Capítulo {chapter}, Temporada {season}",
+    "cos.set": "Conjunto: {set}",
+    "cos.lastSeen": "Última vez na loja: {date} ({ago})",
+    "cos.never": "Nunca apareceu na loja",
+    "cos.times": "Vezes na loja: {n}",
+    "cos.added": "Nos arquivos do jogo desde {date}",
+    "cos.updated": "Catálogo atualizado em {date}",
+    "cos.inShopToday": "Na loja hoje",
+    "lists.wishlist": "Lista de desejos",
+    "lists.locker": "Meu armário",
+    "lists.emptyWish": "Sua lista de desejos está vazia. Toque em ♡ num cosmético para guardar aqui.",
+    "lists.emptyLocker": "Seu armário está vazio. Toque em ✓ nos cosméticos que você tem.",
+    "lists.share": "Compartilhar minhas listas",
+    "lists.viewing": "Você está vendo as listas de {name}",
+    "lists.back": "Voltar para as minhas",
+    "lists.clear": "Limpar esta lista",
+    "lists.clearConfirm": "Tirar todos os itens desta lista?",
+    "lists.browse": "Ver cosméticos",
+    "leaks.title": "Vazamentos",
+    "leaks.intro": "Itens que entraram nos arquivos do jogo na atualização de {date}. Nem todos chegam à loja.",
+    "leaks.never": "Nunca na loja",
+    "leaks.tracks": "Jam Tracks novas",
+    "tracks.title": "Jam Tracks",
+    "tracks.search": "Buscar música ou artista",
+    "tracks.sort.new": "Mais novas",
+    "tracks.sort.az": "A–Z",
+    "tracks.sort.artist": "Artista",
+    "tracks.sort.year": "Ano de lançamento",
+    "tracks.inShop": "Na loja hoje",
+    "tracks.onlyShop": "Só o que está na loja",
+    "tracks.vocals": "Vocal",
+    "tracks.guitar": "Guitarra",
+    "tracks.bass": "Baixo",
+    "tracks.drums": "Bateria",
+    "map.title": "Mapa atual",
+    "map.zoomIn": "Aproximar",
+    "map.zoomOut": "Afastar",
+    "map.reset": "Mapa inteiro",
+    "map.places": "Locais nomeados",
+    "map.search": "Buscar local",
+    "map.labels": "Mostrar nomes",
+    "news.title": "Notícias",
+    "season.title": "Temporada atual",
+    "season.ends": "Termina em {date}",
+    "season.next": "A próxima temporada começa em {date}",
+    "season.left": "A temporada acaba {time}",
+    "season.expected": "Data prevista; o horário exato é confirmado perto do fim."
+  },
+  "rarity": {
+    "rare": "Raro",
+    "epic": "Épico",
+    "legendary": "Lendário",
+    "mythic": "Mítico"
+  },
+  "variants": {
+    "base": {
+      "label": "Normal",
+      "bonus": ""
+    },
+    "gold": {
+      "label": "Dourado",
+      "bonus": "3× XP bônus por eliminação."
+    },
+    "cheatmaster": {
+      "label": "Cheat Master",
+      "bonus": "Button mash: todo comando conta como certo ao digitar os cheat codes do mapa."
+    },
+    "hacker": {
+      "label": "Loot Hacker",
+      "bonus": "Aumenta a chance de gerar itens com os seus Loot Hacks."
+    },
+    "reaper": {
+      "label": "Bounty Hunter",
+      "bonus": "Chance de achar sprites ao eliminar oponentes. Só ganha XP de sprite com eliminações, salvo sprites com regra própria de XP."
+    },
+    "candy": {
+      "label": "Gelatina",
+      "bonus": "+20% de Pó de Sprite ao extrair."
+    },
+    "galaxy": {
+      "label": "Galáxia",
+      "bonus": "+30% de munição coletada no mapa."
+    },
+    "gem": {
+      "label": "Gema",
+      "bonus": "−30% de dano de queda."
+    },
+    "holofoil": {
+      "label": "Holográfica",
+      "bonus": "5% de chance do seu esquadrão achar variantes raras ao saquear baús."
+    },
+    "cube": {
+      "label": "Cubo",
+      "bonus": ""
+    },
+    "quack": {
+      "label": "Quack",
+      "bonus": ""
+    }
+  },
+  "locations": {
+    "random": "Aleatório, em baús e entregas de suprimentos",
+    "night": "Pelo mapa, à noite",
+    "mountains": "Perto de áreas altas e montanhosas",
+    "spriteChest": "Raro em Baús de Sprite",
+    "water": "Perto de rios e praias",
+    "forest": "Andando por florestas e matas",
+    "urban": "Perto de áreas urbanas",
+    "vault": "No cofre de um certo magnata",
+    "crates": "Às vezes dormindo em caixotes",
+    "relicChest": "Em Baús de Relíquia",
+    "boss": "Recompensa por derrotar um adversário poderoso",
+    "unknown": "Local não confirmado"
+  },
+  "sprites": {
+    "Crown": {
+      "name": "Coroa",
+      "ability": [
+        "Só sobe de nível vencendo partidas — mais rápido com Vitórias Coroadas.",
+        "Dominar a Coroa libera novas variantes."
+      ]
+    },
+    "Klombo": {
+      "name": "Klombo",
+      "ability": [
+        "Dá itens aleatórios a cada nível e só sobe de nível quando você consome itens.",
+        "Os itens melhoram a cada nível."
+      ]
+    },
+    "CosmicThunderDoubleJump": {
+      "name": "Lebre",
+      "ability": [
+        "Ativa — pule no ar para dar um pulo duplo.",
+        "Menos espera entre pulos a cada nível."
+      ]
+    },
+    "WinnerB": {
+      "name": "X-Ray",
+      "ability": [
+        "Marca de tempos em tempos os inimigos ao seu redor.",
+        "Marca com mais frequência e num raio maior a cada nível."
+      ]
+    },
+    "Killswitch": {
+      "name": "Killswitch",
+      "ability": [
+        "Ativa — mire no ar para entrar em Hangtime com precisão melhorada.",
+        "A precisão aumenta a cada nível."
+      ]
+    },
+    "BodySlam": {
+      "name": "Crash Bandicoot",
+      "ability": [
+        "Ativa — pule no ar para girar num redemoinho que causa dano e empurra inimigos próximos.",
+        "Mais dano e menos recarga a cada nível."
+      ]
+    },
+    "GhostDamage": {
+      "name": "Blinky",
+      "ability": [
+        "Camufla você por um instante sempre que leva dano.",
+        "A camuflagem dura mais a cada nível."
+      ]
+    },
+    "NarrowFlea": {
+      "name": "Sonic",
+      "ability": [
+        "Gotta go fast! Você corre mais rápido a cada nível."
+      ]
+    },
+    "NarrowFleaMonkey": {
+      "name": "Tails",
+      "ability": [
+        "Ativa — pule no ar para pairar com a ajuda do Tails.",
+        "Paira mais rápido a cada nível."
+      ]
+    },
+    "ReloadOverTime": {
+      "name": "Shadow",
+      "ability": [
+        "Recarrega sozinho as armas que não estão na mão.",
+        "No nível máximo, recarrega também a arma equipada.",
+        "A recarga automática acelera a cada nível."
+      ]
+    },
+    "WinnerA": {
+      "name": "Lagoa",
+      "ability": [
+        "Ativa — pule logo depois de aterrissar para dar um Super Pulo, se tiver carga.",
+        "As cargas voltam com o tempo.",
+        "Pulo mais forte e recarga menor a cada nível."
+      ]
+    },
+    "Overshield": {
+      "name": "Overshield",
+      "ability": [
+        "Dá um sobre-escudo que cresce com o nível."
+      ]
+    },
+    "IncreaseHeals": {
+      "name": "Morgana",
+      "ability": [
+        "Itens de cura ficam mais eficazes.",
+        "A eficácia aumenta a cada nível."
+      ]
+    },
+    "BushRanger": {
+      "name": "Arbusto",
+      "ability": [
+        "Depois de um tempo, cobre você com um arbusto. No nível máximo, eliminações também dão um arbusto.",
+        "O intervalo entre arbustos cai a cada nível."
+      ]
+    },
+    "Dwarf": {
+      "name": "Aventura",
+      "ability": [
+        "Melhora um item aleatório do seu inventário a cada nível."
+      ]
+    },
+    "Jonesy": {
+      "name": "Jonesy",
+      "ability": [
+        "Recupera um pouco de vida ou escudo pouco depois de você levar dano.",
+        "Cura mais a cada nível."
+      ]
+    },
+    "8BitBlaster": {
+      "name": "8-Bit",
+      "ability": [
+        "Você acha uma Escopeta 8-Bit no primeiro baú e ganha multiplicador de pontuação com ela."
+      ]
+    },
+    "StormScout": {
+      "name": "Batedor da Tempestade",
+      "ability": [
+        "Aplica Overdrive depois que você leva certa quantidade de dano da Tempestade.",
+        "O Overdrive dura mais a cada nível."
+      ]
+    },
+    "ImprovedSlide": {
+      "name": "Mega Man",
+      "ability": [
+        "Desliza com menos atrito.",
+        "Desliza mais longe a cada nível."
+      ]
+    },
+    "WinnerC": {
+      "name": "Onigiri",
+      "ability": [
+        "Aplica Overdrive depois de comer ou beber um consumível.",
+        "O Overdrive dura mais a cada nível."
+      ]
+    },
+    "Birthday": {
+      "name": "Aniversário",
+      "ability": [
+        "Abrir baús pode gerar um pedaço de bolo.",
+        "No nível máximo, eliminações também podem gerar bolo.",
+        "A chance de bolo aumenta a cada nível."
+      ]
+    },
+    "FillerGrunt": {
+      "name": "John Wick",
+      "ability": [
+        "Derrubar um jogador revela outros por perto."
+      ],
+      "levels": "Duração da marca"
+    },
+    "Batman": {
+      "name": "Batman",
+      "ability": [
+        "Dá a habilidade de se lançar no ar e abrir a Bat-Capa."
+      ]
+    },
+    "Water": {
+      "name": "Água",
+      "ability": [
+        "Recupera escudo enquanto você está na água."
+      ],
+      "levels": "Escudo por tick"
+    },
+    "Earth": {
+      "name": "Terra",
+      "ability": [
+        "Chance de achar itens raros extras ao abrir baús."
+      ],
+      "levels": "Chance"
+    },
+    "Spitfire": {
+      "name": "Fogo",
+      "ability": [
+        "Solta uma explosão de fogo quando você causa dano suficiente a um inimigo."
+      ],
+      "levels": "Dano necessário"
+    },
+    "Duck": {
+      "name": "Pato",
+      "ability": [
+        "Fazer emote ou Jam recupera escudo."
+      ],
+      "levels": "Escudo por tick"
+    },
+    "Ghost": {
+      "name": "Fantasma",
+      "ability": [
+        "Camufla você por um tempo ao recarregar."
+      ],
+      "levels": "Duração"
+    },
+    "Sleepy": {
+      "name": "Sonho",
+      "ability": [
+        "Dá um item aleatório a cada nível e explode em saque lendário no nível máximo.",
+        "O saque melhora a cada nível."
+      ]
+    },
+    "Demon": {
+      "name": "Demônio",
+      "ability": [
+        "Drena vida e escudo quando você elimina um oponente."
+      ],
+      "levels": "Cura por eliminação"
+    },
+    "Punk": {
+      "name": "Punk",
+      "ability": [
+        "Talvez nada… ou infinitamente algo."
+      ]
+    },
+    "King": {
+      "name": "Rei",
+      "ability": [
+        "Sua picareta causa mais dano."
+      ],
+      "levels": "Dano bônus"
+    },
+    "CokeParmesan": {
+      "name": "Vini Jr.",
+      "ability": [
+        "Correr por um tempo deixa o seu deslize destrutivo.",
+        "Acertar inimigos deslizando aumenta a cadência e a velocidade de recarga."
+      ],
+      "levels": "Dano / cadência"
+    },
+    "BurntPeanut": {
+      "name": "Amendoim Torrado",
+      "ability": [
+        "Goop! Ao eliminar jogadores, você pode achar mais saque — às vezes mítico (10% no nível máximo)."
+      ],
+      "levels": "Chance de saque extra"
+    },
+    "ZeroPoint": {
+      "name": "Ponto Zero",
+      "ability": [
+        "Gera uma Bolha de Escudo Jr. quando você usa um item de cura em si mesmo (exceto respingos e granadas)."
+      ],
+      "levels": "Duração"
+    },
+    "Fishy": {
+      "name": "Peixinho",
+      "ability": [
+        "Nada muito mais rápido, e levar dano acelera você por um instante."
+      ],
+      "levels": "Nado / movimento"
+    },
+    "Soccer": {
+      "name": "Atacante",
+      "ability": [
+        "Ganha Overdrive ao escalar, pular obstáculo ou subir parede."
+      ],
+      "levels": "Overdrive"
+    },
+    "Drifter": {
+      "name": "Aura",
+      "ability": [
+        "Ganha uma carga de Pedra de Choque quando causa dano suficiente a inimigos."
+      ],
+      "levels": "Dano necessário"
+    },
+    "Boss": {
+      "name": "Chefe",
+      "ability": [
+        "Aumenta a sua vida e o seu escudo máximos."
+      ],
+      "levels": "Vida / escudo"
+    },
+    "Grim": {
+      "name": "Ceifador",
+      "ability": [
+        "Quem ataca você fica marcado por um tempo."
+      ],
+      "levels": "Duração da marca"
+    },
+    "Air": {
+      "name": "Ar",
+      "ability": [
+        "Corre mais rápido e pula mais alto.",
+        "Anula o dano de queda.",
+        "O pulo fica mais alto a cada nível."
+      ]
+    },
+    "Seven": {
+      "name": "Sete",
+      "ability": [
+        "Os rastros de passos dos inimigos ficam visíveis para o seu esquadrão."
+      ],
+      "levels": "Duração do rastro"
+    },
+    "PedicureAntacid": {
+      "name": "Ironmouse",
+      "ability": [
+        "Regenera vida quando você está com pouca.",
+        "Enquanto regenera, ganha camuflagem e gravidade baixa."
+      ],
+      "levels": "Regenera até"
+    },
+    "CompanyStargazer": {
+      "name": "Pollo",
+      "ability": [
+        "Ao eliminar alguém, recupera escudo aos poucos para você e aliados próximos."
+      ],
+      "levels": "Duração"
+    },
+    "Llama": {
+      "name": "Lootin' Llama",
+      "ability": [
+        "Abrir caixas de munição pode dar uma melhoria de arma."
+      ],
+      "levels": "Chance"
+    },
+    "Peely": {
+      "name": "Peeky Peely",
+      "ability": [
+        "Emite um sinal que revela jogadores com sprites raros por perto, mas marca você no mapa."
+      ],
+      "levels": "Raio do sinal"
+    }
+  }
+}

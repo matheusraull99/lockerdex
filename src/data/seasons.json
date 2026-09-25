@@ -1,0 +1,2292 @@
+[
+ {
+  "id": 42,
+  "code": "C7S4",
+  "chapter": 7,
+  "season": 4,
+  "current": true,
+  "costSource": "community",
+  "variants": [
+   {
+    "key": "base",
+    "color": "#9aa6c4"
+   },
+   {
+    "key": "gold",
+    "color": "#f5b642"
+   },
+   {
+    "key": "cheatmaster",
+    "color": "#4fbf1f"
+   },
+   {
+    "key": "hacker",
+    "color": "#4a47e8"
+   },
+   {
+    "key": "reaper",
+    "color": "#f27bd0"
+   }
+  ],
+  "sprites": [
+   {
+    "key": "Crown",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 188,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 190,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_Gold_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 189,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_Cheatmaster_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 115,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_Hacker_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 211,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_BountyHunter_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Klombo",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 179,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 181,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Gold_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 180,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Cheatmaster_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 109,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Hacker_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 208,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_BountyHunter_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "CosmicThunderDoubleJump",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 161,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_JazzJackrabbit_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 162,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_JazzJackrabbit_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 163,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_JazzJackrabbit_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 102,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 119,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Killswitch",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "night",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 173,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 175,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 174,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 107,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 206,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "WinnerB",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 93,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 95,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 94,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 96,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 201,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "GhostDamage",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "night",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 120,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 122,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 121,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 123,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 124,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "BodySlam",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 135,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 137,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 136,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 143,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 144,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "NarrowFlea",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 185,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Obsidian_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 187,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Obsidian_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 186,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Obsidian_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 114,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 210,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "NarrowFleaMonkey",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 170,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 172,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 171,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 103,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Monkey_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 203,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFleaMonkey_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "ReloadOverTime",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 164,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Scribe_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 166,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Scribe_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 165,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_Scribe_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 104,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 204,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Overshield",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 83,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 88,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 85,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 91,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 125,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "WinnerA",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 147,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 198,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 197,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 199,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 200,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "IncreaseHeals",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 213,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 215,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 214,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 216,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 217,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Jonesy",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 182,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_L.webp",
+      "cost": 100,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 184,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Gold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 183,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Cheatmaster_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 110,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Hacker_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 209,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_BountyHunter_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Dwarf",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 176,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_L.webp",
+      "cost": 100,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 178,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Gold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 177,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Cheatmaster_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 108,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Hacker_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 207,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_BountyHunter_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "BushRanger",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 167,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_L.webp",
+      "cost": 100,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 169,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Gold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 168,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Cheatmaster_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 105,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Hacker_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 205,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_BountyHunter_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "8BitBlaster",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 191,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 193,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_Gold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 192,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_Cheatmaster_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 117,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_EightBitBlaster_Hacker_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 212,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_8BitBlaster_BountyHunter_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "ImprovedSlide",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 92,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ImprovedSlide_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "WinnerC",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 97,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 100,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_Gold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 98,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_Cheatmaster_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 101,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_Hacker_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 202,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_BountyHunter_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "StormScout",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 194,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 196,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_Gold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 195,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_Cheatmaster_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 118,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_Hacker_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 218,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_BountyHunter_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Birthday",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": true,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 127,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 131,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_Gold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 132,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_Cheatmaster_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 133,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_Hacker_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 134,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_BountyHunter_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 41,
+  "code": "C7S3",
+  "chapter": 7,
+  "season": 3,
+  "current": false,
+  "costSource": "game",
+  "variants": [
+   {
+    "key": "base",
+    "color": "#9aa6c4"
+   },
+   {
+    "key": "gold",
+    "color": "#f5b642"
+   },
+   {
+    "key": "candy",
+    "color": "#ff6f91"
+   },
+   {
+    "key": "galaxy",
+    "color": "#6d4bff"
+   },
+   {
+    "key": "gem",
+    "color": "#19c2b0"
+   },
+   {
+    "key": "holofoil",
+    "color": "#8fd3ff"
+   },
+   {
+    "key": "cube",
+    "color": "#8c6bd8"
+   },
+   {
+    "key": "quack",
+    "color": "#ffd23f"
+   }
+  ],
+  "sprites": [
+   {
+    "key": "FillerGrunt",
+    "rarity": "mythic",
+    "levels": {
+     "unit": "s",
+     "values": [
+      3,
+      3.5,
+      4,
+      4.5,
+      5
+     ]
+    },
+    "location": "spriteChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 138,
+      "img": "/img/x/sprites/icons/T_Icon_Reload_FillerGrunt_icon_L.webp",
+      "cost": 6750,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Batman",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "spriteChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 139,
+      "img": "/img/x/sprites/icons/T_Icon_BR_FossilMeal_Default_L.webp",
+      "cost": 6750,
+      "drop": 1.44
+     },
+     {
+      "variant": "gold",
+      "fggId": 140,
+      "img": "/img/x/sprites/icons/T_Icon_BR_FossilMeal_Gold_L.webp",
+      "cost": 10000,
+      "drop": 0.17
+     },
+     {
+      "variant": "candy",
+      "fggId": 141,
+      "img": "/img/x/sprites/icons/T_Icon_BR_FossilMeal_Candy_L.webp",
+      "cost": 10000,
+      "drop": 0.1
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 142,
+      "img": "/img/x/sprites/icons/T_Icon_BR_FossilMeal_Galaxy_L.webp",
+      "cost": 10000,
+      "drop": 0.07
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 145,
+      "img": "/img/x/sprites/icons/T_Icon_BR_FossilMeal_Holofoil_L.webp",
+      "cost": 10000,
+      "drop": 0.34
+     },
+     {
+      "variant": "cube",
+      "fggId": 146,
+      "img": "/img/x/sprites/icons/T_Icon_BR_FossilMeal_Cube_L.webp",
+      "cost": 10000,
+      "drop": 0.02
+     }
+    ]
+   },
+   {
+    "key": "CokeParmesan",
+    "rarity": "mythic",
+    "levels": {
+     "units": [
+      "",
+      "%"
+     ],
+     "values": [
+      [
+       40,
+       10
+      ],
+      [
+       45,
+       20
+      ],
+      [
+       50,
+       30
+      ],
+      [
+       55,
+       40
+      ],
+      [
+       60,
+       50
+      ]
+     ]
+    },
+    "location": "relicChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 149,
+      "img": "/img/x/sprites/icons/T_Icon_BR_CokeParmesan_Default_L.webp",
+      "cost": 6750,
+      "drop": 2.14
+     }
+    ]
+   },
+   {
+    "key": "BurntPeanut",
+    "rarity": "mythic",
+    "levels": {
+     "unit": "%",
+     "values": [
+      20,
+      30,
+      40,
+      50,
+      60
+     ]
+    },
+    "location": "relicChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 41,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BurntPeanut_ui_L.webp",
+      "cost": 6750,
+      "drop": 2.14
+     }
+    ]
+   },
+   {
+    "key": "ZeroPoint",
+    "rarity": "mythic",
+    "levels": {
+     "unit": "s",
+     "values": [
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "location": "spriteChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 33,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 36,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Gold_ui_L.webp",
+      "cost": 10000,
+      "drop": 0.00014
+     },
+     {
+      "variant": "candy",
+      "fggId": 34,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Candy_ui_L.webp",
+      "cost": 10000,
+      "drop": 8.5e-05
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 35,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Galaxy_ui_L.webp",
+      "cost": 10000,
+      "drop": 5.6e-05
+     },
+     {
+      "variant": "gem",
+      "fggId": 82,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Gem_ui_L.webp",
+      "cost": 10000,
+      "drop": 1e-05
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 111,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Holofoil_ui_L.webp",
+      "cost": 10000,
+      "drop": 0.00028
+     },
+     {
+      "variant": "cube",
+      "fggId": 112,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Cube_ui_L.webp",
+      "cost": 10000,
+      "drop": 1.4e-05
+     },
+     {
+      "variant": "quack",
+      "fggId": 113,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPoint_Quack_ui_L.webp",
+      "cost": 10000,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Grim",
+    "rarity": "mythic",
+    "levels": {
+     "unit": "s",
+     "values": [
+      3,
+      3.5,
+      4,
+      4.5,
+      5
+     ]
+    },
+    "location": "spriteChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 78,
+      "img": "/img/x/sprites/icons/T_Icon_BR_GrimReaper_Default_L.webp",
+      "cost": 6750,
+      "drop": 0.15
+     },
+     {
+      "variant": "gold",
+      "fggId": 81,
+      "img": "/img/x/sprites/icons/T_Icon_BR_GrimReaper_Gold_L.webp",
+      "cost": 10000,
+      "drop": 0.01
+     },
+     {
+      "variant": "candy",
+      "fggId": 79,
+      "img": "/img/x/sprites/icons/T_Icon_BR_GrimReaper_Candy_L.webp",
+      "cost": 10000,
+      "drop": 0.01
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 80,
+      "img": "/img/x/sprites/icons/T_Icon_BR_GrimReaper_Galaxy_L.webp",
+      "cost": 10000,
+      "drop": 0.01
+     },
+     {
+      "variant": "gem",
+      "fggId": 128,
+      "img": "/img/x/sprites/icons/T_Icon_BR_GrimReaper_Gem_L.webp",
+      "cost": 10000,
+      "drop": 0.00099
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 129,
+      "img": "/img/x/sprites/icons/T_Icon_BR_GrimReaper_Holofoil_L.webp",
+      "cost": 10000,
+      "drop": 0.0
+     },
+     {
+      "variant": "cube",
+      "fggId": 130,
+      "img": "/img/x/sprites/icons/T_Icon_BR_GrimReaper_Cube_L.webp",
+      "cost": 10000,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "PedicureAntacid",
+    "rarity": "mythic",
+    "levels": {
+     "unit": "",
+     "values": [
+      60,
+      70,
+      80,
+      90,
+      100
+     ]
+    },
+    "location": "relicChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 150,
+      "img": "/img/x/sprites/icons/T_Icon_BR_PedicureAntacid_L.webp",
+      "cost": 6750,
+      "drop": 2.14
+     }
+    ]
+   },
+   {
+    "key": "CompanyStargazer",
+    "rarity": "mythic",
+    "levels": {
+     "unit": "s",
+     "values": [
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "location": "unknown",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 148,
+      "img": "/img/x/sprites/icons/T_Icon_BR_CompanyStargazer_Default_L.webp",
+      "cost": 6750,
+      "drop": 2.14
+     }
+    ]
+   },
+   {
+    "key": "Sleepy",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "crates",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 21,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_ui_L.webp",
+      "cost": 4500,
+      "drop": 4.45
+     },
+     {
+      "variant": "gold",
+      "fggId": 24,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Gold_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.43
+     },
+     {
+      "variant": "candy",
+      "fggId": 22,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Candy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.26
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 23,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Galaxy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.17
+     },
+     {
+      "variant": "cube",
+      "fggId": 99,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Sleepy_Cube_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.04
+     }
+    ]
+   },
+   {
+    "key": "Punk",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "spriteChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 25,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_ui_L.webp",
+      "cost": 4500,
+      "drop": 4.45
+     },
+     {
+      "variant": "gold",
+      "fggId": 28,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Gold_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.43
+     },
+     {
+      "variant": "candy",
+      "fggId": 26,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Candy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.26
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 27,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Galaxy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.17
+     },
+     {
+      "variant": "cube",
+      "fggId": 106,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Punk_Cube_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.04
+     }
+    ]
+   },
+   {
+    "key": "Boss",
+    "rarity": "legendary",
+    "levels": {
+     "unit": "",
+     "plus": true,
+     "values": [
+      5,
+      10,
+      15,
+      20,
+      25
+     ]
+    },
+    "location": "boss",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 49,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_ui_L.webp",
+      "cost": 4500,
+      "drop": 4.45
+     },
+     {
+      "variant": "gold",
+      "fggId": 50,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Gold_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.43
+     },
+     {
+      "variant": "candy",
+      "fggId": 51,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Candy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.26
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 52,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Galaxy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.17
+     },
+     {
+      "variant": "cube",
+      "fggId": 126,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Boss_Cube_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.04
+     }
+    ]
+   },
+   {
+    "key": "Seven",
+    "rarity": "legendary",
+    "levels": {
+     "unit": "s",
+     "values": [
+      10,
+      15,
+      20,
+      25,
+      30
+     ]
+    },
+    "location": "mountains",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 53,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_ui_L.webp",
+      "cost": 4500,
+      "drop": 3.63
+     },
+     {
+      "variant": "gold",
+      "fggId": 56,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Gold_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.43
+     },
+     {
+      "variant": "candy",
+      "fggId": 54,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Candy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.26
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 55,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Galaxy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.17
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 57,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Seven_Holofoil_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.85
+     }
+    ]
+   },
+   {
+    "key": "Llama",
+    "rarity": "legendary",
+    "levels": {
+     "unit": "%",
+     "values": [
+      5,
+      10,
+      15,
+      17,
+      20
+     ]
+    },
+    "location": "relicChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 151,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_ui_L.webp",
+      "cost": 4500,
+      "drop": 4.45
+     },
+     {
+      "variant": "gold",
+      "fggId": 152,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Gold_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.43
+     },
+     {
+      "variant": "candy",
+      "fggId": 153,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Candy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.26
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 154,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Galaxy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.17
+     },
+     {
+      "variant": "gem",
+      "fggId": 155,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Llama_Gem_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Peely",
+    "rarity": "legendary",
+    "levels": {
+     "unit": "m",
+     "values": [
+      40,
+      50,
+      60,
+      70,
+      80
+     ]
+    },
+    "location": "mountains",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 156,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_ui_L.webp",
+      "cost": 4500,
+      "drop": 4.62
+     },
+     {
+      "variant": "gold",
+      "fggId": 157,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Gold_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.43
+     },
+     {
+      "variant": "candy",
+      "fggId": 158,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Candy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.26
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 159,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Galaxy_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.17
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 160,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Peely_Holofoil_ui_L.webp",
+      "cost": 6750,
+      "drop": 0.85
+     }
+    ]
+   },
+   {
+    "key": "Duck",
+    "rarity": "epic",
+    "levels": {
+     "unit": "",
+     "values": [
+      2,
+      3,
+      4,
+      6,
+      8
+     ]
+    },
+    "location": "vault",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 13,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Duck_Default_L.webp",
+      "cost": 2700,
+      "drop": 6.48
+     },
+     {
+      "variant": "gold",
+      "fggId": 16,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Duck_Gold_L.webp",
+      "cost": 4000,
+      "drop": 0.62
+     },
+     {
+      "variant": "candy",
+      "fggId": 14,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Duck_Candy_L.webp",
+      "cost": 4000,
+      "drop": 0.37
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 15,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Duck_Galaxy_L.webp",
+      "cost": 4000,
+      "drop": 0.25
+     },
+     {
+      "variant": "gem",
+      "fggId": 44,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Duck_Gem_L.webp",
+      "cost": 4000,
+      "drop": 0.1
+     }
+    ]
+   },
+   {
+    "key": "Ghost",
+    "rarity": "epic",
+    "levels": {
+     "unit": "s",
+     "values": [
+      3,
+      3.5,
+      4,
+      4.5,
+      5
+     ]
+    },
+    "location": "night",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 17,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Unvault_L.webp",
+      "cost": 2700,
+      "drop": 5.25
+     },
+     {
+      "variant": "gold",
+      "fggId": 20,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Gold_L.webp",
+      "cost": 4000,
+      "drop": 0.62
+     },
+     {
+      "variant": "candy",
+      "fggId": 18,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Candy_L.webp",
+      "cost": 4000,
+      "drop": 0.37
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 19,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Galaxy_L.webp",
+      "cost": 4000,
+      "drop": 0.25
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 48,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Ghost_Holo_L.webp",
+      "cost": 4000,
+      "drop": 1.23
+     }
+    ]
+   },
+   {
+    "key": "Demon",
+    "rarity": "epic",
+    "levels": {
+     "unit": "",
+     "values": [
+      10,
+      15,
+      20,
+      25,
+      30
+     ]
+    },
+    "location": "spriteChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 37,
+      "img": "/img/x/sprites/icons/T_Icon_BR_RedDemon_Default_L.webp",
+      "cost": 2700,
+      "drop": 6.48
+     },
+     {
+      "variant": "gold",
+      "fggId": 40,
+      "img": "/img/x/sprites/icons/T_Icon_BR_RedDemon_Gold_L.webp",
+      "cost": 4000,
+      "drop": 0.62
+     },
+     {
+      "variant": "candy",
+      "fggId": 38,
+      "img": "/img/x/sprites/icons/T_Icon_BR_RedDemon_Candy_L.webp",
+      "cost": 4000,
+      "drop": 0.37
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 39,
+      "img": "/img/x/sprites/icons/T_Icon_BR_RedDemon_Galaxy_L.webp",
+      "cost": 4000,
+      "drop": 0.25
+     },
+     {
+      "variant": "gem",
+      "fggId": 47,
+      "img": "/img/x/sprites/icons/T_Icon_BR_RedDemon_Gem_L.webp",
+      "cost": 4000,
+      "drop": 0.1
+     }
+    ]
+   },
+   {
+    "key": "King",
+    "rarity": "epic",
+    "levels": {
+     "unit": "",
+     "plus": true,
+     "values": [
+      30,
+      40,
+      60,
+      80,
+      120
+     ]
+    },
+    "location": "spriteChest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 29,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_ui_L.webp",
+      "cost": 2700,
+      "drop": 5.25
+     },
+     {
+      "variant": "gold",
+      "fggId": 32,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Gold_ui_L.webp",
+      "cost": 4000,
+      "drop": 0.62
+     },
+     {
+      "variant": "candy",
+      "fggId": 30,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Candy_ui_L.webp",
+      "cost": 4000,
+      "drop": 0.37
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 31,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Galaxy_ui_L.webp",
+      "cost": 4000,
+      "drop": 0.25
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 73,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_King_Holofoil_ui_L.webp",
+      "cost": 4000,
+      "drop": 1.23
+     }
+    ]
+   },
+   {
+    "key": "Soccer",
+    "rarity": "epic",
+    "levels": {
+     "unit": "s",
+     "values": [
+      6,
+      7,
+      8,
+      9,
+      10
+     ]
+    },
+    "location": "mountains",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 62,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_ui_L.webp",
+      "cost": 2700,
+      "drop": 5.25
+     },
+     {
+      "variant": "gold",
+      "fggId": 65,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Gold_L.webp",
+      "cost": 4000,
+      "drop": 0.62
+     },
+     {
+      "variant": "candy",
+      "fggId": 63,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Candy_L.webp",
+      "cost": 4000,
+      "drop": 0.37
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 64,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Galaxy_L.webp",
+      "cost": 4000,
+      "drop": 0.25
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 66,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Soccer_Holofoil_L.webp",
+      "cost": 4000,
+      "drop": 1.23
+     }
+    ]
+   },
+   {
+    "key": "Drifter",
+    "rarity": "epic",
+    "levels": {
+     "unit": "",
+     "values": [
+      175,
+      150,
+      125,
+      100,
+      75
+     ]
+    },
+    "location": "mountains",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 67,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_ui_L.webp",
+      "cost": 2700,
+      "drop": 6.48
+     },
+     {
+      "variant": "gold",
+      "fggId": 71,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Gold_ui_L.webp",
+      "cost": 4000,
+      "drop": 0.62
+     },
+     {
+      "variant": "candy",
+      "fggId": 68,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Candy_ui_L.webp",
+      "cost": 4000,
+      "drop": 0.37
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 69,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Galaxy_ui_L.webp",
+      "cost": 4000,
+      "drop": 0.25
+     },
+     {
+      "variant": "gem",
+      "fggId": 70,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Drifter_Gem_ui_L.webp",
+      "cost": 4000,
+      "drop": 0.08
+     }
+    ]
+   },
+   {
+    "key": "Water",
+    "rarity": "rare",
+    "levels": {
+     "unit": "",
+     "values": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    "location": "water",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 1,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Unvault_Ch7S3_ui_L.webp",
+      "cost": 100,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 4,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Gold_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "candy",
+      "fggId": 2,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Candy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 3,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Galaxy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.43
+     },
+     {
+      "variant": "gem",
+      "fggId": 76,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Gem_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.37
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 43,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Holofoil_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "quack",
+      "fggId": 84,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Water_Quack_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Earth",
+    "rarity": "rare",
+    "levels": {
+     "unit": "%",
+     "values": [
+      10,
+      12.5,
+      15,
+      17.5,
+      20
+     ]
+    },
+    "location": "forest",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 5,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Ch7S3_UI_L.webp",
+      "cost": 100,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 8,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Gold_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "candy",
+      "fggId": 6,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Candy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 7,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Galaxy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.43
+     },
+     {
+      "variant": "gem",
+      "fggId": 45,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Gem_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.37
+     },
+     {
+      "variant": "cube",
+      "fggId": 86,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Cube_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.21
+     },
+     {
+      "variant": "quack",
+      "fggId": 87,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Earth_Quack_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Spitfire",
+    "rarity": "rare",
+    "levels": {
+     "unit": "",
+     "values": [
+      150,
+      125,
+      100,
+      75,
+      50
+     ]
+    },
+    "location": "urban",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 9,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Unvault_Ch7S3_ui_L.webp",
+      "cost": 100,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 12,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Gold_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "candy",
+      "fggId": 10,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Candy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 11,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Galaxy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.43
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 46,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Holofoil_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "cube",
+      "fggId": 89,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Cube_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.21
+     },
+     {
+      "variant": "quack",
+      "fggId": 90,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fire_Quack_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Fishy",
+    "rarity": "rare",
+    "levels": {
+     "units": [
+      "%",
+      "%"
+     ],
+     "plus": true,
+     "values": [
+      [
+       25,
+       10
+      ],
+      [
+       50,
+       20
+      ],
+      [
+       100,
+       30
+      ],
+      [
+       150,
+       40
+      ],
+      [
+       200,
+       50
+      ]
+     ]
+    },
+    "location": "mountains",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 58,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_ui_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 61,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Gold_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.64
+     },
+     {
+      "variant": "candy",
+      "fggId": 59,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Candy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 60,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Galaxy_ui_L.webp",
+      "cost": 2700,
+      "drop": 0.43
+     },
+     {
+      "variant": "cube",
+      "fggId": 116,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Fishy_Cube_L.webp",
+      "cost": 2700,
+      "drop": 0.21
+     }
+    ]
+   },
+   {
+    "key": "Air",
+    "rarity": "rare",
+    "levels": null,
+    "location": "mountains",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 74,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Air_Default_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 42,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Air_Gold_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "candy",
+      "fggId": 72,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Air_Candy_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     },
+     {
+      "variant": "galaxy",
+      "fggId": 75,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Air_Galaxy_L.webp",
+      "cost": 2700,
+      "drop": 0.43
+     },
+     {
+      "variant": "holofoil",
+      "fggId": 77,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Air_Holo_L.webp",
+      "cost": 2700,
+      "drop": 0.53
+     }
+    ]
+   }
+  ]
+ }
+]

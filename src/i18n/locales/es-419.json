@@ -213,7 +213,10 @@
     "week.now": "En curso",
     "week.today": "Hoy",
     "week.starts": "Empieza {time}",
-    "week.source": "Eventos semanales anunciados por Epic Games, en tu zona horaria."
+    "week.source": "Eventos semanales anunciados por Epic Games, en tu zona horaria.",
+    "share.format.title": "Elige un formato",
+    "share.format.desc": "WebP es mucho más ligero: ideal para compartir. PNG pesa más, pero se abre en cualquier lugar.",
+    "share.format.cancel": "Cancelar"
   },
   "rarity": {
     "rare": "Raro",

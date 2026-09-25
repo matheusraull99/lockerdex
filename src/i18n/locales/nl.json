@@ -213,7 +213,10 @@
     "week.now": "Nu bezig",
     "week.today": "Vandaag",
     "week.starts": "Begint {time}",
-    "week.source": "Wekelijkse evenementen aangekondigd door Epic Games, weergegeven in jouw tijdzone."
+    "week.source": "Wekelijkse evenementen aangekondigd door Epic Games, weergegeven in jouw tijdzone.",
+    "share.format.title": "Kies een formaat",
+    "share.format.desc": "WebP is veel kleiner – ideaal om te delen. PNG is groter, maar opent overal.",
+    "share.format.cancel": "Annuleren"
   },
   "rarity": {
     "rare": "Zeldzaam",

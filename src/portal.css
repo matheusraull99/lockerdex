@@ -907,3 +907,53 @@
     margin-inline-start: 0;
   }
 }
+
+/* ---------- escolha do formato da imagem ---------- */
+.fmt {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 18px 16px 12px;
+  border-radius: 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.fmt-ic {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--page);
+  font-size: 22px;
+}
+
+.fmt-h {
+  margin: 0;
+  font: 900 24px/1 var(--display);
+  text-transform: uppercase;
+}
+
+.fmt-desc {
+  margin: 0;
+  max-width: 44ch;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.fmt-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.fmt-btns .btn {
+  padding: 12px;
+  font: 900 18px/1 var(--display);
+  letter-spacing: 0.04em;
+}

@@ -213,7 +213,10 @@
     "week.now": "جارٍ الآن",
     "week.today": "اليوم",
     "week.starts": "يبدأ {time}",
-    "week.source": "أحداث أسبوعية أعلنتها Epic Games، معروضة حسب منطقتك الزمنية."
+    "week.source": "أحداث أسبوعية أعلنتها Epic Games، معروضة حسب منطقتك الزمنية.",
+    "share.format.title": "اختر صيغة",
+    "share.format.desc": "صيغة WebP أصغر بكثير، وهي مثالية للمشاركة. أما PNG فأكبر، لكنها تُفتح في أي مكان.",
+    "share.format.cancel": "إلغاء"
   },
   "rarity": {
     "rare": "نادر",

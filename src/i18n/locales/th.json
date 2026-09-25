@@ -213,7 +213,10 @@
     "week.now": "กำลังดำเนินอยู่",
     "week.today": "วันนี้",
     "week.starts": "เริ่ม{time}",
-    "week.source": "อีเวนต์ประจำสัปดาห์ที่ Epic Games ประกาศ แสดงตามเขตเวลาของคุณ"
+    "week.source": "อีเวนต์ประจำสัปดาห์ที่ Epic Games ประกาศ แสดงตามเขตเวลาของคุณ",
+    "share.format.title": "เลือกรูปแบบไฟล์",
+    "share.format.desc": "WebP มีขนาดเล็กกว่ามาก เหมาะสำหรับแชร์ ส่วน PNG ใหญ่กว่า แต่เปิดได้ทุกที่",
+    "share.format.cancel": "ยกเลิก"
   },
   "rarity": {
     "rare": "แรร์",

@@ -213,7 +213,10 @@
     "week.now": "Sedang berlangsung",
     "week.today": "Hari ini",
     "week.starts": "Dimulai {time}",
-    "week.source": "Event mingguan yang diumumkan Epic Games, ditampilkan sesuai zona waktumu."
+    "week.source": "Event mingguan yang diumumkan Epic Games, ditampilkan sesuai zona waktumu.",
+    "share.format.title": "Pilih format",
+    "share.format.desc": "WebP jauh lebih kecil — pas untuk dibagikan. PNG lebih besar, tapi bisa dibuka di mana saja.",
+    "share.format.cancel": "Batal"
   },
   "rarity": {
     "rare": "Langka",

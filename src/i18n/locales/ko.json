@@ -213,7 +213,10 @@
     "week.now": "진행 중",
     "week.today": "오늘",
     "week.starts": "{time} 시작",
-    "week.source": "Epic Games가 발표한 주간 이벤트를 내 시간대로 보여 줘요."
+    "week.source": "Epic Games가 발표한 주간 이벤트를 내 시간대로 보여 줘요.",
+    "share.format.title": "형식 선택",
+    "share.format.desc": "WebP는 훨씬 작아서 공유하기에 좋아요. PNG는 더 크지만 어디서나 열려요.",
+    "share.format.cancel": "취소"
   },
   "rarity": {
     "rare": "희귀",

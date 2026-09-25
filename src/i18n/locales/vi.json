@@ -213,7 +213,10 @@
     "week.now": "Đang diễn ra",
     "week.today": "Hôm nay",
     "week.starts": "Bắt đầu {time}",
-    "week.source": "Sự kiện hằng tuần do Epic Games công bố, hiển thị theo múi giờ của bạn."
+    "week.source": "Sự kiện hằng tuần do Epic Games công bố, hiển thị theo múi giờ của bạn.",
+    "share.format.title": "Chọn định dạng",
+    "share.format.desc": "WebP nhẹ hơn nhiều — lý tưởng để chia sẻ. PNG nặng hơn nhưng mở được ở mọi nơi.",
+    "share.format.cancel": "Hủy"
   },
   "rarity": {
     "rare": "Hiếm",

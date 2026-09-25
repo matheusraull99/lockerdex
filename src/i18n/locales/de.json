@@ -213,7 +213,10 @@
     "week.now": "Läuft gerade",
     "week.today": "Heute",
     "week.starts": "Startet {time}",
-    "week.source": "Wöchentliche Events, angekündigt von Epic Games, angezeigt in deiner Zeitzone."
+    "week.source": "Wöchentliche Events, angekündigt von Epic Games, angezeigt in deiner Zeitzone.",
+    "share.format.title": "Wähle ein Format",
+    "share.format.desc": "WebP ist viel kleiner – ideal zum Teilen. PNG ist größer, lässt sich aber überall öffnen.",
+    "share.format.cancel": "Abbrechen"
   },
   "rarity": {
     "rare": "Selten",

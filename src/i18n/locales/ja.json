@@ -213,7 +213,10 @@
     "week.now": "開催中",
     "week.today": "今日",
     "week.starts": "{time}に開始",
-    "week.source": "Epic Gamesが発表したウィークリーイベントを、お使いのタイムゾーンで表示しています。"
+    "week.source": "Epic Gamesが発表したウィークリーイベントを、お使いのタイムゾーンで表示しています。",
+    "share.format.title": "形式を選択",
+    "share.format.desc": "WebPはサイズがずっと小さく、共有に最適です。PNGは大きめですが、どこでも開けます。",
+    "share.format.cancel": "キャンセル"
   },
   "rarity": {
     "rare": "レア",

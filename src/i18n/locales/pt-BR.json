@@ -216,7 +216,10 @@
     "week.now": "Acontecendo agora",
     "week.today": "Hoje",
     "week.starts": "Começa {time}",
-    "week.source": "Eventos semanais anunciados pela Epic Games, no seu fuso horário."
+    "week.source": "Eventos semanais anunciados pela Epic Games, no seu fuso horário.",
+    "share.format.title": "Escolha um formato",
+    "share.format.desc": "WebP é bem menor — ideal para compartilhar. PNG é maior, mas abre em qualquer lugar.",
+    "share.format.cancel": "Cancelar"
   },
   "rarity": {
     "rare": "Raro",

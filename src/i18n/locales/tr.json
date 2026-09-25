@@ -213,7 +213,10 @@
     "week.now": "Şu an sürüyor",
     "week.today": "Bugün",
     "week.starts": "{time} başlıyor",
-    "week.source": "Epic Games'in duyurduğu haftalık etkinlikler, senin saat dilimine göre."
+    "week.source": "Epic Games'in duyurduğu haftalık etkinlikler, senin saat dilimine göre.",
+    "share.format.title": "Bir format seç",
+    "share.format.desc": "WebP çok daha küçüktür, paylaşmak için ideal. PNG daha büyüktür ama her yerde açılır.",
+    "share.format.cancel": "İptal"
   },
   "rarity": {
     "rare": "Nadir",

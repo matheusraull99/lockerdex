@@ -213,7 +213,10 @@
     "week.now": "进行中",
     "week.today": "今天",
     "week.starts": "{time}开始",
-    "week.source": "Epic Games 公布的每周活动，按你的时区显示。"
+    "week.source": "Epic Games 公布的每周活动，按你的时区显示。",
+    "share.format.title": "选择格式",
+    "share.format.desc": "WebP 体积小得多，适合分享。PNG 更大，但在任何地方都能打开。",
+    "share.format.cancel": "取消"
   },
   "rarity": {
     "rare": "稀有",

@@ -10,6 +10,7 @@ import { Minimap, Stats, counts, visibleSlots } from "../components/Overview";
 import { Detail } from "../components/Detail";
 import { ShareDialog } from "../components/ShareDialog";
 import { Compare } from "../components/Compare";
+import { WeekEvents } from "../components/WeekEvents";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -130,6 +131,8 @@ export function SpritesPage() {
         <Minimap slots={slots} collection={viewing} />
         <p className="hero-hint">{t("sticker.hint")}</p>
       </section>
+
+      {season.current && !friend && <WeekEvents />}
 
       {friend && comparing && <Compare season={season} slots={slots} mine={mine} theirs={friend.collection} name={friendName} />}
 

@@ -202,7 +202,18 @@
     "season.ends": "Se termine le {date}",
     "season.next": "La prochaine saison commence le {date}",
     "season.left": "La saison se termine {time}",
-    "season.expected": "Date prévue. L’heure exacte sera confirmée à l’approche de la fin."
+    "season.expected": "Date prévue. L’heure exacte sera confirmée à l’approche de la fin.",
+    "week.title": "Cette semaine",
+    "week.mon.name": "Bonus de niveau",
+    "week.mon.desc": "Les esprits légendaires et mythiques apparaissent plus souvent, les esprits montent de niveau 2× plus vite et les extractions rapportent 2× plus de poussière d’esprit.",
+    "week.thu.name": "Nouvel esprit",
+    "week.thu.desc": "Un nouvel esprit ou une variante spéciale arrive chaque jeudi.",
+    "week.sat.name": "Heures musclées",
+    "week.sat.desc": "Une heure avec de nouveaux modificateurs de partie et plus de chances d’obtenir la variante qui vous manque.",
+    "week.now": "En cours",
+    "week.today": "Aujourd’hui",
+    "week.starts": "Commence {time}",
+    "week.source": "Événements hebdomadaires annoncés par Epic Games, affichés dans votre fuseau horaire."
   },
   "rarity": {
     "rare": "Rare",

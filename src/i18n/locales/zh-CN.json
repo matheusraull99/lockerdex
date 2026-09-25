@@ -202,7 +202,18 @@
     "season.ends": "{date}结束",
     "season.next": "下个赛季将于{date}开始",
     "season.left": "赛季将于{time}结束",
-    "season.expected": "预计日期；确切时间将在临近结束时确认。"
+    "season.expected": "预计日期；确切时间将在临近结束时确认。",
+    "week.title": "本周",
+    "week.mon.name": "升级加成",
+    "week.mon.desc": "传说和神话精灵更常出现，精灵升级速度提升至 2×，撤离还能获得 2× 精灵尘。",
+    "week.thu.name": "新精灵",
+    "week.thu.desc": "每周四上线一个新精灵或特殊变体。",
+    "week.sat.name": "超能时刻",
+    "week.sat.desc": "持续一小时，带来全新对局词缀，更容易获得你还缺的变体。",
+    "week.now": "进行中",
+    "week.today": "今天",
+    "week.starts": "{time}开始",
+    "week.source": "Epic Games 公布的每周活动，按你的时区显示。"
   },
   "rarity": {
     "rare": "稀有",

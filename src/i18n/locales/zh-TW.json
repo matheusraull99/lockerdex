@@ -202,7 +202,18 @@
     "season.ends": "{date}結束",
     "season.next": "下一季將於{date}開始",
     "season.left": "本季將於{time}結束",
-    "season.expected": "預計日期；確切時間會在接近結束時確認。"
+    "season.expected": "預計日期；確切時間會在接近結束時確認。",
+    "week.title": "本週",
+    "week.mon.name": "升級加成",
+    "week.mon.desc": "傳說和神話精靈更常出現，精靈升級速度提升至 2×，撤離還能獲得 2× 精靈塵。",
+    "week.thu.name": "新精靈",
+    "week.thu.desc": "每週四推出一個新精靈或特殊變體。",
+    "week.sat.name": "超能時刻",
+    "week.sat.desc": "持續一小時，帶來全新對局詞綴，更容易取得你還缺的變體。",
+    "week.now": "進行中",
+    "week.today": "今天",
+    "week.starts": "{time}開始",
+    "week.source": "Epic Games 公布的每週活動，依你的時區顯示。"
   },
   "rarity": {
     "rare": "稀有",

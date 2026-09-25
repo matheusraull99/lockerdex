@@ -202,7 +202,18 @@
     "season.ends": "Endet am {date}",
     "season.next": "Die nächste Saison startet am {date}",
     "season.left": "Die Saison endet {time}",
-    "season.expected": "Voraussichtliches Datum; die genaue Uhrzeit wird kurz vor Schluss bestätigt."
+    "season.expected": "Voraussichtliches Datum; die genaue Uhrzeit wird kurz vor Schluss bestätigt.",
+    "week.title": "Diese Woche",
+    "week.mon.name": "Stufenbonus",
+    "week.mon.desc": "Legendäre und mythische Geister tauchen öfter auf, Geister steigen 2× schneller auf und Extraktionen bringen 2× Geisterstaub.",
+    "week.thu.name": "Neuer Geist",
+    "week.thu.desc": "Jeden Donnerstag kommt ein neuer Geist oder eine besondere Variante dazu.",
+    "week.sat.name": "Power Hours",
+    "week.sat.desc": "Eine Stunde mit neuen Match-Modifikatoren und besseren Chancen auf die Variante, die dir noch fehlt.",
+    "week.now": "Läuft gerade",
+    "week.today": "Heute",
+    "week.starts": "Startet {time}",
+    "week.source": "Wöchentliche Events, angekündigt von Epic Games, angezeigt in deiner Zeitzone."
   },
   "rarity": {
     "rare": "Selten",

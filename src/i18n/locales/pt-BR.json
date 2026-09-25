@@ -205,7 +205,18 @@
     "season.ends": "Termina em {date}",
     "season.next": "A próxima temporada começa em {date}",
     "season.left": "A temporada acaba {time}",
-    "season.expected": "Data prevista; o horário exato é confirmado perto do fim."
+    "season.expected": "Data prevista; o horário exato é confirmado perto do fim.",
+    "week.title": "Esta semana",
+    "week.mon.name": "Bônus de nível",
+    "week.mon.desc": "Lendários e Míticos aparecem mais, os elementais sobem de nível 2× mais rápido e as extrações dão 2× Poeira Elemental.",
+    "week.thu.name": "Elemental novo",
+    "week.thu.desc": "Toda quinta entra um elemental ou uma variante especial.",
+    "week.sat.name": "Horas do Poder",
+    "week.sat.desc": "Uma hora com modificadores novos e mais chance de achar a variante que falta.",
+    "week.now": "Acontecendo agora",
+    "week.today": "Hoje",
+    "week.starts": "Começa {time}",
+    "week.source": "Eventos semanais anunciados pela Epic Games, no seu fuso horário."
   },
   "rarity": {
     "rare": "Raro",

@@ -202,7 +202,18 @@
     "season.ends": "Kończy się {date}",
     "season.next": "Następny sezon startuje {date}",
     "season.left": "Sezon kończy się {time}",
-    "season.expected": "Przewidywana data; dokładna godzina zostanie potwierdzona bliżej końca."
+    "season.expected": "Przewidywana data; dokładna godzina zostanie potwierdzona bliżej końca.",
+    "week.title": "W tym tygodniu",
+    "week.mon.name": "Bonus do poziomu",
+    "week.mon.desc": "Legendarne i mityczne duszki pojawiają się częściej, duszki awansują 2× szybciej, a ekstrakcje dają 2× więcej pyłu duszków.",
+    "week.thu.name": "Nowy duszek",
+    "week.thu.desc": "W każdy czwartek pojawia się nowy duszek lub specjalny wariant.",
+    "week.sat.name": "Godziny mocy",
+    "week.sat.desc": "Godzina z nowymi modyfikatorami meczu i większą szansą na wariant, którego ci brakuje.",
+    "week.now": "Trwa teraz",
+    "week.today": "Dziś",
+    "week.starts": "Zaczyna się {time}",
+    "week.source": "Cotygodniowe wydarzenia ogłaszane przez Epic Games, w twojej strefie czasowej."
   },
   "rarity": {
     "rare": "Rzadki",

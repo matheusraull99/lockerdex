@@ -759,3 +759,119 @@
   margin-inline-end: 6px;
   vertical-align: 1px;
 }
+
+/* ---------- esta semana (eventos semanais de elementais) ---------- */
+.week {
+  margin: 18px 0 6px;
+}
+
+.week-h {
+  margin: 0 0 8px;
+  font: 900 24px/1 var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.week-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.week-ev {
+  --dc: var(--storm);
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 3px;
+  padding: 12px 14px;
+  border-radius: var(--r);
+  background: var(--page);
+  border-inline-start: 5px solid var(--dc);
+}
+
+.week-ev[data-key="thu"] {
+  --dc: var(--dust);
+}
+
+.week-ev[data-key="sat"] {
+  --dc: var(--mythic);
+}
+
+.week-ev h3 {
+  margin: 0;
+  font: 800 21px/1.05 var(--display);
+  text-transform: uppercase;
+}
+
+.week-when {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+}
+
+.week-desc {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.week-status {
+  justify-self: start;
+  margin: 6px 0 0;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.week-ev[data-active] {
+  outline: 2px solid var(--dust);
+}
+
+.week-ev[data-active] .week-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--dust);
+  border-color: var(--dust);
+  color: var(--dust-ink);
+}
+
+.week-ev[data-active] .week-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.week .note {
+  margin: 6px 0 0;
+}
+
+@media (max-width: 720px) {
+  .week-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 4px;
+  }
+  .week-ev {
+    flex: 0 0 78%;
+    scroll-snap-align: start;
+  }
+}

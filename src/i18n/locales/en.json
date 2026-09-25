@@ -205,7 +205,18 @@
     "season.ends": "Ends on {date}",
     "season.next": "Next season starts on {date}",
     "season.left": "Season ends {time}",
-    "season.expected": "Expected date; the exact time is confirmed closer to the end."
+    "season.expected": "Expected date; the exact time is confirmed closer to the end.",
+    "week.title": "This week",
+    "week.mon.name": "Level-up bonus",
+    "week.mon.desc": "Legendary and Mythic sprites show up more often, sprites level up 2× faster and extractions give 2× Sprite Dust.",
+    "week.thu.name": "New sprite",
+    "week.thu.desc": "A new sprite or special variant arrives every Thursday.",
+    "week.sat.name": "Power Hours",
+    "week.sat.desc": "An hour with new match modifiers and a better shot at the variant you're missing.",
+    "week.now": "Happening now",
+    "week.today": "Today",
+    "week.starts": "Starts {time}",
+    "week.source": "Weekly events announced by Epic Games, shown in your time zone."
   },
   "rarity": {
     "rare": "Rare",

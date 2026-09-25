@@ -202,7 +202,18 @@
     "season.ends": "{date}に終了",
     "season.next": "次のシーズンは{date}に開始",
     "season.left": "{time}にシーズン終了",
-    "season.expected": "予定日です。正確な時刻は終了が近づくと確定します。"
+    "season.expected": "予定日です。正確な時刻は終了が近づくと確定します。",
+    "week.title": "今週",
+    "week.mon.name": "レベルアップボーナス",
+    "week.mon.desc": "レジェンドとミシックのスプライトが出やすくなり、スプライトのレベルアップが2×速く、脱出で獲得するスプライトダストも2×になります。",
+    "week.thu.name": "新スプライト",
+    "week.thu.desc": "毎週木曜日に新しいスプライトか特別なバリアントが登場します。",
+    "week.sat.name": "パワー・アワー",
+    "week.sat.desc": "新しいマッチモディファイアが加わり、まだ持っていないバリアントが手に入りやすくなる1時間。",
+    "week.now": "開催中",
+    "week.today": "今日",
+    "week.starts": "{time}に開始",
+    "week.source": "Epic Gamesが発表したウィークリーイベントを、お使いのタイムゾーンで表示しています。"
   },
   "rarity": {
     "rare": "レア",

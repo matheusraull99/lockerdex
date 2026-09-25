@@ -202,7 +202,18 @@
     "season.ends": "Kết thúc ngày {date}",
     "season.next": "Mùa tiếp theo bắt đầu ngày {date}",
     "season.left": "Mùa kết thúc {time}",
-    "season.expected": "Ngày dự kiến; giờ chính xác sẽ được xác nhận khi gần kết thúc."
+    "season.expected": "Ngày dự kiến; giờ chính xác sẽ được xác nhận khi gần kết thúc.",
+    "week.title": "Tuần này",
+    "week.mon.name": "Thưởng lên cấp",
+    "week.mon.desc": "Sprite Huyền thoại và Thần thoại xuất hiện thường xuyên hơn, sprite lên cấp nhanh hơn 2× và mỗi lần trích xuất cho 2× Bụi Sprite.",
+    "week.thu.name": "Sprite mới",
+    "week.thu.desc": "Mỗi thứ Năm có một sprite mới hoặc biến thể đặc biệt.",
+    "week.sat.name": "Giờ Sức Mạnh",
+    "week.sat.desc": "Một giờ với các bộ điều chỉnh trận đấu mới và cơ hội cao hơn để có biến thể bạn còn thiếu.",
+    "week.now": "Đang diễn ra",
+    "week.today": "Hôm nay",
+    "week.starts": "Bắt đầu {time}",
+    "week.source": "Sự kiện hằng tuần do Epic Games công bố, hiển thị theo múi giờ của bạn."
   },
   "rarity": {
     "rare": "Hiếm",

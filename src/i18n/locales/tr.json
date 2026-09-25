@@ -202,7 +202,18 @@
     "season.ends": "Bitiş: {date}",
     "season.next": "Sonraki sezonun başlangıcı: {date}",
     "season.left": "Sezon {time} bitiyor",
-    "season.expected": "Tahmini tarih; kesin saat sona doğru netleşir."
+    "season.expected": "Tahmini tarih; kesin saat sona doğru netleşir.",
+    "week.title": "Bu hafta",
+    "week.mon.name": "Seviye bonusu",
+    "week.mon.desc": "Efsanevi ve Mitik sprite'lar daha sık çıkar, sprite'lar 2× daha hızlı seviye atlar ve çıkarmalar 2× Sprite Tozu verir.",
+    "week.thu.name": "Yeni sprite",
+    "week.thu.desc": "Her perşembe yeni bir sprite ya da özel bir varyant gelir.",
+    "week.sat.name": "Güç Saatleri",
+    "week.sat.desc": "Yeni maç düzenleyicileri ve eksik varyantını yakalama şansının arttığı bir saat.",
+    "week.now": "Şu an sürüyor",
+    "week.today": "Bugün",
+    "week.starts": "{time} başlıyor",
+    "week.source": "Epic Games'in duyurduğu haftalık etkinlikler, senin saat dilimine göre."
   },
   "rarity": {
     "rare": "Nadir",

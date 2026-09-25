@@ -202,7 +202,18 @@
     "season.ends": "Berakhir pada {date}",
     "season.next": "Season berikutnya dimulai pada {date}",
     "season.left": "Season berakhir {time}",
-    "season.expected": "Tanggal perkiraan; jam pastinya dikonfirmasi menjelang akhir season."
+    "season.expected": "Tanggal perkiraan; jam pastinya dikonfirmasi menjelang akhir season.",
+    "week.title": "Minggu ini",
+    "week.mon.name": "Bonus naik level",
+    "week.mon.desc": "Sprite Legendaris dan Mitis lebih sering muncul, sprite naik level 2× lebih cepat, dan ekstraksi memberi 2× Sprite Dust.",
+    "week.thu.name": "Sprite baru",
+    "week.thu.desc": "Setiap Kamis ada sprite baru atau varian spesial.",
+    "week.sat.name": "Power Hours",
+    "week.sat.desc": "Satu jam dengan modifier pertandingan baru dan peluang lebih besar untuk dapat varian yang belum kamu punya.",
+    "week.now": "Sedang berlangsung",
+    "week.today": "Hari ini",
+    "week.starts": "Dimulai {time}",
+    "week.source": "Event mingguan yang diumumkan Epic Games, ditampilkan sesuai zona waktumu."
   },
   "rarity": {
     "rare": "Langka",

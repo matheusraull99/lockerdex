@@ -202,7 +202,18 @@
     "season.ends": "Eindigt op {date}",
     "season.next": "Het volgende seizoen begint op {date}",
     "season.left": "Het seizoen eindigt {time}",
-    "season.expected": "Verwachte datum; het exacte tijdstip wordt tegen het einde bevestigd."
+    "season.expected": "Verwachte datum; het exacte tijdstip wordt tegen het einde bevestigd.",
+    "week.title": "Deze week",
+    "week.mon.name": "Levelbonus",
+    "week.mon.desc": "Legendarische en mythische sprites verschijnen vaker, sprites stijgen 2× sneller in level en extracties leveren 2× Sprite Dust op.",
+    "week.thu.name": "Nieuwe sprite",
+    "week.thu.desc": "Elke donderdag komt er een nieuwe sprite of speciale variant bij.",
+    "week.sat.name": "Power Hours",
+    "week.sat.desc": "Een uur met nieuwe matchmodifiers en een grotere kans op de variant die je nog mist.",
+    "week.now": "Nu bezig",
+    "week.today": "Vandaag",
+    "week.starts": "Begint {time}",
+    "week.source": "Wekelijkse evenementen aangekondigd door Epic Games, weergegeven in jouw tijdzone."
   },
   "rarity": {
     "rare": "Zeldzaam",

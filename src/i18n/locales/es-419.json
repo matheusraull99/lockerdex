@@ -202,7 +202,18 @@
     "season.ends": "Termina el {date}",
     "season.next": "La próxima temporada empieza el {date}",
     "season.left": "La temporada termina {time}",
-    "season.expected": "Fecha estimada; la hora exacta se confirma cerca del final."
+    "season.expected": "Fecha estimada; la hora exacta se confirma cerca del final.",
+    "week.title": "Esta semana",
+    "week.mon.name": "Bono de nivel",
+    "week.mon.desc": "Aparecen más espíritus legendarios y míticos, los espíritus suben de nivel 2× más rápido y las extracciones dan 2× polvo de espíritu.",
+    "week.thu.name": "Espíritu nuevo",
+    "week.thu.desc": "Cada jueves llega un espíritu nuevo o una variante especial.",
+    "week.sat.name": "Horas del poder",
+    "week.sat.desc": "Una hora con nuevos modificadores de partida y más probabilidades de conseguir la variante que te falta.",
+    "week.now": "En curso",
+    "week.today": "Hoy",
+    "week.starts": "Empieza {time}",
+    "week.source": "Eventos semanales anunciados por Epic Games, en tu zona horaria."
   },
   "rarity": {
     "rare": "Raro",

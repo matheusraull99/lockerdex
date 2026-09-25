@@ -202,7 +202,18 @@
     "season.ends": "Fine: {date}",
     "season.next": "Inizio della prossima stagione: {date}",
     "season.left": "La stagione finisce {time}",
-    "season.expected": "Data prevista; l’orario esatto viene confermato verso la fine."
+    "season.expected": "Data prevista; l’orario esatto viene confermato verso la fine.",
+    "week.title": "Questa settimana",
+    "week.mon.name": "Bonus livello",
+    "week.mon.desc": "Gli spiritelli leggendari e mitici compaiono più spesso, gli spiritelli salgono di livello 2× più in fretta e le estrazioni danno 2× Polvere di Spiritello.",
+    "week.thu.name": "Nuovo spiritello",
+    "week.thu.desc": "Ogni giovedì arriva un nuovo spiritello o una variante speciale.",
+    "week.sat.name": "Potenza concentrata",
+    "week.sat.desc": "Un’ora con nuovi modificatori di partita e più probabilità di trovare la variante che ti manca.",
+    "week.now": "In corso",
+    "week.today": "Oggi",
+    "week.starts": "Inizia {time}",
+    "week.source": "Eventi settimanali annunciati da Epic Games, mostrati nel tuo fuso orario."
   },
   "rarity": {
     "rare": "Raro",

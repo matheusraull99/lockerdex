@@ -202,7 +202,18 @@
     "season.ends": "{date} 종료",
     "season.next": "다음 시즌 시작: {date}",
     "season.left": "{time} 시즌 종료",
-    "season.expected": "예상 날짜예요. 정확한 시간은 종료가 가까워지면 확정돼요."
+    "season.expected": "예상 날짜예요. 정확한 시간은 종료가 가까워지면 확정돼요.",
+    "week.title": "이번 주",
+    "week.mon.name": "레벨업 보너스",
+    "week.mon.desc": "전설·신화 스프라이트가 더 자주 나오고, 스프라이트 레벨업이 2× 빨라지며, 탈출 시 스프라이트 가루를 2× 받아요.",
+    "week.thu.name": "새 스프라이트",
+    "week.thu.desc": "매주 목요일마다 새 스프라이트나 특별 변형이 추가돼요.",
+    "week.sat.name": "파워 아워",
+    "week.sat.desc": "새로운 매치 보정치가 적용되고, 아직 없는 변형을 얻을 확률이 높아지는 1시간이에요.",
+    "week.now": "진행 중",
+    "week.today": "오늘",
+    "week.starts": "{time} 시작",
+    "week.source": "Epic Games가 발표한 주간 이벤트를 내 시간대로 보여 줘요."
   },
   "rarity": {
     "rare": "희귀",

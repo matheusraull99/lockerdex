@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # só para o commit vazio que mantém o agendamento vivo
   pages: write
   id-token: write
 
@@ -25,6 +25,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # O GitHub desliga agendamentos de repositórios públicos após 60 dias sem commit.
+      # Se o último commit tiver mais de 45 dias, registra um commit vazio para seguir rodando.
+      - name: Manter a atualização diária ativa
+        if: github.event_name == 'schedule'
+        run: |
+          last=$(git log -1 --format=%ct)
+          if [ $(( $(date +%s) - last )) -gt $(( 45 * 86400 )) ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "Manter a atualização diária ativa"
+            git push
+          fi
 
       - uses: actions/setup-python@v5
         if: github.event_name != 'push'

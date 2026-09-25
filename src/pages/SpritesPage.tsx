@@ -121,7 +121,7 @@ export function SpritesPage() {
         <h1 className="hero-h">
           <span className="hero-season">{t("season.label", { chapter: season.chapter, season: season.season })}</span>
           <span className="hero-count">{t("progress.have", { owned: nf(c.owned), total: nf(c.total) })}</span>
-          {season.current && (
+          {season.current && Date.parse(SEASON_END) > Date.now() && (
             <a className="hero-ends" href={href("season")}>
               {t("season.left", { time: relTime(lang, Date.parse(SEASON_END)) })}
             </a>

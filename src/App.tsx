@@ -86,6 +86,16 @@ export default function App() {
   // A aba "Minhas listas" fica dentro de "Mais" no celular; as páginas secundárias acendem "Mais".
   const activeTab: Route = TABS.some((x) => x.route === route) ? route : "more";
 
+  // Título da aba por página e por idioma (é o que aparece no histórico e no Google).
+  useEffect(() => {
+    const NAV: Record<Route, Parameters<typeof t>[0]> = {
+      sprites: "nav.sprites", shop: "nav.shop", cosmetics: "nav.cosmetics", lists: "nav.lists", leaks: "nav.leaks",
+      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", more: "nav.more",
+    };
+    // Mesmo formato das páginas geradas no build (vite.config.ts), para o Google ver um título só.
+    document.title = route === "sprites" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
+  }, [route, t]);
+
   const page = (() => {
     switch (route) {
       case "shop":

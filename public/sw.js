@@ -3,7 +3,7 @@ const CACHE = "lockerdex-dev";
 const PRECACHE = [];
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)));
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE.map((u) => new Request(u, { cache: "reload" })))));
   self.skipWaiting();
 });
 
@@ -60,11 +60,14 @@ self.addEventListener("fetch", (e) => {
     e.respondWith(
       fetch(req)
         .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((c) => c.put("./", copy));
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(req, copy));
+          }
           return res;
         })
-        .catch(() => caches.match("./")),
+        // Sem internet: a própria página (se já visitada) ou a principal; o app resolve o endereço.
+        .catch(() => caches.match(req, { ignoreSearch: true }).then((hit) => hit || caches.match("./"))),
     );
     return;
   }

@@ -957,3 +957,28 @@
   font: 900 18px/1 var(--display);
   letter-spacing: 0.04em;
 }
+
+/* ---------- texto de cada página antes do app carregar (Google e prévias de link) ---------- */
+.seo-shell {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+.seo-shell h1 {
+  font: 900 44px/1 var(--display);
+  text-transform: uppercase;
+}
+
+.seo-shell ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.seo-shell a {
+  color: var(--dust);
+  font-weight: 700;
+}

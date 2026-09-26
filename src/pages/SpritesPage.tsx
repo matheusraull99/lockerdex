@@ -4,7 +4,7 @@ import { parseNumbers, readShared, storage, type Collection } from "../lib/colle
 import { useI18n } from "../lib/i18n";
 import { rarityLabel, variantText } from "../lib/content";
 import { relTime, SEASON_END, useUi } from "../lib/ui";
-import { href } from "../lib/router";
+import { href, NAV_EVENT } from "../lib/router";
 import { Album, DEFAULT_FILTERS, type Filters, type SortKey, type StatusFilter } from "../components/Album";
 import { Minimap, Stats, counts, visibleSlots } from "../components/Overview";
 import { Detail } from "../components/Detail";
@@ -35,9 +35,20 @@ export function SpritesPage() {
   useEffect(() => storage.save(mine), [mine]);
   useEffect(() => storage.setPrefs({ season: seasonId, unreleased: filters.unreleased }), [seasonId, filters.unreleased]);
   useEffect(() => {
-    const onHash = () => setFriend(readShared());
+    // Sai (ou entra) na coleção do amigo quando o endereço muda: link #c=…, logo, aba Elementais, voltar.
+    const onHash = () => {
+      const f = readShared();
+      setFriend(f);
+      if (!f) setComparing(false);
+    };
     addEventListener("hashchange", onHash);
-    return () => removeEventListener("hashchange", onHash);
+    addEventListener("popstate", onHash);
+    addEventListener(NAV_EVENT, onHash);
+    return () => {
+      removeEventListener("hashchange", onHash);
+      removeEventListener("popstate", onHash);
+      removeEventListener(NAV_EVENT, onHash);
+    };
   }, []);
 
   const setStatus = useCallback((id: number, st: Status) => {
@@ -61,7 +72,7 @@ export function SpritesPage() {
   );
 
   const leaveFriend = () => {
-    history.replaceState(null, "", location.pathname + location.search + href("sprites"));
+    history.replaceState(null, "", href("sprites")); // tira o #c=… da coleção do amigo
     setFriend(null);
     setComparing(false);
   };

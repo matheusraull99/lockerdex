@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { useCatalog, type Item } from "../lib/catalog";
 import { useI18n } from "../lib/i18n";
 import { decodeHashes, encodeIds, idHash, useLists } from "../lib/lists";
-import { go, href } from "../lib/router";
+import { go, href, SLUG } from "../lib/router";
 import { storage } from "../lib/collection";
 import { useUi } from "../lib/ui";
 import { CosmeticCard, CosmeticDialog } from "../components/Cosmetic";
@@ -42,7 +42,8 @@ export function ListsPage({ params }: { params: URLSearchParams }) {
     if (lists.own.length) p.set("k", encodeIds(lists.own));
     const name = storage.name();
     if (name) p.set("n", name);
-    const url = `${location.origin}${location.pathname}#/lists?${p.toString()}`;
+    // Os ids ficam no "#": não vão para o servidor e o endereço da página continua limpo.
+    const url = `${location.origin}${import.meta.env.BASE_URL}${SLUG.lists}/#${p.toString()}`; // sem prefixo de idioma: quem abre vê no idioma dele
     try {
       if (navigator.share) await navigator.share({ title: t("lists.share"), url });
       else {

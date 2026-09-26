@@ -2,6 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import en from "../i18n/locales/en.json";
 import { storage } from "./collection";
 import { available, detectLang, loaders, type Locale } from "./langs";
+import { NAV_EVENT, pathLang, replacePathLang } from "./router";
 
 export type { Locale };
 
@@ -34,12 +35,31 @@ function withFallback(loc: Locale): Locale {
   return merge(en, loc);
 }
 
+function initialLang() {
+  // Versão por idioma do endereço (/lockerdex/pt-BR/…, a que o Google indexa) vale sem ser salva.
+  const fromUrl = pathLang();
+  if (fromUrl && available.has(fromUrl)) return fromUrl;
+  const saved = storage.lang();
+  return saved && available.has(saved) ? saved : detectLang(navigator.languages ?? [navigator.language]);
+}
+
+let preloaded: { lang: string; L: Locale } | null = null;
+
+/** Carrega o idioma antes de montar o app, para a página pronta não piscar em inglês. */
+export async function preloadLocale() {
+  const lang = initialLang();
+  const load = loaders[`../i18n/locales/${lang}.json`];
+  if (!load) return;
+  try {
+    preloaded = { lang, L: withFallback((await load()).default) };
+  } catch {
+    // sem rede para o arquivo do idioma: abre em inglês e tenta de novo no efeito abaixo
+  }
+}
+
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState(() => {
-    const saved = storage.lang();
-    return saved && available.has(saved) ? saved : detectLang(navigator.languages ?? [navigator.language]);
-  });
-  const [L, setL] = useState<Locale>(en);
+  const [lang, setLangState] = useState(initialLang);
+  const [L, setL] = useState<Locale>(() => (preloaded?.lang === lang ? preloaded.L : en));
 
   useEffect(() => {
     let alive = true;
@@ -57,9 +77,25 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     document.documentElement.dir = dir;
   }, [lang, dir]);
 
+  // Voltar/avançar entre /pt-BR/… e /ja/… acompanha o idioma do endereço (sem salvar).
+  useEffect(() => {
+    const on = () => {
+      const p = pathLang();
+      if (p && available.has(p)) setLangState(p);
+    };
+    addEventListener("popstate", on);
+    addEventListener(NAV_EVENT, on);
+    return () => {
+      removeEventListener("popstate", on);
+      removeEventListener(NAV_EVENT, on);
+    };
+  }, []);
+
   const setLang = useCallback((code: string) => {
     setLangState(code);
     storage.setLang(code);
+    // Quem está numa versão /xx/ do endereço passa para a /yy/ do idioma escolhido.
+    replacePathLang(code);
   }, []);
 
   const value = useMemo<I18n>(() => {

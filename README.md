@@ -22,15 +22,17 @@ Junta o melhor de [fortnite.gg/sprites](https://fortnite.gg/sprites) (catálogo 
 
 | Rota | O que tem | Dados |
 |---|---|---|
-| `#/` | Álbum dos Sprites (T4 e T3) | `src/data/seasons.json` |
-| `#/shop` | Loja do dia, com preço e aviso de lista de desejos | fortnite-api `/v2/shop` (ao vivo) |
-| `#/cosmetics` | 16 mil cosméticos com busca, filtros e histórico na loja | `public/data/cosmetics` (gerado) + API por item |
-| `#/lists` | Lista de desejos e Meu armário, compartilháveis por link | no aparelho |
-| `#/leaks` | Itens novos nos arquivos do jogo | `/v2/cosmetics/new` |
-| `#/tracks` | 729 Jam Tracks, com o que está na loja | `/v2/cosmetics/tracks` |
-| `#/map` | Mapa atual com zoom e locais nomeados | `/v1/map` |
-| `#/news` | Notícias do jogo | `/v2/news/br` |
-| `#/season` | Contagem regressiva da temporada | `src/lib/ui.tsx` (`SEASON_END`) |
+| `/` | Álbum dos Sprites (T4 e T3) | `src/data/seasons.json` |
+| `/shop/` | Loja do dia, com preço e aviso de lista de desejos | fortnite-api `/v2/shop` (ao vivo) |
+| `/cosmetics/` | 16 mil cosméticos com busca, filtros e histórico na loja | `public/data/cosmetics` (gerado) + API por item |
+| `/lists/` | Lista de desejos e Meu armário, compartilháveis por link | no aparelho |
+| `/leaks/` | Itens novos nos arquivos do jogo | `/v2/cosmetics/new` |
+| `/jam-tracks/` | 729 Jam Tracks, com o que está na loja | `/v2/cosmetics/tracks` |
+| `/map/` | Mapa atual com zoom e locais nomeados | `/v1/map` |
+| `/news/` | Notícias do jogo | `/v2/news/br` |
+| `/season/` | Contagem regressiva da temporada | `src/lib/ui.tsx` (`SEASON_END`) |
+
+Cada rota tem endereço próprio em `/lockerdex/<rota>/` e uma versão por idioma em `/lockerdex/<idioma>/<rota>/`, por exemplo `/lockerdex/pt-BR/shop/`. O prefixo escolhe o idioma e segue nos links. Os links antigos com `#/rota` são convertidos ao abrir. A tabela de rotas fica em `src/lib/routes.json`.
 
 Tudo que vem da fortnite-api usa o idioma do app. Quando a API não tem o idioma, cai no inglês.
 
@@ -56,6 +58,21 @@ npm run build
 - `data/build_cosmetics.py` gera o catálogo enxuto de cosméticos: o índice mais os nomes nos 18 idiomas da API, cerca de 300 KB por idioma em vez de 23 MB. Rode de novo para atualizar o histórico da loja.
 
 O código da coleção guarda 2 bits por figurinha, indexados pelo id do fortnite.gg. Por isso um link antigo continua valendo quando entram sprites novos.
+
+## Google (SEO)
+
+O build (`seoPages` no `vite.config.ts`) gera uma página pronta por rota e por idioma. São 230 páginas, cada uma com título, descrição, link canônico, as 22 versões de idioma (hreflang), prévia de link (Open Graph, com `public/og.png`) e um texto com links dentro do `#root`. O build também gera `sitemap.xml`, `robots.txt` e `404.html`.
+
+Para cadastrar no **Google Search Console**:
+
+1. Entre em https://search.google.com/search-console com a conta Google pessoal.
+2. Clique em **Adicionar propriedade**, escolha **Prefixo do URL** e digite `https://matheusraull99.github.io/lockerdex/`.
+3. Em **Tag HTML**, copie só o valor de `content="…"`.
+4. Coloque esse valor no `.env` como `VITE_GSC_VERIFICATION=<valor>` e publique (push na `main`).
+5. Volte ao Search Console e clique em **Verificar**.
+6. Em **Sitemaps**, envie `sitemap.xml`.
+
+O `robots.txt` só vale na raiz de um domínio. No GitHub Pages ele fica pronto para quando o site ganhar domínio próprio; nesse caso, publique com `BASE_PATH=/` e `SITE_ORIGIN=https://<domínio>`.
 
 ## Sugestões
 

@@ -35,6 +35,11 @@ RARITY_ORDER = ["mythic", "legendary", "epic", "rare"]
 # faixa épica (e o Sprite Locker também o dá como épico).
 RARITY_FIX = {"Overshield": "epic"}
 
+# Já lançados no jogo antes de o fortnite.gg atualizar (lá ainda aparecem como "Unreleased").
+# Birthday: a Epic anunciou em 26/09/2026, na Birthday Power Hour do 9º aniversário
+# ("Birthday Sprite is here"), e ele já aparece nas partidas com as 5 variantes.
+RELEASED_FIX = {"Birthday"}
+
 # Valores por nível (1 → 5). unit vale para todos; units para pares.
 LEVELS = {
     "FillerGrunt": {"unit": "s", "values": [3, 3.5, 4, 4.5, 5]},
@@ -132,7 +137,7 @@ for sid, meta in SEASONS.items():
             "rarity": rarity,
             "levels": LEVELS.get(p),
             "location": location,
-            "unreleased": bool(base.get("unreleased")),
+            "unreleased": bool(base.get("unreleased")) and p not in RELEASED_FIX,
             "isNew": bool(base.get("is-new")),
             "slots": slots,
         })

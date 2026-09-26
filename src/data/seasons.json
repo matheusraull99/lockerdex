@@ -906,7 +906,7 @@
     "rarity": "rare",
     "levels": null,
     "location": "random",
-    "unreleased": true,
+    "unreleased": false,
     "isNew": false,
     "slots": [
      {

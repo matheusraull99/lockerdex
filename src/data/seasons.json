@@ -907,7 +907,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": false,
+    "isNew": true,
     "slots": [
      {
       "variant": "base",

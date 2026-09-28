@@ -36,9 +36,8 @@ RARITY_ORDER = ["mythic", "legendary", "epic", "rare"]
 RARITY_FIX = {"Overshield": "epic"}
 
 # Já lançados no jogo antes de o fortnite.gg atualizar (lá ainda aparecem como "Unreleased").
-# Birthday: a Epic anunciou em 26/09/2026, na Birthday Power Hour do 9º aniversário
-# ("Birthday Sprite is here"), e ele já aparece nas partidas com as 5 variantes.
-RELEASED_FIX = {"Birthday"}
+# Vazio desde 28/09/2026, quando o fortnite.gg passou a mostrar o Birthday como lançado.
+RELEASED_FIX = set()
 
 # Valores por nível (1 → 5). unit vale para todos; units para pares.
 LEVELS = {

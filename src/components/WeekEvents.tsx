@@ -5,7 +5,10 @@ import { weeklyEvents, type EventKey } from "../lib/weekly";
 
 type Key = Parameters<ReturnType<typeof useI18n>["t"]>[0];
 
-/** Faixa "Esta semana": bônus de segunda, elemental novo de quinta e Horas do Poder de sábado. */
+/**
+ * Faixa "Esta semana": bônus de segunda, elemental novo de quinta e Horas do Poder de sábado.
+ * data-nosnippet: o Google usava esta faixa como trecho da home, e o "começa em X dias" envelhece.
+ */
 export function WeekEvents() {
   const { t, lang } = useI18n();
   const [now, setNow] = useState(Date.now());
@@ -20,7 +23,7 @@ export function WeekEvents() {
   const localWd = new Date(now).getDay();
 
   return (
-    <section className="week" aria-labelledby="week-h">
+    <section className="week" aria-labelledby="week-h" data-nosnippet>
       <h2 id="week-h" className="week-h">
         {t("week.title")}
       </h2>

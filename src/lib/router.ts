@@ -9,7 +9,7 @@ import SLUGS from "./routes.json";
  * Dados de compartilhamento continuam no "#" (#c=… da coleção, #w=…&k=… das listas), para não irem ao servidor.
  * Versões por idioma para o Google: /lockerdex/pt-BR/shop/ (o prefixo escolhe o idioma e segue nos links).
  */
-export type Route = "sprites" | "shop" | "cosmetics" | "lists" | "leaks" | "tracks" | "map" | "news" | "season" | "history" | "more";
+export type Route = "sprites" | "shop" | "cosmetics" | "lists" | "leaks" | "tracks" | "map" | "news" | "season" | "history" | "lore" | "more";
 
 // A mesma tabela alimenta o build (vite.config.ts), que gera uma página pronta por endereço.
 export const SLUG: Record<Route, string> = SLUGS;

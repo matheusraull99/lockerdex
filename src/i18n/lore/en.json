@@ -1,0 +1,286 @@
+{
+  "title": "Fortnite lore",
+  "intro": "The story told inside the game, chapter by chapter: the Loop, the Seven, the Zero Point and every reality the island has passed through. Based on the game itself and on Epic's official comics and shorts.",
+  "chapters": "Chapters",
+  "eras": {
+    "c1": "Chapter 1",
+    "c2": "Chapter 2",
+    "c3": "Chapter 3",
+    "c4": "Chapter 4",
+    "c5": "Chapter 5",
+    "c6": "Chapter 6",
+    "c7": "Chapter 7"
+  },
+  "items": {
+    "storm": {
+      "title": "The Storm and the Loop",
+      "text": "The Storm that closes in on every match is, in the story, what keeps the Loop running: trapped on the island, the Loopers fight over and over and lose their memories. That explanation only comes much later."
+    },
+    "visitor": {
+      "title": "A comet and a visitor",
+      "text": "A comet crossed the sky in Season 3 and crashed in Season 4, opening Dusty Divot. Inside the rock was a capsule carrying the Visitor, a member of a group called the Seven."
+    },
+    "rocket": {
+      "title": "The rocket and the rifts",
+      "text": "The Visitor turned a movie prop rocket into a real one and launched it. Its flight opened rifts and a huge crack in the sky, and he spoke of a \"Zero Point Oscillator\", the first mention of the Zero Point."
+    },
+    "kevin": {
+      "title": "Kevin the Cube",
+      "text": "When the crack closed, a purple cube called Kevin appeared and crossed the island printing runes. It dissolved into Loot Lake, lifted the Floating Island and began to power the Storm. When it exploded, everyone was thrown into the In-Between and came back through a butterfly-shaped rift."
+    },
+    "iceking": {
+      "title": "The Ice King",
+      "text": "An iceberg brought the Ice King's castle to Polar Peak. When he woke up, he buried the island in snow."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "A jungle and a volcano appeared. In the Unvaulting event, the Vault was opened and the volcano destroyed Tilted Towers and Retail Row."
+    },
+    "showdown1": {
+      "title": "Robot vs. monster",
+      "text": "In The Final Showdown, the Mecha faced a giant monster, the Devourer. It tore the Zero Point out of the Vault for power and won with the sword of the Singularity statue, but the Zero Point became unstable."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "The Scientist arrived in a meteor that froze the Zero Point's explosion in time. Tapes found on the island spoke of the Seven, the Bridge and being \"looped\". At the end, seven rockets pushed the meteor through a rift into the Zero Point, and a black hole swallowed the island."
+    },
+    "apollo": {
+      "title": "An island born from the black hole",
+      "text": "A new island, Apollo, came out of the black hole. Loading screens from the Imagined Order said the Seven had succeeded and that \"the Zero Point is ours\"."
+    },
+    "agency": {
+      "title": "The Agency",
+      "text": "Midas founded the Agency, and a spy war began between GHOST and SHADOW. Brutus, TNTina, Meowscles and Skye each picked a side."
+    },
+    "device": {
+      "title": "The Device and Agent Jones",
+      "text": "Midas's machine pushed back the Storm, which turned into a wall of water. The Looper was thrown to the Bridge and met Agent Jones, who explained that it wasn't just a storm: it was tied to the Loop."
+    },
+    "nexus": {
+      "title": "The Nexus War",
+      "text": "Thor and the Marvel heroes arrived, and Galactus came for the Zero Point. Tony Stark's plan made him swallow Battle Buses full of bombs, and he was sent away through a rift."
+    },
+    "zeropoint": {
+      "title": "The Zero Point exposed",
+      "text": "The Zero Point lay open at the center of the island. On Doctor Slone's orders, Jones brought Hunters from other realities, like the Mandalorian, Kratos, Master Chief and the Predator, so that no one could escape the Loop."
+    },
+    "foundation": {
+      "title": "The Foundation",
+      "text": "Jones broke with the Imagined Order and called the Seven, offering to hand over \"Geno and the Sisters\", the first time Geno was named. The Foundation arrived and sealed himself inside the Zero Point, creating the Spire, while Jones was left trapped in the Loop."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "The island went wild. Raz stole the artifact from the Spire and was corrupted by it."
+    },
+    "invasion": {
+      "title": "The invasion",
+      "text": "The Last Reality invaded with its Mothership and destroyed the Spire, and the Imagined Order came out in the open. In Operation: Sky Fire, the Loopers blew up the Mothership and rebooted a Cube, which turned blue and started helping them."
+    },
+    "cubequeen": {
+      "title": "The Cube Queen",
+      "text": "Cubes corrupted the island, and the Cube Queen, ruler of the Last Reality, stepped out of the Golden Cube."
+    },
+    "theend2": {
+      "title": "The island flips",
+      "text": "The Foundation rescued Jones at the Bridge, and Jones switched off the gyroscope: the island turned upside down. The Visitor and the Scientist saved the Loopers, and the Queen retreated."
+    },
+    "flipped": {
+      "title": "The Seven vs. the Imagined Order",
+      "text": "On the flipped island, the Foundation asked the Loopers to help destroy the Imagined Order. The Seven's base was the Sanctuary."
+    },
+    "resistance": {
+      "title": "The Resistance",
+      "text": "The Imagined Order invaded with a giant drill, tanks and airships and shut down building. Doctor Strange and the Seven, including the Imagined and the Origin, joined the Resistance, which took the island back while the Imagined Order built the Collider to blow up the Zero Point."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "The Paradigm drove the Mecha into the Collider and crushed Doctor Slone. The Imagined sacrificed herself and fell into the Zero Point with Geno, and Jones and the Foundation jumped after them. Geno was scattered across the Omniverse."
+    },
+    "chrome": {
+      "title": "The Chrome",
+      "text": "The exposed Zero Point grew the Reality Tree, and members of the Seven began to disappear. The Chrome of the Herald, servant of the Nothing, took the Scientist and the Origin and spread across the island."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "The Herald merged with the Reality Tree and destroyed the islands of Chapters 2 and 3. The Zero Point pulled pieces of different realities together into a new island, Asteria."
+    },
+    "riftgate": {
+      "title": "The Rift Gate",
+      "text": "In the Citadel, the Oathbound served the Ageless. Stellan built a Rift Gate powered by Kinetic Ore, but it was sabotaged and exploded."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City arrived through a rift, and the Looper helped the Peace Syndicate track down a saboteur while earthquakes tied to the Zero Point shook the island."
+    },
+    "wilds": {
+      "title": "The jungle",
+      "text": "The center of the island sank into a jungle and the Zero Point turned to stone. Doctor Slone, free again, repaired the Apparatus, which predicted an eclipse."
+    },
+    "heist": {
+      "title": "A vampire's time machine",
+      "text": "Kado Thorne, a time-traveling vampire, set up on the island. Doctor Slone hired Nolan Chance's heist crew to steal his Time Machine and used it to send Jones into the past."
+    },
+    "og": {
+      "title": "Back to the beginning",
+      "text": "Jones landed in an alternate version of Chapter 1, Season 5. There, Kevin tried to pull out the Zero Point, and the rocket was rebuilt with the Time Machine strapped to it."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "The rocket and the meteor recreated the black hole, which became a Big Bang: new galaxies were born, including LEGO, racing and music, along with a new reality, Helios."
+    },
+    "underground": {
+      "title": "The Underground vs. the Society",
+      "text": "A war broke out between the Underground, led by Hope, and the Society of Montague and Valeria, Hope's sister. Peter Griffin was one of the Society's bosses."
+    },
+    "pandora": {
+      "title": "Pandora's Box",
+      "text": "A giant hand brought Pandora's Box to the island, and the players opened it."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus wanted to wipe out the mortals. The Oracle named the Looper the Hero of the Mortals, and Zeus lost his immortality and was defeated on Olympus."
+    },
+    "wanderer": {
+      "title": "The Wanderer",
+      "text": "Megalo Don wanted to fuel his ship, the Leviathan, with Nitro, and a mysterious Wanderer worked at his side. The Wanderer sabotaged the pipeline, and the blast uncovered Pandora's Box."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "The Wanderer was Doctor Doom, who absorbed the Box's power. Jones became Captain Jones, and the heroes defeated Doom and sent him back to his own reality."
+    },
+    "remix": {
+      "title": "Toward Reality 783",
+      "text": "In Remix: The Finale, Hope, Jones and the Looper went through a rift, followed by a shard of the Zero Point, toward Reality 783."
+    },
+    "spirits": {
+      "title": "The Spirit Realm",
+      "text": "The shard of the Zero Point reopened portals to the Spirit Realm, and demons returned. Shogun X took the shard to the Dark Presence, until Daigo, a maker of masks, defeated him and freed Jade. A new Shogun X took his place."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Magic gold spread across the island. Fletcher Kane cornered it all, the Outlaws led by Midas fought back, and Midas wanted the shard too. Daigo broke the seal of the Spirit Realm and was corrupted into a demon."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Palpatine's Empire arrived with the Death Star, and Hope and Jones joined the Resistance. When the Death Star was sabotaged, its debris hit a spirit portal, gave powers to the people of the island and drew Superman in."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "A possessed Daigo drained the island with Spires. Hope, Jones and the Night Rose founded the Supernova Academy with Superman and Robin, and in the end Superman cut off a tentacle of the Dark Presence, closed the portal and brought Daigo back."
+    },
+    "swarm": {
+      "title": "The Swarm",
+      "text": "From the rotting tentacle came the Swarm, an invasion of bugs. The O.X.R. of General Onyx Winter and the Power Rangers, with their Megazord, fought the infestation, until the Dark Presence itself crossed over to the island."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope stole a sliver of the shard with Kang and Kodos's ship, and realities merged into Springfield. Homer fused the sliver with a TV remote, turned reality upside down and finally gave it back."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope and Jones gathered forces from across the Omniverse, including Godzilla, Kong, Superman, the Rangers and Homer. Jones called in a red Cube and the Mecha kicked it into the Dark Presence, which was destroyed. The shard healed Oninoshima and carried Hope, Jones and the Looper to a new reality."
+    },
+    "voyager": {
+      "title": "The Dark Voyager",
+      "text": "The Dark Voyager shot down the Battle Bus, and the Order arrived in a meteor, answering Jones's signal. The Voyager took over the InnoLoop labs and the shard kept there and locked the Order up, until the Looper set her free and she built a beacon from the Scientist's plans to call the Seven."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "A rocket came through a red rift carrying the Visitor, who said he came from an \"Unknown Reality\". Then, holding three of the seven shards, the Dark Harvester ship opened Rift Portals to the realities of the missing ones."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "The Ice King's fortress arrived with the Foundation frozen in his collection, and the island split into Team Foundation and Team Ice King. AMIE revealed the fate of the original Seven: the Imagined was dead, the Scientist, the Origin and the original Visitor had been lost to the Chrome, and the Paradigm had sacrificed herself."
+    },
+    "stwlink": {
+      "title": "Save the World meets the island",
+      "text": "For the first time, the story tied Save the World to the island: the Dark Voyager showed up at the Homebase, and Jess and Penny traveled to the Battle Royale island to join the New Seven."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "The Ice King froze the Foundation and was taken out by the Voyager, who rebuilt the Zero Point. The Looper sliced the Harvester with the Infinity Blade and the island became the Shattered Coast. Then the Visitor shot Jones and revealed who he really was: Geno, the Voyager's master."
+    },
+    "sprites": {
+      "title": "Runners: the Sprites",
+      "text": "With Jones in a healing tank, Doctor Slone and the Singularity arrived. The unstable Zero Point gave birth to the Sprites, made of the same matter as the Zero Point, which power the Stabilizer and help heal Jones. A Sprite joined the Seven as the Guardian, Slone joined as Innovation and Hope as the Prophecy."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Through a back door in the Stabilizer, Geno hacked the Loop and seized the Zero Point, leaving a video game cartridge in its place."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno plugged the Zero Point into his machine, and consoles spread across the island harvest matter to build his perfect world in the sky. Jones woke from his coma, Geno revealed that he had created the Imagined and the Order, and the Looper refused to join him."
+    }
+  },
+  "who": {
+    "title": "Who's who",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agent Jones",
+        "text": "Former Imagined Order agent turned hero. The face of the default outfit, tied to the Loop since The Device."
+      },
+      "visitor": {
+        "name": "The Visitor",
+        "text": "Navigator of the Seven who launched the rocket in Chapter 1. The \"Visitor\" of Chapter 7 was Geno in disguise."
+      },
+      "scientist": {
+        "name": "The Scientist",
+        "text": "Engineer of the Seven and creator of AMIE. Lost to the Chrome."
+      },
+      "paradigm": {
+        "name": "The Paradigm",
+        "text": "Pilot of the Mecha. She sacrificed herself for the Seven."
+      },
+      "foundation": {
+        "name": "The Foundation",
+        "text": "Leader of the Seven. He returned in Chapter 7, frozen in the Ice King's collection."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Crime boss who founded the Agency and keeps coming back."
+      },
+      "slone": {
+        "name": "Doctor Slone",
+        "text": "Imagined Order commander who later joined the Seven as Innovation."
+      },
+      "cubequeen": {
+        "name": "The Cube Queen",
+        "text": "Ruler of the Last Reality."
+      },
+      "imagined": {
+        "name": "The Imagined",
+        "text": "Geno's daughter and a member of the Seven. She died in Collision."
+      },
+      "order": {
+        "name": "The Order",
+        "text": "Geno's other daughter and a member of the Seven, who gathers the New Seven."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Founder of the Imagined Order and the central villain of the story."
+      },
+      "herald": {
+        "name": "The Herald",
+        "text": "Herald of the Nothing, who spreads the Chrome."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Time-traveling vampire whose Time Machine was stolen in a heist."
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Founder of the Underground, who sees the future in graffiti. She joined the Seven as the Prophecy."
+      },
+      "voyager": {
+        "name": "The Dark Voyager",
+        "text": "Serves Geno and hunts the shards of the Zero Point."
+      }
+    }
+  },
+  "now": {
+    "title": "The story goes on",
+    "text": "Every season adds a new chapter to the story, told through quests, live events and comics. Follow the current season to see what happens next."
+  },
+  "sources": "Based on the Fortnite Wiki (Weird Gloop), Epic's patch notes and official comics, and the gaming press. Fan theories are left out."
+}

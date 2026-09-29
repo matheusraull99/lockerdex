@@ -1,0 +1,286 @@
+{
+  "title": "Fortnite का लोर",
+  "intro": "गेम के अंदर सुनाई गई कहानी, चैप्टर दर चैप्टर: Loop, The Seven, Zero Point और वह हर रियलिटी जिससे आइलैंड गुज़र चुका है। यह ख़ुद गेम और Epic की आधिकारिक कॉमिक्स और शॉर्ट फ़िल्मों पर आधारित है।",
+  "chapters": "चैप्टर्स",
+  "eras": {
+    "c1": "चैप्टर 1",
+    "c2": "चैप्टर 2",
+    "c3": "चैप्टर 3",
+    "c4": "चैप्टर 4",
+    "c5": "चैप्टर 5",
+    "c6": "चैप्टर 6",
+    "c7": "चैप्टर 7"
+  },
+  "items": {
+    "storm": {
+      "title": "स्टॉर्म और Loop",
+      "text": "हर मैच में घेरा छोटा करता स्टॉर्म, कहानी में, वही चीज़ है जो Loop को चलाए रखती है: आइलैंड पर फँसे Loopers बार-बार लड़ते हैं और अपनी यादें खो देते हैं। यह बात बहुत बाद में जाकर समझाई जाती है।"
+    },
+    "visitor": {
+      "title": "एक धूमकेतु और एक मेहमान",
+      "text": "सीज़न 3 में एक धूमकेतु आसमान से गुज़रा और सीज़न 4 में आ गिरा, जिससे Dusty Divot बना। चट्टान के अंदर एक कैप्सूल था, जिसमें The Visitor था, जो The Seven नाम के एक समूह का सदस्य है।"
+    },
+    "rocket": {
+      "title": "रॉकेट और दरारें",
+      "text": "The Visitor ने फ़िल्म के एक नक़ली प्रॉप रॉकेट को असली रॉकेट में बदलकर लॉन्च कर दिया। उसकी उड़ान से कई दरारें खुल गईं और आसमान में एक विशाल दरार पड़ गई, और उसने “Zero Point Oscillator” की बात की, जो Zero Point का पहला ज़िक्र था।"
+    },
+    "kevin": {
+      "title": "Kevin the Cube",
+      "text": "आसमान की दरार बंद हुई तो Kevin नाम का एक बैंगनी क्यूब प्रकट हुआ, जो रून छापता हुआ पूरे आइलैंड से गुज़रा। वह Loot Lake में घुल गया, जिससे Floating Island हवा में उठ गया, और फिर स्टॉर्म को ताक़त देने लगा। जब वह फटा, तो सब In-Between में जा गिरे और तितली के आकार की एक दरार से वापस लौटे।"
+    },
+    "iceking": {
+      "title": "The Ice King",
+      "text": "एक हिमखंड The Ice King के महल को Polar Peak तक ले आया। जागने के बाद उसने पूरे आइलैंड को बर्फ़ से ढक दिया।"
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "एक जंगल और एक ज्वालामुखी उभर आए। The Unvaulting इवेंट में Vault खोला गया और ज्वालामुखी ने Tilted Towers और Retail Row को तबाह कर दिया।"
+    },
+    "showdown1": {
+      "title": "रोबोट बनाम राक्षस",
+      "text": "The Final Showdown में Mecha का सामना एक विशाल राक्षस, Devourer, से हुआ। ताक़त पाने के लिए Mecha ने Zero Point को Vault से उखाड़ लिया और Singularity की मूर्ति की तलवार से जीत हासिल की, लेकिन Zero Point अस्थिर हो गया।"
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "The Scientist एक उल्कापिंड में आया, जिसने Zero Point के धमाके को समय में जमा दिया। आइलैंड पर मिले टेपों में The Seven, Bridge और “looped” होने की बातें थीं। आख़िर में सात रॉकेटों ने उल्कापिंड को एक दरार के रास्ते Zero Point में धकेल दिया, और एक ब्लैक होल आइलैंड को निगल गया।"
+    },
+    "apollo": {
+      "title": "ब्लैक होल से जन्मा एक आइलैंड",
+      "text": "ब्लैक होल से एक नया आइलैंड निकला: Apollo। Imagined Order की लोडिंग स्क्रीन्स कहती थीं कि The Seven कामयाब हो चुके हैं और “Zero Point हमारा है”।"
+    },
+    "agency": {
+      "title": "The Agency",
+      "text": "Midas ने The Agency की नींव रखी, और GHOST और SHADOW के बीच जासूसों की जंग छिड़ गई। Brutus, TNTina, Meowscles और Skye, सबने अपना-अपना पक्ष चुना।"
+    },
+    "device": {
+      "title": "The Device और Agent Jones",
+      "text": "Midas की मशीन ने स्टॉर्म को पीछे धकेल दिया, और स्टॉर्म पानी की एक दीवार बन गया। Looper छिटककर Bridge पर जा पहुँचा और उसकी मुलाक़ात Agent Jones से हुई, जिसने समझाया कि यह सिर्फ़ एक तूफ़ान नहीं था: यह Loop से जुड़ा था।"
+    },
+    "nexus": {
+      "title": "Nexus War",
+      "text": "Thor और Marvel के हीरो आ पहुँचे, और Galactus, Zero Point के लिए आया। Tony Stark की योजना से उसने बमों से भरी कई Battle Bus निगल लीं, और उसे एक दरार के रास्ते दूर भेज दिया गया।"
+    },
+    "zeropoint": {
+      "title": "खुला हुआ Zero Point",
+      "text": "Zero Point आइलैंड के बीचों-बीच खुला पड़ा था। Doctor Slone के आदेश पर Jones दूसरी रियलिटीज़ से शिकारी ले आया, जैसे The Mandalorian, Kratos, Master Chief और Predator, ताकि कोई भी Loop से बच न पाए।"
+    },
+    "foundation": {
+      "title": "The Foundation",
+      "text": "Jones ने Imagined Order से नाता तोड़ लिया और The Seven को बुलाया, इस पेशकश के साथ कि वह “Geno और बहनों” को उनके हवाले कर देगा। यह पहली बार था जब Geno का नाम सामने आया। The Foundation आया और उसने ख़ुद को Zero Point के अंदर सील कर लिया, जिससे Spire बना, जबकि Jones, Loop में फँसा रह गया।"
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "आइलैंड जंगली हो गया। Raz ने Spire से आर्टिफ़ैक्ट चुरा लिया और उसी के असर से दूषित हो गया।"
+    },
+    "invasion": {
+      "title": "हमला",
+      "text": "Last Reality ने अपने Mothership के साथ हमला किया और Spire को तबाह कर दिया, और Imagined Order खुलकर सामने आ गया। Operation: Sky Fire में Loopers ने Mothership को उड़ा दिया और एक क्यूब को रीबूट किया, जो नीला हो गया और उनकी मदद करने लगा।"
+    },
+    "cubequeen": {
+      "title": "Cube Queen",
+      "text": "क्यूब्स ने आइलैंड को दूषित कर दिया, और Last Reality की शासक Cube Queen, Golden Cube से बाहर निकली।"
+    },
+    "theend2": {
+      "title": "आइलैंड उलट गया",
+      "text": "The Foundation ने Bridge पर Jones को बचाया, और Jones ने जाइरोस्कोप बंद कर दिया: आइलैंड उलटा हो गया। The Visitor और The Scientist ने Loopers को बचा लिया, और Queen पीछे हट गई।"
+    },
+    "flipped": {
+      "title": "The Seven बनाम Imagined Order",
+      "text": "उलटे हुए आइलैंड पर The Foundation ने Loopers से Imagined Order को ख़त्म करने में मदद माँगी। The Seven का ठिकाना Sanctuary था।"
+    },
+    "resistance": {
+      "title": "Resistance",
+      "text": "Imagined Order ने एक विशाल ड्रिल, टैंकों और एयरशिप के साथ हमला किया और बिल्डिंग बंद कर दी। Doctor Strange और The Seven, जिनमें The Imagined और The Origin भी थे, Resistance में शामिल हो गए, जिसने आइलैंड वापस हासिल कर लिया, जबकि Imagined Order ने Zero Point को उड़ाने के लिए Collider बनाया।"
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "The Paradigm ने Mecha को सीधा Collider में घुसा दिया और Doctor Slone को कुचल दिया। The Imagined ने अपना बलिदान दिया और Geno के साथ Zero Point में जा गिरी, और Jones और The Foundation भी उनके पीछे कूद पड़े। Geno पूरे Omniverse में बिखर गया।"
+    },
+    "chrome": {
+      "title": "Chrome",
+      "text": "खुले पड़े Zero Point से Reality Tree उग आया, और The Seven के सदस्य ग़ायब होने लगे। The Nothing की सेविका The Herald के Chrome ने The Scientist और The Origin को अपनी चपेट में ले लिया और पूरे आइलैंड पर फैल गया।"
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "The Herald, Reality Tree में समा गई और उसने चैप्टर 2 और 3 के आइलैंड नष्ट कर दिए। Zero Point ने अलग-अलग रियलिटीज़ के हिस्सों को जोड़कर एक नया आइलैंड बनाया: Asteria।"
+    },
+    "riftgate": {
+      "title": "Rift Gate",
+      "text": "Citadel में Oathbound, The Ageless की सेवा करते थे। Stellan ने Kinetic Ore से चलने वाला एक Rift Gate बनाया, लेकिन उसमें तोड़फोड़ की गई और वह फट गया।"
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "एक दरार के रास्ते MEGA City का आगमन हुआ, और Looper ने तोड़फोड़ करने वाले एक शख़्स को ढूँढ निकालने में Peace Syndicate की मदद की, जबकि Zero Point से जुड़े भूकंप आइलैंड को हिला रहे थे।"
+    },
+    "wilds": {
+      "title": "जंगल",
+      "text": "आइलैंड का बीच का हिस्सा धँसकर एक जंगल बन गया और Zero Point पत्थर में बदल गया। फिर से आज़ाद हुई Doctor Slone ने Apparatus की मरम्मत की, जिसने एक ग्रहण की भविष्यवाणी की।"
+    },
+    "heist": {
+      "title": "एक वैम्पायर की टाइम मशीन",
+      "text": "समय में सफ़र करने वाला वैम्पायर Kado Thorne आइलैंड पर आ बसा। Doctor Slone ने उसकी टाइम मशीन चुराने के लिए Nolan Chance की डकैती टीम को काम पर रखा और उसी मशीन से Jones को अतीत में भेज दिया।"
+    },
+    "og": {
+      "title": "वापस शुरुआत पर",
+      "text": "Jones चैप्टर 1, सीज़न 5 के एक वैकल्पिक संस्करण में जा पहुँचा। वहाँ Kevin ने Zero Point को बाहर खींचने की कोशिश की, और रॉकेट को फिर से बनाया गया, इस बार उस पर टाइम मशीन बँधी हुई थी।"
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "रॉकेट और उल्कापिंड ने ब्लैक होल को फिर से बना दिया, जो एक बिग बैंग में बदल गया: नई गैलेक्सियाँ पैदा हुईं, जिनमें LEGO, रेसिंग और म्यूज़िक भी थीं, और साथ ही एक नई रियलिटी भी: Helios।"
+    },
+    "underground": {
+      "title": "Underground बनाम Society",
+      "text": "Hope की अगुवाई वाले Underground और Montague तथा Hope की बहन Valeria की Society के बीच जंग छिड़ गई। Peter Griffin, Society के बॉसों में से एक था।"
+    },
+    "pandora": {
+      "title": "Pandora's Box",
+      "text": "एक विशाल हाथ Pandora's Box को आइलैंड पर ले आया, और खिलाड़ियों ने उसे खोल दिया।"
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus नश्वर इंसानों का सफ़ाया करना चाहता था। Oracle ने Looper को नश्वरों का हीरो घोषित किया, और Zeus अपनी अमरता खो बैठा और Olympus पर हार गया।"
+    },
+    "wanderer": {
+      "title": "Wanderer",
+      "text": "Megalo Don अपने जहाज़ Leviathan को Nitro से चलाना चाहता था, और एक रहस्यमय Wanderer उसके साथ काम करता था। Wanderer ने पाइपलाइन में तोड़फोड़ की, और धमाके से Pandora's Box सामने आ गया।"
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Wanderer असल में Doctor Doom था, जिसने Box की ताक़त सोख ली। Jones, Captain Jones बन गया, और हीरोज़ ने Doom को हराकर उसकी अपनी रियलिटी में वापस भेज दिया।"
+    },
+    "remix": {
+      "title": "रियलिटी 783 की ओर",
+      "text": "Remix: The Finale में Hope, Jones और Looper एक दरार से होकर रियलिटी 783 की ओर निकल पड़े, और Zero Point का एक टुकड़ा उनके पीछे-पीछे आया।"
+    },
+    "spirits": {
+      "title": "Spirit Realm",
+      "text": "Zero Point के टुकड़े ने Spirit Realm के पोर्टल फिर से खोल दिए, और दानव लौट आए। Shogun X वह टुकड़ा Dark Presence के पास ले गया, पर फिर मुखौटे बनाने वाले Daigo ने उसे हराकर Jade को आज़ाद करा दिया। उसकी जगह एक नया Shogun X आ गया।"
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "आइलैंड पर जादुई सोना फैल गया। Fletcher Kane ने सारा सोना अपने क़ब्ज़े में कर लिया, Midas की अगुवाई वाले Outlaws ने पलटवार किया, और Midas को वह टुकड़ा भी चाहिए था। Daigo ने Spirit Realm की मुहर तोड़ दी और दूषित होकर दानव बन गया।"
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Palpatine का Empire, Death Star के साथ आ पहुँचा, और Hope और Jones, Resistance में शामिल हो गए। जब Death Star में तोड़फोड़ हुई, तो उसका मलबा एक स्पिरिट पोर्टल से टकराया, जिससे आइलैंड के लोगों को शक्तियाँ मिल गईं और Superman भी खिंचा चला आया।"
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "वशीभूत Daigo ने Spires के ज़रिए आइलैंड की ऊर्जा सोख ली। Hope, Jones और The Night Rose ने Superman और Robin के साथ मिलकर Supernova Academy की स्थापना की, और आख़िर में Superman ने Dark Presence का एक टेंटेकल काट डाला, पोर्टल बंद किया और Daigo को वापस ले आया।"
+    },
+    "swarm": {
+      "title": "Swarm",
+      "text": "सड़ते हुए टेंटेकल से Swarm निकला, कीड़ों का एक हमला। जनरल Onyx Winter की O.X.R. और Power Rangers ने अपने Megazord के साथ इस प्रकोप का मुक़ाबला किया, जब तक कि ख़ुद Dark Presence ने आइलैंड पर क़दम नहीं रख दिया।"
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope ने Kang और Kodos के यान से उस टुकड़े का एक छोटा-सा अंश चुरा लिया, और कई रियलिटीज़ आपस में घुल-मिलकर Springfield बन गईं। Homer ने उस अंश को एक टीवी रिमोट से जोड़ दिया, रियलिटी को उलट-पुलट कर दिया और आख़िरकार उसे लौटा दिया।"
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope और Jones ने पूरे Omniverse से ताक़तें जुटाईं, जिनमें Godzilla, Kong, Superman, Rangers और Homer भी थे। Jones ने एक लाल क्यूब बुलाया और Mecha ने उसे किक मारकर Dark Presence पर दे मारा, जिससे Dark Presence का ख़ात्मा हो गया। टुकड़े ने Oninoshima को ठीक कर दिया और Hope, Jones और Looper को एक नई रियलिटी में ले गया।"
+    },
+    "voyager": {
+      "title": "Dark Voyager",
+      "text": "Dark Voyager ने Battle Bus को मार गिराया, और Jones के सिग्नल का जवाब देते हुए The Order एक उल्कापिंड में आ पहुँची। Voyager ने InnoLoop की लैब्स और वहाँ रखे टुकड़े पर क़ब्ज़ा कर लिया और The Order को तब तक क़ैद में रखा, जब तक Looper ने उसे आज़ाद नहीं करा दिया। फिर उसने The Scientist के डिज़ाइनों से एक बीकन बनाया, ताकि The Seven को बुलाया जा सके।"
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "एक लाल दरार से होकर एक रॉकेट आया, जिसमें The Visitor था। उसने कहा कि वह एक “Unknown Reality” से आया है। फिर सात में से तीन टुकड़े अपने पास रखे Dark Harvester जहाज़ ने बाक़ी टुकड़ों की रियलिटीज़ तक Rift Portals खोल दिए।"
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "The Ice King का क़िला आ पहुँचा, जिसमें उसके कलेक्शन में The Foundation जमा हुआ था, और आइलैंड Team Foundation और Team Ice King में बँट गया। AMIE ने मूल The Seven की क़िस्मत का ख़ुलासा किया: The Imagined की मौत हो चुकी थी, The Scientist, The Origin और मूल The Visitor, Chrome में खो गए थे, और The Paradigm ने अपना बलिदान दे दिया था।"
+    },
+    "stwlink": {
+      "title": "Save the World और आइलैंड का मिलन",
+      "text": "पहली बार कहानी ने Save the World को आइलैंड से जोड़ा: Dark Voyager, Homebase पर दिखाई दिया, और Jess और Penny, New Seven में शामिल होने के लिए Battle Royale के आइलैंड पर पहुँचीं।"
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "The Ice King ने The Foundation को जमा दिया और फिर ख़ुद Voyager के हाथों ख़त्म हो गया, जिसने Zero Point को दोबारा बनाया। Looper ने Infinity Blade से Harvester को चीर डाला और आइलैंड Shattered Coast बन गया। फिर The Visitor ने Jones को गोली मार दी और बताया कि वह असल में कौन था: Geno, Voyager का मालिक।"
+    },
+    "sprites": {
+      "title": "Runners: स्प्राइट्स",
+      "text": "Jones एक हीलिंग टैंक में था, तभी Doctor Slone और Singularity का आगमन हुआ। अस्थिर Zero Point से स्प्राइट्स का जन्म हुआ, जो Zero Point वाले पदार्थ से ही बने हैं, Stabilizer को ऊर्जा देते हैं और Jones को ठीक होने में मदद करते हैं। एक स्प्राइट The Guardian के रूप में The Seven में शामिल हुआ, Slone, Innovation के रूप में और Hope, The Prophecy के रूप में शामिल हुईं।"
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Stabilizer में एक बैक डोर के ज़रिए Geno ने Loop को हैक किया और Zero Point पर क़ब्ज़ा कर लिया, और उसकी जगह एक वीडियो गेम कार्ट्रिज छोड़ दिया।"
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno ने Zero Point को अपनी मशीन में लगा दिया, और आइलैंड पर जगह-जगह लगे कंसोल आसमान में उसकी परफ़ेक्ट दुनिया बनाने के लिए पदार्थ इकट्ठा करते हैं। Jones कोमा से जागा, Geno ने बताया कि The Imagined और The Order को उसी ने बनाया था, और Looper ने उसका साथ देने से इनकार कर दिया।"
+    }
+  },
+  "who": {
+    "title": "कौन क्या है",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agent Jones",
+        "text": "Imagined Order का पूर्व एजेंट, जो हीरो बन गया। डिफ़ॉल्ट आउटफ़िट का चेहरा, जो The Device के बाद से Loop से जुड़ा है।"
+      },
+      "visitor": {
+        "name": "The Visitor",
+        "text": "The Seven का नेविगेटर, जिसने चैप्टर 1 में रॉकेट लॉन्च किया। चैप्टर 7 वाला “Visitor” असल में भेस बदले हुए Geno था।"
+      },
+      "scientist": {
+        "name": "The Scientist",
+        "text": "The Seven का इंजीनियर और AMIE का निर्माता। Chrome में खो गया।"
+      },
+      "paradigm": {
+        "name": "The Paradigm",
+        "text": "Mecha की पायलट। उसने The Seven के लिए अपना बलिदान दे दिया।"
+      },
+      "foundation": {
+        "name": "The Foundation",
+        "text": "The Seven का लीडर। वह चैप्टर 7 में लौटा, The Ice King के कलेक्शन में जमा हुआ।"
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "अपराध की दुनिया का बॉस, जिसने The Agency की नींव रखी और जो बार-बार लौट आता है।"
+      },
+      "slone": {
+        "name": "Doctor Slone",
+        "text": "Imagined Order की कमांडर, जो बाद में Innovation के रूप में The Seven में शामिल हुईं।"
+      },
+      "cubequeen": {
+        "name": "Cube Queen",
+        "text": "Last Reality की शासक।"
+      },
+      "imagined": {
+        "name": "The Imagined",
+        "text": "Geno की बेटी और The Seven की सदस्य। Collision में उसकी मौत हो गई।"
+      },
+      "order": {
+        "name": "The Order",
+        "text": "Geno की दूसरी बेटी और The Seven की सदस्य, जो New Seven को इकट्ठा करती है।"
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Imagined Order का संस्थापक और कहानी का मुख्य खलनायक।"
+      },
+      "herald": {
+        "name": "The Herald",
+        "text": "The Nothing की दूत, जो Chrome फैलाती है।"
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "समय में सफ़र करने वाला वैम्पायर, जिसकी टाइम मशीन एक डकैती में चुरा ली गई।"
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Underground की संस्थापक, जो ग्रैफ़िटी में भविष्य देखती है। वह The Prophecy के रूप में The Seven में शामिल हुई।"
+      },
+      "voyager": {
+        "name": "Dark Voyager",
+        "text": "Geno की सेवा करता है और Zero Point के टुकड़ों का शिकार करता है।"
+      }
+    }
+  },
+  "now": {
+    "title": "कहानी जारी है",
+    "text": "हर सीज़न कहानी में एक नया अध्याय जोड़ता है, जिसे क्वेस्ट, लाइव इवेंट और कॉमिक्स के ज़रिए सुनाया जाता है। आगे क्या होगा, यह देखने के लिए मौजूदा सीज़न पर नज़र रखें।"
+  },
+  "sources": "Fortnite Wiki (Weird Gloop), Epic के पैच नोट्स और आधिकारिक कॉमिक्स, और गेमिंग मीडिया पर आधारित। फ़ैन थ्योरीज़ को शामिल नहीं किया गया है।"
+}

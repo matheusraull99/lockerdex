@@ -9,6 +9,7 @@ import { feedbackEnabled } from "./lib/feedback";
 import { InstallDialog } from "./components/InstallDialog";
 import { FeedbackDialog } from "./components/FeedbackDialog";
 import { ThemeDialog } from "./components/ThemeDialog";
+import { AvatarBadge, Walker } from "./components/Avatar";
 import { SpritesPage } from "./pages/SpritesPage";
 import { ShopPage } from "./pages/ShopPage";
 import { CosmeticsPage } from "./pages/CosmeticsPage";
@@ -88,14 +89,15 @@ export default function App() {
   );
 
   // As páginas secundárias acendem "Mais"; no celular, também as abas que só existem no topo (listas, história).
-  const activeTab: Route = TABS.some((x) => x.route === route) ? route : "more";
+  // O enredo é o segundo modo da aba História.
+  const activeTab: Route = TABS.some((x) => x.route === route) ? route : route === "lore" ? "history" : "more";
   const activeMobile: Route = TABS.some((x) => x.route === route && x.mobile) ? route : "more";
 
   // Título da aba por página e por idioma (é o que aparece no histórico e no Google).
   useEffect(() => {
     const NAV: Record<Route, Parameters<typeof t>[0]> = {
       sprites: "nav.sprites", shop: "nav.shop", cosmetics: "nav.cosmetics", lists: "nav.lists", leaks: "nav.leaks",
-      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", more: "nav.more",
+      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", more: "nav.more",
     };
     // Mesmo formato das páginas geradas no build (vite.config.ts), para o Google ver um título só.
     document.title = route === "sprites" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
@@ -120,7 +122,9 @@ export default function App() {
       case "season":
         return <SeasonPage />;
       case "history":
-        return <HistoryPage />;
+        return <HistoryPage kind="history" />;
+      case "lore":
+        return <HistoryPage kind="lore" />;
       case "more":
         return <MorePage />;
       default:
@@ -133,10 +137,13 @@ export default function App() {
       <div className="app">
         <header className="top">
           <a className="brand" href={href("sprites")}>
-            <span className="brand-w">
-              LOCKER<span>DEX</span>
+            <AvatarBadge className="brand-av" />
+            <span className="brand-tx">
+              <span className="brand-w">
+                LOCKER<span>DEX</span>
+              </span>
+              <span className="brand-t">{t("app.tagline")}</span>
             </span>
-            <span className="brand-t">{t("app.tagline")}</span>
           </a>
           <nav className="nav-top" aria-label={t("nav.more")}>
             {TABS.map((x) => (
@@ -161,6 +168,9 @@ export default function App() {
           </button>
           <label className="lang">
             <span className="sr">{t("lang.label")}</span>
+            <span className="lang-code" aria-hidden>
+              {lang}
+            </span>
             <select value={lang} onChange={(e) => setLang(e.target.value)}>
               {OFFERED.map((l) => (
                 <option key={l.code} value={l.code}>
@@ -203,6 +213,8 @@ export default function App() {
           </a>
         ))}
       </nav>
+
+      <Walker />
 
       {installing && <InstallDialog ios={inst.ios} onClose={() => setInstalling(false)} />}
       {theming && <ThemeDialog onClose={() => setTheming(false)} />}

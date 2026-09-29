@@ -1,0 +1,286 @@
+{
+  "title": "Fortnite'ın oyun içi hikâyesi",
+  "intro": "Oyunun içinde anlatılan hikâye, bölüm bölüm: Döngü, Yedili, Sıfır Noktası ve adanın geçtiği her gerçeklik. Oyunun kendisine ve Epic'in resmî çizgi romanlarıyla kısa filmlerine dayanır.",
+  "chapters": "Bölümler",
+  "eras": {
+    "c1": "Bölüm 1",
+    "c2": "Bölüm 2",
+    "c3": "Bölüm 3",
+    "c4": "Bölüm 4",
+    "c5": "Bölüm 5",
+    "c6": "Bölüm 6",
+    "c7": "Bölüm 7"
+  },
+  "items": {
+    "storm": {
+      "title": "Fırtına ve Döngü",
+      "text": "Her maçta daralan Fırtına, hikâyede Döngü'yü çalışır hâlde tutan şeydir: adada mahsur kalan Döngücüler tekrar tekrar savaşır ve hafızalarını kaybeder. Bu açıklama ancak çok sonra gelir."
+    },
+    "visitor": {
+      "title": "Bir kuyruklu yıldız ve bir ziyaretçi",
+      "text": "Sezon 3'te gökyüzünden bir kuyruklu yıldız geçti ve Sezon 4'te düşerek Derbeder Delik'i oluşturdu. Kayanın içinde, Yedili adlı bir grubun üyesi olan Ziyaretçi'yi taşıyan bir kapsül vardı."
+    },
+    "rocket": {
+      "title": "Roket ve yırtıklar",
+      "text": "Ziyaretçi, bir film dekoru olan roketi gerçek bir rokete dönüştürüp fırlattı. Roketin uçuşu yırtıklar ve gökyüzünde dev bir çatlak açtı; Ziyaretçi de bir “Sıfır Noktası Osilatörü”nden söz etti. Sıfır Noktası ilk kez böyle anıldı."
+    },
+    "kevin": {
+      "title": "Küp Şükrü",
+      "text": "Çatlak kapanınca Şükrü adında mor bir küp belirdi ve rünler basarak adayı baştan başa geçti. Ganimet Gölü'nde eriyip Uçan Ada'yı havaya kaldırdı ve Fırtına'ya güç vermeye başladı. Patladığında herkes Ara Dünya'ya fırlatıldı ve kelebek şeklinde bir yırtıktan geri döndü."
+    },
+    "iceking": {
+      "title": "Buz Kralı",
+      "text": "Bir buzdağı, Buz Kralı'nın şatosunu Polar Peak'e getirdi. Buz Kralı uyanınca adayı karlar altına gömdü."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Bir tropik orman ve bir yanardağ ortaya çıktı. The Unvaulting etkinliğinde Mahzen açıldı ve yanardağ, Tilted Towers ile Retail Row'u yok etti."
+    },
+    "showdown1": {
+      "title": "Robot, canavara karşı",
+      "text": "The Final Showdown etkinliğinde Meka, Pisboğaz adlı dev bir canavarla karşılaştı. Güç almak için Sıfır Noktası'nı Mahzen'den söküp aldı ve Benzersiz Savaşçı heykelinin kılıcıyla kazandı, ama Sıfır Noktası dengesiz hâle geldi."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "Bilim İnsanı, Sıfır Noktası'nın patlamasını zamanda donduran bir meteorla geldi. Adada bulunan kasetler Yedili'den, Köprü'den ve “döngüde” olmaktan söz ediyordu. Sonunda yedi roket meteoru bir yırtıktan geçirerek Sıfır Noktası'na itti ve bir kara delik adayı yuttu."
+    },
+    "apollo": {
+      "title": "Kara delikten doğan bir ada",
+      "text": "Kara delikten yeni bir ada çıktı: Apollo. Gizemli Örgüt'ün yükleme ekranları, Yedili'nin başardığını söylüyor ve “Sıfır Noktası bizim” diyordu."
+    },
+    "agency": {
+      "title": "Büro",
+      "text": "Midas Büro'yu kurdu ve AYDINLIK ile KARANLIK arasında bir casusluk savaşı başladı. İzbandut, Tinamit, Tehlikedi ve Özgür birer taraf seçti."
+    },
+    "device": {
+      "title": "Cihaz ve Ajan Jonesy",
+      "text": "Midas'ın makinesi Fırtına'yı geri itti ve Fırtına bir su duvarına dönüştü. Döngücü Köprü'ye fırlatıldı ve Ajan Jonesy ile tanıştı. Jonesy, bunun sıradan bir fırtına olmadığını, Döngü'ye bağlı olduğunu anlattı."
+    },
+    "nexus": {
+      "title": "Merkez Çatışması",
+      "text": "Thor ve Marvel kahramanları geldi, Galactus da Sıfır Noktası'nın peşine düştü. Tony Stark'ın planı sayesinde Galactus bombalarla dolu Savaş Otobüslerini yuttu ve bir yırtıktan uzaklara gönderildi."
+    },
+    "zeropoint": {
+      "title": "Açıkta kalan Sıfır Noktası",
+      "text": "Sıfır Noktası adanın ortasında açıkta duruyordu. Doktor Slone'un emriyle Jonesy, kimse Döngü'den kaçamasın diye başka gerçekliklerden Mandalorlu, Kratos, Master Chief ve Predator gibi Avcılar getirdi."
+    },
+    "foundation": {
+      "title": "Kuruluş",
+      "text": "Jonesy, Gizemli Örgüt'le bağını kopardı ve Yedili'yi çağırıp “Geno'yu ve Kız Kardeşler'i” teslim etmeyi teklif etti. Geno'nun adı ilk kez böyle geçti. Kuruluş geldi ve kendini Sıfır Noktası'nın içine mühürleyerek Kadim Kule'yi yarattı; Jonesy ise Döngü'de mahsur kaldı."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "Ada vahşileşti. Rünperest, Kadim Kule'deki eseri çaldı ve eser onu yozlaştırdı."
+    },
+    "invasion": {
+      "title": "İstila",
+      "text": "Son Gerçeklik, Ana Gemi'siyle istila edip Kadim Kule'yi yok etti; Gizemli Örgüt de açıkça ortaya çıktı. Operation: Sky Fire etkinliğinde Döngücüler Ana Gemi'yi havaya uçurdu ve bir Küp'ü yeniden başlattı. Küp maviye döndü ve onlara yardım etmeye başladı."
+    },
+    "cubequeen": {
+      "title": "Küp Kraliçesi",
+      "text": "Küpler adayı yozlaştırdı ve Son Gerçeklik'in hükümdarı Küp Kraliçesi, Altın Küp'ten dışarı çıktı."
+    },
+    "theend2": {
+      "title": "Ada ters dönüyor",
+      "text": "Kuruluş, Köprü'de Jonesy'yi kurtardı; Jonesy de jiroskobu kapattı ve ada baş aşağı döndü. Ziyaretçi ile Bilim İnsanı Döngücüleri kurtardı, Kraliçe ise geri çekildi."
+    },
+    "flipped": {
+      "title": "Yedili, Gizemli Örgüt'e karşı",
+      "text": "Ters dönen adada Kuruluş, Gizemli Örgüt'ü yok etmek için Döngücülerden yardım istedi. Yedili'nin üssü Sığınak'tı."
+    },
+    "resistance": {
+      "title": "Direniş",
+      "text": "Gizemli Örgüt dev bir matkap, tanklar ve hava gemileriyle istila etti ve inşayı kapattı. Doctor Strange ve aralarında Gizemli ile Başlangıç'ın da bulunduğu Yedili, Direniş'e katıldı. Direniş adayı geri alırken Gizemli Örgüt de Sıfır Noktası'nı patlatmak için Çarpıştırıcı'yı inşa etti."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "Paradigma, Meka'yı Çarpıştırıcı'nın üzerine sürdü ve Doktor Slone'u ezdi. Gizemli kendini feda etti ve Geno'yla birlikte Sıfır Noktası'na düştü; Jonesy ile Kuruluş da peşlerinden atladı. Geno, Omniverse'ün dört bir yanına dağıldı."
+    },
+    "chrome": {
+      "title": "Krom",
+      "text": "Açıkta kalan Sıfır Noktası'ndan Gerçeklik Ağacı büyüdü ve Yedili'nin üyeleri kaybolmaya başladı. Hiçlik'in hizmetkârı Haberci'nin Krom'u, Bilim İnsanı'nı ve Başlangıç'ı alıp adaya yayıldı."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "Haberci, Gerçeklik Ağacı ile birleşti ve Bölüm 2 ile Bölüm 3'ün adalarını yok etti. Sıfır Noktası farklı gerçekliklerden parçaları bir araya getirerek yeni bir ada oluşturdu: Asteria."
+    },
+    "riftgate": {
+      "title": "Yırtık Kapısı",
+      "text": "Kale'de Yemin Kardeşliği, Ebedi'ye hizmet ediyordu. Barış, Kinetik Cevher'le çalışan bir Yırtık Kapısı inşa etti ama kapı sabote edildi ve patladı."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City bir yırtıktan geldi. Sıfır Noktası'yla bağlantılı depremler adayı sarsarken Döngücü, bir sabotajcının izini sürmesi için Barış Teşkilatı'na yardım etti."
+    },
+    "wilds": {
+      "title": "Tropik orman",
+      "text": "Adanın merkezi çöküp bir tropik ormana dönüştü ve Sıfır Noktası taşa döndü. Yeniden özgür kalan Doktor Slone, Aygıt'ı onardı; Aygıt da bir tutulma öngördü."
+    },
+    "heist": {
+      "title": "Bir vampirin zaman makinesi",
+      "text": "Zamanda yolculuk yapan bir vampir olan Asil, adaya yerleşti. Doktor Slone, onun Zaman Makinesi'ni çalmak için Talih Altınsever'in soygun ekibini tuttu ve makineyle Jonesy'yi geçmişe gönderdi."
+    },
+    "og": {
+      "title": "Başa dönüş",
+      "text": "Jonesy, Bölüm 1, Sezon 5'in alternatif bir versiyonuna düştü. Orada Şükrü, Sıfır Noktası'nı söküp çıkarmaya çalıştı; roket de Zaman Makinesi bağlanarak yeniden inşa edildi."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Roket ve meteor kara deliği yeniden oluşturdu; kara delik de bir Büyük Patlama'ya dönüştü. Aralarında LEGO, yarış ve müziğin de olduğu yeni galaksiler ve Helios adında yeni bir gerçeklik doğdu."
+    },
+    "underground": {
+      "title": "Yeraltı, Cemiyet'e karşı",
+      "text": "Umut'un liderliğindeki Yeraltı ile Elmas'ın ve Umut'un kız kardeşi Madam Alev'in Cemiyet'i arasında bir savaş çıktı. Peter Griffin, Cemiyet'in patronlarından biriydi."
+    },
+    "pandora": {
+      "title": "Pandora'nın Kutusu",
+      "text": "Dev bir el Pandora'nın Kutusu'nu adaya getirdi ve oyuncular kutuyu açtı."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus fanileri yok etmek istiyordu. Kâhin, Döngücü'yü Fanilerin Kahramanı ilan etti; Zeus da ölümsüzlüğünü kaybetti ve Olimpos'ta yenildi."
+    },
+    "wanderer": {
+      "title": "Gezgin",
+      "text": "Megalo Don, gemisi Livyatan'ı Nitro'yla doldurmak istiyordu ve yanında gizemli bir Gezgin çalışıyordu. Gezgin boru hattını sabote etti ve patlama Pandora'nın Kutusu'nu ortaya çıkardı."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Gezgin aslında Doctor Doom'du ve Kutu'nun gücünü emdi. Jonesy Kaptan Jonesy oldu; kahramanlar da Doom'u yenip kendi gerçekliğine geri gönderdi."
+    },
+    "remix": {
+      "title": "783. Gerçeklik'e doğru",
+      "text": "Remix: The Finale etkinliğinde Umut, Jonesy ve Döngücü bir yırtıktan geçip 783. Gerçeklik'e doğru yola çıktı; peşlerinden de Sıfır Noktası'nın bir parçacığı geldi."
+    },
+    "spirits": {
+      "title": "Ruhlar Âlemi",
+      "text": "Sıfır Noktası'nın parçacığı, Ruhlar Âlemi'ne açılan portalları yeniden açtı ve iblisler geri döndü. Şogun X parçacığı Karanlık Varlık'a götürdü; ta ki bir maske ustası olan Daigo onu yenip Jade'i kurtarana dek. Yerine yeni bir Şogun X geçti."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Adaya büyülü bir altın yayıldı. Kılıç Kurtsoy hepsini ele geçirdi, Midas'ın liderliğindeki Haydutlar karşılık verdi ve Midas parçacığı da istiyordu. Daigo, Ruhlar Âlemi'nin mührünü kırdı ve yozlaşarak bir iblise dönüştü."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Palpatine'in İmparatorluğu Ölüm Yıldızı'yla geldi; Umut ve Jonesy de Direniş'e katıldı. Ölüm Yıldızı sabote edilince enkazı bir ruh portalına çarptı, adanın sakinlerine güçler kazandırdı ve Superman'i adaya çekti."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Ele geçirilmiş Daigo, kulelerle adanın gücünü emdi. Umut, Jonesy ve Kara Gül, Superman ve Robin'le birlikte Süpernova Akademisi'ni kurdu. Sonunda Superman, Karanlık Varlık'ın bir dokunacını kesti, portalı kapattı ve Daigo'yu geri getirdi."
+    },
+    "swarm": {
+      "title": "Sürü",
+      "text": "Çürüyen dokunaçtan bir böcek istilası olan Sürü çıktı. General Uğur Kaya'nın O.X.R.'ı ile Power Rangers, Megazord'larıyla birlikte istilaya karşı savaştı; ta ki Karanlık Varlık'ın kendisi adaya geçene dek."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Umut, Kang ve Kodos'un gemisiyle parçacıktan bir kıymık çaldı ve gerçeklikler birleşerek Springfield'e dönüştü. Homer, kıymığı bir televizyon kumandasıyla birleştirdi, gerçekliği altüst etti ve sonunda kıymığı geri verdi."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Umut ve Jonesy, Godzilla, Kong, Superman, Rangers ve Homer dâhil Omniverse'ün dört bir yanından güçleri bir araya getirdi. Jonesy kırmızı bir Küp çağırdı; Meka da Küp'ü tekmeleyerek Karanlık Varlık'a fırlattı ve Varlık yok oldu. Parçacık Oninoshima'yı iyileştirdi ve Umut'u, Jonesy'yi ve Döngücü'yü yeni bir gerçekliğe taşıdı."
+    },
+    "voyager": {
+      "title": "Karanlıklar Yolcusu",
+      "text": "Karanlıklar Yolcusu, Savaş Otobüsü'nü düşürdü; Örgüt de Jonesy'nin sinyaline cevap vererek bir meteorla geldi. Yolcu, InnoLoop laboratuvarlarını ve orada saklanan parçacığı ele geçirip Örgüt'ü hapsetti. Sonunda Döngücü onu serbest bıraktı ve Örgüt, Bilim İnsanı'nın planlarından Yedili'yi çağıracak bir işaret feneri yaptı."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Kırmızı bir yırtıktan Ziyaretçi'yi taşıyan bir roket geldi; Ziyaretçi, bir “Bilinmeyen Gerçeklik”ten geldiğini söyledi. Ardından yedi parçacıktan üçünü elinde tutan Karanlık Biçici gemisi, eksik parçacıkların gerçekliklerine Yırtık Portalları açtı."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "Buz Kralı'nın kalesi, koleksiyonunda donmuş Kuruluş'la birlikte geldi ve ada, Kuruluş Takımı ile Buz Kralı Takımı olarak ikiye bölündü. AMIE, ilk Yedili'nin akıbetini açıkladı: Gizemli ölmüştü; Bilim İnsanı, Başlangıç ve asıl Ziyaretçi Krom'a kurban gitmişti; Paradigma ise kendini feda etmişti."
+    },
+    "stwlink": {
+      "title": "Dünyayı Kurtar adayla buluşuyor",
+      "text": "Hikâye ilk kez Dünyayı Kurtar'ı adaya bağladı: Karanlıklar Yolcusu Ana Üs'te ortaya çıktı, Jess ve Penny de Yeni Yedili'ye katılmak için Battle Royale adasına gitti."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "Buz Kralı, Kuruluş'u dondurdu ve ardından Sıfır Noktası'nı yeniden kuran Yolcu tarafından saf dışı bırakıldı. Döngücü, Biçici'yi Sonsuzluk Kılıcı'yla ikiye böldü ve ada Shattered Coast'a dönüştü. Sonra Ziyaretçi, Jonesy'yi vurdu ve gerçekte kim olduğunu açıkladı: Yolcu'nun efendisi Geno."
+    },
+    "sprites": {
+      "title": "Runners: büyücükler",
+      "text": "Jonesy bir iyileştirme tankındayken Doktor Slone ve Benzersiz Savaşçı geldi. Dengesiz Sıfır Noktası, onunla aynı maddeden oluşan büyücükleri doğurdu; büyücükler Dengeleyici'ye güç veriyor ve Jonesy'nin iyileşmesine yardım ediyor. Bir büyücük Yedili'ye Muhafız olarak katıldı; Slone Yenilik, Umut da Kehanet olarak katıldı."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Geno, Dengeleyici'deki bir arka kapıdan Döngü'yü hackledi ve Sıfır Noktası'nı ele geçirip yerine bir video oyunu kartuşu bıraktı."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno, Sıfır Noktası'nı kendi makinesine bağladı ve adaya yayılmış konsollar, gökyüzündeki kusursuz dünyasını inşa etmek için madde topluyor. Jonesy komadan uyandı, Geno Gizemli'yi ve Örgüt'ü kendisinin yarattığını açıkladı, Döngücü ise ona katılmayı reddetti."
+    }
+  },
+  "who": {
+    "title": "Kim kimdir",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Ajan Jonesy",
+        "text": "Kahramana dönüşen eski bir Gizemli Örgüt ajanı. Varsayılan kıyafetin yüzü; Cihaz'dan beri Döngü'ye bağlı."
+      },
+      "visitor": {
+        "name": "Ziyaretçi",
+        "text": "Yedili'nin navigatörü; Bölüm 1'de roketi fırlattı. Bölüm 7'deki “Ziyaretçi” ise kılık değiştirmiş Geno'ydu."
+      },
+      "scientist": {
+        "name": "Bilim İnsanı",
+        "text": "Yedili'nin mühendisi ve AMIE'nin yaratıcısı. Krom'a kurban gitti."
+      },
+      "paradigm": {
+        "name": "Paradigma",
+        "text": "Meka'nın pilotu. Yedili için kendini feda etti."
+      },
+      "foundation": {
+        "name": "Kuruluş",
+        "text": "Yedili'nin lideri. Bölüm 7'de, Buz Kralı'nın koleksiyonunda donmuş hâlde geri döndü."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Büro'yu kuran ve hep geri dönmenin bir yolunu bulan suç patronu."
+      },
+      "slone": {
+        "name": "Doktor Slone",
+        "text": "Sonradan Yedili'ye Yenilik olarak katılan Gizemli Örgüt komutanı."
+      },
+      "cubequeen": {
+        "name": "Küp Kraliçesi",
+        "text": "Son Gerçeklik'in hükümdarı."
+      },
+      "imagined": {
+        "name": "Gizemli",
+        "text": "Geno'nun kızı ve Yedili'nin bir üyesi. Collision'da öldü."
+      },
+      "order": {
+        "name": "Örgüt",
+        "text": "Geno'nun diğer kızı; Yeni Yedili'yi bir araya getiren Yedili üyesi."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Gizemli Örgüt'ün kurucusu ve hikâyenin baş kötüsü."
+      },
+      "herald": {
+        "name": "Haberci",
+        "text": "Hiçlik'in habercisi; Krom'u yayıyor."
+      },
+      "kado": {
+        "name": "Asil",
+        "text": "Zaman Makinesi bir soygunda çalınan, zamanda yolculuk yapan vampir."
+      },
+      "hope": {
+        "name": "Umut",
+        "text": "Geleceği grafitilerde gören, Yeraltı'nın kurucusu. Yedili'ye Kehanet olarak katıldı."
+      },
+      "voyager": {
+        "name": "Karanlıklar Yolcusu",
+        "text": "Geno'ya hizmet ediyor ve Sıfır Noktası'nın parçacıklarının peşinde."
+      }
+    }
+  },
+  "now": {
+    "title": "Hikâye devam ediyor",
+    "text": "Her sezon hikâyeye görevler, canlı etkinlikler ve çizgi romanlarla anlatılan yeni bir bölüm ekliyor. Sırada ne olduğunu görmek için güncel sezonu takip et."
+  },
+  "sources": "Fortnite Wiki (Weird Gloop), Epic'in yama notları ve resmî çizgi romanları ile oyun basınına dayanır. Hayran teorilerine yer verilmedi."
+}

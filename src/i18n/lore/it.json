@@ -1,0 +1,286 @@
+{
+  "title": "La trama di Fortnite",
+  "intro": "La storia raccontata dentro il gioco, capitolo per capitolo: il Loop, i Sette, il Punto zero e ogni realtà attraversata dall’isola. Basata sul gioco stesso e sui fumetti e i corti ufficiali di Epic.",
+  "chapters": "Capitoli",
+  "eras": {
+    "c1": "Capitolo 1",
+    "c2": "Capitolo 2",
+    "c3": "Capitolo 3",
+    "c4": "Capitolo 4",
+    "c5": "Capitolo 5",
+    "c6": "Capitolo 6",
+    "c7": "Capitolo 7"
+  },
+  "items": {
+    "storm": {
+      "title": "La Tempesta e il Loop",
+      "text": "La Tempesta che si chiude a ogni partita è, nella trama, ciò che tiene in funzione il Loop: intrappolati sull’isola, i Looper combattono ancora e ancora e perdono la memoria. Questa spiegazione arriva solo molto più tardi."
+    },
+    "visitor": {
+      "title": "Una cometa e un visitatore",
+      "text": "Nella Stagione 3 una cometa ha attraversato il cielo e nella Stagione 4 si è schiantata, creando lo Sprofondo Stantio. Dentro la roccia c’era una capsula con il Visitatore, membro di un gruppo chiamato i Sette."
+    },
+    "rocket": {
+      "title": "Il razzo e le fenditure",
+      "text": "Il Visitatore ha trasformato in un razzo vero il razzo di scena di un film e l’ha lanciato. Il volo ha aperto delle fenditure e un’enorme crepa nel cielo, e lui ha parlato di un «Oscillatore Punto zero», la prima menzione del Punto zero."
+    },
+    "kevin": {
+      "title": "Kevin il Cubo",
+      "text": "Quando la crepa si è chiusa, è apparso un cubo viola chiamato Kevin, che ha attraversato l’isola imprimendo rune. Si è dissolto nel Loot Lake, ha sollevato l’Isola fluttuante e ha iniziato ad alimentare la Tempesta. Quando è esploso, tutti sono stati scagliati nell’In-Between e sono tornati attraverso una fenditura a forma di farfalla."
+    },
+    "iceking": {
+      "title": "Il Re dei ghiacci",
+      "text": "Un iceberg ha portato il castello del Re dei ghiacci a Polar Peak. Al suo risveglio, il Re ha sepolto l’isola sotto la neve."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Sono apparsi una giungla e un vulcano. Nell’evento The Unvaulting il Caveau è stato aperto e il vulcano ha distrutto Tilted Towers e Retail Row."
+    },
+    "showdown1": {
+      "title": "Robot contro mostro",
+      "text": "In The Final Showdown il Mecha ha affrontato un mostro gigante, il Dilaniator. Per ottenere energia, il Mecha ha strappato il Punto zero dal Caveau e ha vinto con la spada della statua di Singolarità, ma il Punto zero è diventato instabile."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "Lo Scienziato è arrivato a bordo di un meteorite che ha congelato nel tempo l’esplosione del Punto zero. I nastri trovati sull’isola parlavano dei Sette, del Ponte e di essere «nel loop». Alla fine sette razzi hanno spinto il meteorite attraverso una fenditura fino al Punto zero, e un buco nero ha inghiottito l’isola."
+    },
+    "apollo": {
+      "title": "Un’isola nata dal buco nero",
+      "text": "Dal buco nero è emersa una nuova isola, Apollo. Le schermate di caricamento dell’Ordine Immaginario dicevano che i Sette ce l’avevano fatta e che «il Punto zero è nostro»."
+    },
+    "agency": {
+      "title": "L’Agenzia",
+      "text": "Mida ha fondato l’Agenzia ed è iniziata una guerra di spie tra SPETTRI e OMBRE. Brutus, NitrogliceRina, Miaoscolo e Skye hanno scelto da che parte stare."
+    },
+    "device": {
+      "title": "Il Dispositivo e l’Agente Jones",
+      "text": "La macchina di Mida ha respinto la Tempesta, che si è trasformata in un muro d’acqua. Il Looper è stato scaraventato sul Ponte e ha conosciuto l’Agente Jones, che gli ha spiegato che non era solo una tempesta: era legata al Loop."
+    },
+    "nexus": {
+      "title": "La Guerra per il Nexus",
+      "text": "Sono arrivati Thor e gli eroi Marvel, e Galactus è venuto a prendersi il Punto zero. Il piano di Tony Stark gli ha fatto inghiottire dei Bus della battaglia pieni di bombe, ed è stato spedito via attraverso una fenditura."
+    },
+    "zeropoint": {
+      "title": "Il Punto zero allo scoperto",
+      "text": "Il Punto zero è rimasto allo scoperto al centro dell’isola. Su ordine della Dottoressa Slone, Jones ha portato Cacciatori da altre realtà, come il Mandaloriano, Kratos, Master Chief e il Predator, perché nessuno potesse fuggire dal Loop."
+    },
+    "foundation": {
+      "title": "Fondazione",
+      "text": "Jones ha rotto con l’Ordine Immaginario e ha chiamato i Sette, offrendosi di consegnare «Geno e le Sorelle»: era la prima volta che si faceva il nome di Geno. Fondazione è arrivato e si è sigillato dentro il Punto zero, creando la Guglia, mentre Jones è rimasto intrappolato nel Loop."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "L’isola è diventata selvaggia. Raz ha rubato l’artefatto della Guglia e ne è stato corrotto."
+    },
+    "invasion": {
+      "title": "L’invasione",
+      "text": "L’Ultima Realtà ha invaso l’isola con la sua nave madre e ha distrutto la Guglia, e l’Ordine Immaginario è uscito allo scoperto. In Operation: Sky Fire i Looper hanno fatto esplodere la nave madre e hanno riavviato un Cubo, che è diventato blu e ha cominciato ad aiutarli."
+    },
+    "cubequeen": {
+      "title": "La Regina dei Cubi",
+      "text": "I Cubi hanno corrotto l’isola, e dal Cubo dorato è uscita la Regina dei Cubi, sovrana dell’Ultima Realtà."
+    },
+    "theend2": {
+      "title": "L’isola si capovolge",
+      "text": "Fondazione ha salvato Jones sul Ponte, e Jones ha spento il giroscopio: l’isola si è capovolta. Il Visitatore e lo Scienziato hanno salvato i Looper, e la Regina si è ritirata."
+    },
+    "flipped": {
+      "title": "I Sette contro l’Ordine Immaginario",
+      "text": "Sull’isola capovolta, Fondazione ha chiesto ai Looper di aiutarlo a distruggere l’Ordine Immaginario. La base dei Sette era il Santuario."
+    },
+    "resistance": {
+      "title": "La Resistenza",
+      "text": "L’Ordine Immaginario ha invaso l’isola con una trivella gigante, carri armati e dirigibili e ha disattivato le costruzioni. Il Dottor Strange e i Sette, tra cui Immagine e Origine, si sono uniti alla Resistenza, che ha riconquistato l’isola mentre l’Ordine Immaginario costruiva il Collisore per far esplodere il Punto zero."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "Paradigma ha lanciato il Mecha contro il Collisore e ha schiacciato la Dottoressa Slone. Immagine si è sacrificata ed è caduta nel Punto zero insieme a Geno, e Jones e Fondazione si sono tuffati dietro di loro. Geno si è disperso nell’Omniverso."
+    },
+    "chrome": {
+      "title": "Il Cromo",
+      "text": "Il Punto zero esposto ha fatto crescere l’Albero della Realtà, e membri dei Sette hanno cominciato a sparire. Il Cromo di Araldo, al servizio del Nulla, ha preso lo Scienziato e Origine e si è diffuso sull’isola."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "Fondendosi con l’Albero della Realtà, Araldo ha distrutto le isole dei Capitoli 2 e 3. Il Punto zero ha unito pezzi di realtà diverse in una nuova isola, Asteria."
+    },
+    "riftgate": {
+      "title": "Il Portale del Varco",
+      "text": "Nella Cittadella, i Giurati servivano l’Atemporale. Stellan ha costruito un Portale del Varco alimentato a Minerale cinetico, ma il portale è stato sabotato ed è esploso."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City è arrivata attraverso una fenditura, e il Looper ha aiutato la Fratellanza della pace a scovare un sabotatore mentre terremoti legati al Punto zero scuotevano l’isola."
+    },
+    "wilds": {
+      "title": "La giungla",
+      "text": "Il centro dell’isola è sprofondato in una giungla e il Punto zero si è trasformato in pietra. La Dottoressa Slone, di nuovo libera, ha riparato l’Apparato, che ha predetto un’eclissi."
+    },
+    "heist": {
+      "title": "La macchina del tempo di un vampiro",
+      "text": "Kado Thorne, un vampiro che viaggia nel tempo, si è stabilito sull’isola. La Dottoressa Slone ha ingaggiato la banda di rapinatori di Nolan Chance per rubargli la Macchina del tempo e l’ha usata per mandare Jones nel passato."
+    },
+    "og": {
+      "title": "Ritorno alle origini",
+      "text": "Jones è finito in una versione alternativa del Capitolo 1, Stagione 5. Lì Kevin ha cercato di estrarre il Punto zero, e il razzo è stato ricostruito con la Macchina del tempo fissata sopra."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Il razzo e il meteorite hanno ricreato il buco nero, che è diventato un Big Bang: sono nate nuove galassie, tra cui LEGO, le corse e la musica, insieme a una nuova realtà, Helios."
+    },
+    "underground": {
+      "title": "L’Underground contro la Società",
+      "text": "È scoppiata una guerra tra l’Underground, guidato da Hope, e la Società di Montague e di Valeria, la sorella di Hope. Peter Griffin era uno dei capi della Società."
+    },
+    "pandora": {
+      "title": "Il Vaso di Pandora",
+      "text": "Una mano gigante ha portato il Vaso di Pandora sull’isola, e i giocatori l’hanno aperto."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus voleva spazzare via i mortali. L’Oracolo ha nominato il Looper Eroe dei Mortali, e Zeus ha perso l’immortalità ed è stato sconfitto sull’Olimpo."
+    },
+    "wanderer": {
+      "title": "Il Vagabondo",
+      "text": "Megalo Don voleva rifornire di Nitro la sua nave, il Leviatano, e al suo fianco agiva un misterioso Vagabondo. Il Vagabondo ha sabotato l’oleodotto, e l’esplosione ha riportato alla luce il Vaso di Pandora."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Il Vagabondo era il Dottor Doom, che ha assorbito il potere del Vaso. Jones è diventato Captain Jones, e gli eroi hanno sconfitto Doom e l’hanno rispedito nella sua realtà."
+    },
+    "remix": {
+      "title": "Verso la Realtà 783",
+      "text": "In Remix: The Finale, Hope, Jones e il Looper hanno attraversato una fenditura, seguiti da un frammento del Punto zero, diretti verso la Realtà 783."
+    },
+    "spirits": {
+      "title": "Il Mondo degli Spiriti",
+      "text": "Il frammento del Punto zero ha riaperto i portali verso il Mondo degli Spiriti, e i demoni sono tornati. Shogun X ha portato il frammento alla Presenza oscura, finché Daigo, un creatore di maschere, l’ha sconfitto e ha liberato Jade. Un nuovo Shogun X ha preso il suo posto."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Un oro magico si è diffuso sull’isola. Fletcher Kane ne ha fatto incetta, i Fuorilegge guidati da Mida hanno reagito, e anche Mida voleva il frammento. Daigo ha spezzato il sigillo del Mondo degli Spiriti ed è stato corrotto fino a diventare un demone."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "L’Impero di Palpatine è arrivato con la Morte Nera, e Hope e Jones si sono uniti alla Resistenza. Quando la Morte Nera è stata sabotata, i suoi detriti hanno colpito un portale degli spiriti, hanno dato poteri agli abitanti dell’isola e hanno attirato Superman."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Daigo, posseduto, ha prosciugato l’isola con delle Guglie. Hope, Jones e la Rosa notturna hanno fondato l’Istituto Grangalassia con Superman e Robin, e alla fine Superman ha tagliato un tentacolo della Presenza oscura, ha chiuso il portale e ha riportato indietro Daigo."
+    },
+    "swarm": {
+      "title": "Lo Sciame",
+      "text": "Dal tentacolo in putrefazione è nato lo Sciame, un’invasione di insetti. Gli R.S.O. della generale Onyx Winter e i Power Rangers, con il loro Megazord, hanno combattuto l’infestazione, finché la stessa Presenza oscura non è passata sull’isola."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope ha rubato una scheggia del frammento con la nave di Kang e Kodos, e le realtà si sono fuse in Springfield. Homer ha unito la scheggia a un telecomando, ha messo sottosopra la realtà e alla fine l’ha restituita."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope e Jones hanno radunato forze da tutto l’Omniverso, tra cui Godzilla, Kong, Superman, i Rangers e Homer. Jones ha chiamato un Cubo rosso e il Mecha l’ha scagliato con un calcio contro la Presenza oscura, che è stata distrutta. Il frammento ha guarito Oninoshima e ha portato Hope, Jones e il Looper in una nuova realtà."
+    },
+    "voyager": {
+      "title": "Il Viaggiatore oscuro",
+      "text": "Il Viaggiatore oscuro ha abbattuto il Bus della battaglia, e l’Ordine è arrivata a bordo di un meteorite, rispondendo al segnale di Jones. Il Viaggiatore si è impadronito dei laboratori InnoLoop e del frammento custodito lì e ha rinchiuso l’Ordine, finché il Looper non l’ha liberata e lei ha costruito un faro con i progetti dello Scienziato per chiamare i Sette."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Attraverso una fenditura rossa è arrivato un razzo con il Visitatore, che diceva di venire da una «Realtà sconosciuta». Poi, con tre dei sette frammenti, la nave Raccoglitore oscuro ha aperto dei portali di fenditura verso le realtà di quelli mancanti."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "È arrivata la fortezza del Re dei ghiacci, con Fondazione congelato nella sua collezione, e l’isola si è divisa tra Squadra Fondazione e Squadra Re dei ghiacci. AMIE ha rivelato il destino dei Sette originali: Immagine era morta; lo Scienziato, Origine e il Visitatore originale erano stati presi dal Cromo, e Paradigma si era sacrificata."
+    },
+    "stwlink": {
+      "title": "Salva il mondo incontra l’isola",
+      "text": "Per la prima volta, la trama ha collegato Salva il mondo all’isola: il Viaggiatore oscuro è comparso nella Casa base, e Jess e Penny si sono recate sull’isola della Battaglia reale per unirsi ai nuovi Sette."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "Il Re dei ghiacci ha congelato Fondazione ed è stato eliminato dal Viaggiatore, che ha ricostruito il Punto zero. Il Looper ha squarciato il Raccoglitore con l’Infinity Blade e l’isola è diventata la Shattered Coast. Poi il Visitatore ha sparato a Jones e ha rivelato chi era davvero: Geno, il padrone del Viaggiatore."
+    },
+    "sprites": {
+      "title": "Runners: gli spiritelli",
+      "text": "Con Jones in una vasca di guarigione, sono arrivati la Dottoressa Slone e Singolarità. Il Punto zero instabile ha dato vita agli spiritelli, fatti della stessa materia del Punto zero, che alimentano lo Stabilizzatore e aiutano a curare Jones. Uno spiritello si è unito ai Sette come il Guardiano, Slone come Innovazione e Hope come Profezia."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Attraverso una backdoor nello Stabilizzatore, Geno ha hackerato il Loop e si è impadronito del Punto zero, lasciando al suo posto una cartuccia per videogiochi."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno ha collegato il Punto zero alla sua macchina, e le console sparse per l’isola raccolgono materia per costruire il suo mondo perfetto nel cielo. Jones si è risvegliato dal coma, Geno ha rivelato di aver creato Immagine e l’Ordine, e il Looper si è rifiutato di unirsi a lui."
+    }
+  },
+  "who": {
+    "title": "Chi è chi",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agente Jones",
+        "text": "Ex agente dell’Ordine Immaginario diventato eroe. Il volto del costume predefinito, legato al Loop dall’evento Il Dispositivo."
+      },
+      "visitor": {
+        "name": "Il Visitatore",
+        "text": "Navigatore dei Sette che ha lanciato il razzo nel Capitolo 1. Il «Visitatore» del Capitolo 7 era Geno sotto mentite spoglie."
+      },
+      "scientist": {
+        "name": "Lo Scienziato",
+        "text": "Ingegnere dei Sette e creatore di AMIE. È stato preso dal Cromo."
+      },
+      "paradigm": {
+        "name": "Paradigma",
+        "text": "Pilota del Mecha. Si è sacrificata per i Sette."
+      },
+      "foundation": {
+        "name": "Fondazione",
+        "text": "Leader dei Sette. È tornato nel Capitolo 7, congelato nella collezione del Re dei ghiacci."
+      },
+      "midas": {
+        "name": "Mida",
+        "text": "Boss del crimine che ha fondato l’Agenzia e torna sempre."
+      },
+      "slone": {
+        "name": "Dottoressa Slone",
+        "text": "Comandante dell’Ordine Immaginario che in seguito si è unita ai Sette come Innovazione."
+      },
+      "cubequeen": {
+        "name": "La Regina dei Cubi",
+        "text": "Sovrana dell’Ultima Realtà."
+      },
+      "imagined": {
+        "name": "Immagine",
+        "text": "Figlia di Geno e membro dei Sette. È morta nell’evento Collision."
+      },
+      "order": {
+        "name": "L’Ordine",
+        "text": "L’altra figlia di Geno e membro dei Sette, che riunisce i nuovi Sette."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Fondatore dell’Ordine Immaginario e il grande cattivo della storia."
+      },
+      "herald": {
+        "name": "Araldo",
+        "text": "Araldo del Nulla, che diffonde il Cromo."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Vampiro che viaggia nel tempo, a cui hanno rubato la Macchina del tempo con un colpo."
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Fondatrice dell’Underground, che vede il futuro nei graffiti. Si è unita ai Sette come Profezia."
+      },
+      "voyager": {
+        "name": "Il Viaggiatore oscuro",
+        "text": "Serve Geno e dà la caccia ai frammenti del Punto zero."
+      }
+    }
+  },
+  "now": {
+    "title": "La storia continua",
+    "text": "Ogni stagione aggiunge un nuovo capitolo alla trama, raccontato con missioni, eventi dal vivo e fumetti. Segui la stagione in corso per scoprire cosa succederà."
+  },
+  "sources": "Basato sulla Fortnite Wiki (Weird Gloop), sulle note delle patch e sui fumetti ufficiali di Epic e sulla stampa specializzata. Le teorie dei fan sono rimaste fuori."
+}

@@ -1,0 +1,286 @@
+{
+  "title": "Fabuła Fortnite",
+  "intro": "Historia opowiadana w grze, rozdział po rozdziale: Pętla, Siódemka, Punkt Zerowy i każda rzeczywistość, przez którą przeszła wyspa. Na podstawie samej gry oraz oficjalnych komiksów i filmów krótkometrażowych Epic.",
+  "chapters": "Rozdziały",
+  "eras": {
+    "c1": "Rozdział 1",
+    "c2": "Rozdział 2",
+    "c3": "Rozdział 3",
+    "c4": "Rozdział 4",
+    "c5": "Rozdział 5",
+    "c6": "Rozdział 6",
+    "c7": "Rozdział 7"
+  },
+  "items": {
+    "storm": {
+      "title": "Burza i Pętla",
+      "text": "Burza, która zacieśnia się w każdym meczu, jest w fabule tym, co napędza Pętlę: uwięzieni na wyspie Pętlarze walczą w kółko i tracą pamięć. To wyjaśnienie pojawia się dopiero dużo później."
+    },
+    "visitor": {
+      "title": "Kometa i przybysz",
+      "text": "W Sezonie 3 po niebie przeleciała kometa, która w Sezonie 4 spadła, tworząc Wypasioną Wyrwę. We wnętrzu skały była kapsuła z Przybyszem, członkiem grupy zwanej Siódemką."
+    },
+    "rocket": {
+      "title": "Rakieta i szczeliny",
+      "text": "Przybysz zamienił filmową rakietę-rekwizyt w prawdziwą i ją wystrzelił. Jej lot otworzył szczeliny i ogromne pęknięcie na niebie, a on wspomniał o „Oscylatorze Punktu Zerowego” — to pierwsza wzmianka o Punkcie Zerowym."
+    },
+    "kevin": {
+      "title": "Sześcian Kevin",
+      "text": "Gdy pęknięcie się zamknęło, pojawił się fioletowy sześcian zwany Kevinem, który przemierzył wyspę, odciskając runy. Rozpuścił się w Zalewie Zdobyczy, uniósł Latającą Wyspę i zaczął zasilać Burzę. Gdy wybuchł, wszyscy trafili do Pomiędzy i wrócili przez szczelinę w kształcie motyla."
+    },
+    "iceking": {
+      "title": "Król Lodu",
+      "text": "Góra lodowa przyniosła zamek Króla Lodu na Polar Peak. Gdy król się przebudził, pogrzebał wyspę pod śniegiem."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Pojawiły się dżungla i wulkan. Podczas wydarzenia The Unvaulting otwarto Skarbiec, a wulkan zniszczył Wykrzywione Wieże i Retail Row."
+    },
+    "showdown1": {
+      "title": "Robot kontra potwór",
+      "text": "Podczas wydarzenia The Final Showdown Mech zmierzył się z gigantycznym potworem, Pożeraczem. Robot wyrwał Punkt Zerowy ze Skarbca, by zyskać moc, i zwyciężył mieczem z posągu Osobliwości, ale Punkt Zerowy stał się niestabilny."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "Naukowiec przybył w meteorze, który zamroził w czasie wybuch Punktu Zerowego. Taśmy znalezione na wyspie mówiły o Siódemce, Moście i o byciu „zapętlonym”. Na koniec siedem rakiet wepchnęło meteor przez szczelinę do Punktu Zerowego, a czarna dziura pochłonęła wyspę."
+    },
+    "apollo": {
+      "title": "Wyspa zrodzona z czarnej dziury",
+      "text": "Z czarnej dziury wyłoniła się nowa wyspa, Apollo. Ekrany wczytywania Urojonego Reżimu głosiły, że Siódemce się udało i że „Punkt Zerowy jest nasz”."
+    },
+    "agency": {
+      "title": "Agencja",
+      "text": "Midas założył Agencję i wybuchła wojna szpiegów między DUCHEM a MROKIEM. Brutus, TNTina, Miauśniak i Podniebna opowiedzieli się po jednej ze stron."
+    },
+    "device": {
+      "title": "The Device i Agent Jones",
+      "text": "Maszyna Midasa odepchnęła Burzę, która zmieniła się w ścianę wody. Pętlarza wyrzuciło na Most, gdzie poznał Agenta Jonesa, który wyjaśnił, że to nie była zwykła burza: była powiązana z Pętlą."
+    },
+    "nexus": {
+      "title": "Nexus War",
+      "text": "Przybyli Thor i bohaterowie Marvela, a Galactus zjawił się po Punkt Zerowy. Dzięki planowi Tony’ego Starka połknął busy bojowe pełne bomb i został odesłany przez szczelinę."
+    },
+    "zeropoint": {
+      "title": "Odsłonięty Punkt Zerowy",
+      "text": "Punkt Zerowy leżał odsłonięty w centrum wyspy. Na rozkaz Doktor Slone Jones sprowadził Łowców z innych rzeczywistości, takich jak Mandalorianin, Kratos, Master Chief i Predator, żeby nikt nie uciekł z Pętli."
+    },
+    "foundation": {
+      "title": "Fundament",
+      "text": "Jones zerwał z Urojonym Reżimem i wezwał Siódemkę, proponując, że wyda „Geno i Siostry” — po raz pierwszy padło wtedy imię Geno. Przybył Fundament i zamknął się wewnątrz Punktu Zerowego, tworząc Iglicę, a Jones został uwięziony w Pętli."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "Wyspa zdziczała. Raz ukradł artefakt z Iglicy i został przez niego skażony."
+    },
+    "invasion": {
+      "title": "Inwazja",
+      "text": "Ostatnia Rzeczywistość najechała wyspę ze swoim statkiem-matką i zniszczyła Iglicę, a Urojony Reżim wyszedł z ukrycia. Podczas wydarzenia Operation: Sky Fire Pętlarze wysadzili statek-matkę i zrestartowali Sześcian, który stał się niebieski i zaczął im pomagać."
+    },
+    "cubequeen": {
+      "title": "Królowa Sześcianów",
+      "text": "Sześciany skaziły wyspę, a ze Złotego Sześcianu wyszła Królowa Sześcianów, władczyni Ostatniej Rzeczywistości."
+    },
+    "theend2": {
+      "title": "Wyspa do góry nogami",
+      "text": "Fundament uratował Jonesa na Moście, a Jones wyłączył żyroskop: wyspa obróciła się do góry nogami. Przybysz i Naukowiec ocalili Pętlarzy, a Królowa się wycofała."
+    },
+    "flipped": {
+      "title": "Siódemka kontra Urojony Reżim",
+      "text": "Na odwróconej wyspie Fundament poprosił Pętlarzy o pomoc w zniszczeniu Urojonego Reżimu. Bazą Siódemki było Schronienie."
+    },
+    "resistance": {
+      "title": "Ruch Oporu",
+      "text": "Urojony Reżim najechał wyspę z gigantycznym wiertłem, czołgami i sterowcami i wyłączył budowanie. Doktor Strange i Siódemka, w tym Urojona i Początek, dołączyli do Ruchu Oporu, który odbił wyspę, podczas gdy Urojony Reżim budował Zderzacz, by wysadzić Punkt Zerowy."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "Paradygmat skierowała Mecha w Zderzacz i zmiażdżyła Doktor Slone. Urojona poświęciła się i wpadła do Punktu Zerowego razem z Geno, a Jones i Fundament skoczyli za nimi. Geno został rozproszony po całym Omniwersum."
+    },
+    "chrome": {
+      "title": "Chrom",
+      "text": "Odsłonięty Punkt Zerowy wyhodował Drzewo Rzeczywistości, a członkowie Siódemki zaczęli znikać. Herold, sługa Nicości, rozsiewała Chrom, który pochłonął Naukowca i Początek i rozprzestrzenił się po wyspie."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "Herold połączyła się z Drzewem Rzeczywistości i zniszczyła wyspy z Rozdziałów 2 i 3. Punkt Zerowy złożył fragmenty różnych rzeczywistości w nową wyspę, Asterię."
+    },
+    "riftgate": {
+      "title": "Brama Szczeliny",
+      "text": "W Cytadeli Zaprzysiężeni służyli Wiecznemu. Sztelan zbudował Bramę Szczeliny zasilaną rudą kinetyczną, ale została sabotowana i wybuchła."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City przybyło przez szczelinę, a Pętlarz pomógł Syndykatowi Pokoju wytropić sabotażystę, podczas gdy trzęsienia ziemi związane z Punktem Zerowym wstrząsały wyspą."
+    },
+    "wilds": {
+      "title": "Dżungla",
+      "text": "Centrum wyspy zapadło się w dżunglę, a Punkt Zerowy zamienił się w kamień. Doktor Slone, znów na wolności, naprawiła Urządzenie, które przepowiedziało zaćmienie."
+    },
+    "heist": {
+      "title": "Wehikuł czasu wampira",
+      "text": "Kado Thorne, wampir podróżujący w czasie, osiedlił się na wyspie. Doktor Slone wynajęła ekipę rabusiów Nolana Fortuny, by ukraść wehikuł czasu wampira, i użyła go, by wysłać Jonesa w przeszłość."
+    },
+    "og": {
+      "title": "Powrót do początku",
+      "text": "Jones trafił do alternatywnej wersji Rozdziału 1, Sezonu 5. Tam Kevin próbował wyciągnąć Punkt Zerowy, a rakietę odbudowano z przymocowanym do niej wehikułem czasu."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Rakieta i meteor odtworzyły czarną dziurę, która zmieniła się w Wielki Wybuch: narodziły się nowe galaktyki, m.in. LEGO, wyścigi i muzyka, a także nowa rzeczywistość, Helios."
+    },
+    "underground": {
+      "title": "Underground kontra Stowarzyszenie",
+      "text": "Wybuchła wojna między Undergroundem pod wodzą Nadziei a Stowarzyszeniem Montague’a i Valerii, siostry Nadziei. Peter Griffin był jednym z bossów Stowarzyszenia."
+    },
+    "pandora": {
+      "title": "Puszka Pandory",
+      "text": "Olbrzymia dłoń przyniosła na wyspę Puszkę Pandory, a gracze ją otworzyli."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus chciał zgładzić śmiertelników. Wyrocznia ogłosiła Pętlarza Bohaterem Śmiertelników, a Zeus stracił nieśmiertelność i został pokonany na Olimpie."
+    },
+    "wanderer": {
+      "title": "Wędrowiec",
+      "text": "Megalo Don chciał zasilać paliwem Nitro swój statek Lewiatan, a u jego boku działał tajemniczy Wędrowiec. Wędrowiec sabotował rurociąg, a wybuch odsłonił Puszkę Pandory."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Wędrowcem był Doctor Doom, który wchłonął moc Puszki. Jones został Kapitanem Jonesem, a bohaterowie pokonali Dooma i odesłali go do jego własnej rzeczywistości."
+    },
+    "remix": {
+      "title": "W stronę Rzeczywistości 783",
+      "text": "Podczas wydarzenia Remix: The Finale Nadzieja, Jones i Pętlarz przeszli przez szczelinę w stronę Rzeczywistości 783, a za nimi podążył odłamek Punktu Zerowego."
+    },
+    "spirits": {
+      "title": "Kraina duchów",
+      "text": "Odłamek Punktu Zerowego ponownie otworzył portale do krainy duchów i powróciły demony. Szogun X zabrał odłamek dla Mrocznej Obecności, aż w końcu pokonał go Daigo, twórca masek, i uwolnił Jade. Jego miejsce zajął nowy Szogun X."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Magiczne złoto rozlało się po wyspie. Fletcher Kane zagarnął je całe, Banici pod wodzą Midasa stawili opór, a Midas też chciał zdobyć odłamek. Daigo złamał pieczęć krainy duchów i został skażony, stając się demonem."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Imperium Palpatine’a przybyło z Gwiazdą Śmierci, a Nadzieja i Jones dołączyli do Ruchu Oporu. Gdy Gwiazdę Śmierci sabotowano, jej szczątki trafiły w portal duchów, dały moce mieszkańcom wyspy i przyciągnęły Supermana."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Opętany Daigo wysysał energię z wyspy za pomocą Iglic. Nadzieja, Jones i Róża Zmierzchu założyli z Supermanem i Robinem Akademię Supernowa, a na koniec Superman odciął mackę Mrocznej Obecności, zamknął portal i sprowadził Daigo z powrotem."
+    },
+    "swarm": {
+      "title": "Rój",
+      "text": "Z gnijącej macki wyłonił się Rój, inwazja robali. O.X.R. generał Onyx Winter i Power Rangers ze swoim Megazordem walczyli z plagą, aż sama Mroczna Obecność przedostała się na wyspę."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Nadzieja ukradła okruch odłamka statkiem Kanga i Kodosa, a rzeczywistości połączyły się w Springfield. Homer zespolił okruch z pilotem do telewizora, wywrócił rzeczywistość do góry nogami i w końcu go oddał."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Nadzieja i Jones zebrali siły z całego Omniwersum, m.in. Godzillę, Konga, Supermana, Rangersów i Homera. Jones przywołał czerwony Sześcian, a Mech kopnął go w Mroczną Obecność, która została zniszczona. Odłamek uzdrowił Oninoshimę i przeniósł Nadzieję, Jonesa i Pętlarza do nowej rzeczywistości."
+    },
+    "voyager": {
+      "title": "Ciemny Voyager",
+      "text": "Ciemny Voyager zestrzelił bus bojowy, a w meteorze, w odpowiedzi na sygnał Jonesa, przybyła Reżim. Voyager przejął laboratoria InnoLoop i przechowywany w nich odłamek oraz uwięził Reżim, aż Pętlarz ją uwolnił, a ona zbudowała według planów Naukowca latarnię, by wezwać Siódemkę."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Przez czerwoną szczelinę przyleciała rakieta z Przybyszem, który twierdził, że pochodzi z „Nieznanej Rzeczywistości”. Potem statek Ciemny Żniwiarz, mając trzy z siedmiu odłamków, otworzył portale szczelin do rzeczywistości tych, których brakowało."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "Przybyła forteca Króla Lodu z Fundamentem zamrożonym w jego kolekcji, a wyspa podzieliła się na Drużynę Fundamenta i Drużynę Króla Lodu. TOSIA ujawniła los pierwotnej Siódemki: Urojona nie żyła, Naukowiec, Początek i pierwotny Przybysz zostali pochłonięci przez Chrom, a Paradygmat się poświęciła."
+    },
+    "stwlink": {
+      "title": "Ratowanie Świata spotyka wyspę",
+      "text": "Po raz pierwszy fabuła połączyła Ratowanie Świata z wyspą: Ciemny Voyager pojawił się w bazie głównej, a Jess i Penny udały się na wyspę Battle Royale, by dołączyć do Nowej Siódemki."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "Król Lodu zamroził Fundamenta i został wyeliminowany przez Voyagera, który odbudował Punkt Zerowy. Pętlarz przeciął Żniwiarza Ostrzem Nieskończoności, a wyspa zmieniła się w Shattered Coast. Wtedy Przybysz postrzelił Jonesa i ujawnił, kim naprawdę jest: to Geno, mistrz Voyagera."
+    },
+    "sprites": {
+      "title": "Runners: duszki",
+      "text": "Gdy Jones leżał w zbiorniku leczniczym, przybyły Doktor Slone i Osobliwość. Niestabilny Punkt Zerowy zrodził duszki, zbudowane z tej samej materii co Punkt Zerowy, które zasilają Stabilizator i pomagają leczyć Jonesa. Jeden duszek dołączył do Siódemki jako Strażnik, Slone jako Innowacja, a Nadzieja jako Przepowiednia."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Przez tylne wejście w Stabilizatorze Geno zhakował Pętlę i przejął Punkt Zerowy, zostawiając na jego miejscu kartridż z grą wideo."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno podłączył Punkt Zerowy do swojej maszyny, a konsole rozsiane po wyspie zbierają materię, by zbudować jego idealny świat na niebie. Jones wybudził się ze śpiączki, Geno wyjawił, że stworzył Urojoną i Reżim, a Pętlarz odmówił przyłączenia się do niego."
+    }
+  },
+  "who": {
+    "title": "Kto jest kim",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agent Jones",
+        "text": "Były agent Urojonego Reżimu, który został bohaterem. Twarz domyślnego stroju, związany z Pętlą od wydarzenia The Device."
+      },
+      "visitor": {
+        "name": "Przybysz",
+        "text": "Nawigator Siódemki, który wystrzelił rakietę w Rozdziale 1. „Przybyszem” z Rozdziału 7 był przebrany Geno."
+      },
+      "scientist": {
+        "name": "Naukowiec",
+        "text": "Inżynier Siódemki i twórca TOSI. Pochłonięty przez Chrom."
+      },
+      "paradigm": {
+        "name": "Paradygmat",
+        "text": "Pilotka Mecha. Poświęciła się dla Siódemki."
+      },
+      "foundation": {
+        "name": "Fundament",
+        "text": "Przywódca Siódemki. Powrócił w Rozdziale 7, zamrożony w kolekcji Króla Lodu."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Boss przestępczego świata, który założył Agencję i wciąż powraca."
+      },
+      "slone": {
+        "name": "Doktor Slone",
+        "text": "Dowódczyni Urojonego Reżimu, która później dołączyła do Siódemki jako Innowacja."
+      },
+      "cubequeen": {
+        "name": "Królowa Sześcianów",
+        "text": "Władczyni Ostatniej Rzeczywistości."
+      },
+      "imagined": {
+        "name": "Urojona",
+        "text": "Córka Geno i członkini Siódemki. Zginęła podczas wydarzenia Collision."
+      },
+      "order": {
+        "name": "Reżim",
+        "text": "Druga córka Geno i członkini Siódemki, która zbiera Nową Siódemkę."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Założyciel Urojonego Reżimu i główny złoczyńca tej historii."
+      },
+      "herald": {
+        "name": "Herold",
+        "text": "Zwiastunka Nicości, która szerzy Chrom."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Wampir podróżujący w czasie, któremu podczas skoku ukradziono wehikuł czasu."
+      },
+      "hope": {
+        "name": "Nadzieja",
+        "text": "Założycielka Undergroundu, która widzi przyszłość w graffiti. Dołączyła do Siódemki jako Przepowiednia."
+      },
+      "voyager": {
+        "name": "Ciemny Voyager",
+        "text": "Służy Geno i poluje na odłamki Punktu Zerowego."
+      }
+    }
+  },
+  "now": {
+    "title": "Historia toczy się dalej",
+    "text": "Każdy sezon dopisuje do fabuły nowy rozdział, opowiadany w zadaniach, wydarzeniach na żywo i komiksach. Śledź bieżący sezon, żeby zobaczyć, co będzie dalej."
+  },
+  "sources": "Na podstawie Fortnite Wiki (Weird Gloop), informacji o aktualizacjach i oficjalnych komiksów Epic oraz prasy o grach. Teorie fanów zostały pominięte."
+}

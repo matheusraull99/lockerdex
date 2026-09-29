@@ -17,6 +17,8 @@ Junta o melhor de [fortnite.gg/sprites](https://fortnite.gg/sprites) (catálogo 
 - **Sugestões de melhoria:** o usuário escolhe o tipo (ideia, erro, tradução, dado errado), escreve e envia.
 - **Cor do site:** 10 cores prontas ou qualquer uma pelo seletor. O site inteiro muda, no tema claro e no escuro, e a cor fica salva no aparelho (`src/lib/theme.ts`).
 - **História do Fortnite:** linha do tempo de 2011 até hoje, com 39 marcos nos 22 idiomas.
+- **Enredo:** a história dentro do jogo, do Loop aos Sete e ao Ponto Zero, com 50 momentos e um "Quem é quem" de 15 personagens, nos 22 idiomas. Os nomes de personagens e termos seguem a tradução oficial do jogo em cada idioma (conferida no texto dos trajes, pela fortnite-api).
+- **Personagem:** o selo ao lado da marca e o ícone do app mostram o boneco do Matheus no estilo do jogo. De vez em quando ele atravessa o rodapé com a picareta, e clicar nele dá uma picaretada (`?walker` no endereço faz ele aparecer em 1 s). Com "reduzir movimento" ligado no aparelho, ele não aparece.
 
 **No ar:** https://matheusraull99.github.io/lockerdex/. Cada push na `main` publica sozinho pelo GitHub Actions (`.github/workflows/deploy.yml`), e todo dia às 06:15 UTC o workflow recria o catálogo de cosméticos antes de publicar.
 
@@ -34,6 +36,7 @@ Junta o melhor de [fortnite.gg/sprites](https://fortnite.gg/sprites) (catálogo 
 | `/news/` | Notícias do jogo | `/v2/news/br` |
 | `/season/` | Contagem regressiva da temporada | `src/lib/ui.tsx` (`SEASON_END`) |
 | `/history/` | História do Fortnite, de 2011 até hoje | `src/data/history.json` (datas) + `src/i18n/history/` (textos) |
+| `/lore/` | Enredo: a história dentro do jogo, capítulo por capítulo | `src/data/lore.json` (temporadas) + `src/i18n/lore/` (textos) |
 
 Cada rota tem endereço próprio em `/lockerdex/<rota>/` e uma versão por idioma em `/lockerdex/<idioma>/<rota>/`, por exemplo `/lockerdex/pt-BR/shop/`. O prefixo escolhe o idioma e segue nos links. Os links antigos com `#/rota` são convertidos ao abrir. A tabela de rotas fica em `src/lib/routes.json`.
 
@@ -64,7 +67,7 @@ O código da coleção guarda 2 bits por figurinha, indexados pelo id do fortnit
 
 ## Google (SEO)
 
-O build (`seoPages` no `vite.config.ts`) gera uma página pronta por rota e por idioma. São 253 páginas (11 rotas × 23 versões), cada uma com título, descrição, link canônico, as 22 versões de idioma (hreflang), prévia de link (Open Graph, com `public/og.png`) e um texto com links dentro do `#root`. A página da história leva a linha do tempo inteira nesse texto, para o Google ler sem rodar o app. O build também gera `sitemap.xml`, `robots.txt` e `404.html`.
+O build (`seoPages` no `vite.config.ts`) gera uma página pronta por rota e por idioma. São 276 páginas (12 rotas × 23 versões), cada uma com título, descrição, link canônico, as 22 versões de idioma (hreflang), prévia de link (Open Graph, com `public/og.png`) e um texto com links dentro do `#root`. As páginas da história e do enredo levam o texto inteiro nesse texto, para o Google ler sem rodar o app. O build também gera `sitemap.xml`, `robots.txt` e `404.html`.
 
 Para cadastrar no **Google Search Console**:
 
@@ -97,6 +100,7 @@ Outras opções, com prioridade menor: `VITE_FEEDBACK_URL` (POST JSON, como no F
 
 - `public/manifest.webmanifest` traz os ícones de 192/512, o maskable e as capturas de tela da janela de instalação.
 - `public/apple-touch-icon.png` é o ícone do iPhone.
+- Os ícones e o `public/icon.svg` mostram o personagem num cartão de figurinha. As imagens do personagem ficam em `public/avatar/`: `bust.webp` (o selo ao lado da marca) e `walker.webp` (o passeio pelo rodapé; o CSS usa a mesma imagem três vezes, recortada no tronco e em cada perna).
 - `public/sw.js` guarda o app para uso offline. No build, o `vite.config.ts` preenche a lista de arquivos e a versão do cache.
 - **Instalar no celular exige o site publicado em HTTPS.** O `localhost` só serve para testar no próprio PC.
 
@@ -109,6 +113,6 @@ Outras opções, com prioridade menor: `VITE_FEEDBACK_URL` (POST JSON, como no F
 
 Chave que faltar cai no inglês.
 
-Os textos da história ficam à parte, em `src/i18n/history/<código>.json` (carregados só na página da história). As datas e a ordem dos marcos ficam em `src/data/history.json`, iguais para todos os idiomas. Marco que faltar num idioma aparece em inglês.
+Os textos da história e do enredo ficam à parte, em `src/i18n/history/<código>.json` e `src/i18n/lore/<código>.json` (carregados só nessas páginas). As datas, as temporadas e a ordem dos itens ficam em `src/data/history.json` e `src/data/lore.json`, iguais para todos os idiomas. Item que faltar num idioma aparece em inglês.
 
 Fã-site sem vínculo com a Epic Games. Fortnite é marca registrada da Epic Games.

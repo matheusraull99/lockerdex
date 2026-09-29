@@ -1,0 +1,134 @@
+{
+  "eras": [
+    {
+      "id": "c1",
+      "badge": "1",
+      "color": "var(--rare)",
+      "chapter": 1,
+      "years": "2017–2019",
+      "items": [
+        { "id": "storm", "season": 1 },
+        { "id": "visitor", "season": 4 },
+        { "id": "rocket", "season": 4 },
+        { "id": "kevin", "season": 5 },
+        { "id": "iceking", "season": 7 },
+        { "id": "volcano", "season": 8 },
+        { "id": "showdown1", "season": 9 },
+        { "id": "theend1", "season": "X" }
+      ]
+    },
+    {
+      "id": "c2",
+      "badge": "2",
+      "color": "var(--epic)",
+      "chapter": 2,
+      "years": "2019–2021",
+      "items": [
+        { "id": "apollo", "season": 1 },
+        { "id": "agency", "season": 2 },
+        { "id": "device", "season": 2 },
+        { "id": "nexus", "season": 4 },
+        { "id": "zeropoint", "season": 5 },
+        { "id": "foundation", "season": 5 },
+        { "id": "primal", "season": 6 },
+        { "id": "invasion", "season": 7 },
+        { "id": "cubequeen", "season": 8 },
+        { "id": "theend2", "season": 8 }
+      ]
+    },
+    {
+      "id": "c3",
+      "badge": "3",
+      "color": "var(--legendary)",
+      "chapter": 3,
+      "years": "2021–2022",
+      "items": [
+        { "id": "flipped", "season": 1 },
+        { "id": "resistance", "season": 2 },
+        { "id": "collision", "season": 2 },
+        { "id": "chrome", "season": 3 },
+        { "id": "fracture", "season": 4 }
+      ]
+    },
+    {
+      "id": "c4",
+      "badge": "4",
+      "color": "var(--mythic)",
+      "chapter": 4,
+      "years": "2022–2023",
+      "items": [
+        { "id": "riftgate", "season": 1 },
+        { "id": "mega", "season": 2 },
+        { "id": "wilds", "season": 3 },
+        { "id": "heist", "season": 4 },
+        { "id": "og", "season": "OG" },
+        { "id": "bigbang", "season": "OG" }
+      ]
+    },
+    {
+      "id": "c5",
+      "badge": "5",
+      "color": "#22c55e",
+      "chapter": 5,
+      "years": "2023–2024",
+      "items": [
+        { "id": "underground", "season": 1 },
+        { "id": "pandora", "season": 1 },
+        { "id": "olympus", "season": 2 },
+        { "id": "wanderer", "season": 3 },
+        { "id": "doom", "season": 4 },
+        { "id": "remix", "season": "Remix" }
+      ]
+    },
+    {
+      "id": "c6",
+      "badge": "6",
+      "color": "#06b6d4",
+      "chapter": 6,
+      "years": "2024–2025",
+      "items": [
+        { "id": "spirits", "season": 1 },
+        { "id": "outlaws", "season": 2 },
+        { "id": "empire" },
+        { "id": "supernova", "season": 3 },
+        { "id": "swarm", "season": 4 },
+        { "id": "springfield" },
+        { "id": "zerohour" }
+      ]
+    },
+    {
+      "id": "c7",
+      "badge": "7",
+      "color": "var(--dust)",
+      "chapter": 7,
+      "years": "2025–2026",
+      "items": [
+        { "id": "voyager", "season": 1 },
+        { "id": "harvester", "season": 1 },
+        { "id": "rivals", "season": 2 },
+        { "id": "stwlink", "season": 2 },
+        { "id": "shattered", "season": 2 },
+        { "id": "sprites", "season": 3 },
+        { "id": "unstable", "season": 3 },
+        { "id": "override", "season": 4 }
+      ]
+    }
+  ],
+  "who": [
+    { "id": "jonesy", "chapter": 1, "season": 1 },
+    { "id": "visitor", "chapter": 1, "season": 4 },
+    { "id": "scientist", "chapter": 1, "season": "X" },
+    { "id": "paradigm", "chapter": 1, "season": "X" },
+    { "id": "foundation", "chapter": 2, "season": 6 },
+    { "id": "midas", "chapter": 2, "season": 2 },
+    { "id": "slone", "chapter": 2, "season": 5 },
+    { "id": "cubequeen", "chapter": 2, "season": 8 },
+    { "id": "imagined", "chapter": 3, "season": 2 },
+    { "id": "order", "chapter": 3, "season": 2 },
+    { "id": "geno", "chapter": 3, "season": 2 },
+    { "id": "herald", "chapter": 3, "season": 3 },
+    { "id": "kado", "chapter": 4, "season": 4 },
+    { "id": "hope", "chapter": 5, "season": 1 },
+    { "id": "voyager", "chapter": 7, "season": 1 }
+  ]
+}

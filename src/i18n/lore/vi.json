@@ -1,0 +1,286 @@
+{
+  "title": "Cốt truyện Fortnite",
+  "intro": "Câu chuyện được kể ngay trong game, qua từng chương: Loop, The Seven, Zero Point và mọi thực tại mà hòn đảo từng đi qua. Dựa trên chính trò chơi cùng truyện tranh và phim ngắn chính thức của Epic.",
+  "chapters": "Các chương",
+  "eras": {
+    "c1": "Chương 1",
+    "c2": "Chương 2",
+    "c3": "Chương 3",
+    "c4": "Chương 4",
+    "c5": "Chương 5",
+    "c6": "Chương 6",
+    "c7": "Chương 7"
+  },
+  "items": {
+    "storm": {
+      "title": "Bão và Loop",
+      "text": "Cơn Bão thu hẹp dần trong mỗi trận đấu, về mặt cốt truyện, chính là thứ giữ cho Loop tiếp diễn: bị mắc kẹt trên hòn đảo, các Looper chiến đấu hết lần này đến lần khác và mất đi ký ức. Lời giải thích này mãi rất lâu sau mới được hé lộ."
+    },
+    "visitor": {
+      "title": "Một sao chổi và một vị khách",
+      "text": "Một sao chổi vạch ngang bầu trời ở Mùa 3 và rơi xuống ở Mùa 4, tạo nên Dusty Divot. Bên trong tảng đá là một khoang chứa The Visitor, thành viên của một nhóm tên là The Seven."
+    },
+    "rocket": {
+      "title": "Tên lửa và các vết nứt",
+      "text": "The Visitor biến một tên lửa đạo cụ làm phim thành tên lửa thật rồi phóng nó lên. Chuyến bay mở ra nhiều vết nứt và một khe nứt khổng lồ trên bầu trời, và anh ta nhắc đến một “Zero Point Oscillator”, lần đầu tiên Zero Point được nhắc tới."
+    },
+    "kevin": {
+      "title": "Kevin the Cube",
+      "text": "Khi khe nứt khép lại, một khối lập phương màu tím tên là Kevin xuất hiện và băng qua hòn đảo, in những ký tự rune trên đường đi. Nó tan vào Loot Lake, nâng Floating Island lên không trung và bắt đầu cung cấp năng lượng cho Bão. Khi nó phát nổ, mọi người bị ném vào In-Between rồi trở về qua một vết nứt hình con bướm."
+    },
+    "iceking": {
+      "title": "The Ice King",
+      "text": "Một tảng băng trôi đưa lâu đài của The Ice King đến Polar Peak. Khi tỉnh dậy, hắn vùi cả hòn đảo trong tuyết."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Một khu rừng rậm và một ngọn núi lửa xuất hiện. Trong sự kiện The Unvaulting, Vault được mở ra và núi lửa phá hủy Tilted Towers cùng Retail Row."
+    },
+    "showdown1": {
+      "title": "Robot đấu quái vật",
+      "text": "Trong The Final Showdown, Mecha đối đầu với một quái vật khổng lồ, Devourer. Mecha giật Zero Point ra khỏi Vault để có thêm sức mạnh và giành chiến thắng bằng thanh kiếm của bức tượng Singularity, nhưng Zero Point trở nên bất ổn."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "The Scientist đến trong một thiên thạch khiến vụ nổ của Zero Point bị đóng băng trong thời gian. Những cuộn băng tìm thấy trên đảo nhắc đến The Seven, Bridge và việc bị “looped”. Cuối cùng, bảy tên lửa đẩy thiên thạch qua một vết nứt vào Zero Point, và một hố đen nuốt chửng hòn đảo."
+    },
+    "apollo": {
+      "title": "Hòn đảo sinh ra từ hố đen",
+      "text": "Một hòn đảo mới, Apollo, xuất hiện từ hố đen. Các màn hình chờ của Imagined Order cho biết The Seven đã thành công và rằng “Zero Point là của chúng ta”."
+    },
+    "agency": {
+      "title": "The Agency",
+      "text": "Midas lập ra The Agency, và một cuộc chiến gián điệp nổ ra giữa GHOST và SHADOW. Brutus, TNTina, Meowscles và Skye mỗi người chọn một phe."
+    },
+    "device": {
+      "title": "The Device và Agent Jones",
+      "text": "Cỗ máy của Midas đẩy lùi Bão, khiến nó biến thành một bức tường nước. Looper bị hất tới Bridge và gặp Agent Jones, người giải thích rằng đó không chỉ là một cơn bão: nó gắn liền với Loop."
+    },
+    "nexus": {
+      "title": "Nexus War",
+      "text": "Thor và các siêu anh hùng Marvel xuất hiện, còn Galactus kéo đến vì Zero Point. Kế hoạch của Tony Stark khiến Galactus nuốt những chiếc Battle Bus chứa đầy bom, và hắn bị đẩy đi qua một vết nứt."
+    },
+    "zeropoint": {
+      "title": "Zero Point lộ diện",
+      "text": "Zero Point nằm phơi ra ngay giữa hòn đảo. Theo lệnh của Doctor Slone, Jones đưa các Thợ săn từ những thực tại khác tới, như The Mandalorian, Kratos, Master Chief và Predator, để không ai có thể thoát khỏi Loop."
+    },
+    "foundation": {
+      "title": "The Foundation",
+      "text": "Jones cắt đứt với Imagined Order và gọi The Seven, đề nghị giao nộp “Geno và các chị em”, lần đầu tiên cái tên Geno được nhắc đến. The Foundation đến và tự phong ấn mình bên trong Zero Point, tạo ra Spire, còn Jones thì bị kẹt lại trong Loop."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "Hòn đảo trở nên hoang dã. Raz đánh cắp cổ vật từ Spire và bị nó làm tha hóa."
+    },
+    "invasion": {
+      "title": "Cuộc xâm lăng",
+      "text": "Last Reality xâm lược bằng Mothership của chúng và phá hủy Spire, còn Imagined Order thì lộ diện công khai. Trong Operation: Sky Fire, các Looper cho nổ tung Mothership và khởi động lại một khối lập phương, khiến nó chuyển sang màu xanh lam và bắt đầu giúp đỡ họ."
+    },
+    "cubequeen": {
+      "title": "Cube Queen",
+      "text": "Các khối lập phương làm biến chất hòn đảo, và Cube Queen, kẻ thống trị Last Reality, bước ra từ Golden Cube."
+    },
+    "theend2": {
+      "title": "Hòn đảo lộn ngược",
+      "text": "The Foundation giải cứu Jones tại Bridge, và Jones tắt con quay hồi chuyển: hòn đảo lộn ngược. The Visitor và The Scientist cứu các Looper, còn Nữ hoàng thì rút lui."
+    },
+    "flipped": {
+      "title": "The Seven đối đầu Imagined Order",
+      "text": "Trên hòn đảo lộn ngược, The Foundation nhờ các Looper giúp tiêu diệt Imagined Order. Căn cứ của The Seven là Sanctuary."
+    },
+    "resistance": {
+      "title": "Resistance",
+      "text": "Imagined Order xâm lược bằng một mũi khoan khổng lồ, xe tăng và khí cầu, đồng thời tắt tính năng xây dựng. Doctor Strange và The Seven, trong đó có The Imagined và The Origin, gia nhập Resistance, lực lượng đã giành lại hòn đảo trong khi Imagined Order xây Collider để làm nổ tung Zero Point."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "The Paradigm lái Mecha lao vào Collider và đè bẹp Doctor Slone. The Imagined hy sinh bản thân và rơi vào Zero Point cùng Geno, còn Jones và The Foundation nhảy theo sau. Geno bị phân tán khắp Omniverse."
+    },
+    "chrome": {
+      "title": "Chrome",
+      "text": "Zero Point lộ thiên làm mọc lên Reality Tree, và các thành viên của The Seven bắt đầu biến mất. Chrome của The Herald, kẻ phụng sự The Nothing, đã cuốn đi The Scientist và The Origin rồi lan khắp hòn đảo."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "The Herald hợp nhất với Reality Tree và phá hủy các hòn đảo của Chương 2 và 3. Zero Point kéo những mảnh ghép từ nhiều thực tại khác nhau lại thành một hòn đảo mới, Asteria."
+    },
+    "riftgate": {
+      "title": "Rift Gate",
+      "text": "Tại Citadel, Oathbound phụng sự The Ageless. Stellan xây một Rift Gate chạy bằng Kinetic Ore, nhưng nó bị phá hoại và phát nổ."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City xuất hiện qua một vết nứt, và Looper giúp Peace Syndicate truy lùng một kẻ phá hoại trong khi những trận động đất liên quan đến Zero Point làm rung chuyển hòn đảo."
+    },
+    "wilds": {
+      "title": "Rừng rậm",
+      "text": "Trung tâm hòn đảo sụt xuống thành một khu rừng rậm và Zero Point hóa đá. Doctor Slone, khi đã được tự do trở lại, sửa chữa Apparatus, cỗ máy đã tiên đoán một kỳ nhật thực."
+    },
+    "heist": {
+      "title": "Cỗ máy thời gian của một ma cà rồng",
+      "text": "Kado Thorne, một ma cà rồng du hành thời gian, đến định cư trên hòn đảo. Doctor Slone thuê nhóm trộm của Nolan Chance đánh cắp Cỗ máy Thời gian của hắn và dùng nó để đưa Jones về quá khứ."
+    },
+    "og": {
+      "title": "Trở về điểm khởi đầu",
+      "text": "Jones rơi vào một phiên bản khác của Chương 1, Mùa 5. Ở đó, Kevin cố kéo Zero Point ra ngoài, và tên lửa được chế tạo lại với Cỗ máy Thời gian gắn chặt vào nó."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Tên lửa và thiên thạch tái tạo hố đen, và hố đen trở thành một vụ Big Bang: những thiên hà mới ra đời, trong đó có LEGO, đua xe và âm nhạc, cùng với một thực tại mới, Helios."
+    },
+    "underground": {
+      "title": "Underground đối đầu Society",
+      "text": "Một cuộc chiến nổ ra giữa Underground do Hope lãnh đạo và Society của Montague cùng Valeria, chị em gái của Hope. Peter Griffin là một trong những ông trùm của Society."
+    },
+    "pandora": {
+      "title": "Hộp Pandora",
+      "text": "Một bàn tay khổng lồ mang Hộp Pandora đến hòn đảo, và người chơi đã mở nó ra."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus muốn quét sạch người phàm. Oracle phong Looper làm Người hùng của Phàm nhân, còn Zeus mất đi sự bất tử và bị đánh bại trên đỉnh Olympus."
+    },
+    "wanderer": {
+      "title": "Wanderer",
+      "text": "Megalo Don muốn nạp Nitro làm nhiên liệu cho con tàu Leviathan của hắn, và một Wanderer bí ẩn làm việc bên cạnh hắn. Wanderer phá hoại đường ống, và vụ nổ làm lộ ra Hộp Pandora."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Wanderer chính là Doctor Doom, kẻ đã hấp thụ sức mạnh của chiếc Hộp. Jones trở thành Captain Jones, và các anh hùng đánh bại Doom rồi đưa hắn trở về thực tại của chính hắn."
+    },
+    "remix": {
+      "title": "Hướng tới Thực tại 783",
+      "text": "Trong Remix: The Finale, Hope, Jones và Looper đi qua một vết nứt, theo sau là một mảnh vỡ của Zero Point, hướng tới Thực tại 783."
+    },
+    "spirits": {
+      "title": "Spirit Realm",
+      "text": "Mảnh vỡ của Zero Point mở lại các cánh cổng dẫn tới Spirit Realm, và lũ quỷ quay trở lại. Shogun X mang mảnh vỡ tới cho Dark Presence, cho đến khi Daigo, một người làm mặt nạ, đánh bại hắn và giải thoát Jade. Một Shogun X mới lên thay thế hắn."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Vàng ma thuật lan khắp hòn đảo. Fletcher Kane thâu tóm tất cả, nhóm Outlaws do Midas cầm đầu phản công, và Midas cũng muốn có mảnh vỡ. Daigo phá vỡ phong ấn của Spirit Realm và bị tha hóa thành quỷ."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Đế chế của Palpatine kéo đến cùng Death Star, còn Hope và Jones gia nhập Resistance. Khi Death Star bị phá hoại, các mảnh vụn của nó đâm vào một cánh cổng linh hồn, ban sức mạnh cho người dân trên đảo và kéo Superman tới."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Daigo bị chiếm hữu đã hút cạn hòn đảo bằng các Spire. Hope, Jones và The Night Rose lập nên Supernova Academy cùng Superman và Robin, và cuối cùng Superman chặt đứt một xúc tu của Dark Presence, đóng cổng lại và đưa Daigo trở về."
+    },
+    "swarm": {
+      "title": "Swarm",
+      "text": "Từ chiếc xúc tu đang thối rữa sinh ra Swarm, một cuộc xâm lăng của côn trùng. O.X.R. của Tướng Onyx Winter và Power Rangers, cùng Megazord của họ, chiến đấu chống lại nạn côn trùng, cho đến khi chính Dark Presence vượt sang hòn đảo."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope đánh cắp một mẩu nhỏ của mảnh vỡ bằng phi thuyền của Kang và Kodos, và các thực tại hợp nhất thành Springfield. Homer gắn mẩu nhỏ đó vào một chiếc điều khiển TV, đảo lộn thực tại và cuối cùng đã trả nó lại."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope và Jones tập hợp lực lượng từ khắp Omniverse, trong đó có Godzilla, Kong, Superman, các Ranger và Homer. Jones gọi tới một khối lập phương màu đỏ và Mecha đá nó vào Dark Presence, khiến thực thể này bị tiêu diệt. Mảnh vỡ chữa lành Oninoshima và đưa Hope, Jones cùng Looper tới một thực tại mới."
+    },
+    "voyager": {
+      "title": "Dark Voyager",
+      "text": "Dark Voyager bắn hạ Battle Bus, và The Order đến trong một thiên thạch để đáp lại tín hiệu của Jones. Voyager chiếm lấy các phòng thí nghiệm InnoLoop cùng mảnh vỡ được cất giữ ở đó và giam The Order lại, cho đến khi Looper giải thoát cô và cô dựng một đèn hiệu theo bản thiết kế của The Scientist để triệu tập The Seven."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Một tên lửa bay qua một vết nứt màu đỏ, mang theo The Visitor, người nói rằng mình đến từ một “Unknown Reality”. Sau đó, nắm trong tay ba trong số bảy mảnh vỡ, phi thuyền Dark Harvester mở các Rift Portal tới thực tại của những mảnh còn thiếu."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "Pháo đài của The Ice King xuất hiện cùng The Foundation bị đóng băng trong bộ sưu tập của hắn, và hòn đảo chia thành Team Foundation và Team Ice King. AMIE tiết lộ số phận của The Seven nguyên bản: The Imagined đã chết, The Scientist, The Origin và The Visitor nguyên bản đã bị Chrome cuốn đi, còn The Paradigm đã hy sinh bản thân."
+    },
+    "stwlink": {
+      "title": "Save the World gặp gỡ hòn đảo",
+      "text": "Lần đầu tiên, cốt truyện gắn Save the World với hòn đảo: Dark Voyager xuất hiện tại Homebase, còn Jess và Penny du hành tới hòn đảo Battle Royale để gia nhập New Seven."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "The Ice King đóng băng The Foundation rồi bị Voyager hạ gục, và Voyager tái tạo Zero Point. Looper chém Harvester bằng Infinity Blade và hòn đảo trở thành Shattered Coast. Sau đó, The Visitor bắn Jones và để lộ thân phận thật: Geno, chủ nhân của Voyager."
+    },
+    "sprites": {
+      "title": "Runners: các Sprite",
+      "text": "Khi Jones nằm trong một bể hồi phục, Doctor Slone và Singularity xuất hiện. Zero Point bất ổn sinh ra các Sprite, được tạo nên từ cùng loại vật chất với Zero Point; chúng cung cấp năng lượng cho Stabilizer và giúp chữa lành cho Jones. Một Sprite gia nhập The Seven với vai trò The Guardian, Slone gia nhập với vai trò Innovation và Hope với vai trò The Prophecy."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Thông qua một cửa hậu trong Stabilizer, Geno hack Loop và chiếm lấy Zero Point, để lại một băng game ở vị trí của nó."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno cắm Zero Point vào cỗ máy của hắn, và các máy console rải khắp hòn đảo thu hoạch vật chất để xây dựng thế giới hoàn hảo của hắn trên bầu trời. Jones tỉnh dậy sau cơn hôn mê, Geno tiết lộ rằng hắn đã tạo ra The Imagined và The Order, còn Looper thì từ chối về phe hắn."
+    }
+  },
+  "who": {
+    "title": "Ai là ai",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agent Jones",
+        "text": "Cựu đặc vụ của Imagined Order trở thành người hùng. Là gương mặt của trang phục mặc định, gắn liền với Loop kể từ The Device."
+      },
+      "visitor": {
+        "name": "The Visitor",
+        "text": "Hoa tiêu của The Seven, người đã phóng tên lửa ở Chương 1. “Visitor” của Chương 7 thực ra là Geno cải trang."
+      },
+      "scientist": {
+        "name": "The Scientist",
+        "text": "Kỹ sư của The Seven và là người tạo ra AMIE. Đã bị Chrome cuốn đi."
+      },
+      "paradigm": {
+        "name": "The Paradigm",
+        "text": "Phi công lái Mecha. Cô đã hy sinh bản thân vì The Seven."
+      },
+      "foundation": {
+        "name": "The Foundation",
+        "text": "Thủ lĩnh của The Seven. Anh trở lại ở Chương 7, bị đóng băng trong bộ sưu tập của The Ice King."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Trùm tội phạm đã lập ra The Agency và luôn tìm cách quay trở lại."
+      },
+      "slone": {
+        "name": "Doctor Slone",
+        "text": "Chỉ huy của Imagined Order, về sau gia nhập The Seven với vai trò Innovation."
+      },
+      "cubequeen": {
+        "name": "Cube Queen",
+        "text": "Kẻ thống trị Last Reality."
+      },
+      "imagined": {
+        "name": "The Imagined",
+        "text": "Con gái của Geno và là thành viên của The Seven. Cô qua đời trong Collision."
+      },
+      "order": {
+        "name": "The Order",
+        "text": "Người con gái còn lại của Geno và là thành viên của The Seven, người tập hợp New Seven."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Người sáng lập Imagined Order và là phản diện trung tâm của câu chuyện."
+      },
+      "herald": {
+        "name": "The Herald",
+        "text": "Sứ giả của The Nothing, kẻ gieo rắc Chrome."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Ma cà rồng du hành thời gian, bị đánh cắp Cỗ máy Thời gian trong một phi vụ trộm."
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Người sáng lập Underground, người nhìn thấy tương lai trong những bức graffiti. Cô gia nhập The Seven với vai trò The Prophecy."
+      },
+      "voyager": {
+        "name": "Dark Voyager",
+        "text": "Phục vụ Geno và săn lùng các mảnh vỡ của Zero Point."
+      }
+    }
+  },
+  "now": {
+    "title": "Câu chuyện vẫn tiếp diễn",
+    "text": "Mỗi mùa lại thêm một chương mới cho cốt truyện, được kể qua nhiệm vụ, sự kiện trực tiếp và truyện tranh. Hãy theo dõi mùa hiện tại để xem điều gì sẽ xảy ra tiếp theo."
+  },
+  "sources": "Dựa trên Fortnite Wiki (Weird Gloop), ghi chú bản cập nhật và truyện tranh chính thức của Epic, cùng báo chí chuyên về game. Các giả thuyết của người hâm mộ không được đưa vào."
+}

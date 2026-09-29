@@ -1,0 +1,286 @@
+{
+  "title": "De verhaallijn van Fortnite",
+  "intro": "Het verhaal dat in het spel wordt verteld, hoofdstuk voor hoofdstuk: de Loop, de Seven, het Zero Point en elke realiteit waar het eiland doorheen is gegaan. Gebaseerd op het spel zelf en op de officiële strips en korte films van Epic.",
+  "chapters": "Hoofdstukken",
+  "eras": {
+    "c1": "Hoofdstuk 1",
+    "c2": "Hoofdstuk 2",
+    "c3": "Hoofdstuk 3",
+    "c4": "Hoofdstuk 4",
+    "c5": "Hoofdstuk 5",
+    "c6": "Hoofdstuk 6",
+    "c7": "Hoofdstuk 7"
+  },
+  "items": {
+    "storm": {
+      "title": "De storm en de Loop",
+      "text": "De storm die zich in elk potje samentrekt, is in het verhaal wat de Loop draaiende houdt: gevangen op het eiland vechten de Loopers steeds opnieuw en verliezen ze hun herinneringen. Die verklaring komt pas veel later."
+    },
+    "visitor": {
+      "title": "Een komeet en een bezoeker",
+      "text": "In Seizoen 3 trok er een komeet langs de hemel, die in Seizoen 4 insloeg en Dusty Divot vormde. In de rots zat een capsule met de Visitor, een lid van een groep die de Seven heet."
+    },
+    "rocket": {
+      "title": "De raket en de rifts",
+      "text": "De Visitor bouwde een nepraket uit een filmdecor om tot een echte raket en lanceerde hem. De vlucht opende rifts en een enorme scheur in de lucht, en hij had het over een ‘Zero Point Oscillator’: de eerste keer dat het Zero Point werd genoemd."
+    },
+    "kevin": {
+      "title": "Kevin the Cube",
+      "text": "Toen de scheur dichtging, verscheen er een paarse kubus die Kevin heette en die over het eiland trok terwijl hij runen afdrukte. Hij loste op in Loot Lake, tilde het Floating Island op en begon de storm van energie te voorzien. Toen hij ontplofte, werd iedereen de In-Between in geslingerd, waarna ze terugkwamen via een rift in de vorm van een vlinder."
+    },
+    "iceking": {
+      "title": "De Ice King",
+      "text": "Een ijsberg bracht het kasteel van de Ice King naar Polar Peak. Toen hij ontwaakte, begroef hij het eiland onder de sneeuw."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Er verschenen een jungle en een vulkaan. Tijdens het evenement The Unvaulting ging de Vault open en verwoestte de vulkaan Tilted Towers en Retail Row."
+    },
+    "showdown1": {
+      "title": "Robot tegen monster",
+      "text": "In The Final Showdown nam de Mecha het op tegen een reusachtig monster, de Devourer. De robot rukte het Zero Point uit de Vault voor extra kracht en won met het zwaard van het standbeeld van de Singularity, maar het Zero Point werd instabiel."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "De Scientist kwam aan in een meteoor die de explosie van het Zero Point in de tijd bevroor. Tapes die op het eiland werden gevonden, gingen over de Seven, de Bridge en over ‘looped’ zijn. Aan het eind duwden zeven raketten de meteoor door een rift het Zero Point in, en een zwart gat slokte het eiland op."
+    },
+    "apollo": {
+      "title": "Een eiland uit het zwarte gat",
+      "text": "Een nieuw eiland, Apollo, kwam uit het zwarte gat. Laadschermen van de Imagined Order meldden dat de Seven waren geslaagd en dat ‘het Zero Point van ons is’."
+    },
+    "agency": {
+      "title": "De Agency",
+      "text": "Midas richtte de Agency op, en er brak een spionageoorlog uit tussen GHOST en SHADOW. Brutus, TNTina, Meowscles en Skye kozen elk een kant."
+    },
+    "device": {
+      "title": "The Device en Agent Jones",
+      "text": "De machine van Midas drong de storm terug, die veranderde in een muur van water. De Looper werd naar de Bridge geslingerd en ontmoette Agent Jones, die uitlegde dat het niet zomaar een storm was: hij hing samen met de Loop."
+    },
+    "nexus": {
+      "title": "Nexus War",
+      "text": "Thor en de Marvel-helden kwamen naar het eiland, en Galactus kwam voor het Zero Point. Door het plan van Tony Stark slikte hij Battle Buses vol bommen in en werd hij via een rift weggestuurd."
+    },
+    "zeropoint": {
+      "title": "Het Zero Point blootgelegd",
+      "text": "Het Zero Point lag open en bloot in het midden van het eiland. In opdracht van Doctor Slone haalde Jones Hunters uit andere realiteiten, zoals de Mandalorian, Kratos, Master Chief en de Predator, zodat niemand uit de Loop kon ontsnappen."
+    },
+    "foundation": {
+      "title": "De Foundation",
+      "text": "Jones brak met de Imagined Order en riep de Seven op, met het aanbod om ‘Geno en de Sisters’ uit te leveren: de eerste keer dat de naam Geno viel. De Foundation kwam en sloot zichzelf op in het Zero Point, waardoor de Spire ontstond, terwijl Jones vast kwam te zitten in de Loop."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "Het eiland werd wild. Raz stal het artefact uit de Spire en raakte erdoor gecorrumpeerd."
+    },
+    "invasion": {
+      "title": "De invasie",
+      "text": "De Last Reality viel binnen met haar Mothership en verwoestte de Spire, en de Imagined Order kwam openlijk tevoorschijn. Tijdens Operation: Sky Fire bliezen de Loopers het Mothership op en herstartten ze een Cube, die blauw werd en hen begon te helpen."
+    },
+    "cubequeen": {
+      "title": "De Cube Queen",
+      "text": "Cubes corrumpeerden het eiland, en de Cube Queen, heerseres van de Last Reality, stapte uit de Golden Cube."
+    },
+    "theend2": {
+      "title": "Het eiland op zijn kop",
+      "text": "De Foundation redde Jones bij de Bridge, en Jones schakelde de gyroscoop uit: het eiland draaide ondersteboven. De Visitor en de Scientist redden de Loopers, en de Cube Queen trok zich terug."
+    },
+    "flipped": {
+      "title": "De Seven tegen de Imagined Order",
+      "text": "Op het omgekeerde eiland vroeg de Foundation de Loopers om te helpen de Imagined Order te vernietigen. De basis van de Seven was het Sanctuary."
+    },
+    "resistance": {
+      "title": "De Resistance",
+      "text": "De Imagined Order viel binnen met een reusachtige boor, tanks en luchtschepen en zette bouwen uit. Doctor Strange en de Seven, onder wie de Imagined en de Origin, sloten zich aan bij de Resistance, die het eiland heroverde terwijl de Imagined Order de Collider bouwde om het Zero Point op te blazen."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "De Paradigm stuurde de Mecha de Collider in en verpletterde Doctor Slone. De Imagined offerde zichzelf op en viel samen met Geno in het Zero Point, en Jones en de Foundation sprongen hen achterna. Geno raakte verspreid over het Omniverse."
+    },
+    "chrome": {
+      "title": "De Chrome",
+      "text": "Het blootgelegde Zero Point liet de Reality Tree groeien, en leden van de Seven begonnen te verdwijnen. De Chrome van de Herald, dienares van de Nothing, nam de Scientist en de Origin mee en verspreidde zich over het eiland."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "De Herald versmolt met de Reality Tree en verwoestte de eilanden van Hoofdstuk 2 en 3. Het Zero Point voegde stukken van verschillende realiteiten samen tot een nieuw eiland, Asteria."
+    },
+    "riftgate": {
+      "title": "De Rift Gate",
+      "text": "In de Citadel dienden de Oathbound de Ageless. Stellan bouwde een Rift Gate die op Kinetic Ore draaide, maar die werd gesaboteerd en ontplofte."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City kwam door een rift, en de Looper hielp het Peace Syndicate een saboteur op te sporen, terwijl aardbevingen die met het Zero Point te maken hadden het eiland deden schudden."
+    },
+    "wilds": {
+      "title": "De jungle",
+      "text": "Het midden van het eiland zakte weg in een jungle en het Zero Point veranderde in steen. Doctor Slone, weer vrij, repareerde de Apparatus, die een eclips voorspelde."
+    },
+    "heist": {
+      "title": "De tijdmachine van een vampier",
+      "text": "Kado Thorne, een tijdreizende vampier, vestigde zich op het eiland. Doctor Slone huurde de overvalploeg van Nolan Chance in om de Time Machine van de vampier te stelen, en gebruikte die om Jones naar het verleden te sturen."
+    },
+    "og": {
+      "title": "Terug naar het begin",
+      "text": "Jones belandde in een alternatieve versie van Hoofdstuk 1, Seizoen 5. Daar probeerde Kevin het Zero Point eruit te trekken, en de raket werd herbouwd met de Time Machine eraan vastgemaakt."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "De raket en de meteoor creëerden het zwarte gat opnieuw, dat een Big Bang werd: er ontstonden nieuwe sterrenstelsels, waaronder LEGO, racen en muziek, en een nieuwe realiteit, Helios."
+    },
+    "underground": {
+      "title": "De Underground tegen de Society",
+      "text": "Er brak een oorlog uit tussen de Underground, geleid door Hope, en de Society van Montague en Valeria, de zus van Hope. Peter Griffin was een van de bazen van de Society."
+    },
+    "pandora": {
+      "title": "Pandora’s Box",
+      "text": "Een reusachtige hand bracht Pandora’s Box naar het eiland, en de spelers maakten hem open."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus wilde de stervelingen uitroeien. De Oracle riep de Looper uit tot Hero of the Mortals, en Zeus verloor zijn onsterfelijkheid en werd verslagen op de Olympus."
+    },
+    "wanderer": {
+      "title": "De Wanderer",
+      "text": "Megalo Don wilde zijn schip, de Leviathan, laten varen op Nitro, en een mysterieuze Wanderer werkte aan zijn zijde. De Wanderer saboteerde de pijpleiding, en door de explosie kwam Pandora’s Box bloot te liggen."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "De Wanderer bleek Doctor Doom te zijn, die de kracht van de Box in zich opnam. Jones werd Captain Jones, en de helden versloegen Doom en stuurden hem terug naar zijn eigen realiteit."
+    },
+    "remix": {
+      "title": "Op weg naar Reality 783",
+      "text": "In Remix: The Finale gingen Hope, Jones en de Looper door een rift op weg naar Reality 783, gevolgd door een shard van het Zero Point."
+    },
+    "spirits": {
+      "title": "De Spirit Realm",
+      "text": "De shard van het Zero Point opende opnieuw portalen naar de Spirit Realm, en er keerden demonen terug. Shogun X bracht de shard naar de Dark Presence, tot Daigo, een maskermaker, hem versloeg en Jade bevrijdde. Een nieuwe Shogun X nam zijn plaats in."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Magisch goud verspreidde zich over het eiland. Fletcher Kane eigende zich alles toe, de Outlaws onder leiding van Midas sloegen terug, en ook Midas wilde de shard. Daigo verbrak het zegel van de Spirit Realm en werd gecorrumpeerd tot een demon."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Het Empire van Palpatine kwam met de Death Star, en Hope en Jones sloten zich aan bij de Resistance. Toen de Death Star werd gesaboteerd, raakten de brokstukken een spiritportaal, kregen de bewoners van het eiland krachten en werd Superman aangetrokken."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Een bezeten Daigo zoog het eiland leeg met Spires. Hope, Jones en de Night Rose richtten samen met Superman en Robin de Supernova Academy op, en uiteindelijk hakte Superman een tentakel van de Dark Presence af, sloot hij het portaal en bracht hij Daigo terug."
+    },
+    "swarm": {
+      "title": "De Swarm",
+      "text": "Uit de rottende tentakel kwam de Swarm, een invasie van insecten. De O.X.R. van generaal Onyx Winter en de Power Rangers, met hun Megazord, bestreden de plaag, tot de Dark Presence zelf naar het eiland overstak."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope stal met het schip van Kang en Kodos een splinter van de shard, en realiteiten smolten samen tot Springfield. Homer koppelde de splinter aan een afstandsbediening, zette de realiteit op zijn kop en gaf hem uiteindelijk terug."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope en Jones verzamelden krachten uit het hele Omniverse, onder wie Godzilla, Kong, Superman, de Rangers en Homer. Jones riep een rode Cube op en de Mecha schopte die in de Dark Presence, die werd vernietigd. De shard genas Oninoshima en bracht Hope, Jones en de Looper naar een nieuwe realiteit."
+    },
+    "voyager": {
+      "title": "De Dark Voyager",
+      "text": "De Dark Voyager schoot de Battle Bus neer, en de Order arriveerde in een meteoor, als antwoord op het signaal van Jones. De Voyager nam de InnoLoop-labs en de shard die daar werd bewaard over en sloot de Order op, tot de Looper haar bevrijdde en zij met de plannen van de Scientist een baken bouwde om de Seven op te roepen."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Door een rode rift kwam een raket met de Visitor aan boord, die zei dat hij uit een ‘Unknown Reality’ kwam. Daarna opende de Dark Harvester, een schip met drie van de zeven shards, Rift Portals naar de realiteiten van de vermisten."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "Het fort van de Ice King arriveerde met de Foundation bevroren in zijn collectie, en het eiland splitste zich in Team Foundation en Team Ice King. AMIE onthulde wat er met de oorspronkelijke Seven was gebeurd: de Imagined was dood, de Scientist, de Origin en de oorspronkelijke Visitor waren verloren aan de Chrome, en de Paradigm had zichzelf opgeofferd."
+    },
+    "stwlink": {
+      "title": "Save the World ontmoet het eiland",
+      "text": "Voor het eerst verbond het verhaal Save the World met het eiland: de Dark Voyager dook op bij de Homebase, en Jess en Penny reisden naar het Battle Royale-eiland om zich bij de New Seven aan te sluiten."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "De Ice King bevroor de Foundation en werd uitgeschakeld door de Voyager, die het Zero Point herbouwde. De Looper sneed de Harvester open met de Infinity Blade en het eiland werd de Shattered Coast. Toen schoot de Visitor op Jones en onthulde hij wie hij echt was: Geno, de meester van de Voyager."
+    },
+    "sprites": {
+      "title": "Runners: de sprites",
+      "text": "Terwijl Jones in een genezingstank lag, kwamen Doctor Slone en de Singularity aan. Het instabiele Zero Point bracht de sprites voort, gemaakt van dezelfde materie als het Zero Point, die de Stabilizer van energie voorzien en helpen Jones te genezen. Een sprite sloot zich aan bij de Seven als de Guardian, Slone als Innovation en Hope als de Prophecy."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Via een achterdeur in de Stabilizer hackte Geno de Loop en maakte hij zich meester van het Zero Point, waarbij hij een videogamecartridge op zijn plek achterliet."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno sloot het Zero Point aan op zijn machine, en consoles verspreid over het eiland oogsten materie om zijn perfecte wereld in de lucht te bouwen. Jones ontwaakte uit zijn coma, Geno onthulde dat hij de Imagined en de Order had gemaakt, en de Looper weigerde zich bij hem aan te sluiten."
+    }
+  },
+  "who": {
+    "title": "Wie is wie",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agent Jones",
+        "text": "Voormalig agent van de Imagined Order die een held werd. Het gezicht van de standaardskin, sinds The Device verbonden met de Loop."
+      },
+      "visitor": {
+        "name": "De Visitor",
+        "text": "Navigator van de Seven die in Hoofdstuk 1 de raket lanceerde. De ‘Visitor’ uit Hoofdstuk 7 was Geno in vermomming."
+      },
+      "scientist": {
+        "name": "De Scientist",
+        "text": "Ingenieur van de Seven en maker van AMIE. Verloren aan de Chrome."
+      },
+      "paradigm": {
+        "name": "De Paradigm",
+        "text": "Piloot van de Mecha. Ze offerde zichzelf op voor de Seven."
+      },
+      "foundation": {
+        "name": "De Foundation",
+        "text": "Leider van de Seven. Hij keerde terug in Hoofdstuk 7, bevroren in de collectie van de Ice King."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Misdaadbaas die de Agency oprichtte en steeds weer terugkomt."
+      },
+      "slone": {
+        "name": "Doctor Slone",
+        "text": "Commandant van de Imagined Order die zich later als Innovation bij de Seven aansloot."
+      },
+      "cubequeen": {
+        "name": "De Cube Queen",
+        "text": "Heerseres van de Last Reality."
+      },
+      "imagined": {
+        "name": "De Imagined",
+        "text": "Dochter van Geno en lid van de Seven. Ze stierf tijdens Collision."
+      },
+      "order": {
+        "name": "De Order",
+        "text": "De andere dochter van Geno en lid van de Seven, die de New Seven bijeenbrengt."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Oprichter van de Imagined Order en de grote schurk van het verhaal."
+      },
+      "herald": {
+        "name": "De Herald",
+        "text": "Boodschapster van de Nothing, die de Chrome verspreidt."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Tijdreizende vampier wiens Time Machine bij een overval werd gestolen."
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Oprichtster van de Underground, die de toekomst in graffiti ziet. Ze sloot zich als de Prophecy aan bij de Seven."
+      },
+      "voyager": {
+        "name": "De Dark Voyager",
+        "text": "Dient Geno en jaagt op de shards van het Zero Point."
+      }
+    }
+  },
+  "now": {
+    "title": "Het verhaal gaat verder",
+    "text": "Elk seizoen voegt een nieuw hoofdstuk toe aan het verhaal, verteld via quests, live-evenementen en strips. Volg het huidige seizoen om te zien wat er gaat gebeuren."
+  },
+  "sources": "Gebaseerd op de Fortnite Wiki (Weird Gloop), de patch notes en officiële strips van Epic en de gamepers. Fantheorieën zijn weggelaten."
+}

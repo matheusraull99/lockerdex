@@ -31,6 +31,7 @@ const GROUPS: { title: UiKey; items: { route: Route; params?: Record<string, str
       { route: "news", label: "nav.news", desc: "more.news", icon: "✉" },
       { route: "season", label: "nav.season", desc: "more.season", icon: "◷" },
       { route: "history", label: "nav.history", desc: "more.history", icon: "⌛" },
+      { route: "lore", label: "nav.lore", desc: "more.lore", icon: "✧" },
     ],
   },
 ];

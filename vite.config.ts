@@ -73,6 +73,7 @@ const ROUTE_TEXT: Record<string, { title: string | null; desc: string }> = {
   news: { title: "nav.news", desc: "more.news" },
   season: { title: "nav.season", desc: "more.season" },
   history: { title: "nav.history", desc: "more.history" },
+  lore: { title: "nav.lore", desc: "more.lore" },
   more: { title: "nav.more", desc: "app.tagline" },
 };
 
@@ -106,40 +107,62 @@ function seoPages(env: Record<string, string>): Plugin {
       const verification = env.VITE_GSC_VERIFICATION?.trim();
       const urls: string[] = [];
 
-      // História: datas e ordem em data/history.json, textos por idioma em i18n/history (sem o idioma, inglês).
-      const history = JSON.parse(readFileSync(resolve(root, "src/data/history.json"), "utf8")) as {
-        eras: { id: string; items: { id: string; date: string }[] }[];
+      // História (linha do tempo) e enredo: datas/temporadas e ordem em data/<modo>.json, textos por idioma
+      // em i18n/<modo> (sem o idioma, inglês).
+      type HistData = {
+        eras: { id: string; chapter?: number; items: { id: string; date?: string; season?: number | string }[] }[];
+        who?: { id: string; chapter: number; season: number | string }[];
       };
-      const histDir = resolve(root, "src/i18n/history");
-      const readHist = (code: string) => JSON.parse(readFileSync(resolve(histDir, `${code}.json`), "utf8"));
-      const histText = (code: string) => {
-        const en = readHist("en");
+      const histData = (kind: string) => JSON.parse(readFileSync(resolve(root, `src/data/${kind}.json`), "utf8")) as HistData;
+      const readHist = (kind: string, code: string) => JSON.parse(readFileSync(resolve(root, `src/i18n/${kind}/${code}.json`), "utf8"));
+      const histText = (kind: string, code: string) => {
+        const en = readHist(kind, "en");
         let loc: typeof en = {};
         try {
-          loc = readHist(code);
+          loc = readHist(kind, code);
         } catch {
-          // idioma sem tradução da história: fica o inglês
+          // idioma sem tradução: fica o inglês
         }
-        return { ...en, ...loc, eras: { ...en.eras, ...loc.eras }, items: { ...en.items, ...loc.items }, now: loc.now ?? en.now };
+        const who = en.who && { ...en.who, ...loc.who, items: { ...en.who.items, ...loc.who?.items } };
+        return { ...en, ...loc, eras: { ...en.eras, ...loc.eras }, items: { ...en.items, ...loc.items }, who, now: loc.now ?? en.now };
       };
       const when = (code: string, date: string) => {
         const [y, m, d] = date.split("-").map(Number);
         const o: Intl.DateTimeFormatOptions = d ? { day: "numeric", month: "long", year: "numeric" } : m ? { month: "long", year: "numeric" } : { year: "numeric" };
         return new Intl.DateTimeFormat(code, { ...o, calendar: "gregory", timeZone: "UTC" }).format(Date.UTC(y, (m || 1) - 1, d || 1));
       };
-      /** A linha do tempo inteira no HTML pronto, para o Google ler a história sem rodar o app. */
-      const historyShell = (code: string, nav: string) => {
-        const H = histText(code);
-        const eras = history.eras
+      /** "C1 T4" pelo rótulo curto do idioma (o mesmo do app); temporada com nome fica "C4 OG". */
+      const seasonTag = (L: Loc, chapter?: number, season?: number | string) =>
+        chapter === undefined || season === undefined
+          ? ""
+          : typeof season === "number" || season === "X"
+            ? (L.ui["season.short"] ?? "C{chapter} S{season}").replace("{chapter}", String(chapter)).replace("{season}", String(season))
+            : `C${chapter} ${season}`;
+      /** A linha do tempo (ou o enredo) inteira no HTML pronto, para o Google ler sem rodar o app. */
+      const historyShell = (kind: string, code: string, nav: string) => {
+        const D = histData(kind);
+        const H = histText(kind, code);
+        const L = locs[code];
+        const eras = D.eras
           .map(
             (e) =>
               `<section><h2>${esc(H.eras[e.id] ?? e.id)}</h2><ol>${e.items
                 .filter((i) => H.items[i.id])
-                .map((i) => `<li><h3>${esc(H.items[i.id].title)}</h3><p><time datetime="${i.date}">${esc(when(code, i.date))}</time>. ${esc(H.items[i.id].text)}</p></li>`)
+                .map((i) => {
+                  const tag = i.date ? `<time datetime="${i.date}">${esc(when(code, i.date))}</time>` : esc(seasonTag(L, e.chapter, i.season));
+                  return `<li><h3>${esc(H.items[i.id].title)}</h3><p>${tag}. ${esc(H.items[i.id].text)}</p></li>`;
+                })
                 .join("")}</ol></section>`,
           )
           .join("");
-        return `<main class="seo-shell"><h1>${esc(H.title)}</h1><p>${esc(H.intro)}</p>${eras}<h2>${esc(H.now.title)}</h2><p>${esc(H.now.text)}</p><ul>${nav}</ul></main>`;
+        const who =
+          D.who && H.who
+            ? `<section><h2>${esc(H.who.title)}</h2><ul>${D.who
+                .filter((w) => H.who.items[w.id])
+                .map((w) => `<li><b>${esc(H.who.items[w.id].name)}</b> (${esc(seasonTag(L, w.chapter, w.season))}): ${esc(H.who.items[w.id].text)}</li>`)
+                .join("")}</ul></section>`
+            : "";
+        return `<main class="seo-shell"><h1>${esc(H.title)}</h1><p>${esc(H.intro)}</p>${eras}${who}<h2>${esc(H.now.title)}</h2><p>${esc(H.now.text)}</p><ul>${nav}</ul></main>`;
       };
 
       const pathOf = (lang: string | null, route: string) => `${lang ? `${lang}/` : ""}${slugs[route] ? `${slugs[route]}/` : ""}`;
@@ -190,8 +213,8 @@ function seoPages(env: Record<string, string>): Plugin {
           .map((r) => `<li><a href="${base}${pathOf(lang, r)}">${esc(ROUTE_TEXT[r].title ? t(ROUTE_TEXT[r].title!) : t("nav.sprites"))}</a></li>`)
           .join("");
         const body =
-          route === "history"
-            ? historyShell(code, nav)
+          route === "history" || route === "lore"
+            ? historyShell(route, code, nav)
             : `<main class="seo-shell"><h1>${esc(rt.title ? t(rt.title) : "Lockerdex")}</h1><p>${esc(desc)}</p><ul>${nav}</ul></main>`;
         let html = template.replace(/<!--seo:start-->[\s\S]*?<!--seo:end-->/, head).replace("<!--seo:body-->", body);
         html = html.replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${code}" dir="${L.meta.dir === "rtl" ? "rtl" : "ltr"}">`);

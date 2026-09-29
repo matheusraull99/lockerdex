@@ -1,0 +1,286 @@
+{
+  "title": "Le scénario de Fortnite",
+  "intro": "L’histoire racontée dans le jeu, chapitre par chapitre : la Boucle, les Sept, le Point zéro et toutes les réalités que l’île a traversées. D’après le jeu lui-même et les comics et courts métrages officiels d’Epic.",
+  "chapters": "Chapitres",
+  "eras": {
+    "c1": "Chapitre 1",
+    "c2": "Chapitre 2",
+    "c3": "Chapitre 3",
+    "c4": "Chapitre 4",
+    "c5": "Chapitre 5",
+    "c6": "Chapitre 6",
+    "c7": "Chapitre 7"
+  },
+  "items": {
+    "storm": {
+      "title": "La tempête et la Boucle",
+      "text": "La tempête qui se referme à chaque partie est, dans l’histoire, ce qui fait tourner la Boucle : piégés sur l’île, les boucleurs se battent encore et encore et perdent la mémoire. Cette explication n’arrive que bien plus tard."
+    },
+    "visitor": {
+      "title": "Une comète et un visiteur",
+      "text": "Une comète a traversé le ciel à la Saison 3 et s’est écrasée à la Saison 4, creusant Dusty Divot. Dans la roche se trouvait une capsule qui transportait le Visiteur, membre d’un groupe appelé les Sept."
+    },
+    "rocket": {
+      "title": "La fusée et les failles",
+      "text": "Le Visiteur a transformé une fausse fusée de tournage en vraie fusée et l’a lancée. Son vol a ouvert des failles et une énorme fissure dans le ciel, et il a parlé d’un « oscillateur du Point zéro », la première mention du Point zéro."
+    },
+    "kevin": {
+      "title": "Kevin le cube",
+      "text": "Quand la fissure s’est refermée, un cube violet appelé Kevin est apparu et a traversé l’île en imprimant des runes. Il s’est dissous dans Loot Lake, a soulevé l’Île volante et s’est mis à alimenter la tempête. Quand il a explosé, tout le monde a été projeté dans l’Entre-deux, avant de revenir par une faille en forme de papillon."
+    },
+    "iceking": {
+      "title": "Le Roi des glaces",
+      "text": "Un iceberg a amené le château du Roi des glaces à Polar Peak. À son réveil, il a enseveli l’île sous la neige."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Une jungle et un volcan sont apparus. Lors de l’événement The Unvaulting, la chambre forte a été ouverte et le volcan a détruit Tilted Towers et Retail Row."
+    },
+    "showdown1": {
+      "title": "Robot contre monstre",
+      "text": "Lors de The Final Showdown, le Mécha a affronté un monstre géant, le Dévoreur. Le robot a arraché le Point zéro de la chambre forte pour gagner en puissance et l’a emporté grâce à l’épée de la statue de la Singularité, mais le Point zéro est devenu instable."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "Le Scientifique est arrivé dans une météorite qui a figé dans le temps l’explosion du Point zéro. Des cassettes trouvées sur l’île parlaient des Sept, du Pont et du fait d’être « bouclés ». À la fin, sept fusées ont poussé la météorite à travers une faille jusqu’au Point zéro, et un trou noir a englouti l’île."
+    },
+    "apollo": {
+      "title": "Une île née du trou noir",
+      "text": "Une nouvelle île, Apollo, est sortie du trou noir. Des écrans de chargement de l’Institut Onirique disaient que les Sept avaient réussi et que « le Point zéro est à nous »."
+    },
+    "agency": {
+      "title": "L’Agence",
+      "text": "Midas a fondé l’Agence, et une guerre d’espions a éclaté entre FANTÔME et OMBRE. Brutus, TNTina, Miaousclé et Skye ont chacun choisi un camp."
+    },
+    "device": {
+      "title": "The Device et l’agent Jones",
+      "text": "La machine de Midas a repoussé la tempête, qui s’est changée en mur d’eau. Le boucleur a été projeté jusqu’au Pont et a rencontré l’agent Jones, qui lui a expliqué que ce n’était pas une simple tempête : elle était liée à la Boucle."
+    },
+    "nexus": {
+      "title": "Nexus War",
+      "text": "Thor et les héros Marvel sont arrivés, et Galactus est venu chercher le Point zéro. Grâce au plan de Tony Stark, il a avalé des bus de combat remplis de bombes et a été renvoyé par une faille."
+    },
+    "zeropoint": {
+      "title": "Le Point zéro exposé",
+      "text": "Le Point zéro s’est retrouvé à découvert au centre de l’île. Sur ordre de la professeure Slone, Jones a fait venir des chasseurs d’autres réalités, comme le Mandalorien, Kratos, le Major et le Predator, pour que personne ne puisse s’échapper de la Boucle."
+    },
+    "foundation": {
+      "title": "La Fondation",
+      "text": "Jones a rompu avec l’Institut Onirique et a appelé les Sept, en proposant de leur livrer « Geno et les Sœurs » : c’était la première fois que le nom de Geno apparaissait. La Fondation est arrivée et s’est scellée à l’intérieur du Point zéro, créant la Flèche, tandis que Jones restait piégé dans la Boucle."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "L’île est retournée à l’état sauvage. Raz a volé l’artefact de la Flèche et a été corrompu par celui-ci."
+    },
+    "invasion": {
+      "title": "L’invasion",
+      "text": "L’Ultime Réalité a envahi l’île avec son vaisseau mère et a détruit la Flèche, et l’Institut Onirique s’est montré au grand jour. Lors d’Operation: Sky Fire, les boucleurs ont fait exploser le vaisseau mère et ont redémarré un cube, qui est devenu bleu et s’est mis à les aider."
+    },
+    "cubequeen": {
+      "title": "La Reine Cube",
+      "text": "Les cubes ont corrompu l’île, et la Reine Cube, maîtresse de l’Ultime Réalité, est sortie du cube doré."
+    },
+    "theend2": {
+      "title": "L’île se retourne",
+      "text": "La Fondation a sauvé Jones au Pont, et Jones a désactivé le gyroscope : l’île s’est retournée. Le Visiteur et le Scientifique ont sauvé les boucleurs, et la Reine a battu en retraite."
+    },
+    "flipped": {
+      "title": "Les Sept contre l’Institut Onirique",
+      "text": "Sur l’île retournée, la Fondation a demandé aux boucleurs de l’aider à détruire l’Institut Onirique. La base des Sept était le Sanctuaire."
+    },
+    "resistance": {
+      "title": "La Résistance",
+      "text": "L’Institut Onirique a envahi l’île avec une foreuse géante, des tanks et des dirigeables, et a désactivé la construction. Doctor Strange et les Sept, dont l’Onirisme et l’Origine, ont rejoint la Résistance, qui a repris l’île pendant que l’Institut Onirique construisait le Collisionneur pour faire exploser le Point zéro."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "Le Paradigme a lancé le Mécha contre le Collisionneur et a écrasé la professeure Slone. L’Onirisme a donné sa vie et a plongé dans le Point zéro avec Geno, et Jones et la Fondation ont sauté à leur suite. Geno s’est retrouvé éparpillé dans tout l’Omnivers."
+    },
+    "chrome": {
+      "title": "Le Chrome",
+      "text": "Le Point zéro à découvert a fait pousser l’Arbre de la réalité, et des membres des Sept ont commencé à disparaître. Le Chrome du Héraut, au service du Néant, a emporté le Scientifique et l’Origine et s’est répandu sur l’île."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "Le Héraut a fusionné avec l’Arbre de la réalité et a détruit les îles des Chapitres 2 et 3. Le Point zéro a réuni des morceaux de différentes réalités pour former une nouvelle île, Asteria."
+    },
+    "riftgate": {
+      "title": "La Porte de faille",
+      "text": "Dans la Citadelle, les Adoubés servaient l’Intemporel. Stellan a construit une Porte de faille alimentée au minerai cinétique, mais elle a été sabotée et a explosé."
+    },
+    "mega": {
+      "title": "Méga City",
+      "text": "Méga City est arrivée par une faille, et le boucleur a aidé le Groupe de pacification à retrouver un saboteur pendant que des séismes liés au Point zéro secouaient l’île."
+    },
+    "wilds": {
+      "title": "La jungle",
+      "text": "Le centre de l’île s’est enfoncé dans une jungle et le Point zéro s’est changé en pierre. La professeure Slone, de nouveau libre, a réparé l’Instrument, qui a prédit une éclipse."
+    },
+    "heist": {
+      "title": "La machine à remonter le temps d’un vampire",
+      "text": "Kado Thorne, un vampire qui voyage dans le temps, s’est installé sur l’île. La professeure Slone a engagé l’équipe de braqueurs de Nolan Chance pour voler la machine à remonter le temps du vampire, puis s’en est servie pour envoyer Jones dans le passé."
+    },
+    "og": {
+      "title": "Retour aux origines",
+      "text": "Jones a atterri dans une version alternative du Chapitre 1, Saison 5. Là-bas, Kevin a tenté d’extraire le Point zéro, et la fusée a été reconstruite avec la machine à remonter le temps fixée dessus."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "La fusée et la météorite ont recréé le trou noir, qui est devenu un Big Bang : de nouvelles galaxies sont nées, dont LEGO, la course et la musique, ainsi qu’une nouvelle réalité, Helios."
+    },
+    "underground": {
+      "title": "Les Subversifs contre l’Ordre",
+      "text": "Une guerre a éclaté entre les Subversifs, menés par Hope, et l’Ordre de Montaigu et de Valéria, la sœur de Hope. Peter Griffin était l’un des chefs de l’Ordre."
+    },
+    "pandora": {
+      "title": "La Boîte de Pandore",
+      "text": "Une main géante a apporté la Boîte de Pandore sur l’île, et les joueurs l’ont ouverte."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus voulait anéantir les mortels. L’Oracle a nommé le boucleur Héros des mortels, et Zeus a perdu son immortalité avant d’être vaincu sur l’Olympe."
+    },
+    "wanderer": {
+      "title": "Le Vagabond",
+      "text": "Mégalo Don voulait alimenter son navire, le Léviathan, avec de la nitro, et un mystérieux Vagabond travaillait à ses côtés. Le Vagabond a saboté le pipeline, et l’explosion a mis au jour la Boîte de Pandore."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Le Vagabond était le Docteur Fatalis, qui a absorbé le pouvoir de la Boîte. Jones est devenu Captain Jones, et les héros ont vaincu Fatalis et l’ont renvoyé dans sa propre réalité."
+    },
+    "remix": {
+      "title": "Vers la réalité 783",
+      "text": "Lors de Remix: The Finale, Hope, Jones et le boucleur ont franchi une faille en direction de la réalité 783, suivis par un fragment du Point zéro."
+    },
+    "spirits": {
+      "title": "Le monde des âmes",
+      "text": "Le fragment du Point zéro a rouvert des portails vers le monde des âmes, et les démons sont revenus. Shogun X apportait le fragment à la Présence obscure, jusqu’à ce que Daigo, un faiseur de masques, le batte et libère Jade. Un nouveau Shogun X a pris sa place."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Un or magique s’est répandu sur l’île. Fletcher Kane a tout accaparé, les hors-la-loi menés par Midas ont riposté, et Midas voulait aussi le fragment. Daigo a brisé le sceau du monde des âmes et, corrompu, est devenu un démon."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "L’Empire de Palpatine est arrivé avec l’Étoile de la Mort, et Hope et Jones ont rejoint la Résistance. Quand l’Étoile de la Mort a été sabotée, ses débris ont frappé un portail spirituel, ont donné des pouvoirs aux habitants de l’île et ont attiré Superman."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Daigo, possédé, a vidé l’île de son énergie avec des Flèches. Hope, Jones et la Rose de nuit ont fondé l’Académie Supernova avec Superman et Robin, et à la fin, Superman a tranché un tentacule de la Présence obscure, a refermé le portail et a ramené Daigo."
+    },
+    "swarm": {
+      "title": "L’essaim",
+      "text": "Du tentacule en décomposition est sorti l’essaim, une invasion d’insectes. L’O.X.R. de la générale Onyx Winter et les Power Rangers, avec leur Megazord, ont combattu l’infestation, jusqu’à ce que la Présence obscure elle-même passe sur l’île."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope a volé un éclat du fragment grâce au vaisseau de Kang et Kodos, et des réalités ont fusionné pour former Springfield. Homer a combiné l’éclat avec une télécommande, a mis la réalité sens dessus dessous, puis a fini par le rendre."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope et Jones ont réuni des forces venues de tout l’Omnivers, dont Godzilla, Kong, Superman, les Rangers et Homer. Jones a fait venir un cube rouge et le Mécha l’a envoyé d’un coup de pied dans la Présence obscure, qui a été détruite. Le fragment a guéri Oninoshima et a emmené Hope, Jones et le boucleur vers une nouvelle réalité."
+    },
+    "voyager": {
+      "title": "Le Voyageur noir",
+      "text": "Le Voyageur noir a abattu le bus de combat, et l’Institution est arrivée dans une météorite, en réponse au signal de Jones. Le Voyageur a pris le contrôle des labos InnoLoop et du fragment qui y était gardé, et a enfermé l’Institution, jusqu’à ce que le boucleur la libère et qu’elle construise une balise à partir des plans du Scientifique pour appeler les Sept."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Une fusée est arrivée par une faille rouge avec à son bord le Visiteur, qui disait venir d’une « réalité inconnue ». Puis, avec trois des sept fragments en sa possession, le vaisseau Moissonneur noir a ouvert des portails de faille vers les réalités de ceux qui manquaient à l’appel."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "La forteresse du Roi des glaces est arrivée avec, dans sa collection, la Fondation prise dans la glace, et l’île s’est divisée entre l’Équipe Fondation et l’Équipe Roi des glaces. AMIE a révélé le sort des Sept originels : l’Onirisme n’était plus, le Scientifique, l’Origine et le Visiteur original avaient été emportés par le Chrome, et le Paradigme avait donné sa vie."
+    },
+    "stwlink": {
+      "title": "Sauver le monde rencontre l’île",
+      "text": "Pour la première fois, l’histoire a relié Sauver le monde à l’île : le Voyageur noir s’est présenté à la base, et Jess et Penny se sont rendues sur l’île du Battle Royale pour rejoindre les nouveaux Sept."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "Le Roi des glaces a gelé la Fondation avant d’être éliminé par le Voyageur, qui a reconstitué le Point zéro. Le boucleur a tranché le Moissonneur avec la Lame de l’infini et l’île est devenue la Shattered Coast. Puis le Visiteur a tiré sur Jones et a révélé sa véritable identité : Geno, le maître du Voyageur."
+    },
+    "sprites": {
+      "title": "Runners : les esprits",
+      "text": "Alors que Jones était dans une cuve de soin, la professeure Slone et la Singularité sont arrivées. Le Point zéro instable a donné naissance aux esprits, faits de la même matière que le Point zéro, qui alimentent le Stabilisateur et aident à soigner Jones. Un esprit a rejoint les Sept sous le nom de Gardien, Slone sous celui d’Innovation et Hope sous celui de Prophétie."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Par une porte dérobée du Stabilisateur, Geno a piraté la Boucle et s’est emparé du Point zéro, en laissant à sa place une cartouche de jeu vidéo."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno a branché le Point zéro sur sa machine, et des consoles réparties sur l’île récoltent de la matière pour construire son monde parfait dans le ciel. Jones s’est réveillé de son coma, Geno a révélé qu’il avait créé l’Onirisme et l’Institution, et le boucleur a refusé de le rejoindre."
+    }
+  },
+  "who": {
+    "title": "Qui est qui",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agent Jones",
+        "text": "Ancien agent de l’Institut Onirique devenu héros. Le visage de la tenue par défaut, lié à la Boucle depuis l’événement The Device."
+      },
+      "visitor": {
+        "name": "Le Visiteur",
+        "text": "Navigateur des Sept, qui a lancé la fusée au Chapitre 1. Le « Visiteur » du Chapitre 7 était Geno déguisé."
+      },
+      "scientist": {
+        "name": "Le Scientifique",
+        "text": "Ingénieur des Sept et créateur d’AMIE. Emporté par le Chrome."
+      },
+      "paradigm": {
+        "name": "Le Paradigme",
+        "text": "Pilote du Mécha. Elle s’est sacrifiée pour les Sept."
+      },
+      "foundation": {
+        "name": "La Fondation",
+        "text": "Le leader des Sept. De retour au Chapitre 7, gelé dans la collection du Roi des glaces."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Parrain du crime qui a fondé l’Agence et qui revient sans cesse."
+      },
+      "slone": {
+        "name": "Professeur Slone",
+        "text": "Commandante de l’Institut Onirique qui a ensuite rejoint les Sept sous le nom d’Innovation."
+      },
+      "cubequeen": {
+        "name": "La Reine Cube",
+        "text": "Maîtresse de l’Ultime Réalité."
+      },
+      "imagined": {
+        "name": "L’Onirisme",
+        "text": "Fille de Geno et membre des Sept. Elle est morte lors de l’événement Collision."
+      },
+      "order": {
+        "name": "L’Institution",
+        "text": "L’autre fille de Geno, membre des Sept, qui réunit les nouveaux Sept."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Fondateur de l’Institut Onirique et grand méchant de l’histoire."
+      },
+      "herald": {
+        "name": "Le Héraut",
+        "text": "Émissaire du Néant, qui répand le Chrome."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Vampire voyageur temporel dont la machine à remonter le temps a été volée lors d’un casse."
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Fondatrice des Subversifs, qui voit l’avenir dans les graffitis. Elle a rejoint les Sept sous le nom de Prophétie."
+      },
+      "voyager": {
+        "name": "Le Voyageur noir",
+        "text": "Au service de Geno, il traque les fragments du Point zéro."
+      }
+    }
+  },
+  "now": {
+    "title": "L’histoire continue",
+    "text": "Chaque saison ajoute un nouveau chapitre à l’histoire, raconté à travers des quêtes, des événements en direct et des comics. Suivez la saison en cours pour découvrir la suite."
+  },
+  "sources": "D’après le Fortnite Wiki (Weird Gloop), les notes de mise à jour et les comics officiels d’Epic, et la presse spécialisée. Les théories de fans sont laissées de côté."
+}

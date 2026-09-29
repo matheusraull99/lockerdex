@@ -1,0 +1,286 @@
+{
+  "title": "Alur cerita Fortnite",
+  "intro": "Kisah yang diceritakan di dalam game, chapter demi chapter: Loop, The Seven, Zero Point, dan setiap realitas yang pernah dilalui pulau ini. Berdasarkan game itu sendiri serta komik dan film pendek resmi Epic.",
+  "chapters": "Chapter",
+  "eras": {
+    "c1": "Chapter 1",
+    "c2": "Chapter 2",
+    "c3": "Chapter 3",
+    "c4": "Chapter 4",
+    "c5": "Chapter 5",
+    "c6": "Chapter 6",
+    "c7": "Chapter 7"
+  },
+  "items": {
+    "storm": {
+      "title": "Badai dan Loop",
+      "text": "Badai yang menyempit di setiap match, dalam cerita, adalah hal yang membuat Loop terus berjalan: terjebak di pulau, para Looper bertarung berulang kali dan kehilangan ingatan mereka. Penjelasan itu baru muncul jauh kemudian."
+    },
+    "visitor": {
+      "title": "Sebuah komet dan seorang pengunjung",
+      "text": "Sebuah komet melintasi langit di Season 3 dan jatuh di Season 4, membentuk Ceruk Berdebu. Di dalam batu itu ada kapsul yang membawa The Visitor, anggota sebuah kelompok bernama The Seven."
+    },
+    "rocket": {
+      "title": "Roket dan rift",
+      "text": "The Visitor mengubah roket properti film menjadi roket sungguhan lalu meluncurkannya. Penerbangannya membuka sejumlah rift dan retakan besar di langit, dan ia menyebut “Osilator Zero Point”, penyebutan pertama Zero Point."
+    },
+    "kevin": {
+      "title": "Kevin sang Kubus",
+      "text": "Saat retakan itu menutup, muncullah sebuah kubus ungu bernama Kevin yang melintasi pulau sambil mencetak aksara. Kubus itu larut ke dalam Loot Lake, mengangkat Pulau Terapung, dan mulai memberi tenaga pada Badai. Saat meledak, semua orang terlempar ke In-Between dan kembali lewat rift berbentuk kupu-kupu."
+    },
+    "iceking": {
+      "title": "Raja Es",
+      "text": "Sebuah gunung es membawa kastel Raja Es ke Polar Peak. Saat terbangun, ia mengubur pulau dengan salju."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Sebuah hutan rimba dan gunung berapi muncul. Dalam event The Unvaulting, Brankas dibuka dan gunung berapi menghancurkan Tilted Towers dan Retail Row."
+    },
+    "showdown1": {
+      "title": "Robot melawan monster",
+      "text": "Dalam The Final Showdown, Mecha menghadapi monster raksasa, Devourer. Mecha mencabut Zero Point dari Brankas untuk menambah kekuatan dan menang dengan pedang patung Singularity, tetapi Zero Point menjadi tidak stabil."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "The Scientist tiba dengan meteor yang membekukan ledakan Zero Point dalam waktu. Rekaman kaset yang ditemukan di pulau membahas The Seven, Bridge, dan kondisi “di-loop”. Pada akhirnya, tujuh roket mendorong meteor itu melalui rift ke dalam Zero Point, dan lubang hitam menelan pulau."
+    },
+    "apollo": {
+      "title": "Pulau yang lahir dari lubang hitam",
+      "text": "Sebuah pulau baru, Apollo, muncul dari lubang hitam. Loading screen dari Imagined Order menyebutkan bahwa The Seven telah berhasil dan bahwa “Zero Point adalah milik kita”."
+    },
+    "agency": {
+      "title": "Agensi",
+      "text": "Midas mendirikan Agensi, dan perang mata-mata pun pecah antara HANTU dan BAYANGAN. Brutus, TNTina, Meong Perkasa, dan Skye masing-masing memilih pihak."
+    },
+    "device": {
+      "title": "The Device dan Agen Jones",
+      "text": "Mesin Midas mendorong mundur Badai, yang berubah menjadi dinding air. Looper terlempar ke Bridge dan bertemu Agen Jones, yang menjelaskan bahwa itu bukan sekadar badai: itu terkait dengan Loop."
+    },
+    "nexus": {
+      "title": "Perang Nexus",
+      "text": "Thor dan para pahlawan Marvel tiba, dan Galactus datang mengincar Zero Point. Rencana Tony Stark membuat Galactus menelan Bus Tarung yang penuh bom, lalu ia dikirim pergi melalui sebuah rift."
+    },
+    "zeropoint": {
+      "title": "Zero Point terbuka",
+      "text": "Zero Point terbuka lebar di tengah pulau. Atas perintah Doctor Slone, Jones mendatangkan para Pemburu dari realitas lain, seperti The Mandalorian, Kratos, Master Chief, dan Predator, agar tak seorang pun bisa lolos dari Loop."
+    },
+    "foundation": {
+      "title": "The Foundation",
+      "text": "Jones memutus hubungan dengan Imagined Order dan memanggil The Seven, menawarkan untuk menyerahkan “Geno dan para Saudari”, pertama kalinya nama Geno disebut. The Foundation datang dan menyegel dirinya di dalam Zero Point, menciptakan Spire, sementara Jones tetap terjebak di dalam Loop."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "Pulau itu menjadi liar. Raz mencuri artefak dari Spire dan menjadi korup karenanya."
+    },
+    "invasion": {
+      "title": "Invasi",
+      "text": "Realitas Terakhir menyerbu dengan Pesawat Induk mereka dan menghancurkan Spire, dan Imagined Order pun muncul terang-terangan. Dalam Operation: Sky Fire, para Looper meledakkan Pesawat Induk dan me-reboot sebuah Kubus, yang berubah menjadi biru dan mulai membantu mereka."
+    },
+    "cubequeen": {
+      "title": "Ratu Kubus",
+      "text": "Kubus-kubus mencemari pulau, dan Ratu Kubus, penguasa Realitas Terakhir, keluar dari Kubus Emas."
+    },
+    "theend2": {
+      "title": "Pulau terbalik",
+      "text": "The Foundation menyelamatkan Jones di Bridge, dan Jones mematikan giroskop: pulau pun terbalik. The Visitor dan The Scientist menyelamatkan para Looper, dan sang Ratu mundur."
+    },
+    "flipped": {
+      "title": "The Seven melawan Imagined Order",
+      "text": "Di pulau yang terbalik, The Foundation meminta para Looper membantu menghancurkan Imagined Order. Markas The Seven adalah Kawasan Suci."
+    },
+    "resistance": {
+      "title": "Resistance",
+      "text": "Imagined Order menyerbu dengan bor raksasa, tank, dan kapal udara, lalu mematikan building. Doctor Strange dan The Seven, termasuk The Imagined dan The Origin, bergabung dengan Resistance, yang merebut kembali pulau sementara Imagined Order membangun Collider untuk meledakkan Zero Point."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "The Paradigm menabrakkan Mecha ke Collider dan melindas Doctor Slone. The Imagined mengorbankan dirinya dan jatuh ke dalam Zero Point bersama Geno, lalu Jones dan The Foundation melompat menyusul mereka. Geno tercerai-berai ke seluruh Omniverse."
+    },
+    "chrome": {
+      "title": "Chrome",
+      "text": "Zero Point yang terbuka menumbuhkan Pohon Realitas, dan anggota The Seven mulai menghilang. Chrome milik Herald, pelayan Ketiadaan, merenggut The Scientist dan The Origin lalu menyebar ke seluruh pulau."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "Herald menyatu dengan Pohon Realitas dan menghancurkan pulau-pulau Chapter 2 dan 3. Zero Point menarik kepingan dari berbagai realitas dan menyatukannya menjadi pulau baru, Asteria."
+    },
+    "riftgate": {
+      "title": "Gerbang Rift",
+      "text": "Di Benteng, Ikatan Sumpah melayani Ageless. Stellan membangun Gerbang Rift bertenaga Bijih Kinetik, tetapi gerbang itu disabotase dan meledak."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City tiba melalui sebuah rift, dan Looper membantu Sindikat Penjaga Damai melacak seorang penyabot sementara gempa yang terkait dengan Zero Point mengguncang pulau."
+    },
+    "wilds": {
+      "title": "Hutan rimba",
+      "text": "Bagian tengah pulau amblas menjadi hutan rimba dan Zero Point berubah menjadi batu. Doctor Slone, yang kembali bebas, memperbaiki The Apparatus, yang meramalkan gerhana."
+    },
+    "heist": {
+      "title": "Mesin waktu seorang vampir",
+      "text": "Kado Thorne, vampir penjelajah waktu, menetap di pulau. Doctor Slone menyewa kru perampok Nolan Chance untuk mencuri Mesin Waktu miliknya dan menggunakannya untuk mengirim Jones ke masa lalu."
+    },
+    "og": {
+      "title": "Kembali ke awal",
+      "text": "Jones mendarat di versi alternatif Chapter 1, Season 5. Di sana, Kevin mencoba mencabut Zero Point, dan roket dibangun ulang dengan Mesin Waktu terikat padanya."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Roket dan meteor menciptakan kembali lubang hitam, yang berubah menjadi Big Bang: galaksi-galaksi baru lahir, termasuk LEGO, balapan, dan musik, bersama realitas baru, Helios."
+    },
+    "underground": {
+      "title": "Bawah Tanah melawan Masyarakat",
+      "text": "Perang pecah antara Bawah Tanah, yang dipimpin Hope, dan Masyarakat milik Montague dan Valeria, saudari Hope. Peter Griffin adalah salah satu bos Masyarakat."
+    },
+    "pandora": {
+      "title": "Kotak Pandora",
+      "text": "Sebuah tangan raksasa membawa Kotak Pandora ke pulau, dan para pemain membukanya."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus ingin memusnahkan manusia fana. Sang Orakel menobatkan Looper sebagai Pahlawan Kaum Fana, dan Zeus kehilangan keabadiannya lalu dikalahkan di Olympus."
+    },
+    "wanderer": {
+      "title": "Sang Pengembara",
+      "text": "Megalo Don ingin mengisi kapalnya, Leviathan, dengan Nitro, dan seorang Pengembara misterius bekerja di sisinya. Sang Pengembara menyabotase pipa, dan ledakannya menyingkap Kotak Pandora."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Sang Pengembara ternyata Doctor Doom, yang menyerap kekuatan Kotak itu. Jones menjadi Kapten Jones, dan para pahlawan mengalahkan Doom lalu mengirimnya kembali ke realitasnya sendiri."
+    },
+    "remix": {
+      "title": "Menuju Realitas 783",
+      "text": "Dalam Remix: The Finale, Hope, Jones, dan Looper melintasi sebuah rift, diikuti serpihan Zero Point, menuju Realitas 783."
+    },
+    "spirits": {
+      "title": "Dunia Roh",
+      "text": "Serpihan Zero Point membuka kembali portal ke Dunia Roh, dan para iblis kembali. Shogun X membawa serpihan itu kepada Sosok Kegelapan, sampai Daigo, seorang pembuat topeng, mengalahkannya dan membebaskan Jade. Shogun X yang baru pun menggantikan posisinya."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Emas ajaib menyebar ke seluruh pulau. Fletcher Kane memonopoli semuanya, para Penjahat pimpinan Midas melawan balik, dan Midas juga menginginkan serpihan itu. Daigo merusak segel Dunia Roh dan menjadi korup hingga berubah menjadi iblis."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Kekaisaran Palpatine tiba dengan Death Star, dan Hope serta Jones bergabung dengan Resistance. Saat Death Star disabotase, puing-puingnya menghantam portal roh, memberi kekuatan kepada penduduk pulau, dan menarik Superman datang."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Daigo yang kerasukan menguras pulau dengan sejumlah Spire. Hope, Jones, dan Night Rose mendirikan Akademi Supernova bersama Superman dan Robin, dan pada akhirnya Superman memotong salah satu tentakel Sosok Kegelapan, menutup portal, dan membawa Daigo kembali."
+    },
+    "swarm": {
+      "title": "Gerombolan Serangga",
+      "text": "Dari tentakel yang membusuk muncullah Gerombolan Serangga, sebuah invasi serangga. O.X.R. pimpinan Jenderal Onyx Winter dan Power Rangers, dengan Megazord mereka, melawan serbuan itu, sampai Sosok Kegelapan sendiri menyeberang ke pulau."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope mencuri secuil serpihan itu dengan pesawat Kang dan Kodos, dan berbagai realitas melebur menjadi Springfield. Homer menyatukan secuil serpihan itu dengan remote TV, menjungkirbalikkan realitas, dan akhirnya mengembalikannya."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope dan Jones mengumpulkan pasukan dari seluruh Omniverse, termasuk Godzilla, Kong, Superman, para Ranger, dan Homer. Jones memanggil sebuah Kubus merah dan Mecha menendangnya ke arah Sosok Kegelapan hingga makhluk itu hancur. Serpihan itu memulihkan Oninoshima dan membawa Hope, Jones, dan Looper ke realitas baru."
+    },
+    "voyager": {
+      "title": "Voyager Gelap",
+      "text": "Voyager Gelap menembak jatuh Bus Tarung, dan The Order tiba dengan meteor, menjawab sinyal Jones. Voyager menguasai laboratorium InnoLoop beserta serpihan yang disimpan di sana dan mengurung The Order, sampai Looper membebaskannya dan ia membangun suar dari rancangan The Scientist untuk memanggil The Seven."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Sebuah roket datang melalui rift merah membawa The Visitor, yang mengaku berasal dari “Realitas Tak Dikenal”. Lalu, dengan tiga dari tujuh serpihan di tangannya, kapal Dark Harvester membuka Portal Rift ke realitas tempat serpihan yang hilang berada."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "Benteng Raja Es tiba dengan The Foundation yang membeku dalam koleksinya, dan pulau terbelah menjadi Tim Foundation dan Tim Raja Es. AMIE mengungkap nasib The Seven yang asli: The Imagined telah tewas, The Scientist, The Origin, dan The Visitor yang asli telah lenyap ditelan Chrome, dan The Paradigm telah mengorbankan dirinya."
+    },
+    "stwlink": {
+      "title": "Save the World bertemu pulau",
+      "text": "Untuk pertama kalinya, cerita menghubungkan Save the World dengan pulau: Voyager Gelap muncul di Pangkalan, dan Jess serta Penny pergi ke pulau Battle Royale untuk bergabung dengan Seven Versi Baru."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "Raja Es membekukan The Foundation lalu disingkirkan oleh Voyager, yang membangun kembali Zero Point. Looper menebas Harvester dengan Infinity Blade dan pulau itu berubah menjadi Shattered Coast. Kemudian The Visitor menembak Jones dan mengungkap jati dirinya: Geno, tuan sang Voyager."
+    },
+    "sprites": {
+      "title": "Runners: para Sprite",
+      "text": "Saat Jones berada di tangki penyembuhan, Doctor Slone dan Singularity tiba. Zero Point yang tidak stabil melahirkan para Sprite, yang terbuat dari materi yang sama dengan Zero Point, memberi tenaga pada Alat Stabilisasi, dan membantu menyembuhkan Jones. Satu Sprite bergabung dengan The Seven sebagai Sang Penjaga, Slone bergabung sebagai The Innovation, dan Hope sebagai The Prophecy."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Melalui pintu belakang di Alat Stabilisasi, Geno meretas Loop dan merebut Zero Point, meninggalkan sebuah kaset video game di tempatnya."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno menancapkan Zero Point ke mesinnya, dan konsol-konsol yang tersebar di seluruh pulau memanen materi untuk membangun dunia sempurnanya di langit. Jones bangun dari koma, Geno mengungkap bahwa dialah yang menciptakan The Imagined dan The Order, dan Looper menolak bergabung dengannya."
+    }
+  },
+  "who": {
+    "title": "Siapa saja mereka",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agen Jones",
+        "text": "Mantan agen Imagined Order yang berubah menjadi pahlawan. Wajah dari outfit default, terhubung dengan Loop sejak The Device."
+      },
+      "visitor": {
+        "name": "The Visitor",
+        "text": "Navigator The Seven yang meluncurkan roket di Chapter 1. “Visitor” di Chapter 7 adalah Geno yang menyamar."
+      },
+      "scientist": {
+        "name": "The Scientist",
+        "text": "Insinyur The Seven dan pencipta AMIE. Lenyap ditelan Chrome."
+      },
+      "paradigm": {
+        "name": "The Paradigm",
+        "text": "Pilot Mecha. Ia mengorbankan dirinya demi The Seven."
+      },
+      "foundation": {
+        "name": "The Foundation",
+        "text": "Pemimpin The Seven. Ia kembali di Chapter 7, membeku dalam koleksi Raja Es."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Bos kriminal yang mendirikan Agensi dan selalu kembali lagi."
+      },
+      "slone": {
+        "name": "Doctor Slone",
+        "text": "Komandan Imagined Order yang kemudian bergabung dengan The Seven sebagai The Innovation."
+      },
+      "cubequeen": {
+        "name": "Ratu Kubus",
+        "text": "Penguasa Realitas Terakhir."
+      },
+      "imagined": {
+        "name": "The Imagined",
+        "text": "Putri Geno dan anggota The Seven. Ia tewas dalam Collision."
+      },
+      "order": {
+        "name": "The Order",
+        "text": "Putri Geno yang lain dan anggota The Seven, yang mengumpulkan Seven Versi Baru."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Pendiri Imagined Order dan penjahat utama dalam cerita."
+      },
+      "herald": {
+        "name": "Herald",
+        "text": "Utusan Ketiadaan, yang menyebarkan Chrome."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Vampir penjelajah waktu yang Mesin Waktunya dicuri dalam sebuah perampokan."
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Pendiri Bawah Tanah, yang melihat masa depan dalam grafiti. Ia bergabung dengan The Seven sebagai The Prophecy."
+      },
+      "voyager": {
+        "name": "Voyager Gelap",
+        "text": "Melayani Geno dan memburu serpihan-serpihan Zero Point."
+      }
+    }
+  },
+  "now": {
+    "title": "Kisahnya terus berlanjut",
+    "text": "Setiap season menambah babak baru dalam cerita, yang dikisahkan lewat quest, live event, dan komik. Ikuti season yang sedang berjalan untuk melihat apa yang terjadi selanjutnya."
+  },
+  "sources": "Berdasarkan Fortnite Wiki (Weird Gloop), patch notes dan komik resmi Epic, serta media game. Teori penggemar tidak disertakan."
+}

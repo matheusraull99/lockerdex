@@ -1244,7 +1244,8 @@
   box-shadow: 0 0 0 3px var(--paper);
 }
 
-.tl-it time {
+.tl-it time,
+.tl-when {
   font-size: 12.5px;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -1261,6 +1262,72 @@
 .tl-it p {
   margin: 0;
   max-width: 72ch;
+}
+
+/* os dois modos da aba História: linha do tempo e enredo */
+.hist-switch {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 14px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--page);
+}
+
+.hist-switch a {
+  padding: 6px 16px;
+  border-radius: 999px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hist-switch a[aria-current="page"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* enredo: quem é quem */
+.who {
+  max-width: 920px;
+  margin: 0 0 30px;
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.who-grid li {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: 12px 14px 14px;
+  border-radius: 12px;
+  background: var(--page);
+}
+
+.who-grid b {
+  font: 800 20px/1.1 var(--display);
+  letter-spacing: 0.01em;
+}
+
+.who-grid small {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+.who-grid p {
+  margin: 4px 0 0;
+  font-size: 14px;
 }
 
 .hist-now {
@@ -1311,5 +1378,271 @@
   }
   .tl-it::before {
     inset-inline-start: -29px;
+  }
+}
+
+/* ---------- personagem: selo ao lado da marca e passeio pelo rodapé ---------- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-tx {
+  display: grid;
+}
+
+/* o busto sobre a cor de destaque, com o mesmo fundo das figurinhas (centro mais claro, como na loja do jogo) */
+.brand-av {
+  flex: none;
+  display: block;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: radial-gradient(120% 90% at 50% 20%, color-mix(in srgb, var(--dust) 55%, #fff), var(--dust) 55%, color-mix(in srgb, var(--dust) 55%, #1d1640));
+  box-shadow: 0 2px 8px -2px rgb(var(--shadow) / 0.45);
+}
+
+.brand-av img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.walker {
+  position: fixed;
+  left: 0;
+  bottom: 4px;
+  z-index: 40;
+  width: 72px;
+  pointer-events: none;
+  animation: wk-across 18s linear forwards;
+}
+
+.walker[data-dir="-1"] {
+  animation-name: wk-back;
+}
+
+.walker-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* sombra no chão, parada enquanto o corpo sobe e desce */
+.walker-btn::before {
+  content: "";
+  position: absolute;
+  left: 24%;
+  right: 6%;
+  bottom: -3px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgb(0 0 0 / 0.3), transparent);
+}
+
+/* Proporções da imagem (walker.webp): as pernas começam em 56,5% da altura e se separam em 59,2% da
+   largura; o tronco, que segura a picareta, vai até o meio das coxas (64,4%) e fica por cima delas. */
+.wk-fig {
+  position: relative;
+  display: block;
+  aspect-ratio: 988 / 1908;
+  transform-origin: 59% 99%;
+  animation: wk-sway 0.9s ease-in-out infinite;
+  filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.35));
+}
+
+.wk-part {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.wk-leg {
+  transform-origin: 50% 56.5%;
+  animation: wk-step 0.9s ease-in-out infinite;
+}
+
+.wk-leg-l {
+  clip-path: inset(56.5% 40.8% 0 0);
+}
+
+.wk-leg-r {
+  clip-path: inset(56.5% 0 0 59.2%);
+  animation-delay: -0.45s;
+}
+
+.wk-top {
+  position: absolute;
+  inset: 0;
+  transform-origin: 59.2% 61.7%;
+}
+
+.wk-top .wk-part {
+  clip-path: inset(0 0 35.6% 0);
+}
+
+.wk-swing {
+  animation: wk-pick 0.55s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+/* faísca na ponta de baixo da picareta; está dentro do tronco, então gira junto na picaretada */
+.wk-spark {
+  position: absolute;
+  left: 6.6%;
+  top: 29.8%;
+  width: 34%;
+  translate: -50% -50%;
+  fill: var(--dust);
+  opacity: 0;
+  animation: wk-spark 0.55s ease-out;
+}
+
+@keyframes wk-across {
+  from {
+    transform: translateX(-110px);
+  }
+  to {
+    transform: translateX(calc(100vw + 10px));
+  }
+}
+
+@keyframes wk-back {
+  from {
+    transform: translateX(calc(100vw + 10px));
+  }
+  to {
+    transform: translateX(-110px);
+  }
+}
+
+/* passo: enquanto uma perna sobe, o corpo sobe um pouco e pende para a perna de apoio */
+@keyframes wk-sway {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-2%) rotate(2deg);
+  }
+  75% {
+    transform: translateY(-2%) rotate(-2deg);
+  }
+}
+
+/* a perna encurta a partir do quadril: o pé sobe sem abrir emenda na coxa */
+@keyframes wk-step {
+  0%,
+  50%,
+  100% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(0.93);
+  }
+}
+
+@keyframes wk-pick {
+  0% {
+    transform: rotate(0);
+  }
+  30% {
+    transform: rotate(9deg);
+  }
+  62% {
+    transform: rotate(-16deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes wk-spark {
+  0%,
+  55% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  68% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 720px) {
+  .walker {
+    bottom: calc(68px + env(safe-area-inset-bottom));
+    width: 54px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand {
+    gap: 7px;
+  }
+  .brand-av {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walker {
+    display: none;
+  }
+}
+
+/* Celular: com o selo ao lado da marca, o nome do idioma ("Português (Brasil)") não cabe. Aparece só o
+   código ("PT-BR"), e o seletor nativo fica por cima, invisível: tocar abre a lista completa como antes. */
+.lang-code {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .top .lang {
+    position: relative;
+  }
+  .top .lang-code {
+    display: inline-block;
+    padding: 8px 28px 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--page)
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%237a74a0' stroke-width='1.6'/%3E%3C/svg%3E")
+      no-repeat right 11px center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  [dir="rtl"] .top .lang-code {
+    padding: 8px 12px 8px 28px;
+    background-position: left 11px center;
+  }
+  .top .lang select {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    opacity: 0;
+  }
+  .top .lang:focus-within .lang-code {
+    outline: 3px solid var(--storm);
+    outline-offset: 2px;
   }
 }

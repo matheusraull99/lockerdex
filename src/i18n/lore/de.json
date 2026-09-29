@@ -1,0 +1,286 @@
+{
+  "title": "Die Story von Fortnite",
+  "intro": "Die Geschichte, die im Spiel erzählt wird, Kapitel für Kapitel: die Schleife, die Sieben, der Nullpunkt und jede Realität, die die Insel schon durchlaufen hat. Basierend auf dem Spiel selbst und auf Epics offiziellen Comics und Kurzfilmen.",
+  "chapters": "Kapitel",
+  "eras": {
+    "c1": "Kapitel 1",
+    "c2": "Kapitel 2",
+    "c3": "Kapitel 3",
+    "c4": "Kapitel 4",
+    "c5": "Kapitel 5",
+    "c6": "Kapitel 6",
+    "c7": "Kapitel 7"
+  },
+  "items": {
+    "storm": {
+      "title": "Der Sturm und die Schleife",
+      "text": "Der Sturm, der sich in jedem Match zusammenzieht, ist in der Story das, was die Schleife am Laufen hält: Auf der Insel gefangen, kämpfen die Schleifengänger immer wieder und verlieren dabei ihre Erinnerungen. Diese Erklärung kommt erst viel später."
+    },
+    "visitor": {
+      "title": "Ein Komet und ein Besucher",
+      "text": "Ein Komet zog in Saison 3 über den Himmel und schlug in Saison 4 ein, wodurch Dusty Divot entstand. Im Gestein steckte eine Kapsel mit dem Besucher, einem Mitglied einer Gruppe, die sich die Sieben nennt."
+    },
+    "rocket": {
+      "title": "Die Rakete und die Risse",
+      "text": "Der Besucher machte aus einer Filmrequisite eine echte Rakete und startete sie. Ihr Flug öffnete Risse und einen riesigen Spalt am Himmel, und er sprach von einem „Nullpunkt-Oszillator“ – die erste Erwähnung des Nullpunkts."
+    },
+    "kevin": {
+      "title": "Kevin der Würfel",
+      "text": "Als sich der Spalt schloss, tauchte ein lila Würfel namens Kevin auf, zog über die Insel und hinterließ dabei Runen. Er löste sich im Loot Lake auf, hob die Schwebende Insel an und begann, den Sturm mit Energie zu versorgen. Als er explodierte, wurden alle ins Dazwischen geschleudert und kehrten durch einen schmetterlingsförmigen Riss zurück."
+    },
+    "iceking": {
+      "title": "Der Eiskönig",
+      "text": "Ein Eisberg brachte das Schloss des Eiskönigs nach Polar Peak. Als er erwachte, begrub er die Insel unter Schnee."
+    },
+    "volcano": {
+      "title": "The Unvaulting",
+      "text": "Ein Dschungel und ein Vulkan tauchten auf. Beim Event The Unvaulting wurde der Tresor geöffnet, und der Vulkan zerstörte Tilted Towers und Retail Row."
+    },
+    "showdown1": {
+      "title": "Roboter gegen Monster",
+      "text": "Bei The Final Showdown trat der Mecha gegen ein riesiges Monster an, den Verzehrer. Der Roboter riss den Nullpunkt aus dem Tresor, um an Kraft zu gewinnen, und siegte mit dem Schwert der Singularitäts-Statue, doch der Nullpunkt wurde instabil."
+    },
+    "theend1": {
+      "title": "The End",
+      "text": "Der Wissenschaftler kam in einem Meteor, der die Explosion des Nullpunkts in der Zeit einfror. Kassetten, die auf der Insel gefunden wurden, sprachen von den Sieben, der Brücke und davon, „in der Schleife gefangen“ zu sein. Am Ende schoben sieben Raketen den Meteor durch einen Riss in den Nullpunkt, und ein Schwarzes Loch verschlang die Insel."
+    },
+    "apollo": {
+      "title": "Eine Insel aus dem Schwarzen Loch",
+      "text": "Eine neue Insel, Apollo, kam aus dem Schwarzen Loch hervor. Ladebildschirme des Imaginierten Ordens verkündeten, dass die Sieben Erfolg gehabt hatten und dass „der Nullpunkt uns gehört“."
+    },
+    "agency": {
+      "title": "Die Agentur",
+      "text": "Midas gründete die Agentur, und zwischen GHOST und SHADOW begann ein Spionagekrieg. Brutus, TNTina, Muskelkater und Skye entschieden sich jeweils für eine Seite."
+    },
+    "device": {
+      "title": "The Device und Agent Jones",
+      "text": "Midas’ Maschine drängte den Sturm zurück, der zu einer Wasserwand wurde. Der Schleifengänger wurde zur Brücke geschleudert und traf Agent Jones, der ihm erklärte, dass das nicht bloß ein Sturm war: Er hing mit der Schleife zusammen."
+    },
+    "nexus": {
+      "title": "Nexus War",
+      "text": "Thor und die Marvel-Helden trafen ein, und Galactus kam wegen des Nullpunkts. Durch Tony Starks Plan verschlang er Schlachtenbusse voller Bomben und wurde durch einen Riss fortgeschickt."
+    },
+    "zeropoint": {
+      "title": "Der freigelegte Nullpunkt",
+      "text": "Der Nullpunkt lag offen in der Mitte der Insel. Im Auftrag von Doktor Slone holte Jones Jäger aus anderen Realitäten, etwa den Mandalorianer, Kratos, Master Chief und den Predator, damit niemand aus der Schleife entkommen konnte."
+    },
+    "foundation": {
+      "title": "Das Fundament",
+      "text": "Jones brach mit dem Imaginierten Orden und rief die Sieben, denen er anbot, „Geno und die Schwestern“ auszuliefern – das erste Mal, dass Genos Name fiel. Das Fundament kam und versiegelte sich im Nullpunkt, wodurch der Spire entstand, während Jones in der Schleife gefangen blieb."
+    },
+    "primal": {
+      "title": "Primal",
+      "text": "Die Insel verwilderte. Raz stahl das Artefakt aus dem Spire, und es verdarb ihn."
+    },
+    "invasion": {
+      "title": "Die Invasion",
+      "text": "Die Letzte Realität fiel mit ihrem Mutterschiff ein und zerstörte den Spire, und der Imaginierte Orden trat offen in Erscheinung. Bei Operation: Sky Fire sprengten die Schleifengänger das Mutterschiff und starteten einen Würfel neu, der blau wurde und ihnen fortan half."
+    },
+    "cubequeen": {
+      "title": "Die Würfelkönigin",
+      "text": "Würfel verbreiteten Verderbnis auf der Insel, und die Würfelkönigin, Herrscherin der Letzten Realität, trat aus dem Goldenen Würfel."
+    },
+    "theend2": {
+      "title": "Die Insel steht kopf",
+      "text": "Das Fundament rettete Jones an der Brücke, und Jones schaltete das Gyroskop ab: Die Insel stellte sich auf den Kopf. Der Besucher und der Wissenschaftler retteten die Schleifengänger, und die Königin zog sich zurück."
+    },
+    "flipped": {
+      "title": "Die Sieben gegen den Imaginierten Orden",
+      "text": "Auf der umgedrehten Insel bat das Fundament die Schleifengänger um Hilfe, um den Imaginierten Orden zu vernichten. Die Basis der Sieben war Sanctuary."
+    },
+    "resistance": {
+      "title": "Der Widerstand",
+      "text": "Der Imaginierte Orden fiel mit einem riesigen Bohrer, Panzern und Luftschiffen ein und schaltete das Bauen ab. Doctor Strange und die Sieben, darunter die Imaginierte und der Ursprung, schlossen sich dem Widerstand an, der die Insel zurückeroberte, während der Imaginierte Orden den Collider baute, um den Nullpunkt zu sprengen."
+    },
+    "collision": {
+      "title": "Collision",
+      "text": "Das Paradigma steuerte den Mecha in den Collider und zerquetschte Doktor Slone. Die Imaginierte opferte sich und stürzte zusammen mit Geno in den Nullpunkt, und Jones und das Fundament sprangen hinterher. Geno wurde über das Omniversum verstreut."
+    },
+    "chrome": {
+      "title": "Das Chrom",
+      "text": "Der freigelegte Nullpunkt ließ den Realitätsbaum wachsen, und Mitglieder der Sieben begannen zu verschwinden. Das Chrom der Vorbotin, einer Dienerin des Nichts, holte den Wissenschaftler und den Ursprung und breitete sich über die Insel aus."
+    },
+    "fracture": {
+      "title": "Fracture",
+      "text": "Die Vorbotin verschmolz mit dem Realitätsbaum und zerstörte die Inseln der Kapitel 2 und 3. Der Nullpunkt fügte Teile verschiedener Realitäten zu einer neuen Insel zusammen: Asteria."
+    },
+    "riftgate": {
+      "title": "Das Risstor",
+      "text": "In der Citadel dienten die Eidgebundenen dem Zeitlosen. Stellan baute ein Risstor, das mit kinetischem Erz betrieben wurde, doch es wurde sabotiert und explodierte."
+    },
+    "mega": {
+      "title": "MEGA City",
+      "text": "MEGA City kam durch einen Riss, und der Schleifengänger half dem Friedenssyndikat, einen Saboteur aufzuspüren, während Erdbeben, die mit dem Nullpunkt zusammenhingen, die Insel erschütterten."
+    },
+    "wilds": {
+      "title": "Der Dschungel",
+      "text": "Die Mitte der Insel versank in einem Dschungel, und der Nullpunkt wurde zu Stein. Doktor Slone, wieder frei, reparierte den Apparat, der eine Finsternis vorhersagte."
+    },
+    "heist": {
+      "title": "Die Zeitmaschine eines Vampirs",
+      "text": "Kado Thorne, ein zeitreisender Vampir, ließ sich auf der Insel nieder. Doktor Slone heuerte die Raubzug-Crew von Nolan Chance an, um die Zeitmaschine des Vampirs zu stehlen, und schickte damit Jones in die Vergangenheit."
+    },
+    "og": {
+      "title": "Zurück zum Anfang",
+      "text": "Jones landete in einer alternativen Version von Kapitel 1, Saison 5. Dort versuchte Kevin, den Nullpunkt herauszuziehen, und die Rakete wurde neu gebaut, mit der Zeitmaschine daran befestigt."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Die Rakete und der Meteor erschufen das Schwarze Loch neu, das zu einem Urknall wurde: Neue Galaxien entstanden, darunter LEGO, Rennen und Musik, dazu eine neue Realität, Helios."
+    },
+    "underground": {
+      "title": "Der Underground gegen die Gesellschaft",
+      "text": "Ein Krieg brach aus zwischen dem Underground unter der Führung von Hope und der Gesellschaft von Montague und Valeria, Hopes Schwester. Peter Griffin war einer der Bosse der Gesellschaft."
+    },
+    "pandora": {
+      "title": "Die Büchse der Pandora",
+      "text": "Eine riesige Hand brachte die Büchse der Pandora auf die Insel, und die Spieler öffneten sie."
+    },
+    "olympus": {
+      "title": "Myths & Mortals",
+      "text": "Zeus wollte die Sterblichen auslöschen. Das Orakel ernannte den Schleifengänger zum Helden der Sterblichen, und Zeus verlor seine Unsterblichkeit und wurde auf dem Olymp besiegt."
+    },
+    "wanderer": {
+      "title": "Der Wanderer",
+      "text": "Megalo Don wollte sein Schiff, die Leviathan, mit Nitro betanken, und ein mysteriöser Wanderer arbeitete an seiner Seite. Der Wanderer sabotierte die Pipeline, und die Explosion legte die Büchse der Pandora frei."
+    },
+    "doom": {
+      "title": "Absolute Doom",
+      "text": "Der Wanderer war Doctor Doom, der die Macht der Büchse in sich aufnahm. Jones wurde zu Captain Jones, und die Helden besiegten Doom und schickten ihn in seine eigene Realität zurück."
+    },
+    "remix": {
+      "title": "Auf dem Weg zu Realität 783",
+      "text": "Bei Remix: The Finale gingen Hope, Jones und der Schleifengänger durch einen Riss in Richtung Realität 783, gefolgt von einem Splitter des Nullpunkts."
+    },
+    "spirits": {
+      "title": "Die Geisterwelt",
+      "text": "Der Nullpunktsplitter öffnete erneut Portale in die Geisterwelt, und Dämonen kehrten zurück. Shogun X brachte den Splitter zur Dunklen Präsenz, bis Daigo, ein Maskenmacher, ihn besiegte und Jade befreite. Ein neuer Shogun X nahm seinen Platz ein."
+    },
+    "outlaws": {
+      "title": "Lawless",
+      "text": "Magisches Gold breitete sich über die Insel aus. Fletcher Kane riss alles an sich, die Gesetzlosen unter Midas wehrten sich, und auch Midas wollte den Splitter. Daigo brach das Siegel der Geisterwelt, wurde verderbt und verwandelte sich in einen Dämon."
+    },
+    "empire": {
+      "title": "Galactic Battle",
+      "text": "Palpatines Imperium kam mit dem Todesstern, und Hope und Jones schlossen sich dem Widerstand an. Als der Todesstern sabotiert wurde, trafen seine Trümmer ein Geisterportal, verliehen den Bewohnern der Insel Kräfte und lockten Superman an."
+    },
+    "supernova": {
+      "title": "Super",
+      "text": "Ein besessener Daigo zapfte der Insel mit Spires die Energie ab. Hope, Jones und die Nachtrose gründeten mit Superman und Robin die Supernova Academy, und am Ende schlug Superman einen Tentakel der Dunklen Präsenz ab, schloss das Portal und holte Daigo zurück."
+    },
+    "swarm": {
+      "title": "Der Schwarm",
+      "text": "Aus dem verrottenden Tentakel kam der Schwarm, eine Insekteninvasion. Die O.X.R. von Generalin Onyx Winter und die Power Rangers mit ihrem Megazord bekämpften den Befall, bis die Dunkle Präsenz selbst auf die Insel übertrat."
+    },
+    "springfield": {
+      "title": "Springfield",
+      "text": "Hope stahl mit dem Schiff von Kang und Kodos ein Bruchstück des Splitters, und Realitäten verschmolzen zu Springfield. Homer verband das Bruchstück mit einer Fernbedienung, stellte die Realität auf den Kopf und gab es schließlich zurück."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Hope und Jones sammelten Verbündete aus dem ganzen Omniversum, darunter Godzilla, Kong, Superman, die Rangers und Homer. Jones rief einen roten Würfel herbei, und der Mecha kickte ihn in die Dunkle Präsenz, die zerstört wurde. Der Splitter heilte Oninoshima und brachte Hope, Jones und den Schleifengänger in eine neue Realität."
+    },
+    "voyager": {
+      "title": "Der Dunkle Reisende",
+      "text": "Der Dunkle Reisende schoss den Schlachtenbus ab, und der Orden kam in einem Meteor an, als Antwort auf Jones’ Signal. Der Reisende übernahm die InnoLoop-Labore samt dem dort aufbewahrten Splitter und sperrte den Orden ein, bis der Schleifengänger sie befreite. Danach baute sie nach den Plänen des Wissenschaftlers ein Leuchtfeuer, um die Sieben zu rufen."
+    },
+    "harvester": {
+      "title": "The Final Wave",
+      "text": "Durch einen roten Riss kam eine Rakete mit dem Besucher an Bord, der sagte, er stamme aus einer „Unbekannten Realität“. Dann öffnete der Dunkle Ernter, ein Schiff, das drei der sieben Splitter besaß, Rissportale zu den Realitäten der Vermissten."
+    },
+    "rivals": {
+      "title": "Showdown",
+      "text": "Die Festung des Eiskönigs kam mit dem Fundament an, das eingefroren in seiner Sammlung stand, und die Insel teilte sich in Team Fundament und Team Eiskönig. KIM enthüllte das Schicksal der ursprünglichen Sieben: Die Imaginierte war tot, der Wissenschaftler, der Ursprung und der ursprüngliche Besucher waren an das Chrom verloren, und das Paradigma hatte sich geopfert."
+    },
+    "stwlink": {
+      "title": "Rette die Welt trifft auf die Insel",
+      "text": "Zum ersten Mal verband die Story Rette die Welt mit der Insel: Der Dunkle Reisende tauchte in der Heimatbasis auf, und Jess und Penny reisten auf die Battle-Royale-Insel, um sich den neuen Sieben anzuschließen."
+    },
+    "shattered": {
+      "title": "Shattered",
+      "text": "Der Eiskönig fror das Fundament ein und wurde vom Reisenden ausgeschaltet, der den Nullpunkt wiederherstellte. Der Schleifengänger zerschnitt den Ernter mit der Unendlichkeitsklinge, und die Insel wurde zur Shattered Coast. Dann schoss der Besucher auf Jones und enthüllte, wer er wirklich war: Geno, der Meister des Reisenden."
+    },
+    "sprites": {
+      "title": "Runners: die Geister",
+      "text": "Während Jones in einem Heiltank lag, kamen Doktor Slone und die Singularität an. Der instabile Nullpunkt brachte die Geister hervor, die aus derselben Materie bestehen wie der Nullpunkt, den Stabilisator antreiben und helfen, Jones zu heilen. Ein Geist trat den Sieben als der Wächter bei, Slone als Innovation und Hope als die Prophezeiung."
+    },
+    "unstable": {
+      "title": "Unstable",
+      "text": "Über eine Hintertür im Stabilisator hackte Geno die Schleife und riss den Nullpunkt an sich; an seiner Stelle ließ er ein Videospielmodul zurück."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Geno schloss den Nullpunkt an seine Maschine an, und Konsolen überall auf der Insel sammeln Materie, um seine perfekte Welt am Himmel zu bauen. Jones erwachte aus dem Koma, Geno enthüllte, dass er die Imaginierte und den Orden erschaffen hatte, und der Schleifengänger weigerte sich, sich ihm anzuschließen."
+    }
+  },
+  "who": {
+    "title": "Wer ist wer",
+    "items": {
+      "jonesy": {
+        "name": "Jonesy / Agent Jones",
+        "text": "Ehemaliger Agent des Imaginierten Ordens, der zum Helden wurde. Das Gesicht des Standard-Outfits, seit dem Event The Device mit der Schleife verbunden."
+      },
+      "visitor": {
+        "name": "Der Besucher",
+        "text": "Navigator der Sieben, der in Kapitel 1 die Rakete startete. Der „Besucher“ aus Kapitel 7 war Geno in Verkleidung."
+      },
+      "scientist": {
+        "name": "Der Wissenschaftler",
+        "text": "Ingenieur der Sieben und Schöpfer von KIM. An das Chrom verloren."
+      },
+      "paradigm": {
+        "name": "Das Paradigma",
+        "text": "Pilotin des Mecha. Sie opferte sich für die Sieben."
+      },
+      "foundation": {
+        "name": "Das Fundament",
+        "text": "Anführer der Sieben. Er kehrte in Kapitel 7 zurück, eingefroren in der Sammlung des Eiskönigs."
+      },
+      "midas": {
+        "name": "Midas",
+        "text": "Verbrecherboss, der die Agentur gründete und immer wieder zurückkommt."
+      },
+      "slone": {
+        "name": "Doktor Slone",
+        "text": "Kommandantin des Imaginierten Ordens, die sich später als Innovation den Sieben anschloss."
+      },
+      "cubequeen": {
+        "name": "Die Würfelkönigin",
+        "text": "Herrscherin der Letzten Realität."
+      },
+      "imagined": {
+        "name": "Die Imaginierte",
+        "text": "Genos Tochter und Mitglied der Sieben. Sie starb beim Event Collision."
+      },
+      "order": {
+        "name": "Der Orden",
+        "text": "Genos andere Tochter und Mitglied der Sieben, die die neuen Sieben versammelt."
+      },
+      "geno": {
+        "name": "Geno",
+        "text": "Gründer des Imaginierten Ordens und der zentrale Bösewicht der Story."
+      },
+      "herald": {
+        "name": "Die Vorbotin",
+        "text": "Vorbotin des Nichts, die das Chrom verbreitet."
+      },
+      "kado": {
+        "name": "Kado Thorne",
+        "text": "Zeitreisender Vampir, dessen Zeitmaschine bei einem Raubzug gestohlen wurde."
+      },
+      "hope": {
+        "name": "Hope",
+        "text": "Gründerin des Undergrounds, die die Zukunft in Graffitis sieht. Sie trat den Sieben als die Prophezeiung bei."
+      },
+      "voyager": {
+        "name": "Der Dunkle Reisende",
+        "text": "Dient Geno und jagt die Splitter des Nullpunkts."
+      }
+    }
+  },
+  "now": {
+    "title": "Die Story geht weiter",
+    "text": "Jede Saison fügt der Story ein neues Kapitel hinzu, erzählt in Aufträgen, Live-Events und Comics. Verfolge die aktuelle Saison, um zu sehen, wie es weitergeht."
+  },
+  "sources": "Basierend auf dem Fortnite Wiki (Weird Gloop), Epics Patchnotes und offiziellen Comics sowie der Gaming-Presse. Fan-Theorien bleiben außen vor."
+}

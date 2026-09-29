@@ -33,6 +33,7 @@ const ICON: Record<string, ReactElement> = {
   cosmetics: <path d="M12 3l2.2 5.6L20 9l-4.5 3.7L17 19l-5-3.2L7 19l1.5-6.3L4 9l5.8-.4L12 3Z" />,
   lists: <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" />,
   map: <path d="M12 21s6-5.7 6-11a6 6 0 0 0-12 0c0 5.3 6 11 6 11Zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />,
+  history: <path d="M12 7v5l3 2m6-2a9 9 0 1 1-3-6.7M21 4v4h-4" />,
   more: <path d="M5 12h.01M12 12h.01M19 12h.01" strokeWidth="3.2" />,
 };
 
@@ -42,7 +43,7 @@ const TABS: { route: Route; label: NavKey; mobile: boolean }[] = [
   { route: "cosmetics", label: "nav.cosmetics", mobile: true },
   { route: "lists", label: "nav.lists", mobile: false },
   { route: "map", label: "nav.map", mobile: true },
-  { route: "history", label: "nav.history", mobile: false },
+  { route: "history", label: "nav.history", mobile: true },
   { route: "more", label: "nav.more", mobile: true },
 ];
 
@@ -91,7 +92,7 @@ export default function App() {
   // As páginas secundárias acendem "Mais"; no celular, também as abas que só existem no topo (listas, história).
   // O enredo é o segundo modo da aba História.
   const activeTab: Route = TABS.some((x) => x.route === route) ? route : route === "lore" ? "history" : "more";
-  const activeMobile: Route = TABS.some((x) => x.route === route && x.mobile) ? route : "more";
+  const activeMobile: Route = TABS.some((x) => x.route === route && x.mobile) ? route : route === "lore" ? "history" : "more";
 
   // Título da aba por página e por idioma (é o que aparece no histórico e no Google).
   useEffect(() => {

@@ -699,7 +699,7 @@
     inset: auto 0 0;
     z-index: 15;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
     background: color-mix(in srgb, var(--page) 94%, transparent);
     backdrop-filter: blur(10px);
@@ -712,8 +712,22 @@
     padding: 4px 0;
     color: var(--ink-soft);
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
+  }
+  .tabbar a {
+    min-width: 0;
+  }
+  .tabbar a span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  @media (max-width: 400px) {
+    .tabbar a {
+      font-size: 9px;
+    }
   }
   .tabbar a[aria-current="page"] {
     color: var(--dust);

@@ -1,0 +1,178 @@
+{
+  "title": "要塞英雄的歷史",
+  "intro": "從 2011 年首度亮相到第7章：回顧造就今日要塞英雄的那些上線、現場活動、演唱會與改變。",
+  "chapters": "章節",
+  "eras": {
+    "origin": "大逃殺之前",
+    "c1": "第1章",
+    "c2": "第2章",
+    "c3": "第3章",
+    "c4": "第4章",
+    "c5": "第5章",
+    "c6": "第6章",
+    "c7": "第7章"
+  },
+  "items": {
+    "announce": {
+      "title": "在 VGA 首度亮相",
+      "text": "Epic Games 在 2011 年的 Spike Video Game Awards 首度公開要塞英雄，由 Cliff Bleszinski 上台介紹。這個點子來自《戰爭機器3》之後的一場內部 Game Jam，2012 年專案改用 Unreal Engine 4 開發。"
+    },
+    "stw": {
+      "title": "末世守衛",
+      "text": "最初的要塞英雄是一款付費的合作遊戲：白天建造堡壘，抵禦成群的怪物。它在 PC、PS4 和 Xbox One 推出搶先體驗，隔月玩家人數就突破 100 萬。"
+    },
+    "br": {
+      "title": "大逃殺誕生",
+      "text": "這是一個 100 人的免費模式，以《末世守衛》為基礎，只花了大約兩個月就打造完成。兩週內，玩家人數就達到 1000 萬。"
+    },
+    "battlepass": {
+      "title": "第一張戰鬥通行證",
+      "text": "第2季推出戰鬥通行證：950 V 幣就能取得 70 級的獎勵。到了第3季，增加到 100 級。"
+    },
+    "mobile": {
+      "title": "隨時隨地玩要塞英雄",
+      "text": "2018 年 4 月在 iPhone 上向所有人開放，6 月登上 Nintendo Switch，8 月登上 Android，一開始只限三星手機。"
+    },
+    "rocket": {
+      "title": "火箭發射",
+      "text": "遊戲的第一場現場活動：一枚火箭升空，在天空撕開一道裂隙，揭開了裂隙故事線的序幕。"
+    },
+    "creative": {
+      "title": "創意模式",
+      "text": "第7季推出創意模式，任何人都能打造自己的島嶼和自己的遊戲。如今數以千計的玩家自製島嶼，都是從這裡萌芽的。"
+    },
+    "marshmello": {
+      "title": "Marshmello 在 Pleasant Park",
+      "text": "遊戲內第一場大型演唱會吸引了 1070 萬名玩家，創下當時的紀錄。"
+    },
+    "worldcup": {
+      "title": "世界盃",
+      "text": "Fortnite World Cup 讓紐約的 Arthur Ashe Stadium 座無虛席，總獎金高達 3000 萬美元。16 歲的 Kyle「Bugha」Giersdorf 贏得單人決賽，抱走 300 萬美元。"
+    },
+    "theend": {
+      "title": "The End",
+      "text": "一顆隕石撞上島嶼，黑洞吞噬了一切。大約兩天內，遊戲裡只看得到黑洞，超過 550 萬人透過直播觀看。"
+    },
+    "c2start": {
+      "title": "全新的島嶼",
+      "text": "第2章在一張全新的地圖上展開，加入了游泳、釣魚和汽艇。"
+    },
+    "travis": {
+      "title": "Travis Scott 的 Astronomical",
+      "text": "三天內共舉辦五場演出。第一場同時有 1230 萬名玩家在線，所有場次共有 2770 萬名不同的玩家參加。"
+    },
+    "apple": {
+      "title": "被 App Store 下架",
+      "text": "Epic 加入直接付款，V 幣變得更便宜。Apple 和 Google 隨即將要塞英雄從商店下架，Epic 在同一天對兩家公司提告。"
+    },
+    "galactus": {
+      "title": "世界吞噬者",
+      "text": "行星吞噬者事件為漫威主題季畫下句點，同時在線玩家達 1530 萬，是官方公布過的最高峰值。"
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande 領銜一場穿越不同世界的音樂之旅，三天內重複舉辦了五場。"
+    },
+    "c2end": {
+      "title": "島嶼翻轉",
+      "text": "第2章以「The End」收尾：魔方女王對決由 Dwayne Johnson 飾演的奠基者，整座島嶼上下顛倒。"
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "第3章帶來新島嶼和滑鏟，並轉換到 Unreal Engine 5。"
+    },
+    "zerobuild": {
+      "title": "零建造",
+      "text": "繼某一季在關閉建造的狀態下開場之後，零建造成為常駐模式。從此你一面牆都不用蓋，也能玩大逃殺。"
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "終局活動為第3章畫下句點，也為下一座島嶼鋪好了路。"
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "第4章帶來畫面上的大躍進，以 Nanite 和 Lumen 等技術呈現細節與光影。"
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "Unreal Editor for Fortnite 向所有人開放，同時推出 Verse 程式語言，以及將 40% 淨收入分給島嶼創作者的計畫。"
+    },
+    "og": {
+      "title": "OG 季",
+      "text": "第1章的地圖回歸，並逐週更新。隔天 11 月 4 日成為要塞英雄史上規模最大的一天：4470 萬名玩家。"
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "第4章以一場有 Eminem 登場的現場活動落幕，同時有 1160 萬名玩家觀看。"
+    },
+    "c5start": {
+      "title": "三款新遊戲",
+      "text": "第5章從地底展開。同一週，要塞英雄裡一口氣加入三款遊戲：LEGO Fortnite、Rocket Racing 和 Fortnite Festival，而 Fortnite Festival 的歌曲，就是商店裡販售的 Jam Tracks。"
+    },
+    "c5seasons": {
+      "title": "眾神、廢土與末日博士",
+      "text": "第2季「Myths & Mortals」帶來希臘眾神，第3季「Wrecked」是一片末日後的廢土，第4季「Absolute Doom」則迎來漫威的末日博士。"
+    },
+    "remix": {
+      "title": "第2章 Remix",
+      "text": "第2章的島嶼回歸，帶來為期一個月的音樂盛宴：Snoop Dogg、Eminem、Ice Spice 輪番登場，還有向 Juice WRLD 致敬的演出。終局同時在線玩家超過 1400 萬。"
+    },
+    "hunters": {
+      "title": "Hunters 與第一批精靈",
+      "text": "第6章以日本民間傳說和全新的跑酷動作揭開序幕。精靈也在這時首度登場：風、水、大地三種精靈，各有各的能力。"
+    },
+    "ogforever": {
+      "title": "懷舊模式常駐",
+      "text": "以第1章地圖為舞台的懷舊模式（Fortnite OG）成為常駐模式。"
+    },
+    "lawless": {
+      "title": "Lawless 與《星際大戰》",
+      "text": "第2季的主題是犯罪與搶案。5 月，迷你季「Galactic Battle」把《星際大戰》帶到島上。"
+    },
+    "appus": {
+      "title": "重返 App Store",
+      "text": "與 Apple 打完官司後，要塞英雄重返美國 App Store。在歐洲，它早在 2024 年就已透過 Epic Games Store 回到 iPhone。"
+    },
+    "super": {
+      "title": "超級英雄、蟲群與《辛普森家庭》",
+      "text": "第3季「Super」迎來超人；第4季「Shock 'N Awesome」帶來蟲群入侵，還有金剛戰士和《最後一戰》；11 月，一個迷你季造訪了 Springfield。"
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "終局活動為第6章畫下句點。根據 Epic 的數據，有 1050 萬名玩家在遊戲中觀看。"
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "第7章從 Golden Coast 開始：玩家乘著風暴衝浪登場，還加入了自我復活、可以變身的首領，以及更簡單的建造。"
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "第1季被延長到 108 天，之後第2季開跑。同一天，要塞英雄在全球重返 Google Play。"
+    },
+    "stwfree": {
+      "title": "末世守衛免費了",
+      "text": "以付費遊戲推出將近九年後，《末世守衛》開放所有人免費遊玩。"
+    },
+    "appworld": {
+      "title": "App Store 全球回歸",
+      "text": "要塞英雄在全球重返 App Store，巴西也包括在內。唯一的例外是澳洲。"
+    },
+    "runners": {
+      "title": "Runners：精靈成為主角",
+      "text": "第3季讓精靈成為遊戲核心：在對局中找到精靈，把它帶到回收點並撐下去，它就會永久加入你的收藏。精靈會一路升級直到精通，精靈晶塵則能讓你在之後的對局中召喚它們。"
+    },
+    "override": {
+      "title": "Override",
+      "text": "第4季的主題是電玩：島上各處的遊戲機能啟動代碼，為所有人改變對局規則。這一季也帶來新一代精靈，包括索尼克、塔爾斯、夏特等，並有黃金、Cheat Master、Loot Hacker 和 Bounty Hunter 變體。"
+    },
+    "birthday": {
+      "title": "大逃殺九週年",
+      "text": "九週年帶來了超能時刻，還有新精靈「生日」：它會讓寶箱掉出一塊塊蛋糕。"
+    }
+  },
+  "now": {
+    "title": "故事仍在繼續",
+    "text": "每一季都會為這段故事添上新的一頁。快來關注本季，並在 Lockerdex 完成本季的精靈收集冊吧。"
+  },
+  "sources": "日期皆為美國東部時間，並已對照 Epic Games 的公告與更新說明、Fortnite Wiki 及遊戲媒體查證。"
+}

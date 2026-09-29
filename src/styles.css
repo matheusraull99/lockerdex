@@ -92,7 +92,7 @@ textarea {
 .top {
   display: flex;
   align-items: center;
-  gap: 16px 24px;
+  gap: 16px;
   flex-wrap: wrap;
   padding: 18px 0 14px;
 }
@@ -114,6 +114,7 @@ textarea {
 }
 
 .brand-t {
+  max-width: 250px; /* slogan longo (japonês) quebra em duas linhas em vez de empurrar o cabeçalho */
   font-size: 12.5px;
   color: var(--ink-soft);
   font-weight: 600;
@@ -683,21 +684,41 @@ textarea {
   animation: foil 3.2s ease-in-out infinite alternate;
 }
 
-.st-foil::after {
-  content: "★";
-  position: absolute;
-  top: 3px;
-  inset-inline-end: 5px;
-  font-size: 15px;
-  line-height: 1;
-  color: var(--mythic);
-  text-shadow: 0 0 2px #1d1640;
-  mix-blend-mode: normal;
-}
-
 @keyframes foil {
   to {
     background-position: 0% 50%;
+  }
+}
+
+/* selo da dominada: medalha dourada com borda branca, por cima do brilho (e sem mistura com ele) */
+.st-star {
+  position: absolute;
+  top: 3px;
+  inset-inline-end: 3px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: clamp(17px, 32cqw, 26px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff7c2, #f2b705 58%, #c98a00);
+  color: #1d1640;
+  font-size: clamp(11px, 21cqw, 17px);
+  line-height: 1;
+  box-shadow: 0 0 0 2px #fff, 0 2px 5px rgb(0 0 0 / 0.35), 0 0 10px 2px rgb(242 183 5 / 0.55);
+  pointer-events: none;
+  animation: star-glow 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes star-glow {
+  to {
+    box-shadow: 0 0 0 2px #fff, 0 2px 5px rgb(0 0 0 / 0.35), 0 0 16px 5px rgb(242 183 5 / 0.85);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .st-star {
+    animation: none;
   }
 }
 

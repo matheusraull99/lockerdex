@@ -1,0 +1,178 @@
+{
+  "title": "Historia Fortnite",
+  "intro": "Od zapowiedzi w 2011 roku do Rozdziału 7: premiery, wydarzenia na żywo, koncerty i zmiany, dzięki którym Fortnite jest tym, czym jest dziś.",
+  "chapters": "Rozdziały",
+  "eras": {
+    "origin": "Przed Battle Royale",
+    "c1": "Rozdział 1",
+    "c2": "Rozdział 2",
+    "c3": "Rozdział 3",
+    "c4": "Rozdział 4",
+    "c5": "Rozdział 5",
+    "c6": "Rozdział 6",
+    "c7": "Rozdział 7"
+  },
+  "items": {
+    "announce": {
+      "title": "Pokaz na gali VGA",
+      "text": "Epic Games po raz pierwszy pokazało Fortnite na gali Spike Video Game Awards 2011, a prezentację poprowadził Cliff Bleszinski. Pomysł narodził się podczas wewnętrznego game jamu po Gears of War 3, a w 2012 roku projekt przeszedł na Unreal Engine 4."
+    },
+    "stw": {
+      "title": "Ratowanie Świata",
+      "text": "Pierwszy Fortnite był płatną grą kooperacyjną: budowanie fortów za dnia i odpieranie hord potworów. Gra weszła do wczesnego dostępu na PC, PS4 i Xbox One, a w kolejnym miesiącu przekroczyła 1 milion graczy."
+    },
+    "br": {
+      "title": "Narodziny Battle Royale",
+      "text": "Darmowy tryb dla 100 graczy, zbudowany w ciągu około dwóch miesięcy na bazie Ratowania Świata. W dwa tygodnie zebrał 10 milionów graczy."
+    },
+    "battlepass": {
+      "title": "Pierwszy karnet bojowy",
+      "text": "Sezon 2 wprowadził karnet bojowy: 950 V-dolców za 70 poziomów nagród. W Sezonie 3 urósł do 100 poziomów."
+    },
+    "mobile": {
+      "title": "Fortnite wszędzie",
+      "text": "W kwietniu 2018 roku gra otworzyła się dla wszystkich na iPhonie, w czerwcu trafiła na Nintendo Switch, a w sierpniu na Androida, najpierw na telefony Samsunga."
+    },
+    "rocket": {
+      "title": "Start rakiety",
+      "text": "Pierwsze wydarzenie na żywo w grze: rakieta wystartowała i otworzyła szczelinę na niebie, rozpoczynając wątek szczelin."
+    },
+    "creative": {
+      "title": "Tryb kreatywny",
+      "text": "Sezon 7 wprowadził tryb kreatywny, w którym każdy może zbudować własną wyspę i własną grę. Z niego wyrosły tysiące wysp tworzonych przez graczy, które istnieją dziś."
+    },
+    "marshmello": {
+      "title": "Marshmello w Pleasant Park",
+      "text": "Pierwszy duży koncert w grze zgromadził 10,7 miliona graczy, co było wtedy rekordem."
+    },
+    "worldcup": {
+      "title": "Mistrzostwa świata",
+      "text": "Fortnite World Cup wypełnił Arthur Ashe Stadium w Nowym Jorku, a pula nagród wyniosła 30 milionów dolarów. Finał solo i 3 miliony dolarów wygrał 16-letni Kyle „Bugha” Giersdorf."
+    },
+    "theend": {
+      "title": "The End",
+      "text": "Meteor uderzył w wyspę, a czarna dziura pochłonęła wszystko. Przez około dwa dni gra pokazywała tylko czarną dziurę, a na streamach oglądało ją ponad 5,5 miliona osób."
+    },
+    "c2start": {
+      "title": "Nowa wyspa",
+      "text": "Rozdział 2 zaczął się na zupełnie nowej mapie, z pływaniem, wędkowaniem i motorówkami."
+    },
+    "travis": {
+      "title": "Astronomical Travisa Scotta",
+      "text": "Pięć koncertów w trzy dni. Na pierwszym było jednocześnie 12,3 miliona graczy, a łącznie koncerty obejrzało 27,7 miliona różnych graczy."
+    },
+    "apple": {
+      "title": "Poza App Store",
+      "text": "Epic dodało płatności bezpośrednie z tańszymi V-dolcami. Apple i Google usunęły Fortnite ze swoich sklepów, a Epic tego samego dnia pozwało obie firmy."
+    },
+    "galactus": {
+      "title": "Pożeracz Światów",
+      "text": "Wydarzenie z Galactusem zamknęło sezon Marvela z wynikiem 15,3 miliona graczy jednocześnie. To najwyższy oficjalny szczyt, jaki kiedykolwiek ogłoszono."
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande poprowadziła muzyczną podróż przez różne światy, powtórzoną w pięciu sesjach w ciągu trzech dni."
+    },
+    "c2end": {
+      "title": "Wyspa do góry nogami",
+      "text": "Rozdział 2 zakończył się wydarzeniem „The End”: Królowa Sześcianów przeciwko Fundamentowi, w którego wcielił się Dwayne Johnson, i wyspa, która obróciła się do góry nogami."
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "Rozdział 3 przyniósł nową wyspę, ślizg i przejście na Unreal Engine 5."
+    },
+    "zerobuild": {
+      "title": "Zero Budowania",
+      "text": "Po sezonie, który zaczął się z wyłączonym budowaniem, tryb Zero Budowania został w grze na stałe. Od tamtej pory możesz grać w Battle Royale, nie stawiając ani jednej ściany."
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "Wydarzenie finałowe zamknęło Rozdział 3 i utorowało drogę kolejnej wyspie."
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "Rozdział 4 przyniósł skok w oprawie graficznej dzięki technologiom takim jak Nanite i Lumen, odpowiadającym za szczegóły i oświetlenie."
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "Unreal Editor for Fortnite został udostępniony wszystkim, z językiem programowania Verse i programem, który dzieli się z twórcami wysp 40% przychodów netto."
+    },
+    "og": {
+      "title": "Sezon OG",
+      "text": "Mapa z Rozdziału 1 wróciła i była aktualizowana z tygodnia na tydzień. Następny dzień, 4 listopada, był największym dniem w historii Fortnite: 44,7 miliona graczy."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Rozdział 4 zakończył się wydarzeniem na żywo z Eminemem, które oglądało jednocześnie 11,6 miliona graczy."
+    },
+    "c5start": {
+      "title": "Trzy nowe gry",
+      "text": "Rozdział 5 zaczął się pod ziemią, a w tym samym tygodniu w Fortnite pojawiły się trzy gry: LEGO Fortnite, Rocket Racing i Fortnite Festival, którego utwory to Jam Tracks sprzedawane w sklepie."
+    },
+    "c5seasons": {
+      "title": "Bogowie, pustkowia i Doom",
+      "text": "Sezon 2 przyniósł greckich bogów w „Myths & Mortals”, Sezon 3 — postapokaliptyczne pustkowia w „Wrecked”, a w Sezonie 4, w „Absolute Doom”, pojawił się Doctor Doom z Marvela."
+    },
+    "remix": {
+      "title": "Rozdział 2 Remix",
+      "text": "Wyspa z Rozdziału 2 wróciła na miesiąc muzyki ze Snoop Doggiem, Eminemem, Ice Spice i hołdem dla Juice WRLD. Finał zgromadził ponad 14 milionów graczy jednocześnie."
+    },
+    "hunters": {
+      "title": "Hunters i pierwsze duszki",
+      "text": "Rozdział 6 wystartował z japońskim folklorem i nowymi ruchami parkourowymi. To tu zadebiutowały duszki: Powietrze, Woda i Ziemia, każdy z własną mocą."
+    },
+    "ogforever": {
+      "title": "OG na zawsze",
+      "text": "Fortnite OG z mapą z Rozdziału 1 stał się stałym trybem."
+    },
+    "lawless": {
+      "title": "Lawless i Star Wars",
+      "text": "Sezon 2 kręcił się wokół przestępstw i napadów. W maju minisezon „Galactic Battle” sprowadził na wyspę Star Wars."
+    },
+    "appus": {
+      "title": "Powrót do App Store",
+      "text": "Fortnite wrócił do amerykańskiego App Store po procesie przeciwko Apple. W Europie wrócił na iPhone’a już w 2024 roku, przez Epic Games Store."
+    },
+    "super": {
+      "title": "Superbohaterowie, owady i Simpsonowie",
+      "text": "Sezon 3, „Super”, przyniósł Supermana; Sezon 4, „Shock 'N Awesome”, inwazję owadów z Power Rangers i Halo; a w listopadzie minisezon odwiedził Springfield."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Wydarzenie finałowe zamknęło Rozdział 6. Według Epic Games oglądało je w grze 10,5 miliona graczy."
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "Rozdział 7 zaczął się na Golden Coast: gracze przybyli, surfując na Burzy, a nowościami były samoożywianie, bossowie, w których można się zamienić, i prostsze budowanie."
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "Po pierwszym sezonie wydłużonym do 108 dni wystartował Sezon 2, a tego samego dnia Fortnite wrócił do Google Play na całym świecie."
+    },
+    "stwfree": {
+      "title": "Ratowanie Świata za darmo",
+      "text": "Prawie dziewięć lat po premierze jako gra płatna Ratowanie Świata stało się darmowe dla wszystkich."
+    },
+    "appworld": {
+      "title": "App Store na całym świecie",
+      "text": "Fortnite wrócił do App Store na całym świecie, także w Brazylii. Jedynym wyjątkiem jest Australia."
+    },
+    "runners": {
+      "title": "Runners: duszki w centrum uwagi",
+      "text": "Sezon 3 uczynił duszki sercem gry: znajdź jednego w meczu, zanieś go do punktu ekstrakcji i wytrzymaj, a na zawsze trafi do twojej kolekcji. Duszki awansują, aż zostaną okiełznane, a Pył Duszka pozwala przywoływać je w kolejnych meczach."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Sezon 4 jest poświęcony grom wideo: konsole rozsiane po wyspie aktywują kody, które zmieniają zasady meczu dla wszystkich. Przyniósł nowe pokolenie duszków, m.in. Sonica, Tailsa i Shadowa, w wariantach Złoty, Cheat Master, Loot Hacker i Bounty Hunter."
+    },
+    "birthday": {
+      "title": "Dziewięć lat Battle Royale",
+      "text": "Dziewiąte urodziny przyniosły Godziny mocy i nowego duszka: Urodziny, dzięki któremu ze skrzyń wypadają kawałki tortu."
+    }
+  },
+  "now": {
+    "title": "A historia toczy się dalej",
+    "text": "Każdy sezon dopisuje do tej historii nowy rozdział. Śledź bieżący sezon i uzupełniaj jego album duszków tutaj, na Lockerdex."
+  },
+  "sources": "Daty według czasu wschodniego USA, sprawdzone w ogłoszeniach i informacjach o aktualizacjach Epic Games, na Fortnite Wiki i w prasie o grach."
+}

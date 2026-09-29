@@ -1,6 +1,6 @@
 # Lockerdex
 
-Portal de Fortnite com cara de álbum de figurinhas (o álbum dos Sprites começou como "Spritedex"): sprites, loja, cosméticos, listas, Jam Tracks, mapa, notícias e temporada. Você marca o que tem, vê o que falta e compara com os amigos. Tem 22 idiomas, não tem anúncio, não pede login e funciona offline.
+Portal de Fortnite com cara de álbum de figurinhas (o álbum dos Sprites começou como "Spritedex"): sprites, loja, cosméticos, listas, Jam Tracks, mapa, notícias, temporada e a história do jogo. Você marca o que tem, vê o que falta e compara com os amigos. Tem 22 idiomas, não tem anúncio, não pede login e funciona offline.
 
 Junta o melhor de [fortnite.gg/sprites](https://fortnite.gg/sprites) (catálogo completo e histórico) e do [Sprite Locker](https://spritelocker.com) (matriz sprite × variante e ferramentas de colecionador), e acrescenta:
 
@@ -15,6 +15,8 @@ Junta o melhor de [fortnite.gg/sprites](https://fortnite.gg/sprites) (catálogo 
 - **22 idiomas:** detectados pelo navegador, com árabe da direita para a esquerda.
 - **Instala como app no celular e no computador** (PWA). O botão "Instalar app" instala direto no Android e no Chrome/Edge; no iPhone, mostra o passo a passo do Safari. Com rede cortada, abre offline.
 - **Sugestões de melhoria:** o usuário escolhe o tipo (ideia, erro, tradução, dado errado), escreve e envia.
+- **Cor do site:** 10 cores prontas ou qualquer uma pelo seletor. O site inteiro muda, no tema claro e no escuro, e a cor fica salva no aparelho (`src/lib/theme.ts`).
+- **História do Fortnite:** linha do tempo de 2011 até hoje, com 39 marcos nos 22 idiomas.
 
 **No ar:** https://matheusraull99.github.io/lockerdex/. Cada push na `main` publica sozinho pelo GitHub Actions (`.github/workflows/deploy.yml`), e todo dia às 06:15 UTC o workflow recria o catálogo de cosméticos antes de publicar.
 
@@ -31,6 +33,7 @@ Junta o melhor de [fortnite.gg/sprites](https://fortnite.gg/sprites) (catálogo 
 | `/map/` | Mapa atual com zoom e locais nomeados | `/v1/map` |
 | `/news/` | Notícias do jogo | `/v2/news/br` |
 | `/season/` | Contagem regressiva da temporada | `src/lib/ui.tsx` (`SEASON_END`) |
+| `/history/` | História do Fortnite, de 2011 até hoje | `src/data/history.json` (datas) + `src/i18n/history/` (textos) |
 
 Cada rota tem endereço próprio em `/lockerdex/<rota>/` e uma versão por idioma em `/lockerdex/<idioma>/<rota>/`, por exemplo `/lockerdex/pt-BR/shop/`. O prefixo escolhe o idioma e segue nos links. Os links antigos com `#/rota` são convertidos ao abrir. A tabela de rotas fica em `src/lib/routes.json`.
 
@@ -61,7 +64,7 @@ O código da coleção guarda 2 bits por figurinha, indexados pelo id do fortnit
 
 ## Google (SEO)
 
-O build (`seoPages` no `vite.config.ts`) gera uma página pronta por rota e por idioma. São 230 páginas, cada uma com título, descrição, link canônico, as 22 versões de idioma (hreflang), prévia de link (Open Graph, com `public/og.png`) e um texto com links dentro do `#root`. O build também gera `sitemap.xml`, `robots.txt` e `404.html`.
+O build (`seoPages` no `vite.config.ts`) gera uma página pronta por rota e por idioma. São 253 páginas (11 rotas × 23 versões), cada uma com título, descrição, link canônico, as 22 versões de idioma (hreflang), prévia de link (Open Graph, com `public/og.png`) e um texto com links dentro do `#root`. A página da história leva a linha do tempo inteira nesse texto, para o Google ler sem rodar o app. O build também gera `sitemap.xml`, `robots.txt` e `404.html`.
 
 Para cadastrar no **Google Search Console**:
 
@@ -105,5 +108,7 @@ Outras opções, com prioridade menor: `VITE_FEEDBACK_URL` (POST JSON, como no F
 2. Adicione uma linha em `LANGS` (`src/lib/langs.ts`).
 
 Chave que faltar cai no inglês.
+
+Os textos da história ficam à parte, em `src/i18n/history/<código>.json` (carregados só na página da história). As datas e a ordem dos marcos ficam em `src/data/history.json`, iguais para todos os idiomas. Marco que faltar num idioma aparece em inglês.
 
 Fã-site sem vínculo com a Epic Games. Fortnite é marca registrada da Epic Games.

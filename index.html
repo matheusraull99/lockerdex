@@ -21,6 +21,22 @@
     <link rel="manifest" href="/manifest.webmanifest" />
   </head>
   <body>
+    <script>
+      // Cor do site escolhida (src/lib/theme.ts): entra antes de a página aparecer, sem piscar a padrão.
+      try {
+        var t = JSON.parse(localStorage.getItem("lockerdex:theme") || "null");
+        if (t && t.css) {
+          var s = document.createElement("style");
+          s.id = "lockerdex-theme";
+          s.textContent = t.css;
+          document.head.appendChild(s);
+          document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            m.dataset.default = m.content;
+            if (t.bar) m.content = /dark/.test(m.media) ? t.bar[1] : t.bar[0];
+          });
+        }
+      } catch (e) {}
+    </script>
     <div id="root"><!--seo:body--></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

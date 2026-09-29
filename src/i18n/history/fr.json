@@ -1,0 +1,178 @@
+{
+  "title": "L’histoire de Fortnite",
+  "intro": "De sa révélation en 2011 au Chapitre 7 : les lancements, les événements en direct, les concerts et les changements qui ont fait de Fortnite ce qu’il est aujourd’hui.",
+  "chapters": "Chapitres",
+  "eras": {
+    "origin": "Avant le Battle Royale",
+    "c1": "Chapitre 1",
+    "c2": "Chapitre 2",
+    "c3": "Chapitre 3",
+    "c4": "Chapitre 4",
+    "c5": "Chapitre 5",
+    "c6": "Chapitre 6",
+    "c7": "Chapitre 7"
+  },
+  "items": {
+    "announce": {
+      "title": "Révélé aux VGA",
+      "text": "Epic Games a montré Fortnite pour la première fois aux Spike Video Game Awards 2011, lors d’une présentation de Cliff Bleszinski. L’idée est née d’une game jam interne après Gears of War 3, et en 2012 le projet est passé à l’Unreal Engine 4."
+    },
+    "stw": {
+      "title": "Sauver le monde",
+      "text": "Le premier Fortnite était un jeu coopératif payant : construire des forts le jour et repousser des hordes de monstres. Il est sorti en accès anticipé sur PC, PS4 et Xbox One et a dépassé le million de joueurs le mois suivant."
+    },
+    "br": {
+      "title": "Naissance du Battle Royale",
+      "text": "Un mode gratuit pour 100 joueurs, conçu en deux mois environ à partir de Sauver le monde. Il a atteint 10 millions de joueurs en deux semaines."
+    },
+    "battlepass": {
+      "title": "Le premier Passe de combat",
+      "text": "La Saison 2 a introduit le Passe de combat : 950 V-bucks pour 70 paliers de récompenses. À la Saison 3, il est passé à 100 paliers."
+    },
+    "mobile": {
+      "title": "Fortnite partout",
+      "text": "Le jeu s’est ouvert à tous sur iPhone en avril 2018, est arrivé sur Nintendo Switch en juin et sur Android en août, d’abord sur les téléphones Samsung."
+    },
+    "rocket": {
+      "title": "Le lancement de la fusée",
+      "text": "Le premier événement en direct du jeu : une fusée a décollé et ouvert une faille dans le ciel, lançant l’intrigue des failles."
+    },
+    "creative": {
+      "title": "Le mode Créatif",
+      "text": "La Saison 7 a apporté le mode Créatif, où chacun peut construire sa propre île et son propre jeu. C’est le point de départ des milliers d’îles créées par des joueurs qui existent aujourd’hui."
+    },
+    "marshmello": {
+      "title": "Marshmello à Pleasant Park",
+      "text": "Le premier grand concert dans le jeu a réuni 10,7 millions de joueurs, un record à l’époque."
+    },
+    "worldcup": {
+      "title": "La Coupe du monde",
+      "text": "La Fortnite World Cup a rempli l’Arthur Ashe Stadium de New York, avec 30 millions de dollars de dotation. Kyle « Bugha » Giersdorf, 16 ans, a remporté la finale solo et 3 millions de dollars."
+    },
+    "theend": {
+      "title": "The End",
+      "text": "Une météorite a frappé l’île et un trou noir a tout englouti. Pendant environ deux jours, le jeu n’a affiché que le trou noir, et plus de 5,5 millions de personnes l’ont regardé en stream."
+    },
+    "c2start": {
+      "title": "Une nouvelle île",
+      "text": "Le Chapitre 2 a commencé sur une toute nouvelle carte, avec la nage, la pêche et les bateaux à moteur."
+    },
+    "travis": {
+      "title": "Astronomical de Travis Scott",
+      "text": "Cinq concerts en trois jours. Le premier a réuni 12,3 millions de joueurs en même temps, et 27,7 millions de joueurs différents y ont assisté en tout."
+    },
+    "apple": {
+      "title": "Retiré de l’App Store",
+      "text": "Epic a ajouté le paiement direct, avec des V-bucks moins chers. Apple et Google ont retiré Fortnite de leurs boutiques, et Epic a porté plainte contre les deux le jour même."
+    },
+    "galactus": {
+      "title": "Le Dévoreur de mondes",
+      "text": "L’événement Galactus a clôturé la saison Marvel avec 15,3 millions de joueurs en même temps, le plus haut pic officiel jamais annoncé."
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande était la tête d’affiche d’un voyage musical à travers différents mondes, rejoué en cinq sessions sur trois jours."
+    },
+    "c2end": {
+      "title": "L’île se retourne",
+      "text": "Le Chapitre 2 s’est terminé avec « The End » : la Reine Cube face à la Fondation, incarnée par Dwayne Johnson, et une île qui s’est retrouvée à l’envers."
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "Le Chapitre 3 est arrivé avec une nouvelle île, la glissade et le passage à l’Unreal Engine 5."
+    },
+    "zerobuild": {
+      "title": "Zéro construction",
+      "text": "Après une saison qui a démarré avec la construction désactivée, le mode Zéro construction est devenu permanent. Depuis, on peut jouer au Battle Royale sans construire un seul mur."
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "L’événement final a clôturé le Chapitre 3 et ouvert la voie à l’île suivante."
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "Le Chapitre 4 a fait un bond visuel, grâce à des technologies comme Nanite et Lumen pour les détails et l’éclairage."
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "L’Unreal Editor for Fortnite s’est ouvert à tous, avec le langage de programmation Verse et un programme qui partage 40 % des revenus nets avec les créateurs d’îles."
+    },
+    "og": {
+      "title": "Saison OG",
+      "text": "La carte du Chapitre 1 est revenue, mise à jour semaine après semaine. Le lendemain, le 4 novembre, est devenu le plus grand jour de l’histoire de Fortnite : 44,7 millions de joueurs."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Le Chapitre 4 s’est terminé par un événement en direct avec Eminem, suivi par 11,6 millions de joueurs en même temps."
+    },
+    "c5start": {
+      "title": "Trois nouveaux jeux",
+      "text": "Le Chapitre 5 a commencé sous terre, et la même semaine, trois jeux sont arrivés dans Fortnite : LEGO Fortnite, Rocket Racing et Fortnite Festival, dont les morceaux sont les Jam Tracks vendues en boutique."
+    },
+    "c5seasons": {
+      "title": "Dieux, terres désolées et Fatalis",
+      "text": "La Saison 2 a amené les dieux grecs de « Myths & Mortals », la Saison 3 des terres désolées post-apocalyptiques avec « Wrecked », et la Saison 4 le Docteur Fatalis de Marvel avec « Absolute Doom »."
+    },
+    "remix": {
+      "title": "Remix du Chapitre 2",
+      "text": "L’île du Chapitre 2 est revenue pour un mois de musique avec Snoop Dogg, Eminem, Ice Spice et un hommage à Juice WRLD. L’événement final a réuni plus de 14 millions de joueurs en même temps."
+    },
+    "hunters": {
+      "title": "Hunters et les premiers esprits",
+      "text": "Le Chapitre 6 s’est ouvert sur le folklore japonais et de nouveaux mouvements de parkour. C’est aussi là que les esprits ont fait leurs débuts : Air, Eau et Terre, chacun avec son propre pouvoir."
+    },
+    "ogforever": {
+      "title": "OG pour de bon",
+      "text": "Fortnite OG, avec la carte du Chapitre 1, est devenu un mode permanent."
+    },
+    "lawless": {
+      "title": "Lawless et Star Wars",
+      "text": "La Saison 2 tournait autour du crime et des braquages. En mai, la mini-saison « Galactic Battle » a amené Star Wars sur l’île."
+    },
+    "appus": {
+      "title": "Retour sur l’App Store",
+      "text": "Après le procès contre Apple, Fortnite est revenu sur l’App Store américain. En Europe, il était déjà revenu sur iPhone en 2024, via l’Epic Games Store."
+    },
+    "super": {
+      "title": "Super-héros, insectes et les Simpson",
+      "text": "La Saison 3, « Super », a amené Superman ; la Saison 4, « Shock 'N Awesome », une invasion d’insectes avec les Power Rangers et Halo ; et en novembre, une mini-saison a fait escale à Springfield."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "L’événement final a clôturé le Chapitre 6. Selon Epic, 10,5 millions de joueurs étaient dans le jeu pour y assister."
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "Le Chapitre 7 a commencé sur la Golden Coast : les joueurs sont arrivés en surfant sur la tempête, avec l’auto-réanimation, des boss dans lesquels on peut se transformer et une construction simplifiée."
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "Après une première saison prolongée jusqu’à 108 jours, la Saison 2 a commencé, et le même jour, Fortnite est revenu sur Google Play dans le monde entier."
+    },
+    "stwfree": {
+      "title": "Sauver le monde devient gratuit",
+      "text": "Près de neuf ans après sa sortie en tant que jeu payant, Sauver le monde est devenu gratuit pour tous."
+    },
+    "appworld": {
+      "title": "L’App Store, partout",
+      "text": "Fortnite est revenu sur l’App Store dans le monde entier, Brésil compris. La seule exception est l’Australie."
+    },
+    "runners": {
+      "title": "Runners : les esprits sur le devant de la scène",
+      "text": "La Saison 3 a fait des esprits le cœur du jeu : trouvez-en un pendant une partie, emmenez-le jusqu’à un point d’extraction et tenez bon, et il rejoint définitivement votre collection. Ils montent de niveau jusqu’à être maîtrisés, et la poussière spirituelle permet de les invoquer dans les parties suivantes."
+    },
+    "override": {
+      "title": "Override",
+      "text": "La Saison 4 est consacrée aux jeux vidéo : des consoles réparties sur l’île activent des codes qui changent les règles de la partie pour tout le monde. Elle a apporté une nouvelle génération d’esprits, avec Sonic, Tails, Shadow et d’autres, en variantes Or, Cheat Master, Loot Hacker et Bounty Hunter."
+    },
+    "birthday": {
+      "title": "Neuf ans de Battle Royale",
+      "text": "Le neuvième anniversaire est arrivé avec des Heures musclées et un nouvel esprit : Anniversaire, grâce auquel les coffres donnent des parts de gâteau."
+    }
+  },
+  "now": {
+    "title": "Et l’histoire continue",
+    "text": "Chaque saison ajoute un nouveau chapitre à cette histoire. Suivez la saison en cours et complétez son album d’esprits ici, sur Lockerdex."
+  },
+  "sources": "Dates à l’heure de l’Est des États-Unis, vérifiées dans les annonces et les notes de mise à jour d’Epic Games, sur le Fortnite Wiki et dans la presse spécialisée."
+}

@@ -8,6 +8,7 @@ import { useInstall } from "./lib/pwa";
 import { feedbackEnabled } from "./lib/feedback";
 import { InstallDialog } from "./components/InstallDialog";
 import { FeedbackDialog } from "./components/FeedbackDialog";
+import { ThemeDialog } from "./components/ThemeDialog";
 import { SpritesPage } from "./pages/SpritesPage";
 import { ShopPage } from "./pages/ShopPage";
 import { CosmeticsPage } from "./pages/CosmeticsPage";
@@ -17,11 +18,12 @@ import { TracksPage } from "./pages/TracksPage";
 import { MapPage } from "./pages/MapPage";
 import { NewsPage } from "./pages/NewsPage";
 import { SeasonPage } from "./pages/SeasonPage";
+import { HistoryPage } from "./pages/HistoryPage";
 import { MorePage } from "./pages/MorePage";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
-type NavKey = "nav.sprites" | "nav.shop" | "nav.cosmetics" | "nav.lists" | "nav.map" | "nav.more";
+type NavKey = "nav.sprites" | "nav.shop" | "nav.cosmetics" | "nav.lists" | "nav.map" | "nav.history" | "nav.more";
 
 /** Ícones da barra de abas, desenhados no traço do app. */
 const ICON: Record<string, ReactElement> = {
@@ -39,6 +41,7 @@ const TABS: { route: Route; label: NavKey; mobile: boolean }[] = [
   { route: "cosmetics", label: "nav.cosmetics", mobile: true },
   { route: "lists", label: "nav.lists", mobile: false },
   { route: "map", label: "nav.map", mobile: true },
+  { route: "history", label: "nav.history", mobile: false },
   { route: "more", label: "nav.more", mobile: true },
 ];
 
@@ -56,6 +59,7 @@ export default function App() {
   const [toastMsg, setToastMsg] = useState("");
   const [installing, setInstalling] = useState(false);
   const [suggesting, setSuggesting] = useState(false);
+  const [theming, setTheming] = useState(false);
   const inst = useInstall();
 
   useEffect(() => {
@@ -79,18 +83,19 @@ export default function App() {
   }, [inst, t]);
 
   const ui = useMemo<Ui>(
-    () => ({ toast: setToastMsg, openInstall, openFeedback: () => setSuggesting(true), canInstall: !inst.installed }),
+    () => ({ toast: setToastMsg, openInstall, openFeedback: () => setSuggesting(true), openTheme: () => setTheming(true), canInstall: !inst.installed }),
     [openInstall, inst.installed],
   );
 
-  // A aba "Minhas listas" fica dentro de "Mais" no celular; as páginas secundárias acendem "Mais".
+  // As páginas secundárias acendem "Mais"; no celular, também as abas que só existem no topo (listas, história).
   const activeTab: Route = TABS.some((x) => x.route === route) ? route : "more";
+  const activeMobile: Route = TABS.some((x) => x.route === route && x.mobile) ? route : "more";
 
   // Título da aba por página e por idioma (é o que aparece no histórico e no Google).
   useEffect(() => {
     const NAV: Record<Route, Parameters<typeof t>[0]> = {
       sprites: "nav.sprites", shop: "nav.shop", cosmetics: "nav.cosmetics", lists: "nav.lists", leaks: "nav.leaks",
-      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", more: "nav.more",
+      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", more: "nav.more",
     };
     // Mesmo formato das páginas geradas no build (vite.config.ts), para o Google ver um título só.
     document.title = route === "sprites" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
@@ -114,6 +119,8 @@ export default function App() {
         return <NewsPage />;
       case "season":
         return <SeasonPage />;
+      case "history":
+        return <HistoryPage />;
       case "more":
         return <MorePage />;
       default:
@@ -139,11 +146,19 @@ export default function App() {
             ))}
           </nav>
           {!inst.installed && (
-            <button type="button" className="btn btn-install" onClick={openInstall} aria-label={t("install.button")}>
+            <button type="button" className="btn btn-install" onClick={openInstall} aria-label={t("install.button")} title={t("install.button")}>
               <span aria-hidden>⬇</span>
               <span className="btn-install-t">{t("install.button")}</span>
             </button>
           )}
+          <button type="button" className="btn-theme" onClick={() => setTheming(true)} aria-label={t("theme.button")} title={t("theme.button")}>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinejoin="round" aria-hidden>
+              <path d="M12 3a9 9 0 0 0 0 18c1.2 0 1.8-.9 1.8-1.8 0-.5-.2-.9-.5-1.2a1.7 1.7 0 0 1 1.3-2.9H16a5 5 0 0 0 5-5C21 6.3 17 3 12 3Z" />
+              <circle cx="7.5" cy="11" r="1.3" fill="currentColor" stroke="none" />
+              <circle cx="10.5" cy="7" r="1.3" fill="currentColor" stroke="none" />
+              <circle cx="15.5" cy="7.5" r="1.3" fill="currentColor" stroke="none" />
+            </svg>
+          </button>
           <label className="lang">
             <span className="sr">{t("lang.label")}</span>
             <select value={lang} onChange={(e) => setLang(e.target.value)}>
@@ -182,7 +197,7 @@ export default function App() {
 
       <nav className="tabbar" aria-label={t("nav.more")}>
         {TABS.filter((x) => x.mobile).map((x) => (
-          <a key={x.route} href={href(x.route)} aria-current={activeTab === x.route || (x.route === "more" && route === "lists") ? "page" : undefined}>
+          <a key={x.route} href={href(x.route)} aria-current={activeMobile === x.route ? "page" : undefined}>
             <Icon name={x.route} />
             <span>{t(x.label)}</span>
           </a>
@@ -190,6 +205,7 @@ export default function App() {
       </nav>
 
       {installing && <InstallDialog ios={inst.ios} onClose={() => setInstalling(false)} />}
+      {theming && <ThemeDialog onClose={() => setTheming(false)} />}
       {suggesting && (
         <FeedbackDialog season={t("season.short", { chapter: CURRENT.chapter, season: CURRENT.season })} onClose={() => setSuggesting(false)} toast={setToastMsg} />
       )}

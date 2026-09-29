@@ -72,6 +72,7 @@ const ROUTE_TEXT: Record<string, { title: string | null; desc: string }> = {
   map: { title: "nav.map", desc: "more.map" },
   news: { title: "nav.news", desc: "more.news" },
   season: { title: "nav.season", desc: "more.season" },
+  history: { title: "nav.history", desc: "more.history" },
   more: { title: "nav.more", desc: "app.tagline" },
 };
 
@@ -104,6 +105,42 @@ function seoPages(env: Record<string, string>): Plugin {
       const template = readFileSync(resolve(outDir, "index.html"), "utf8");
       const verification = env.VITE_GSC_VERIFICATION?.trim();
       const urls: string[] = [];
+
+      // História: datas e ordem em data/history.json, textos por idioma em i18n/history (sem o idioma, inglês).
+      const history = JSON.parse(readFileSync(resolve(root, "src/data/history.json"), "utf8")) as {
+        eras: { id: string; items: { id: string; date: string }[] }[];
+      };
+      const histDir = resolve(root, "src/i18n/history");
+      const readHist = (code: string) => JSON.parse(readFileSync(resolve(histDir, `${code}.json`), "utf8"));
+      const histText = (code: string) => {
+        const en = readHist("en");
+        let loc: typeof en = {};
+        try {
+          loc = readHist(code);
+        } catch {
+          // idioma sem tradução da história: fica o inglês
+        }
+        return { ...en, ...loc, eras: { ...en.eras, ...loc.eras }, items: { ...en.items, ...loc.items }, now: loc.now ?? en.now };
+      };
+      const when = (code: string, date: string) => {
+        const [y, m, d] = date.split("-").map(Number);
+        const o: Intl.DateTimeFormatOptions = d ? { day: "numeric", month: "long", year: "numeric" } : m ? { month: "long", year: "numeric" } : { year: "numeric" };
+        return new Intl.DateTimeFormat(code, { ...o, calendar: "gregory", timeZone: "UTC" }).format(Date.UTC(y, (m || 1) - 1, d || 1));
+      };
+      /** A linha do tempo inteira no HTML pronto, para o Google ler a história sem rodar o app. */
+      const historyShell = (code: string, nav: string) => {
+        const H = histText(code);
+        const eras = history.eras
+          .map(
+            (e) =>
+              `<section><h2>${esc(H.eras[e.id] ?? e.id)}</h2><ol>${e.items
+                .filter((i) => H.items[i.id])
+                .map((i) => `<li><h3>${esc(H.items[i.id].title)}</h3><p><time datetime="${i.date}">${esc(when(code, i.date))}</time>. ${esc(H.items[i.id].text)}</p></li>`)
+                .join("")}</ol></section>`,
+          )
+          .join("");
+        return `<main class="seo-shell"><h1>${esc(H.title)}</h1><p>${esc(H.intro)}</p>${eras}<h2>${esc(H.now.title)}</h2><p>${esc(H.now.text)}</p><ul>${nav}</ul></main>`;
+      };
 
       const pathOf = (lang: string | null, route: string) => `${lang ? `${lang}/` : ""}${slugs[route] ? `${slugs[route]}/` : ""}`;
 
@@ -152,7 +189,10 @@ function seoPages(env: Record<string, string>): Plugin {
         const nav = Object.keys(slugs)
           .map((r) => `<li><a href="${base}${pathOf(lang, r)}">${esc(ROUTE_TEXT[r].title ? t(ROUTE_TEXT[r].title!) : t("nav.sprites"))}</a></li>`)
           .join("");
-        const body = `<main class="seo-shell"><h1>${esc(rt.title ? t(rt.title) : "Lockerdex")}</h1><p>${esc(desc)}</p><ul>${nav}</ul></main>`;
+        const body =
+          route === "history"
+            ? historyShell(code, nav)
+            : `<main class="seo-shell"><h1>${esc(rt.title ? t(rt.title) : "Lockerdex")}</h1><p>${esc(desc)}</p><ul>${nav}</ul></main>`;
         let html = template.replace(/<!--seo:start-->[\s\S]*?<!--seo:end-->/, head).replace("<!--seo:body-->", body);
         html = html.replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${code}" dir="${L.meta.dir === "rtl" ? "rtl" : "ltr"}">`);
         return { html, url };

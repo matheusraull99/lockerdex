@@ -1,0 +1,178 @@
+{
+  "title": "The story of Fortnite",
+  "intro": "From its reveal in 2011 to Chapter 7: the launches, live events, concerts and changes that made Fortnite what it is today.",
+  "chapters": "Chapters",
+  "eras": {
+    "origin": "Before the Battle Royale",
+    "c1": "Chapter 1",
+    "c2": "Chapter 2",
+    "c3": "Chapter 3",
+    "c4": "Chapter 4",
+    "c5": "Chapter 5",
+    "c6": "Chapter 6",
+    "c7": "Chapter 7"
+  },
+  "items": {
+    "announce": {
+      "title": "Revealed at the VGAs",
+      "text": "Epic Games showed Fortnite for the first time at the 2011 Spike Video Game Awards, presented by Cliff Bleszinski. The idea came out of an internal game jam after Gears of War 3, and in 2012 the project moved to Unreal Engine 4."
+    },
+    "stw": {
+      "title": "Save the World",
+      "text": "The first Fortnite was a paid co-op game: build forts by day and hold off hordes of monsters. It entered early access on PC, PS4 and Xbox One and passed 1 million players the following month."
+    },
+    "br": {
+      "title": "Battle Royale is born",
+      "text": "A free mode for 100 players, built in about two months on top of Save the World. It reached 10 million players in two weeks."
+    },
+    "battlepass": {
+      "title": "The first Battle Pass",
+      "text": "Season 2 introduced the Battle Pass: 950 V-Bucks for 70 tiers of rewards. In Season 3 it grew to 100 tiers."
+    },
+    "mobile": {
+      "title": "Fortnite everywhere",
+      "text": "It opened to everyone on iPhone in April 2018, arrived on Nintendo Switch in June and on Android in August, first on Samsung phones."
+    },
+    "rocket": {
+      "title": "The rocket launch",
+      "text": "The game's first live event: a rocket took off and tore a rift in the sky, kicking off the rifts storyline."
+    },
+    "creative": {
+      "title": "Creative mode",
+      "text": "Season 7 brought Creative, where anyone can build their own island and their own game. It was the seed of the thousands of player-made islands that exist today."
+    },
+    "marshmello": {
+      "title": "Marshmello at Pleasant Park",
+      "text": "The first big concert inside the game drew 10.7 million players, a record at the time."
+    },
+    "worldcup": {
+      "title": "The World Cup",
+      "text": "The Fortnite World Cup filled Arthur Ashe Stadium in New York with a 30 million dollar prize pool. Kyle \"Bugha\" Giersdorf, 16, won the solo final and 3 million dollars."
+    },
+    "theend": {
+      "title": "The End",
+      "text": "A meteor hit the island and a black hole swallowed everything. For about two days the game showed only the black hole, and more than 5.5 million people watched it on streams."
+    },
+    "c2start": {
+      "title": "A new island",
+      "text": "Chapter 2 started on a brand new map, with swimming, fishing and motorboats."
+    },
+    "travis": {
+      "title": "Travis Scott's Astronomical",
+      "text": "Five shows over three days. The first one had 12.3 million players at the same time, and 27.7 million different players attended across all of them."
+    },
+    "apple": {
+      "title": "Off the App Store",
+      "text": "Epic added direct payment with cheaper V-Bucks. Apple and Google removed Fortnite from their stores, and Epic sued both on the same day."
+    },
+    "galactus": {
+      "title": "The Devourer of Worlds",
+      "text": "The Galactus event closed the Marvel season with 15.3 million players at the same time, the highest official peak ever announced."
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande headlined a musical journey through different worlds, repeated over five sessions in three days."
+    },
+    "c2end": {
+      "title": "The island flips",
+      "text": "Chapter 2 ended with \"The End\": the Cube Queen against the Foundation, played by Dwayne Johnson, and an island that turned upside down."
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "Chapter 3 arrived with a new island, sliding, and the move to Unreal Engine 5."
+    },
+    "zerobuild": {
+      "title": "Zero Build",
+      "text": "After a season that started with building switched off, Zero Build became a permanent mode. Since then you can play Battle Royale without building a single wall."
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "The finale event closed Chapter 3 and paved the way for the next island."
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "Chapter 4 brought a visual leap, with technologies like Nanite and Lumen for detail and lighting."
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "The Unreal Editor for Fortnite opened to everyone, with the Verse programming language and a program that shares 40% of net revenue with island creators."
+    },
+    "og": {
+      "title": "Season OG",
+      "text": "The Chapter 1 map came back, updated week by week. The next day, November 4, became the biggest day in Fortnite history: 44.7 million players."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Chapter 4 ended with a live event featuring Eminem, watched by 11.6 million players at the same time."
+    },
+    "c5start": {
+      "title": "Three new games",
+      "text": "Chapter 5 started underground, and in the same week three games arrived inside Fortnite: LEGO Fortnite, Rocket Racing and Fortnite Festival, whose songs are the Jam Tracks sold in the shop."
+    },
+    "c5seasons": {
+      "title": "Gods, wasteland and Doom",
+      "text": "Season 2 brought the Greek gods of \"Myths & Mortals\", Season 3 a post-apocalyptic wasteland in \"Wrecked\", and Season 4 Marvel's Doctor Doom in \"Absolute Doom\"."
+    },
+    "remix": {
+      "title": "Chapter 2 Remix",
+      "text": "The Chapter 2 island returned for a month of music with Snoop Dogg, Eminem, Ice Spice and a tribute to Juice WRLD. The finale had more than 14 million players at the same time."
+    },
+    "hunters": {
+      "title": "Hunters, and the first Sprites",
+      "text": "Chapter 6 opened with Japanese folklore and new parkour moves. It is also where Sprites made their debut: Air, Water and Earth, each with its own power."
+    },
+    "ogforever": {
+      "title": "OG for good",
+      "text": "Fortnite OG, with the Chapter 1 map, became a permanent mode."
+    },
+    "lawless": {
+      "title": "Lawless and Star Wars",
+      "text": "Season 2 was all about crime and heists. In May, the \"Galactic Battle\" mini season brought Star Wars to the island."
+    },
+    "appus": {
+      "title": "Back on the App Store",
+      "text": "After the court case against Apple, Fortnite returned to the US App Store. In Europe it had already come back to iPhone in 2024, through the Epic Games Store."
+    },
+    "super": {
+      "title": "Superheroes, bugs and The Simpsons",
+      "text": "Season 3, \"Super\", brought Superman; Season 4, \"Shock 'N Awesome\", a bug invasion with Power Rangers and Halo; and in November a mini season visited Springfield."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "The finale event closed Chapter 6. According to Epic, 10.5 million players were in the game to see it."
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "Chapter 7 started on the Golden Coast: players arrived surfing on the Storm, with self-revive, bosses you can turn into and simpler building."
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "After a first season stretched to 108 days, Season 2 began, and on the same day Fortnite returned to Google Play worldwide."
+    },
+    "stwfree": {
+      "title": "Save the World goes free",
+      "text": "Nearly nine years after launching as a paid game, Save the World became free for everyone."
+    },
+    "appworld": {
+      "title": "The App Store, everywhere",
+      "text": "Fortnite returned to the App Store worldwide, Brazil included. The one exception is Australia."
+    },
+    "runners": {
+      "title": "Runners: Sprites take center stage",
+      "text": "Season 3 made Sprites the heart of the game: find one in a match, carry it to an extraction point and hold out, and it joins your collection for good. They level up until mastered, and Sprite Dust lets you summon them in later matches."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Season 4 is about video games: consoles around the island activate codes that change the rules of the match for everyone. It brought a new generation of Sprites, with Sonic, Tails, Shadow and more, in Gold, Cheat Master, Loot Hacker and Bounty Hunter variants."
+    },
+    "birthday": {
+      "title": "Nine years of Battle Royale",
+      "text": "The ninth birthday came with Power Hours and a new Sprite: Birthday, which makes chests drop slices of cake."
+    }
+  },
+  "now": {
+    "title": "And the story goes on",
+    "text": "Every season adds a new chapter to this story. Follow the current season and build its Sprite album here on Lockerdex."
+  },
+  "sources": "Dates in US Eastern time, checked against Epic Games announcements and patch notes, the Fortnite Wiki and the gaming press."
+}

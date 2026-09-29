@@ -8,9 +8,13 @@ import "./portal.css";
 import { I18nProvider, preloadLocale } from "./lib/i18n";
 import App from "./App";
 import { migrateHashRoute } from "./lib/router";
+import { applyTheme, savedTheme } from "./lib/theme";
 
 // Links antigos (#/shop, #/lists?w=…) viram endereços de verdade antes de montar o app.
 migrateHashRoute();
+
+// Cor escolhida: o index.html já aplicou o CSS guardado; aqui ele é refeito pela conta atual.
+applyTheme(savedTheme());
 
 // Enquanto o idioma carrega, fica à mostra a página pronta do build (texto e links no idioma certo).
 preloadLocale().finally(() =>

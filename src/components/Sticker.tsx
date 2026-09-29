@@ -35,6 +35,12 @@ export const Sticker = memo(function Sticker({ slot, status, color, label, size 
       <span className="st-no">{slot.no}</span>
       <span className="st-var" aria-hidden />
       {status === 2 && <span className="st-foil" aria-hidden />}
+      {/* Fora da camada holográfica: o "overlay" do brilho apagava a estrela junto com a arte. */}
+      {status === 2 && (
+        <span className="st-star" aria-hidden>
+          ★
+        </span>
+      )}
     </>
   );
 

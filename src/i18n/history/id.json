@@ -1,0 +1,178 @@
+{
+  "title": "Kisah Fortnite",
+  "intro": "Dari pengumumannya pada 2011 hingga Chapter 7: peluncuran, live event, konser, dan perubahan yang menjadikan Fortnite seperti sekarang.",
+  "chapters": "Chapter",
+  "eras": {
+    "origin": "Sebelum Battle Royale",
+    "c1": "Chapter 1",
+    "c2": "Chapter 2",
+    "c3": "Chapter 3",
+    "c4": "Chapter 4",
+    "c5": "Chapter 5",
+    "c6": "Chapter 6",
+    "c7": "Chapter 7"
+  },
+  "items": {
+    "announce": {
+      "title": "Diungkap di VGA",
+      "text": "Epic Games pertama kali memperlihatkan Fortnite di Spike Video Game Awards 2011, dipresentasikan oleh Cliff Bleszinski. Idenya lahir dari game jam internal setelah Gears of War 3, dan pada 2012 proyek ini pindah ke Unreal Engine 4."
+    },
+    "stw": {
+      "title": "Save the World",
+      "text": "Awalnya, Fortnite adalah game co-op berbayar: membangun benteng di siang hari dan menahan gerombolan monster. Game ini masuk early access di PC, PS4, dan Xbox One, lalu menembus 1 juta pemain pada bulan berikutnya."
+    },
+    "br": {
+      "title": "Lahirnya Battle Royale",
+      "text": "Mode gratis untuk 100 pemain, dibuat dalam sekitar dua bulan di atas fondasi Save the World. Dalam dua minggu, mode ini mencapai 10 juta pemain."
+    },
+    "battlepass": {
+      "title": "Battle Pass pertama",
+      "text": "Season 2 memperkenalkan Battle Pass: 950 V-Bucks untuk 70 tier hadiah. Di Season 3, jumlahnya bertambah jadi 100 tier."
+    },
+    "mobile": {
+      "title": "Fortnite di mana-mana",
+      "text": "Game ini dibuka untuk semua orang di iPhone pada April 2018, hadir di Nintendo Switch pada Juni, dan di Android pada Agustus, awalnya di ponsel Samsung."
+    },
+    "rocket": {
+      "title": "Peluncuran roket",
+      "text": "Live event pertama di game ini: sebuah roket lepas landas dan membuka rift di langit, awal dari alur cerita tentang rift."
+    },
+    "creative": {
+      "title": "Mode Creative",
+      "text": "Season 7 menghadirkan Creative, tempat siapa pun bisa membangun pulau dan game-nya sendiri. Dari sinilah lahir ribuan pulau buatan pemain yang ada sekarang."
+    },
+    "marshmello": {
+      "title": "Marshmello di Pleasant Park",
+      "text": "Konser besar pertama di dalam game menarik 10,7 juta pemain, rekor pada masa itu."
+    },
+    "worldcup": {
+      "title": "World Cup",
+      "text": "Fortnite World Cup memenuhi Arthur Ashe Stadium di New York dengan total hadiah 30 juta dolar AS. Kyle “Bugha” Giersdorf, 16 tahun, menjuarai final solo dan membawa pulang 3 juta dolar AS."
+    },
+    "theend": {
+      "title": "The End",
+      "text": "Sebuah meteor menghantam pulau dan lubang hitam menelan segalanya. Selama sekitar dua hari, game hanya menampilkan lubang hitam, dan lebih dari 5,5 juta orang menontonnya lewat stream."
+    },
+    "c2start": {
+      "title": "Pulau baru",
+      "text": "Chapter 2 dimulai di peta yang benar-benar baru, dengan fitur berenang, memancing, dan perahu motor."
+    },
+    "travis": {
+      "title": "Astronomical dari Travis Scott",
+      "text": "Lima pertunjukan dalam tiga hari. Pertunjukan pertama diikuti 12,3 juta pemain secara bersamaan, dan total 27,7 juta pemain berbeda hadir di seluruh pertunjukan."
+    },
+    "apple": {
+      "title": "Ditarik dari App Store",
+      "text": "Epic menambahkan pembayaran langsung dengan V-Bucks yang lebih murah. Apple dan Google menghapus Fortnite dari toko mereka, dan Epic menggugat keduanya di hari yang sama."
+    },
+    "galactus": {
+      "title": "Sang Pelahap Dunia",
+      "text": "Event Galactus menutup season Marvel dengan 15,3 juta pemain secara bersamaan, puncak resmi tertinggi yang pernah diumumkan."
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande menjadi bintang utama perjalanan musik melintasi berbagai dunia, yang diulang dalam lima sesi selama tiga hari."
+    },
+    "c2end": {
+      "title": "Pulau terbalik",
+      "text": "Chapter 2 berakhir dengan “The End”: Cube Queen melawan The Foundation, yang diperankan Dwayne Johnson, dan pulau yang terbalik."
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "Chapter 3 hadir dengan pulau baru, sliding, dan perpindahan ke Unreal Engine 5."
+    },
+    "zerobuild": {
+      "title": "Zero Build",
+      "text": "Setelah satu season yang dimulai dengan building dimatikan, Zero Build menjadi mode permanen. Sejak itu kamu bisa main Battle Royale tanpa membangun satu dinding pun."
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "Event penutup mengakhiri Chapter 3 dan membuka jalan bagi pulau berikutnya."
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "Chapter 4 membawa lompatan visual, dengan teknologi seperti Nanite dan Lumen untuk detail dan pencahayaan."
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "Unreal Editor for Fortnite dibuka untuk semua orang, lengkap dengan bahasa pemrograman Verse dan program yang membagi 40% pendapatan bersih dengan kreator pulau."
+    },
+    "og": {
+      "title": "Season OG",
+      "text": "Peta Chapter 1 kembali, diperbarui minggu demi minggu. Keesokan harinya, 4 November, menjadi hari terbesar dalam sejarah Fortnite: 44,7 juta pemain."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Chapter 4 berakhir dengan live event bersama Eminem, yang ditonton 11,6 juta pemain secara bersamaan."
+    },
+    "c5start": {
+      "title": "Tiga game baru",
+      "text": "Chapter 5 dimulai di bawah tanah, dan di minggu yang sama tiga game hadir di dalam Fortnite: LEGO Fortnite, Rocket Racing, dan Fortnite Festival, yang lagu-lagunya adalah Jam Tracks yang dijual di toko."
+    },
+    "c5seasons": {
+      "title": "Dewa, tanah tandus, dan Doom",
+      "text": "Season 2 menghadirkan para dewa Yunani di “Myths & Mortals”, Season 3 tanah tandus pasca-apokaliptik di “Wrecked”, dan Season 4 Doctor Doom dari Marvel di “Absolute Doom”."
+    },
+    "remix": {
+      "title": "Chapter 2 Remix",
+      "text": "Pulau Chapter 2 kembali untuk sebulan penuh musik bersama Snoop Dogg, Eminem, Ice Spice, serta penghormatan untuk Juice WRLD. Event penutupnya diikuti lebih dari 14 juta pemain secara bersamaan."
+    },
+    "hunters": {
+      "title": "Hunters dan Sprite pertama",
+      "text": "Chapter 6 dibuka dengan cerita rakyat Jepang dan gerakan parkour baru. Di sini pula Sprite pertama kali muncul: Udara, Air, dan Bumi, masing-masing dengan kekuatannya sendiri."
+    },
+    "ogforever": {
+      "title": "OG untuk selamanya",
+      "text": "Fortnite OG, dengan peta Chapter 1, menjadi mode permanen."
+    },
+    "lawless": {
+      "title": "Lawless dan Star Wars",
+      "text": "Season 2 penuh dengan kejahatan dan perampokan. Pada bulan Mei, mini season “Galactic Battle” membawa Star Wars ke pulau."
+    },
+    "appus": {
+      "title": "Kembali ke App Store",
+      "text": "Setelah perkara hukum melawan Apple, Fortnite kembali ke App Store Amerika Serikat. Di Eropa, game ini sudah kembali ke iPhone sejak 2024 lewat Epic Games Store."
+    },
+    "super": {
+      "title": "Superhero, serangga, dan The Simpsons",
+      "text": "Season 3, “Super”, menghadirkan Superman; Season 4, “Shock 'N Awesome”, invasi serangga bersama Power Rangers dan Halo; dan pada bulan November, sebuah mini season mampir ke Springfield."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Event penutup mengakhiri Chapter 6. Menurut Epic, 10,5 juta pemain berada di dalam game untuk menyaksikannya."
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "Chapter 7 dimulai di Golden Coast: pemain datang sambil berselancar di atas Badai, dengan self-revive, kemampuan berubah wujud menjadi bos, dan building yang lebih sederhana."
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "Setelah season pertama yang diperpanjang hingga 108 hari, Season 2 dimulai, dan di hari yang sama Fortnite kembali ke Google Play di seluruh dunia."
+    },
+    "stwfree": {
+      "title": "Save the World jadi gratis",
+      "text": "Hampir sembilan tahun setelah rilis sebagai game berbayar, Save the World jadi gratis untuk semua orang."
+    },
+    "appworld": {
+      "title": "App Store di seluruh dunia",
+      "text": "Fortnite kembali ke App Store di seluruh dunia, termasuk Brasil. Satu-satunya pengecualian adalah Australia."
+    },
+    "runners": {
+      "title": "Runners: Sprite jadi pusat perhatian",
+      "text": "Season 3 menjadikan Sprite jantung permainan: temukan satu di match, bawa ke titik ekstraksi, dan bertahanlah, maka Sprite itu masuk ke koleksimu untuk selamanya. Sprite naik level sampai di-master, dan Sprite Dust bisa dipakai untuk summon mereka di match berikutnya."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Season 4 bertema video game: konsol di seluruh pulau mengaktifkan kode yang mengubah aturan match untuk semua orang. Season ini membawa generasi baru Sprite, dengan Sonic, Tails, Shadow, dan lainnya, dalam varian Emas, Cheat Master, Loot Hacker, dan Bounty Hunter."
+    },
+    "birthday": {
+      "title": "Sembilan tahun Battle Royale",
+      "text": "Ulang tahun kesembilan hadir dengan Power Hours dan Sprite baru: Ulang Tahun, yang membuat peti menjatuhkan potongan kue."
+    }
+  },
+  "now": {
+    "title": "Dan kisahnya terus berlanjut",
+    "text": "Setiap season menambah babak baru dalam kisah ini. Ikuti season yang sedang berjalan dan isi album Sprite-nya di sini, di Lockerdex."
+  },
+  "sources": "Tanggal mengikuti zona waktu Timur AS, dicocokkan dengan pengumuman dan patch notes Epic Games, Fortnite Wiki, serta media game."
+}

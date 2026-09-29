@@ -1,0 +1,178 @@
+{
+  "title": "Câu chuyện của Fortnite",
+  "intro": "Từ lần công bố năm 2011 đến Chương 7: những lần ra mắt, sự kiện trực tiếp, buổi hòa nhạc và thay đổi đã làm nên Fortnite như ngày nay.",
+  "chapters": "Các chương",
+  "eras": {
+    "origin": "Trước Battle Royale",
+    "c1": "Chương 1",
+    "c2": "Chương 2",
+    "c3": "Chương 3",
+    "c4": "Chương 4",
+    "c5": "Chương 5",
+    "c6": "Chương 6",
+    "c7": "Chương 7"
+  },
+  "items": {
+    "announce": {
+      "title": "Lộ diện tại VGA",
+      "text": "Epic Games lần đầu giới thiệu Fortnite tại Spike Video Game Awards 2011, do Cliff Bleszinski trình bày. Ý tưởng ra đời từ một game jam nội bộ sau Gears of War 3, và năm 2012 dự án chuyển sang Unreal Engine 4."
+    },
+    "stw": {
+      "title": "Save the World",
+      "text": "Fortnite thuở đầu là một game co-op trả phí: xây pháo đài vào ban ngày và đẩy lùi từng đàn quái vật. Game vào giai đoạn truy cập sớm trên PC, PS4 và Xbox One, rồi vượt mốc 1 triệu người chơi vào tháng sau đó."
+    },
+    "br": {
+      "title": "Battle Royale ra đời",
+      "text": "Một chế độ miễn phí cho 100 người chơi, được làm trong khoảng hai tháng dựa trên nền Save the World. Chế độ này đạt 10 triệu người chơi trong hai tuần."
+    },
+    "battlepass": {
+      "title": "Battle Pass đầu tiên",
+      "text": "Mùa 2 giới thiệu Battle Pass: 950 V-Bucks cho 70 bậc phần thưởng. Đến Mùa 3, Battle Pass tăng lên 100 bậc."
+    },
+    "mobile": {
+      "title": "Fortnite ở khắp nơi",
+      "text": "Game mở cho mọi người trên iPhone vào tháng 4 năm 2018, lên Nintendo Switch vào tháng 6 và Android vào tháng 8, trước tiên là trên điện thoại Samsung."
+    },
+    "rocket": {
+      "title": "Vụ phóng tên lửa",
+      "text": "Sự kiện trực tiếp đầu tiên của game: một tên lửa cất cánh và xé một vết nứt trên bầu trời, mở đầu cốt truyện về các vết nứt."
+    },
+    "creative": {
+      "title": "Chế độ Creative",
+      "text": "Mùa 7 mang đến Creative, nơi ai cũng có thể xây hòn đảo và trò chơi của riêng mình. Đó là tiền đề cho hàng nghìn hòn đảo do người chơi tạo ra ngày nay."
+    },
+    "marshmello": {
+      "title": "Marshmello tại Pleasant Park",
+      "text": "Buổi hòa nhạc lớn đầu tiên trong game thu hút 10,7 triệu người chơi, một kỷ lục vào thời điểm đó."
+    },
+    "worldcup": {
+      "title": "World Cup",
+      "text": "Fortnite World Cup lấp kín Arthur Ashe Stadium ở New York với tổng giải thưởng 30 triệu USD. Kyle “Bugha” Giersdorf, 16 tuổi, vô địch chung kết solo và nhận 3 triệu USD."
+    },
+    "theend": {
+      "title": "The End",
+      "text": "Một thiên thạch đâm vào hòn đảo và một hố đen nuốt chửng mọi thứ. Trong khoảng hai ngày, game chỉ hiển thị hố đen, và hơn 5,5 triệu người đã xem qua các buổi phát trực tiếp."
+    },
+    "c2start": {
+      "title": "Hòn đảo mới",
+      "text": "Chương 2 bắt đầu trên một bản đồ hoàn toàn mới, với bơi lội, câu cá và xuồng máy."
+    },
+    "travis": {
+      "title": "Astronomical của Travis Scott",
+      "text": "Năm buổi diễn trong ba ngày. Buổi đầu tiên có 12,3 triệu người chơi cùng lúc, và tổng cộng 27,7 triệu người chơi khác nhau đã tham dự các buổi diễn."
+    },
+    "apple": {
+      "title": "Bị gỡ khỏi App Store",
+      "text": "Epic thêm hình thức thanh toán trực tiếp với V-Bucks rẻ hơn. Apple và Google gỡ Fortnite khỏi cửa hàng của họ, và Epic kiện cả hai ngay trong ngày."
+    },
+    "galactus": {
+      "title": "Kẻ nuốt chửng các thế giới",
+      "text": "Sự kiện Galactus khép lại mùa Marvel với 15,3 triệu người chơi cùng lúc, mức đỉnh chính thức cao nhất từng được công bố."
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande là ngôi sao chính của một hành trình âm nhạc xuyên qua nhiều thế giới, được diễn lại trong năm suất suốt ba ngày."
+    },
+    "c2end": {
+      "title": "Hòn đảo lộn ngược",
+      "text": "Chương 2 kết thúc với “The End”: Cube Queen đối đầu The Foundation do Dwayne Johnson thủ vai, và một hòn đảo bị lộn ngược."
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "Chương 3 đến cùng hòn đảo mới, động tác trượt và việc chuyển sang Unreal Engine 5."
+    },
+    "zerobuild": {
+      "title": "Zero Build",
+      "text": "Sau một mùa bắt đầu với tính năng xây dựng bị tắt, Zero Build trở thành chế độ cố định. Từ đó, bạn có thể chơi Battle Royale mà không cần xây một bức tường nào."
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "Sự kiện cuối khép lại Chương 3 và mở đường cho hòn đảo tiếp theo."
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "Chương 4 mang đến bước nhảy vọt về hình ảnh, với các công nghệ như Nanite và Lumen cho chi tiết và ánh sáng."
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "Unreal Editor for Fortnite mở cho tất cả mọi người, cùng ngôn ngữ lập trình Verse và một chương trình chia 40% doanh thu ròng cho những người tạo đảo."
+    },
+    "og": {
+      "title": "Mùa OG",
+      "text": "Bản đồ Chương 1 trở lại, được cập nhật theo từng tuần. Ngày hôm sau, 4 tháng 11, trở thành ngày lớn nhất trong lịch sử Fortnite: 44,7 triệu người chơi."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Chương 4 kết thúc bằng một sự kiện trực tiếp có Eminem, được 11,6 triệu người chơi theo dõi cùng lúc."
+    },
+    "c5start": {
+      "title": "Ba trò chơi mới",
+      "text": "Chương 5 bắt đầu dưới lòng đất, và ngay trong tuần đó có ba trò chơi ra mắt bên trong Fortnite: LEGO Fortnite, Rocket Racing và Fortnite Festival, mà các bài hát trong đó chính là Jam Tracks được bán trong cửa hàng."
+    },
+    "c5seasons": {
+      "title": "Thần linh, đất hoang và Doom",
+      "text": "Mùa 2 mang đến các vị thần Hy Lạp của “Myths & Mortals”, Mùa 3 là vùng đất hoang tàn hậu tận thế trong “Wrecked”, và Mùa 4 là Doctor Doom của Marvel trong “Absolute Doom”."
+    },
+    "remix": {
+      "title": "Chương 2 Remix",
+      "text": "Hòn đảo Chương 2 trở lại cho một tháng âm nhạc với Snoop Dogg, Eminem, Ice Spice và màn tưởng nhớ Juice WRLD. Sự kiện cuối có hơn 14 triệu người chơi cùng lúc."
+    },
+    "hunters": {
+      "title": "Hunters và những Sprite đầu tiên",
+      "text": "Chương 6 mở màn với văn hóa dân gian Nhật Bản và các động tác parkour mới. Đây cũng là lúc Sprite ra mắt: Gió, Nước và Đất, mỗi con một sức mạnh riêng."
+    },
+    "ogforever": {
+      "title": "OG ở lại mãi",
+      "text": "Fortnite OG, với bản đồ Chương 1, trở thành chế độ cố định."
+    },
+    "lawless": {
+      "title": "Lawless và Star Wars",
+      "text": "Mùa 2 xoay quanh tội phạm và những phi vụ cướp. Vào tháng 5, mùa mini “Galactic Battle” đưa Star Wars đến hòn đảo."
+    },
+    "appus": {
+      "title": "Trở lại App Store",
+      "text": "Sau vụ kiện với Apple, Fortnite trở lại App Store tại Mỹ. Ở châu Âu, game đã quay lại iPhone từ năm 2024, thông qua Epic Games Store."
+    },
+    "super": {
+      "title": "Siêu anh hùng, côn trùng và The Simpsons",
+      "text": "Mùa 3, “Super”, mang đến Superman; Mùa 4, “Shock 'N Awesome”, là cuộc xâm lăng của côn trùng cùng Power Rangers và Halo; và vào tháng 11, một mùa mini ghé thăm Springfield."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Sự kiện cuối khép lại Chương 6. Theo Epic, có 10,5 triệu người chơi vào game để xem."
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "Chương 7 bắt đầu ở Golden Coast: người chơi đổ bộ bằng cách lướt sóng trên Bão, cùng khả năng tự hồi sinh, hóa thân thành trùm và cơ chế xây dựng đơn giản hơn."
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "Sau mùa đầu tiên kéo dài tới 108 ngày, Mùa 2 bắt đầu, và cùng ngày đó Fortnite trở lại Google Play trên toàn thế giới."
+    },
+    "stwfree": {
+      "title": "Save the World miễn phí",
+      "text": "Gần chín năm sau khi ra mắt dưới dạng game trả phí, Save the World đã miễn phí cho tất cả mọi người."
+    },
+    "appworld": {
+      "title": "App Store trên toàn thế giới",
+      "text": "Fortnite trở lại App Store trên toàn thế giới, kể cả Brazil. Ngoại lệ duy nhất là Úc."
+    },
+    "runners": {
+      "title": "Runners: Sprite là tâm điểm",
+      "text": "Mùa 3 biến Sprite thành trái tim của trò chơi: tìm một con trong trận, mang nó đến điểm trích xuất và cầm cự, thế là nó vào bộ sưu tập của bạn mãi mãi. Sprite lên cấp cho đến khi thành thạo, và Bụi Sprite giúp bạn triệu hồi chúng trong các trận sau."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Mùa 4 xoay quanh trò chơi điện tử: các máy console khắp hòn đảo kích hoạt những mã làm thay đổi luật của trận đấu cho tất cả mọi người. Mùa này mang đến một thế hệ Sprite mới, với Sonic, Tails, Shadow và nhiều Sprite khác, trong các biến thể Vàng, Cheat Master, Loot Hacker và Bounty Hunter."
+    },
+    "birthday": {
+      "title": "Chín năm Battle Royale",
+      "text": "Sinh nhật lần thứ chín đến cùng Giờ Sức Mạnh và một Sprite mới: Sinh nhật, khiến rương rơi ra những miếng bánh kem."
+    }
+  },
+  "now": {
+    "title": "Và câu chuyện vẫn tiếp diễn",
+    "text": "Mỗi mùa lại thêm một chương mới cho câu chuyện này. Hãy theo dõi mùa hiện tại và sưu tập album Sprite của mùa đó ngay tại Lockerdex."
+  },
+  "sources": "Ngày theo giờ miền Đông nước Mỹ, được đối chiếu với thông báo và ghi chú bản cập nhật của Epic Games, Fortnite Wiki và báo chí chuyên về game."
+}

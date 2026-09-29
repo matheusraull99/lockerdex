@@ -1,0 +1,178 @@
+{
+  "title": "Het verhaal van Fortnite",
+  "intro": "Van de onthulling in 2011 tot Hoofdstuk 7: de lanceringen, live-evenementen, concerten en veranderingen die Fortnite hebben gemaakt tot wat het nu is.",
+  "chapters": "Hoofdstukken",
+  "eras": {
+    "origin": "Vóór Battle Royale",
+    "c1": "Hoofdstuk 1",
+    "c2": "Hoofdstuk 2",
+    "c3": "Hoofdstuk 3",
+    "c4": "Hoofdstuk 4",
+    "c5": "Hoofdstuk 5",
+    "c6": "Hoofdstuk 6",
+    "c7": "Hoofdstuk 7"
+  },
+  "items": {
+    "announce": {
+      "title": "Onthuld bij de VGA’s",
+      "text": "Epic Games liet Fortnite voor het eerst zien op de Spike Video Game Awards van 2011, gepresenteerd door Cliff Bleszinski. Het idee kwam voort uit een interne game jam na Gears of War 3, en in 2012 stapte het project over op Unreal Engine 4."
+    },
+    "stw": {
+      "title": "Save the World",
+      "text": "De eerste Fortnite was een betaalde co-opgame: overdag forten bouwen en hordes monsters tegenhouden. Het spel kwam in early access uit op pc, PS4 en Xbox One en had een maand later al meer dan 1 miljoen spelers."
+    },
+    "br": {
+      "title": "Battle Royale is geboren",
+      "text": "Een gratis modus voor 100 spelers, in ongeveer twee maanden gebouwd bovenop Save the World. Binnen twee weken had Battle Royale 10 miljoen spelers."
+    },
+    "battlepass": {
+      "title": "De eerste Battle Pass",
+      "text": "Seizoen 2 introduceerde de Battle Pass: 950 V-Bucks voor 70 tiers met beloningen. In Seizoen 3 groeide hij naar 100 tiers."
+    },
+    "mobile": {
+      "title": "Fortnite overal",
+      "text": "In april 2018 werd het op de iPhone voor iedereen opengesteld, in juni kwam het naar de Nintendo Switch en in augustus naar Android, eerst op Samsung-telefoons."
+    },
+    "rocket": {
+      "title": "De raketlancering",
+      "text": "Het eerste live-evenement van het spel: een raket steeg op en scheurde een rift in de lucht, het begin van de verhaallijn over de rifts."
+    },
+    "creative": {
+      "title": "De Creative-modus",
+      "text": "Seizoen 7 bracht Creative, waarin iedereen een eigen eiland en een eigen spel kan bouwen. Het was het begin van de duizenden door spelers gemaakte eilanden die er nu zijn."
+    },
+    "marshmello": {
+      "title": "Marshmello in Pleasant Park",
+      "text": "Het eerste grote concert in het spel trok 10,7 miljoen spelers, destijds een record."
+    },
+    "worldcup": {
+      "title": "De World Cup",
+      "text": "De Fortnite World Cup vulde het Arthur Ashe Stadium in New York, met een prijzenpot van 30 miljoen dollar. De 16-jarige Kyle ‘Bugha’ Giersdorf won de solofinale en 3 miljoen dollar."
+    },
+    "theend": {
+      "title": "The End",
+      "text": "Een meteoor sloeg in op het eiland en een zwart gat slokte alles op. Ongeveer twee dagen lang liet het spel alleen het zwarte gat zien, en meer dan 5,5 miljoen mensen keken mee via streams."
+    },
+    "c2start": {
+      "title": "Een nieuw eiland",
+      "text": "Hoofdstuk 2 begon op een gloednieuwe kaart, met zwemmen, vissen en motorboten."
+    },
+    "travis": {
+      "title": "Astronomical van Travis Scott",
+      "text": "Vijf shows in drie dagen. Bij de eerste waren 12,3 miljoen spelers tegelijk, en in totaal keken 27,7 miljoen verschillende spelers mee."
+    },
+    "apple": {
+      "title": "Uit de App Store",
+      "text": "Epic voegde directe betaling toe, met goedkopere V-Bucks. Apple en Google haalden Fortnite uit hun winkels, en Epic klaagde ze nog dezelfde dag allebei aan."
+    },
+    "galactus": {
+      "title": "De Verslinder van Werelden",
+      "text": "Het Galactus-evenement sloot het Marvel-seizoen af met 15,3 miljoen spelers tegelijk, de hoogste officiële piek die ooit is bekendgemaakt."
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande was de hoofdact van een muzikale reis door verschillende werelden, herhaald in vijf sessies over drie dagen."
+    },
+    "c2end": {
+      "title": "Het eiland op zijn kop",
+      "text": "Hoofdstuk 2 eindigde met ‘The End’: de Cube Queen tegen de Foundation, gespeeld door Dwayne Johnson, en een eiland dat ondersteboven draaide."
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "Hoofdstuk 3 kwam met een nieuw eiland, sliden en de overstap naar Unreal Engine 5."
+    },
+    "zerobuild": {
+      "title": "Zero Build",
+      "text": "Na een seizoen waarin bouwen bij de start was uitgeschakeld, werd Zero Build een vaste modus. Sindsdien kun je Battle Royale spelen zonder ook maar één muur te bouwen."
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "Het slotevenement sloot Hoofdstuk 3 af en maakte de weg vrij voor het volgende eiland."
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "Hoofdstuk 4 bracht een visuele sprong, met technieken als Nanite en Lumen voor details en belichting."
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "De Unreal Editor for Fortnite werd voor iedereen opengesteld, met de programmeertaal Verse en een programma dat 40% van de netto-inkomsten deelt met makers van eilanden."
+    },
+    "og": {
+      "title": "Seizoen OG",
+      "text": "De kaart van Hoofdstuk 1 kwam terug en werd week na week bijgewerkt. De dag erna, 4 november, werd de grootste dag in de geschiedenis van Fortnite: 44,7 miljoen spelers."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Hoofdstuk 4 eindigde met een live-evenement met Eminem, waar 11,6 miljoen spelers tegelijk naar keken."
+    },
+    "c5start": {
+      "title": "Drie nieuwe spellen",
+      "text": "Hoofdstuk 5 begon ondergronds, en in dezelfde week kwamen er drie spellen bij in Fortnite: LEGO Fortnite, Rocket Racing en Fortnite Festival, waarvan de nummers de Jam Tracks zijn die in de shop worden verkocht."
+    },
+    "c5seasons": {
+      "title": "Goden, woestenij en Doom",
+      "text": "Seizoen 2 bracht de Griekse goden van ‘Myths & Mortals’, Seizoen 3 een postapocalyptische woestenij in ‘Wrecked’, en Seizoen 4 Doctor Doom van Marvel in ‘Absolute Doom’."
+    },
+    "remix": {
+      "title": "Hoofdstuk 2 Remix",
+      "text": "Het eiland van Hoofdstuk 2 kwam terug voor een maand vol muziek met Snoop Dogg, Eminem, Ice Spice en een eerbetoon aan Juice WRLD. De finale trok meer dan 14 miljoen spelers tegelijk."
+    },
+    "hunters": {
+      "title": "Hunters, en de eerste sprites",
+      "text": "Hoofdstuk 6 opende met Japanse folklore en nieuwe parkourmoves. Hier maakten ook de sprites hun debuut: Lucht, Water en Aarde, elk met een eigen kracht."
+    },
+    "ogforever": {
+      "title": "OG voor altijd",
+      "text": "Fortnite OG, met de kaart van Hoofdstuk 1, werd een vaste modus."
+    },
+    "lawless": {
+      "title": "Lawless en Star Wars",
+      "text": "Seizoen 2 draaide om misdaad en overvallen. In mei bracht het miniseizoen ‘Galactic Battle’ Star Wars naar het eiland."
+    },
+    "appus": {
+      "title": "Terug in de App Store",
+      "text": "Na de rechtszaak tegen Apple keerde Fortnite terug in de Amerikaanse App Store. In Europa was het al in 2024 teruggekomen op de iPhone, via de Epic Games Store."
+    },
+    "super": {
+      "title": "Superhelden, insecten en The Simpsons",
+      "text": "Seizoen 3, ‘Super’, bracht Superman; Seizoen 4, ‘Shock 'N Awesome’, een insecteninvasie met Power Rangers en Halo; en in november bezocht een miniseizoen Springfield."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Het slotevenement sloot Hoofdstuk 6 af. Volgens Epic waren 10,5 miljoen spelers in het spel om het te zien."
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "Hoofdstuk 7 begon aan de Golden Coast: spelers kwamen aangesurfd op de storm, met self-revive, bazen waarin je kunt veranderen en eenvoudiger bouwen."
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "Na een eerste seizoen dat tot 108 dagen was opgerekt, begon Seizoen 2, en op dezelfde dag keerde Fortnite wereldwijd terug op Google Play."
+    },
+    "stwfree": {
+      "title": "Save the World wordt gratis",
+      "text": "Bijna negen jaar na de lancering als betaald spel werd Save the World gratis voor iedereen."
+    },
+    "appworld": {
+      "title": "De App Store, overal",
+      "text": "Fortnite keerde wereldwijd terug in de App Store, ook in Brazilië. De enige uitzondering is Australië."
+    },
+    "runners": {
+      "title": "Runners: sprites in de hoofdrol",
+      "text": "Seizoen 3 maakte sprites het hart van het spel: vind er een in een potje, breng hem naar een extractiepunt en houd stand, en hij komt voorgoed in je collectie. Ze stijgen in level tot ze gemasterd zijn, en met Sprite Dust kun je ze in latere potjes oproepen."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Seizoen 4 draait om videogames: consoles verspreid over het eiland activeren codes die de regels van het potje voor iedereen veranderen. Het seizoen bracht een nieuwe generatie sprites, met Sonic, Tails, Shadow en meer, in de varianten Goud, Cheat Master, Loot Hacker en Bounty Hunter."
+    },
+    "birthday": {
+      "title": "Negen jaar Battle Royale",
+      "text": "De negende verjaardag kwam met Power Hours en een nieuwe sprite: Verjaardag, waardoor er stukken taart uit kisten komen."
+    }
+  },
+  "now": {
+    "title": "En het verhaal gaat verder",
+    "text": "Elk seizoen voegt een nieuw hoofdstuk toe aan dit verhaal. Volg het huidige seizoen en vul het bijbehorende sprite-album hier op Lockerdex."
+  },
+  "sources": "Datums in de tijdzone van de Amerikaanse oostkust, gecontroleerd aan de hand van aankondigingen en patch notes van Epic Games, de Fortnite Wiki en de gamepers."
+}

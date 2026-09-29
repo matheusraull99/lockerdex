@@ -1,0 +1,99 @@
+{
+  "eras": [
+    {
+      "id": "origin",
+      "badge": "✦",
+      "color": "#94a3b8",
+      "items": [
+        { "id": "announce", "date": "2011-12-10" },
+        { "id": "stw", "date": "2017-07-25" }
+      ]
+    },
+    {
+      "id": "c1",
+      "badge": "1",
+      "color": "var(--rare)",
+      "items": [
+        { "id": "br", "date": "2017-09-26" },
+        { "id": "battlepass", "date": "2017-12-14" },
+        { "id": "mobile", "date": "2018-04-02" },
+        { "id": "rocket", "date": "2018-06-30" },
+        { "id": "creative", "date": "2018-12-06" },
+        { "id": "marshmello", "date": "2019-02-02" },
+        { "id": "worldcup", "date": "2019-07-28" },
+        { "id": "theend", "date": "2019-10-13" }
+      ]
+    },
+    {
+      "id": "c2",
+      "badge": "2",
+      "color": "var(--epic)",
+      "items": [
+        { "id": "c2start", "date": "2019-10-15" },
+        { "id": "travis", "date": "2020-04-23" },
+        { "id": "apple", "date": "2020-08-13" },
+        { "id": "galactus", "date": "2020-12-01" },
+        { "id": "rift", "date": "2021-08-06" },
+        { "id": "c2end", "date": "2021-12-04" }
+      ]
+    },
+    {
+      "id": "c3",
+      "badge": "3",
+      "color": "var(--legendary)",
+      "items": [
+        { "id": "c3start", "date": "2021-12-05" },
+        { "id": "zerobuild", "date": "2022-03-29" },
+        { "id": "c3end", "date": "2022-12-03" }
+      ]
+    },
+    {
+      "id": "c4",
+      "badge": "4",
+      "color": "var(--mythic)",
+      "items": [
+        { "id": "c4start", "date": "2022-12-04" },
+        { "id": "uefn", "date": "2023-03-22" },
+        { "id": "og", "date": "2023-11-03" },
+        { "id": "bigbang", "date": "2023-12-02" }
+      ]
+    },
+    {
+      "id": "c5",
+      "badge": "5",
+      "color": "#22c55e",
+      "items": [
+        { "id": "c5start", "date": "2023-12-03" },
+        { "id": "c5seasons", "date": "2024-03-08" },
+        { "id": "remix", "date": "2024-11-02" }
+      ]
+    },
+    {
+      "id": "c6",
+      "badge": "6",
+      "color": "#06b6d4",
+      "items": [
+        { "id": "hunters", "date": "2024-12-01" },
+        { "id": "ogforever", "date": "2024-12-06" },
+        { "id": "lawless", "date": "2025-02-21" },
+        { "id": "appus", "date": "2025-05-20" },
+        { "id": "super", "date": "2025-06-07" },
+        { "id": "zerohour", "date": "2025-11-29" }
+      ]
+    },
+    {
+      "id": "c7",
+      "badge": "7",
+      "color": "var(--dust)",
+      "items": [
+        { "id": "pacific", "date": "2025-11-29" },
+        { "id": "showdown", "date": "2026-03-19" },
+        { "id": "stwfree", "date": "2026-04-16" },
+        { "id": "appworld", "date": "2026-05-19" },
+        { "id": "runners", "date": "2026-06-06" },
+        { "id": "override", "date": "2026-08-20" },
+        { "id": "birthday", "date": "2026-09-26" }
+      ]
+    }
+  ]
+}

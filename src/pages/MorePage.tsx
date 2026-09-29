@@ -30,13 +30,14 @@ const GROUPS: { title: UiKey; items: { route: Route; params?: Record<string, str
       { route: "map", label: "nav.map", desc: "more.map", icon: "⌖" },
       { route: "news", label: "nav.news", desc: "more.news", icon: "✉" },
       { route: "season", label: "nav.season", desc: "more.season", icon: "◷" },
+      { route: "history", label: "nav.history", desc: "more.history", icon: "⌛" },
     ],
   },
 ];
 
 export function MorePage() {
   const { t, lang, setLang } = useI18n();
-  const { openInstall, openFeedback, canInstall } = useUi();
+  const { openInstall, openFeedback, openTheme, canInstall } = useUi();
   return (
     <>
       <header className="page-h">
@@ -70,6 +71,9 @@ export function MorePage() {
               ⬇ {t("install.button")}
             </button>
           )}
+          <button type="button" className="btn" onClick={openTheme}>
+            ◐ {t("theme.button")}
+          </button>
           {feedbackEnabled && (
             <button type="button" className="btn" onClick={openFeedback}>
               ✎ {t("feedback.button")}

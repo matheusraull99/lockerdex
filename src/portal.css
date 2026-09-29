@@ -876,6 +876,42 @@
   }
 }
 
+/* O seletor de idioma teria a largura da opção mais longa ("Español (Latinoamérica)"). */
+.top .lang select {
+  field-sizing: content;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 721px) {
+  .top .lang select {
+    max-width: 170px;
+  }
+}
+
+/* Tablet e notebook pequeno: as 7 abas vão inteiras para a segunda linha; a primeira fica com a marca e os botões. */
+@media (min-width: 721px) and (max-width: 1199px) {
+  .nav-top {
+    order: 1;
+    flex: 1 1 100%;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+}
+
+/* Celular estreito (360–400 px): a marca diminui um pouco e o idioma encolhe com reticências. */
+@media (max-width: 400px) {
+  .brand-w {
+    font-size: 29px;
+  }
+  .top .lang {
+    min-width: 0;
+  }
+  .top .lang select {
+    min-width: 0;
+  }
+}
+
 /* ---------- instalar app (cabeçalho) ---------- */
 .btn-install {
   display: inline-flex;
@@ -889,6 +925,20 @@
 .btn-install:hover {
   background: var(--dust);
   color: var(--dust-ink);
+}
+
+/* Com as 7 abas, o texto do botão só cabe em tela larga (em russo ele tem 215 px). */
+@media (max-width: 1399px) {
+  .btn-install {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    font-size: 17px;
+  }
+  .btn-install-t {
+    display: none;
+  }
 }
 
 @media (max-width: 720px) {
@@ -981,4 +1031,285 @@
 .seo-shell a {
   color: var(--dust);
   font-weight: 700;
+}
+
+/* ---------- cor do site ---------- */
+.btn-theme {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--page);
+  color: var(--dust);
+  cursor: pointer;
+}
+
+.btn-theme:hover {
+  border-color: var(--dust);
+}
+
+.btn-install,
+.btn-theme {
+  flex: none; /* ícones não encolhem quando o cabeçalho aperta */
+}
+
+/* Celular estreito: marca, instalar e idioma já ocupam a linha; a cor fica em "Mais" → App. */
+@media (max-width: 479px) {
+  .btn-theme {
+    display: none;
+  }
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  gap: 8px;
+}
+
+.swatch {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 6px;
+  padding: 10px 6px 8px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: var(--paper);
+  color: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.swatch:hover {
+  border-color: var(--line);
+}
+
+.swatch[aria-checked="true"],
+.swatch-custom[data-on] {
+  border-color: var(--dust);
+}
+
+.swatch-dot {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--sw);
+  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 0.35), 0 2px 6px rgb(0 0 0 / 0.25);
+}
+
+/* padrão: o rosa e o roxo originais */
+.swatch[data-default] .swatch-dot {
+  background: linear-gradient(135deg, #ff3d8b 50%, #5b3df5 50%);
+}
+
+.swatch-custom .swatch-dot {
+  overflow: hidden;
+  background: var(--sw, conic-gradient(#ef4444, #facc15, #22c55e, #06b6d4, #2f7bff, #8b5cf6, #ef4444));
+}
+
+.swatch-custom input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.swatch-custom:focus-within {
+  outline: 3px solid var(--storm);
+  outline-offset: 2px;
+}
+
+/* ---------- história ---------- */
+.hist-intro {
+  max-width: 72ch;
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: var(--ink-soft);
+}
+
+.hist-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.hist-jump a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--page);
+  color: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hist-jump a::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ec);
+}
+
+.hist-jump a:hover {
+  border-color: var(--ec);
+}
+
+.era {
+  max-width: 920px; /* coluna de leitura: o texto quebra em ~72 caracteres */
+  margin: 0 0 34px;
+  scroll-margin-top: 14px;
+}
+
+.era-h {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 14px;
+}
+
+.era-no {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 58px;
+  height: 70px;
+  border-radius: var(--r);
+  background: radial-gradient(120% 90% at 50% 20%, color-mix(in srgb, var(--ec) 55%, #fff), var(--ec) 60%);
+  color: #1d1640;
+  font: 900 38px/1 var(--display);
+  transform: rotate(-3deg);
+  box-shadow: 0 1px 0 rgb(var(--shadow) / 0.08), 0 4px 10px -2px rgb(var(--shadow) / 0.35);
+}
+
+.era-h h2 {
+  margin: 0;
+  font: 900 clamp(26px, 4vw, 40px) / 0.95 var(--display);
+  text-transform: uppercase;
+}
+
+.era-h small {
+  display: block;
+  margin-top: 4px;
+  font: 700 14px var(--body);
+  color: var(--ink-soft);
+  text-transform: none;
+}
+
+.tl {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 28px;
+  border-inline-start: 3px solid color-mix(in srgb, var(--ec) 45%, transparent);
+  margin-inline-start: 26px;
+  list-style: none;
+}
+
+.tl-it {
+  position: relative;
+  padding: 12px 16px 14px;
+  border-radius: 12px;
+  background: var(--page);
+}
+
+.tl-it::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  inset-inline-start: -37px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--ec);
+  box-shadow: 0 0 0 3px var(--paper);
+}
+
+.tl-it time {
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.tl-it h3 {
+  margin: 2px 0 4px;
+  font: 800 21px/1.1 var(--display);
+  letter-spacing: 0.01em;
+}
+
+.tl-it p {
+  margin: 0;
+  max-width: 72ch;
+}
+
+.hist-now {
+  max-width: 920px;
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 18px;
+  padding: 18px 20px;
+  border: 2px solid var(--dust);
+  border-radius: 14px;
+  background: var(--page);
+}
+
+.hist-now h2 {
+  margin: 0;
+  font: 900 30px/1 var(--display);
+  text-transform: uppercase;
+}
+
+.hist-now p {
+  margin: 0;
+  max-width: 72ch;
+}
+
+.hist-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hist-cta a {
+  text-decoration: none;
+}
+
+.hist-cta .btn:not(.btn-dust) {
+  color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  .era-no {
+    width: 48px;
+    height: 58px;
+    font-size: 31px;
+  }
+  .tl {
+    margin-inline-start: 10px;
+    padding-inline-start: 20px;
+  }
+  .tl-it::before {
+    inset-inline-start: -29px;
+  }
 }

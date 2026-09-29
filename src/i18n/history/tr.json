@@ -1,0 +1,178 @@
+{
+  "title": "Fortnite'ın hikâyesi",
+  "intro": "2011'deki duyurusundan Bölüm 7'ye: Fortnite'ı bugünkü hâline getiren çıkışlar, canlı etkinlikler, konserler ve değişiklikler.",
+  "chapters": "Bölümler",
+  "eras": {
+    "origin": "Battle Royale'den önce",
+    "c1": "Bölüm 1",
+    "c2": "Bölüm 2",
+    "c3": "Bölüm 3",
+    "c4": "Bölüm 4",
+    "c5": "Bölüm 5",
+    "c6": "Bölüm 6",
+    "c7": "Bölüm 7"
+  },
+  "items": {
+    "announce": {
+      "title": "VGA sahnesinde ilk gösterim",
+      "text": "Epic Games, Fortnite'ı ilk kez 2011 Spike Video Game Awards töreninde, Cliff Bleszinski'nin sunumuyla gösterdi. Fikir, Gears of War 3'ün ardından şirket içinde yapılan bir game jam'den çıktı ve proje 2012'de Unreal Engine 4'e geçti."
+    },
+    "stw": {
+      "title": "Dünyayı Kurtar",
+      "text": "İlk Fortnite ücretli bir co-op oyundu: gündüz kaleler inşa et ve canavar sürülerine karşı dayan. PC, PS4 ve Xbox One'da erken erişime çıktı ve ertesi ay 1 milyon oyuncuyu geçti."
+    },
+    "br": {
+      "title": "Battle Royale doğuyor",
+      "text": "Dünyayı Kurtar'ın temeli üzerine yaklaşık iki ayda geliştirilen, 100 oyunculuk ücretsiz bir mod. İki haftada 10 milyon oyuncuya ulaştı."
+    },
+    "battlepass": {
+      "title": "İlk Savaş Bileti",
+      "text": "Sezon 2, Savaş Bileti'ni getirdi: 70 kademe ödül için 950 V-Papel. Sezon 3'te kademe sayısı 100'e çıktı."
+    },
+    "mobile": {
+      "title": "Her yerde Fortnite",
+      "text": "Nisan 2018'de iPhone'da herkese açıldı, haziranda Nintendo Switch'e, ağustosta da önce Samsung telefonlarda olmak üzere Android'e geldi."
+    },
+    "rocket": {
+      "title": "Roket fırlatılışı",
+      "text": "Oyunun ilk canlı etkinliği: bir roket havalandı, gökyüzünde bir yırtık açtı ve yırtıklar hikâyesini başlattı."
+    },
+    "creative": {
+      "title": "Kreatif modu",
+      "text": "Sezon 7, herkesin kendi adasını ve kendi oyununu kurabildiği Kreatif'i getirdi. Bugün var olan binlerce oyuncu yapımı adanın tohumu buydu."
+    },
+    "marshmello": {
+      "title": "Pleasant Park'ta Marshmello",
+      "text": "Oyunun içindeki ilk büyük konser 10,7 milyon oyuncuyu bir araya getirdi; bu, o zamanın rekoruydu."
+    },
+    "worldcup": {
+      "title": "Dünya Kupası",
+      "text": "Fortnite World Cup, 30 milyon dolarlık ödül havuzuyla New York'taki Arthur Ashe Stadium'u doldurdu. 16 yaşındaki Kyle “Bugha” Giersdorf tekli finali kazandı ve 3 milyon dolar aldı."
+    },
+    "theend": {
+      "title": "The End",
+      "text": "Bir meteor adaya çarptı ve bir kara delik her şeyi yuttu. Oyun yaklaşık iki gün boyunca yalnızca kara deliği gösterdi ve 5,5 milyondan fazla kişi bunu yayınlardan izledi."
+    },
+    "c2start": {
+      "title": "Yepyeni bir ada",
+      "text": "Bölüm 2 yepyeni bir haritada başladı; yüzme, balık tutma ve motorlu tekneler de geldi."
+    },
+    "travis": {
+      "title": "Travis Scott'ın Astronomical'ı",
+      "text": "Üç günde beş gösteri. İlkinde aynı anda 12,3 milyon oyuncu vardı ve gösterilere toplam 27,7 milyon farklı oyuncu katıldı."
+    },
+    "apple": {
+      "title": "App Store'dan çıkış",
+      "text": "Epic, daha ucuz V-Papel sunan doğrudan ödemeyi ekledi. Apple ve Google, Fortnite'ı mağazalarından kaldırdı; Epic ise aynı gün ikisine de dava açtı."
+    },
+    "galactus": {
+      "title": "Dünyaların Yiyicisi",
+      "text": "Galactus etkinliği Marvel sezonunu aynı anda 15,3 milyon oyuncuyla kapattı; bu, bugüne kadar duyurulan en yüksek resmî zirve."
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande, farklı dünyalarda geçen ve üç gün içinde beş seansta tekrarlanan bir müzik yolculuğunun başrolündeydi."
+    },
+    "c2end": {
+      "title": "Ada ters dönüyor",
+      "text": "Bölüm 2, “The End” ile sona erdi: Küp Kraliçesi'ne karşı Dwayne Johnson'ın canlandırdığı Kuruluş ve baş aşağı dönen bir ada."
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "Bölüm 3 yeni bir ada, kayma hareketi ve Unreal Engine 5'e geçişle geldi."
+    },
+    "zerobuild": {
+      "title": "Sıfır İnşa",
+      "text": "İnşanın kapalı olarak başladığı bir sezonun ardından Sıfır İnşa kalıcı bir mod oldu. O zamandan beri Battle Royale'i tek bir duvar dikmeden oynayabilirsin."
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "Final etkinliği Bölüm 3'ü kapattı ve bir sonraki adanın yolunu açtı."
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "Bölüm 4, ayrıntılar ve aydınlatma için Nanite ve Lumen gibi teknolojilerle görsel bir sıçrama getirdi."
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "Unreal Editor for Fortnite, Verse programlama dili ve net gelirin %40'ını ada yaratıcılarıyla paylaşan bir programla herkese açıldı."
+    },
+    "og": {
+      "title": "OG Sezonu",
+      "text": "Bölüm 1 haritası geri döndü ve hafta hafta güncellendi. Ertesi gün, 4 Kasım, Fortnite tarihinin en büyük günü oldu: 44,7 milyon oyuncu."
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "Bölüm 4, Eminem'in yer aldığı ve aynı anda 11,6 milyon oyuncunun izlediği bir canlı etkinlikle sona erdi."
+    },
+    "c5start": {
+      "title": "Üç yeni oyun",
+      "text": "Bölüm 5 yeraltında başladı ve aynı hafta Fortnite'ın içine üç oyun geldi: LEGO Fortnite, Rocket Racing ve şarkıları dükkanda satılan Jam Tracks olan Fortnite Festival."
+    },
+    "c5seasons": {
+      "title": "Tanrılar, çorak topraklar ve Doom",
+      "text": "Sezon 2 “Myths & Mortals” ile Yunan tanrılarını, Sezon 3 “Wrecked” ile kıyamet sonrası çorak toprakları, Sezon 4 de “Absolute Doom” ile Marvel'ın Doctor Doom'unu getirdi."
+    },
+    "remix": {
+      "title": "Bölüm 2 Remix",
+      "text": "Bölüm 2 adası bir aylık müzik için geri döndü: Snoop Dogg, Eminem, Ice Spice ve Juice WRLD anısına bir saygı gösterisi. Finalde aynı anda 14 milyondan fazla oyuncu vardı."
+    },
+    "hunters": {
+      "title": "Hunters ve ilk büyücükler",
+      "text": "Bölüm 6, Japon folkloru ve yeni parkur hareketleriyle açıldı. Büyücükler de ilk kez burada ortaya çıktı: her biri kendi gücüne sahip Hava, Su ve Toprak."
+    },
+    "ogforever": {
+      "title": "OG artık kalıcı",
+      "text": "Bölüm 1 haritasıyla Fortnite OG kalıcı bir mod oldu."
+    },
+    "lawless": {
+      "title": "Lawless ve Star Wars",
+      "text": "Sezon 2 tamamen suç ve soygunlarla ilgiliydi. Mayısta “Galactic Battle” mini sezonu Star Wars'u adaya getirdi."
+    },
+    "appus": {
+      "title": "App Store'a geri dönüş",
+      "text": "Apple'a karşı açılan davanın ardından Fortnite, ABD App Store'una geri döndü. Avrupa'da ise 2024'te Epic Games Store üzerinden iPhone'a zaten dönmüştü."
+    },
+    "super": {
+      "title": "Süper kahramanlar, böcekler ve The Simpsons",
+      "text": "Sezon 3 “Super” ile Superman'i, Sezon 4 “Shock 'N Awesome” ile Power Rangers ve Halo eşliğinde bir böcek istilasını getirdi; kasımda da bir mini sezon Springfield'i ziyaret etti."
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "Final etkinliği Bölüm 6'yı kapattı. Epic'e göre etkinliği görmek için oyunda 10,5 milyon oyuncu vardı."
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "Bölüm 7 Golden Coast'ta başladı: oyuncular Fırtına üzerinde sörf yaparak geldi; kendini diriltme, dönüşebileceğin patronlar ve daha basit inşa da oyuna eklendi."
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "108 güne uzatılan ilk sezonun ardından Sezon 2 başladı ve Fortnite aynı gün dünya genelinde Google Play'e geri döndü."
+    },
+    "stwfree": {
+      "title": "Dünyayı Kurtar ücretsiz oluyor",
+      "text": "Ücretli bir oyun olarak çıkışından yaklaşık dokuz yıl sonra Dünyayı Kurtar herkes için ücretsiz oldu."
+    },
+    "appworld": {
+      "title": "Dünya genelinde App Store",
+      "text": "Fortnite, Brezilya dâhil dünya genelinde App Store'a geri döndü. Tek istisna Avustralya."
+    },
+    "runners": {
+      "title": "Runners: büyücükler ön planda",
+      "text": "Sezon 3 büyücükleri oyunun kalbi yaptı: maçta bir büyücük bul, onu bir çıkarma noktasına taşı ve dayan; böylece koleksiyonuna kalıcı olarak katılır. Büyücükler ustalaşılana kadar seviye atlar, Büyücük Tozu da onları sonraki maçlarda çağırmanı sağlar."
+    },
+    "override": {
+      "title": "Override",
+      "text": "Sezon 4 video oyunları temalı: adanın dört bir yanındaki konsollar, maçın kurallarını herkes için değiştiren kodları etkinleştiriyor. Sonic, Tails, Shadow ve dahasıyla Altın, Cheat Master, Loot Hacker ve Bounty Hunter varyantlarında yeni bir büyücük kuşağı getirdi."
+    },
+    "birthday": {
+      "title": "Battle Royale'in dokuz yılı",
+      "text": "Dokuzuncu doğum günü, Güç Saatleri'ni ve yeni bir büyücüğü getirdi: sandıklardan pasta dilimleri düşmesini sağlayan Doğum Günü."
+    }
+  },
+  "now": {
+    "title": "Ve hikâye devam ediyor",
+    "text": "Her sezon bu hikâyeye yeni bir bölüm ekliyor. Güncel sezonu takip et ve büyücük albümünü burada, Lockerdex'te tamamla."
+  },
+  "sources": "Tarihler ABD Doğu saatine göredir; Epic Games duyuruları ve yama notları, Fortnite Wiki ve oyun basınıyla karşılaştırılmıştır."
+}

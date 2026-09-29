@@ -228,17 +228,27 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
         ctx.roundRect(x + 1, y + 1, cell - 2, cell - 2, 11);
         ctx.stroke();
         // Selo: ✓ (tenho) ou ★ (dominado), no canto superior (do lado de fora da leitura em rtl).
-        const bx = rtl ? x + 14 : x + cell - 14, by = y + 14;
+        // O da dominada é maior, com aro branco e brilho dourado, para saltar na imagem.
+        const br = st === 2 ? 14 : 11;
+        const bx = rtl ? x + br + 3 : x + cell - br - 3, by = y + br + 3;
         ctx.fillStyle = st === 2 ? "#f2b705" : "#ffffff";
+        if (st === 2) {
+          ctx.shadowColor = "rgba(242,183,5,0.85)";
+          ctx.shadowBlur = 12;
+        }
         ctx.beginPath();
-        ctx.arc(bx, by, 11, 0, Math.PI * 2);
+        ctx.arc(bx, by, br, 0, Math.PI * 2);
         ctx.fill();
+        ctx.shadowBlur = 0;
         ctx.fillStyle = "#1d1640";
         ctx.strokeStyle = "#1d1640";
         if (st === 2) {
-          ctx.font = `900 15px sans-serif`;
+          ctx.strokeStyle = "#ffffff";
+          ctx.lineWidth = 2.5;
+          ctx.stroke();
+          ctx.font = `900 19px sans-serif`;
           ctx.textAlign = "center";
-          ctx.fillText("★", bx, by + 5);
+          ctx.fillText("★", bx, by + 6.5);
         } else {
           ctx.lineWidth = 2.6;
           ctx.lineCap = "round";

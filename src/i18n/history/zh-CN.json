@@ -1,0 +1,178 @@
+{
+  "title": "堡垒之夜的历史",
+  "intro": "从 2011 年首次亮相到第7章：回顾造就今天堡垒之夜的那些上线、现场活动、演唱会与变革。",
+  "chapters": "章节",
+  "eras": {
+    "origin": "大逃杀之前",
+    "c1": "第1章",
+    "c2": "第2章",
+    "c3": "第3章",
+    "c4": "第4章",
+    "c5": "第5章",
+    "c6": "第6章",
+    "c7": "第7章"
+  },
+  "items": {
+    "announce": {
+      "title": "在 VGA 上首次亮相",
+      "text": "Epic Games 在 2011 年的 Spike Video Game Awards 上首次展示了堡垒之夜，由 Cliff Bleszinski 登台介绍。这个点子来自《战争机器3》之后的一次内部 Game Jam，2012 年项目转向了 Unreal Engine 4。"
+    },
+    "stw": {
+      "title": "守护家园",
+      "text": "最初的堡垒之夜是一款付费合作游戏：白天建造堡垒，抵御成群的怪物。它在 PC、PS4 和 Xbox One 上开启抢先体验，次月玩家就突破了 100 万。"
+    },
+    "br": {
+      "title": "大逃杀诞生",
+      "text": "这是一个 100 人的免费模式，在守护家园的基础上只用了大约两个月就做了出来。两周内，玩家数就达到了 1000 万。"
+    },
+    "battlepass": {
+      "title": "首个战斗通行证",
+      "text": "第2赛季推出了战斗通行证：花 950 V币即可获得 70 个战阶的奖励。到了第3赛季，战阶增加到 100 个。"
+    },
+    "mobile": {
+      "title": "随时随地玩堡垒之夜",
+      "text": "2018 年 4 月，iPhone 版向所有人开放；6 月登陆 Nintendo Switch，8 月登陆 Android，最初仅限三星手机。"
+    },
+    "rocket": {
+      "title": "火箭发射",
+      "text": "游戏的首个现场活动：一枚火箭升空，在天空中撕开一道裂隙，拉开了裂隙故事线的序幕。"
+    },
+    "creative": {
+      "title": "创意模式",
+      "text": "第7赛季推出了创意模式，任何人都能打造自己的岛屿和自己的游戏。如今数以千计的玩家自制岛屿，正是从这里萌芽的。"
+    },
+    "marshmello": {
+      "title": "Marshmello 在 Pleasant Park",
+      "text": "游戏内的首场大型演唱会吸引了 1070 万名玩家，创下当时的纪录。"
+    },
+    "worldcup": {
+      "title": "世界杯",
+      "text": "Fortnite World Cup 让纽约的 Arthur Ashe Stadium 座无虚席，总奖金高达 3000 万美元。16 岁的 Kyle “Bugha” Giersdorf 赢得单人决赛，拿下 300 万美元。"
+    },
+    "theend": {
+      "title": "The End",
+      "text": "一颗陨石撞上岛屿，黑洞吞没了一切。大约两天里，游戏中只剩下黑洞，超过 550 万人通过直播观看。"
+    },
+    "c2start": {
+      "title": "全新的岛屿",
+      "text": "第2章在一张全新的地图上展开，加入了游泳、钓鱼和摩托艇。"
+    },
+    "travis": {
+      "title": "Travis Scott 的 Astronomical",
+      "text": "三天内共举办五场演出。首场同时在线玩家达 1230 万，所有场次共有 2770 万名不同的玩家参与。"
+    },
+    "apple": {
+      "title": "被 App Store 下架",
+      "text": "Epic 加入了直接付款，V币价格更低。苹果和谷歌随即将堡垒之夜从各自的商店下架，Epic 当天就起诉了这两家公司。"
+    },
+    "galactus": {
+      "title": "世界吞噬者",
+      "text": "吞星者活动为漫威赛季画上句号，同时在线玩家达 1530 万，是官方公布过的最高峰值。"
+    },
+    "rift": {
+      "title": "Rift Tour",
+      "text": "Ariana Grande 领衔了一场穿越不同世界的音乐之旅，三天内共举办五场。"
+    },
+    "c2end": {
+      "title": "岛屿翻转",
+      "text": "第2章以“The End”落幕：魔方女王对决由 Dwayne Johnson 饰演的奠基人，整座岛屿上下颠倒了过来。"
+    },
+    "c3start": {
+      "title": "Flipped",
+      "text": "第3章带来了新岛屿和滑铲，并迁移到了 Unreal Engine 5。"
+    },
+    "zerobuild": {
+      "title": "零建造",
+      "text": "在一个开局就关闭建造的赛季之后，零建造成为了常驻模式。从此，你一面墙都不用建，也能玩大逃杀。"
+    },
+    "c3end": {
+      "title": "Fracture",
+      "text": "终章活动为第3章画上句号，也为下一座岛屿铺平了道路。"
+    },
+    "c4start": {
+      "title": "Unreal Engine 5.1",
+      "text": "第4章带来了画面上的飞跃，借助 Nanite 和 Lumen 等技术呈现细节与光照。"
+    },
+    "uefn": {
+      "title": "UEFN",
+      "text": "Unreal Editor for Fortnite 向所有人开放，同时推出了 Verse 编程语言，以及将 40% 净收入分给岛屿创作者的计划。"
+    },
+    "og": {
+      "title": "OG 赛季",
+      "text": "第1章的地图回归，并逐周更新。第二天，也就是 11 月 4 日，成为堡垒之夜史上规模最大的一天：4470 万名玩家。"
+    },
+    "bigbang": {
+      "title": "The Big Bang",
+      "text": "第4章在一场有 Eminem 登场的现场活动中落幕，同时在线观看的玩家达 1160 万。"
+    },
+    "c5start": {
+      "title": "三款新游戏",
+      "text": "第5章从地下开始。同一周，堡垒之夜中一口气加入了三款游戏：LEGO Fortnite、Rocket Racing 和 Fortnite Festival，而 Fortnite Festival 的歌曲就是商店里出售的 Jam Tracks。"
+    },
+    "c5seasons": {
+      "title": "众神、废土与毁灭博士",
+      "text": "第2赛季“Myths & Mortals”带来了希腊众神，第3赛季“Wrecked”是一片末日后的废土，第4赛季“Absolute Doom”则迎来了漫威的毁灭博士。"
+    },
+    "remix": {
+      "title": "第2章 Remix",
+      "text": "第2章的岛屿回归，带来为期一个月的音乐盛宴：Snoop Dogg、Eminem、Ice Spice 相继登场，还有向 Juice WRLD 致敬的演出。终章同时在线玩家超过 1400 万。"
+    },
+    "hunters": {
+      "title": "Hunters 与第一批精灵",
+      "text": "第6章以日本民间传说和全新的跑酷动作开篇。精灵也在这里首次登场：风、水、大地三种精灵，各有各的能力。"
+    },
+    "ogforever": {
+      "title": "怀旧模式常驻",
+      "text": "以第1章地图为舞台的怀旧模式（Fortnite OG）成为常驻模式。"
+    },
+    "lawless": {
+      "title": "Lawless 与《星球大战》",
+      "text": "第2赛季的主题是犯罪与劫案。5 月，迷你赛季“Galactic Battle”把《星球大战》带到了岛上。"
+    },
+    "appus": {
+      "title": "重返 App Store",
+      "text": "与苹果打完官司后，堡垒之夜重返美国 App Store。在欧洲，它早在 2024 年就已通过 Epic Games Store 回到了 iPhone。"
+    },
+    "super": {
+      "title": "超级英雄、虫群与《辛普森一家》",
+      "text": "第3赛季“Super”迎来了超人；第4赛季“Shock 'N Awesome”带来了虫群入侵，还有《恐龙战队》和《光环》；11 月，一个迷你赛季造访了 Springfield。"
+    },
+    "zerohour": {
+      "title": "Zero Hour",
+      "text": "终章活动为第6章画上句号。据 Epic 统计，有 1050 万名玩家在游戏中观看。"
+    },
+    "pacific": {
+      "title": "Pacific Break",
+      "text": "第7章从 Golden Coast 开始：玩家乘着风暴冲浪登场，还加入了自我复活、可以变身的首领，以及更简单的建造。"
+    },
+    "showdown": {
+      "title": "Showdown",
+      "text": "首个赛季被延长到 108 天，随后第2赛季开始。同一天，堡垒之夜在全球重返 Google Play。"
+    },
+    "stwfree": {
+      "title": "守护家园免费了",
+      "text": "以付费游戏身份推出近九年后，守护家园对所有人免费开放。"
+    },
+    "appworld": {
+      "title": "App Store 全球回归",
+      "text": "堡垒之夜在全球重返 App Store，巴西也包括在内。唯一的例外是澳大利亚。"
+    },
+    "runners": {
+      "title": "Runners：精灵成为主角",
+      "text": "第3赛季让精灵成为游戏的核心：在对局中找到精灵，把它带到回收点并坚持住，它就会永久加入你的收藏。精灵会一路升级直到精通，精灵晶尘则能让你在之后的对局中召唤它们。"
+    },
+    "override": {
+      "title": "Override",
+      "text": "第4赛季的主题是电子游戏：岛上各处的游戏机能激活代码，为所有人改变对局规则。本赛季还带来了新一代精灵，包括索尼克、塔尔斯、夏特等，并有黄金、Cheat Master、Loot Hacker 和 Bounty Hunter 变体。"
+    },
+    "birthday": {
+      "title": "大逃杀九周年",
+      "text": "九周年带来了超能时刻，还有新精灵“生日”：它会让宝箱掉出一块块蛋糕。"
+    }
+  },
+  "now": {
+    "title": "故事仍在继续",
+    "text": "每个赛季都会为这段故事添上新的一页。关注当前赛季，并在 Lockerdex 上完成本赛季的精灵收集册吧。"
+  },
+  "sources": "日期均为美国东部时间，已对照 Epic Games 的公告与更新说明、Fortnite Wiki 以及游戏媒体核实。"
+}

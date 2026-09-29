@@ -5,10 +5,11 @@ export interface Ui {
   toast: (msg: string) => void;
   openInstall: () => void;
   openFeedback: () => void;
+  openTheme: () => void;
   canInstall: boolean;
 }
 
-export const UiContext = createContext<Ui>({ toast: () => {}, openInstall: () => {}, openFeedback: () => {}, canInstall: false });
+export const UiContext = createContext<Ui>({ toast: () => {}, openInstall: () => {}, openFeedback: () => {}, openTheme: () => {}, canInstall: false });
 export const useUi = () => useContext(UiContext);
 
 /** Fim da temporada atual (data da comunidade; o horário exato sai perto do fim). */

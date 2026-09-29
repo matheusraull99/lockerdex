@@ -94,13 +94,23 @@ function onClick(e: MouseEvent) {
   navigateTo(url.pathname + url.search + url.hash);
 }
 
+/** Conta a página no GoatCounter (o script carrega depois; sem ele, nada acontece). ?walker é teste. */
+function countView() {
+  if (/[?&]walker\b/.test(location.search)) return;
+  const send = () => (window as { goatcounter?: { count?: (o: { path: string }) => void } }).goatcounter?.count?.({ path: location.pathname });
+  if (document.readyState === "complete") send();
+  else addEventListener("load", send, { once: true });
+}
+
 export function useRoute() {
   const [state, setState] = useState(parseLocation);
   useEffect(() => {
+    countView();
     const on = () => {
       migrateHashRoute(); // link antigo "#/rota" colado na mesma aba
       setState(parseLocation());
       scrollTo({ top: 0 });
+      countView();
     };
     addEventListener("popstate", on);
     addEventListener(NAV_EVENT, on);

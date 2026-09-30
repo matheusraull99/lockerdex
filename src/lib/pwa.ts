@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { gcCount, gcEventDaily } from "./stats";
 
 /** Evento de instalação do Chrome/Edge/Android (não existe no Safari). */
 interface InstallPrompt extends Event {
@@ -21,10 +22,14 @@ addEventListener("appinstalled", () => {
   deferred = null;
   installedNow = true;
   notify();
+  gcCount({ path: "app-instalado", title: "Instalou o app", event: true });
 });
 
 export const isStandalone = () =>
   matchMedia("(display-mode: standalone)").matches || (navigator as { standalone?: boolean }).standalone === true;
+
+// Quem abre pelo app instalado (e não pelo navegador) conta uma vez por dia neste aparelho.
+if (isStandalone()) gcEventDaily("app-aberto", "Abriu pelo app instalado");
 
 export const isIOS = () =>
   /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);

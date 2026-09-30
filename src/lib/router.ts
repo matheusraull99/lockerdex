@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { LANGS } from "./langs";
 import SLUGS from "./routes.json";
+import { gcCount } from "./stats";
 
 /*
  * Rotas com endereço de verdade (/lockerdex/shop/…), para cada página aparecer no Google.
@@ -96,10 +97,7 @@ function onClick(e: MouseEvent) {
 
 /** Conta a página no GoatCounter (o script carrega depois; sem ele, nada acontece). ?walker é teste. */
 function countView() {
-  if (/[?&]walker\b/.test(location.search)) return;
-  const send = () => (window as { goatcounter?: { count?: (o: { path: string }) => void } }).goatcounter?.count?.({ path: location.pathname });
-  if (document.readyState === "complete") send();
-  else addEventListener("load", send, { once: true });
+  gcCount({ path: location.pathname });
 }
 
 export function useRoute() {

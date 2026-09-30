@@ -5,6 +5,8 @@
  *   quinta                  elemental ou variante novo (a Epic não informa a hora)
  *   sábado 15h30 e 21h30    Horas do Poder (1 h cada)
  */
+import { SEASON_END } from "./ui";
+
 const TZ = "America/New_York";
 
 /** Diferença entre o horário local de `tz` e o UTC, no instante `t` (ms). */
@@ -60,7 +62,7 @@ function nextWindows(now: number, weekday: number, slots: [number, number, numbe
   return out;
 }
 
-export type EventKey = "mon" | "thu" | "sat";
+export type EventKey = "fm" | "mon" | "thu" | "sat";
 
 export interface WeeklyEvent {
   key: EventKey;
@@ -68,8 +70,15 @@ export interface WeeklyEvent {
   active: boolean;
 }
 
+/**
+ * Evento de tempo limitado que a Epic anunciou (Fortnitemares, 1º de outubro no Battle Royale). A Epic só diz o dia;
+ * a hora (~6h em Nova York, depois da manutenção) vem da imprensa. Some no fim da temporada.
+ */
+const SPECIAL = { key: "fm" as const, start: Date.parse("2026-10-01T10:00:00Z"), end: Date.parse(SEASON_END) };
+
 export function weeklyEvents(now = Date.now()): WeeklyEvent[] {
   const list: { key: EventKey; windows: Window[] }[] = [
+    ...(now < SPECIAL.end ? [{ key: SPECIAL.key, windows: [{ start: SPECIAL.start, end: SPECIAL.end }] }] : []),
     { key: "mon", windows: nextWindows(now, 1, [[9, 0, 24]]) },
     { key: "thu", windows: nextWindows(now, 4, [[0, 0, 24]]) },
     { key: "sat", windows: nextWindows(now, 6, [[15, 30, 1], [21, 30, 1]]) },

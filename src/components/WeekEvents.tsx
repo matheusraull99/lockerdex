@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { useI18n } from "../lib/i18n";
 import { relTime } from "../lib/ui";
 import { weeklyEvents, type EventKey } from "../lib/weekly";
@@ -22,17 +22,23 @@ export function WeekEvents() {
   const list = new Intl.ListFormat(lang, { type: "conjunction" });
   const localWd = new Date(now).getDay();
 
+  const events = weeklyEvents(now);
+
   return (
     <section className="week" aria-labelledby="week-h" data-nosnippet>
       <h2 id="week-h" className="week-h">
         {t("week.title")}
       </h2>
-      <ol className="week-list">
-        {weeklyEvents(now).map((e) => {
+      <ol className="week-list" style={{ "--n": events.length } as CSSProperties}>
+        {events.map((e) => {
           const first = e.windows[0];
           let when: string;
           let status: string;
-          if (e.key === "thu") {
+          if (e.key === "fm") {
+            // A Epic só diz o dia: mostra o dia do início no calendário de quem vê.
+            when = day.format(first.start);
+            status = e.active ? t("week.now") : t("week.starts", { time: relTime(lang, first.start, now) });
+          } else if (e.key === "thu") {
             // A Epic não divulga a hora do elemental novo: mostra só o dia, no calendário de quem vê.
             const ahead = (4 - localWd + 7) % 7;
             when = day.format(new Date(now + ahead * 86400_000));

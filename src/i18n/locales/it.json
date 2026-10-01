@@ -256,7 +256,8 @@
     "gem": { "label": "Gemma", "bonus": "−30% di danni da caduta." },
     "holofoil": { "label": "Olografico", "bonus": "5% di probabilità che la tua squadra trovi varianti rare degli spiritelli saccheggiando i forzieri." },
     "cube": { "label": "Cubo", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" }
+    "quack": { "label": "Quack", "bonus": "" },
+    "tricktreat": { "label": "Dolcetto o scherzetto", "bonus": "" }
   },
   "locations": {
     "random": "Casuale, nei forzieri e nei rifornimenti",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Rigenera salute quando ne hai poca.", "Mentre rigeneri, ottieni invisibilità e bassa gravità."], "levels": "Rigenera fino a" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Dopo un’eliminazione, ripristina lentamente lo scudo a te e ai compagni di squadra vicini."], "levels": "Durata" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Aprire le casse di munizioni può darti un potenziamento dell’arma."], "levels": "Probabilità" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Invia un ping che rivela i giocatori vicini con spiritelli rari, ma ti segna sulla mappa."], "levels": "Raggio del ping" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Invia un ping che rivela i giocatori vicini con spiritelli rari, ma ti segna sulla mappa."], "levels": "Raggio del ping" },
+    "PhaseDash": { "name": "Scatto spettrale", "ability": ["Attiva — salta in aria per attraversare alcuni oggetti.", "Ottiene cariche col passare del tempo.", "Meno attesa tra le cariche a ogni livello."] },
+    "HealthSiphon": { "name": "Vampiro", "ability": ["Recuperi salute quando danneggi un nemico.", "La percentuale recuperata aumenta a ogni livello."] },
+    "IncreasedMelee": { "name": "Il Cervo", "ability": ["Gli attacchi in mischia infliggono più danni.", "I danni in mischia aumentano a ogni livello."] },
+    "WinnerD": { "name": "Tuffo nel cassonetto", "ability": ["Il cibo dà cure bonus.", "Trova cibo quando balzi fuori da un nascondiglio e, con una piccola probabilità, aprendo i contenitori.", "Cibo migliore a ogni livello."] }
   }
 }

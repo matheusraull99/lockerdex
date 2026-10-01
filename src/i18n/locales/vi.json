@@ -256,7 +256,8 @@
     "gem": { "label": "Đá quý", "bonus": "−30% sát thương khi rơi." },
     "holofoil": { "label": "Hologram", "bonus": "5% cơ hội để đội bạn tìm thấy biến thể sprite hiếm khi lục rương." },
     "cube": { "label": "Khối", "bonus": "" },
-    "quack": { "label": "Quạc", "bonus": "" }
+    "quack": { "label": "Quạc", "bonus": "" },
+    "tricktreat": { "label": "Cho kẹo hay bị ghẹo", "bonus": "" }
   },
   "locations": {
     "random": "Ngẫu nhiên, trong rương và thùng tiếp tế",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Hồi máu khi bạn còn ít máu.", "Trong lúc hồi, bạn được tàng hình và trọng lực thấp."], "levels": "Hồi tối đa đến" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Sau khi hạ gục, từ từ hồi khiên cho bạn và đồng đội gần đó."], "levels": "Thời lượng" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Mở hộp đạn có thể nhận được nâng cấp vũ khí."], "levels": "Tỉ lệ" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Phát tín hiệu làm lộ người chơi có sprite hiếm ở gần, nhưng đánh dấu bạn trên bản đồ."], "levels": "Bán kính tín hiệu" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Phát tín hiệu làm lộ người chơi có sprite hiếm ở gần, nhưng đánh dấu bạn trên bản đồ."], "levels": "Bán kính tín hiệu" },
+    "PhaseDash": { "name": "Spooky Dash", "ability": ["Chủ động — nhảy trên không để xuyên qua một số vật thể.", "Tích thêm điểm sạc theo thời gian.", "Giảm thời gian chờ giữa các lần sạc theo mỗi cấp."] },
+    "HealthSiphon": { "name": "Ma cà rồng", "ability": ["Hồi máu khi bạn gây sát thương cho kẻ địch.", "Tỉ lệ hồi máu tăng theo mỗi cấp."] },
+    "IncreasedMelee": { "name": "Con Hươu", "ability": ["Đòn cận chiến gây nhiều sát thương hơn.", "Sát thương cận chiến tăng theo mỗi cấp."] },
+    "WinnerD": { "name": "Dumpster Dive", "ability": ["Đồ ăn hồi máu thêm.", "Tìm thấy đồ ăn khi nhảy ra khỏi chỗ nấp, và có tỉ lệ nhỏ khi mở thùng chứa.", "Đồ ăn tốt hơn theo mỗi cấp."] }
   }
 }

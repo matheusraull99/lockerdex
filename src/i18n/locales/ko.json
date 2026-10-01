@@ -256,7 +256,8 @@
     "gem": { "label": "보석", "bonus": "낙하 피해 −30%." },
     "holofoil": { "label": "홀로", "bonus": "상자를 열 때 스쿼드가 희귀 정령 변형을 찾을 확률 5%." },
     "cube": { "label": "큐브", "bonus": "" },
-    "quack": { "label": "꽥꽥", "bonus": "" }
+    "quack": { "label": "꽥꽥", "bonus": "" },
+    "tricktreat": { "label": "트릭 오어 트릿", "bonus": "" }
   },
   "locations": {
     "random": "무작위, 상자와 보급품에서",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["체력이 낮을 때 체력을 재생해요.", "재생하는 동안 투명화와 저중력 효과를 얻어요."], "levels": "재생 최대치" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["처치 후 나와 근처 팀원의 실드를 천천히 회복해요."], "levels": "지속 시간" },
     "Llama": { "name": "Lootin' Llama", "ability": ["탄약 상자를 열면 무기 업그레이드를 받을 수 있어요."], "levels": "확률" },
-    "Peely": { "name": "Peeky Peely", "ability": ["근처에 희귀 정령을 가진 플레이어를 드러내는 핑을 보내지만, 내 위치도 맵에 표시돼요."], "levels": "핑 범위" }
+    "Peely": { "name": "Peeky Peely", "ability": ["근처에 희귀 정령을 가진 플레이어를 드러내는 핑을 보내지만, 내 위치도 맵에 표시돼요."], "levels": "핑 범위" },
+    "PhaseDash": { "name": "스푸키 대시", "ability": ["액티브 — 공중에서 점프하면 일부 물체를 통과해요.", "시간이 지나면 충전량이 쌓여요.", "레벨이 오를수록 충전 사이 대기 시간이 줄어요."] },
+    "HealthSiphon": { "name": "뱀파이어", "ability": ["적에게 피해를 주면 체력을 회복해요.", "회복 비율이 레벨마다 늘어나요."] },
+    "IncreasedMelee": { "name": "사슴", "ability": ["근접 공격 피해가 늘어나요.", "레벨이 오를수록 근접 피해가 늘어나요."] },
+    "WinnerD": { "name": "덤프스터 다이브", "ability": ["음식이 체력을 더 많이 회복해 줘요.", "숨을 수 있는 소품에서 뛰쳐나올 때 음식을 찾고, 컨테이너를 열 때도 낮은 확률로 찾아요.", "레벨이 오를수록 더 좋은 음식이 나와요."] }
   }
 }

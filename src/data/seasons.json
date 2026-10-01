@@ -26,6 +26,10 @@
    {
     "key": "reaper",
     "color": "#f27bd0"
+   },
+   {
+    "key": "tricktreat",
+    "color": "#ff7a1a"
    }
   ],
   "sprites": [
@@ -69,6 +73,13 @@
       "variant": "reaper",
       "fggId": 211,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_BountyHunter_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 243,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Crown_TrickTreat_L.webp",
       "cost": 2400,
       "drop": 0.0
      }
@@ -116,6 +127,67 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_BountyHunter_L.webp",
       "cost": 2400,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 262,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_TrickTreat_L.webp",
+      "cost": 2400,
+      "drop": 0.0,
+      "unreleased": true
+     }
+    ]
+   },
+   {
+    "key": "PhaseDash",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 219,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 221,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Gold_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 220,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Cheatmaster_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 222,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Hacker_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 223,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_BountyHunter_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 224,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_TrickTreat_L.webp",
+      "cost": 2400,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -161,6 +233,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_BountyHunter_L.webp",
       "cost": 2100,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 225,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -206,6 +286,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_BountyHunter_L.webp",
       "cost": 2100,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 241,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -251,6 +339,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_BountyHunter_L.webp",
       "cost": 2100,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 237,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -296,6 +392,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_BountyHunter_L.webp",
       "cost": 2100,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 232,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -341,6 +445,120 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_BountyHunter_L.webp",
       "cost": 2100,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 235,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0,
+      "unreleased": true
+     }
+    ]
+   },
+   {
+    "key": "HealthSiphon",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 226,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 228,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 227,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 229,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 230,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 231,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0,
+      "unreleased": true
+     }
+    ]
+   },
+   {
+    "key": "IncreasedMelee",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 249,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 251,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 250,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 252,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 253,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 254,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -386,6 +604,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_BountyHunter_L.webp",
       "cost": 1800,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 245,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -431,6 +657,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFleaMonkey_BountyHunter_L.webp",
       "cost": 1800,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 238,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFleaMonkey_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -476,6 +710,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_BountyHunter_L.webp",
       "cost": 1800,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 239,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -521,6 +763,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_BountyHunter_L.webp",
       "cost": 1800,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 233,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -566,6 +816,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_BountyHunter_L.webp",
       "cost": 1800,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 236,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -575,7 +833,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
@@ -611,6 +869,67 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_BountyHunter_L.webp",
       "cost": 1800,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 248,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0,
+      "unreleased": true
+     }
+    ]
+   },
+   {
+    "key": "WinnerD",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 256,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 258,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 257,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 259,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 260,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 261,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -656,6 +975,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_BountyHunter_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 244,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -701,6 +1028,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_BountyHunter_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 242,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -746,6 +1081,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_BountyHunter_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 240,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -791,6 +1134,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_8BitBlaster_BountyHunter_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 246,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_8BitBlaster_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -853,6 +1204,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_BountyHunter_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 255,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -898,6 +1257,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_BountyHunter_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 247,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -907,7 +1274,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
@@ -943,6 +1310,14 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_BountyHunter_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 234,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    }

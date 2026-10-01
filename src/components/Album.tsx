@@ -41,6 +41,7 @@ export function Album({ season, collection, filters, readOnly, onCycle, onOpen, 
 
   const slotOk = (s: Slot) => {
     const st = collection[s.id] ?? 0;
+    if (s.unreleased && !filters.unreleased) return false;
     if (filters.variant !== "all" && s.variant !== filters.variant) return false;
     if (filters.status === "owned") return st >= 1;
     if (filters.status === "missing") return st === 0;
@@ -55,12 +56,13 @@ export function Album({ season, collection, filters, readOnly, onCycle, onOpen, 
     .map((sp) => ({ sp, slots: sp.slots.filter(slotOk) }))
     .filter((r) => r.slots.length > 0);
 
-  const owned = (sp: Sprite) => sp.slots.filter((s) => (collection[s.id] ?? 0) > 0).length;
+  const shown = (sp: Sprite) => sp.slots.filter((s) => filters.unreleased || !s.unreleased);
+  const owned = (sp: Sprite) => shown(sp).filter((s) => (collection[s.id] ?? 0) > 0).length;
   const collator = new Intl.Collator(lang);
   if (filters.sort === "az") rows.sort((a, b) => collator.compare(spriteText(L, a.sp.key).name, spriteText(L, b.sp.key).name));
   if (filters.sort === "closest")
     rows.sort((a, b) => {
-      const ra = owned(a.sp) / a.sp.slots.length, rb = owned(b.sp) / b.sp.slots.length;
+      const ra = owned(a.sp) / shown(a.sp).length, rb = owned(b.sp) / shown(b.sp).length;
       const fa = ra === 1 ? -1 : ra, fb = rb === 1 ? -1 : rb; // completos vão para o fim
       return fb - fa;
     });
@@ -85,7 +87,7 @@ export function Album({ season, collection, filters, readOnly, onCycle, onOpen, 
     <div className="album">
       {groups.map((g) => {
         const all = g.rarity ? season.sprites.filter((s) => s.rarity === g.rarity && (filters.unreleased || !s.unreleased)) : [];
-        const tot = all.reduce((n, s) => n + s.slots.length, 0);
+        const tot = all.reduce((n, s) => n + shown(s).length, 0);
         const got = all.reduce((n, s) => n + owned(s), 0);
         return (
           <section key={g.rarity ?? "flat"} className="sec" data-rarity={g.rarity ?? undefined}>
@@ -107,7 +109,7 @@ export function Album({ season, collection, filters, readOnly, onCycle, onOpen, 
                       <span className="rar-dot" aria-hidden />
                       {rarityLabel(L, sp.rarity)}
                       <span className="ficha-count">
-                        {owned(sp)}/{sp.slots.length}
+                        {owned(sp)}/{shown(sp).length}
                       </span>
                       {sp.isNew && <span className="tag tag-new">{t("detail.new")}</span>}
                       {sp.unreleased && <span className="tag">{t("detail.unreleased")}</span>}

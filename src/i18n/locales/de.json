@@ -256,7 +256,8 @@
     "gem": { "label": "Edelstein", "bonus": "−30 % Fallschaden." },
     "holofoil": { "label": "Holofolie", "bonus": "5 % Chance für deinen Trupp, beim Plündern von Truhen seltene Geister-Varianten zu finden." },
     "cube": { "label": "Würfel", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" }
+    "quack": { "label": "Quack", "bonus": "" },
+    "tricktreat": { "label": "Süßes oder Saures", "bonus": "" }
   },
   "locations": {
     "random": "Zufällig, in Truhen und Nachschublieferungen",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Regeneriert Gesundheit, wenn du nur noch wenig hast.", "Während der Regeneration erhältst du Tarnung und geringe Schwerkraft."], "levels": "Regeneriert bis" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Stellt nach einer Eliminierung langsam Schild für dich und Truppmitglieder in der Nähe wieder her."], "levels": "Dauer" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Beim Öffnen von Munitionskisten kann eine Waffe verbessert werden."], "levels": "Chance" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Sendet einen Ping, der Spieler mit seltenen Geistern in der Nähe aufdeckt, dich aber auf der Karte markiert."], "levels": "Ping-Radius" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Sendet einen Ping, der Spieler mit seltenen Geistern in der Nähe aufdeckt, dich aber auf der Karte markiert."], "levels": "Ping-Radius" },
+    "PhaseDash": { "name": "Gruseliger Sprint", "ability": ["Aktiv – springe in der Luft, um durch einige Objekte hindurchzugehen.", "Erhält mit der Zeit Ladungen.", "Mit jeder Stufe weniger Wartezeit zwischen den Ladungen."] },
+    "HealthSiphon": { "name": "Vampir", "ability": ["Stellt Gesundheit wieder her, wenn du einem Gegner Schaden zufügst.", "Der wiederhergestellte Prozentsatz steigt mit jeder Stufe."] },
+    "IncreasedMelee": { "name": "Der Hirsch", "ability": ["Nahkampfangriffe richten mehr Schaden an.", "Der Nahkampfschaden steigt mit jeder Stufe."] },
+    "WinnerD": { "name": "Containertauchen", "ability": ["Essen gibt zusätzliche Heilung.", "Finde Essen, wenn du aus Versteck-Objekten springst, und mit geringer Chance beim Öffnen von Behältern.", "Besseres Essen mit jeder Stufe."] }
   }
 }

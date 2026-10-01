@@ -24,7 +24,8 @@ SEASONS = {
 
 # chave, cor, tem bônus próprio
 VARIANTS = {
-    "42": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("cheatmaster", "#4fbf1f"), ("hacker", "#4a47e8"), ("reaper", "#f27bd0")],
+    "42": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("cheatmaster", "#4fbf1f"), ("hacker", "#4a47e8"), ("reaper", "#f27bd0"),
+           ("tricktreat", "#ff7a1a")],
     "41": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("candy", "#ff6f91"), ("galaxy", "#6d4bff"), ("gem", "#19c2b0"),
            ("holofoil", "#8fd3ff"), ("cube", "#8c6bd8"), ("quack", "#ffd23f")],
 }
@@ -129,8 +130,12 @@ for sid, meta in SEASONS.items():
                     cost = 1500 if p in T4_STARTERS else round(T4_COST[rarity] * 1.2)
             else:
                 cost = num(f.get("Summon Cost"))
-            slots.append({"variant": vk, "fggId": int(c["sprite"]), "img": c["img"], "cost": cost,
-                          "drop": pct(f.get("Sprite Chest"))})
+            slot = {"variant": vk, "fggId": int(c["sprite"]), "img": c["img"], "cost": cost,
+                    "drop": pct(f.get("Sprite Chest"))}
+            # Variante que ainda não saiu num elemental que já saiu (ex.: Trick or Treat, a partir de 08/10/2026).
+            if c.get("unreleased") and not (base.get("unreleased") and p not in RELEASED_FIX) and f"{p}:{vk}" not in RELEASED_FIX:
+                slot["unreleased"] = True
+            slots.append(slot)
         sprites.append({
             "key": p,
             "rarity": rarity,

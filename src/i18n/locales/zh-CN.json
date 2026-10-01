@@ -256,7 +256,8 @@
     "gem": { "label": "宝石", "bonus": "坠落伤害 −30%。" },
     "holofoil": { "label": "全息", "bonus": "搜刮宝箱时，你的小队有 5% 几率找到稀有精灵变体。" },
     "cube": { "label": "方块", "bonus": "" },
-    "quack": { "label": "嘎嘎", "bonus": "" }
+    "quack": { "label": "嘎嘎", "bonus": "" },
+    "tricktreat": { "label": "不给糖就捣蛋", "bonus": "" }
   },
   "locations": {
     "random": "随机出现在宝箱和补给空投中",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["生命值低时自动恢复生命值。", "恢复期间获得隐身和低重力效果。"], "levels": "最多恢复至" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["淘汰敌人后，缓慢恢复你和附近队友的护盾。"], "levels": "持续时间" },
     "Llama": { "name": "Lootin' Llama", "ability": ["打开弹药箱可能获得武器升级。"], "levels": "几率" },
-    "Peely": { "name": "Peeky Peely", "ability": ["发出信号，显示附近携带稀有精灵的玩家，但你也会在地图上被标记。"], "levels": "信号范围" }
+    "Peely": { "name": "Peeky Peely", "ability": ["发出信号，显示附近携带稀有精灵的玩家，但你也会在地图上被标记。"], "levels": "信号范围" },
+    "PhaseDash": { "name": "惊悚冲刺", "ability": ["主动——在空中跳跃可穿过部分物体。", "随时间获得充能。", "每升一级，充能间隔缩短。"] },
+    "HealthSiphon": { "name": "吸血鬼", "ability": ["对敌人造成伤害时恢复生命值。", "每升一级，恢复比例提高。"] },
+    "IncreasedMelee": { "name": "鹿", "ability": ["近战攻击造成更多伤害。", "近战伤害随等级提升。"] },
+    "WinnerD": { "name": "垃圾箱跳水", "ability": ["食物提供额外治疗。", "从藏身道具中跃出时会找到食物，打开容器时也有小概率找到。", "每升一级，食物更好。"] }
   }
 }

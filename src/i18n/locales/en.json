@@ -292,6 +292,10 @@
     "quack": {
       "label": "Quack",
       "bonus": ""
+    },
+    "tricktreat": {
+      "label": "Trick or Treat",
+      "bonus": ""
     }
   },
   "locations": {
@@ -630,6 +634,36 @@
         "Sends a ping that reveals players with rare sprites nearby, but marks you on the map."
       ],
       "levels": "Ping radius"
+    },
+    "PhaseDash": {
+      "name": "Spooky Dash",
+      "ability": [
+        "Active — jump in the air to phase through some objects.",
+        "Gains charges over time.",
+        "Less wait between charges with each level."
+      ]
+    },
+    "HealthSiphon": {
+      "name": "Vampire",
+      "ability": [
+        "Recover health when you damage an enemy.",
+        "The percentage recovered grows with each level."
+      ]
+    },
+    "IncreasedMelee": {
+      "name": "The Deer",
+      "ability": [
+        "Melee attacks deal more damage.",
+        "Melee damage grows with each level."
+      ]
+    },
+    "WinnerD": {
+      "name": "Dumpster Dive",
+      "ability": [
+        "Food gives bonus healing.",
+        "Find food when you leap out of hiding props, and with a small chance when opening containers.",
+        "Better food with each level."
+      ]
     }
   }
 }

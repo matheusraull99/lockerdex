@@ -256,7 +256,8 @@
     "gem": { "label": "Mücevher", "bonus": "Düşme hasarı −%30." },
     "holofoil": { "label": "Hologram", "bonus": "Sandık yağmalarken takımının nadir büyücük varyantları bulma şansı %5." },
     "cube": { "label": "Küp", "bonus": "" },
-    "quack": { "label": "Vak", "bonus": "" }
+    "quack": { "label": "Vak", "bonus": "" },
+    "tricktreat": { "label": "Şeker mi Şaka mı", "bonus": "" }
   },
   "locations": {
     "random": "Rastgele, sandıklarda ve ikmal kutularında",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Canın azken can yeniler.", "Yenilenirken görünmezlik ve düşük yerçekimi kazanırsın."], "levels": "Yenileme sınırı" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Bir alt etmeden sonra sana ve yakındaki takım arkadaşlarına yavaşça kalkan yeniler."], "levels": "Süre" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Cephane kutularını açmak silah yükseltmesi verebilir."], "levels": "Şans" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Yakındaki nadir büyücüklü oyuncuları açığa çıkaran bir sinyal gönderir ama seni haritada işaretler."], "levels": "Sinyal yarıçapı" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Yakındaki nadir büyücüklü oyuncuları açığa çıkaran bir sinyal gönderir ama seni haritada işaretler."], "levels": "Sinyal yarıçapı" },
+    "PhaseDash": { "name": "Ürpertici Atılış", "ability": ["Aktif — havada zıplayarak bazı nesnelerin içinden geç.", "Zamanla şarj kazanır.", "Her seviyede şarjlar arası bekleme azalır."] },
+    "HealthSiphon": { "name": "Vampir", "ability": ["Bir rakibe hasar verdiğinde can yeniler.", "İyileşme yüzdesi her seviyede artar."] },
+    "IncreasedMelee": { "name": "Geyik", "ability": ["Yakın dövüş saldırıları daha fazla hasar verir.", "Yakın dövüş hasarı her seviyede artar."] },
+    "WinnerD": { "name": "Çöp Konteynerine Dalış", "ability": ["Yiyecekler bonus iyileşme sağlar.", "Saklanma eşyalarından fırladığında yiyecek bulursun, kaplar açılırken de küçük bir ihtimalle.", "Her seviyede daha iyi yiyecek."] }
   }
 }

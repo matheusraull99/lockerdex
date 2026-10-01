@@ -256,7 +256,8 @@
     "gem": { "label": "Gemme", "bonus": "−30 % de dégâts de chute." },
     "holofoil": { "label": "Holographique", "bonus": "5 % de chances pour votre escouade de trouver des variantes d’esprits rares en fouillant les coffres." },
     "cube": { "label": "Cube", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" }
+    "quack": { "label": "Quack", "bonus": "" },
+    "tricktreat": { "label": "Des bonbons ou un sort", "bonus": "" }
   },
   "locations": {
     "random": "Au hasard, dans les coffres et les largages de ravitaillement",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Régénère votre santé quand elle est basse.", "Pendant la régénération, vous obtenez camouflage et faible gravité."], "levels": "Régénère jusqu’à" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Après une élimination, régénère lentement le bouclier pour vous et vos coéquipiers proches."], "levels": "Durée" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Ouvrir des caisses de munitions peut améliorer une arme."], "levels": "Chance" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Envoie un signal qui révèle les joueurs proches ayant des esprits rares, mais vous marque sur la carte."], "levels": "Rayon du signal" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Envoie un signal qui révèle les joueurs proches ayant des esprits rares, mais vous marque sur la carte."], "levels": "Rayon du signal" },
+    "PhaseDash": { "name": "Ruée spectrale", "ability": ["Actif — sautez en l’air pour traverser certains objets.", "Gagne des charges avec le temps.", "Moins d’attente entre les charges à chaque niveau."] },
+    "HealthSiphon": { "name": "Vampire", "ability": ["Récupérez de la santé quand vous blessez un ennemi.", "Le pourcentage récupéré augmente à chaque niveau."] },
+    "IncreasedMelee": { "name": "Le Cerf", "ability": ["Les attaques de mêlée infligent plus de dégâts.", "Les dégâts de mêlée augmentent à chaque niveau."] },
+    "WinnerD": { "name": "Plongeon en benne", "ability": ["La nourriture donne des soins bonus.", "Trouvez de la nourriture en sortant d’un accessoire de cachette, et avec une faible chance en ouvrant des conteneurs.", "Meilleure nourriture à chaque niveau."] }
   }
 }

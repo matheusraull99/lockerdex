@@ -6,7 +6,7 @@ import { rarityLabel, slotLabel, variantText } from "../lib/content";
 import { Sticker } from "./Sticker";
 
 export function visibleSlots(season: Season, unreleased: boolean) {
-  return season.slots.filter((s) => unreleased || !s.sprite.unreleased);
+  return season.slots.filter((s) => unreleased || !s.unreleased);
 }
 
 export function counts(slots: Slot[], c: Collection) {

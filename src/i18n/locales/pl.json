@@ -256,7 +256,8 @@
     "gem": { "label": "Klejnotowy", "bonus": "−30% obrażeń od upadku." },
     "holofoil": { "label": "Holograficzny", "bonus": "5% szansy, że twoja drużyna znajdzie rzadkie warianty duszków podczas przeszukiwania skrzyń." },
     "cube": { "label": "Kostka", "bonus": "" },
-    "quack": { "label": "Kwak", "bonus": "" }
+    "quack": { "label": "Kwak", "bonus": "" },
+    "tricktreat": { "label": "Cukierek albo psikus", "bonus": "" }
   },
   "locations": {
     "random": "Losowo, w skrzyniach i zrzutach zaopatrzenia",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Regeneruje zdrowie, gdy masz go mało.", "Podczas regeneracji zyskujesz niewidzialność i niską grawitację."], "levels": "Regeneruje do" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Po eliminacji powoli odnawia tarczę tobie i pobliskim członkom drużyny."], "levels": "Czas trwania" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Otwieranie skrzynek z amunicją może dać ulepszenie broni."], "levels": "Szansa" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Wysyła sygnał, który ujawnia pobliskich graczy z rzadkimi duszkami, ale oznacza cię na mapie."], "levels": "Zasięg sygnału" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Wysyła sygnał, który ujawnia pobliskich graczy z rzadkimi duszkami, ale oznacza cię na mapie."], "levels": "Zasięg sygnału" },
+    "PhaseDash": { "name": "Upiorny Zryw", "ability": ["Aktywna — skocz w powietrzu, aby przenikać przez niektóre obiekty.", "Zyskuje ładunki z czasem.", "Krótsze oczekiwanie między ładunkami z każdym poziomem."] },
+    "HealthSiphon": { "name": "Wampir", "ability": ["Odnawia zdrowie, gdy zadajesz obrażenia przeciwnikowi.", "Odzyskiwany procent rośnie z każdym poziomem."] },
+    "IncreasedMelee": { "name": "Jeleń", "ability": ["Ataki wręcz zadają więcej obrażeń.", "Obrażenia w walce wręcz rosną z każdym poziomem."] },
+    "WinnerD": { "name": "Nurkowanie w Śmietniku", "ability": ["Jedzenie daje dodatkowe leczenie.", "Znajdź jedzenie, gdy wyskoczysz z kryjówek, a także z małą szansą przy otwieraniu pojemników.", "Lepsze jedzenie z każdym poziomem."] }
   }
 }

@@ -1,4 +1,4 @@
-"""Copia os 218 ícones dos sprites para public/icons (uso offline e imagem exportada completa).
+"""Copia os ícones dos sprites para public/icons (uso offline e imagem exportada completa).
 
 Hoje o app carrega as imagens direto do fortnite.gg. Depois de rodar este script,
 suba o app com VITE_IMG_BASE=local para usar as cópias locais.

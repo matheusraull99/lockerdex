@@ -187,7 +187,7 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
 
     variants.forEach((v, i) => {
       const x = X(gridX + i * (cell + gap), cell);
-      const slot = sp.slots.find((s) => s.variant === v.key);
+      const slot = sp.slots.find((s) => s.variant === v.key && visible.has(s.id));
       ctx.save();
       if (!slot) {
         // Essa variante não existe para este elemental.

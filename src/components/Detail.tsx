@@ -101,7 +101,10 @@ export function Detail({ season, sprite, collection, readOnly, onSet, onClose }:
                     <span className="var-no">{s.no}</span>
                   </button>
                   <div className="var-body">
-                    <p className="var-name">{v.label}</p>
+                    <p className="var-name">
+                      {v.label}
+                      {s.unreleased && !sprite.unreleased && <span className="tag">{t("detail.unreleased")}</span>}
+                    </p>
                     <p className="var-bonus">{v.bonus || t("detail.noBonus")}</p>
                     <p className="var-facts">
                       <span title={season.costSource === "community" ? t("detail.costCommunity") : undefined}>

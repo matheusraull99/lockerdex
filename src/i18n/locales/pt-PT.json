@@ -256,7 +256,8 @@
     "gem": { "label": "Gema", "bonus": "−30% de dano de queda." },
     "holofoil": { "label": "Holográfica", "bonus": "5% de probabilidade de o teu esquadrão encontrar variantes raras ao saquear baús." },
     "cube": { "label": "Cubo", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" }
+    "quack": { "label": "Quack", "bonus": "" },
+    "tricktreat": { "label": "Doçura ou Travessura", "bonus": "" }
   },
   "locations": {
     "random": "Aleatório, em baús e entregas de abastecimentos",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Regenera vida quando estás com pouca.", "Enquanto regeneras, ganhas camuflagem e gravidade baixa."], "levels": "Regenera até" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Depois de eliminares alguém, recupera escudo aos poucos para ti e para os aliados próximos."], "levels": "Duração" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Abrir caixas de munições pode dar uma melhoria de arma."], "levels": "Probabilidade" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Emite um sinal que revela jogadores com elementais raros por perto, mas marca-te no mapa."], "levels": "Raio do sinal" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Emite um sinal que revela jogadores com elementais raros por perto, mas marca-te no mapa."], "levels": "Raio do sinal" },
+    "PhaseDash": { "name": "Spooky Dash", "ability": ["Ativa — salta no ar para atravessares alguns objetos.", "Ganha cargas com o tempo.", "Menos espera entre cargas a cada nível."] },
+    "HealthSiphon": { "name": "Vampiro", "ability": ["Recupera vida ao causares dano a um inimigo.", "A percentagem recuperada aumenta a cada nível."] },
+    "IncreasedMelee": { "name": "O Veado", "ability": ["Os ataques corpo a corpo causam mais dano.", "O dano corpo a corpo aumenta a cada nível."] },
+    "WinnerD": { "name": "Mergulho no Contentor", "ability": ["A comida cura mais.", "Encontra comida ao saíres de esconderijos e, com pouca probabilidade, ao abrires recipientes.", "Comida melhor a cada nível."] }
   }
 }

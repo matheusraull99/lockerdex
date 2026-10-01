@@ -16,6 +16,7 @@ export interface RawSlot {
   img: string;
   cost: number;
   drop: number;
+  unreleased?: boolean; // só esta variante ainda não saiu
 }
 
 export interface Sprite {
@@ -32,6 +33,7 @@ export interface Sprite {
 export interface Slot extends RawSlot {
   id: number; // = fggId, estável entre versões dos dados
   no: number; // número no álbum da temporada
+  unreleased: boolean; // o elemental todo ou só esta variante ainda não saiu
   sprite: Sprite;
   tilt: number; // inclinação da figurinha colada, em graus
 }
@@ -67,9 +69,9 @@ export const SEASONS: Season[] = (raw as RawSeason[]).map((rs) => {
   for (const r of rs.sprites) {
     const sprite: Sprite = { ...r, slots: [] };
     for (const s of r.slots) {
-      const slot: Slot = { ...s, id: s.fggId, no: 0, sprite, tilt: tiltFor(s.fggId) };
+      const slot: Slot = { ...s, id: s.fggId, no: 0, sprite, tilt: tiltFor(s.fggId), unreleased: sprite.unreleased || !!s.unreleased };
       sprite.slots.push(slot);
-      (sprite.unreleased ? later : released).push(slot);
+      (slot.unreleased ? later : released).push(slot);
     }
     sprites.push(sprite);
   }

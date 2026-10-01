@@ -256,7 +256,8 @@
     "gem": { "label": "Gema", "bonus": "−30 % de daño por caída." },
     "holofoil": { "label": "Holográfico", "bonus": "5 % de probabilidad de que tu escuadrón encuentre variantes raras de espíritus al saquear cofres." },
     "cube": { "label": "Cubo", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" }
+    "quack": { "label": "Quack", "bonus": "" },
+    "tricktreat": { "label": "Truco o trato", "bonus": "" }
   },
   "locations": {
     "random": "Al azar, en cofres y envíos de suministros",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Regenera salud cuando tienes poca.", "Mientras regeneras, obtienes camuflaje y baja gravedad."], "levels": "Regenera hasta" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Tras una eliminación, recupera poco a poco escudo para ti y tus compañeros cercanos."], "levels": "Duración" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Abrir cajas de munición puede darte una mejora de arma."], "levels": "Probabilidad" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Envía un pulso que revela a los jugadores cercanos con espíritus raros, pero te marca en el mapa."], "levels": "Radio del pulso" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Envía un pulso que revela a los jugadores cercanos con espíritus raros, pero te marca en el mapa."], "levels": "Radio del pulso" },
+    "PhaseDash": { "name": "Impulso espeluznante", "ability": ["Activa — salta en el aire para atravesar algunos objetos.", "Gana cargas con el tiempo.", "Menos espera entre cargas con cada nivel."] },
+    "HealthSiphon": { "name": "Vampiro", "ability": ["Recuperas salud cuando dañas a un enemigo.", "El porcentaje recuperado aumenta con cada nivel."] },
+    "IncreasedMelee": { "name": "El Ciervo", "ability": ["Los ataques cuerpo a cuerpo hacen más daño.", "El daño cuerpo a cuerpo aumenta con cada nivel."] },
+    "WinnerD": { "name": "Buceo en contenedor", "ability": ["La comida da curación extra.", "Encuentras comida al salir de un escondite y, con poca probabilidad, al abrir contenedores.", "Mejor comida con cada nivel."] }
   }
 }

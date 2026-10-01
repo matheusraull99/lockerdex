@@ -292,6 +292,10 @@
     "quack": {
       "label": "Quack",
       "bonus": ""
+    },
+    "tricktreat": {
+      "label": "Doces ou Travessuras",
+      "bonus": ""
     }
   },
   "locations": {
@@ -630,6 +634,36 @@
         "Emite um sinal que revela jogadores com elementais raros por perto, mas marca você no mapa."
       ],
       "levels": "Raio do sinal"
+    },
+    "PhaseDash": {
+      "name": "Spooky Dash",
+      "ability": [
+        "Ativa — pule no ar para atravessar alguns objetos.",
+        "Ganha cargas com o tempo.",
+        "Menos espera entre as cargas a cada nível."
+      ]
+    },
+    "HealthSiphon": {
+      "name": "Vampiro",
+      "ability": [
+        "Recupera vida ao causar dano a um inimigo.",
+        "A porcentagem recuperada aumenta a cada nível."
+      ]
+    },
+    "IncreasedMelee": {
+      "name": "O Cervo",
+      "ability": [
+        "Ataques corpo a corpo causam mais dano.",
+        "O dano corpo a corpo aumenta a cada nível."
+      ]
+    },
+    "WinnerD": {
+      "name": "Mergulho na Caçamba",
+      "ability": [
+        "Comidas curam mais.",
+        "Ache comida ao sair de esconderijos e, com pouca chance, ao abrir recipientes.",
+        "Comida melhor a cada nível."
+      ]
     }
   }
 }

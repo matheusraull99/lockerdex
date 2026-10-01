@@ -256,7 +256,8 @@
     "gem": { "label": "Permata", "bonus": "−30% damage jatuh." },
     "holofoil": { "label": "Holofoil", "bonus": "5% peluang squad-mu menemukan varian sprite langka saat menjarah peti." },
     "cube": { "label": "Kubus", "bonus": "" },
-    "quack": { "label": "Kwek", "bonus": "" }
+    "quack": { "label": "Kwek", "bonus": "" },
+    "tricktreat": { "label": "Trick or Treat", "bonus": "" }
   },
   "locations": {
     "random": "Acak, di peti dan supply drop",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Meregenerasi health saat health-mu rendah.", "Selama regenerasi, dapat efek tak terlihat dan gravitasi rendah."], "levels": "Regenerasi hingga" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Setelah eliminasi, perlahan memulihkan shield-mu dan rekan squad di dekatmu."], "levels": "Durasi" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Membuka kotak amunisi bisa memberi upgrade senjata."], "levels": "Peluang" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Mengirim ping yang memperlihatkan pemain dengan sprite langka di sekitar, tapi posisimu ikut ditandai di peta."], "levels": "Radius ping" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Mengirim ping yang memperlihatkan pemain dengan sprite langka di sekitar, tapi posisimu ikut ditandai di peta."], "levels": "Radius ping" },
+    "PhaseDash": { "name": "Spooky Dash", "ability": ["Aktif — lompat di udara untuk menembus beberapa objek.", "Mendapat charge seiring waktu.", "Jeda antar-charge makin singkat tiap level."] },
+    "HealthSiphon": { "name": "Vampir", "ability": ["Memulihkan health saat kamu memberi damage ke musuh.", "Persentase yang dipulihkan naik tiap level."] },
+    "IncreasedMelee": { "name": "Sang Rusa", "ability": ["Serangan melee memberi damage lebih besar.", "Damage melee meningkat tiap level."] },
+    "WinnerD": { "name": "Dumpster Dive", "ability": ["Makanan memberi penyembuhan bonus.", "Temukan makanan saat melompat keluar dari prop persembunyian, dan dengan peluang kecil saat membuka kontainer.", "Makanan makin bagus tiap level."] }
   }
 }

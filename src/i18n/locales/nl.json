@@ -256,7 +256,8 @@
     "gem": { "label": "Edelsteen", "bonus": "−30% valschade." },
     "holofoil": { "label": "Holografisch", "bonus": "5% kans dat je squad zeldzame spritevarianten vindt bij het looten van kisten." },
     "cube": { "label": "Kubus", "bonus": "" },
-    "quack": { "label": "Kwak", "bonus": "" }
+    "quack": { "label": "Kwak", "bonus": "" },
+    "tricktreat": { "label": "Trick or Treat", "bonus": "" }
   },
   "locations": {
     "random": "Willekeurig, in kisten en supply drops",
@@ -318,6 +319,10 @@
     "PedicureAntacid": { "name": "Ironmouse", "ability": ["Regenereert gezondheid als je bijna leeg bent.", "Tijdens het regenereren word je onzichtbaar en heb je lage zwaartekracht."], "levels": "Regenereert tot" },
     "CompanyStargazer": { "name": "Pollo", "ability": ["Na een eliminatie herstelt hij langzaam schild voor jou en squadgenoten in de buurt."], "levels": "Duur" },
     "Llama": { "name": "Lootin' Llama", "ability": ["Munitiekisten openen kan een wapenupgrade opleveren."], "levels": "Kans" },
-    "Peely": { "name": "Peeky Peely", "ability": ["Stuurt een ping die spelers met zeldzame sprites in de buurt onthult, maar markeert jou op de kaart."], "levels": "Pingbereik" }
+    "Peely": { "name": "Peeky Peely", "ability": ["Stuurt een ping die spelers met zeldzame sprites in de buurt onthult, maar markeert jou op de kaart."], "levels": "Pingbereik" },
+    "PhaseDash": { "name": "Spooky Dash", "ability": ["Actief — spring in de lucht om door sommige objecten heen te faseren.", "Krijgt na verloop van tijd charges.", "Minder wachttijd tussen charges met elk level."] },
+    "HealthSiphon": { "name": "Vampier", "ability": ["Herstelt gezondheid als je een tegenstander schade toebrengt.", "Het herstelde percentage groeit met elk level."] },
+    "IncreasedMelee": { "name": "Het Hert", "ability": ["Melee-aanvallen doen meer schade.", "De melee-schade groeit met elk level."] },
+    "WinnerD": { "name": "Dumpster Dive", "ability": ["Eten geeft extra genezing.", "Vind eten als je uit schuilplekken springt, en met een kleine kans bij het openen van containers.", "Beter eten met elk level."] }
   }
 }

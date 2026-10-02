@@ -1,4 +1,4 @@
-import { useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { hideBroken } from "../lib/data";
 import { useApi, type Shop, type ShopEntry } from "../lib/api";
 import { rarityColor, useCatalog } from "../lib/catalog";
@@ -38,6 +38,22 @@ export function ShopPage() {
   const { t, lang, nf } = useI18n();
   const shop = useApi<Shop>("/v2/shop", lang);
   const { catalog } = useCatalog(lang);
+
+  // Com a página aberta na virada da loja (00:00 UTC), busca a nova sozinha; ao voltar para a aba, também.
+  const retry = shop.retry;
+  useEffect(() => {
+    const day = (t: number) => Math.floor(t / 86400_000);
+    const fetchedDay = day(Date.now());
+    // Se a API ainda devolve a loja de ontem (ela atrasa uns minutos na virada), tenta de novo em 90 s.
+    const old = !!shop.data && day(Date.parse(shop.data.date)) < day(Date.now());
+    const id = setTimeout(retry, old ? 90_000 : nextReset() + 60_000 - Date.now());
+    const back = () => document.visibilityState === "visible" && Math.floor(Date.now() / 86400_000) !== fetchedDay && retry();
+    document.addEventListener("visibilitychange", back);
+    return () => {
+      clearTimeout(id);
+      document.removeEventListener("visibilitychange", back);
+    };
+  }, [shop.data, retry]);
   const { wish, own } = useLists();
   const [open, setOpen] = useState<string | null>(null);
 

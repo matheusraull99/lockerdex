@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 /** Idioma do app → idioma aceito pela fortnite-api.com (nomes oficiais do jogo). */
 const API_LANG: Record<string, string> = {
@@ -9,13 +9,19 @@ const API_LANG: Record<string, string> = {
 export const apiLang = (lang: string) => API_LANG[lang] ?? "en";
 
 const BASE = "https://fortnite-api.com";
-const memo = new Map<string, Promise<unknown>>();
+const memo = new Map<string, { p: Promise<unknown>; at: number }>();
+
+/** Respostas valem até meia hora ou até virar o dia em UTC (a loja e as notícias trocam à meia-noite UTC). */
+const MAX_AGE = 30 * 60 * 1000;
+const utcDay = (t: number) => Math.floor(t / 86400_000);
+const fresh = (at: number) => Date.now() - at < MAX_AGE && utcDay(at) === utcDay(Date.now());
 
 /** GET na fortnite-api com o idioma do app; se o endpoint não tiver esse idioma, cai no inglês. */
 export function apiGet<T>(path: string, lang: string): Promise<T> {
   const al = apiLang(lang);
   const key = `${path}|${al}`;
-  if (!memo.has(key)) {
+  const hit = memo.get(key);
+  if (!hit || !fresh(hit.at)) {
     const url = (l: string) => `${BASE}${path}${path.includes("?") ? "&" : "?"}language=${l}`;
     // 20 s no máximo: rede travada vira erro com "Tentar de novo", não "Carregando…" para sempre.
     const get = (u: string) => fetch(u, { signal: AbortSignal.timeout(20000) });
@@ -25,10 +31,11 @@ export function apiGet<T>(path: string, lang: string): Promise<T> {
         if (!r.ok) throw new Error(`fortnite-api ${r.status}`);
         return ((await r.json()) as { data: T }).data;
       });
-    p.catch(() => memo.delete(key)); // falhou: deixa tentar de novo
-    memo.set(key, p);
+    p.catch(() => memo.get(key)?.p === p && memo.delete(key)); // falhou: deixa tentar de novo
+    memo.set(key, { p, at: Date.now() });
+    return p;
   }
-  return memo.get(key) as Promise<T>;
+  return hit.p as Promise<T>;
 }
 
 export type Load<T> = { data?: T; error?: boolean; loading: boolean };
@@ -47,7 +54,8 @@ export function useApi<T>(path: string, lang: string): Load<T> & { retry: () => 
       alive = false;
     };
   }, [path, lang, n]);
-  return { ...state, retry: () => setN((x) => x + 1) };
+  const retry = useCallback(() => setN((x) => x + 1), []);
+  return { ...state, retry };
 }
 
 export const iconUrl = (id: string, kind: "smallicon" | "icon" | "featured" = "smallicon") =>

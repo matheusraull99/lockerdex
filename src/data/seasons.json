@@ -133,8 +133,7 @@
       "fggId": 262,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_TrickTreat_L.webp",
       "cost": 2400,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -144,7 +143,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
@@ -186,8 +185,7 @@
       "fggId": 224,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_TrickTreat_L.webp",
       "cost": 2400,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -239,8 +237,7 @@
       "fggId": 225,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_DoubleJump_TrickTreat_L.webp",
       "cost": 2100,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -292,8 +289,7 @@
       "fggId": 241,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Killswitch_TrickTreat_L.webp",
       "cost": 2100,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -345,8 +341,7 @@
       "fggId": 237,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerB_TrickTreat_L.webp",
       "cost": 2100,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -398,8 +393,7 @@
       "fggId": 232,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_GhostDamage_TrickTreat_L.webp",
       "cost": 2100,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -451,8 +445,7 @@
       "fggId": 235,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BodySlam_TrickTreat_L.webp",
       "cost": 2100,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -462,7 +455,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
@@ -504,8 +497,7 @@
       "fggId": 231,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_TrickTreat_L.webp",
       "cost": 2100,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -515,7 +507,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
@@ -557,8 +549,7 @@
       "fggId": 254,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_TrickTreat_L.webp",
       "cost": 2100,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -610,8 +601,7 @@
       "fggId": 245,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFlea_TrickTreat_L.webp",
       "cost": 1800,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -663,8 +653,7 @@
       "fggId": 238,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_NarrowFleaMonkey_TrickTreat_L.webp",
       "cost": 1800,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -716,8 +705,7 @@
       "fggId": 239,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ReloadOverTime_TrickTreat_L.webp",
       "cost": 1800,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -769,8 +757,7 @@
       "fggId": 233,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Overshield_TrickTreat_L.webp",
       "cost": 1800,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -822,8 +809,7 @@
       "fggId": 236,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerA_TrickTreat_L.webp",
       "cost": 1800,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -875,8 +861,7 @@
       "fggId": 248,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_TrickTreat_L.webp",
       "cost": 1800,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -886,7 +871,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
@@ -928,8 +913,7 @@
       "fggId": 261,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_TrickTreat_L.webp",
       "cost": 1800,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -981,8 +965,7 @@
       "fggId": 244,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_TrickTreat_L.webp",
       "cost": 1500,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -1034,8 +1017,7 @@
       "fggId": 242,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_TrickTreat_L.webp",
       "cost": 1500,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -1087,8 +1069,7 @@
       "fggId": 240,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_TrickTreat_L.webp",
       "cost": 1500,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -1140,8 +1121,7 @@
       "fggId": 246,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_8BitBlaster_TrickTreat_L.webp",
       "cost": 1500,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -1210,8 +1190,7 @@
       "fggId": 255,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerC_TrickTreat_L.webp",
       "cost": 1500,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -1263,8 +1242,7 @@
       "fggId": 247,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StormScout_TrickTreat_L.webp",
       "cost": 1500,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    },
@@ -1316,8 +1294,7 @@
       "fggId": 234,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Birthday_TrickTreat_L.webp",
       "cost": 1500,
-      "drop": 0.0,
-      "unreleased": true
+      "drop": 0.0
      }
     ]
    }

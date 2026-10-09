@@ -38,6 +38,7 @@
     "detail.ability": "ความสามารถ",
     "detail.levels": "ตามเลเวล",
     "detail.level": "เลเวล {n}",
+    "detail.myLevel": "เลเวลของคุณ",
     "detail.where": "หาได้ที่ไหน",
     "detail.variants": "รูปแบบ",
     "detail.cost": "ค่าเรียก",

@@ -38,6 +38,7 @@
     "detail.ability": "Fähigkeit",
     "detail.levels": "Pro Stufe",
     "detail.level": "Stufe {n}",
+    "detail.myLevel": "Deine Stufe",
     "detail.where": "Fundort",
     "detail.variants": "Varianten",
     "detail.cost": "Beschwörungskosten",

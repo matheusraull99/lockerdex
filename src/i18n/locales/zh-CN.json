@@ -38,6 +38,7 @@
     "detail.ability": "能力",
     "detail.levels": "各等级",
     "detail.level": "Lv.{n}",
+    "detail.myLevel": "你的等级",
     "detail.where": "获取地点",
     "detail.variants": "变体",
     "detail.cost": "召唤消耗",

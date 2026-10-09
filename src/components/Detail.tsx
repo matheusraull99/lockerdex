@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { hideBroken, imgUrl, type Season, type Sprite, type Status } from "../lib/data";
 import type { Collection } from "../lib/collection";
+import { MAX_LEVEL, type LevelMap } from "../lib/levels";
 import { useI18n } from "../lib/i18n";
 import { levelValues, locationLabel, rarityLabel, spriteText, variantText } from "../lib/content";
 
@@ -8,12 +9,14 @@ interface Props {
   season: Season;
   sprite: Sprite;
   collection: Collection;
+  levels: LevelMap;
   readOnly: boolean;
   onSet: (id: number, st: Status) => void;
+  onLevel: (id: number, n: number) => void;
   onClose: () => void;
 }
 
-export function Detail({ season, sprite, collection, readOnly, onSet, onClose }: Props) {
+export function Detail({ season, sprite, collection, levels: myLevels, readOnly, onSet, onLevel, onClose }: Props) {
   const { L, t, nf, lang } = useI18n();
   const [pick, setPick] = useState(sprite.slots[0].id);
   const ref = useRef<HTMLDialogElement>(null);
@@ -73,7 +76,7 @@ export function Detail({ season, sprite, collection, readOnly, onSet, onClose }:
               <p className="lv-h">{tx.levels || t("detail.levels")}</p>
               <ol>
                 {levels.map((v, i) => (
-                  <li key={i}>
+                  <li key={i} data-on={!readOnly && (collection[cur.id] ?? 0) > 0 && myLevels[cur.id] === i + 1 ? "" : undefined}>
                     <span>{t("detail.level", { n: i + 1 })}</span>
                     <b>{v}</b>
                   </li>
@@ -132,6 +135,18 @@ export function Detail({ season, sprite, collection, readOnly, onSet, onClose }:
                         </button>
                       ))}
                     </div>
+                    {!readOnly && st > 0 && (
+                      <div className="mylv">
+                        <span id={`lv-${s.id}`}>{t("detail.myLevel")}</span>
+                        <div className="seg" role="radiogroup" aria-labelledby={`lv-${s.id}`}>
+                          {Array.from({ length: MAX_LEVEL }, (_, i) => i + 1).map((n) => (
+                            <button key={n} type="button" role="radio" aria-checked={myLevels[s.id] === n} onClick={() => onLevel(s.id, n)}>
+                              {n}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </li>
               );

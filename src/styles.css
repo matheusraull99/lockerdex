@@ -664,6 +664,21 @@ textarea {
   opacity: 1;
 }
 
+/* nível que você marcou */
+.st-lv {
+  position: absolute;
+  inset-inline-start: 4px;
+  top: 4px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: rgb(29 22 64 / 0.88);
+  color: #fff;
+  font: 800 10.5px / 1.25 var(--display);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
 .st[data-status="1"]:hover,
 .st[data-status="2"]:hover {
   transform: rotate(0deg) translateY(-2px);
@@ -1054,6 +1069,11 @@ textarea {
   color: var(--ink);
 }
 
+.lv li[data-on] {
+  outline: 2px solid var(--dust);
+  background: color-mix(in srgb, var(--dust) 18%, var(--paper));
+}
+
 .lv li:last-child {
   background: color-mix(in srgb, var(--rc) 22%, var(--paper));
 }
@@ -1158,6 +1178,25 @@ textarea {
 .seg [aria-checked="true"][data-k="2"] {
   background: linear-gradient(115deg, #ff9de2, #9df3ff 50%, #fff59d);
   color: #1d1640;
+}
+
+.mylv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+
+.mylv > span {
+  margin-top: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.mylv .seg button {
+  min-width: 28px;
+  padding: 4px 8px;
 }
 
 .seg button:disabled {

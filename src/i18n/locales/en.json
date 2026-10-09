@@ -41,6 +41,7 @@
     "detail.ability": "Ability",
     "detail.levels": "By level",
     "detail.level": "Lv {n}",
+    "detail.myLevel": "Your level",
     "detail.where": "Where to find it",
     "detail.variants": "Variants",
     "detail.cost": "Summon cost",

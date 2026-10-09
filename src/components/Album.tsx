@@ -1,5 +1,6 @@
 import { RARITIES, type Rarity, type Season, type Slot, type Sprite } from "../lib/data";
 import type { Collection } from "../lib/collection";
+import type { LevelMap } from "../lib/levels";
 import { useI18n } from "../lib/i18n";
 import { rarityLabel, spriteText, variantText } from "../lib/content";
 import { Sticker } from "./Sticker";
@@ -24,6 +25,7 @@ interface Props {
   collection: Collection;
   filters: Filters;
   readOnly: boolean;
+  levels?: LevelMap; // nível de cada figurinha (só na sua coleção)
   onCycle: (slot: Slot) => void;
   onOpen: (sprite: Sprite) => void;
   onClear: () => void;
@@ -33,7 +35,7 @@ function norm(s: string) {
   return s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 }
 
-export function Album({ season, collection, filters, readOnly, onCycle, onOpen, onClear }: Props) {
+export function Album({ season, collection, filters, readOnly, levels, onCycle, onOpen, onClear }: Props) {
   const { L, t, lang } = useI18n();
   const colorOf = Object.fromEntries(season.variants.map((v) => [v.key, v.color]));
   const statusLabel = [t("status.missing"), t("status.owned"), t("status.mastered")];
@@ -126,6 +128,7 @@ export function Album({ season, collection, filters, readOnly, onCycle, onOpen, 
                             status={st}
                             color={colorOf[s.variant]}
                             label={t("sticker.aria", { n: s.no, name: tx.name, variant: variantText(L, s.variant).label, status: statusLabel[st] })}
+                            levelLabel={st > 0 && levels?.[s.id] ? t("detail.level", { n: levels[s.id] }) : undefined}
                             onCycle={readOnly ? undefined : onCycle}
                           />
                           <span className="cell-var">{variantText(L, s.variant).label}</span>

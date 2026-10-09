@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
 import { RARITIES, SEASONS, type Rarity, type Slot, type Sprite, type Status } from "../lib/data";
 import { parseNumbers, readShared, storage, type Collection } from "../lib/collection";
+import { loadLevels, saveLevels, type LevelMap } from "../lib/levels";
 import { useI18n } from "../lib/i18n";
 import { rarityLabel, variantText } from "../lib/content";
 import { relTime, SEASON_END, useUi } from "../lib/ui";
@@ -20,6 +21,7 @@ export function SpritesPage() {
   const [friend, setFriend] = useState(readShared);
   const [seasonId, setSeasonId] = useState(() => friend?.season ?? (storage.prefs().season as number) ?? CURRENT.id);
   const [mine, setMine] = useState<Collection>(storage.load);
+  const [levels, setLevels] = useState<LevelMap>(loadLevels);
   const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, unreleased: !!storage.prefs().unreleased }));
   const [detail, setDetail] = useState<Sprite | null>(null);
   const [sharing, setSharing] = useState(false);
@@ -33,6 +35,7 @@ export function SpritesPage() {
   const c = counts(slots, viewing);
 
   useEffect(() => storage.save(mine), [mine]);
+  useEffect(() => saveLevels(levels), [levels]);
   useEffect(() => storage.setPrefs({ season: seasonId, unreleased: filters.unreleased }), [seasonId, filters.unreleased]);
   useEffect(() => {
     // Sai (ou entra) na coleção do amigo quando o endereço muda: link #c=…, logo, aba Elementais, voltar.
@@ -57,6 +60,15 @@ export function SpritesPage() {
       if (st) n[id] = st;
       else delete n[id];
       return n;
+    });
+  }, []);
+  // Tocar no nível que já está marcado tira o nível.
+  const setLevel = useCallback((id: number, n: number) => {
+    setLevels((l) => {
+      const out = { ...l };
+      if (!n || l[id] === n) delete out[id];
+      else out[id] = n;
+      return out;
     });
   }, []);
   const cycle = useCallback(
@@ -202,6 +214,7 @@ export function SpritesPage() {
             collection={viewing}
             filters={filters}
             readOnly={readOnly}
+            levels={readOnly ? undefined : levels}
             onCycle={cycle}
             onOpen={setDetail}
             onClear={() => setFilters((f) => ({ ...DEFAULT_FILTERS, unreleased: f.unreleased }))}
@@ -212,7 +225,7 @@ export function SpritesPage() {
         </aside>
       </div>
 
-      {detail && <Detail season={season} sprite={detail} collection={viewing} readOnly={readOnly} onSet={setStatus} onClose={() => setDetail(null)} />}
+      {detail && <Detail season={season} sprite={detail} collection={viewing} levels={levels} readOnly={readOnly} onSet={setStatus} onLevel={setLevel} onClose={() => setDetail(null)} />}
       {sharing && <ShareDialog season={season} slots={slots} collection={mine} onClose={() => setSharing(false)} />}
     </>
   );

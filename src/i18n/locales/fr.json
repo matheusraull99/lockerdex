@@ -38,6 +38,7 @@
     "detail.ability": "Capacité",
     "detail.levels": "Par niveau",
     "detail.level": "Niv. {n}",
+    "detail.myLevel": "Ton niveau",
     "detail.where": "Où le trouver",
     "detail.variants": "Variantes",
     "detail.cost": "Coût d’invocation",

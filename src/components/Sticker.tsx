@@ -7,11 +7,12 @@ interface Props {
   color: string;
   label: string;
   size?: "md" | "sm";
+  levelLabel?: string; // "Nv 3": nível que você marcou
   onCycle?: (slot: Slot) => void;
 }
 
 /** Figurinha: vazia com número e silhueta, colada quando tenho, holográfica quando dominei. */
-export const Sticker = memo(function Sticker({ slot, status, color, label, size = "md", onCycle }: Props) {
+export const Sticker = memo(function Sticker({ slot, status, color, label, size = "md", levelLabel, onCycle }: Props) {
   const [anim, setAnim] = useState(false);
   const first = useRef(true);
   useEffect(() => {
@@ -34,6 +35,11 @@ export const Sticker = memo(function Sticker({ slot, status, color, label, size 
       </span>
       <span className="st-no">{slot.no}</span>
       <span className="st-var" aria-hidden />
+      {levelLabel && (
+        <span className="st-lv" aria-hidden>
+          {levelLabel}
+        </span>
+      )}
       {status === 2 && <span className="st-foil" aria-hidden />}
       {/* Fora da camada holográfica: o "overlay" do brilho apagava a estrela junto com a arte. */}
       {status === 2 && (

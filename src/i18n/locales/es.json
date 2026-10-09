@@ -38,6 +38,7 @@
     "detail.ability": "Habilidad",
     "detail.levels": "Por nivel",
     "detail.level": "Nv. {n}",
+    "detail.myLevel": "Tu nivel",
     "detail.where": "Dónde encontrarlo",
     "detail.variants": "Variantes",
     "detail.cost": "Coste de invocación",

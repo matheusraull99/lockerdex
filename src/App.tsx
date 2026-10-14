@@ -24,6 +24,8 @@ import { MorePage } from "./pages/MorePage";
 import { IslandsPage } from "./pages/IslandsPage";
 import { HomePage } from "./pages/HomePage";
 import { FreeGamesPage } from "./pages/FreeGamesPage";
+import { SupportPage } from "./pages/SupportPage";
+import { pixConfig } from "./lib/pix";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -60,6 +62,8 @@ function Icon({ name }: { name: string }) {
 
 export default function App() {
   const { t, lang, setLang } = useI18n();
+  // O apoio é por Pix (só no Brasil): o coração do topo aparece em pt-BR e só se a chave estiver configurada.
+  const supportOn = lang === "pt-BR" && !!pixConfig();
   const { route, params } = useRoute();
   const [toastMsg, setToastMsg] = useState("");
   const [installing, setInstalling] = useState(false);
@@ -103,7 +107,7 @@ export default function App() {
     const NAV: Record<Route, Parameters<typeof t>[0]> = {
       home: "app.tagline",
       sprites: "nav.sprites", shop: "nav.shop", cosmetics: "nav.cosmetics", lists: "nav.lists", leaks: "nav.leaks",
-      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", islands: "nav.islands", free: "nav.free", more: "nav.more",
+      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", islands: "nav.islands", free: "nav.free", support: "nav.support", more: "nav.more",
     };
     // Mesmo formato das páginas geradas no build (vite.config.ts), para o Google ver um título só.
     document.title = route === "home" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
@@ -135,6 +139,8 @@ export default function App() {
         return <HomePage />;
       case "free":
         return <FreeGamesPage />;
+      case "support":
+        return <SupportPage />;
       case "islands":
         return <IslandsPage key={params.toString()} params={params} />;
       case "more":
@@ -147,7 +153,7 @@ export default function App() {
   return (
     <UiContext.Provider value={ui}>
       <div className="app">
-        <header className="top">
+        <header className={supportOn ? "top top-support" : "top"}>
           <a className="brand" href={href("home")}>
             <AvatarBadge className="brand-av" />
             <span className="brand-tx">
@@ -164,6 +170,13 @@ export default function App() {
               </a>
             ))}
           </nav>
+          {supportOn && (
+            <a className="btn-support" href={href("support")} aria-label={t("support.button")} title={t("support.button")} aria-current={route === "support" ? "page" : undefined}>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden>
+                <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.6 5 6 5c2.1 0 3.4 1.2 4 2.2.6-1 1.9-2.2 4-2.2 3.4 0 5.1 3.4 3.6 6.8C19.5 16.4 12 21 12 21Z" />
+              </svg>
+            </a>
+          )}
           {!inst.installed && (
             <button type="button" className="btn btn-install" onClick={openInstall} aria-label={t("install.button")} title={t("install.button")}>
               <span aria-hidden>⬇</span>

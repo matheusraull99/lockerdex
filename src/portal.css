@@ -2014,3 +2014,112 @@
     grid-column: 2;
   }
 }
+
+/* ---------- apoio (Pix): coração no topo e página ---------- */
+.btn-support {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--page);
+  color: var(--dust);
+  text-decoration: none;
+}
+
+.btn-support:hover,
+.btn-support[aria-current="page"] {
+  border-color: var(--dust);
+}
+
+.sup {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  max-width: 640px;
+  margin: 6px 0 16px;
+  padding: 20px;
+  border-radius: var(--r);
+  background: var(--page);
+  border: 1px solid var(--line);
+}
+
+.sup-qr {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.sup-scan {
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.sup-to {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+}
+
+.sup-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.sup-thanks {
+  margin: 8px 0 0;
+  font-weight: 800;
+}
+
+@media (max-width: 560px) {
+  .sup {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .sup-btns {
+    justify-content: center;
+  }
+}
+
+/* Com o coração do apoio no topo, as abas ficam um pouco mais juntas entre 1200 e 1330 px para o idioma não cair de linha. */
+@media (min-width: 1200px) and (max-width: 1330px) {
+  .top-support .nav-top a {
+    padding-inline: 8px;
+  }
+}
+
+/* Celular estreito: com o coração do apoio, marca e botões encolhem um pouco para o idioma ("PT-BR") caber inteiro. */
+@media (max-width: 399px) {
+  .top.top-support {
+    gap: 8px;
+  }
+  .top-support .brand-w {
+    font-size: 23px;
+  }
+  .top-support .btn-support,
+  .top-support .btn-install {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 339px) {
+  .top-support .brand-w {
+    font-size: 20px;
+  }
+  .top-support .brand-av {
+    width: 30px;
+    height: 30px;
+  }
+  .top-support .btn-support,
+  .top-support .btn-install {
+    width: 32px;
+    height: 32px;
+  }
+}

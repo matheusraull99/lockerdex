@@ -3,6 +3,7 @@ import { OFFERED } from "../lib/langs";
 import { href, type Route } from "../lib/router";
 import { feedbackEnabled } from "../lib/feedback";
 import { useUi } from "../lib/ui";
+import { pixConfig } from "../lib/pix";
 
 type UiKey = Parameters<ReturnType<typeof useI18n>["t"]>[0];
 
@@ -77,6 +78,11 @@ export function MorePage() {
           <button type="button" className="btn" onClick={openTheme}>
             ◐ {t("theme.button")}
           </button>
+          {lang === "pt-BR" && pixConfig() && (
+            <a className="btn" href={href("support")}>
+              ♥ {t("nav.support")}
+            </a>
+          )}
           {feedbackEnabled && (
             <button type="button" className="btn" onClick={openFeedback}>
               ✎ {t("feedback.button")}

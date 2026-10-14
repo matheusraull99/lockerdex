@@ -195,7 +195,8 @@ export default function App() {
 
         <main className={`page page-${route}`}>{page}</main>
 
-        <footer className="foot">
+        {/* data-nosnippet: o Google usava o rodapé ("Funciona offline…") como texto do resultado, no lugar da descrição. */}
+        <footer className="foot" data-nosnippet>
           {feedbackEnabled && (
             <div className="foot-fb">
               <p>{t("feedback.footer")}</p>

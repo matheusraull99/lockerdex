@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { useApi, type MapData, type NewsMotd, type Shop, type ShopEntry } from "../lib/api";
 import { useI18n } from "../lib/i18n";
 import { lastValue, useEco, type GenreRanking, type Island, type Point } from "../lib/islands";
@@ -29,7 +29,7 @@ function featured(entries: ShopEntry[]) {
   return big.filter((e) => !seen.has(e.layout?.id ?? e.offerId) && !!seen.add(e.layout?.id ?? e.offerId));
 }
 
-export function HomeFeature() {
+export function HomeFeature({ afterHero }: { afterHero?: ReactNode }) {
   const { t, lang, nf } = useI18n();
   const shop = useApi<Shop>("/v2/shop", lang);
   const news = useApi<{ motds?: NewsMotd[] }>("/v2/news/br", lang);
@@ -114,6 +114,7 @@ export function HomeFeature() {
           )}
         </section>
       )}
+      {afterHero}
       <ShopRow shop={shop.data} />
       <TrendingRow />
     </>

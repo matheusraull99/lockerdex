@@ -742,3 +742,26 @@
 .fg-next .fg-body h3 {
   font-size: 24px;
 }
+
+/* ---------- contagem da temporada na página inicial (components/SeasonCountdown.tsx) ---------- */
+.home-season {
+  margin-top: 26px;
+}
+
+.home-season .page-h {
+  padding-top: 0;
+}
+
+.home-season .page-h h2 {
+  margin: 0;
+  font: 900 clamp(28px, 4.6vw, 46px) / 0.92 var(--display);
+  text-transform: uppercase;
+}
+
+.home-season .countdown {
+  margin-bottom: 10px;
+}
+
+.home-season > p:not(.note) {
+  margin: 0 0 4px;
+}

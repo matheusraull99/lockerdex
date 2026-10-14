@@ -3,8 +3,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 /*
  * Personagem do Lockerdex: o Matheus como boneco do Fortnite (render 3D, com o fundo recortado).
  * Aparece ao lado da marca (AvatarBadge) e, de vez em quando, atravessa o rodapé com a picareta (Walker).
- * Arquivos em public/avatar/: bust.webp (cabeça e ombros, 144×144) e walker.webp (corpo inteiro, 166×320).
- * As proporções usadas no CSS (onde as pernas começam, a ponta da picareta) são dessa imagem.
+ * Arquivos em public/avatar/: bust.webp (cabeça e ombros, 144×144) e runner-strip.webp (4 poses da corrida de perfil,
+ * 242×300 cada, lado a lado, alinhadas pelo centro da jaqueta).
  */
 const BASE = `${import.meta.env.BASE_URL}avatar/`;
 
@@ -19,12 +19,12 @@ export function AvatarBadge({ className }: { className?: string }) {
 
 /**
  * De vez em quando o personagem atravessa o rodapé correndo, com a picareta (a primeira vez entre 20 e 40 s,
- * depois a cada 3 a 6 minutos, só com a aba visível). Clicar nele dá uma picaretada. Com "reduzir
+ * depois a cada 3 a 6 minutos, só com a aba visível). Clicar nele dá um salto mortal. Com "reduzir
  * movimento" ligado no aparelho, ele não aparece.
  */
 export function Walker() {
   const [walk, setWalk] = useState<{ dir: 1 | -1; key: number } | null>(null);
-  const [swing, setSwing] = useState(0);
+  const [hop, setHop] = useState(0);
   const timer = useRef<number | undefined>(undefined);
 
   const schedule = useCallback((ms: number) => {
@@ -43,31 +43,22 @@ export function Walker() {
   }, [schedule]);
 
   if (!walk) return null;
-  const src = `${BASE}walker.webp`;
   return (
     <div
       key={walk.key}
       className="walker"
       data-dir={walk.dir}
       onAnimationEnd={(e) => {
-        if (e.target !== e.currentTarget) return; // só o fim da travessia, não o da picaretada
+        if (e.target !== e.currentTarget) return; // só o fim da travessia, não o do salto
         setWalk(null);
         schedule(180_000 + Math.random() * 180_000);
       }}
     >
-      <button type="button" className="walker-btn" tabIndex={-1} aria-hidden onClick={() => setSwing((n) => n + 1)}>
-        {/* A mesma imagem três vezes, cada uma recortada numa parte: as pernas sobem alternadas (a passada da corrida)
-            e o tronco, que segura a picareta, gira na picaretada. */}
+      <button key={hop} type="button" className={hop ? "walker-btn wk-hop" : "walker-btn"} tabIndex={-1} aria-hidden onClick={() => setHop((n) => n + 1)}>
+        {/* A tira tem 4 poses da corrida lado a lado; o CSS anda um quadro por vez. */}
         <span className="wk-fig">
-          <img className="wk-part wk-leg wk-leg-l" src={src} alt="" draggable={false} />
-          <img className="wk-part wk-leg wk-leg-r" src={src} alt="" draggable={false} />
-          <span key={swing} className={swing ? "wk-top wk-swing" : "wk-top"}>
-            <img className="wk-part" src={src} alt="" draggable={false} />
-            {swing > 0 && (
-              <svg className="wk-spark" viewBox="138 178 35 36">
-                <path d="M150 190 l6 -12 l2 12 l10 -6 l-7 10 l12 2 l-12 3 l6 9 l-9 -5 l-3 11 l-2 -11 l-10 5 l6 -9 l-11 -3 l11 -2 l-6 -9 z" />
-              </svg>
-            )}
+          <span className="wk-view">
+            <img className="wk-sheet" src={`${BASE}runner-strip.webp`} alt="" draggable={false} />
           </span>
         </span>
       </button>

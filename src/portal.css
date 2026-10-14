@@ -1476,7 +1476,7 @@
   left: 0;
   bottom: 4px;
   z-index: 40;
-  width: 72px;
+  width: 112px;
   pointer-events: none;
   --lean: 1; /* 1 = corre para a direita, -1 = para a esquerda */
   animation: wk-across 7s linear forwards;
@@ -1496,91 +1496,25 @@
   background: none;
   cursor: pointer;
   pointer-events: auto;
+  transform-origin: 50% 55%;
 }
 
-/* sombra no chão, parada enquanto o corpo sobe e desce */
+/* clicar: salto mortal para a frente */
+.walker-btn.wk-hop {
+  animation: wk-hop 0.65s cubic-bezier(0.3, 0.6, 0.4, 1);
+}
+
+/* sombra no chão: encolhe quando ele está no ar */
 .walker-btn::before {
   content: "";
   position: absolute;
-  left: 24%;
-  right: 6%;
+  left: 14%;
+  right: 14%;
   bottom: -3px;
   height: 9px;
   border-radius: 50%;
   background: radial-gradient(closest-side, rgb(0 0 0 / 0.3), transparent);
-}
-
-/* Proporções da imagem (walker.webp): as pernas começam em 56,5% da altura e se separam em 59,2% da
-   largura; o tronco, que segura a picareta, vai até o meio das coxas (64,4%) e fica por cima delas. */
-.wk-fig {
-  position: relative;
-  display: block;
-  aspect-ratio: 988 / 1908;
-  transform-origin: 59% 99%;
-  animation: wk-run 0.34s ease-in-out infinite;
-  filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.35));
-}
-
-.wk-fig::before {
-  content: "";
-  position: absolute;
-  top: 24%;
-  width: 95%;
-  height: 40%;
-  --sp: color-mix(in srgb, var(--ink) 55%, transparent);
-  background:
-    linear-gradient(to var(--tail), var(--sp), transparent) 0 8% / 100% 2px no-repeat,
-    linear-gradient(to var(--tail), var(--sp), transparent) 0 40% / 78% 2px no-repeat,
-    linear-gradient(to var(--tail), var(--sp), transparent) 0 72% / 92% 2px no-repeat;
-  animation: wk-speed 0.17s linear infinite;
-}
-
-.walker[data-dir="1"] .wk-fig::before {
-  --tail: left;
-  right: 70%;
-}
-
-.walker[data-dir="-1"] .wk-fig::before {
-  --tail: right;
-  left: 70%;
-}
-
-.wk-part {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-.wk-leg {
-  transform-origin: 50% 56.5%;
-  animation: wk-step 0.34s ease-in-out infinite;
-}
-
-.wk-leg-l {
-  clip-path: inset(56.5% 40.8% 0 0);
-}
-
-.wk-leg-r {
-  clip-path: inset(56.5% 0 0 59.2%);
-  animation-delay: -0.17s;
-}
-
-.wk-top {
-  position: absolute;
-  inset: 0;
-  transform-origin: 59.2% 61.7%;
-  animation: wk-torso 0.34s ease-in-out infinite;
-}
-
-.wk-top .wk-part {
-  clip-path: inset(0 0 35.6% 0);
-}
-
-.wk-swing {
-  animation: wk-pick 0.55s cubic-bezier(0.3, 0.7, 0.4, 1);
+  animation: wk-shadow 0.25s ease-in-out infinite;
 }
 
 /* poeira atrás dos pés: bolinhas que ficam para trás e somem a cada passada */
@@ -1588,38 +1522,78 @@
   content: "";
   position: absolute;
   bottom: 1px;
-  width: 52%;
+  width: 40%;
   height: 16px;
   background:
     radial-gradient(circle at 80% 62%, color-mix(in srgb, var(--ink) 38%, transparent) 0 4px, transparent 5px),
     radial-gradient(circle at 50% 36%, color-mix(in srgb, var(--ink) 30%, transparent) 0 3px, transparent 4px),
     radial-gradient(circle at 20% 68%, color-mix(in srgb, var(--ink) 24%, transparent) 0 2.4px, transparent 3.4px);
-  animation: wk-dust 0.34s linear infinite;
+  animation: wk-dust 0.25s linear infinite;
 }
 
 .walker[data-dir="1"] .walker-btn::after {
-  right: 84%;
+  right: 88%;
 }
 
 .walker[data-dir="-1"] .walker-btn::after {
-  left: 84%;
+  left: 88%;
 }
 
-/* faísca na ponta de baixo da picareta; está dentro do tronco, então gira junto na picaretada */
-.wk-spark {
+/* Corrida: runner-strip.webp tem 4 poses lado a lado (passada, passagem, passada grande, passagem).
+   A tira anda um quadro por vez (steps) dentro de uma janela do tamanho de um quadro. */
+.wk-fig {
+  position: relative;
+  display: block;
+  aspect-ratio: 242 / 300;
+  animation: wk-bob 0.25s ease-in-out infinite;
+  filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.35));
+}
+
+.wk-view {
   position: absolute;
-  left: 6.6%;
-  top: 29.8%;
-  width: 34%;
-  translate: -50% -50%;
-  fill: var(--dust);
-  opacity: 0;
-  animation: wk-spark 0.55s ease-out;
+  inset: 0;
+  overflow: hidden;
+  transform: scaleX(var(--lean));
+}
+
+.wk-sheet {
+  display: block;
+  width: 400%;
+  max-width: none;
+  height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+  animation: wk-frames 0.5s steps(4) infinite;
+}
+
+/* riscos de velocidade atrás do corpo */
+.wk-fig::before {
+  content: "";
+  position: absolute;
+  top: 24%;
+  width: 70%;
+  height: 34%;
+  --sp: color-mix(in srgb, var(--ink) 55%, transparent);
+  background:
+    linear-gradient(to var(--tail), var(--sp), transparent) 0 10% / 100% 2px no-repeat,
+    linear-gradient(to var(--tail), var(--sp), transparent) 0 45% / 78% 2px no-repeat,
+    linear-gradient(to var(--tail), var(--sp), transparent) 0 80% / 92% 2px no-repeat;
+  animation: wk-speed 0.17s linear infinite;
+}
+
+.walker[data-dir="1"] .wk-fig::before {
+  --tail: left;
+  right: 92%;
+}
+
+.walker[data-dir="-1"] .wk-fig::before {
+  --tail: right;
+  left: 92%;
 }
 
 @keyframes wk-across {
   from {
-    transform: translateX(-110px);
+    transform: translateX(-130px);
   }
   to {
     transform: translateX(calc(100vw + 10px));
@@ -1631,49 +1605,48 @@
     transform: translateX(calc(100vw + 10px));
   }
   to {
-    transform: translateX(-110px);
+    transform: translateX(-130px);
   }
 }
 
-/* corrida: o corpo vai bem inclinado para a frente e SALTA a cada passada (os dois pés saem do chão) */
-@keyframes wk-run {
-  0%,
-  50%,
-  100% {
-    transform: translateY(0) rotate(calc(var(--lean) * 22deg)) scaleY(0.96);
-  }
-  25%,
-  75% {
-    transform: translateY(-16%) rotate(calc(var(--lean) * 26deg)) scaleY(1.03);
+@keyframes wk-frames {
+  to {
+    transform: translateX(-100%);
   }
 }
 
-/* pernas em tesoura a partir do quadril: uma vai à frente enquanto a outra vai para trás; no meio
-   da passada a perna que passa por baixo do corpo se dobra (encurta) */
-@keyframes wk-step {
+/* o corpo sobe e desce um pouco a cada passada */
+@keyframes wk-bob {
   0%,
   100% {
-    transform: rotate(calc(var(--lean) * 38deg)) scaleY(1);
-  }
-  25% {
-    transform: rotate(0deg) scaleY(0.72);
+    transform: translateY(0);
   }
   50% {
-    transform: rotate(calc(var(--lean) * -38deg)) scaleY(1);
-  }
-  75% {
-    transform: rotate(0deg) scaleY(0.72);
+    transform: translateY(-4%);
   }
 }
 
-/* o tronco, que segura a picareta, gira contra as pernas */
-@keyframes wk-torso {
+@keyframes wk-shadow {
   0%,
   100% {
-    transform: rotate(calc(var(--lean) * -10deg));
+    transform: scaleX(1);
+    opacity: 1;
   }
   50% {
-    transform: rotate(calc(var(--lean) * 10deg));
+    transform: scaleX(0.8);
+    opacity: 0.7;
+  }
+}
+
+@keyframes wk-hop {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-90%) rotate(calc(var(--lean) * 180deg));
+  }
+  100% {
+    transform: translateY(0) rotate(calc(var(--lean) * 360deg));
   }
 }
 
@@ -1688,7 +1661,6 @@
   }
 }
 
-/* riscos de velocidade atrás do corpo */
 @keyframes wk-speed {
   from {
     opacity: 0.9;
@@ -1700,41 +1672,10 @@
   }
 }
 
-@keyframes wk-pick {
-  0% {
-    transform: rotate(0);
-  }
-  30% {
-    transform: rotate(9deg);
-  }
-  62% {
-    transform: rotate(-16deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-@keyframes wk-spark {
-  0%,
-  55% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  68% {
-    opacity: 1;
-    transform: scale(1.15);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-}
-
 @media (max-width: 720px) {
   .walker {
     bottom: calc(68px + env(safe-area-inset-bottom));
-    width: 54px;
+    width: 84px;
   }
 }
 

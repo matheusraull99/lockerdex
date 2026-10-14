@@ -1026,6 +1026,49 @@
   letter-spacing: 0.04em;
 }
 
+/* modelo da imagem: tabela completa ou resumo para story */
+.layout-pick {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.layout-pick button {
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  padding: 10px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+}
+
+.layout-pick b {
+  font: 800 17px/1.1 var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.layout-pick span {
+  min-height: 1em;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.layout-pick [aria-checked="true"] {
+  border-color: var(--dust);
+  box-shadow: 0 0 0 2px var(--dust);
+}
+
+.layout-pick button:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
 /* ---------- texto de cada página antes do app carregar (Google e prévias de link) ---------- */
 .seo-shell {
   max-width: 720px;

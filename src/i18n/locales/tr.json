@@ -308,6 +308,10 @@
     "week.starts": "{time} başlıyor",
     "week.source": "Epic Games'in duyurduğu haftalık etkinlikler, senin saat dilimine göre.",
     "share.format.title": "Bir format seç",
+    "share.layout.label": "Görsel düzeni",
+    "share.layout.full": "Tam tablo",
+    "share.layout.summary": "Özet (hikâye)",
+    "share.summary.highlights": "Öne çıkanlar",
     "share.format.desc": "WebP çok daha küçüktür, paylaşmak için ideal. PNG daha büyüktür ama her yerde açılır.",
     "share.format.cancel": "İptal"
   },

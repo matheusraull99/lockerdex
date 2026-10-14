@@ -308,6 +308,10 @@
     "week.starts": "{time} शुरू होगा",
     "week.source": "Epic Games द्वारा घोषित साप्ताहिक इवेंट, आपके टाइम ज़ोन में।",
     "share.format.title": "फ़ॉर्मैट चुनें",
+    "share.layout.label": "इमेज का लेआउट",
+    "share.layout.full": "पूरी तालिका",
+    "share.layout.summary": "सारांश (स्टोरी)",
+    "share.summary.highlights": "खास",
     "share.format.desc": "WebP काफ़ी छोटा है — शेयर करने के लिए सबसे अच्छा। PNG बड़ा है, पर हर जगह खुल जाता है।",
     "share.format.cancel": "रद्द करें"
   },

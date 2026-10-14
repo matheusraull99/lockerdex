@@ -1,5 +1,7 @@
+import qrcode from "qrcode-generator";
 import { imgUrl, type Season, type Slot } from "./data";
 import type { Collection } from "./collection";
+import { palette } from "./theme";
 
 /*
  * Imagem da coleção para compartilhar: uma tabela com um elemental por linha e uma variante
@@ -7,11 +9,30 @@ import type { Collection } from "./collection";
  * variante que não existe = tracejado. Em árabe (rtl) a tabela sai espelhada.
  */
 
-const RARITY_COLOR: Record<string, string> = { rare: "#2e9bff", epic: "#a24dff", legendary: "#ff8a1f", mythic: "#f2b705" };
-const DISPLAY = "'Big Shoulders Display', 'Arial Narrow', system-ui, sans-serif";
-const BODY = "'Figtree Variable', system-ui, 'Noto Sans', sans-serif";
+export const RARITY_COLOR: Record<string, string> = { rare: "#2e9bff", epic: "#a24dff", legendary: "#ff8a1f", mythic: "#f2b705" };
+export const DISPLAY = "'Big Shoulders Display', 'Arial Narrow', system-ui, sans-serif";
+export const BODY = "'Figtree Variable', system-ui, 'Noto Sans', sans-serif";
 // Letras hebraicas e árabes (U+0590 a U+08FF), montadas por código para não depender de escape no arquivo.
-const RTL_CHARS = new RegExp(`[${String.fromCharCode(0x590)}-${String.fromCharCode(0x8ff)}]`);
+export const RTL_CHARS = new RegExp(`[${String.fromCharCode(0x590)}-${String.fromCharCode(0x8ff)}]`);
+
+/** Cores da imagem. O padrão é o roxo e rosa do site; com uma cor escolhida, segue a paleta escura dela. */
+export interface ImageTheme {
+  top: string;
+  mid: string;
+  bottom: string;
+  slot: string; // fundo da figurinha que falta
+  accent: string;
+  accent2: string;
+  soft: string; // texto secundário
+}
+
+export const DEFAULT_THEME: ImageTheme = { top: "#2a1e63", mid: "#1d1640", bottom: "#110d24", slot: "#231c4d", accent: "#ff5c9f", accent2: "#8b73ff", soft: "#a8a0cf" };
+
+export function imageTheme(hex: string | null): ImageTheme {
+  if (!hex) return DEFAULT_THEME;
+  const p = palette(hex, "dark");
+  return { top: mix(p.page, p.storm, 0.3), mid: p.page, bottom: p.paper, slot: p.slot, accent: p.dust, accent2: p.storm, soft: p["ink-soft"] };
+}
 
 export interface AlbumImageOptions {
   season: Season;
@@ -27,9 +48,11 @@ export interface AlbumImageOptions {
   spriteName: (key: string) => string;
   variantLabel: (key: string) => string;
   format?: "png" | "webp";
+  theme?: ImageTheme;
+  url?: string; // endereço do QR code (se vazio, sem QR)
 }
 
-function loadImg(src: string): Promise<HTMLImageElement | null> {
+export function loadImg(src: string): Promise<HTMLImageElement | null> {
   return new Promise((res) => {
     const im = new Image();
     im.crossOrigin = "anonymous";
@@ -37,6 +60,30 @@ function loadImg(src: string): Promise<HTMLImageElement | null> {
     im.onerror = () => res(null);
     im.src = src;
   });
+}
+
+/** QR code em branco com cantos arredondados; as células são quadradinhos inteiros do canvas. */
+export function drawQr(ctx: CanvasRenderingContext2D, url: string, x: number, y: number, size: number) {
+  const qr = qrcode(0, "M");
+  qr.addData(url);
+  qr.make();
+  const n = qr.getModuleCount();
+  const quiet = 2;
+  const unit = size / (n + quiet * 2);
+  ctx.save();
+  ctx.fillStyle = "#ffffff";
+  ctx.beginPath();
+  ctx.roundRect(x, y, size, size, 12);
+  ctx.fill();
+  ctx.fillStyle = "#1d1640";
+  for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (qr.isDark(r, c)) ctx.fillRect(x + (c + quiet) * unit, y + (r + quiet) * unit, unit + 0.4, unit + 0.4);
+  ctx.restore();
+}
+
+export function toBlob(cv: HTMLCanvasElement, format?: "png" | "webp"): Promise<Blob> {
+  // WebP sai bem menor; navegador que não gera WebP devolve PNG (quem chama olha blob.type).
+  const type = format === "webp" ? "image/webp" : "image/png";
+  return new Promise((res, rej) => cv.toBlob((b) => (b ? res(b) : rej(new Error("toBlob"))), type, 0.92));
 }
 
 function luminance(hex: string) {
@@ -48,7 +95,7 @@ function luminance(hex: string) {
   return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
 }
 
-function mix(hex: string, other: string, t: number) {
+export function mix(hex: string, other: string, t: number) {
   const a = parseInt(hex.slice(1), 16), b = parseInt(other.slice(1), 16);
   const ch = (s: number) => Math.round(((a >> s) & 255) * (1 - t) + ((b >> s) & 255) * t);
   return `rgb(${ch(16)}, ${ch(8)}, ${ch(0)})`;
@@ -56,6 +103,7 @@ function mix(hex: string, other: string, t: number) {
 
 export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
   const { season, collection } = o;
+  const th = o.theme ?? DEFAULT_THEME;
   const rtl = o.dir === "rtl";
   await Promise.all([
     document.fonts.load(`900 40px ${DISPLAY}`),
@@ -68,7 +116,7 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
   const variants = season.variants;
 
   // Medidas
-  const pad = 44, cell = 92, gap = 12, nameW = 270, headH = 222, colH = 44, footH = 86;
+  const pad = 44, cell = 92, gap = 12, nameW = 270, headH = 222, colH = 44, footH = o.url ? 150 : 86;
   const gridW = variants.length * cell + (variants.length - 1) * gap;
   const W = Math.max(pad * 2 + nameW + gridW, 900);
   const rowH = cell + gap;
@@ -86,9 +134,9 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
 
   // Fundo: roxo de tempestade, mais claro no alto.
   const bg = ctx.createLinearGradient(0, 0, 0, H);
-  bg.addColorStop(0, "#2a1e63");
-  bg.addColorStop(0.35, "#1d1640");
-  bg.addColorStop(1, "#110d24");
+  bg.addColorStop(0, th.top);
+  bg.addColorStop(0.35, th.mid);
+  bg.addColorStop(1, th.bottom);
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, W, H);
   ctx.fillStyle = "rgba(255,255,255,0.035)";
@@ -112,16 +160,16 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
   const brandX = rtl ? W - pad - lockerW - dexW : pad;
   ctx.fillStyle = "#f1edff";
   ctx.fillText("LOCKER", brandX, pad + 38);
-  ctx.fillStyle = "#ff5c9f";
+  ctx.fillStyle = th.accent;
   ctx.fillText("DEX", brandX + lockerW, pad + 38);
-  text(o.brandTagline, pad, pad + 62, `600 15px ${BODY}`, "#a8a0cf");
+  text(o.brandTagline, pad, pad + 62, `600 15px ${BODY}`, th.soft);
 
   text(o.title.toUpperCase(), pad, pad + 112, `900 34px ${DISPLAY}`, "#f1edff");
   const owned = o.slots.filter((s) => (collection[s.id] ?? 0) > 0).length;
   const mastered = o.slots.filter((s) => collection[s.id] === 2).length;
   const pct = o.slots.length ? Math.round((owned / o.slots.length) * 100) : 0;
-  text(`${owned} / ${o.slots.length} · ${pct}%`, W - pad, pad + 112, `900 30px ${DISPLAY}`, "#ff5c9f", "right");
-  text(o.have + (o.owner ? ` · ${o.owner}` : ""), pad, pad + 136, `600 15px ${BODY}`, "#a8a0cf");
+  text(`${owned} / ${o.slots.length} · ${pct}%`, W - pad, pad + 112, `900 30px ${DISPLAY}`, th.accent, "right");
+  text(o.have + (o.owner ? ` · ${o.owner}` : ""), pad, pad + 136, `600 15px ${BODY}`, th.soft);
 
   const barY = pad + 150, barW = W - pad * 2;
   ctx.fillStyle = "rgba(255,255,255,0.10)";
@@ -131,8 +179,8 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
   if (owned) {
     const fw = Math.max(10, (barW * owned) / o.slots.length);
     const g = ctx.createLinearGradient(pad, 0, pad + barW, 0);
-    g.addColorStop(0, rtl ? "#8b73ff" : "#ff5c9f");
-    g.addColorStop(1, rtl ? "#ff5c9f" : "#8b73ff");
+    g.addColorStop(0, rtl ? th.accent2 : th.accent);
+    g.addColorStop(1, rtl ? th.accent : th.accent2);
     ctx.fillStyle = g;
     ctx.beginPath();
     ctx.roundRect(X(pad, fw), barY, fw, 10, 5);
@@ -260,7 +308,7 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
         }
       } else {
         // Falta: sombra do elemental e cadeado.
-        ctx.fillStyle = "#231c4d";
+        ctx.fillStyle = th.slot;
         ctx.fill();
         ctx.strokeStyle = "rgba(255,255,255,0.10)";
         ctx.lineWidth = 1.5;
@@ -295,15 +343,17 @@ export async function albumPng(o: AlbumImageOptions): Promise<Blob> {
     });
   });
 
-  // Rodapé: legenda e endereço.
+  // Rodapé: legenda, endereço e QR code.
   const fy = H - footH + 44;
   ctx.fillStyle = "rgba(255,255,255,0.08)";
   ctx.fillRect(pad, H - footH + 10, W - pad * 2, 1);
   const legend = `✓ ${o.legend.owned}: ${owned}   ★ ${o.legend.mastered}: ${mastered}   🔒 ${o.legend.missing}: ${o.slots.length - owned}`;
-  text(legend, pad, fy, `600 15px ${BODY}`, "#a8a0cf");
-  text(o.footer, W - pad, fy, `800 17px ${DISPLAY}`, "#f1edff", "right");
+  text(legend, pad, fy, `600 15px ${BODY}`, th.soft);
+  if (o.url) {
+    text(o.footer, pad, fy + 38, `800 20px ${DISPLAY}`, "#f1edff");
+    const qs = 104;
+    drawQr(ctx, o.url, X(W - pad - qs, qs), H - footH + 26, qs);
+  } else text(o.footer, W - pad, fy, `800 17px ${DISPLAY}`, "#f1edff", "right");
 
-  // WebP sai bem menor; navegador que não gera WebP devolve PNG (quem chama olha blob.type).
-  const type = o.format === "webp" ? "image/webp" : "image/png";
-  return new Promise((res, rej) => cv.toBlob((b) => (b ? res(b) : rej(new Error("toBlob"))), type, 0.92));
+  return toBlob(cv, o.format);
 }

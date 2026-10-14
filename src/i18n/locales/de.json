@@ -308,6 +308,10 @@
     "week.starts": "Startet {time}",
     "week.source": "Wöchentliche Events, angekündigt von Epic Games, angezeigt in deiner Zeitzone.",
     "share.format.title": "Wähle ein Format",
+    "share.layout.label": "Bildformat",
+    "share.layout.full": "Komplette Tabelle",
+    "share.layout.summary": "Zusammenfassung (Story)",
+    "share.summary.highlights": "Highlights",
     "share.format.desc": "WebP ist viel kleiner – ideal zum Teilen. PNG ist größer, lässt sich aber überall öffnen.",
     "share.format.cancel": "Abbrechen"
   },

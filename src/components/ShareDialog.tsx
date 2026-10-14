@@ -2,8 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import type { Season, Slot } from "../lib/data";
 import { storage, type Collection } from "../lib/collection";
 import { useI18n } from "../lib/i18n";
-import { albumPng } from "../lib/exportImage";
-import { spriteText, variantText } from "../lib/content";
+import { albumPng, imageTheme } from "../lib/exportImage";
+import { summaryPng } from "../lib/exportSummary";
+import { savedTheme } from "../lib/theme";
+import { rarityLabel, spriteText, variantText } from "../lib/content";
 
 interface Props {
   season: Season;
@@ -17,6 +19,7 @@ export function ShareDialog({ season, slots, collection, onClose }: Props) {
   const { t, L, dir } = useI18n();
   const ref = useRef<HTMLDialogElement>(null);
   const [busy, setBusy] = useState(false);
+  const [layout, setLayout] = useState<"full" | "summary">("full");
 
   useEffect(() => {
     ref.current?.showModal();
@@ -27,7 +30,12 @@ export function ShareDialog({ season, slots, collection, onClose }: Props) {
   const download = async (format: "png" | "webp") => {
     setBusy(true);
     try {
-      const blob = await albumPng({
+      const draw = layout === "summary" ? summaryPng : albumPng;
+      const blob = await draw({
+        rarityLabel: (r) => rarityLabel(L, r),
+        highlightsTitle: t("share.summary.highlights"),
+        theme: imageTheme(savedTheme()),
+        url: new URL(`${import.meta.env.BASE_URL}sprites/`, location.origin).href,
         season,
         slots,
         collection,
@@ -37,7 +45,7 @@ export function ShareDialog({ season, slots, collection, onClose }: Props) {
         have: t("progress.have", { owned, total: slots.length }),
         legend: { owned: t("status.owned"), mastered: t("status.mastered"), missing: t("status.missing") },
         owner: storage.name().trim(),
-        footer: location.host + location.pathname.replace(/\/$/, ""),
+        footer: `${location.host}${import.meta.env.BASE_URL}sprites`,
         spriteName: (key) => spriteText(L, key).name,
         variantLabel: (key) => variantText(L, key).label,
         format,
@@ -45,7 +53,7 @@ export function ShareDialog({ season, slots, collection, onClose }: Props) {
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
       // Se o navegador não gerar WebP, o arquivo sai PNG: a extensão segue o tipo real.
-      a.download = `lockerdex-sprites-${season.code.toLowerCase()}.${blob.type === "image/webp" ? "webp" : "png"}`;
+      a.download = `lockerdex-${layout === "summary" ? "resumo" : "sprites"}-${season.code.toLowerCase()}.${blob.type === "image/webp" ? "webp" : "png"}`;
       a.click();
       setTimeout(() => URL.revokeObjectURL(a.href), 4000);
       ref.current?.close();
@@ -63,6 +71,15 @@ export function ShareDialog({ season, slots, collection, onClose }: Props) {
             ×
           </button>
         </header>
+
+        <div className="layout-pick" role="radiogroup" aria-label={t("share.layout.label")}>
+          {(["full", "summary"] as const).map((k) => (
+            <button key={k} type="button" role="radio" aria-checked={layout === k} onClick={() => setLayout(k)} disabled={busy}>
+              <b>{t(k === "full" ? "share.layout.full" : "share.layout.summary")}</b>
+              <span>{k === "full" ? "" : "1080×1920"}</span>
+            </button>
+          ))}
+        </div>
 
         <div className="fmt" role="group" aria-labelledby="fmt-h">
           <span className="fmt-ic" aria-hidden>

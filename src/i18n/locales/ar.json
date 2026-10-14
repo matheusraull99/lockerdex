@@ -308,6 +308,10 @@
     "week.starts": "يبدأ {time}",
     "week.source": "أحداث أسبوعية أعلنتها Epic Games، معروضة حسب منطقتك الزمنية.",
     "share.format.title": "اختر صيغة",
+    "share.layout.label": "تخطيط الصورة",
+    "share.layout.full": "الجدول الكامل",
+    "share.layout.summary": "ملخص (للقصة)",
+    "share.summary.highlights": "أبرز العناصر",
     "share.format.desc": "صيغة WebP أصغر بكثير، وهي مثالية للمشاركة. أما PNG فأكبر، لكنها تُفتح في أي مكان.",
     "share.format.cancel": "إلغاء"
   },

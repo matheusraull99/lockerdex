@@ -308,6 +308,10 @@
     "week.starts": "{time}开始",
     "week.source": "Epic Games 公布的每周活动，按你的时区显示。",
     "share.format.title": "选择格式",
+    "share.layout.label": "图片版式",
+    "share.layout.full": "完整表格",
+    "share.layout.summary": "摘要（快拍）",
+    "share.summary.highlights": "亮点",
     "share.format.desc": "WebP 体积小得多，适合分享。PNG 更大，但在任何地方都能打开。",
     "share.format.cancel": "取消"
   },

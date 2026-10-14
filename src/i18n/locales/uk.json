@@ -308,6 +308,10 @@
     "week.starts": "Почнеться {time}",
     "week.source": "Щотижневі події, оголошені Epic Games, у вашому часовому поясі.",
     "share.format.title": "Виберіть формат",
+    "share.layout.label": "Макет зображення",
+    "share.layout.full": "Повна таблиця",
+    "share.layout.summary": "Підсумок (для сторіз)",
+    "share.summary.highlights": "Обране",
     "share.format.desc": "WebP набагато менший — ідеально, щоб поділитися. PNG більший, але відкривається будь-де.",
     "share.format.cancel": "Скасувати"
   },

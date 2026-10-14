@@ -308,6 +308,10 @@
     "week.starts": "Começa {time}",
     "week.source": "Eventos semanais anunciados pela Epic Games, no teu fuso horário.",
     "share.format.title": "Escolhe um formato",
+    "share.layout.label": "Modelo da imagem",
+    "share.layout.full": "Tabela completa",
+    "share.layout.summary": "Resumo (story)",
+    "share.summary.highlights": "Destaques",
     "share.format.desc": "O WebP é bem mais pequeno — ideal para partilhar. O PNG é maior, mas abre em todo o lado.",
     "share.format.cancel": "Cancelar"
   },

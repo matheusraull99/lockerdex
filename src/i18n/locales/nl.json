@@ -308,6 +308,10 @@
     "week.starts": "Begint {time}",
     "week.source": "Wekelijkse evenementen aangekondigd door Epic Games, weergegeven in jouw tijdzone.",
     "share.format.title": "Kies een formaat",
+    "share.layout.label": "Afbeeldingsindeling",
+    "share.layout.full": "Volledige tabel",
+    "share.layout.summary": "Samenvatting (story)",
+    "share.summary.highlights": "Uitgelicht",
     "share.format.desc": "WebP is veel kleiner – ideaal om te delen. PNG is groter, maar opent overal.",
     "share.format.cancel": "Annuleren"
   },

@@ -308,6 +308,10 @@
     "week.starts": "Dimulai {time}",
     "week.source": "Event mingguan yang diumumkan Epic Games, ditampilkan sesuai zona waktumu.",
     "share.format.title": "Pilih format",
+    "share.layout.label": "Tata letak gambar",
+    "share.layout.full": "Tabel lengkap",
+    "share.layout.summary": "Ringkasan (story)",
+    "share.summary.highlights": "Sorotan",
     "share.format.desc": "WebP jauh lebih kecil — pas untuk dibagikan. PNG lebih besar, tapi bisa dibuka di mana saja.",
     "share.format.cancel": "Batal"
   },

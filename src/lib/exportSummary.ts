@@ -211,10 +211,19 @@ export async function summaryPng(o: SummaryImageOptions): Promise<Blob> {
   text(`${o.legend.mastered}: ${mastered}`, pad + 62, my + 13, `800 40px ${DISPLAY}`, "#f1edff");
 
   // Destaques: as dominadas primeiro, depois as de raridade mais alta.
+  // Um por elemental, para não ficar tudo do mesmo (a variante mais especial que a pessoa tem). Se
+  // sobrar lugar (coleção pequena), completa com as outras figurinhas, na mesma ordem.
   const order: Record<string, number> = Object.fromEntries(RARITIES.map((r, i) => [r, i]));
-  const picks = [...owned]
-    .sort((a, b) => (collection[b.id] ?? 0) - (collection[a.id] ?? 0) || order[a.sprite.rarity] - order[b.sprite.rarity] || a.no - b.no)
-    .slice(0, 8);
+  const vOrder: Record<string, number> = Object.fromEntries(season.variants.map((v, i) => [v.key, i]));
+  const byStatus = (a: (typeof owned)[number], b: (typeof owned)[number]) => (collection[b.id] ?? 0) - (collection[a.id] ?? 0);
+  const ranked = [...owned].sort((a, b) => byStatus(a, b) || order[a.sprite.rarity] - order[b.sprite.rarity] || a.no - b.no);
+  const best = new Map<string, (typeof owned)[number]>();
+  for (const s of owned) {
+    const cur = best.get(s.sprite.key);
+    if (!cur || byStatus(cur, s) > 0 || (byStatus(cur, s) === 0 && (vOrder[s.variant] ?? 0) > (vOrder[cur.variant] ?? 0))) best.set(s.sprite.key, s);
+  }
+  const firsts = [...best.values()].sort((a, b) => byStatus(a, b) || order[a.sprite.rarity] - order[b.sprite.rarity] || a.no - b.no);
+  const picks = [...firsts, ...ranked.filter((s) => !firsts.includes(s))].slice(0, 8);
   if (picks.length) {
     text(o.highlightsTitle.toUpperCase(), pad, 1290, `800 34px ${DISPLAY}`, th.soft);
     const colorOf = Object.fromEntries(season.variants.map((v) => [v.key, v.color]));

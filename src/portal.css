@@ -1521,6 +1521,30 @@
   filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.35));
 }
 
+.wk-fig::before {
+  content: "";
+  position: absolute;
+  top: 24%;
+  width: 95%;
+  height: 40%;
+  --sp: color-mix(in srgb, var(--ink) 55%, transparent);
+  background:
+    linear-gradient(to var(--tail), var(--sp), transparent) 0 8% / 100% 2px no-repeat,
+    linear-gradient(to var(--tail), var(--sp), transparent) 0 40% / 78% 2px no-repeat,
+    linear-gradient(to var(--tail), var(--sp), transparent) 0 72% / 92% 2px no-repeat;
+  animation: wk-speed 0.17s linear infinite;
+}
+
+.walker[data-dir="1"] .wk-fig::before {
+  --tail: left;
+  right: 70%;
+}
+
+.walker[data-dir="-1"] .wk-fig::before {
+  --tail: right;
+  left: 70%;
+}
+
 .wk-part {
   position: absolute;
   inset: 0;
@@ -1559,17 +1583,17 @@
   animation: wk-pick 0.55s cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
-/* poeira atrás dos pés: três bolinhas que ficam para trás e somem a cada passo */
+/* poeira atrás dos pés: bolinhas que ficam para trás e somem a cada passada */
 .walker-btn::after {
   content: "";
   position: absolute;
   bottom: 1px;
-  width: 46%;
-  height: 14px;
+  width: 52%;
+  height: 16px;
   background:
-    radial-gradient(circle at 78% 62%, rgb(var(--shadow) / 0.32) 0 3.5px, transparent 4.5px),
-    radial-gradient(circle at 48% 38%, rgb(var(--shadow) / 0.26) 0 2.6px, transparent 3.6px),
-    radial-gradient(circle at 20% 66%, rgb(var(--shadow) / 0.2) 0 2px, transparent 3px);
+    radial-gradient(circle at 80% 62%, color-mix(in srgb, var(--ink) 38%, transparent) 0 4px, transparent 5px),
+    radial-gradient(circle at 50% 36%, color-mix(in srgb, var(--ink) 30%, transparent) 0 3px, transparent 4px),
+    radial-gradient(circle at 20% 68%, color-mix(in srgb, var(--ink) 24%, transparent) 0 2.4px, transparent 3.4px);
   animation: wk-dust 0.34s linear infinite;
 }
 
@@ -1611,56 +1635,68 @@
   }
 }
 
-/* corrida: o corpo se inclina para a frente e quica; a cada passada ele sobe e pende para um lado */
+/* corrida: o corpo vai bem inclinado para a frente e SALTA a cada passada (os dois pés saem do chão) */
 @keyframes wk-run {
   0%,
   50%,
   100% {
-    transform: translateY(0) rotate(calc(var(--lean) * 9deg));
+    transform: translateY(0) rotate(calc(var(--lean) * 22deg)) scaleY(0.96);
   }
-  25% {
-    transform: translateY(-6%) rotate(calc(var(--lean) * 11deg + 2deg));
-  }
+  25%,
   75% {
-    transform: translateY(-6%) rotate(calc(var(--lean) * 11deg - 2deg));
+    transform: translateY(-16%) rotate(calc(var(--lean) * 26deg)) scaleY(1.03);
   }
 }
 
-/* cada perna sobe forte a partir do quadril (o joelho vai para cima) e estica de novo */
+/* pernas em tesoura a partir do quadril: uma vai à frente enquanto a outra vai para trás; no meio
+   da passada a perna que passa por baixo do corpo se dobra (encurta) */
 @keyframes wk-step {
   0%,
-  50%,
   100% {
-    transform: scaleY(1);
+    transform: rotate(calc(var(--lean) * 38deg)) scaleY(1);
   }
   25% {
-    transform: scaleY(0.78);
+    transform: rotate(0deg) scaleY(0.72);
+  }
+  50% {
+    transform: rotate(calc(var(--lean) * -38deg)) scaleY(1);
+  }
+  75% {
+    transform: rotate(0deg) scaleY(0.72);
   }
 }
 
-/* o tronco, que segura a picareta, balança com a passada */
+/* o tronco, que segura a picareta, gira contra as pernas */
 @keyframes wk-torso {
   0%,
-  50%,
   100% {
-    transform: rotate(0);
+    transform: rotate(calc(var(--lean) * -10deg));
   }
-  25% {
-    transform: rotate(calc(var(--lean) * 3deg));
-  }
-  75% {
-    transform: rotate(calc(var(--lean) * -3deg));
+  50% {
+    transform: rotate(calc(var(--lean) * 10deg));
   }
 }
 
 @keyframes wk-dust {
   from {
-    opacity: 0.9;
+    opacity: 0.95;
     transform: translateX(0) scale(1);
   }
   to {
     opacity: 0;
-    transform: translateX(calc(var(--lean) * -14px)) scale(1.5);
+    transform: translateX(calc(var(--lean) * -22px)) scale(1.8);
+  }
+}
+
+/* riscos de velocidade atrás do corpo */
+@keyframes wk-speed {
+  from {
+    opacity: 0.9;
+    transform: translateX(0) scaleX(1);
+  }
+  to {
+    opacity: 0.1;
+    transform: translateX(calc(var(--lean) * -10px)) scaleX(1.25);
   }
 }
 

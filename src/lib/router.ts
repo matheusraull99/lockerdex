@@ -10,7 +10,7 @@ import { gcCount } from "./stats";
  * Dados de compartilhamento continuam no "#" (#c=… da coleção, #w=…&k=… das listas), para não irem ao servidor.
  * Versões por idioma para o Google: /lockerdex/pt-BR/shop/ (o prefixo escolhe o idioma e segue nos links).
  */
-export type Route = "sprites" | "shop" | "cosmetics" | "lists" | "leaks" | "tracks" | "map" | "news" | "season" | "history" | "lore" | "islands" | "more";
+export type Route = "home" | "sprites" | "shop" | "cosmetics" | "lists" | "leaks" | "tracks" | "map" | "news" | "season" | "history" | "lore" | "islands" | "more";
 
 // A mesma tabela alimenta o build (vite.config.ts), que gera uma página pronta por endereço.
 export const SLUG: Record<Route, string> = SLUGS;
@@ -44,7 +44,9 @@ function routeOfSlug(slug: string): Route | null {
 }
 
 export function parseLocation(): { route: Route; params: URLSearchParams } {
-  const route = routeOfSlug(pathParts().slug) ?? "sprites";
+  let route = routeOfSlug(pathParts().slug) ?? "home";
+  // Links de coleção antigos (/lockerdex/#c=…, de quando o álbum era a página inicial) continuam abrindo o álbum.
+  if (route === "home" && /(^#|&)c=/.test(location.hash)) route = "sprites";
   // Parâmetros da busca (?q=, ?tab=) + os do "#" em formato chave=valor (listas compartilhadas).
   const params = new URLSearchParams(location.search);
   const h = location.hash.slice(1);
@@ -73,9 +75,15 @@ export function go(route: Route, params?: Record<string, string>) {
 /** Links antigos: "#/shop" → /shop/, "#/lists?w=…" → /lists/#w=… (os dados das listas ficam no "#"). */
 export function migrateHashRoute() {
   const h = location.hash;
+  // Coleção compartilhada no endereço antigo (/lockerdex/#c=…): passa para o do álbum, /lockerdex/sprites/#c=…
+  if (/(^#|&)c=/.test(h) && routeOfSlug(pathParts().slug) === "home") {
+    history.replaceState(null, "", href("sprites") + h);
+    return;
+  }
   if (!h.startsWith("#/")) return;
   const [path, query = ""] = h.slice(2).split("?");
-  const route = routeOfSlug(path) ?? (path === "tracks" ? "tracks" : "sprites");
+  // "#/" era o álbum, que agora tem endereço próprio
+  const route = path === "" ? "sprites" : (routeOfSlug(path) ?? (path === "tracks" ? "tracks" : "sprites"));
   const qs = new URLSearchParams(query);
   const share = new URLSearchParams();
   for (const k of ["w", "k", "n"]) if (qs.has(k)) (share.set(k, qs.get(k)!), qs.delete(k));

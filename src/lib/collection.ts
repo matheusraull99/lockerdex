@@ -1,4 +1,5 @@
 import { MAX_ID, type Status } from "./data";
+import { SLUG } from "./router";
 
 /** Coleção: status por id de figurinha. Ausente = falta. */
 export type Collection = Record<number, Status>;
@@ -84,7 +85,7 @@ export function decode(code: string): Collection | null {
 export function shareUrl(c: Collection, name: string, season: number) {
   const p = new URLSearchParams({ c: encode(c) || "1", s: String(season) });
   if (name.trim()) p.set("n", name.trim().slice(0, 32));
-  return `${location.origin}${import.meta.env.BASE_URL}#${p.toString()}`;
+  return `${location.origin}${import.meta.env.BASE_URL}${SLUG.sprites}/#${p.toString()}`;
 }
 
 export function readShared(): { collection: Collection; name: string; season?: number } | null {

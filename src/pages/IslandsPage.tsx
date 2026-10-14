@@ -17,6 +17,7 @@ import {
 } from "../lib/islands";
 import { Loading } from "../components/Loading";
 import { PeakChart } from "../components/PeakChart";
+import { IslandArt } from "../components/IslandArt";
 
 type UiKey = Parameters<ReturnType<typeof useI18n>["t"]>[0];
 
@@ -174,6 +175,9 @@ function RankRow({ code, rank }: { code: string; rank: number }) {
     <li>
       <a href={href("islands", { code })}>
         <span className="isl-pos">{rank}</span>
+        <span className="isl-thumb">
+          <IslandArt code={code} />
+        </span>
         <span className="tr-main">
           <b>{isl.data?.title ?? code}</b>
           <small>
@@ -253,7 +257,8 @@ function IslandCard({ code }: { code: string }) {
 
   return (
     <article className="isl-card">
-      <header className="isl-head">
+      <header className="isl-head isl-banner">
+        <IslandArt code={i.code} />
         <div>
           <h2>{i.title}</h2>
           <p>

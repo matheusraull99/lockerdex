@@ -63,7 +63,8 @@ const HREFLANG: Record<string, string[]> = {
 
 /** Título e descrição de cada rota, com textos que já existem nos 22 idiomas. */
 const ROUTE_TEXT: Record<string, { title: string | null; desc: string }> = {
-  sprites: { title: null, desc: "more.sprites" },
+  home: { title: null, desc: "home.desc" },
+  sprites: { title: "nav.sprites", desc: "more.sprites" },
   shop: { title: "nav.shop", desc: "more.shop" },
   cosmetics: { title: "nav.cosmetics", desc: "more.cosmetics" },
   lists: { title: "nav.lists", desc: "more.wishlist" },
@@ -196,7 +197,7 @@ function seoPages(env: Record<string, string>): Plugin {
           `<meta property="og:locale" content="${OG_LOCALE[code] ?? "en_US"}" />`,
           `<meta name="twitter:card" content="summary_large_image" />`,
           ...(verification ? [`<meta name="google-site-verification" content="${esc(verification)}" />`] : []),
-          ...(route === "sprites" && !opts.noindex
+          ...(route === "home" && !opts.noindex
             ? [
                 `<script type="application/ld+json">${JSON.stringify({
                   "@context": "https://schema.org",
@@ -211,7 +212,7 @@ function seoPages(env: Record<string, string>): Plugin {
         ].join("\n    ");
         // Texto e links visíveis antes do JavaScript (e para quem não roda JavaScript).
         const nav = Object.keys(slugs)
-          .map((r) => `<li><a href="${base}${pathOf(lang, r)}">${esc(ROUTE_TEXT[r].title ? t(ROUTE_TEXT[r].title!) : t("nav.sprites"))}</a></li>`)
+          .map((r) => `<li><a href="${base}${pathOf(lang, r)}">${esc(ROUTE_TEXT[r].title ? t(ROUTE_TEXT[r].title!) : "Lockerdex")}</a></li>`)
           .join("");
         const body =
           route === "history" || route === "lore"
@@ -236,7 +237,7 @@ function seoPages(env: Record<string, string>): Plugin {
         }
       }
       // 404 do GitHub Pages: abre o app (que resolve o endereço) e não entra no Google.
-      writeFileSync(resolve(outDir, "404.html"), page(null, "sprites", { noindex: true }).html);
+      writeFileSync(resolve(outDir, "404.html"), page(null, "home", { noindex: true }).html);
 
       writeFileSync(
         resolve(outDir, "sitemap.xml"),

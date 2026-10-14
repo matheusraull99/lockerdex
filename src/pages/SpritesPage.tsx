@@ -12,7 +12,6 @@ import { Detail } from "../components/Detail";
 import { ShareDialog } from "../components/ShareDialog";
 import { Compare } from "../components/Compare";
 import { WeekEvents } from "../components/WeekEvents";
-import { HomeFeature } from "../components/HomeFeature";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -113,8 +112,6 @@ export function SpritesPage() {
 
   return (
     <>
-      {!friend && <HomeFeature />}
-
       <div className="page-bar">
         <nav className="seasons" aria-label={t("nav.season")}>
           {SEASONS.map((s) => (

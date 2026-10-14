@@ -5,6 +5,7 @@ import { lastValue, useEco, type GenreRanking, type Island, type Point } from ".
 import { href } from "../lib/router";
 import { entryView } from "../pages/ShopPage";
 import { hideBroken } from "../lib/data";
+import { IslandArt } from "./IslandArt";
 
 /*
  * Topo da página inicial no estilo do fortnite.com: destaques grandes que se revezam e fileiras que rolam para o lado.
@@ -177,6 +178,7 @@ function IslandCard({ code, rank }: { code: string; rank: number }) {
   return (
     <li>
       <a className="fn-isl" href={href("islands", { code })}>
+        <IslandArt code={code} />
         <span className="fn-isl-pos">{rank}</span>
         <b>{isl.data?.title ?? code}</b>
         <small>{isl.data ? t("islands.by", { creator: isl.data.creatorCode }) : code}</small>

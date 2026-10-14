@@ -22,6 +22,7 @@ import { SeasonPage } from "./pages/SeasonPage";
 import { HistoryPage } from "./pages/HistoryPage";
 import { MorePage } from "./pages/MorePage";
 import { IslandsPage } from "./pages/IslandsPage";
+import { HomePage } from "./pages/HomePage";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -92,17 +93,19 @@ export default function App() {
 
   // As páginas secundárias acendem "Mais"; no celular, também as abas que só existem no topo (listas, história).
   // O enredo é o segundo modo da aba História.
-  const activeTab: Route = TABS.some((x) => x.route === route) ? route : route === "lore" ? "history" : "more";
-  const activeMobile: Route = TABS.some((x) => x.route === route && x.mobile) ? route : route === "lore" ? "history" : "more";
+  // A página inicial não é aba: nenhuma acende (o logo leva até ela).
+  const activeTab: Route | null = route === "home" ? null : TABS.some((x) => x.route === route) ? route : route === "lore" ? "history" : "more";
+  const activeMobile: Route | null = route === "home" ? null : TABS.some((x) => x.route === route && x.mobile) ? route : route === "lore" ? "history" : "more";
 
   // Título da aba por página e por idioma (é o que aparece no histórico e no Google).
   useEffect(() => {
     const NAV: Record<Route, Parameters<typeof t>[0]> = {
+      home: "app.tagline",
       sprites: "nav.sprites", shop: "nav.shop", cosmetics: "nav.cosmetics", lists: "nav.lists", leaks: "nav.leaks",
       tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", islands: "nav.islands", more: "nav.more",
     };
     // Mesmo formato das páginas geradas no build (vite.config.ts), para o Google ver um título só.
-    document.title = route === "sprites" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
+    document.title = route === "home" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
   }, [route, t]);
 
   const page = (() => {
@@ -127,6 +130,8 @@ export default function App() {
         return <HistoryPage kind="history" />;
       case "lore":
         return <HistoryPage kind="lore" />;
+      case "home":
+        return <HomePage />;
       case "islands":
         return <IslandsPage key={params.toString()} params={params} />;
       case "more":
@@ -140,7 +145,7 @@ export default function App() {
     <UiContext.Provider value={ui}>
       <div className="app">
         <header className="top">
-          <a className="brand" href={href("sprites")}>
+          <a className="brand" href={href("home")}>
             <AvatarBadge className="brand-av" />
             <span className="brand-tx">
               <span className="brand-w">

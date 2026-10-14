@@ -74,6 +74,7 @@ const ROUTE_TEXT: Record<string, { title: string | null; desc: string }> = {
   season: { title: "nav.season", desc: "more.season" },
   history: { title: "nav.history", desc: "more.history" },
   lore: { title: "nav.lore", desc: "more.lore" },
+  islands: { title: "nav.islands", desc: "more.islands" },
   more: { title: "nav.more", desc: "app.tagline" },
 };
 

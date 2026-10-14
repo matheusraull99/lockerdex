@@ -1664,3 +1664,282 @@
     outline-offset: 2px;
   }
 }
+
+/* ---------- ilhas (Fortnite Data API da Epic) ---------- */
+.isl-search {
+  flex-wrap: wrap;
+}
+
+.isl-search .search {
+  flex: 1 1 220px;
+}
+
+.isl-bad {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--dust);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.isl-now,
+.isl-rank {
+  margin-top: 18px;
+}
+
+.isl-hero {
+  display: grid;
+  gap: 2px;
+  margin: 10px 0 4px;
+}
+
+.isl-hero b {
+  font: 900 clamp(44px, 8vw, 72px) / 0.9 var(--display);
+}
+
+.isl-hero span {
+  font-weight: 700;
+}
+
+.isl-hero small {
+  color: var(--ink-soft);
+  font-size: 13.5px;
+}
+
+.isl-total {
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.isl-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.isl-list a {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--page);
+  color: inherit;
+  text-decoration: none;
+}
+
+.isl-list a:hover {
+  outline: 2px solid var(--dust);
+}
+
+.isl-pos {
+  font: 900 30px/1 var(--display);
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+.isl-list li:nth-child(-n + 3) .isl-pos {
+  color: var(--dust);
+}
+
+.isl-ccu {
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.isl-card {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--page);
+}
+
+.isl-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 20px;
+}
+
+.isl-head h2 {
+  margin: 0;
+  font: 900 clamp(28px, 5vw, 44px) / 0.95 var(--display);
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.isl-head p {
+  margin: 6px 0 0;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.isl-head code {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.isl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.isl-act {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.isl-ranks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.isl-ranks a {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.isl-day {
+  margin: 18px 0 8px;
+  font: 800 18px/1 var(--display);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.isl-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.isl-stats div {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--paper);
+}
+
+.isl-stats dt {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.isl-stats dd {
+  margin: 2px 0 0;
+  font: 900 30px/1 var(--display);
+}
+
+.isl-back {
+  margin: 14px 0 0;
+  font-weight: 700;
+}
+
+/* gráfico de jogadores por hora: uma série, cor de destaque, eixos discretos */
+.peak {
+  margin: 16px 0 0;
+}
+
+.peak figcaption {
+  margin-bottom: 6px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.peak-box {
+  position: relative;
+  touch-action: pan-y;
+}
+
+.peak-box svg {
+  display: block;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.peak-grid line {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.peak-grid text,
+.peak-x {
+  fill: var(--ink-soft);
+  font-size: 11px;
+}
+
+.peak-area {
+  fill: var(--dust);
+  opacity: 0.14;
+}
+
+.peak-line {
+  fill: none;
+  stroke: var(--dust);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.peak-hover line {
+  stroke: var(--ink-soft);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.peak-hover circle {
+  fill: var(--dust);
+  stroke: var(--page);
+  stroke-width: 2;
+}
+
+.peak-tip {
+  position: absolute;
+  top: -6px;
+  transform: translate(-50%, -100%);
+  display: grid;
+  justify-items: center;
+  padding: 5px 9px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.peak-tip b {
+  font-size: 14px;
+}
+
+@media (max-width: 479px) {
+  .isl-list a {
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+
+  .isl-ccu {
+    grid-column: 2;
+  }
+}

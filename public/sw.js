@@ -20,7 +20,7 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
-  const isApi = url.origin === "https://fortnite-api.com" && req.destination !== "image";
+  const isApi = (url.origin === "https://fortnite-api.com" || url.origin === "https://api.fortnite.com") && req.destination !== "image";
   if (url.origin !== location.origin && req.destination !== "image" && !isApi) return;
 
   // Dados ao vivo (loja, notícias, mapa…): rede primeiro; sem internet, a última versão salva.

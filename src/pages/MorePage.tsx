@@ -28,6 +28,7 @@ const GROUPS: { title: UiKey; items: { route: Route; params?: Record<string, str
     title: "more.game",
     items: [
       { route: "map", label: "nav.map", desc: "more.map", icon: "⌖" },
+      { route: "islands", label: "nav.islands", desc: "more.islands", icon: "⛰" },
       { route: "news", label: "nav.news", desc: "more.news", icon: "✉" },
       { route: "season", label: "nav.season", desc: "more.season", icon: "◷" },
       { route: "history", label: "nav.history", desc: "more.history", icon: "⌛" },

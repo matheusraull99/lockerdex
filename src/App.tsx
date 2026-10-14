@@ -21,6 +21,7 @@ import { NewsPage } from "./pages/NewsPage";
 import { SeasonPage } from "./pages/SeasonPage";
 import { HistoryPage } from "./pages/HistoryPage";
 import { MorePage } from "./pages/MorePage";
+import { IslandsPage } from "./pages/IslandsPage";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -98,7 +99,7 @@ export default function App() {
   useEffect(() => {
     const NAV: Record<Route, Parameters<typeof t>[0]> = {
       sprites: "nav.sprites", shop: "nav.shop", cosmetics: "nav.cosmetics", lists: "nav.lists", leaks: "nav.leaks",
-      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", more: "nav.more",
+      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", islands: "nav.islands", more: "nav.more",
     };
     // Mesmo formato das páginas geradas no build (vite.config.ts), para o Google ver um título só.
     document.title = route === "sprites" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
@@ -126,6 +127,8 @@ export default function App() {
         return <HistoryPage kind="history" />;
       case "lore":
         return <HistoryPage kind="lore" />;
+      case "islands":
+        return <IslandsPage key={params.toString()} params={params} />;
       case "more":
         return <MorePage />;
       default:

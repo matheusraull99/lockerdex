@@ -1479,7 +1479,7 @@
   width: 112px;
   pointer-events: none;
   --lean: 1; /* 1 = corre para a direita, -1 = para a esquerda */
-  animation: wk-across 7s linear forwards;
+  animation: wk-across 10s linear forwards;
 }
 
 .walker[data-dir="-1"] {
@@ -1514,7 +1514,7 @@
   height: 9px;
   border-radius: 50%;
   background: radial-gradient(closest-side, rgb(0 0 0 / 0.3), transparent);
-  animation: wk-shadow 0.25s ease-in-out infinite;
+  animation: wk-shadow 0.32s ease-in-out infinite;
 }
 
 /* poeira atrás dos pés: bolinhas que ficam para trás e somem a cada passada */
@@ -1528,7 +1528,7 @@
     radial-gradient(circle at 80% 62%, color-mix(in srgb, var(--ink) 38%, transparent) 0 4px, transparent 5px),
     radial-gradient(circle at 50% 36%, color-mix(in srgb, var(--ink) 30%, transparent) 0 3px, transparent 4px),
     radial-gradient(circle at 20% 68%, color-mix(in srgb, var(--ink) 24%, transparent) 0 2.4px, transparent 3.4px);
-  animation: wk-dust 0.25s linear infinite;
+  animation: wk-dust 0.32s linear infinite;
 }
 
 .walker[data-dir="1"] .walker-btn::after {
@@ -1545,7 +1545,7 @@
   position: relative;
   display: block;
   aspect-ratio: 242 / 300;
-  animation: wk-bob 0.25s ease-in-out infinite;
+  animation: wk-bob 0.32s ease-in-out infinite;
   filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.35));
 }
 
@@ -1563,7 +1563,7 @@
   height: 100%;
   user-select: none;
   -webkit-user-drag: none;
-  animation: wk-frames 0.5s steps(4) infinite;
+  animation: wk-frames 0.64s steps(4) infinite;
 }
 
 /* riscos de velocidade atrás do corpo */
@@ -1578,7 +1578,7 @@
     linear-gradient(to var(--tail), var(--sp), transparent) 0 10% / 100% 2px no-repeat,
     linear-gradient(to var(--tail), var(--sp), transparent) 0 45% / 78% 2px no-repeat,
     linear-gradient(to var(--tail), var(--sp), transparent) 0 80% / 92% 2px no-repeat;
-  animation: wk-speed 0.17s linear infinite;
+  animation: wk-speed 0.22s linear infinite;
 }
 
 .walker[data-dir="1"] .wk-fig::before {

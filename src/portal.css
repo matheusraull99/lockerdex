@@ -1478,10 +1478,12 @@
   z-index: 40;
   width: 72px;
   pointer-events: none;
-  animation: wk-across 18s linear forwards;
+  --lean: 1; /* 1 = corre para a direita, -1 = para a esquerda */
+  animation: wk-across 7s linear forwards;
 }
 
 .walker[data-dir="-1"] {
+  --lean: -1;
   animation-name: wk-back;
 }
 
@@ -1515,7 +1517,7 @@
   display: block;
   aspect-ratio: 988 / 1908;
   transform-origin: 59% 99%;
-  animation: wk-sway 0.9s ease-in-out infinite;
+  animation: wk-run 0.34s ease-in-out infinite;
   filter: drop-shadow(0 1px 1.5px rgb(0 0 0 / 0.35));
 }
 
@@ -1530,7 +1532,7 @@
 
 .wk-leg {
   transform-origin: 50% 56.5%;
-  animation: wk-step 0.9s ease-in-out infinite;
+  animation: wk-step 0.34s ease-in-out infinite;
 }
 
 .wk-leg-l {
@@ -1539,13 +1541,14 @@
 
 .wk-leg-r {
   clip-path: inset(56.5% 0 0 59.2%);
-  animation-delay: -0.45s;
+  animation-delay: -0.17s;
 }
 
 .wk-top {
   position: absolute;
   inset: 0;
   transform-origin: 59.2% 61.7%;
+  animation: wk-torso 0.34s ease-in-out infinite;
 }
 
 .wk-top .wk-part {
@@ -1554,6 +1557,28 @@
 
 .wk-swing {
   animation: wk-pick 0.55s cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+/* poeira atrás dos pés: três bolinhas que ficam para trás e somem a cada passo */
+.walker-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  width: 46%;
+  height: 14px;
+  background:
+    radial-gradient(circle at 78% 62%, rgb(var(--shadow) / 0.32) 0 3.5px, transparent 4.5px),
+    radial-gradient(circle at 48% 38%, rgb(var(--shadow) / 0.26) 0 2.6px, transparent 3.6px),
+    radial-gradient(circle at 20% 66%, rgb(var(--shadow) / 0.2) 0 2px, transparent 3px);
+  animation: wk-dust 0.34s linear infinite;
+}
+
+.walker[data-dir="1"] .walker-btn::after {
+  right: 84%;
+}
+
+.walker[data-dir="-1"] .walker-btn::after {
+  left: 84%;
 }
 
 /* faísca na ponta de baixo da picareta; está dentro do tronco, então gira junto na picaretada */
@@ -1586,22 +1611,22 @@
   }
 }
 
-/* passo: enquanto uma perna sobe, o corpo sobe um pouco e pende para a perna de apoio */
-@keyframes wk-sway {
+/* corrida: o corpo se inclina para a frente e quica; a cada passada ele sobe e pende para um lado */
+@keyframes wk-run {
   0%,
   50%,
   100% {
-    transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(calc(var(--lean) * 9deg));
   }
   25% {
-    transform: translateY(-2%) rotate(2deg);
+    transform: translateY(-6%) rotate(calc(var(--lean) * 11deg + 2deg));
   }
   75% {
-    transform: translateY(-2%) rotate(-2deg);
+    transform: translateY(-6%) rotate(calc(var(--lean) * 11deg - 2deg));
   }
 }
 
-/* a perna encurta a partir do quadril: o pé sobe sem abrir emenda na coxa */
+/* cada perna sobe forte a partir do quadril (o joelho vai para cima) e estica de novo */
 @keyframes wk-step {
   0%,
   50%,
@@ -1609,7 +1634,33 @@
     transform: scaleY(1);
   }
   25% {
-    transform: scaleY(0.93);
+    transform: scaleY(0.78);
+  }
+}
+
+/* o tronco, que segura a picareta, balança com a passada */
+@keyframes wk-torso {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(calc(var(--lean) * 3deg));
+  }
+  75% {
+    transform: rotate(calc(var(--lean) * -3deg));
+  }
+}
+
+@keyframes wk-dust {
+  from {
+    opacity: 0.9;
+    transform: translateX(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(calc(var(--lean) * -14px)) scale(1.5);
   }
 }
 

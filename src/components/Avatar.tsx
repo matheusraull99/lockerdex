@@ -18,7 +18,7 @@ export function AvatarBadge({ className }: { className?: string }) {
 }
 
 /**
- * De vez em quando o personagem atravessa o rodapé com a picareta (a primeira vez entre 20 e 40 s,
+ * De vez em quando o personagem atravessa o rodapé correndo, com a picareta (a primeira vez entre 20 e 40 s,
  * depois a cada 3 a 6 minutos, só com a aba visível). Clicar nele dá uma picaretada. Com "reduzir
  * movimento" ligado no aparelho, ele não aparece.
  */
@@ -56,7 +56,7 @@ export function Walker() {
       }}
     >
       <button type="button" className="walker-btn" tabIndex={-1} aria-hidden onClick={() => setSwing((n) => n + 1)}>
-        {/* A mesma imagem três vezes, cada uma recortada numa parte: as pernas sobem alternadas (passos)
+        {/* A mesma imagem três vezes, cada uma recortada numa parte: as pernas sobem alternadas (a passada da corrida)
             e o tronco, que segura a picareta, gira na picaretada. */}
         <span className="wk-fig">
           <img className="wk-part wk-leg wk-leg-l" src={src} alt="" draggable={false} />

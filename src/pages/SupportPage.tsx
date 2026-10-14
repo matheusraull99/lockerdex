@@ -3,24 +3,7 @@ import { useI18n } from "../lib/i18n";
 import { useUi } from "../lib/ui";
 import { pixConfig, pixPayload } from "../lib/pix";
 import { PixQr } from "../components/PixQr";
-
-/** Copia pelo navegador; se ele recusar (sem permissão), usa o jeito antigo com um campo escondido. */
-async function copy(text: string) {
-  try {
-    await navigator.clipboard.writeText(text);
-    return true;
-  } catch {
-    const ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed";
-    ta.style.opacity = "0";
-    document.body.appendChild(ta);
-    ta.select();
-    const ok = document.execCommand("copy");
-    ta.remove();
-    return ok;
-  }
-}
+import { copyText } from "../lib/clipboard";
 
 export function SupportPage() {
   const { t } = useI18n();
@@ -29,7 +12,7 @@ export function SupportPage() {
   const code = useMemo(() => (cfg ? pixPayload(cfg) : ""), [cfg?.key, cfg?.name, cfg?.city]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const doCopy = async (text: string) => {
-    toast((await copy(text)) ? t("support.copied") : t("support.copyFail"));
+    toast((await copyText(text)) ? t("support.copied") : t("support.copyFail"));
   };
 
   return (

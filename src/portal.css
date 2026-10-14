@@ -2124,52 +2124,42 @@
   }
 }
 
-/* linha de apoio em todas as páginas, abaixo do cabeçalho; no computador o QR do Pix fica ao lado do texto */
-.support-line {
+/* barrinha de apoio por Pix em todas as páginas, abaixo do cabeçalho */
+.supbar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
-  margin: 10px 0 0;
-  font-size: 13px;
-  font-weight: 700;
+  width: fit-content;
+  max-width: 100%;
+  margin: 10px 0 0 auto;
+  padding: 6px 10px 6px 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--page);
 }
 
-.support-line-t {
-  color: var(--ink-soft);
-  text-decoration: none;
-}
-
-.support-line-t:hover {
-  color: var(--ink);
-  text-decoration: underline;
-}
-
-.support-line-t span {
-  color: var(--dust);
-}
-
-.support-line-qr {
+.supbar-qr {
   position: relative;
   flex: none;
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   line-height: 0;
 }
 
-/* pequeno ao lado do texto; com o mouse em cima (ou foco) amplia, e aí o celular consegue ler */
-.support-line-qr svg {
+/* pequeno em repouso; com o mouse em cima (ou foco) amplia, e aí o celular consegue ler */
+.supbar-qr svg {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 80px;
-  height: 80px;
+  left: 0;
+  width: 64px;
+  height: 64px;
   border-radius: 8px;
   transition: width 0.15s ease, height 0.15s ease, box-shadow 0.15s ease;
 }
 
-.support-line-qr:hover svg,
-.support-line-qr:focus-visible svg {
+.supbar-qr:hover svg,
+.supbar-qr:focus-visible svg {
   z-index: 25;
   width: 200px;
   height: 200px;
@@ -2177,11 +2167,68 @@
   box-shadow: 0 10px 30px rgb(0 0 0 / 0.5);
 }
 
+.supbar-tx {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  font-size: 13px;
+}
+
+.supbar-t {
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.supbar-t:hover {
+  text-decoration: underline;
+}
+
+.supbar-t span {
+  color: var(--dust);
+}
+
+.supbar-to {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+
+.supbar-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.supbar-btn {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: none;
+  color: var(--ink);
+  font: 700 12px/1 var(--body);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.supbar-btn:hover {
+  border-color: var(--dust);
+}
+
+.supbar-main {
+  border-color: var(--dust);
+  background: var(--dust);
+  color: var(--dust-ink);
+}
+
 @media (max-width: 720px) {
-  .support-line {
+  .supbar {
+    width: auto;
+    margin-inline: 0;
+    padding: 6px 8px;
     justify-content: center;
   }
-  .support-line-qr {
+  .supbar-qr,
+  .supbar-key,
+  .supbar-to {
     display: none;
   }
 }

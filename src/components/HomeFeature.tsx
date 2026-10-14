@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { useApi, type MapData, type NewsMotd, type Shop, type ShopEntry } from "../lib/api";
 import { useI18n } from "../lib/i18n";
 import { lastValue, useEco, type GenreRanking, type Island, type Point } from "../lib/islands";
@@ -61,11 +61,16 @@ export function HomeFeature({ afterHero }: { afterHero?: ReactNode }) {
   const n = slides.length;
   const at = n ? cur % n : 0;
 
+  // Os slides chegam aos poucos (loja, notícia, jogadores, jogo grátis). O tempo de 7 s não pode recomeçar a
+  // cada slide novo (a 1ª troca demorava até tudo chegar): ele só depende de haver 2 ou mais, e o total é lido na hora.
+  const nRef = useRef(n);
+  nRef.current = n;
+  const multi = n >= 2;
   useEffect(() => {
-    if (paused || hold || n < 2) return;
-    const id = setTimeout(() => setCur((c) => (c + 1) % n), ROTATE_MS);
+    if (paused || hold || !multi) return;
+    const id = setTimeout(() => setCur((c) => (c + 1) % nRef.current), ROTATE_MS);
     return () => clearTimeout(id);
-  }, [cur, paused, hold, n]);
+  }, [cur, paused, hold, multi]);
 
   return (
     <>

@@ -20,6 +20,7 @@ export function WeekEvents() {
   const day = new Intl.DateTimeFormat(lang, { weekday: "short" });
   const time = new Intl.DateTimeFormat(lang, { hour: "numeric", minute: "2-digit" });
   const list = new Intl.ListFormat(lang, { type: "conjunction" });
+  const dm = new Intl.DateTimeFormat(lang, { day: "numeric", month: "short", calendar: "gregory" });
   const localWd = new Date(now).getDay();
 
   const events = weeklyEvents(now);
@@ -35,8 +36,8 @@ export function WeekEvents() {
           let when: string;
           let status: string;
           if (e.key === "fm") {
-            // A Epic só diz o dia: mostra o dia do início no calendário de quem vê.
-            when = day.format(first.start);
+            // A Epic só diz o dia do início (e que vai até 1º de novembro): mostra o período no calendário de quem vê.
+            when = dm.formatRange(first.start, first.end);
             status = e.active ? t("week.now") : t("week.starts", { time: relTime(lang, first.start, now) });
           } else if (e.key === "thu") {
             // A Epic não divulga a hora do elemental novo: mostra só o dia, no calendário de quem vê.

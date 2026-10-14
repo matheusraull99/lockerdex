@@ -3,7 +3,8 @@
  * (o horário de verão americano muda a hora em outros países; o cálculo abaixo já considera isso):
  *   segunda 9h → terça 9h   bônus de nível (2× XP e 2× Poeira; lendários e míticos mais comuns)
  *   quinta                  elemental ou variante novo (a Epic não informa a hora)
- *   sábado 15h30 e 21h30    Horas do Poder (1 h cada)
+ *   sábado 14h e 21h        Horas do Poder (2 h cada; os comunicados da Epic de 03/10 e 10/10 dizem 14h e 21h ET,
+ *                           e a página de ajuda ainda cita 15h30 e 21h30)
  */
 import { SEASON_END } from "./ui";
 
@@ -81,7 +82,7 @@ export function weeklyEvents(now = Date.now()): WeeklyEvent[] {
     ...(now < SPECIAL.end ? [{ key: SPECIAL.key, windows: [{ start: SPECIAL.start, end: SPECIAL.end }] }] : []),
     { key: "mon", windows: nextWindows(now, 1, [[9, 0, 24]]) },
     { key: "thu", windows: nextWindows(now, 4, [[0, 0, 24]]) },
-    { key: "sat", windows: nextWindows(now, 6, [[15, 30, 1], [21, 30, 1]]) },
+    { key: "sat", windows: nextWindows(now, 6, [[14, 0, 2], [21, 0, 2]]) },
   ];
   return list.map((e) => ({ ...e, active: e.windows.some((w) => w.start <= now && now < w.end) }));
 }

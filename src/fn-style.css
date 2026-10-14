@@ -1,0 +1,502 @@
+/* Estilo fortnite.com (protótipo, branch estilo-fortnite).
+   Híbrido: a estrutura do site oficial (barra escura de ponta a ponta, destaques grandes, fileiras que rolam
+   para o lado, amarelo só na ação principal) por cima da identidade de álbum, que continua no resto. */
+:root {
+  --fn-bar: #0c0a16;
+  --fn-yellow: #f8e33c;
+  --fn-yellow-ink: #16121f;
+}
+
+/* ---------- barra do topo: escura nos dois temas, de ponta a ponta, presa ao rolar ---------- */
+.top {
+  /* tokens do tema escuro só aqui dentro, para a barra não mudar com o tema claro */
+  --ink: #f1edff;
+  --ink-soft: #a8a0cf;
+  --line: #2e2758;
+  --page: #19143a;
+  --paper: #110d24;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding: 10px 0;
+  color: var(--ink);
+  background: var(--fn-bar);
+  /* pinta a faixa até as bordas sem criar rolagem lateral */
+  box-shadow: 0 0 0 100vmax var(--fn-bar);
+  clip-path: inset(0 -100vmax);
+}
+
+.brand-w {
+  font-size: 30px;
+}
+
+.nav-top {
+  padding: 0;
+  gap: 2px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.nav-top a {
+  position: relative;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.nav-top a:hover {
+  color: var(--ink);
+  background: rgb(255 255 255 / 0.06);
+}
+
+.nav-top a[aria-current="page"] {
+  background: none;
+  color: var(--ink);
+}
+
+/* aba atual: traço na cor de destaque escolhida pela pessoa */
+.nav-top a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  inset: auto 12px 2px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--dust);
+}
+
+/* ação principal do topo em amarelo, como o "Garanta o Fortnite" */
+.btn-install {
+  border-color: var(--fn-yellow);
+  background: var(--fn-yellow);
+  color: var(--fn-yellow-ink);
+}
+
+.btn-install:hover {
+  background: #fff07a;
+  color: var(--fn-yellow-ink);
+}
+
+/* ---------- botão amarelo ---------- */
+.btn-fn {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 22px;
+  background: var(--fn-yellow);
+  color: var(--fn-yellow-ink);
+  font: 800 15px/1 var(--body);
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn-fn:hover {
+  background: #fff07a;
+  transform: translateY(-1px);
+}
+
+.btn-fn:focus-visible,
+.fn-dot:focus-visible,
+.fn-pause:focus-visible,
+.fn-card:focus-visible,
+.fn-isl:focus-visible {
+  outline: 3px solid var(--fn-yellow);
+  outline-offset: 3px;
+}
+
+/* ---------- destaques que se revezam ---------- */
+.fn-hero {
+  position: relative;
+  height: clamp(300px, 42vw, 460px);
+  margin-top: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--fn-bar);
+  color: #fff;
+  isolation: isolate;
+}
+
+.fn-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0s 0.6s;
+}
+
+.fn-slide[data-on] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s ease;
+}
+
+[dir="rtl"] .fn-slide::after {
+  transform: scaleX(-1); /* o texto fica à direita: o escuro vem da direita */
+}
+
+/* loja: o fundo é o degradê das cores que a Epic deu ao item */
+.fn-slide[data-kind="shop"] {
+  background: radial-gradient(120% 140% at 75% 40%, var(--c1) 0%, var(--c2) 70%);
+}
+
+.fn-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fn-slide[data-kind="now"] .fn-bg {
+  object-position: center 40%;
+  filter: saturate(0.8) brightness(0.55);
+  transform: scale(1.15);
+}
+
+/* escurece o lado do texto para ele ler bem sobre qualquer imagem */
+.fn-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(8 6 18 / 0.88) 0%, rgb(8 6 18 / 0.55) 42%, rgb(8 6 18 / 0) 70%);
+}
+
+.fn-art {
+  position: absolute;
+  z-index: 1;
+  inset-inline-end: 4%;
+  bottom: 0;
+  height: 100%;
+  width: 56%;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+[dir="rtl"] .fn-art {
+  object-position: bottom left;
+  filter: drop-shadow(0 18px 30px rgb(0 0 0 / 0.45));
+}
+
+.fn-slide[data-on] .fn-art {
+  animation: fn-rise 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes fn-rise {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+
+.fn-copy {
+  position: absolute;
+  z-index: 2;
+  inset-inline-start: clamp(20px, 4vw, 48px);
+  bottom: clamp(48px, 6vw, 64px);
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+  max-width: min(520px, 62%);
+}
+
+.fn-eyebrow {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fn-yellow);
+}
+
+.fn-copy h2 {
+  margin: 0;
+  font: 900 clamp(38px, 6.4vw, 76px) / 0.88 var(--display);
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  text-shadow: 0 2px 20px rgb(0 0 0 / 0.35);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* manchete de notícia é frase inteira: corpo menor que o nome de um item */
+.fn-slide[data-kind="news"] .fn-copy h2 {
+  font-size: clamp(30px, 4.2vw, 54px);
+}
+
+.fn-sub {
+  margin: 0 0 6px;
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(255 255 255 / 0.82);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* pontos e pausa, centralizados embaixo, numa pílula como no site oficial */
+.fn-ctl {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: rgb(8 6 18 / 0.55);
+  backdrop-filter: blur(6px);
+}
+
+.fn-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.45);
+  cursor: pointer;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.fn-dot[aria-current] {
+  width: 28px;
+  background: #fff;
+}
+
+.fn-pause {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-inline-start: 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: rgb(255 255 255 / 0.85);
+  color: var(--fn-bar);
+  font-size: 9px;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+/* ---------- fileiras que rolam para o lado ---------- */
+.fn-row {
+  margin-top: 26px;
+}
+
+.fn-row > header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.fn-row h2 {
+  margin: 0;
+  font: 900 clamp(24px, 3.4vw, 34px) / 1 var(--display);
+  text-transform: uppercase;
+}
+
+.fn-row > header a {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.fn-arrow {
+  display: inline-block;
+}
+
+[dir="rtl"] .fn-arrow {
+  transform: scaleX(-1);
+}
+
+.fn-row > header a:hover {
+  color: var(--dust);
+}
+
+.fn-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  margin: 0 -16px;
+  padding: 2px 16px 12px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 16px;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+
+.fn-scroll > li {
+  scroll-snap-align: start;
+}
+
+.fn-card {
+  position: relative;
+  display: block;
+  width: 168px;
+  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  overflow: hidden;
+  background: radial-gradient(130% 100% at 50% 30%, var(--c1) 0%, var(--c2) 85%);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.fn-card:hover {
+  transform: translateY(-3px);
+}
+
+.fn-card > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.fn-card-tx {
+  position: absolute;
+  inset: auto 0 0;
+  display: grid;
+  gap: 3px;
+  padding: 26px 10px 10px;
+  background: linear-gradient(transparent, rgb(8 6 18 / 0.88) 55%);
+}
+
+.fn-card-tx b {
+  font: 800 17px/1 var(--display);
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fn-card .price {
+  color: #fff;
+  font-size: 13px;
+}
+
+.fn-isl {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 2px;
+  width: 220px;
+  height: 100%;
+  min-height: 150px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--page);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.fn-isl:hover {
+  transform: translateY(-3px);
+  outline: 2px solid var(--dust);
+}
+
+.fn-isl-pos {
+  font: 900 40px/0.9 var(--display);
+  color: var(--dust);
+}
+
+.fn-isl b {
+  align-self: end;
+  font: 800 19px/1.02 var(--display);
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.fn-isl small {
+  color: var(--ink-soft);
+  font-size: 12.5px;
+}
+
+.fn-isl-ccu {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* a página do álbum começa depois das fileiras */
+.page-sprites .page-bar {
+  margin-top: 30px;
+}
+
+/* ---------- celular ---------- */
+@media (max-width: 720px) {
+  .top {
+    position: static; /* no celular a barra de abas de baixo já fica presa */
+  }
+
+  .fn-hero {
+    height: 420px;
+    margin-inline: -16px;
+    border-radius: 0;
+  }
+
+  .fn-slide::after {
+    background: linear-gradient(0deg, rgb(8 6 18 / 0.92) 0%, rgb(8 6 18 / 0.6) 45%, rgb(8 6 18 / 0) 75%);
+  }
+
+  .fn-art {
+    right: 50%;
+    transform: translateX(50%);
+    width: 92%;
+    height: 72%;
+    bottom: auto;
+    top: 0;
+    object-position: center top;
+  }
+
+  .fn-slide[data-on] .fn-art {
+    animation: none;
+  }
+
+  .fn-copy {
+    left: 16px;
+    right: 16px;
+    bottom: 52px;
+    max-width: none;
+  }
+
+  .fn-card {
+    width: 140px;
+  }
+
+  .fn-isl {
+    width: 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fn-slide,
+  .fn-slide[data-on],
+  .fn-dot,
+  .fn-card,
+  .fn-isl,
+  .btn-fn {
+    transition: none;
+  }
+
+  .fn-slide[data-on] .fn-art {
+    animation: none;
+  }
+}

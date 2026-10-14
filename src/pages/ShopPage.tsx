@@ -9,7 +9,7 @@ import { href } from "../lib/router";
 import { CosmeticDialog } from "../components/Cosmetic";
 import { Loading } from "../components/Loading";
 
-function entryView(e: ShopEntry) {
+export function entryView(e: ShopEntry) {
   const br = e.brItems ?? [];
   const main = br[0];
   const image =

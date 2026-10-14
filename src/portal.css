@@ -2124,30 +2124,64 @@
   }
 }
 
-/* linha de apoio acima do destaque da página inicial */
-.home-support {
-  margin: 10px 0 -6px;
-  text-align: right;
+/* linha de apoio em todas as páginas, abaixo do cabeçalho; no computador o QR do Pix fica ao lado do texto */
+.support-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 10px 0 0;
   font-size: 13px;
   font-weight: 700;
 }
 
-.home-support a {
+.support-line-t {
   color: var(--ink-soft);
   text-decoration: none;
 }
 
-.home-support a:hover {
+.support-line-t:hover {
   color: var(--ink);
   text-decoration: underline;
 }
 
-.home-support span {
+.support-line-t span {
   color: var(--dust);
 }
 
+.support-line-qr {
+  position: relative;
+  flex: none;
+  width: 80px;
+  height: 80px;
+  line-height: 0;
+}
+
+/* pequeno ao lado do texto; com o mouse em cima (ou foco) amplia, e aí o celular consegue ler */
+.support-line-qr svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  transition: width 0.15s ease, height 0.15s ease, box-shadow 0.15s ease;
+}
+
+.support-line-qr:hover svg,
+.support-line-qr:focus-visible svg {
+  z-index: 25;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.5);
+}
+
 @media (max-width: 720px) {
-  .home-support {
-    text-align: center;
+  .support-line {
+    justify-content: center;
+  }
+  .support-line-qr {
+    display: none;
   }
 }

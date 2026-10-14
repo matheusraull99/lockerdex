@@ -25,7 +25,8 @@ import { IslandsPage } from "./pages/IslandsPage";
 import { HomePage } from "./pages/HomePage";
 import { FreeGamesPage } from "./pages/FreeGamesPage";
 import { SupportPage } from "./pages/SupportPage";
-import { pixConfig } from "./lib/pix";
+import { pixConfig, pixPayload } from "./lib/pix";
+import { PixQr } from "./components/PixQr";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -63,7 +64,9 @@ function Icon({ name }: { name: string }) {
 export default function App() {
   const { t, lang, setLang } = useI18n();
   // O apoio é por Pix (só no Brasil): o coração do topo aparece em pt-BR e só se a chave estiver configurada.
-  const supportOn = lang === "pt-BR" && !!pixConfig();
+  const pix = pixConfig();
+  const supportOn = lang === "pt-BR" && !!pix;
+  const pixCode = useMemo(() => (pix ? pixPayload(pix) : ""), [pix?.key, pix?.name, pix?.city]); // eslint-disable-line react-hooks/exhaustive-deps
   const { route, params } = useRoute();
   const [toastMsg, setToastMsg] = useState("");
   const [installing, setInstalling] = useState(false);
@@ -205,6 +208,21 @@ export default function App() {
             </select>
           </label>
         </header>
+
+        {/* Apoio por Pix: uma linha pequena em todas as páginas, logo abaixo do cabeçalho (menos na própria página de apoio). */}
+        {supportOn && route !== "support" && (
+          <div className="support-line">
+            <a className="support-line-t" href={href("support")}>
+              <span aria-hidden>♥</span> {t("support.homeLine")}
+            </a>
+            {/* O QR só aparece no computador (no celular não dá para apontar a câmera para a própria tela). */}
+            {pixCode && (
+              <a className="support-line-qr" href={href("support")} title={t("support.zoom")}>
+                <PixQr data={pixCode} ecc="L" margin={2} label={t("support.qr")} />
+              </a>
+            )}
+          </div>
+        )}
 
         <main className={`page page-${route}`}>{page}</main>
 

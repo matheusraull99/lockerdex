@@ -612,3 +612,133 @@
     grid-column: 3;
   }
 }
+
+/* ---------- jogos grátis da Epic (pages/FreeGamesPage.tsx) ---------- */
+.fg-sec {
+  margin-top: 18px;
+}
+
+.fg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+  gap: 14px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fg-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--page);
+}
+
+.fg-card[data-live] {
+  outline: 2px solid var(--fn-yellow);
+  outline-offset: -2px;
+}
+
+.fg-art {
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: var(--fn-bar);
+}
+
+.fg-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fg-body {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding: 14px 16px 16px;
+}
+
+.fg-when {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.fg-badge {
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.fg-card[data-live] .fg-badge {
+  background: var(--fn-yellow);
+  color: var(--fn-yellow-ink);
+}
+
+.fg-body h3 {
+  margin: 2px 0 0;
+  font: 900 clamp(26px, 3.4vw, 34px) / 0.95 var(--display);
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.fg-seller {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.fg-desc {
+  margin: 2px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fg-act {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.fg-price {
+  font-size: 14px;
+}
+
+.fg-price s {
+  color: var(--ink-soft);
+}
+
+.fg-price b {
+  margin-inline-start: 4px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* os próximos ficam menores e mais discretos */
+.fg-next {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.fg-next .fg-body h3 {
+  font-size: 24px;
+}

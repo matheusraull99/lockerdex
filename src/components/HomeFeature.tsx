@@ -3,9 +3,11 @@ import { useApi, type MapData, type NewsMotd, type Shop, type ShopEntry } from "
 import { useI18n } from "../lib/i18n";
 import { lastValue, useEco, type GenreRanking, type Island, type Point } from "../lib/islands";
 import { href } from "../lib/router";
+import { relTime } from "../lib/ui";
 import { entryView } from "../pages/ShopPage";
 import { hideBroken } from "../lib/data";
 import { IslandArt } from "./IslandArt";
+import { useFreeGames } from "../lib/freeGames";
 
 /*
  * Topo da página inicial no estilo do fortnite.com: destaques grandes que se revezam e fileiras que rolam para o lado.
@@ -16,7 +18,7 @@ const ROTATE_MS = 7000;
 const hex = (c?: string) => (c && /^[0-9a-f]{6}/i.test(c) ? `#${c.slice(0, 6)}` : undefined);
 const tint = (e: ShopEntry) => ({ "--c1": hex(e.colors?.color1) ?? "#3b2a8f", "--c2": hex(e.colors?.color3) ?? hex(e.colors?.color2) ?? "#140f2e" }) as CSSProperties;
 
-type Slide = { key: string; eyebrow: string; title: string; sub?: string; cta: string; to: string; art?: string; bg?: string; style?: CSSProperties; kind: "shop" | "now" | "news" };
+type Slide = { key: string; eyebrow: string; title: string; sub?: string; cta: string; to: string; art?: string; bg?: string; style?: CSSProperties; kind: "shop" | "now" | "news" | "free" };
 
 /** Ofertas grandes da loja, uma por seção, na ordem em que a Epic mostra as seções. */
 function featured(entries: ShopEntry[]) {
@@ -34,6 +36,8 @@ export function HomeFeature() {
   const map = useApi<MapData>("/v1/map", lang);
   const now = useEco<{ inMatchPeakCCU: Point[] }>("/metrics/hour");
   const players = lastValue(now.data?.inMatchPeakCCU);
+  const free = useFreeGames(lang);
+  const freeNow = free.current[0];
 
   const slides = useMemo(() => {
     const out: Slide[] = [];
@@ -44,10 +48,12 @@ export function HomeFeature() {
     }
     if (players != null)
       out.push({ key: "now", kind: "now", eyebrow: t("islands.now"), title: nf(players), sub: t("islands.nowNote"), cta: t("home.nowCta"), to: href("islands"), bg: map.data?.images.blank });
+    if (freeNow)
+      out.push({ key: `free-${freeNow.id}`, kind: "free", eyebrow: t("home.freeEyebrow"), title: free.current.map((g) => g.title).join(" + "), sub: t("free.ends", { time: relTime(lang, Date.parse(freeNow.end)) }), cta: t("home.freeCta"), to: href("free"), bg: freeNow.wide ?? undefined });
     const m = news.data?.motds?.[0];
     if (m) out.push({ key: m.id, kind: "news", eyebrow: t("home.newsEyebrow"), title: m.title, sub: m.body, cta: t("home.newsCta"), to: href("news"), bg: m.image });
     return out;
-  }, [shop.data, news.data, map.data, players, t, nf]);
+  }, [shop.data, news.data, map.data, players, free.current.length, freeNow?.id, t, nf, lang]);
 
   const [cur, setCur] = useState(0);
   const [paused, setPaused] = useState(() => matchMedia("(prefers-reduced-motion: reduce)").matches);

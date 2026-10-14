@@ -23,6 +23,7 @@ import { HistoryPage } from "./pages/HistoryPage";
 import { MorePage } from "./pages/MorePage";
 import { IslandsPage } from "./pages/IslandsPage";
 import { HomePage } from "./pages/HomePage";
+import { FreeGamesPage } from "./pages/FreeGamesPage";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -102,7 +103,7 @@ export default function App() {
     const NAV: Record<Route, Parameters<typeof t>[0]> = {
       home: "app.tagline",
       sprites: "nav.sprites", shop: "nav.shop", cosmetics: "nav.cosmetics", lists: "nav.lists", leaks: "nav.leaks",
-      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", islands: "nav.islands", more: "nav.more",
+      tracks: "nav.tracks", map: "nav.map", news: "nav.news", season: "nav.season", history: "nav.history", lore: "nav.lore", islands: "nav.islands", free: "nav.free", more: "nav.more",
     };
     // Mesmo formato das páginas geradas no build (vite.config.ts), para o Google ver um título só.
     document.title = route === "home" ? `Lockerdex — ${t("app.tagline")}` : `${t(NAV[route])} · Fortnite — Lockerdex`;
@@ -132,6 +133,8 @@ export default function App() {
         return <HistoryPage kind="lore" />;
       case "home":
         return <HomePage />;
+      case "free":
+        return <FreeGamesPage />;
       case "islands":
         return <IslandsPage key={params.toString()} params={params} />;
       case "more":

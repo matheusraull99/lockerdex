@@ -9,6 +9,8 @@ on:
     branches: [main]
   schedule:
     - cron: "15 6 * * *"
+    # Os jogos grátis da Epic trocam às quintas, 15:00 UTC (12h em Brasília)
+    - cron: "20 15 * * 4"
   workflow_dispatch:
 
 permissions:
@@ -40,9 +42,13 @@ jobs:
           fi
 
       - uses: actions/setup-python@v7
-        if: github.event_name != 'push'
         with:
           python-version: "3.13"
+
+      # O feed da Epic não libera CORS: o site lê o arquivo gerado aqui. Se a Epic estiver fora do ar,
+      # segue com o arquivo do repositório (a página filtra pelas datas).
+      - name: Atualizar jogos grátis da Epic
+        run: python data/build_free_games.py || echo "::warning::feed da Epic indisponível; usando o arquivo do repositório"
 
       - name: Atualizar catálogo de cosméticos
         if: github.event_name != 'push'

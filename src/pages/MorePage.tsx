@@ -22,6 +22,7 @@ const GROUPS: { title: UiKey; items: { route: Route; params?: Record<string, str
       { route: "cosmetics", label: "nav.cosmetics", desc: "more.cosmetics", icon: "✦" },
       { route: "leaks", label: "nav.leaks", desc: "more.leaks", icon: "◎" },
       { route: "tracks", label: "nav.tracks", desc: "more.tracks", icon: "♫" },
+      { route: "free", label: "nav.free", desc: "more.free", icon: "❖" },
     ],
   },
   {

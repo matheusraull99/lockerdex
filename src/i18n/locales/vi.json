@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Spooky Dash", "ability": ["Chủ động — nhảy trên không để xuyên qua một số vật thể.", "Tích thêm điểm sạc theo thời gian.", "Giảm thời gian chờ giữa các lần sạc theo mỗi cấp."] },
     "HealthSiphon": { "name": "Ma cà rồng", "ability": ["Hồi máu khi bạn gây sát thương cho kẻ địch.", "Tỉ lệ hồi máu tăng theo mỗi cấp."] },
     "IncreasedMelee": { "name": "Con Hươu", "ability": ["Đòn cận chiến gây nhiều sát thương hơn.", "Sát thương cận chiến tăng theo mỗi cấp."] },
-    "WinnerD": { "name": "Dumpster Dive", "ability": ["Đồ ăn hồi máu thêm.", "Tìm thấy đồ ăn khi nhảy ra khỏi chỗ nấp, và có tỉ lệ nhỏ khi mở thùng chứa.", "Đồ ăn tốt hơn theo mỗi cấp."] }
+    "WinnerD": { "name": "Dumpster Dive", "ability": ["Đồ ăn hồi máu thêm.", "Tìm thấy đồ ăn khi nhảy ra khỏi chỗ nấp, và có tỉ lệ nhỏ khi mở thùng chứa.", "Đồ ăn tốt hơn theo mỗi cấp."] },
+    "WinnerE": { "name": "Mật ong", "ability": ["Có cơ hội tạo ra ong tại vị trí trúng đòn khi bạn gây sát thương bằng vũ khí tầm xa."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Lấy sprite đang trang bị của kẻ địch khi bạn hạ gục chúng, và đẩy kẻ địch ở gần ra xa khi bạn nhận sát thương.", "Bạn sẽ bị đánh dấu trên bản đồ nếu gỡ nó ra, nên hãy cẩn thận!"] }
   }
 }

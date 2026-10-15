@@ -758,6 +758,19 @@
         "Find food when you leap out of hiding props, and with a small chance when opening containers.",
         "Better food with each level."
       ]
+    },
+    "WinnerE": {
+      "name": "Honey",
+      "ability": [
+        "Chance to spawn bees at the impact location when you deal damage with a ranged weapon."
+      ]
+    },
+    "CargoLying": {
+      "name": "One Wish Willow",
+      "ability": [
+        "Extract enemies' equipped Sprites when you eliminate them, and push nearby enemies away when you take damage.",
+        "You're marked on the map if you remove it, so be careful!"
+      ]
     }
   }
 }

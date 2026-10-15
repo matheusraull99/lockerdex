@@ -30,6 +30,10 @@
    {
     "key": "tricktreat",
     "color": "#ff7a1a"
+   },
+   {
+    "key": "quack",
+    "color": "#b07cff"
    }
   ],
   "sprites": [
@@ -134,6 +138,13 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_TrickTreat_L.webp",
       "cost": 2400,
       "drop": 0.0
+     },
+     {
+      "variant": "quack",
+      "fggId": 265,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Klombo_Quack_L.webp",
+      "cost": 2400,
+      "drop": 0.0
      }
     ]
    },
@@ -184,6 +195,65 @@
       "variant": "tricktreat",
       "fggId": 224,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_TrickTreat_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "quack",
+      "fggId": 279,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PhaseDash_Quack_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "CargoLying",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 273,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 275,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_Gold_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 274,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_Cheatmaster_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 276,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_Hacker_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 277,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_BountyHunter_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 278,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CargoLying_TrickTreat_L.webp",
       "cost": 2400,
       "drop": 0.0
      }
@@ -918,6 +988,58 @@
     ]
    },
    {
+    "key": "WinnerE",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 267,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 269,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 268,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 270,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 271,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 272,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerE_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
     "key": "Jonesy",
     "rarity": "rare",
     "levels": null,
@@ -964,6 +1086,13 @@
       "variant": "tricktreat",
       "fggId": 244,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "quack",
+      "fggId": 266,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Jonesy_Quack_L.webp",
       "cost": 1500,
       "drop": 0.0
      }
@@ -1018,6 +1147,13 @@
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_TrickTreat_L.webp",
       "cost": 1500,
       "drop": 0.0
+     },
+     {
+      "variant": "quack",
+      "fggId": 264,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Dwarf_Quack_L.webp",
+      "cost": 1500,
+      "drop": 0.0
      }
     ]
    },
@@ -1068,6 +1204,13 @@
       "variant": "tricktreat",
       "fggId": 240,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_TrickTreat_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "quack",
+      "fggId": 263,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BushRanger_Quack_L.webp",
       "cost": 1500,
       "drop": 0.0
      }

@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Spooky Dash", "ability": ["Actief — spring in de lucht om door sommige objecten heen te faseren.", "Krijgt na verloop van tijd charges.", "Minder wachttijd tussen charges met elk level."] },
     "HealthSiphon": { "name": "Vampier", "ability": ["Herstelt gezondheid als je een tegenstander schade toebrengt.", "Het herstelde percentage groeit met elk level."] },
     "IncreasedMelee": { "name": "Het Hert", "ability": ["Melee-aanvallen doen meer schade.", "De melee-schade groeit met elk level."] },
-    "WinnerD": { "name": "Dumpster Dive", "ability": ["Eten geeft extra genezing.", "Vind eten als je uit schuilplekken springt, en met een kleine kans bij het openen van containers.", "Beter eten met elk level."] }
+    "WinnerD": { "name": "Dumpster Dive", "ability": ["Eten geeft extra genezing.", "Vind eten als je uit schuilplekken springt, en met een kleine kans bij het openen van containers.", "Beter eten met elk level."] },
+    "WinnerE": { "name": "Honing", "ability": ["Kans om bijen te laten verschijnen op de plek van inslag als je schade toebrengt met een afstandswapen."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Haalt de uitgeruste sprites van tegenstanders eruit als je ze elimineert en duwt tegenstanders in de buurt weg als je schade oploopt.", "Je wordt op de kaart gemarkeerd als je hem verwijdert, dus pas op!"] }
   }
 }

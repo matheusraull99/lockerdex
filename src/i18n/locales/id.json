@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Spooky Dash", "ability": ["Aktif — lompat di udara untuk menembus beberapa objek.", "Mendapat charge seiring waktu.", "Jeda antar-charge makin singkat tiap level."] },
     "HealthSiphon": { "name": "Vampir", "ability": ["Memulihkan health saat kamu memberi damage ke musuh.", "Persentase yang dipulihkan naik tiap level."] },
     "IncreasedMelee": { "name": "Sang Rusa", "ability": ["Serangan melee memberi damage lebih besar.", "Damage melee meningkat tiap level."] },
-    "WinnerD": { "name": "Dumpster Dive", "ability": ["Makanan memberi penyembuhan bonus.", "Temukan makanan saat melompat keluar dari prop persembunyian, dan dengan peluang kecil saat membuka kontainer.", "Makanan makin bagus tiap level."] }
+    "WinnerD": { "name": "Dumpster Dive", "ability": ["Makanan memberi penyembuhan bonus.", "Temukan makanan saat melompat keluar dari prop persembunyian, dan dengan peluang kecil saat membuka kontainer.", "Makanan makin bagus tiap level."] },
+    "WinnerE": { "name": "Madu", "ability": ["Peluang memunculkan lebah di lokasi tembakan mengenai sasaran saat kamu memberi damage dengan senjata jarak jauh."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Mengambil sprite yang dipakai musuh saat kamu mengeliminasi mereka, dan mendorong musuh di sekitar menjauh saat kamu terkena damage.", "Kamu akan ditandai di peta kalau melepasnya, jadi hati-hati!"] }
   }
 }

@@ -758,6 +758,19 @@
         "Ache comida ao sair de esconderijos e, com pouca chance, ao abrir recipientes.",
         "Comida melhor a cada nível."
       ]
+    },
+    "WinnerE": {
+      "name": "Mel",
+      "ability": [
+        "Chance de gerar abelhas no local do impacto ao causar dano com uma arma de longo alcance."
+      ]
+    },
+    "CargoLying": {
+      "name": "Salgueiro do Desejo",
+      "ability": [
+        "Extraia os elementais equipados de inimigos ao eliminá-los e empurre inimigos próximos para longe ao sofrer dano.",
+        "Você será marcado no mapa se removê-lo, então cuidado!"
+      ]
     }
   }
 }

@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Ürpertici Atılış", "ability": ["Aktif — havada zıplayarak bazı nesnelerin içinden geç.", "Zamanla şarj kazanır.", "Her seviyede şarjlar arası bekleme azalır."] },
     "HealthSiphon": { "name": "Vampir", "ability": ["Bir rakibe hasar verdiğinde can yeniler.", "İyileşme yüzdesi her seviyede artar."] },
     "IncreasedMelee": { "name": "Geyik", "ability": ["Yakın dövüş saldırıları daha fazla hasar verir.", "Yakın dövüş hasarı her seviyede artar."] },
-    "WinnerD": { "name": "Çöp Konteynerine Dalış", "ability": ["Yiyecekler bonus iyileşme sağlar.", "Saklanma eşyalarından fırladığında yiyecek bulursun, kaplar açılırken de küçük bir ihtimalle.", "Her seviyede daha iyi yiyecek."] }
+    "WinnerD": { "name": "Çöp Konteynerine Dalış", "ability": ["Yiyecekler bonus iyileşme sağlar.", "Saklanma eşyalarından fırladığında yiyecek bulursun, kaplar açılırken de küçük bir ihtimalle.", "Her seviyede daha iyi yiyecek."] },
+    "WinnerE": { "name": "Bal", "ability": ["Menzilli bir silahla hasar verdiğinde isabet noktasında arı çıkarma şansı."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Rakipleri alt ettiğinde donattıkları büyücükleri çıkarır ve hasar aldığında yakındaki rakipleri uzağa iter.", "Onu kaldırırsan haritada işaretlenirsin, o yüzden dikkatli ol!"] }
   }
 }

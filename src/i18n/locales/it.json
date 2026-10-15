@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Scatto spettrale", "ability": ["Attiva — salta in aria per attraversare alcuni oggetti.", "Ottiene cariche col passare del tempo.", "Meno attesa tra le cariche a ogni livello."] },
     "HealthSiphon": { "name": "Vampiro", "ability": ["Recuperi salute quando danneggi un nemico.", "La percentuale recuperata aumenta a ogni livello."] },
     "IncreasedMelee": { "name": "Il Cervo", "ability": ["Gli attacchi in mischia infliggono più danni.", "I danni in mischia aumentano a ogni livello."] },
-    "WinnerD": { "name": "Tuffo nel cassonetto", "ability": ["Il cibo dà cure bonus.", "Trova cibo quando balzi fuori da un nascondiglio e, con una piccola probabilità, aprendo i contenitori.", "Cibo migliore a ogni livello."] }
+    "WinnerD": { "name": "Tuffo nel cassonetto", "ability": ["Il cibo dà cure bonus.", "Trova cibo quando balzi fuori da un nascondiglio e, con una piccola probabilità, aprendo i contenitori.", "Cibo migliore a ogni livello."] },
+    "WinnerE": { "name": "Miele", "ability": ["Probabilità di generare api nel punto d’impatto quando infliggi danni con un’arma a distanza."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Estrai gli spiritelli equipaggiati dai nemici quando li elimini e respingi i nemici vicini quando subisci danni.", "Vieni segnalato sulla mappa se lo rimuovi, quindi fai attenzione!"] }
   }
 }

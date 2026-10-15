@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Impulso espeluznante", "ability": ["Activa — salta en el aire para atravesar algunos objetos.", "Gana cargas con el tiempo.", "Menos espera entre cargas con cada nivel."] },
     "HealthSiphon": { "name": "Vampiro", "ability": ["Recuperas salud cuando dañas a un enemigo.", "El porcentaje recuperado aumenta con cada nivel."] },
     "IncreasedMelee": { "name": "El Ciervo", "ability": ["Los ataques cuerpo a cuerpo hacen más daño.", "El daño cuerpo a cuerpo aumenta con cada nivel."] },
-    "WinnerD": { "name": "Buceo en contenedor", "ability": ["La comida da curación extra.", "Encuentras comida al salir de un escondite y, con poca probabilidad, al abrir contenedores.", "Mejor comida con cada nivel."] }
+    "WinnerD": { "name": "Buceo en contenedor", "ability": ["La comida da curación extra.", "Encuentras comida al salir de un escondite y, con poca probabilidad, al abrir contenedores.", "Mejor comida con cada nivel."] },
+    "WinnerE": { "name": "Miel", "ability": ["Probabilidad de generar abejas en el punto de impacto cuando infliges daño con un arma de largo alcance."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Extrae los espíritus equipados de los enemigos cuando los eliminas y aleja a los enemigos cercanos cuando recibes daño.", "Apareces marcado en el mapa si lo quitas, ¡así que ten cuidado!"] }
   }
 }

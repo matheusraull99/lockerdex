@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Ruée spectrale", "ability": ["Actif — sautez en l’air pour traverser certains objets.", "Gagne des charges avec le temps.", "Moins d’attente entre les charges à chaque niveau."] },
     "HealthSiphon": { "name": "Vampire", "ability": ["Récupérez de la santé quand vous blessez un ennemi.", "Le pourcentage récupéré augmente à chaque niveau."] },
     "IncreasedMelee": { "name": "Le Cerf", "ability": ["Les attaques de mêlée infligent plus de dégâts.", "Les dégâts de mêlée augmentent à chaque niveau."] },
-    "WinnerD": { "name": "Plongeon en benne", "ability": ["La nourriture donne des soins bonus.", "Trouvez de la nourriture en sortant d’un accessoire de cachette, et avec une faible chance en ouvrant des conteneurs.", "Meilleure nourriture à chaque niveau."] }
+    "WinnerD": { "name": "Plongeon en benne", "ability": ["La nourriture donne des soins bonus.", "Trouvez de la nourriture en sortant d’un accessoire de cachette, et avec une faible chance en ouvrant des conteneurs.", "Meilleure nourriture à chaque niveau."] },
+    "WinnerE": { "name": "Miel", "ability": ["Chance de faire apparaître des abeilles à l’endroit de l’impact quand vous infligez des dégâts avec une arme à distance."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Extrayez les esprits équipés des ennemis quand vous les éliminez et repoussez les ennemis proches quand vous subissez des dégâts.", "Vous êtes marqué sur la carte si vous le retirez, alors faites attention !"] }
   }
 }

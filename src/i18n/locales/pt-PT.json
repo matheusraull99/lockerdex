@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Spooky Dash", "ability": ["Ativa — salta no ar para atravessares alguns objetos.", "Ganha cargas com o tempo.", "Menos espera entre cargas a cada nível."] },
     "HealthSiphon": { "name": "Vampiro", "ability": ["Recupera vida ao causares dano a um inimigo.", "A percentagem recuperada aumenta a cada nível."] },
     "IncreasedMelee": { "name": "O Veado", "ability": ["Os ataques corpo a corpo causam mais dano.", "O dano corpo a corpo aumenta a cada nível."] },
-    "WinnerD": { "name": "Mergulho no Contentor", "ability": ["A comida cura mais.", "Encontra comida ao saíres de esconderijos e, com pouca probabilidade, ao abrires recipientes.", "Comida melhor a cada nível."] }
+    "WinnerD": { "name": "Mergulho no Contentor", "ability": ["A comida cura mais.", "Encontra comida ao saíres de esconderijos e, com pouca probabilidade, ao abrires recipientes.", "Comida melhor a cada nível."] },
+    "WinnerE": { "name": "Mel", "ability": ["Probabilidade de gerar abelhas no local do impacto ao causares dano com uma arma de longo alcance."] },
+    "CargoLying": { "name": "Salgueiro do Desejo", "ability": ["Extrai os elementais equipados dos inimigos ao eliminá-los e empurra os inimigos próximos para longe quando sofres dano.", "Ficas marcado no mapa se o removeres, por isso cuidado!"] }
   }
 }

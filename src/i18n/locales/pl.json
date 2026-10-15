@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Upiorny Zryw", "ability": ["Aktywna — skocz w powietrzu, aby przenikać przez niektóre obiekty.", "Zyskuje ładunki z czasem.", "Krótsze oczekiwanie między ładunkami z każdym poziomem."] },
     "HealthSiphon": { "name": "Wampir", "ability": ["Odnawia zdrowie, gdy zadajesz obrażenia przeciwnikowi.", "Odzyskiwany procent rośnie z każdym poziomem."] },
     "IncreasedMelee": { "name": "Jeleń", "ability": ["Ataki wręcz zadają więcej obrażeń.", "Obrażenia w walce wręcz rosną z każdym poziomem."] },
-    "WinnerD": { "name": "Nurkowanie w Śmietniku", "ability": ["Jedzenie daje dodatkowe leczenie.", "Znajdź jedzenie, gdy wyskoczysz z kryjówek, a także z małą szansą przy otwieraniu pojemników.", "Lepsze jedzenie z każdym poziomem."] }
+    "WinnerD": { "name": "Nurkowanie w Śmietniku", "ability": ["Jedzenie daje dodatkowe leczenie.", "Znajdź jedzenie, gdy wyskoczysz z kryjówek, a także z małą szansą przy otwieraniu pojemników.", "Lepsze jedzenie z każdym poziomem."] },
+    "WinnerE": { "name": "Miód", "ability": ["Szansa na stworzenie pszczół w miejscu trafienia, gdy zadajesz obrażenia bronią dystansową."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Wyciągaj wyposażone duszki z przeciwników, gdy ich eliminujesz, i odpychaj pobliskich przeciwników, gdy otrzymujesz obrażenia.", "Zostaniesz oznaczony na mapie, jeśli go usuniesz, więc uważaj!"] }
   }
 }

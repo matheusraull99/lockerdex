@@ -399,6 +399,8 @@
     "PhaseDash": { "name": "Gruseliger Sprint", "ability": ["Aktiv – springe in der Luft, um durch einige Objekte hindurchzugehen.", "Erhält mit der Zeit Ladungen.", "Mit jeder Stufe weniger Wartezeit zwischen den Ladungen."] },
     "HealthSiphon": { "name": "Vampir", "ability": ["Stellt Gesundheit wieder her, wenn du einem Gegner Schaden zufügst.", "Der wiederhergestellte Prozentsatz steigt mit jeder Stufe."] },
     "IncreasedMelee": { "name": "Der Hirsch", "ability": ["Nahkampfangriffe richten mehr Schaden an.", "Der Nahkampfschaden steigt mit jeder Stufe."] },
-    "WinnerD": { "name": "Containertauchen", "ability": ["Essen gibt zusätzliche Heilung.", "Finde Essen, wenn du aus Versteck-Objekten springst, und mit geringer Chance beim Öffnen von Behältern.", "Besseres Essen mit jeder Stufe."] }
+    "WinnerD": { "name": "Containertauchen", "ability": ["Essen gibt zusätzliche Heilung.", "Finde Essen, wenn du aus Versteck-Objekten springst, und mit geringer Chance beim Öffnen von Behältern.", "Besseres Essen mit jeder Stufe."] },
+    "WinnerE": { "name": "Honig", "ability": ["Chance, am Einschlagsort Bienen erscheinen zu lassen, wenn du mit einer Fernkampfwaffe Schaden zufügst."] },
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Extrahiere die ausgerüsteten Geister von Gegnern, wenn du sie eliminierst, und stoße Gegner in der Nähe weg, wenn du Schaden erleidest.", "Du wirst auf der Karte markiert, wenn du ihn entfernst – sei also vorsichtig!"] }
   }
 }

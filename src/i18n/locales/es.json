@@ -332,7 +332,7 @@
     "gem": { "label": "Gema", "bonus": "−30 % de daño por caída." },
     "holofoil": { "label": "Holográfico", "bonus": "5 % de probabilidad de que tu escuadrón encuentre variantes raras de espíritus al saquear cofres." },
     "cube": { "label": "Cubo", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" },
+    "quack": { "label": "Quack", "bonus": "Potencia a todos los espíritus que llevas con PE de espíritu extra siempre que ganan PE." },
     "tricktreat": { "label": "Truco o trato", "bonus": "" }
   },
   "locations": {

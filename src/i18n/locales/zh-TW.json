@@ -332,7 +332,7 @@
     "gem": { "label": "寶石", "bonus": "墜落傷害 −30%。" },
     "holofoil": { "label": "全像", "bonus": "搜刮寶箱時，你的小隊有 5% 機率找到稀有精靈變體。" },
     "cube": { "label": "方塊", "bonus": "" },
-    "quack": { "label": "嘎嘎", "bonus": "" },
+    "quack": { "label": "嘎嘎", "bonus": "你攜帶的所有精靈每次獲得 XP 時，都會額外獲得精靈 XP。" },
     "tricktreat": { "label": "不給糖就搗蛋", "bonus": "" }
   },
   "locations": {

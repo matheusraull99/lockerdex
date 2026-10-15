@@ -332,7 +332,7 @@
     "gem": { "label": "宝石", "bonus": "坠落伤害 −30%。" },
     "holofoil": { "label": "全息", "bonus": "搜刮宝箱时，你的小队有 5% 几率找到稀有精灵变体。" },
     "cube": { "label": "方块", "bonus": "" },
-    "quack": { "label": "嘎嘎", "bonus": "" },
+    "quack": { "label": "嘎嘎", "bonus": "你携带的所有精灵每次获得 XP 时，都会额外获得精灵 XP。" },
     "tricktreat": { "label": "不给糖就捣蛋", "bonus": "" }
   },
   "locations": {

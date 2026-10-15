@@ -332,7 +332,7 @@
     "gem": { "label": "Klejnotowy", "bonus": "−30% obrażeń od upadku." },
     "holofoil": { "label": "Holograficzny", "bonus": "5% szansy, że twoja drużyna znajdzie rzadkie warianty duszków podczas przeszukiwania skrzyń." },
     "cube": { "label": "Kostka", "bonus": "" },
-    "quack": { "label": "Kwak", "bonus": "" },
+    "quack": { "label": "Kwak", "bonus": "Zwiększa PD wszystkich noszonych duszków: zdobywają dodatkowe PD duszka za każdym razem, gdy zdobywają PD." },
     "tricktreat": { "label": "Cukierek albo psikus", "bonus": "" }
   },
   "locations": {

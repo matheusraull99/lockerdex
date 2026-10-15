@@ -385,7 +385,7 @@
     },
     "quack": {
       "label": "Quack",
-      "bonus": ""
+      "bonus": "Boosts every Sprite you carry with extra Sprite XP whenever they gain XP."
     },
     "tricktreat": {
       "label": "Trick or Treat",

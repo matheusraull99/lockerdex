@@ -332,7 +332,7 @@
     "gem": { "label": "Permata", "bonus": "−30% damage jatuh." },
     "holofoil": { "label": "Holofoil", "bonus": "5% peluang squad-mu menemukan varian sprite langka saat menjarah peti." },
     "cube": { "label": "Kubus", "bonus": "" },
-    "quack": { "label": "Kwek", "bonus": "" },
+    "quack": { "label": "Kwek", "bonus": "Memberi semua sprite yang kamu bawa tambahan XP sprite setiap kali mereka mendapat XP." },
     "tricktreat": { "label": "Trick or Treat", "bonus": "" }
   },
   "locations": {

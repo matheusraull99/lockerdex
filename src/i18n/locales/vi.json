@@ -332,7 +332,7 @@
     "gem": { "label": "Đá quý", "bonus": "−30% sát thương khi rơi." },
     "holofoil": { "label": "Hologram", "bonus": "5% cơ hội để đội bạn tìm thấy biến thể sprite hiếm khi lục rương." },
     "cube": { "label": "Khối", "bonus": "" },
-    "quack": { "label": "Quạc", "bonus": "" },
+    "quack": { "label": "Quạc", "bonus": "Tăng thêm XP sprite cho mọi sprite bạn mang theo mỗi khi chúng nhận XP." },
     "tricktreat": { "label": "Cho kẹo hay bị ghẹo", "bonus": "" }
   },
   "locations": {

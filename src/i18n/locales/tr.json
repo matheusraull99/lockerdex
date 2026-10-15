@@ -332,7 +332,7 @@
     "gem": { "label": "Mücevher", "bonus": "Düşme hasarı −%30." },
     "holofoil": { "label": "Hologram", "bonus": "Sandık yağmalarken takımının nadir büyücük varyantları bulma şansı %5." },
     "cube": { "label": "Küp", "bonus": "" },
-    "quack": { "label": "Vak", "bonus": "" },
+    "quack": { "label": "Vak", "bonus": "Taşıdığın tüm büyücüklere, XP kazandıklarında ekstra büyücük XP'si verir." },
     "tricktreat": { "label": "Şeker mi Şaka mı", "bonus": "" }
   },
   "locations": {

@@ -332,7 +332,7 @@
     "gem": { "label": "Gemma", "bonus": "−30% di danni da caduta." },
     "holofoil": { "label": "Olografico", "bonus": "5% di probabilità che la tua squadra trovi varianti rare degli spiritelli saccheggiando i forzieri." },
     "cube": { "label": "Cubo", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" },
+    "quack": { "label": "Quack", "bonus": "Potenzia ogni spiritello che porti con PE spiritello extra ogni volta che guadagna PE." },
     "tricktreat": { "label": "Dolcetto o scherzetto", "bonus": "" }
   },
   "locations": {

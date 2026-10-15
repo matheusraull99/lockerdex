@@ -332,7 +332,7 @@
     "gem": { "label": "Gema", "bonus": "−30% de dano de queda." },
     "holofoil": { "label": "Holográfica", "bonus": "5% de probabilidade de o teu esquadrão encontrar variantes raras ao saquear baús." },
     "cube": { "label": "Cubo", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" },
+    "quack": { "label": "Quack", "bonus": "Reforça todos os elementais que transportas com XP de elemental extra sempre que ganham XP." },
     "tricktreat": { "label": "Doçura ou Travessura", "bonus": "" }
   },
   "locations": {

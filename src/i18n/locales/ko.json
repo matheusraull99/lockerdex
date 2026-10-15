@@ -332,7 +332,7 @@
     "gem": { "label": "보석", "bonus": "낙하 피해 −30%." },
     "holofoil": { "label": "홀로", "bonus": "상자를 열 때 스쿼드가 희귀 정령 변형을 찾을 확률 5%." },
     "cube": { "label": "큐브", "bonus": "" },
-    "quack": { "label": "꽥꽥", "bonus": "" },
+    "quack": { "label": "꽥꽥", "bonus": "지니고 있는 모든 정령이 XP를 얻을 때마다 추가 정령 XP를 얻어요." },
     "tricktreat": { "label": "트릭 오어 트릿", "bonus": "" }
   },
   "locations": {

@@ -332,7 +332,7 @@
     "gem": { "label": "Edelsteen", "bonus": "−30% valschade." },
     "holofoil": { "label": "Holografisch", "bonus": "5% kans dat je squad zeldzame spritevarianten vindt bij het looten van kisten." },
     "cube": { "label": "Kubus", "bonus": "" },
-    "quack": { "label": "Kwak", "bonus": "" },
+    "quack": { "label": "Kwak", "bonus": "Geeft elke sprite die je bij je hebt extra sprite-XP telkens als ze XP krijgen." },
     "tricktreat": { "label": "Trick or Treat", "bonus": "" }
   },
   "locations": {

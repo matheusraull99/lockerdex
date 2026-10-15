@@ -332,7 +332,7 @@
     "gem": { "label": "Gemme", "bonus": "−30 % de dégâts de chute." },
     "holofoil": { "label": "Holographique", "bonus": "5 % de chances pour votre escouade de trouver des variantes d’esprits rares en fouillant les coffres." },
     "cube": { "label": "Cube", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "" },
+    "quack": { "label": "Quack", "bonus": "Booste tous les esprits que vous portez avec de l’XP d’esprit supplémentaire chaque fois qu’ils gagnent de l’XP." },
     "tricktreat": { "label": "Des bonbons ou un sort", "bonus": "" }
   },
   "locations": {

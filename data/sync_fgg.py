@@ -42,7 +42,9 @@ bad = [i for i, (v, img, key) in known.items() if i not in by_id or (by_id[i]["v
 assert not bad and len(cards) >= len(known), f"o fortnite.gg mudou ids já conhecidos: {bad[:10]}"
 print(f"{len(cards)} cards ({len(cards) - len(known)} novos)")
 
-details = json.loads((RAW / "fgg_details.json").read_text(encoding="utf-8"))
+RAW.mkdir(exist_ok=True)
+f_det = RAW / "fgg_details.json"
+details = json.loads(f_det.read_text(encoding="utf-8")) if f_det.exists() else {}  # sem o arquivo (execução no GitHub): baixa todos
 for c in cards:
     if c["sprite"] in details:
         continue

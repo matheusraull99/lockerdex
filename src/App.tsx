@@ -289,7 +289,12 @@ export default function App() {
                 requestQuick();
               }}
             >
-              Nº
+              <span className="tab-fab-c" aria-hidden>
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" aria-hidden>
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </span>
+              <span>{t("quick.button")}</span>
             </button>
           ),
           <a key={x.route} href={href(x.route)} aria-current={activeMobile === x.route ? "page" : undefined}>

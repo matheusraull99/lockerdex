@@ -52,26 +52,41 @@
   .tabbar a {
     font-size: 11px;
   }
+  /* botão do meio: um "+" grande num círculo, com "Marcar" embaixo como as outras abas */
   .tab-fab {
     display: grid;
-    place-items: center;
-    justify-self: center;
-    width: 54px;
-    height: 54px;
-    margin-top: -24px;
+    justify-items: center;
+    gap: 2px;
+    min-width: 0;
+    padding: 0 0 4px;
     border: 0;
+    background: none;
+    color: var(--dust);
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .tab-fab > span:last-child {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .tab-fab-c {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    margin-top: -22px;
     border-radius: 50%;
     background: var(--dust);
     color: var(--dust-ink);
-    font: 900 21px/1 var(--display);
-    letter-spacing: 0.02em;
     box-shadow: 0 0 0 4px var(--page), 0 8px 18px color-mix(in srgb, var(--dust) 45%, transparent);
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
     transition: transform 0.15s ease;
   }
-  .tab-fab:active {
-    transform: scale(0.93);
+  .tab-fab:active .tab-fab-c {
+    transform: scale(0.92);
   }
 
   /* ---------- temporadas + compartilhar numa linha só ---------- */

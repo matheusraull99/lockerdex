@@ -332,7 +332,8 @@
     "gem": { "label": "Edelstein", "bonus": "−30 % Fallschaden." },
     "holofoil": { "label": "Holofolie", "bonus": "5 % Chance für deinen Trupp, beim Plündern von Truhen seltene Geister-Varianten zu finden." },
     "cube": { "label": "Würfel", "bonus": "" },
-    "tricktreat": { "label": "Süßes oder Saures", "bonus": "" }
+    "tricktreat": { "label": "Süßes oder Saures", "bonus": "" },
+    "quack": { "label": "Quak", "bonus": "" }
   },
   "locations": {
     "random": "Zufällig, in Truhen und Nachschublieferungen",

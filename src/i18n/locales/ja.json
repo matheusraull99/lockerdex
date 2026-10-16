@@ -332,7 +332,8 @@
     "gem": { "label": "ジェム", "bonus": "落下ダメージ−30%。" },
     "holofoil": { "label": "ホロ", "bonus": "宝箱を漁ったとき、スクワッドがレアな精霊のバリアントを見つける確率5%。" },
     "cube": { "label": "キューブ", "bonus": "" },
-    "tricktreat": { "label": "トリック・オア・トリート", "bonus": "" }
+    "tricktreat": { "label": "トリック・オア・トリート", "bonus": "" },
+    "quack": { "label": "Quack", "bonus": "" }
   },
   "locations": {
     "random": "ランダム（宝箱や補給物資から）",

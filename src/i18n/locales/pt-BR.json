@@ -386,6 +386,10 @@
     "tricktreat": {
       "label": "Doces ou Travessuras",
       "bonus": ""
+    },
+    "quack": {
+      "label": "Quá-quá",
+      "bonus": ""
     }
   },
   "locations": {

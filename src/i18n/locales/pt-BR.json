@@ -383,12 +383,12 @@
       "label": "Cubo",
       "bonus": ""
     },
+    "quack": {
+      "label": "Quack",
+      "bonus": "Impulsiona todos os elementais que você estiver carregando com EXP elemental extra sempre que ganharem EXP."
+    },
     "tricktreat": {
       "label": "Doces ou Travessuras",
-      "bonus": ""
-    },
-    "quack": {
-      "label": "Quá-quá",
       "bonus": ""
     }
   },

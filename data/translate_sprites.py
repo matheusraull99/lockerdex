@@ -51,7 +51,14 @@ def http(url, data=None, headers=None):
 def gemini(key, model, system, user):
     body = {"system_instruction": {"parts": [{"text": system}]}, "contents": [{"parts": [{"text": user}]}],
             "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"}}
-    raw = http(GEMINI.format(model=model), json.dumps(body).encode("utf-8"), {"Content-Type": "application/json", "x-goog-api-key": key})
+    for attempt in range(3):  # 503/429 passageiros: espera e tenta de novo antes de cair para o modelo reserva
+        try:
+            raw = http(GEMINI.format(model=model), json.dumps(body).encode("utf-8"), {"Content-Type": "application/json", "x-goog-api-key": key})
+            break
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or attempt == 2:
+                raise
+            time.sleep(8 * (attempt + 1))
     try:
         return json.loads(json.loads(raw)["candidates"][0]["content"]["parts"][0]["text"])
     except (ValueError, KeyError, IndexError, TypeError):
@@ -213,7 +220,14 @@ def main():
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if "--check" in sys.argv:
         if key:
-            print("Gemini:", gemini(key, GEMINI_MODELS[0], "Reply with the JSON object {\"ok\": true}.", "ping"))
+            for model in GEMINI_MODELS:
+                try:
+                    print(f"Gemini {model}:", gemini(key, model, "Reply with the JSON object {\"ok\": true}.", "ping"))
+                except Exception as e:
+                    print(f"Gemini {model}: falhou ({str(e)[:120]})")
+            # Modelos disponíveis para esta chave (para acertar GEMINI_MODELS quando um nome mudar)
+            lst = json.loads(http(f"https://generativelanguage.googleapis.com/v1beta/models?pageSize=100", headers={"x-goog-api-key": key}))
+            print("modelos flash disponíveis:", ", ".join(m["name"].split("/")[-1] for m in lst.get("models", []) if "flash" in m["name"]))
         else:
             print("sem GEMINI_API_KEY: só os tradutores sem chave (habilidade traduzida por máquina, nome em inglês)")
         for name, fn in (("Google Tradutor", gtx), ("MyMemory", mymemory)):

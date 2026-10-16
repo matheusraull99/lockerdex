@@ -26,7 +26,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 LOC = ROOT / "src" / "i18n" / "locales"
 RAW = ROOT / "data" / "raw"
 GEMINI = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite"]  # o segundo é a reserva (limites do plano gratuito)
+# O primeiro é o usado; os outros são reserva quando ele falha (limites do plano gratuito, 503). Os apelidos
+# "-latest" apontam sempre para um modelo válido (o gemini-2.5-flash-lite consta na lista mas dá 404).
+GEMINI_MODELS = ["gemini-2.5-flash", "gemini-flash-latest", "gemini-flash-lite-latest"]
 GTX = "https://translate.googleapis.com/translate_a/single"
 MYMEMORY = "https://api.mymemory.translated.net/get"
 LANGS = {

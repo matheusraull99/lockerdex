@@ -41,9 +41,11 @@ export function Ring({ owned, total, next, hint }: { owned: number; total: numbe
           <small>/ {nf(total)}</small>
         </span>
       </div>
-      <p className="ring-next">
-        {next ? t("album.next", { name: spriteText(L, next.sprite.key).name, owned: nf(next.owned), total: nf(next.total) }) : hint}
-      </p>
+      {(next || hint) && (
+        <p className="ring-next">
+          {next ? t("album.next", { name: spriteText(L, next.sprite.key).name, owned: nf(next.owned), total: nf(next.total) }) : hint}
+        </p>
+      )}
     </div>
   );
 }

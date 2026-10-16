@@ -31,5 +31,23 @@ preloadLocale().finally(() =>
 
 // Offline: o service worker só entra no build de produção.
 if (import.meta.env.PROD && "serviceWorker" in navigator) {
-  addEventListener("load", () => navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`, { scope: import.meta.env.BASE_URL }).catch(() => {}));
+  // App instalado fica aberto em segundo plano dias a fio: ao voltar para ele, confere se saiu versão nova.
+  // Quando a nova assume (o sw.js faz skipWaiting + clients.claim), recarrega uma vez para mostrar a versão nova.
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!hadController || reloaded) return; // primeira instalação: nada a recarregar
+    reloaded = true;
+    location.reload();
+  });
+  addEventListener("load", () =>
+    navigator.serviceWorker
+      .register(`${import.meta.env.BASE_URL}sw.js`, { scope: import.meta.env.BASE_URL })
+      .then((reg) => {
+        document.addEventListener("visibilitychange", () => {
+          if (document.visibilityState === "visible") reg.update().catch(() => {});
+        });
+      })
+      .catch(() => {}),
+  );
 }

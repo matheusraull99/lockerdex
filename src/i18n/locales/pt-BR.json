@@ -758,6 +758,20 @@
         "Ache comida ao sair de esconderijos e, com pouca chance, ao abrir recipientes.",
         "Comida melhor a cada nível."
       ]
+    },
+    "CargoLying": {
+      "name": "One Wish Willow",
+      "ability": [
+        "Extrai elementais equipados de outros jogadores ao eliminá-los.",
+        "Empurra tudo para longe ao sofrer dano.",
+        "Fica chateado ao ser removido e marca você no mapa."
+      ]
+    },
+    "WinnerE": {
+      "name": "Honey",
+      "ability": [
+        "Chance de gerar abelhas no local do impacto ao causar dano com uma arma de longo alcance."
+      ]
     }
   }
 }

@@ -3,6 +3,7 @@
 # - A cada 3 horas: confere o fortnite.gg e, se saíram elementais novos, atualiza os dados, traduz nome e
 #   habilidade nos 22 idiomas (Gemini, com a chave gratuita no segredo GEMINI_API_KEY; sem ela, o Google
 #   Tradutor sem chave, só a habilidade) e publica sozinho.
+#   Variante nova (tipo de figurinha) entra sozinha, com a cor tirada do ícone e o nome traduzido; o bônus fica vazio.
 # - Todo dia às 06:15 UTC (depois da troca da loja às 00:00): recria o catálogo de cosméticos
 #   com o histórico de loja do dia antes do build.
 name: Publicar
@@ -79,6 +80,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           mkdir -p data/raw
+          pip install --quiet pillow  # cor de variante nova, tirada do ícone
           python data/sync_fgg.py && python data/build_data.py && python data/fetch_icons.py || echo "::warning::não consegui sincronizar com o fortnite.gg; usando os dados do repositório"
           python data/translate_sprites.py || echo "::warning::o tradutor falhou; os elementais novos ficam com o nome em inglês até a próxima execução"
           if ! git diff --quiet -- src/data/seasons.json src/i18n/locales || [ -n "$(git ls-files -o --exclude-standard public/icons)" ]; then

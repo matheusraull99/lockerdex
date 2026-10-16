@@ -7,6 +7,8 @@ O fortnite.gg só tem os elementais em inglês e o fortnite.com bloqueia robôs,
      quando é palavra comum (como "Honey" → "Mel") e mantém nomes próprios.
   2. Sem a chave: o Google Tradutor (endpoint público, sem chave). Traduz só a habilidade, frase a frase; o nome
      fica em inglês. Qualidade menor; os termos do jogo podem sair diferentes do resto do site.
+Variantes novas (criadas sozinhas pelo build_data.py): põe o nome traduzido em `variants.<chave>.label` (Gemini;
+sem ele, o nome em inglês) e o bônus vazio, que o site mostra como "sem bônus" até alguém escrever.
 Idempotente; mantém o formato dos arquivos (compacto nos traduzidos, expandido em en e pt-BR).
 Rodar da raiz do projeto: python data/translate_sprites.py        (--check só testa o acesso aos tradutores)
 """
@@ -147,20 +149,26 @@ def translate_mt(lang, todo, state):
 
 
 # ---------- escrita ----------
-def insert(path, entries):
-    """Acrescenta as entradas no fim de "sprites" mantendo o formato do arquivo (linha a linha, nunca json.dump)."""
+def insert(path, entries, section="sprites"):
+    """Acrescenta as entradas no fim da seção ("sprites" ou "variants") mantendo o formato do arquivo
+    (linha a linha, nunca json.dump)."""
     raw = path.read_text(encoding="utf-8", newline="")
     nl = "\r\n" if "\r\n" in raw else "\n"
     L = raw.split(nl)
-    si = next(k for k, l in enumerate(L) if l.startswith('  "sprites"'))
+    si = next(k for k, l in enumerate(L) if l.startswith(f'  "{section}"'))
     sc = si
     while not L[sc].startswith("  }"):
         sc += 1
     # Compacto: a entrada inteira numa linha ('    "Chave": { "name": ...'); expandido: a chave abre um bloco.
-    compact = any(re.match(r'    "[^"]+": \{ "name"', l) for l in L[si:sc])
+    compact = any(re.match(r'    "[^"]+": \{ "', l) for l in L[si:sc])
     new = []
     for key, v in entries.items():
-        if compact:
+        if section == "variants":
+            if compact:
+                new.append(f'    {q(key)}: {{ "label": {q(v["label"])}, "bonus": {q(v["bonus"])} }}')
+            else:
+                new += [f"    {q(key)}: {{", f'      "label": {q(v["label"])},', f'      "bonus": {q(v["bonus"])}', "    }"]
+        elif compact:
             new.append(f'    {q(key)}: {{ "name": {q(v["name"])}, "ability": [{", ".join(q(a) for a in v["ability"])}] }}')
         else:
             new += [f"    {q(key)}: {{", f'      "name": {q(v["name"])},', '      "ability": [']
@@ -175,8 +183,30 @@ def insert(path, entries):
     out = nl.join(L)
     obj = json.loads(out)
     for key, v in entries.items():
-        assert obj["sprites"][key] == v, (path.name, key)
+        assert obj[section][key] == v, (path.name, key)
     path.write_text(out, encoding="utf-8", newline="")
+
+
+def translate_labels(key, lang, examples, todo):
+    """Nomes de variantes novas: {chave: nome em inglês} -> {chave: nome no idioma}. Sem Gemini, fica em inglês."""
+    if lang == "en" or not key:
+        return dict(todo)
+    system = (
+        f"You translate names of Fortnite Sprite variants (the card types of a collectible album) into {LANGS[lang]} ({lang}). "
+        "Follow the examples from the same site: translate a name only when the examples translate similar names; keep "
+        "proper names and brand-like names in English. Return ONLY a JSON object with the same keys and string values.\n\n"
+        "Examples (English -> target):\n" + "\n".join(q({"en": e, lang: t}) for e, t in examples)
+    )
+    for model in GEMINI_MODELS:
+        try:
+            out = gemini(key, model, system, q(todo))
+        except Exception as e:
+            print(f"  {lang}: {model} falhou ({str(e)[:120]})")
+            continue
+        if isinstance(out, dict) and all(isinstance(out.get(k), str) and out[k].strip() for k in todo):
+            return {k: out[k].strip() for k in todo}
+        print(f"  {lang}: {model} devolveu um JSON fora do formato")
+    return dict(todo)
 
 
 def main():
@@ -204,11 +234,23 @@ def main():
                 source[sp["key"]] = {"name": sp["name"], "ability": [d if d[-1] in ".!?" else d + "." for d in descs]}
             elif sp.get("name"):
                 print(f"{sp['key']}: sem descrição em data/raw; fica para a próxima")
-    en = json.loads((LOC / "en.json").read_text(encoding="utf-8"))["sprites"]
+    var_source = {v["key"]: v.get("name", v["key"]) for s in seasons for v in s["variants"]}  # chave -> nome em inglês
+    en_all = json.loads((LOC / "en.json").read_text(encoding="utf-8"))
+    en = en_all["sprites"]
     changed, state = 0, {"off": set(), "used": set()}
     for lang in sorted(LANGS):
         path = LOC / f"{lang}.json"
-        have = json.loads(path.read_text(encoding="utf-8"))["sprites"]
+        loc = json.loads(path.read_text(encoding="utf-8"))
+        have = loc["sprites"]
+        # Variantes novas: só o nome; o bônus fica vazio (o site mostra "sem bônus") até alguém escrever.
+        var_todo = {k: n for k, n in var_source.items() if k not in loc["variants"]}
+        if var_todo:
+            print(f"{lang}: variante(s) nova(s) {', '.join(var_todo)}")
+            pairs = [(en_all["variants"][k]["label"], loc["variants"][k]["label"]) for k in loc["variants"] if k in en_all["variants"]][-8:]
+            labels = translate_labels(key, lang, pairs, var_todo)
+            insert(path, {k: {"label": labels[k], "bonus": ""} for k in var_todo}, "variants")
+            changed += 1
+            print("  " + ", ".join(f"{k}: {labels[k]}" for k in var_todo))
         todo = {k: v for k, v in source.items() if k not in have}
         if not todo:
             continue
@@ -231,8 +273,8 @@ def main():
         for k, v in got.items():
             print(f"  {k}: {v['name']} — {v['ability'][0][:60]}")
     if changed and not key:
-        print("::warning::tradução por máquina (sem GEMINI_API_KEY): os nomes ficaram em inglês e os termos do jogo podem ter saído diferentes")
-    print(f"{changed} idioma(s) atualizado(s) ({', '.join(sorted(state['used'])) or '-'})" if changed else "nada a traduzir")
+        print("::warning::sem GEMINI_API_KEY: nomes ficaram em inglês e a habilidade (se houve) saiu por máquina, com termos do jogo possivelmente diferentes")
+    print(f"{changed} idioma(s) atualizado(s) ({', '.join(sorted(state['used'])) or ('Gemini' if key else 'sem tradutor')})" if changed else "nada a traduzir")
 
 
 if __name__ == "__main__":

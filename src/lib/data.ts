@@ -47,7 +47,7 @@ export interface Season {
   season: number;
   current: boolean;
   costSource: "community" | "game";
-  variants: { key: string; color: string }[];
+  variants: { key: string; color: string; name?: string }[]; // name: em inglês (fortnite.gg), para o tradutor automático
   sprites: Sprite[];
   slots: Slot[]; // em ordem do álbum
 }

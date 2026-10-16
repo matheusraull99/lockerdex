@@ -9,8 +9,10 @@ Os textos são tradução/reescrita própria dos textos do jogo. Os custos de P�
 temporada 4 são estimativas da comunidade (o fortnite.gg ainda não os preencheu).
 Rodar da raiz do projeto: python data/build_data.py
 """
+import colorsys
 import json
 import pathlib
+import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC = ROOT.parent / "src"
@@ -31,6 +33,51 @@ VARIANTS = {
 }
 
 RARITY_ORDER = ["mythic", "legendary", "epic", "rare"]
+
+
+def icon_color(img_path, taken):
+    """Cor de uma variante nova, tirada do ícone da figurinha: o matiz mais comum entre os pixels vivos,
+    clareado para ficar legível no álbum escuro. Se cair perto de uma cor já usada na temporada, gira o matiz."""
+    from PIL import Image  # só é preciso quando aparece variante nova (no Actions: pip install pillow)
+
+    f = SRC.parent / "public" / "icons" / img_path.split("/")[-1]
+    if not f.exists():
+        req = urllib.request.Request("https://fortnite.gg" + img_path, headers={"User-Agent": "Mozilla/5.0"})
+        f.write_bytes(urllib.request.urlopen(req, timeout=30).read())
+    px = Image.open(f).convert("RGBA").resize((64, 64)).tobytes()
+    bins = {}
+    for i in range(0, len(px), 4):
+        r, g, b, a = px[i : i + 4]
+        h, sat, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
+        if a > 200 and sat >= 0.35 and v >= 0.35:
+            bins.setdefault(int(h * 24) % 24, []).append(h)
+    if not bins:
+        return "#9aa6c4"
+    hue = (max(bins, key=lambda k: len(bins[k])) + 0.5) / 24
+    used = [colorsys.rgb_to_hsv(int(c[1:3], 16) / 255, int(c[3:5], 16) / 255, int(c[5:7], 16) / 255)[0] for c in taken]
+    while any(min(abs(hue - u), 1 - abs(hue - u)) < 0.06 for u in used):
+        hue = (hue + 0.12) % 1
+    return "#%02x%02x%02x" % tuple(round(x * 255) for x in colorsys.hsv_to_rgb(hue, 0.6, 0.97))
+
+
+# Variantes que ainda não estão em VARIANTS (ex.: um tipo novo de figurinha no meio da temporada) entram
+# sozinhas, na ordem em que apareceram no fortnite.gg, com a cor tirada do ícone. Alguém pode depois fixar
+# a cor em VARIANTS e escrever o texto do bônus nos idiomas (o tradutor automático só põe o nome).
+for sid in SEASONS:
+    known = {k for k, _ in VARIANTS[sid]}
+    seen = {}
+    for c in sorted((c for c in cards if c["season"] == sid), key=lambda c: int(c["sprite"])):
+        if c["variant"] not in known and c["variant"] not in seen:
+            seen[c["variant"]] = c
+    for vk, c in seen.items():
+        color = icon_color(c["img"], [col for _, col in VARIANTS[sid]])
+        VARIANTS[sid].append((vk, color))
+        print(f"::notice::variante nova na temporada {sid}: {vk} ({details[c['sprite']]['facts'].get('Variant', vk)}), cor {color} tirada do ícone")
+
+# Nome em inglês de cada variante (o campo "Variant" do fortnite.gg): o tradutor automático usa para os idiomas.
+VARIANT_NAME = {}
+for c in cards:
+    VARIANT_NAME.setdefault(c["variant"], details[c["sprite"]]["facts"].get("Variant") or c["variant"])
 
 # O fortnite.gg lista Overshield como raro; o custo de Pó observado na T4 bate com a
 # faixa épica (e o Sprite Locker também o dá como épico).
@@ -150,15 +197,9 @@ for sid, meta in SEASONS.items():
     out.append({
         "id": int(sid), **meta,
         "costSource": "community" if sid == "42" else "game",
-        "variants": [{"key": k, "color": col} for k, col in VARIANTS[sid]],
+        "variants": [{"key": k, "color": col, "name": VARIANT_NAME.get(k, k)} for k, col in VARIANTS[sid]],
         "sprites": sprites,
     })
-
-for sid in SEASONS:
-    known_v = {k for k, _ in VARIANTS[sid]}
-    extra = sorted({c["variant"] for c in cards if c["season"] == sid} - known_v)
-    if extra:
-        print(f"::warning::variantes sem cor em VARIANTS[{sid}] (ficam de fora do álbum): {extra}")
 
 (SRC / "data").mkdir(parents=True, exist_ok=True)
 (SRC / "data" / "seasons.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")

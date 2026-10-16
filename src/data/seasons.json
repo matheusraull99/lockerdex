@@ -9,31 +9,38 @@
   "variants": [
    {
     "key": "base",
-    "color": "#9aa6c4"
+    "color": "#9aa6c4",
+    "name": "Base"
    },
    {
     "key": "gold",
-    "color": "#f5b642"
+    "color": "#f5b642",
+    "name": "Gold"
    },
    {
     "key": "cheatmaster",
-    "color": "#4fbf1f"
+    "color": "#4fbf1f",
+    "name": "Cheatmaster"
    },
    {
     "key": "hacker",
-    "color": "#4a47e8"
+    "color": "#4a47e8",
+    "name": "Hacker"
    },
    {
     "key": "reaper",
-    "color": "#f27bd0"
+    "color": "#f27bd0",
+    "name": "Bounty Hunter"
    },
    {
     "key": "tricktreat",
-    "color": "#ff7a1a"
+    "color": "#ff7a1a",
+    "name": "Trick or Treat"
    },
    {
     "key": "quack",
-    "color": "#b07cff"
+    "color": "#b07cff",
+    "name": "Quack"
    }
   ],
   "sprites": [
@@ -1480,35 +1487,43 @@
   "variants": [
    {
     "key": "base",
-    "color": "#9aa6c4"
+    "color": "#9aa6c4",
+    "name": "Base"
    },
    {
     "key": "gold",
-    "color": "#f5b642"
+    "color": "#f5b642",
+    "name": "Gold"
    },
    {
     "key": "candy",
-    "color": "#ff6f91"
+    "color": "#ff6f91",
+    "name": "Candy"
    },
    {
     "key": "galaxy",
-    "color": "#6d4bff"
+    "color": "#6d4bff",
+    "name": "Galaxy"
    },
    {
     "key": "gem",
-    "color": "#19c2b0"
+    "color": "#19c2b0",
+    "name": "Gem"
    },
    {
     "key": "holofoil",
-    "color": "#8fd3ff"
+    "color": "#8fd3ff",
+    "name": "Holofoil"
    },
    {
     "key": "cube",
-    "color": "#8c6bd8"
+    "color": "#8c6bd8",
+    "name": "Cube"
    },
    {
     "key": "quack",
-    "color": "#ffd23f"
+    "color": "#ffd23f",
+    "name": "Quack"
    }
   ],
   "sprites": [

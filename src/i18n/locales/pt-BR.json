@@ -759,18 +759,17 @@
         "Comida melhor a cada nível."
       ]
     },
-    "CargoLying": {
-      "name": "One Wish Willow",
-      "ability": [
-        "Extrai elementais equipados de outros jogadores ao eliminá-los.",
-        "Empurra tudo para longe ao sofrer dano.",
-        "Fica chateado ao ser removido e marca você no mapa."
-      ]
-    },
     "WinnerE": {
-      "name": "Honey",
+      "name": "Mel",
       "ability": [
         "Chance de gerar abelhas no local do impacto ao causar dano com uma arma de longo alcance."
+      ]
+    },
+    "CargoLying": {
+      "name": "Salgueiro do Desejo",
+      "ability": [
+        "Extraia os elementais equipados de inimigos ao eliminá-los e empurre inimigos próximos para longe ao sofrer dano.",
+        "Você será marcado no mapa se removê-lo, então cuidado!"
       ]
     }
   }

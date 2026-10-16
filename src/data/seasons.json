@@ -39,6 +39,7 @@
   "sprites": [
    {
     "key": "Crown",
+    "name": "Crown",
     "rarity": "mythic",
     "levels": null,
     "location": "random",
@@ -91,6 +92,7 @@
    },
    {
     "key": "Klombo",
+    "name": "Klombo",
     "rarity": "mythic",
     "levels": null,
     "location": "random",
@@ -150,6 +152,7 @@
    },
    {
     "key": "PhaseDash",
+    "name": "Spooky Dash",
     "rarity": "mythic",
     "levels": null,
     "location": "random",
@@ -209,6 +212,7 @@
    },
    {
     "key": "CargoLying",
+    "name": "One Wish Willow",
     "rarity": "mythic",
     "levels": null,
     "location": "random",
@@ -261,6 +265,7 @@
    },
    {
     "key": "CosmicThunderDoubleJump",
+    "name": "Jackrabbit",
     "rarity": "legendary",
     "levels": null,
     "location": "random",
@@ -313,6 +318,7 @@
    },
    {
     "key": "Killswitch",
+    "name": "Killswitch",
     "rarity": "legendary",
     "levels": null,
     "location": "night",
@@ -365,6 +371,7 @@
    },
    {
     "key": "WinnerB",
+    "name": "X-Ray",
     "rarity": "legendary",
     "levels": null,
     "location": "random",
@@ -417,6 +424,7 @@
    },
    {
     "key": "GhostDamage",
+    "name": "Blinky",
     "rarity": "legendary",
     "levels": null,
     "location": "night",
@@ -469,6 +477,7 @@
    },
    {
     "key": "BodySlam",
+    "name": "Crash Bandicoot",
     "rarity": "legendary",
     "levels": null,
     "location": "random",
@@ -521,6 +530,7 @@
    },
    {
     "key": "HealthSiphon",
+    "name": "Vampire",
     "rarity": "legendary",
     "levels": null,
     "location": "random",
@@ -573,6 +583,7 @@
    },
    {
     "key": "IncreasedMelee",
+    "name": "The Deer",
     "rarity": "legendary",
     "levels": null,
     "location": "random",
@@ -625,6 +636,7 @@
    },
    {
     "key": "NarrowFlea",
+    "name": "Sonic",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -677,6 +689,7 @@
    },
    {
     "key": "NarrowFleaMonkey",
+    "name": "Tails",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -729,6 +742,7 @@
    },
    {
     "key": "ReloadOverTime",
+    "name": "Shadow",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -781,6 +795,7 @@
    },
    {
     "key": "Overshield",
+    "name": "Overshield",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -833,6 +848,7 @@
    },
    {
     "key": "WinnerA",
+    "name": "Pond",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -885,6 +901,7 @@
    },
    {
     "key": "IncreaseHeals",
+    "name": "Morgana",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -937,6 +954,7 @@
    },
    {
     "key": "WinnerD",
+    "name": "Dumpster Dive",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -989,6 +1007,7 @@
    },
    {
     "key": "WinnerE",
+    "name": "Honey",
     "rarity": "epic",
     "levels": null,
     "location": "random",
@@ -1041,6 +1060,7 @@
    },
    {
     "key": "Jonesy",
+    "name": "Jonesy",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1100,6 +1120,7 @@
    },
    {
     "key": "Dwarf",
+    "name": "Adventure",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1159,6 +1180,7 @@
    },
    {
     "key": "BushRanger",
+    "name": "Bush",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1218,6 +1240,7 @@
    },
    {
     "key": "8BitBlaster",
+    "name": "8-Bit",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1270,6 +1293,7 @@
    },
    {
     "key": "ImprovedSlide",
+    "name": "Mega Man",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1287,6 +1311,7 @@
    },
    {
     "key": "WinnerC",
+    "name": "Onigiri",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1339,6 +1364,7 @@
    },
    {
     "key": "StormScout",
+    "name": "Storm Scout",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1391,6 +1417,7 @@
    },
    {
     "key": "Birthday",
+    "name": "Birthday",
     "rarity": "rare",
     "levels": null,
     "location": "random",
@@ -1487,6 +1514,7 @@
   "sprites": [
    {
     "key": "FillerGrunt",
+    "name": "John Wick",
     "rarity": "mythic",
     "levels": {
      "unit": "s",
@@ -1513,6 +1541,7 @@
    },
    {
     "key": "Batman",
+    "name": "Batman",
     "rarity": "mythic",
     "levels": null,
     "location": "spriteChest",
@@ -1565,6 +1594,7 @@
    },
    {
     "key": "CokeParmesan",
+    "name": "Vini Jr.",
     "rarity": "mythic",
     "levels": {
      "units": [
@@ -1609,6 +1639,7 @@
    },
    {
     "key": "BurntPeanut",
+    "name": "Burnt Peanut",
     "rarity": "mythic",
     "levels": {
      "unit": "%",
@@ -1635,6 +1666,7 @@
    },
    {
     "key": "ZeroPoint",
+    "name": "Zero Point",
     "rarity": "mythic",
     "levels": {
      "unit": "s",
@@ -1710,6 +1742,7 @@
    },
    {
     "key": "Grim",
+    "name": "Grim",
     "rarity": "mythic",
     "levels": {
      "unit": "s",
@@ -1778,6 +1811,7 @@
    },
    {
     "key": "PedicureAntacid",
+    "name": "Ironmouse",
     "rarity": "mythic",
     "levels": {
      "unit": "",
@@ -1804,6 +1838,7 @@
    },
    {
     "key": "CompanyStargazer",
+    "name": "Pollo",
     "rarity": "mythic",
     "levels": {
      "unit": "s",
@@ -1830,6 +1865,7 @@
    },
    {
     "key": "Sleepy",
+    "name": "Dream",
     "rarity": "legendary",
     "levels": null,
     "location": "crates",
@@ -1875,6 +1911,7 @@
    },
    {
     "key": "Punk",
+    "name": "Punk",
     "rarity": "legendary",
     "levels": null,
     "location": "spriteChest",
@@ -1920,6 +1957,7 @@
    },
    {
     "key": "Boss",
+    "name": "Boss",
     "rarity": "legendary",
     "levels": {
      "unit": "",
@@ -1975,6 +2013,7 @@
    },
    {
     "key": "Seven",
+    "name": "Seven",
     "rarity": "legendary",
     "levels": {
      "unit": "s",
@@ -2029,6 +2068,7 @@
    },
    {
     "key": "Llama",
+    "name": "Llama",
     "rarity": "legendary",
     "levels": {
      "unit": "%",
@@ -2083,6 +2123,7 @@
    },
    {
     "key": "Peely",
+    "name": "Peeky Peely",
     "rarity": "legendary",
     "levels": {
      "unit": "m",
@@ -2137,6 +2178,7 @@
    },
    {
     "key": "Duck",
+    "name": "Duck",
     "rarity": "epic",
     "levels": {
      "unit": "",
@@ -2191,6 +2233,7 @@
    },
    {
     "key": "Ghost",
+    "name": "Ghost",
     "rarity": "epic",
     "levels": {
      "unit": "s",
@@ -2245,6 +2288,7 @@
    },
    {
     "key": "Demon",
+    "name": "Demon",
     "rarity": "epic",
     "levels": {
      "unit": "",
@@ -2299,6 +2343,7 @@
    },
    {
     "key": "King",
+    "name": "King",
     "rarity": "epic",
     "levels": {
      "unit": "",
@@ -2354,6 +2399,7 @@
    },
    {
     "key": "Soccer",
+    "name": "Striker",
     "rarity": "epic",
     "levels": {
      "unit": "s",
@@ -2408,6 +2454,7 @@
    },
    {
     "key": "Drifter",
+    "name": "Aura",
     "rarity": "epic",
     "levels": {
      "unit": "",
@@ -2462,6 +2509,7 @@
    },
    {
     "key": "Water",
+    "name": "Water",
     "rarity": "rare",
     "levels": {
      "unit": "",
@@ -2530,6 +2578,7 @@
    },
    {
     "key": "Earth",
+    "name": "Earth",
     "rarity": "rare",
     "levels": {
      "unit": "%",
@@ -2598,6 +2647,7 @@
    },
    {
     "key": "Spitfire",
+    "name": "Fire",
     "rarity": "rare",
     "levels": {
      "unit": "",
@@ -2666,6 +2716,7 @@
    },
    {
     "key": "Fishy",
+    "name": "Fishy",
     "rarity": "rare",
     "levels": {
      "units": [
@@ -2739,6 +2790,7 @@
    },
    {
     "key": "Air",
+    "name": "Air",
     "rarity": "rare",
     "levels": null,
     "location": "mountains",

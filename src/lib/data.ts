@@ -1,3 +1,4 @@
+import { fallbackNames } from "./content";
 import raw from "../data/seasons.json";
 
 export type Rarity = "rare" | "epic" | "legendary" | "mythic";
@@ -21,6 +22,7 @@ export interface RawSlot {
 
 export interface Sprite {
   key: string;
+  name?: string; // nome em inglês (fortnite.gg), usado quando o idioma ainda não tem a tradução
   rarity: Rarity;
   levels: Levels | null;
   location: string;
@@ -67,6 +69,7 @@ export const SEASONS: Season[] = (raw as RawSeason[]).map((rs) => {
   const released: Slot[] = [];
   const later: Slot[] = [];
   for (const r of rs.sprites) {
+    if (r.name) fallbackNames[r.key] = r.name;
     const sprite: Sprite = { ...r, slots: [] };
     for (const s of r.slots) {
       const slot: Slot = { ...s, id: s.fggId, no: 0, sprite, tilt: tiltFor(s.fggId), unreleased: sprite.unreleased || !!s.unreleased };

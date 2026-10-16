@@ -3,9 +3,12 @@ import type { Locale } from "./i18n";
 
 type Sprites = Locale["sprites"];
 
+/** Nome em inglês de cada elemental (de seasons.json), para os que ainda não têm tradução nos idiomas. */
+export const fallbackNames: Record<string, string> = {};
+
 export function spriteText(L: Locale, key: string) {
   const s = (L.sprites as Record<string, Sprites[keyof Sprites] | undefined>)[key];
-  return { name: s?.name ?? key, ability: s?.ability ?? [], levels: (s as { levels?: string } | undefined)?.levels ?? "" };
+  return { name: s?.name ?? fallbackNames[key] ?? key, ability: s?.ability ?? [], levels: (s as { levels?: string } | undefined)?.levels ?? "" };
 }
 
 export const spriteName = (L: Locale, sp: Sprite) => spriteText(L, sp.key).name;

@@ -1,5 +1,6 @@
 # Publica o Lockerdex no GitHub Pages.
 # - A cada push na main.
+# - A cada 3 horas: confere o fortnite.gg e, se saíram elementais novos, atualiza os dados e publica sozinho.
 # - Todo dia às 06:15 UTC (depois da troca da loja às 00:00): recria o catálogo de cosméticos
 #   com o histórico de loja do dia antes do build.
 name: Publicar
@@ -9,6 +10,7 @@ on:
     branches: [main]
   schedule:
     - cron: "15 6 * * *"
+    - cron: "40 */3 * * *"
     # Os jogos grátis da Epic trocam às quintas, 15:00 UTC (12h em Brasília)
     - cron: "20 15 * * 4"
   workflow_dispatch:
@@ -47,6 +49,30 @@ jobs:
 
       # O feed da Epic não libera CORS: o site lê o arquivo gerado aqui. Se a Epic estiver fora do ar,
       # segue com o arquivo do repositório (a página filtra pelas datas).
+      # Elementais novos: baixa o catálogo do fortnite.gg, refaz seasons.json e os ícones e guarda no repositório.
+      # Se o fortnite.gg bloquear o GitHub ou mudar algo já conhecido, o passo falha só com aviso e o site
+      # segue com os dados que já estão no repositório. data/raw não vai para o git: o cache evita rebaixar tudo.
+      - name: Cache do fortnite.gg
+        if: github.event_name != 'push'
+        uses: actions/cache@v5
+        with:
+          path: data/raw
+          key: fgg-raw-${{ github.run_id }}
+          restore-keys: fgg-raw-
+
+      - name: Sincronizar elementais do fortnite.gg
+        if: github.event_name != 'push'
+        run: |
+          mkdir -p data/raw
+          python data/sync_fgg.py && python data/build_data.py && python data/fetch_icons.py || echo "::warning::não consegui sincronizar com o fortnite.gg; usando os dados do repositório"
+          if ! git diff --quiet -- src/data/seasons.json || [ -n "$(git ls-files -o --exclude-standard public/icons)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/data/seasons.json public/icons
+            git commit -m "Elementais novos do fortnite.gg (atualização automática)"
+            git push
+          fi
+
       - name: Atualizar jogos grátis da Epic
         run: python data/build_free_games.py || echo "::warning::feed da Epic indisponível; usando o arquivo do repositório"
 

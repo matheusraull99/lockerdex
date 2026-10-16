@@ -138,6 +138,7 @@ for sid, meta in SEASONS.items():
             slots.append(slot)
         sprites.append({
             "key": p,
+            "name": base["name"],  # nome em inglês do fortnite.gg: o site usa quando ainda não há tradução
             "rarity": rarity,
             "levels": LEVELS.get(p),
             "location": location,
@@ -152,6 +153,12 @@ for sid, meta in SEASONS.items():
         "variants": [{"key": k, "color": col} for k, col in VARIANTS[sid]],
         "sprites": sprites,
     })
+
+for sid in SEASONS:
+    known_v = {k for k, _ in VARIANTS[sid]}
+    extra = sorted({c["variant"] for c in cards if c["season"] == sid} - known_v)
+    if extra:
+        print(f"::warning::variantes sem cor em VARIANTS[{sid}] (ficam de fora do álbum): {extra}")
 
 (SRC / "data").mkdir(parents=True, exist_ok=True)
 (SRC / "data" / "seasons.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")

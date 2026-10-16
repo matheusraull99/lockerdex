@@ -237,16 +237,16 @@ export default function App() {
         </header>
 
         {/* Apoio por Pix: uma linha pequena em todas as páginas, logo abaixo do cabeçalho (menos na própria página de apoio). */}
-        {/* No celular ela desce para o fim da página, para o topo ficar só com a marca. */}
+        {/* No celular ela desce para o fim da página, para o topo ficar só com a marca; na página inicial fica em cima. */}
         {supportOn && pix && route !== "support" && (
-          <div className="supbar-slot supbar-slot-top">
+          <div className={route === "home" ? "supbar-slot supbar-slot-top supbar-slot-home" : "supbar-slot supbar-slot-top"}>
             <SupportBar cfg={pix} code={pixCode} />
           </div>
         )}
 
         <main className={`page page-${route}`}>{page}</main>
 
-        {supportOn && pix && route !== "support" && (
+        {supportOn && pix && route !== "support" && route !== "home" && (
           <div className="supbar-slot supbar-slot-end">
             <SupportBar cfg={pix} code={pixCode} />
           </div>

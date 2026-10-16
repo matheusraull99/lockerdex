@@ -36,7 +36,7 @@
   .top .lang {
     display: none;
   }
-  .supbar-slot-top {
+  .supbar-slot-top:not(.supbar-slot-home) {
     display: none;
   }
   .supbar-slot-end {

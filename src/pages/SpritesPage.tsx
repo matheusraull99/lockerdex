@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useMemo, useState, type FormEvent } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type TouchEvent } from "react";
 import { RARITIES, SEASONS, type Rarity, type Slot, type Sprite, type Status } from "../lib/data";
 import { parseNumbers, readShared, storage, type Collection } from "../lib/collection";
 import { loadLevels, saveLevels, type LevelMap } from "../lib/levels";
 import { useI18n } from "../lib/i18n";
-import { rarityLabel, variantText } from "../lib/content";
+import { rarityLabel, spriteText, variantText } from "../lib/content";
 import { relTime, SEASON_END, useUi } from "../lib/ui";
 import { href, NAV_EVENT } from "../lib/router";
 import { Album, DEFAULT_FILTERS, type Filters, type SortKey, type StatusFilter } from "../components/Album";
@@ -12,6 +12,10 @@ import { Detail } from "../components/Detail";
 import { ShareDialog } from "../components/ShareDialog";
 import { Compare } from "../components/Compare";
 import { WeekEvents } from "../components/WeekEvents";
+import { Ring, closest } from "../components/Ring";
+import { MOBILE, haptic, reducedMotion, useMedia } from "../lib/media";
+import { confetti } from "../lib/confetti";
+import { QUICK_EVENT, takeQuick } from "../lib/quick";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -27,12 +31,23 @@ export function SpritesPage() {
   const [sharing, setSharing] = useState(false);
   const [comparing, setComparing] = useState(false);
   const [quick, setQuick] = useState("");
+  // Celular: o álbum mostra uma raridade por vez (abas + deslizar para o lado); a busca mostra todas.
+  const mobile = useMedia(MOBILE);
+  const [page, setPage] = useState<Rarity>(RARITIES[0]);
+  const [slide, setSlide] = useState(0); // direção da última troca de página, para a animação
+  const [quickOpen, setQuickOpen] = useState(false);
+  const albumRef = useRef<HTMLDivElement>(null);
+  const touch = useRef<{ x: number; y: number } | null>(null);
 
   const season = SEASONS.find((s) => s.id === seasonId) ?? CURRENT;
   const readOnly = !!friend && !comparing;
   const viewing = friend && !comparing ? friend.collection : mine;
   const slots = useMemo(() => visibleSlots(season, filters.unreleased), [season, filters.unreleased]);
   const c = counts(slots, viewing);
+  const paged = mobile && !filters.q.trim();
+  const albumFilters = paged ? { ...filters, rarity: page } : filters;
+  const mineRef = useRef(mine);
+  mineRef.current = mine;
 
   useEffect(() => storage.save(mine), [mine]);
   useEffect(() => saveLevels(levels), [levels]);
@@ -71,17 +86,74 @@ export function SpritesPage() {
       return out;
     });
   }, []);
+  // Marca a figurinha (falta → tenho → dominado). Ao fechar um elemental inteiro (ou dominar todas), festa.
   const cycle = useCallback(
-    (s: Slot) =>
-      setMine((m) => {
-        const n = { ...m };
-        const next = (((m[s.id] ?? 0) + 1) % 3) as Status;
-        if (next) n[s.id] = next;
-        else delete n[s.id];
-        return n;
-      }),
-    [],
+    (s: Slot) => {
+      const m = mineRef.current;
+      const n = { ...m };
+      const next = (((m[s.id] ?? 0) + 1) % 3) as Status;
+      if (next) n[s.id] = next;
+      else delete n[s.id];
+      mineRef.current = n;
+      setMine(n);
+      haptic(next ? 12 : 6);
+      const all = s.sprite.slots.filter((x) => !x.unreleased);
+      if (!next || !all.length) return;
+      const every = (col: Collection, min: number) => all.every((x) => (col[x.id] ?? 0) >= min);
+      const name = spriteText(L, s.sprite.key).name;
+      const el = document.getElementById(`st-${s.id}`);
+      if (every(n, 2) && !every(m, 2)) {
+        confetti(el, true);
+        toast(t("album.mastered", { name }));
+      } else if (every(n, 1) && !every(m, 1)) {
+        confetti(el);
+        toast(t("album.complete", { name }));
+      }
+    },
+    [L, t, toast],
   );
+
+  // Troca de página (raridade) no celular; volta o álbum para o topo se ele já tinha passado da tela.
+  const turn = (r: Rarity) => {
+    if (r === page) return;
+    setSlide(RARITIES.indexOf(r) > RARITIES.indexOf(page) ? 1 : -1);
+    setPage(r);
+    const top = albumRef.current?.getBoundingClientRect().top ?? 0;
+    if (top < 0) scrollBy({ top: top - 130, behavior: reducedMotion() ? "auto" : "smooth" });
+  };
+  const onTouchStart = (e: TouchEvent) => {
+    const p = e.touches[0];
+    touch.current = { x: p.clientX, y: p.clientY };
+  };
+  const onTouchEnd = (e: TouchEvent) => {
+    const s = touch.current;
+    touch.current = null;
+    if (!s || !paged) return;
+    const p = e.changedTouches[0];
+    const dx = p.clientX - s.x;
+    const dy = p.clientY - s.y;
+    if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+    const rtl = document.documentElement.dir === "rtl";
+    const step = dx < 0 !== rtl ? 1 : -1; // arrastar para a esquerda = próxima página
+    const i = RARITIES.indexOf(page) + step;
+    if (i >= 0 && i < RARITIES.length) turn(RARITIES[i]);
+  };
+
+  // Botão "Nº" da barra de baixo: abre o marcar por número (vem de qualquer página).
+  useEffect(() => {
+    const open = () => {
+      if (takeQuick()) setQuickOpen(true);
+    };
+    open();
+    addEventListener(QUICK_EVENT, open);
+    return () => removeEventListener(QUICK_EVENT, open);
+  }, []);
+  useEffect(() => {
+    if (!quickOpen) return;
+    const esc = (e: KeyboardEvent) => e.key === "Escape" && setQuickOpen(false);
+    addEventListener("keydown", esc);
+    return () => removeEventListener("keydown", esc);
+  }, [quickOpen]);
 
   const leaveFriend = () => {
     history.replaceState(null, "", href("sprites")); // tira o #c=… da coleção do amigo
@@ -103,6 +175,8 @@ export function SpritesPage() {
       return n;
     });
     setQuick("");
+    setQuickOpen(false);
+    haptic(12);
     toast(t("quick.done", { list: hit.map((s) => s.no).join(", ") }));
   };
 
@@ -150,7 +224,11 @@ export function SpritesPage() {
             </a>
           )}
         </h1>
-        <Minimap slots={slots} collection={viewing} />
+        {mobile ? (
+          <Ring owned={c.owned} total={c.total} next={closest(season, viewing, filters.unreleased)} hint={t("sticker.hint")} />
+        ) : (
+          <Minimap slots={slots} collection={viewing} />
+        )}
         <p className="hero-hint">{t("sticker.hint")}</p>
       </section>
 
@@ -167,7 +245,7 @@ export function SpritesPage() {
             </button>
           ))}
         </div>
-        <select value={filters.rarity} onChange={(e) => set("rarity", e.target.value as "all" | Rarity)} aria-label={t("filter.rarityAll")}>
+        <select className="f-rarity" value={filters.rarity} onChange={(e) => set("rarity", e.target.value as "all" | Rarity)} aria-label={t("filter.rarityAll")}>
           <option value="all">{t("filter.rarityAll")}</option>
           {RARITIES.map((r) => (
             <option key={r} value={r}>
@@ -207,12 +285,36 @@ export function SpritesPage() {
         )}
       </div>
 
+      {mobile && (
+        <nav className={paged ? "rtabs" : "rtabs rtabs-off"} aria-label={t("filter.rarityAll")}>
+          {RARITIES.map((r) => {
+            const rs = slots.filter((s) => s.sprite.rarity === r);
+            return (
+              <button key={r} type="button" data-rarity={r} aria-pressed={paged && page === r} onClick={() => turn(r)}>
+                <b>{rarityLabel(L, r)}</b>
+                <small>
+                  {nf(rs.filter((s) => (viewing[s.id] ?? 0) > 0).length)}/{nf(rs.length)}
+                </small>
+              </button>
+            );
+          })}
+        </nav>
+      )}
+
       <div className="layout">
-        <div>
+        <div
+          ref={albumRef}
+          className={paged ? "pg-in" : undefined}
+          key={paged ? page : "all"}
+          data-dir={slide}
+          onTouchStart={mobile ? onTouchStart : undefined}
+          onTouchEnd={mobile ? onTouchEnd : undefined}
+        >
           <Album
+            paged={paged}
             season={season}
             collection={viewing}
-            filters={filters}
+            filters={albumFilters}
             readOnly={readOnly}
             levels={readOnly ? undefined : levels}
             onCycle={cycle}
@@ -227,6 +329,29 @@ export function SpritesPage() {
 
       {detail && <Detail season={season} sprite={detail} collection={viewing} levels={levels} readOnly={readOnly} onSet={setStatus} onLevel={setLevel} onClose={() => setDetail(null)} />}
       {sharing && <ShareDialog season={season} slots={slots} collection={mine} onClose={() => setSharing(false)} />}
+      {quickOpen && !readOnly && (
+        <div className="qsheet-bg" onClick={() => setQuickOpen(false)}>
+          <form className="qsheet" role="dialog" aria-modal="true" aria-label={t("quick.label")} onClick={(e) => e.stopPropagation()} onSubmit={markQuick}>
+            <h2>{t("quick.label")}</h2>
+            <input
+              autoFocus
+              value={quick}
+              onChange={(e) => setQuick(e.target.value)}
+              placeholder={t("quick.placeholder")}
+              inputMode="numeric"
+              aria-label={t("quick.label")}
+            />
+            <div className="qsheet-act">
+              <button type="button" className="btn btn-quiet" onClick={() => setQuickOpen(false)}>
+                {t("detail.close")}
+              </button>
+              <button type="submit" className="btn btn-dust" disabled={!quick.trim()}>
+                {t("quick.button")}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
     </>
   );
 }

@@ -1,0 +1,368 @@
+/* Lockerdex no celular (até 720px), a cara nova de 10/2026:
+   - álbum com figurinhas grandes, 3 por linha, uma raridade por vez (abas presas + deslizar para o lado);
+   - topo enxuto (só a marca; instalar, idioma, cor e Pix moram em Mais) que some ao rolar para baixo;
+   - barra de baixo com 4 abas e o botão Nº (marcar por número) no meio.
+   Carregado depois dos outros CSS: só sobrescreve o que muda no celular. */
+
+.rtabs,
+.supbar-slot-end,
+.tab-fab {
+  display: none;
+}
+
+.confetti {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 60;
+}
+
+@media (max-width: 720px) {
+  /* ---------- topo enxuto ---------- */
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    transition: transform 0.25s ease;
+  }
+  .top.top-hide {
+    transform: translateY(-110%);
+  }
+  .top .btn-support,
+  .top .btn-install,
+  .top .btn-theme,
+  .top .lang {
+    display: none;
+  }
+  .supbar-slot-top {
+    display: none;
+  }
+  .supbar-slot-end {
+    display: block;
+    margin-top: 18px;
+  }
+
+  /* ---------- barra de baixo: 4 abas + Nº ---------- */
+  .tabbar {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: end;
+  }
+  .tabbar a {
+    font-size: 11px;
+  }
+  .tab-fab {
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    width: 54px;
+    height: 54px;
+    margin-top: -24px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--dust);
+    color: var(--dust-ink);
+    font: 900 21px/1 var(--display);
+    letter-spacing: 0.02em;
+    box-shadow: 0 0 0 4px var(--page), 0 8px 18px color-mix(in srgb, var(--dust) 45%, transparent);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.15s ease;
+  }
+  .tab-fab:active {
+    transform: scale(0.93);
+  }
+
+  /* ---------- temporadas + compartilhar numa linha só ---------- */
+  .page-bar {
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .page-bar .seasons {
+    order: 0;
+    flex: 1;
+    width: auto;
+    min-width: 0;
+  }
+  .page-bar .seasons button {
+    padding-inline: 8px;
+  }
+  .page-bar > .btn-dust {
+    flex: none;
+    padding-inline: 14px;
+  }
+
+  /* ---------- progresso: anel no lugar do minimapa ---------- */
+  .hero-count,
+  .hero-hint {
+    display: none;
+  }
+  .hero-season {
+    text-wrap: balance;
+  }
+  .ring-box {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 14px;
+    align-items: center;
+    margin: 12px 0 8px;
+  }
+  .ring {
+    position: relative;
+    width: 96px;
+    aspect-ratio: 1;
+  }
+  .ring svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  .ring circle {
+    fill: none;
+    stroke-width: 9;
+    stroke-linecap: round;
+  }
+  .ring-t {
+    stroke: var(--slot);
+  }
+  .ring-b {
+    stroke: var(--dust);
+    transition: stroke-dashoffset 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .ring-n {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font: 900 28px/1 var(--display);
+    font-variant-numeric: tabular-nums;
+  }
+  .ring-n small {
+    display: block;
+    margin-top: 2px;
+    font: 700 11px/1.2 var(--body);
+    color: var(--ink-soft);
+  }
+  .ring-next {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  /* ---------- filtros: a raridade vira as abas; marcar por número vira o botão Nº ---------- */
+  .tools .f-rarity,
+  .tools .quick {
+    display: none;
+  }
+
+  /* ---------- abas das raridades, presas logo abaixo do topo ---------- */
+  .rtabs {
+    position: sticky;
+    top: var(--toph, 0px);
+    z-index: 12;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    margin: 6px 0 0;
+    padding: 8px 0;
+    background: var(--paper);
+    transition: top 0.25s ease;
+  }
+  .top-hidden .rtabs {
+    top: 0;
+  }
+  .rtabs button {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 3px;
+    min-width: 0;
+    padding: 7px 2px 6px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--page);
+    color: var(--ink-soft);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .rtabs b {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 900 15px/1 var(--display);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+  }
+  .rtabs small {
+    font-size: 11px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .rtabs button::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 3px;
+    background: var(--rc);
+    opacity: 0.35;
+  }
+  .rtabs [aria-pressed="true"] {
+    border-color: var(--rc);
+    background: color-mix(in srgb, var(--rc) 16%, var(--page));
+    color: var(--ink);
+  }
+  .rtabs [aria-pressed="true"]::after {
+    opacity: 1;
+  }
+  /* com busca, o álbum mostra todas as raridades: as abas ficam apagadas */
+  .rtabs-off button {
+    opacity: 0.55;
+  }
+
+  /* troca de página: entra pelo lado para onde você deslizou */
+  .pg-in[data-dir="1"] {
+    animation: pg-from-right 0.28s ease;
+  }
+  .pg-in[data-dir="-1"] {
+    animation: pg-from-left 0.28s ease;
+  }
+  .album-paged .sec {
+    margin-top: 6px;
+  }
+  .album-paged .sec-h {
+    display: none;
+  }
+
+  /* ---------- figurinhas grandes, 3 por linha ---------- */
+  .row {
+    padding: 12px 12px 14px;
+  }
+  .row-st {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px 10px;
+  }
+  .cell {
+    width: auto;
+    min-width: 0;
+    gap: 6px;
+  }
+  .st-md {
+    --w: 100%;
+    --h: auto;
+    max-width: none;
+    aspect-ratio: 3 / 4;
+    border-radius: 14px;
+  }
+  .st-md .st-art {
+    inset: 6px 6px 22px;
+    border-radius: 10px;
+  }
+  /* faltando: o elemental aparece apagado, em cinza, com o número no canto */
+  .st-md[data-status="0"] .st-art img {
+    filter: grayscale(1) brightness(0.6) contrast(0.9);
+    opacity: 0.45;
+  }
+  .st-md[data-status="0"] .st-no {
+    inset: 6px auto auto 9px;
+    display: block;
+    height: auto;
+    font-size: 19px;
+    color: var(--ink-soft);
+  }
+  /* colada: moldura na cor da variante */
+  .st-md[data-status="1"],
+  .st-md[data-status="2"] {
+    box-shadow: inset 0 0 0 3px var(--vc), 0 1px 0 rgb(var(--shadow) / 0.08), 0 6px 14px -4px rgb(var(--shadow) / 0.35);
+  }
+  .st-md[data-status="1"] .st-no,
+  .st-md[data-status="2"] .st-no {
+    height: 22px;
+    font-size: 16px;
+  }
+  .cell-var {
+    font-size: 12px;
+  }
+
+  /* ---------- marcar por número: folha que sobe ---------- */
+  .qsheet-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: flex-end;
+    background: rgb(10 8 24 / 0.55);
+  }
+  .qsheet {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    padding: 18px max(16px, env(safe-area-inset-right)) calc(18px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+    border-radius: 18px 18px 0 0;
+    background: var(--page);
+    color: var(--ink);
+    animation: sheet-up 0.22s ease;
+  }
+  .qsheet h2 {
+    margin: 0;
+    font: 900 26px/1 var(--display);
+    text-transform: uppercase;
+  }
+  .qsheet input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid var(--line);
+    border-radius: 12px;
+    background: var(--paper);
+    color: var(--ink);
+    font: 700 20px/1.2 var(--body);
+    font-variant-numeric: tabular-nums;
+  }
+  .qsheet input:focus {
+    outline: none;
+    border-color: var(--dust);
+  }
+  .qsheet-act {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}
+
+@keyframes pg-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+}
+@keyframes pg-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+}
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .top,
+  .rtabs,
+  .ring-b,
+  .tab-fab {
+    transition: none;
+  }
+  .pg-in[data-dir],
+  .qsheet {
+    animation: none;
+  }
+}

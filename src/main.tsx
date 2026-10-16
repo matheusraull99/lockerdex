@@ -6,6 +6,7 @@ import "@fontsource-variable/figtree";
 import "./styles.css";
 import "./portal.css";
 import "./fn-style.css";
+import "./mobile.css";
 import { I18nProvider, preloadLocale } from "./lib/i18n";
 import App from "./App";
 import { migrateHashRoute } from "./lib/router";

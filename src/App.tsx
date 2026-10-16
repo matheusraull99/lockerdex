@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useMemo, useState, type ReactElement } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactElement } from "react";
 import { SEASONS } from "./lib/data";
 import { useI18n } from "./lib/i18n";
 import { OFFERED } from "./lib/langs";
-import { href, useRoute, type Route } from "./lib/router";
+import { go, href, useRoute, type Route } from "./lib/router";
+import { requestQuick } from "./lib/quick";
 import { UiContext, type Ui } from "./lib/ui";
 import { useInstall } from "./lib/pwa";
 import { feedbackEnabled } from "./lib/feedback";
@@ -43,15 +44,17 @@ const ICON: Record<string, ReactElement> = {
   more: <path d="M5 12h.01M12 12h.01M19 12h.01" strokeWidth="3.2" />,
 };
 
+// No celular ficam 4 abas (Elementais, Loja, Mapa, Mais) com o botão "Nº" no meio; o resto mora em "Mais".
 const TABS: { route: Route; label: NavKey; mobile: boolean }[] = [
   { route: "sprites", label: "nav.sprites", mobile: true },
   { route: "shop", label: "nav.shop", mobile: true },
-  { route: "cosmetics", label: "nav.cosmetics", mobile: true },
+  { route: "cosmetics", label: "nav.cosmetics", mobile: false },
   { route: "lists", label: "nav.lists", mobile: false },
   { route: "map", label: "nav.map", mobile: true },
-  { route: "history", label: "nav.history", mobile: true },
+  { route: "history", label: "nav.history", mobile: false },
   { route: "more", label: "nav.more", mobile: true },
 ];
+const MOBILE_TABS = TABS.filter((x) => x.mobile);
 
 function Icon({ name }: { name: string }) {
   return (
@@ -73,6 +76,30 @@ export default function App() {
   const [suggesting, setSuggesting] = useState(false);
   const [theming, setTheming] = useState(false);
   const inst = useInstall();
+  const topRef = useRef<HTMLElement>(null);
+  const [topHidden, setTopHidden] = useState(false);
+
+  // Celular: o topo some ao rolar para baixo e volta ao subir. A altura dele vai para --toph, onde as abas
+  // presas do álbum se encaixam logo abaixo.
+  useEffect(() => {
+    const el = topRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => document.documentElement.style.setProperty("--toph", `${el.offsetHeight}px`));
+    ro.observe(el);
+    let last = scrollY;
+    const on = () => {
+      const y = scrollY;
+      if (Math.abs(y - last) < 6) return;
+      setTopHidden(y > last && y > 120);
+      last = y;
+    };
+    addEventListener("scroll", on, { passive: true });
+    return () => {
+      ro.disconnect();
+      removeEventListener("scroll", on);
+    };
+  }, []);
+  useEffect(() => setTopHidden(false), [route]);
 
   useEffect(() => {
     if (!toastMsg) return;
@@ -103,7 +130,7 @@ export default function App() {
   // O enredo é o segundo modo da aba História.
   // A página inicial não é aba: nenhuma acende (o logo leva até ela).
   const activeTab: Route | null = route === "home" ? null : TABS.some((x) => x.route === route) ? route : route === "lore" ? "history" : "more";
-  const activeMobile: Route | null = route === "home" ? null : TABS.some((x) => x.route === route && x.mobile) ? route : route === "lore" ? "history" : "more";
+  const activeMobile: Route | null = route === "home" ? null : MOBILE_TABS.some((x) => x.route === route) ? route : "more";
 
   // Título da aba por página e por idioma (é o que aparece no histórico e no Google).
   useEffect(() => {
@@ -155,8 +182,8 @@ export default function App() {
 
   return (
     <UiContext.Provider value={ui}>
-      <div className="app">
-        <header className={supportOn ? "top top-support" : "top"}>
+      <div className={topHidden ? "app top-hidden" : "app"}>
+        <header ref={topRef} className={`top${supportOn ? " top-support" : ""}${topHidden ? " top-hide" : ""}`}>
           <a className="brand" href={href("home")}>
             <AvatarBadge className="brand-av" />
             <span className="brand-tx">
@@ -210,9 +237,20 @@ export default function App() {
         </header>
 
         {/* Apoio por Pix: uma linha pequena em todas as páginas, logo abaixo do cabeçalho (menos na própria página de apoio). */}
-        {supportOn && pix && route !== "support" && <SupportBar cfg={pix} code={pixCode} />}
+        {/* No celular ela desce para o fim da página, para o topo ficar só com a marca. */}
+        {supportOn && pix && route !== "support" && (
+          <div className="supbar-slot supbar-slot-top">
+            <SupportBar cfg={pix} code={pixCode} />
+          </div>
+        )}
 
         <main className={`page page-${route}`}>{page}</main>
+
+        {supportOn && pix && route !== "support" && (
+          <div className="supbar-slot supbar-slot-end">
+            <SupportBar cfg={pix} code={pixCode} />
+          </div>
+        )}
 
         {/* data-nosnippet: o Google usava o rodapé ("Funciona offline…") como texto do resultado, no lugar da descrição. */}
         <footer className="foot" data-nosnippet>
@@ -238,12 +276,27 @@ export default function App() {
       </div>
 
       <nav className="tabbar" aria-label={t("nav.more")}>
-        {TABS.filter((x) => x.mobile).map((x) => (
+        {MOBILE_TABS.map((x, i) => [
+          i === 2 && (
+            <button
+              key="quick"
+              type="button"
+              className="tab-fab"
+              aria-label={t("quick.label")}
+              title={t("quick.label")}
+              onClick={() => {
+                if (route !== "sprites") go("sprites");
+                requestQuick();
+              }}
+            >
+              Nº
+            </button>
+          ),
           <a key={x.route} href={href(x.route)} aria-current={activeMobile === x.route ? "page" : undefined}>
             <Icon name={x.route} />
             <span>{t(x.label)}</span>
-          </a>
-        ))}
+          </a>,
+        ])}
       </nav>
 
       <Walker />

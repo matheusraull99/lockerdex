@@ -26,6 +26,7 @@ interface Props {
   filters: Filters;
   readOnly: boolean;
   levels?: LevelMap; // nível de cada figurinha (só na sua coleção)
+  paged?: boolean; // celular: uma raridade por vez, escolhida nas abas de cima (sem o título da raridade)
   onCycle: (slot: Slot) => void;
   onOpen: (sprite: Sprite) => void;
   onClear: () => void;
@@ -35,7 +36,7 @@ function norm(s: string) {
   return s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 }
 
-export function Album({ season, collection, filters, readOnly, levels, onCycle, onOpen, onClear }: Props) {
+export function Album({ season, collection, filters, readOnly, levels, paged, onCycle, onOpen, onClear }: Props) {
   const { L, t, lang } = useI18n();
   const colorOf = Object.fromEntries(season.variants.map((v) => [v.key, v.color]));
   const statusLabel = [t("status.missing"), t("status.owned"), t("status.mastered")];
@@ -86,7 +87,7 @@ export function Album({ season, collection, filters, readOnly, levels, onCycle, 
       : [{ rarity: null, rows }];
 
   return (
-    <div className="album">
+    <div className={paged ? "album album-paged" : "album"}>
       {groups.map((g) => {
         const all = g.rarity ? season.sprites.filter((s) => s.rarity === g.rarity && (filters.unreleased || !s.unreleased)) : [];
         const tot = all.reduce((n, s) => n + shown(s).length, 0);

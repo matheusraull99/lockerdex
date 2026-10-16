@@ -5,8 +5,7 @@
    Carregado depois dos outros CSS: só sobrescreve o que muda no celular. */
 
 .rtabs,
-.supbar-slot-end,
-.tab-fab {
+.supbar-slot-end {
   display: none;
 }
 
@@ -51,42 +50,6 @@
   }
   .tabbar a {
     font-size: 11px;
-  }
-  /* botão do meio: um "+" grande num círculo, com "Marcar" embaixo como as outras abas */
-  .tab-fab {
-    display: grid;
-    justify-items: center;
-    gap: 2px;
-    min-width: 0;
-    padding: 0 0 4px;
-    border: 0;
-    background: none;
-    color: var(--dust);
-    font-size: 11px;
-    font-weight: 700;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .tab-fab > span:last-child {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .tab-fab-c {
-    display: grid;
-    place-items: center;
-    width: 50px;
-    height: 50px;
-    margin-top: -22px;
-    border-radius: 50%;
-    background: var(--dust);
-    color: var(--dust-ink);
-    box-shadow: 0 0 0 4px var(--page), 0 8px 18px color-mix(in srgb, var(--dust) 45%, transparent);
-    transition: transform 0.15s ease;
-  }
-  .tab-fab:active .tab-fab-c {
-    transform: scale(0.92);
   }
 
   /* ---------- temporadas + compartilhar numa linha só ---------- */
@@ -169,8 +132,7 @@
   }
 
   /* ---------- filtros: a raridade vira as abas; marcar por número vira o botão Nº ---------- */
-  .tools .f-rarity,
-  .tools .quick {
+  .tools .f-rarity {
     display: none;
   }
 
@@ -306,49 +268,6 @@
     font-size: 12px;
   }
 
-  /* ---------- marcar por número: folha que sobe ---------- */
-  .qsheet-bg {
-    position: fixed;
-    inset: 0;
-    z-index: 50;
-    display: flex;
-    align-items: flex-end;
-    background: rgb(10 8 24 / 0.55);
-  }
-  .qsheet {
-    display: grid;
-    gap: 12px;
-    width: 100%;
-    padding: 18px max(16px, env(safe-area-inset-right)) calc(18px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
-    border-radius: 18px 18px 0 0;
-    background: var(--page);
-    color: var(--ink);
-    animation: sheet-up 0.22s ease;
-  }
-  .qsheet h2 {
-    margin: 0;
-    font: 900 26px/1 var(--display);
-    text-transform: uppercase;
-  }
-  .qsheet input {
-    width: 100%;
-    padding: 12px 14px;
-    border: 2px solid var(--line);
-    border-radius: 12px;
-    background: var(--paper);
-    color: var(--ink);
-    font: 700 20px/1.2 var(--body);
-    font-variant-numeric: tabular-nums;
-  }
-  .qsheet input:focus {
-    outline: none;
-    border-color: var(--dust);
-  }
-  .qsheet-act {
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-  }
 }
 
 @keyframes pg-from-right {
@@ -363,21 +282,14 @@
     transform: translateX(-28px);
   }
 }
-@keyframes sheet-up {
-  from {
-    transform: translateY(100%);
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .top,
   .rtabs,
-  .ring-b,
-  .tab-fab {
+  .ring-b {
     transition: none;
   }
-  .pg-in[data-dir],
-  .qsheet {
+  .pg-in[data-dir] {
     animation: none;
   }
 }

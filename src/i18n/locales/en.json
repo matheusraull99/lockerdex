@@ -112,6 +112,7 @@
     "feedback.error": "Couldn't send it now. Check your connection and try again.",
     "feedback.short": "Write at least a few words.",
     "feedback.footer": "Have an idea for Lockerdex?",
+    "nav.home": "Home",
     "nav.sprites": "Sprites",
     "nav.shop": "Shop",
     "nav.cosmetics": "Cosmetics",

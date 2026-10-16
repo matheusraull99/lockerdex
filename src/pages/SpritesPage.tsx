@@ -15,7 +15,6 @@ import { WeekEvents } from "../components/WeekEvents";
 import { Ring, closest } from "../components/Ring";
 import { MOBILE, haptic, reducedMotion, useMedia } from "../lib/media";
 import { confetti } from "../lib/confetti";
-import { QUICK_EVENT, takeQuick } from "../lib/quick";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -35,7 +34,6 @@ export function SpritesPage() {
   const mobile = useMedia(MOBILE);
   const [page, setPage] = useState<Rarity>(RARITIES[0]);
   const [slide, setSlide] = useState(0); // direção da última troca de página, para a animação
-  const [quickOpen, setQuickOpen] = useState(false);
   const albumRef = useRef<HTMLDivElement>(null);
   const touch = useRef<{ x: number; y: number } | null>(null);
 
@@ -139,21 +137,6 @@ export function SpritesPage() {
     if (i >= 0 && i < RARITIES.length) turn(RARITIES[i]);
   };
 
-  // Botão "Nº" da barra de baixo: abre o marcar por número (vem de qualquer página).
-  useEffect(() => {
-    const open = () => {
-      if (takeQuick()) setQuickOpen(true);
-    };
-    open();
-    addEventListener(QUICK_EVENT, open);
-    return () => removeEventListener(QUICK_EVENT, open);
-  }, []);
-  useEffect(() => {
-    if (!quickOpen) return;
-    const esc = (e: KeyboardEvent) => e.key === "Escape" && setQuickOpen(false);
-    addEventListener("keydown", esc);
-    return () => removeEventListener("keydown", esc);
-  }, [quickOpen]);
 
   const leaveFriend = () => {
     history.replaceState(null, "", href("sprites")); // tira o #c=… da coleção do amigo
@@ -175,7 +158,6 @@ export function SpritesPage() {
       return n;
     });
     setQuick("");
-    setQuickOpen(false);
     haptic(12);
     toast(t("quick.done", { list: hit.map((s) => s.no).join(", ") }));
   };
@@ -329,29 +311,6 @@ export function SpritesPage() {
 
       {detail && <Detail season={season} sprite={detail} collection={viewing} levels={levels} readOnly={readOnly} onSet={setStatus} onLevel={setLevel} onClose={() => setDetail(null)} />}
       {sharing && <ShareDialog season={season} slots={slots} collection={mine} onClose={() => setSharing(false)} />}
-      {quickOpen && !readOnly && (
-        <div className="qsheet-bg" onClick={() => setQuickOpen(false)}>
-          <form className="qsheet" role="dialog" aria-modal="true" aria-label={t("quick.label")} onClick={(e) => e.stopPropagation()} onSubmit={markQuick}>
-            <h2>{t("quick.label")}</h2>
-            <input
-              autoFocus
-              value={quick}
-              onChange={(e) => setQuick(e.target.value)}
-              placeholder={t("quick.placeholder")}
-              inputMode="numeric"
-              aria-label={t("quick.label")}
-            />
-            <div className="qsheet-act">
-              <button type="button" className="btn btn-quiet" onClick={() => setQuickOpen(false)}>
-                {t("detail.close")}
-              </button>
-              <button type="submit" className="btn btn-dust" disabled={!quick.trim()}>
-                {t("quick.button")}
-              </button>
-            </div>
-          </form>
-        </div>
-      )}
     </>
   );
 }

@@ -2,8 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactElement } 
 import { SEASONS } from "./lib/data";
 import { useI18n } from "./lib/i18n";
 import { OFFERED } from "./lib/langs";
-import { go, href, useRoute, type Route } from "./lib/router";
-import { requestQuick } from "./lib/quick";
+import { href, useRoute, type Route } from "./lib/router";
 import { UiContext, type Ui } from "./lib/ui";
 import { useInstall } from "./lib/pwa";
 import { feedbackEnabled } from "./lib/feedback";
@@ -31,10 +30,11 @@ import { SupportBar } from "./components/SupportBar";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
-type NavKey = "nav.sprites" | "nav.shop" | "nav.cosmetics" | "nav.lists" | "nav.map" | "nav.history" | "nav.more";
+type NavKey = "nav.home" | "nav.sprites" | "nav.shop" | "nav.cosmetics" | "nav.lists" | "nav.map" | "nav.history" | "nav.more";
 
 /** Ícones da barra de abas, desenhados no traço do app. */
 const ICON: Record<string, ReactElement> = {
+  home: <path d="M4 11.5 12 4l8 7.5M6.5 9.5V20h11V9.5M10 20v-5h4v5" />,
   sprites: <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm1 3v8h8V6H8Zm1 11h6" />,
   shop: <path d="M5 8h14l-1 12H6L5 8Zm4 0V6a3 3 0 0 1 6 0v2" />,
   cosmetics: <path d="M12 3l2.2 5.6L20 9l-4.5 3.7L17 19l-5-3.2L7 19l1.5-6.3L4 9l5.8-.4L12 3Z" />,
@@ -44,7 +44,7 @@ const ICON: Record<string, ReactElement> = {
   more: <path d="M5 12h.01M12 12h.01M19 12h.01" strokeWidth="3.2" />,
 };
 
-// No celular ficam 4 abas (Elementais, Loja, Mapa, Mais) com o botão "Nº" no meio; o resto mora em "Mais".
+// No celular ficam Elementais, Loja, Início (no meio), Mapa e Mais; o resto mora em "Mais".
 const TABS: { route: Route; label: NavKey; mobile: boolean }[] = [
   { route: "sprites", label: "nav.sprites", mobile: true },
   { route: "shop", label: "nav.shop", mobile: true },
@@ -54,7 +54,11 @@ const TABS: { route: Route; label: NavKey; mobile: boolean }[] = [
   { route: "history", label: "nav.history", mobile: false },
   { route: "more", label: "nav.more", mobile: true },
 ];
-const MOBILE_TABS = TABS.filter((x) => x.mobile);
+const MOBILE_TABS: { route: Route; label: NavKey }[] = [
+  ...TABS.filter((x) => x.mobile).slice(0, 2),
+  { route: "home", label: "nav.home" },
+  ...TABS.filter((x) => x.mobile).slice(2),
+];
 
 function Icon({ name }: { name: string }) {
   return (
@@ -130,7 +134,7 @@ export default function App() {
   // O enredo é o segundo modo da aba História.
   // A página inicial não é aba: nenhuma acende (o logo leva até ela).
   const activeTab: Route | null = route === "home" ? null : TABS.some((x) => x.route === route) ? route : route === "lore" ? "history" : "more";
-  const activeMobile: Route | null = route === "home" ? null : MOBILE_TABS.some((x) => x.route === route) ? route : "more";
+  const activeMobile: Route = MOBILE_TABS.some((x) => x.route === route) ? route : "more";
 
   // Título da aba por página e por idioma (é o que aparece no histórico e no Google).
   useEffect(() => {
@@ -276,32 +280,12 @@ export default function App() {
       </div>
 
       <nav className="tabbar" aria-label={t("nav.more")}>
-        {MOBILE_TABS.map((x, i) => [
-          i === 2 && (
-            <button
-              key="quick"
-              type="button"
-              className="tab-fab"
-              aria-label={t("quick.label")}
-              title={t("quick.label")}
-              onClick={() => {
-                if (route !== "sprites") go("sprites");
-                requestQuick();
-              }}
-            >
-              <span className="tab-fab-c" aria-hidden>
-                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" aria-hidden>
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </span>
-              <span>{t("quick.button")}</span>
-            </button>
-          ),
+        {MOBILE_TABS.map((x) => (
           <a key={x.route} href={href(x.route)} aria-current={activeMobile === x.route ? "page" : undefined}>
             <Icon name={x.route} />
             <span>{t(x.label)}</span>
-          </a>,
-        ])}
+          </a>
+        ))}
       </nav>
 
       <Walker />

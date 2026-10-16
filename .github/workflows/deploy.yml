@@ -1,7 +1,8 @@
 # Publica o Lockerdex no GitHub Pages.
 # - A cada push na main.
 # - A cada 3 horas: confere o fortnite.gg e, se saíram elementais novos, atualiza os dados, traduz nome e
-#   habilidade nos 22 idiomas (GitHub Models, com o token do próprio repositório) e publica sozinho.
+#   habilidade nos 22 idiomas (Gemini, com a chave gratuita no segredo GEMINI_API_KEY; sem ela, o Google
+#   Tradutor sem chave, só a habilidade) e publica sozinho.
 # - Todo dia às 06:15 UTC (depois da troca da loja às 00:00): recria o catálogo de cosméticos
 #   com o histórico de loja do dia antes do build.
 name: Publicar
@@ -17,13 +18,12 @@ on:
   workflow_dispatch:
     inputs:
       testar_tradutor:
-        description: "Só testar o acesso ao tradutor (GitHub Models)"
+        description: "Só testar o acesso aos tradutores (Gemini e Google Tradutor)"
         type: boolean
         default: false
 
 permissions:
   contents: write # commits do robô: elementais novos e o commit vazio que mantém o agendamento vivo
-  models: read # tradutor (GitHub Models)
   pages: write
   id-token: write
 
@@ -70,13 +70,13 @@ jobs:
       - name: Testar o tradutor
         if: inputs.testar_tradutor
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python data/translate_sprites.py --check
 
       - name: Sincronizar elementais do fortnite.gg
         if: github.event_name != 'push'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           mkdir -p data/raw
           python data/sync_fgg.py && python data/build_data.py && python data/fetch_icons.py || echo "::warning::não consegui sincronizar com o fortnite.gg; usando os dados do repositório"

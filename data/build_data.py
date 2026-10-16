@@ -27,7 +27,7 @@ SEASONS = {
 # chave, cor, tem bônus próprio
 VARIANTS = {
     "42": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("cheatmaster", "#4fbf1f"), ("hacker", "#4a47e8"), ("reaper", "#f27bd0"),
-           ("tricktreat", "#ff7a1a"), ("quack", "#b07cff")],
+           ("tricktreat", "#ff7a1a")],
     "41": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("candy", "#ff6f91"), ("galaxy", "#6d4bff"), ("gem", "#19c2b0"),
            ("holofoil", "#8fd3ff"), ("cube", "#8c6bd8"), ("quack", "#ffd23f")],
 }

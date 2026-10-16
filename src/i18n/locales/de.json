@@ -332,7 +332,6 @@
     "gem": { "label": "Edelstein", "bonus": "−30 % Fallschaden." },
     "holofoil": { "label": "Holofolie", "bonus": "5 % Chance für deinen Trupp, beim Plündern von Truhen seltene Geister-Varianten zu finden." },
     "cube": { "label": "Würfel", "bonus": "" },
-    "quack": { "label": "Quack", "bonus": "Verstärkt jeden Geist, den du bei dir trägst, mit zusätzlichen Geister-EP, sobald er EP erhält." },
     "tricktreat": { "label": "Süßes oder Saures", "bonus": "" }
   },
   "locations": {

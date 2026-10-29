@@ -536,59 +536,6 @@
     ]
    },
    {
-    "key": "HealthSiphon",
-    "name": "Vampire",
-    "rarity": "legendary",
-    "levels": null,
-    "location": "random",
-    "unreleased": false,
-    "isNew": false,
-    "slots": [
-     {
-      "variant": "base",
-      "fggId": 226,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_L.webp",
-      "cost": 1750,
-      "drop": 0.0
-     },
-     {
-      "variant": "gold",
-      "fggId": 228,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Gold_L.webp",
-      "cost": 2100,
-      "drop": 0.0
-     },
-     {
-      "variant": "cheatmaster",
-      "fggId": 227,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Cheatmaster_L.webp",
-      "cost": 2100,
-      "drop": 0.0
-     },
-     {
-      "variant": "hacker",
-      "fggId": 229,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Hacker_L.webp",
-      "cost": 2100,
-      "drop": 0.0
-     },
-     {
-      "variant": "reaper",
-      "fggId": 230,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_BountyHunter_L.webp",
-      "cost": 2100,
-      "drop": 0.0
-     },
-     {
-      "variant": "tricktreat",
-      "fggId": 231,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_TrickTreat_L.webp",
-      "cost": 2100,
-      "drop": 0.0
-     }
-    ]
-   },
-   {
     "key": "IncreasedMelee",
     "name": "The Deer",
     "rarity": "legendary",
@@ -636,6 +583,59 @@
       "variant": "tricktreat",
       "fggId": 254,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreasedMelee_TrickTreat_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "HealthSiphon",
+    "name": "Vampire",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 226,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 228,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Gold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 227,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Cheatmaster_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 229,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_Hacker_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 230,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_BountyHunter_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 231,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_HealthSiphon_TrickTreat_L.webp",
       "cost": 2100,
       "drop": 0.0
      }
@@ -907,59 +907,6 @@
     ]
    },
    {
-    "key": "IncreaseHeals",
-    "name": "Morgana",
-    "rarity": "epic",
-    "levels": null,
-    "location": "random",
-    "unreleased": false,
-    "isNew": false,
-    "slots": [
-     {
-      "variant": "base",
-      "fggId": 213,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_L.webp",
-      "cost": 1500,
-      "drop": 0.0
-     },
-     {
-      "variant": "gold",
-      "fggId": 215,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Gold_L.webp",
-      "cost": 1800,
-      "drop": 0.0
-     },
-     {
-      "variant": "cheatmaster",
-      "fggId": 214,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Cheatmaster_L.webp",
-      "cost": 1800,
-      "drop": 0.0
-     },
-     {
-      "variant": "hacker",
-      "fggId": 216,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Hacker_L.webp",
-      "cost": 1800,
-      "drop": 0.0
-     },
-     {
-      "variant": "reaper",
-      "fggId": 217,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_BountyHunter_L.webp",
-      "cost": 1800,
-      "drop": 0.0
-     },
-     {
-      "variant": "tricktreat",
-      "fggId": 248,
-      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_TrickTreat_L.webp",
-      "cost": 1800,
-      "drop": 0.0
-     }
-    ]
-   },
-   {
     "key": "WinnerD",
     "name": "Dumpster Dive",
     "rarity": "epic",
@@ -1007,6 +954,59 @@
       "variant": "tricktreat",
       "fggId": 261,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WinnerD_TrickTreat_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "IncreaseHeals",
+    "name": "Morgana",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 213,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 215,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Gold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cheatmaster",
+      "fggId": 214,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Cheatmaster_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "hacker",
+      "fggId": 216,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_Hacker_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "reaper",
+      "fggId": 217,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_BountyHunter_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "tricktreat",
+      "fggId": 248,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_IncreaseHeals_TrickTreat_L.webp",
       "cost": 1800,
       "drop": 0.0
      }

@@ -5,7 +5,7 @@ import { useI18n } from "../lib/i18n";
 import { albumPng, imageTheme } from "../lib/exportImage";
 import { summaryPng } from "../lib/exportSummary";
 import { savedTheme } from "../lib/theme";
-import { rarityLabel, spriteText, variantText } from "../lib/content";
+import { rarityLabel, seasonName, spriteText, variantText } from "../lib/content";
 
 interface Props {
   season: Season;
@@ -41,7 +41,7 @@ export function ShareDialog({ season, slots, collection, onClose }: Props) {
         collection,
         dir,
         brandTagline: t("app.tagline"),
-        title: t("season.label", { chapter: season.chapter, season: season.season }),
+        title: seasonName(t, season),
         have: t("progress.have", { owned, total: slots.length }),
         legend: { owned: t("status.owned"), mastered: t("status.mastered"), missing: t("status.missing") },
         owner: storage.name().trim(),

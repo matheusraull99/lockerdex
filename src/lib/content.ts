@@ -13,6 +13,14 @@ export function spriteText(L: Locale, key: string) {
 
 export const spriteName = (L: Locale, sp: Sprite) => spriteText(L, sp.key).name;
 
+type T = (key: "season.label" | "season.short" | "season.miniLabel" | "season.miniShort", vars: Record<string, string | number>) => string;
+
+/** "Capítulo 7 · Temporada 4" / "C7 T4"; na minitemporada, "Capítulo 7 · Minitemporada" / "C7 Mini". */
+export function seasonName(t: T, s: { chapter: number; season: number; mini?: boolean }, short = false) {
+  if (s.mini) return t(short ? "season.miniShort" : "season.miniLabel", { chapter: s.chapter });
+  return t(short ? "season.short" : "season.label", { chapter: s.chapter, season: s.season });
+}
+
 export function variantText(L: Locale, key: string) {
   const v = (L.variants as Record<string, { label: string; bonus: string } | undefined>)[key];
   return { label: v?.label ?? key, bonus: v?.bonus ?? "" };

@@ -12,9 +12,27 @@ export interface Ui {
 export const UiContext = createContext<Ui>({ toast: () => {}, openInstall: () => {}, openFeedback: () => {}, openTheme: () => {}, canInstall: false });
 export const useUi = () => useContext(UiContext);
 
-/** Fim da temporada atual (data da comunidade; o horário exato sai perto do fim). */
-export const SEASON_END = "2026-11-01T09:00:00Z";
-export const NEXT_SEASON_START = "2026-11-01T09:00:00Z";
+/*
+ * Calendário das temporadas (datas da imprensa e da Epic; o horário exato sai perto do fim). A contagem usa o
+ * período que ainda não terminou, então ela vira sozinha da T4 para a minitemporada no dia 1º de novembro,
+ * mesmo antes de o fortnite.gg cadastrar os elementais novos (o álbum só troca quando eles chegarem).
+ */
+export interface SeasonRef {
+  chapter: number;
+  season: number;
+  mini?: boolean;
+}
+const PERIODS: { season: SeasonRef; end: string; next: string }[] = [
+  { season: { chapter: 7, season: 4 }, end: "2026-11-01T09:00:00Z", next: "2026-11-01T14:00:00Z" },
+  // Treasure Hunters: depois da manutenção (11h em Brasília) até a chegada do Capítulo 8.
+  { season: { chapter: 7, season: 5, mini: true }, end: "2026-12-05T09:00:00Z", next: "2026-12-05T09:00:00Z" },
+];
+const PERIOD = PERIODS.find((p) => Date.parse(p.end) > Date.now()) ?? PERIODS[PERIODS.length - 1];
+/** A temporada que está rolando no jogo agora (pelo calendário, não pelos dados do álbum). */
+export const SEASON_NOW: SeasonRef = PERIOD.season;
+export const SEASON_END = PERIOD.end;
+export const NEXT_SEASON_START = PERIOD.next;
+export const sameSeason = (a: SeasonRef, b: SeasonRef) => a.chapter === b.chapter && a.season === b.season;
 
 /** "em 5 horas", "há 3 dias": Intl já resolve plural e ordem em cada idioma. */
 export function relTime(lang: string, targetMs: number, now = Date.now()) {

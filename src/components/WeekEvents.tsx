@@ -39,6 +39,10 @@ export function WeekEvents() {
             // A Epic só diz o dia do início (e que vai até 1º de novembro): mostra o período no calendário de quem vê.
             when = dm.formatRange(first.start, first.end);
             status = e.active ? t("week.now") : t("week.starts", { time: relTime(lang, first.start, now) });
+          } else if (e.key === "cap") {
+            // Dia do Capitão: o dia e a hora em que os elementais novos chegam, no calendário de quem vê.
+            when = `${dm.format(first.start)}, ${time.format(first.start)}`;
+            status = e.active ? t("week.now") : t("week.starts", { time: relTime(lang, first.start, now) });
           } else if (e.key === "thu") {
             // A Epic não divulga a hora do elemental novo: mostra só o dia, no calendário de quem vê.
             const ahead = (4 - localWd + 7) % 7;

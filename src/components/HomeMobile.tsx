@@ -3,8 +3,8 @@ import { SEASONS, hideBroken, imgUrl } from "../lib/data";
 import { storage } from "../lib/collection";
 import { useI18n } from "../lib/i18n";
 import { href } from "../lib/router";
-import { relTime, SEASON_END } from "../lib/ui";
-import { spriteText } from "../lib/content";
+import { relTime, SEASON_END, SEASON_NOW } from "../lib/ui";
+import { seasonName, spriteText } from "../lib/content";
 import { weeklyEvents } from "../lib/weekly";
 import { useFreeGames } from "../lib/freeGames";
 import { useApi, type Shop } from "../lib/api";
@@ -40,7 +40,7 @@ export function MyAlbumCard() {
       <Ring owned={owned} total={slots.length} next={null} hint="" />
       <span className="mine-tx">
         <b className="mine-h">
-          {t("home.mine")} {t("season.short", { chapter: CURRENT.chapter, season: CURRENT.season })}
+          {t("home.mine")} {seasonName(t, CURRENT, true)}
         </b>
         <span className="mine-next">
           {next ? t("album.next", { name: spriteText(L, next.sprite.key).name, owned: nf(next.owned), total: nf(next.total) }) : t("sticker.hint")}
@@ -68,7 +68,7 @@ export function SeasonStrip() {
   return (
     <a className="strip" href={href("season")}>
       <span className="strip-dot" aria-hidden />
-      <span className="strip-lab">{t("home.endsIn", { season: t("season.short", { chapter: CURRENT.chapter, season: CURRENT.season }) })}</span>
+      <span className="strip-lab">{t("home.endsIn", { season: seasonName(t, SEASON_NOW, true) })}</span>
       <span className="strip-tm" role="timer">
         {unit(Math.floor(left / 86400000), "day")} {unit(Math.floor(left / 3600000) % 24, "hour")} {unit(Math.floor(left / 60000) % 60, "minute")}
       </span>
@@ -99,6 +99,11 @@ export function TodayChips() {
   if (fm) {
     const w = fm.windows[0];
     chips.push({ key: "fm", c: "var(--legendary)", eyebrow: t("home.event"), title: t("week.fm.name"), sub: fm.active ? `${t("week.now")} · ${dm.formatRange(w.start, w.end)}` : t("week.starts", { time: relTime(lang, w.start, now) }), live: fm.active, to: href("sprites") });
+  }
+  const cap = ev.find((e) => e.key === "cap");
+  if (cap && cap.windows[0].start - now < 7 * 86400_000) {
+    const w = cap.windows[0];
+    chips.push({ key: "cap", c: "var(--mythic)", eyebrow: `${dm.format(w.start)}, ${time.format(w.start)}`, title: t("week.cap.name"), sub: cap.active ? t("week.now") : t("week.cap.desc"), live: cap.active, to: href("sprites") });
   }
   const sat = ev.find((e) => e.key === "sat");
   if (sat?.windows.length) {

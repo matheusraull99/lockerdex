@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import { SEASONS } from "../lib/data";
 import { useI18n } from "../lib/i18n";
-import { fmtDate, NEXT_SEASON_START, SEASON_END } from "../lib/ui";
-
-const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
+import { fmtDate, NEXT_SEASON_START, SEASON_END, SEASON_NOW } from "../lib/ui";
+import { seasonName } from "../lib/content";
 
 /** Contagem até o fim da temporada. Na página Temporada o título é o h1; na página inicial, um h2 de seção. */
 export function SeasonCountdown({ heading: H = "h1" }: { heading?: "h1" | "h2" }) {
@@ -25,7 +23,7 @@ export function SeasonCountdown({ heading: H = "h1" }: { heading?: "h1" | "h2" }
   return (
     <>
       <header className="page-h">
-        <H>{t("season.label", { chapter: CURRENT.chapter, season: CURRENT.season })}</H>
+        <H>{seasonName(t, SEASON_NOW)}</H>
         <p>{t("season.ends", { date: fmtDate(lang, SEASON_END) })}</p>
       </header>
       <div className="countdown" role="timer" aria-live="off">

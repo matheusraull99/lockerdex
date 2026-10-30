@@ -46,6 +46,7 @@ export interface Season {
   chapter: number;
   season: number;
   current: boolean;
+  mini?: boolean; // minitemporada (Treasure Hunters, 11/2026): o nome sai como "C7 Mini"
   costSource: "community" | "game";
   variants: { key: string; color: string; name?: string }[]; // name: em inglês (fortnite.gg), para o tradutor automático
   sprites: Sprite[];

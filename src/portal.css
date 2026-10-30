@@ -814,6 +814,10 @@
   --dc: var(--dust);
 }
 
+.week-ev[data-key="cap"] {
+  --dc: var(--legendary);
+}
+
 .week-ev[data-key="sat"] {
   --dc: var(--mythic);
 }

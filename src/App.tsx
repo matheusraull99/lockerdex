@@ -27,6 +27,7 @@ import { FreeGamesPage } from "./pages/FreeGamesPage";
 import { SupportPage } from "./pages/SupportPage";
 import { pixConfig, pixPayload } from "./lib/pix";
 import { SupportBar } from "./components/SupportBar";
+import { seasonName } from "./lib/content";
 
 const CURRENT = SEASONS.find((s) => s.current) ?? SEASONS[0];
 
@@ -274,7 +275,7 @@ export default function App() {
             </div>
           )}
           <p>{t("footer.offline")}</p>
-          <p>{t("footer.data", { season: t("season.short", { chapter: CURRENT.chapter, season: CURRENT.season }) })}</p>
+          <p>{t("footer.data", { season: seasonName(t, CURRENT, true) })}</p>
           <p>{t("footer.disclaimer")}</p>
         </footer>
       </div>
@@ -293,7 +294,7 @@ export default function App() {
       {installing && <InstallDialog ios={inst.ios} onClose={() => setInstalling(false)} />}
       {theming && <ThemeDialog onClose={() => setTheming(false)} />}
       {suggesting && (
-        <FeedbackDialog season={t("season.short", { chapter: CURRENT.chapter, season: CURRENT.season })} onClose={() => setSuggesting(false)} toast={setToastMsg} />
+        <FeedbackDialog season={seasonName(t, CURRENT, true)} onClose={() => setSuggesting(false)} toast={setToastMsg} />
       )}
       <div className="toast" role="status" aria-live="polite">
         {toastMsg && <p>{toastMsg}</p>}

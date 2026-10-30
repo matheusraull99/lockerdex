@@ -3,11 +3,10 @@
  * (o horário de verão americano muda a hora em outros países; o cálculo abaixo já considera isso):
  *   segunda 9h → terça 9h   bônus de nível (2× XP e 2× Poeira; lendários e míticos mais comuns)
  *   quinta                  elemental ou variante novo (a Epic não informa a hora)
+ *   Dias do Capitão         elementais novos da minitemporada (1, 7, 12, 14 e 21/11/2026, 9h em Nova York)
  *   sábado 14h e 21h        Horas do Poder (2 h cada; os comunicados da Epic de 03/10 e 10/10 dizem 14h e 21h ET,
  *                           e a página de ajuda ainda cita 15h30 e 21h30)
  */
-import { SEASON_END } from "./ui";
-
 const TZ = "America/New_York";
 
 /** Diferença entre o horário local de `tz` e o UTC, no instante `t` (ms). */
@@ -63,7 +62,7 @@ function nextWindows(now: number, weekday: number, slots: [number, number, numbe
   return out;
 }
 
-export type EventKey = "fm" | "mon" | "thu" | "sat";
+export type EventKey = "fm" | "cap" | "mon" | "thu" | "sat";
 
 export interface WeeklyEvent {
   key: EventKey;
@@ -75,11 +74,20 @@ export interface WeeklyEvent {
  * Evento de tempo limitado que a Epic anunciou (Fortnitemares, 1º de outubro no Battle Royale). A Epic só diz o dia;
  * a hora (~6h em Nova York, depois da manutenção) vem da imprensa. Some no fim da temporada.
  */
-const SPECIAL = { key: "fm" as const, start: Date.parse("2026-10-01T10:00:00Z"), end: Date.parse(SEASON_END) };
+const SPECIAL = { key: "fm" as const, start: Date.parse("2026-10-01T10:00:00Z"), end: Date.parse("2026-11-01T09:00:00Z") };
+
+/**
+ * Dias do Capitão da minitemporada Treasure Hunters: elementais novos às 9h em Nova York (11h em Brasília) em
+ * 1, 7, 12, 14 e 21 de novembro de 2026 (Vice, 30/10). Aparece o próximo, com o dia inteiro como janela.
+ */
+const CAPTAIN = ["2026-11-01", "2026-11-07", "2026-11-12", "2026-11-14", "2026-11-21"].map((d) => Date.parse(`${d}T14:00:00Z`));
 
 export function weeklyEvents(now = Date.now()): WeeklyEvent[] {
   const list: { key: EventKey; windows: Window[] }[] = [
     ...(now < SPECIAL.end ? [{ key: SPECIAL.key, windows: [{ start: SPECIAL.start, end: SPECIAL.end }] }] : []),
+    ...CAPTAIN.filter((start) => start + 86400_000 > now)
+      .slice(0, 1)
+      .map((start) => ({ key: "cap" as const, windows: [{ start, end: start + 86400_000 }] })),
     { key: "mon", windows: nextWindows(now, 1, [[9, 0, 24]]) },
     { key: "thu", windows: nextWindows(now, 4, [[0, 0, 24]]) },
     { key: "sat", windows: nextWindows(now, 6, [[14, 0, 2], [21, 0, 2]]) },

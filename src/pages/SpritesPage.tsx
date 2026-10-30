@@ -3,8 +3,8 @@ import { RARITIES, SEASONS, type Rarity, type Slot, type Sprite, type Status } f
 import { parseNumbers, readShared, storage, type Collection } from "../lib/collection";
 import { loadLevels, saveLevels, type LevelMap } from "../lib/levels";
 import { useI18n } from "../lib/i18n";
-import { rarityLabel, spriteText, variantText } from "../lib/content";
-import { relTime, SEASON_END, useUi } from "../lib/ui";
+import { rarityLabel, seasonName, spriteText, variantText } from "../lib/content";
+import { relTime, SEASON_END, SEASON_NOW, sameSeason, useUi } from "../lib/ui";
 import { href, NAV_EVENT } from "../lib/router";
 import { Album, DEFAULT_FILTERS, type Filters, type SortKey, type StatusFilter } from "../components/Album";
 import { Minimap, Stats, counts, visibleSlots } from "../components/Overview";
@@ -22,7 +22,10 @@ export function SpritesPage() {
   const { L, t, nf, lang } = useI18n();
   const { toast } = useUi();
   const [friend, setFriend] = useState(readShared);
-  const [seasonId, setSeasonId] = useState(() => friend?.season ?? (storage.prefs().season as number) ?? CURRENT.id);
+  const [seasonId, setSeasonId] = useState(() => {
+    const p = storage.prefs();
+    return friend?.season ?? (p.cur === CURRENT.id ? (p.season as number) : undefined) ?? CURRENT.id;
+  });
   const [mine, setMine] = useState<Collection>(storage.load);
   const [levels, setLevels] = useState<LevelMap>(loadLevels);
   const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, unreleased: !!storage.prefs().unreleased }));
@@ -49,7 +52,7 @@ export function SpritesPage() {
 
   useEffect(() => storage.save(mine), [mine]);
   useEffect(() => saveLevels(levels), [levels]);
-  useEffect(() => storage.setPrefs({ season: seasonId, unreleased: filters.unreleased }), [seasonId, filters.unreleased]);
+  useEffect(() => storage.setPrefs({ season: seasonId, cur: CURRENT.id, unreleased: filters.unreleased }), [seasonId, filters.unreleased]);
   useEffect(() => {
     // Sai (ou entra) na coleção do amigo quando o endereço muda: link #c=…, logo, aba Elementais, voltar.
     const onHash = () => {
@@ -172,7 +175,7 @@ export function SpritesPage() {
         <nav className="seasons" aria-label={t("nav.season")}>
           {SEASONS.map((s) => (
             <button key={s.id} type="button" aria-pressed={s.id === season.id} onClick={() => setSeasonId(s.id)}>
-              <b>{t("season.short", { chapter: s.chapter, season: s.season })}</b>
+              <b>{seasonName(t, s, true)}</b>
               <small>{s.current ? t("season.current") : t("season.ended")}</small>
             </button>
           ))}
@@ -198,9 +201,9 @@ export function SpritesPage() {
 
       <section className="hero">
         <h1 className="hero-h">
-          <span className="hero-season">{t("season.label", { chapter: season.chapter, season: season.season })}</span>
+          <span className="hero-season">{seasonName(t, season)}</span>
           <span className="hero-count">{t("progress.have", { owned: nf(c.owned), total: nf(c.total) })}</span>
-          {season.current && Date.parse(SEASON_END) > Date.now() && (
+          {season.current && sameSeason(season, SEASON_NOW) && Date.parse(SEASON_END) > Date.now() && (
             <a className="hero-ends" href={href("season")}>
               {t("season.left", { time: relTime(lang, Date.parse(SEASON_END)) })}
             </a>

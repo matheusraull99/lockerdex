@@ -19,10 +19,21 @@ SRC = ROOT.parent / "src"
 cards = json.loads((ROOT / "raw" / "fgg_cards.json").read_text(encoding="utf-8"))
 details = json.loads((ROOT / "raw" / "fgg_details.json").read_text(encoding="utf-8"))
 
+# Temporadas do álbum, da mais nova para a mais antiga. "current" é calculado: a mais nova que já tem figurinhas
+# no fortnite.gg (a minitemporada só vira a atual quando os elementais dela aparecerem lá).
+# Temporada que o fortnite.gg trouxer e não estiver aqui entra sozinha como minitemporada do capítulo 7 (aviso no log).
 SEASONS = {
-    "42": {"code": "C7S4", "chapter": 7, "season": 4, "current": True},
-    "41": {"code": "C7S3", "chapter": 7, "season": 3, "current": False},
+    "43": {"code": "C7MS", "chapter": 7, "season": 5, "mini": True},  # Treasure Hunters, 01/11 a 05/12/2026
+    "42": {"code": "C7S4", "chapter": 7, "season": 4},
+    "41": {"code": "C7S3", "chapter": 7, "season": 3},
 }
+for sid in sorted({c["season"] for c in cards} - set(SEASONS), key=lambda x: -int(x) if x.isdigit() else 0):
+    if sid.isdigit() and int(sid) > 41:
+        SEASONS[sid] = {"code": f"S{sid}", "chapter": 7, "season": 5, "mini": True}
+        print(f"::warning::temporada {sid} do fortnite.gg não estava em SEASONS: entrou como minitemporada do capítulo 7")
+SEASONS = {k: v for k, v in sorted(SEASONS.items(), key=lambda kv: -int(kv[0])) if any(c["season"] == k for c in cards)}
+for i, meta in enumerate(SEASONS.values()):
+    meta["current"] = i == 0
 
 # chave, cor, tem bônus próprio
 VARIANTS = {
@@ -31,6 +42,9 @@ VARIANTS = {
     "41": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("candy", "#ff6f91"), ("galaxy", "#6d4bff"), ("gem", "#19c2b0"),
            ("holofoil", "#8fd3ff"), ("cube", "#8c6bd8"), ("quack", "#ffd23f")],
 }
+# Temporada nova começa com Normal e Dourada; as outras variantes entram sozinhas (cor tirada do ícone).
+for sid in SEASONS:
+    VARIANTS.setdefault(sid, [("base", "#9aa6c4"), ("gold", "#f5b642")])
 
 RARITY_ORDER = ["mythic", "legendary", "epic", "rare"]
 
@@ -128,6 +142,8 @@ LOCATION_KEY = {
 # Estimativas da comunidade para a T4 (Pó por invocação).
 T4_COST = {"rare": 1250, "epic": 1500, "legendary": 1750, "mythic": 2000}
 T4_STARTERS = {"BushRanger", "Dwarf", "Jonesy"}  # os três raros iniciais custam 100
+# Temporadas em que o fortnite.gg não preenche o custo de invocação: usa a estimativa da comunidade da T4.
+COMMUNITY_COST = {"42", "43"}
 
 
 def num(s):
@@ -159,7 +175,7 @@ for sid, meta in SEASONS.items():
         base = g["base"]
         rarity = RARITY_FIX.get(p, base["rarity"])
         loc_en = details[base["sprite"]]["facts"].get("Location", "")
-        if sid == "42":
+        if sid in COMMUNITY_COST:
             # Na T4 a maioria aparece aleatoriamente; o fortnite.gg repete "montanhas" para quase todos.
             location = "night" if LOCATION_KEY.get(loc_en) == "night" else "random"
         else:
@@ -170,13 +186,12 @@ for sid, meta in SEASONS.items():
             if not c:
                 continue
             f = details[c["sprite"]]["facts"]
-            if sid == "42":
-                if vk == "base":
-                    cost = 100 if p in T4_STARTERS else T4_COST[rarity]
-                else:
-                    cost = 1500 if p in T4_STARTERS else round(T4_COST[rarity] * 1.2)
-            else:
+            if num(f.get("Summon Cost")) > 0 or sid not in COMMUNITY_COST:
                 cost = num(f.get("Summon Cost"))
+            elif vk == "base":
+                cost = 100 if sid == "42" and p in T4_STARTERS else T4_COST[rarity]
+            else:
+                cost = 1500 if sid == "42" and p in T4_STARTERS else round(T4_COST[rarity] * 1.2)
             slot = {"variant": vk, "fggId": int(c["sprite"]), "img": c["img"], "cost": cost,
                     "drop": pct(f.get("Sprite Chest"))}
             # Variante que ainda não saiu num elemental que já saiu (ex.: Trick or Treat, a partir de 08/10/2026).
@@ -196,7 +211,7 @@ for sid, meta in SEASONS.items():
     sprites.sort(key=lambda s: RARITY_ORDER.index(s["rarity"]))
     out.append({
         "id": int(sid), **meta,
-        "costSource": "community" if sid == "42" else "game",
+        "costSource": "community" if sid in COMMUNITY_COST else "game",
         "variants": [{"key": k, "color": col, "name": VARIANT_NAME.get(k, k)} for k, col in VARIANTS[sid]],
         "sprites": sprites,
     })

@@ -83,11 +83,33 @@
     min-width: 0;
   }
   .page-bar .seasons button {
-    padding-inline: 8px;
+    min-width: 0;
+    padding-inline: 6px;
+  }
+  .page-bar .seasons b {
+    font-size: 17px;
+    white-space: nowrap;
+  }
+  .page-bar .seasons small {
+    font-size: 10px;
+    white-space: nowrap;
   }
   .page-bar > .btn-dust {
     flex: none;
     padding-inline: 14px;
+  }
+  /* celular estreito com 3 temporadas (C7 Mini, T4, T3): tudo um pouco menor para caber numa linha */
+  @media (max-width: 380px) {
+    .page-bar .seasons button {
+      padding-inline: 4px;
+    }
+    .page-bar .seasons b {
+      font-size: 15px;
+    }
+    .page-bar > .btn-dust {
+      padding-inline: 10px;
+      font-size: 13px;
+    }
   }
 
   /* ---------- progresso: anel no lugar do minimapa ---------- */

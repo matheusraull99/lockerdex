@@ -1,10 +1,426 @@
 [
  {
+  "id": 43,
+  "code": "C7MS",
+  "chapter": 7,
+  "season": 5,
+  "mini": true,
+  "current": true,
+  "costSource": "community",
+  "variants": [
+   {
+    "key": "base",
+    "color": "#9aa6c4",
+    "name": "Base"
+   },
+   {
+    "key": "jeweled",
+    "color": "#e8445f",
+    "name": "Fortune"
+   },
+   {
+    "key": "cursed",
+    "color": "#3fc2a4",
+    "name": "Cursed"
+   }
+  ],
+  "sprites": [
+   {
+    "key": "StarLight",
+    "name": "Sweet Dreams",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 301,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_StarLight_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "CoinPile",
+    "name": "Plundarrgh",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 311,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CoinPile_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 313,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CoinPile_Jeweled_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 312,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CoinPile_Cursed_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "PlaymakerBrewery",
+    "name": "Lil' Flacko",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 305,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PlaymakerBrewery_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 306,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PlaymakerBrewery_Jeweled_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 307,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PlaymakerBrewery_Cursed_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "RookGecko",
+    "name": "Lil' Uzi Vert Jr.",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 308,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_RookGecko_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 310,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_RookGecko_Jeweled_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 309,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_RookGecko_Cursed_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "FeedJet",
+    "name": "Transponder Snail",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 314,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_FeedJet_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "TreasureChest",
+    "name": "Chester",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 289,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureChest_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 291,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureChest_Jeweled_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 290,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureChest_Cursed_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "TreasureMap",
+    "name": "Exmarks",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 292,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureMap_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 293,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureMap_Jeweled_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 294,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureMap_Cursed_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "UnbotheredFish",
+    "name": "Kelper",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 298,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_UnbotheredFish_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 299,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_UnbotheredFish_Jeweled_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 300,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_UnbotheredFish_Cursed_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Squibbly",
+    "name": "Lil' Squibbly",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 302,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_SquibblySprite_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 304,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_SquibblySprite_Jeweled_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 303,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_SquibblySprite_Cursed_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "PeelyBones",
+    "name": "Halfpeel'd",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 280,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PeelyBones_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 281,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PeelyBones_Jeweled_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 282,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PeelyBones_Cursed_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Parrot",
+    "name": "Re-Pete",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 283,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Parrot_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 285,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Parrot_Jeweled_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 284,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Parrot_Cursed_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "BarrelOfFish",
+    "name": "Barry O'Fish",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 286,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BarrelOfFish_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 288,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BarrelOfFish_Jeweled_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 287,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BarrelOfFish_Cursed_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "Compass",
+    "name": "Wayfinder",
+    "rarity": "rare",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": false,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 295,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Compass_L.webp",
+      "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 297,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Compass_Jeweled_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 296,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Compass_Cursed_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": 42,
   "code": "C7S4",
   "chapter": 7,
   "season": 4,
-  "current": true,
+  "current": false,
   "costSource": "community",
   "variants": [
    {
@@ -224,7 +640,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
@@ -1019,7 +1435,7 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",

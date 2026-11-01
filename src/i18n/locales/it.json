@@ -346,7 +346,9 @@
     "holofoil": { "label": "Olografico", "bonus": "5% di probabilità che la tua squadra trovi varianti rare degli spiritelli saccheggiando i forzieri." },
     "cube": { "label": "Cubo", "bonus": "" },
     "quack": { "label": "Quack", "bonus": "Potenzia ogni spiritello che porti con PE spiritello extra ogni volta che guadagna PE." },
-    "tricktreat": { "label": "Dolcetto o scherzetto", "bonus": "" }
+    "tricktreat": { "label": "Dolcetto o scherzetto", "bonus": "" },
+    "jeweled": { "label": "Fortuna", "bonus": "" },
+    "cursed": { "label": "Maledetto", "bonus": "" }
   },
   "locations": {
     "random": "Casuale, nei forzieri e nei rifornimenti",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Il Cervo", "ability": ["Gli attacchi in mischia infliggono più danni.", "I danni in mischia aumentano a ogni livello."] },
     "WinnerD": { "name": "Tuffo nel cassonetto", "ability": ["Il cibo dà cure bonus.", "Trova cibo quando balzi fuori da un nascondiglio e, con una piccola probabilità, aprendo i contenitori.", "Cibo migliore a ogni livello."] },
     "WinnerE": { "name": "Miele", "ability": ["Probabilità di generare api nel punto d’impatto quando infliggi danni con un’arma a distanza."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Estrai gli spiritelli equipaggiati dai nemici quando li elimini e respingi i nemici vicini quando subisci danni.", "Vieni segnalato sulla mappa se lo rimuovi, quindi fai attenzione!"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Estrai gli spiritelli equipaggiati dai nemici quando li elimini e respingi i nemici vicini quando subisci danni.", "Vieni segnalato sulla mappa se lo rimuovi, quindi fai attenzione!"] },
+    "StarLight": { "name": "Sogni d'oro", "ability": ["Concede un oggetto casuale a ogni livello, esplodendo con bottino Mitico al Livello massimo.", "Il valore del bottino aumenta a ogni Aumento di livello!"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Aprire un forziere concede maggiore velocità del piccone e velocità di movimento."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["Crea una piccola onda d'urto all'atterraggio, respingendo i nemici.", "Maggiore forza di respinta a ogni Aumento di livello!"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Genera un effetto Splash Curativo quando ripristini gli scudi.", "Tempo di ricarica diminuito a ogni Aumento di livello!"] },
+    "FeedJet": { "name": "Lumaca Trasponditore", "ability": ["Concede risorse extra al raccoglimento, con i compagni di squadra che hanno anche questo Spiritello equipaggiato che ricevono anch'essi alcune risorse extra!", "Quantità aumentata di risorse ricevute a ogni Aumento di livello!"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Concede una probabilità di generare bottino extra dai Forzieri del Tesoro e annulla i danni da caduta.", "Maggiore probabilità di generare un oggetto bottino extra a ogni Aumento di livello!"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Rivela Mappe del Tesoro e Manifesti da Ricercato.", "Genera una Mappa del Tesoro al Livello massimo!"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Ripristina salute nel tempo quando sei in acqua.", "Quantità aumentata di salute a ogni Aumento di livello!"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Saltare in una buca di pesca la pesca e dà del bottino bonus.", "Ottieni più bottino man mano che sali di livello."] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["Segna le eliminazioni sulla mappa.", "Il raggio d'effetto aumenta a ogni aumento di livello!"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Aumenta la velocità di ricarica, con una probabilità che la ricarica rimborsi le munizioni.", "Ricarica più velocemente e maggiore probabilità di rimborsi munizioni a ogni Aumento di livello!"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Riduce il consumo di resistenza dello scatto tattico quando sei in acqua.", "Ottieni Slap al livello massimo!"] },
+    "Compass": { "name": "Wayfinder", "ability": ["Rivela Spiritelli vicini e concede più oggetti quando apri Forzieri Sepolti.", "Il raggio di rilevamento degli Spiritelli aumenta a ogni Aumento di livello!"] }
   }
 }

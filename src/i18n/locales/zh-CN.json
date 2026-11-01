@@ -346,7 +346,9 @@
     "holofoil": { "label": "全息", "bonus": "搜刮宝箱时，你的小队有 5% 几率找到稀有精灵变体。" },
     "cube": { "label": "方块", "bonus": "" },
     "quack": { "label": "嘎嘎", "bonus": "你携带的所有精灵每次获得 XP 时，都会额外获得精灵 XP。" },
-    "tricktreat": { "label": "不给糖就捣蛋", "bonus": "" }
+    "tricktreat": { "label": "不给糖就捣蛋", "bonus": "" },
+    "jeweled": { "label": "财富", "bonus": "" },
+    "cursed": { "label": "诅咒", "bonus": "" }
   },
   "locations": {
     "random": "随机出现在宝箱和补给空投中",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "鹿", "ability": ["近战攻击造成更多伤害。", "近战伤害随等级提升。"] },
     "WinnerD": { "name": "垃圾箱跳水", "ability": ["食物提供额外治疗。", "从藏身道具中跃出时会找到食物，打开容器时也有小概率找到。", "每升一级，食物更好。"] },
     "WinnerE": { "name": "蜂蜜", "ability": ["用远程武器造成伤害时，有几率在命中位置生成蜜蜂。"] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["淘汰敌人时回收其装备的精灵，受到伤害时将附近敌人击退。", "如果移除它，你会在地图上被标记，请小心！"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["淘汰敌人时回收其装备的精灵，受到伤害时将附近敌人击退。", "如果移除它，你会在地图上被标记，请小心！"] },
+    "StarLight": { "name": "Sweet Dreams", "ability": ["每个等级随机获得一件物品，达到满级时会爆出神话级战利品。", "每次升级时，战利品价值都会提高！"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["打开宝箱可提高矿镐挥舞速度和移动速度。"] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["落地时产生小型冲击波，将敌人击退。", "每升一级，击退力度都会增强！"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["恢复护盾时产生胖胖鱼的效果。", "每升一级，冷却时间缩短！"] },
+    "FeedJet": { "name": "Transponder Snail", "ability": ["拾取时获得额外资源，同样装备此精灵的队友也能获得一些额外资源！", "每升一级，获得的资源数量增加！"] },
+    "TreasureChest": { "name": "Chester", "ability": ["开启宝箱时有几率生成额外战利品，并免除坠落伤害。", "每升一级，生成额外战利品的几率就会增加！"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["显示藏宝图和通缉令。", "达到满级时生成一张藏宝图！"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["在水中时随时间恢复生命值。", "每升一级，生命值恢复量增加！"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["跳进钓鱼点即可完成垂钓并获得一些额外战利品。", "随着等级提升获得更多战利品。"] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["在地图上标记淘汰位置。", "每升一级，效果半径就会扩大！"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["提高装填速度，且装填时有几率返还弹药。", "每升一级，装填更快且弹药返还几率更高！"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["在水中时减少战术冲刺体力消耗。", "达到满级时获得斯拉普浆果效果！"] },
+    "Compass": { "name": "Wayfinder", "ability": ["显示附近的精灵，并在打开埋藏的宝箱时获得更多物品。", "每升一级，精灵探测半径就会扩大！"] }
   }
 }

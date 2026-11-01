@@ -346,7 +346,9 @@
     "holofoil": { "label": "Holofoil", "bonus": "5% peluang squad-mu menemukan varian sprite langka saat menjarah peti." },
     "cube": { "label": "Kubus", "bonus": "" },
     "quack": { "label": "Kwek", "bonus": "Memberi semua sprite yang kamu bawa tambahan XP sprite setiap kali mereka mendapat XP." },
-    "tricktreat": { "label": "Trick or Treat", "bonus": "" }
+    "tricktreat": { "label": "Trick or Treat", "bonus": "" },
+    "jeweled": { "label": "Keberuntungan", "bonus": "" },
+    "cursed": { "label": "Terkutuk", "bonus": "" }
   },
   "locations": {
     "random": "Acak, di peti dan supply drop",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Sang Rusa", "ability": ["Serangan melee memberi damage lebih besar.", "Damage melee meningkat tiap level."] },
     "WinnerD": { "name": "Dumpster Dive", "ability": ["Makanan memberi penyembuhan bonus.", "Temukan makanan saat melompat keluar dari prop persembunyian, dan dengan peluang kecil saat membuka kontainer.", "Makanan makin bagus tiap level."] },
     "WinnerE": { "name": "Madu", "ability": ["Peluang memunculkan lebah di lokasi tembakan mengenai sasaran saat kamu memberi damage dengan senjata jarak jauh."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Mengambil sprite yang dipakai musuh saat kamu mengeliminasi mereka, dan mendorong musuh di sekitar menjauh saat kamu terkena damage.", "Kamu akan ditandai di peta kalau melepasnya, jadi hati-hati!"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Mengambil sprite yang dipakai musuh saat kamu mengeliminasi mereka, dan mendorong musuh di sekitar menjauh saat kamu terkena damage.", "Kamu akan ditandai di peta kalau melepasnya, jadi hati-hati!"] },
+    "StarLight": { "name": "Mimpi Indah", "ability": ["Memberi item acak di tiap level, meledak dengan loot Mythic di Level Maks.", "Nilai loot meningkat di tiap Level Up!"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Membuka Peti memberi peningkatan kecepatan pickaxe dan kecepatan bergerak."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["Menciptakan gelombang kejut kecil saat mendarat, mendorong musuh menjauh.", "Kekuatan dorongan menjauh meningkat di tiap Level Up!"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Menghasilkan efek Chug Splash saat memulihkan shield.", "Cooldown berkurang di tiap Level Up!"] },
+    "FeedJet": { "name": "Siput Transponder", "ability": ["Memberi sumber daya ekstra saat diambil, dengan Rekan Tim yang juga memakai Sprite ini menerima beberapa sumber daya ekstra juga!", "Jumlah sumber daya yang diterima meningkat di tiap Level Up!"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Memberi peluang memunculkan loot ekstra dari Peti Harta Karun dan meniadakan damage jatuh.", "Peluang memunculkan item loot ekstra meningkat di tiap Level Up!"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Mengungkap Peta Harta Karun dan Poster Buronan.", "Memunculkan Peta Harta Karun di Level Maks!"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Memulihkan health seiring waktu saat di dalam air.", "Jumlah health meningkat di tiap Level Up!"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Melompat ke lubang pancing akan memancingnya dan memberi beberapa loot bonus.", "Dapatkan lebih banyak loot seiring levelmu naik."] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["Menandai eliminasi di peta.", "Radius efek meningkat di tiap level up!"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Meningkatkan kecepatan reload, dengan peluang bahwa reload mengembalikan amunisi.", "Reload lebih cepat dan peluang pengembalian amunisi lebih tinggi di tiap Level Up!"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Mengurangi pengurasan stamina sprint taktis saat di dalam air.", "Dapatkan Slap di level maks!"] },
+    "Compass": { "name": "Penunjuk Jalan", "ability": ["Mengungkap Sprite di sekitar dan memberi lebih banyak item saat membuka Peti Terkubur.", "Radius deteksi Sprite meningkat di tiap Level Up!"] }
   }
 }

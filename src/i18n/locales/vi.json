@@ -346,7 +346,9 @@
     "holofoil": { "label": "Hologram", "bonus": "5% cơ hội để đội bạn tìm thấy biến thể sprite hiếm khi lục rương." },
     "cube": { "label": "Khối", "bonus": "" },
     "quack": { "label": "Quạc", "bonus": "Tăng thêm XP sprite cho mọi sprite bạn mang theo mỗi khi chúng nhận XP." },
-    "tricktreat": { "label": "Cho kẹo hay bị ghẹo", "bonus": "" }
+    "tricktreat": { "label": "Cho kẹo hay bị ghẹo", "bonus": "" },
+    "jeweled": { "label": "Fortune", "bonus": "" },
+    "cursed": { "label": "Cursed", "bonus": "" }
   },
   "locations": {
     "random": "Ngẫu nhiên, trong rương và thùng tiếp tế",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Con Hươu", "ability": ["Đòn cận chiến gây nhiều sát thương hơn.", "Sát thương cận chiến tăng theo mỗi cấp."] },
     "WinnerD": { "name": "Dumpster Dive", "ability": ["Đồ ăn hồi máu thêm.", "Tìm thấy đồ ăn khi nhảy ra khỏi chỗ nấp, và có tỉ lệ nhỏ khi mở thùng chứa.", "Đồ ăn tốt hơn theo mỗi cấp."] },
     "WinnerE": { "name": "Mật ong", "ability": ["Có cơ hội tạo ra ong tại vị trí trúng đòn khi bạn gây sát thương bằng vũ khí tầm xa."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Lấy sprite đang trang bị của kẻ địch khi bạn hạ gục chúng, và đẩy kẻ địch ở gần ra xa khi bạn nhận sát thương.", "Bạn sẽ bị đánh dấu trên bản đồ nếu gỡ nó ra, nên hãy cẩn thận!"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Lấy sprite đang trang bị của kẻ địch khi bạn hạ gục chúng, và đẩy kẻ địch ở gần ra xa khi bạn nhận sát thương.", "Bạn sẽ bị đánh dấu trên bản đồ nếu gỡ nó ra, nên hãy cẩn thận!"] },
+    "StarLight": { "name": "Sweet Dreams", "ability": ["Nhận một vật phẩm ngẫu nhiên ở mỗi cấp, bùng nổ chiến lợi phẩm Thần Thoại ở Cấp tối đa.", "Giá trị chiến lợi phẩm tăng theo mỗi lần Lên cấp!"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Mở Rương giúp tăng tốc độ cuốc và tốc độ di chuyển."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["Tạo ra một sóng xung kích nhỏ khi tiếp đất, đẩy lùi kẻ địch.", "Lực đẩy lùi tăng theo mỗi lần Lên cấp!"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Tạo hiệu ứng Chug Splash khi hồi khiên.", "Giảm thời gian hồi chiêu theo mỗi lần Lên cấp!"] },
+    "FeedJet": { "name": "Transponder Snail", "ability": ["Nhận thêm tài nguyên khi nhặt, và Đồng đội cũng trang bị Sprite này sẽ nhận được một lượng tài nguyên bổ sung!", "Lượng tài nguyên nhận được tăng theo mỗi lần Lên cấp!"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Có cơ hội rơi thêm chiến lợi phẩm từ Rương Kho Báu và loại bỏ sát thương khi rơi.", "Tăng tỉ lệ rơi thêm vật phẩm chiến lợi phẩm theo mỗi lần Lên cấp!"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Làm lộ diện Bản Đồ Kho Báu và Áp Phích Truy Nã.", "Tạo ra một Bản Đồ Kho Báu ở Cấp tối đa!"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Hồi máu theo thời gian khi ở dưới nước.", "Lượng máu hồi tăng theo mỗi lần Lên cấp!"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Nhảy vào điểm câu cá sẽ câu luôn chỗ đó và nhận thêm chiến lợi phẩm.", "Nhận được nhiều chiến lợi phẩm hơn khi bạn lên cấp."] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["Đánh dấu các mạng hạ gục trên bản đồ.", "Bán kính hiệu ứng tăng theo mỗi lần lên cấp!"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Tăng tốc độ thay đạn, với cơ hội hoàn trả đạn khi thay đạn.", "Thay đạn nhanh hơn và tăng tỉ lệ hoàn trả đạn theo mỗi lần Lên cấp!"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Giảm tiêu hao thể lực khi chạy nước rút chiến thuật lúc ở dưới nước.", "Nhận hiệu ứng Slap ở cấp tối đa!"] },
+    "Compass": { "name": "Wayfinder", "ability": ["Phát hiện các Sprite ở gần và nhận thêm vật phẩm khi mở Rương Bị Chôn.", "Bán kính phát hiện Sprite tăng theo mỗi lần Lên cấp!"] }
   }
 }

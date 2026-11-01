@@ -403,6 +403,14 @@
     "tricktreat": {
       "label": "Trick or Treat",
       "bonus": ""
+    },
+    "jeweled": {
+      "label": "Fortune",
+      "bonus": ""
+    },
+    "cursed": {
+      "label": "Cursed",
+      "bonus": ""
     }
   },
   "locations": {
@@ -783,6 +791,96 @@
       "ability": [
         "Extract enemies' equipped Sprites when you eliminate them, and push nearby enemies away when you take damage.",
         "You're marked on the map if you remove it, so be careful!"
+      ]
+    },
+    "StarLight": {
+      "name": "Sweet Dreams",
+      "ability": [
+        "You get a random item at each level, exploding with Mythic loot at Max Level.",
+        "Loot value increases with each level."
+      ]
+    },
+    "CoinPile": {
+      "name": "Plundarrgh",
+      "ability": [
+        "Opening a Chest grants increased pickaxe and movement speed."
+      ]
+    },
+    "PlaymakerBrewery": {
+      "name": "Lil' Flacko",
+      "ability": [
+        "Creates a small shockwave on landing, knocking back enemies.",
+        "Knockback strength increases with each level."
+      ]
+    },
+    "RookGecko": {
+      "name": "Lil' Uzi Vert Jr.",
+      "ability": [
+        "Generates a Chug Splash effect when you restore shields.",
+        "The cooldown decreases with each level."
+      ]
+    },
+    "FeedJet": {
+      "name": "Transponder Snail",
+      "ability": [
+        "You get extra resources on pickup, and teammates with this Sprite get some too.",
+        "The amount of resources received increases with each level."
+      ]
+    },
+    "TreasureChest": {
+      "name": "Chester",
+      "ability": [
+        "Grants a chance to spawn extra loot from Treasure Chests and nullifies fall damage.",
+        "The chance of spawning extra loot increases with each level."
+      ]
+    },
+    "TreasureMap": {
+      "name": "Exmarks",
+      "ability": [
+        "Reveals Treasure Maps and Wanted Posters.",
+        "Spawns a Treasure Map at Max Level."
+      ]
+    },
+    "UnbotheredFish": {
+      "name": "Kelper",
+      "ability": [
+        "Restores health over time when you're in water.",
+        "The amount of health restored increases with each level."
+      ]
+    },
+    "Squibbly": {
+      "name": "Lil' Squibbly",
+      "ability": [
+        "Jumping into a fishing hole fishes it and gives you bonus loot.",
+        "You get more loot as you level up."
+      ]
+    },
+    "PeelyBones": {
+      "name": "Halfpeel'd",
+      "ability": [
+        "Marks eliminations on the map.",
+        "The effect radius increases with each level."
+      ]
+    },
+    "Parrot": {
+      "name": "Re-Pete",
+      "ability": [
+        "Increases reload speed, with a chance that reloading refunds ammo.",
+        "Reload faster and get a higher chance of ammo refunds with each level."
+      ]
+    },
+    "BarrelOfFish": {
+      "name": "Barry O'Fish",
+      "ability": [
+        "Reduces tactical sprint stamina drain when you're in water.",
+        "You gain Slap at max level."
+      ]
+    },
+    "Compass": {
+      "name": "Wayfinder",
+      "ability": [
+        "Reveals nearby Sprites and grants more items when you open Buried Chests.",
+        "The Sprite detection radius increases with each level."
       ]
     }
   }

@@ -346,7 +346,9 @@
     "holofoil": { "label": "Hologram", "bonus": "Sandık yağmalarken takımının nadir büyücük varyantları bulma şansı %5." },
     "cube": { "label": "Küp", "bonus": "" },
     "quack": { "label": "Vak", "bonus": "Taşıdığın tüm büyücüklere, XP kazandıklarında ekstra büyücük XP'si verir." },
-    "tricktreat": { "label": "Şeker mi Şaka mı", "bonus": "" }
+    "tricktreat": { "label": "Şeker mi Şaka mı", "bonus": "" },
+    "jeweled": { "label": "Fortune", "bonus": "" },
+    "cursed": { "label": "Cursed", "bonus": "" }
   },
   "locations": {
     "random": "Rastgele, sandıklarda ve ikmal kutularında",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Geyik", "ability": ["Yakın dövüş saldırıları daha fazla hasar verir.", "Yakın dövüş hasarı her seviyede artar."] },
     "WinnerD": { "name": "Çöp Konteynerine Dalış", "ability": ["Yiyecekler bonus iyileşme sağlar.", "Saklanma eşyalarından fırladığında yiyecek bulursun, kaplar açılırken de küçük bir ihtimalle.", "Her seviyede daha iyi yiyecek."] },
     "WinnerE": { "name": "Bal", "ability": ["Menzilli bir silahla hasar verdiğinde isabet noktasında arı çıkarma şansı."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Rakipleri alt ettiğinde donattıkları büyücükleri çıkarır ve hasar aldığında yakındaki rakipleri uzağa iter.", "Onu kaldırırsan haritada işaretlenirsin, o yüzden dikkatli ol!"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Rakipleri alt ettiğinde donattıkları büyücükleri çıkarır ve hasar aldığında yakındaki rakipleri uzağa iter.", "Onu kaldırırsan haritada işaretlenirsin, o yüzden dikkatli ol!"] },
+    "StarLight": { "name": "Sweet Dreams", "ability": ["Her seviyede, Maksimum Seviyede Efsanevi ganimet ile patlayan rastgele bir öğe verir.", "Her Seviye Atlamada ganimet değeri artar!"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Sandığı Açmak kazma hızını ve hareket hızını artırır."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["İniş sırasında küçük bir şok dalgası oluşturarak düşmanları geri savurur.", "Her Seviye Artışında geri itme gücü artırıldı!"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Kalkanları yenilerken Chug Splash efekti oluşturur.", "Her Seviye Atlamada bekleme süresi azaltıldı!"] },
+    "FeedJet": { "name": "Transponder Snail", "ability": ["Bu Sprite'a sahip olan Takım Arkadaşlarının da bazı ekstra kaynaklar almasıyla birlikte, teslim alındığında ekstra kaynaklar sağlar!", "Her Seviye Atlamada alınan kaynak miktarı artırıldı!"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Hazine Sandıklarından ekstra ganimet elde etme şansı verir ve düşme hasarını geçersiz kılar.", "Her Seviye Artışında ekstra bir ganimet öğesi ortaya çıkma şansı artar!"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Hazine Haritalarını ve Aranıyor Posterlerini Ortaya Çıkarır.", "Maksimum Seviyede bir Hazine Haritası oluşturur!"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Sudayken zamanla sağlığına kavuşur.", "Her Seviye Atlamayla artan sağlık miktarı!"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Bir balık tutma deliğine atlamak onu balık tutar ve bir miktar bonus ganimet verir.", "Seviye atladıkça daha fazla ganimet alın."] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["Avlamaları haritada işaretler.", "Her seviye yükseldikçe etki yarıçapı artar!"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Yeniden yükleme hızını artırır ve yeniden yüklemenin cephaneyi iade etme ihtimali vardır.", "Her Seviye Atlamada daha hızlı yeniden yükleyin ve cephane iadesi şansı daha yüksek!"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Sudayken taktiksel sprint dayanıklılık tüketimini azaltır.", "Maksimum seviyede Tokat kazan!"] },
+    "Compass": { "name": "Wayfinder", "ability": ["Yakındaki Spriteları ortaya çıkarır ve Gömülü Sandıkları açarken daha fazla öğe kazandırır.", "Her Seviye Atlamayla birlikte sprite tespit yarıçapı artar!"] }
   }
 }

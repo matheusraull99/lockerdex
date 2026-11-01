@@ -346,7 +346,9 @@
     "holofoil": { "label": "Holofolie", "bonus": "5 % Chance für deinen Trupp, beim Plündern von Truhen seltene Geister-Varianten zu finden." },
     "cube": { "label": "Würfel", "bonus": "" },
     "quack": { "label": "Quack", "bonus": "Verstärkt jeden Geist, den du bei dir trägst, mit zusätzlichen Geister-EP, sobald er EP erhält." },
-    "tricktreat": { "label": "Süßes oder Saures", "bonus": "" }
+    "tricktreat": { "label": "Süßes oder Saures", "bonus": "" },
+    "jeweled": { "label": "Glück", "bonus": "" },
+    "cursed": { "label": "Verflucht", "bonus": "" }
   },
   "locations": {
     "random": "Zufällig, in Truhen und Nachschublieferungen",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Der Hirsch", "ability": ["Nahkampfangriffe richten mehr Schaden an.", "Der Nahkampfschaden steigt mit jeder Stufe."] },
     "WinnerD": { "name": "Containertauchen", "ability": ["Essen gibt zusätzliche Heilung.", "Finde Essen, wenn du aus Versteck-Objekten springst, und mit geringer Chance beim Öffnen von Behältern.", "Besseres Essen mit jeder Stufe."] },
     "WinnerE": { "name": "Honig", "ability": ["Chance, am Einschlagsort Bienen erscheinen zu lassen, wenn du mit einer Fernkampfwaffe Schaden zufügst."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Extrahiere die ausgerüsteten Geister von Gegnern, wenn du sie eliminierst, und stoße Gegner in der Nähe weg, wenn du Schaden erleidest.", "Du wirst auf der Karte markiert, wenn du ihn entfernst – sei also vorsichtig!"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Extrahiere die ausgerüsteten Geister von Gegnern, wenn du sie eliminierst, und stoße Gegner in der Nähe weg, wenn du Schaden erleidest.", "Du wirst auf der Karte markiert, wenn du ihn entfernst – sei also vorsichtig!"] },
+    "StarLight": { "name": "Sweet Dreams", "ability": ["Gewährt auf jeder Stufe einen zufälligen Gegenstand, der auf der Maximalstufe mit mythischer Beute explodiert.", "Der Beutewert steigt mit jedem Stufenaufstieg!"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Das Öffnen von Truhen gewährt erhöhte Spitzhackengeschwindigkeit und Bewegungsgeschwindigkeit."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["Erzeugt beim Landen eine kleine Schockwelle, die Gegner zurückstößt.", "Erhöhte Rückstoßstärke mit jedem Stufenaufstieg!"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Erzeugt einen Schlürfsaft-Effekt beim Wiederherstellen von Schilden.", "Verringerte Abklingzeit mit jedem Stufenaufstieg!"] },
+    "FeedJet": { "name": "Transponder-Schnecke", "ability": ["Gewährt zusätzliche Ressourcen beim Aufheben, wobei Teamkameraden, die diesen Geist ebenfalls ausgerüstet haben, ebenfalls zusätzliche Ressourcen erhalten!", "Erhöhte Menge an erhaltenen Ressourcen mit jedem Stufenaufstieg!"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Gewährt eine Chance, zusätzliche Beute aus Schatztruhen erscheinen zu lassen und annulliert Fallschaden.", "Erhöhte Chance, einen zusätzlichen Beutegegenstand erscheinen zu lassen, mit jedem Stufenaufstieg!"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Enthüllt Schatzkarten und Steckbriefe.", "Lässt auf der Maximalstufe eine Schatzkarte erscheinen!"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Stellt im Wasser mit der Zeit Gesundheit wieder her.", "Erhöhte Menge an Gesundheit mit jedem Stufenaufstieg!"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Springen in ein Angelgebiet angelt es und gibt zusätzliche Beute.", "Erhalte mehr Beute, wenn du aufsteigst."] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["Markiert Eliminierungen auf der Karte.", "Der Effektbereich steigt mit jedem Stufenaufstieg!"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Erhöht die Nachladegeschwindigkeit, mit einer Chance, dass das Nachladen Munition zurückerstattet.", "Lade schneller nach und höhere Chance auf Munitionsrückerstattungen mit jedem Stufenaufstieg!"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Reduziert den Ausdauerverbrauch des taktischen Sprints im Wasser.", "Erhältst Slap auf der Maximalstufe!"] },
+    "Compass": { "name": "Wayfinder", "ability": ["Enthüllt Geister in der Nähe und gewährt mehr Gegenstände beim Öffnen vergrabener Truhen.", "Der Erkennungsradius für Geister steigt mit jedem Stufenaufstieg!"] }
   }
 }

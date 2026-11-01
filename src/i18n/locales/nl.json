@@ -346,7 +346,9 @@
     "holofoil": { "label": "Holografisch", "bonus": "5% kans dat je squad zeldzame spritevarianten vindt bij het looten van kisten." },
     "cube": { "label": "Kubus", "bonus": "" },
     "quack": { "label": "Kwak", "bonus": "Geeft elke sprite die je bij je hebt extra sprite-XP telkens als ze XP krijgen." },
-    "tricktreat": { "label": "Trick or Treat", "bonus": "" }
+    "tricktreat": { "label": "Trick or Treat", "bonus": "" },
+    "jeweled": { "label": "Fortune", "bonus": "" },
+    "cursed": { "label": "Cursed", "bonus": "" }
   },
   "locations": {
     "random": "Willekeurig, in kisten en supply drops",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Het Hert", "ability": ["Melee-aanvallen doen meer schade.", "De melee-schade groeit met elk level."] },
     "WinnerD": { "name": "Dumpster Dive", "ability": ["Eten geeft extra genezing.", "Vind eten als je uit schuilplekken springt, en met een kleine kans bij het openen van containers.", "Beter eten met elk level."] },
     "WinnerE": { "name": "Honing", "ability": ["Kans om bijen te laten verschijnen op de plek van inslag als je schade toebrengt met een afstandswapen."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Haalt de uitgeruste sprites van tegenstanders eruit als je ze elimineert en duwt tegenstanders in de buurt weg als je schade oploopt.", "Je wordt op de kaart gemarkeerd als je hem verwijdert, dus pas op!"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Haalt de uitgeruste sprites van tegenstanders eruit als je ze elimineert en duwt tegenstanders in de buurt weg als je schade oploopt.", "Je wordt op de kaart gemarkeerd als je hem verwijdert, dus pas op!"] },
+    "StarLight": { "name": "Sweet Dreams", "ability": ["Geeft een willekeurig item op elk level, explodeert met Mythische buit op Max Level.", "Buitwaarde neemt toe bij elke Level Up!"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Het openen van een kist geeft verhoogde pikhouweelsnelheid en bewegingssnelheid."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["Creëert een kleine schokgolf bij de landing, die tegenstanders terugduwt.", "Verhoogde terugduwkracht bij elke Level Up!"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Genereert een Chug Splash-effect bij het herstellen van schilden.", "Verminderde afkoeltijd bij elke Level Up!"] },
+    "FeedJet": { "name": "Transponder Slak", "ability": ["Geeft extra grondstoffen bij oppakken, waarbij teamgenoten die deze Sprite ook hebben uitgerust, ook wat extra grondstoffen ontvangen!", "Verhoogde hoeveelheid ontvangen grondstoffen bij elke Level Up!"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Geeft een kans om extra buit te laten verschijnen uit schatkisten en heft valschade op.", "Verhoogde kans op het laten verschijnen van een extra buititem bij elke Level Up!"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Onthult schatkaarten en Wanted Posters.", "Laat een schatkaart verschijnen op Max Level!"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Herstelt gezondheid na verloop van tijd als je in water bent.", "Verhoogde hoeveelheid gezondheid bij elke Level Up!"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Springen in een visgat vist het leeg en geeft wat bonusbuit.", "Krijg meer buit naarmate je een level omhoog gaat."] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["Markeert eliminaties op de kaart.", "Effectradius neemt toe bij elke level up!"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Verhoogt de herlaadsnelheid, met een kans dat herladen munitie teruggeeft.", "Sneller herladen en hogere kans op munitie terugbetaling bij elke Level Up!"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Vermindert tactische sprint-uithoudingsvermogenafname als je in water bent.", "Krijg Slap op max level!"] },
+    "Compass": { "name": "Wegwijzer", "ability": ["Onthult Sprites in de buurt en geeft meer items bij het openen van begraven kisten.", "Sprite-detectieradius neemt toe bij elke Level Up!"] }
   }
 }

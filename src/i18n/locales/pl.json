@@ -346,7 +346,9 @@
     "holofoil": { "label": "Holograficzny", "bonus": "5% szansy, że twoja drużyna znajdzie rzadkie warianty duszków podczas przeszukiwania skrzyń." },
     "cube": { "label": "Kostka", "bonus": "" },
     "quack": { "label": "Kwak", "bonus": "Zwiększa PD wszystkich noszonych duszków: zdobywają dodatkowe PD duszka za każdym razem, gdy zdobywają PD." },
-    "tricktreat": { "label": "Cukierek albo psikus", "bonus": "" }
+    "tricktreat": { "label": "Cukierek albo psikus", "bonus": "" },
+    "jeweled": { "label": "Fortunny", "bonus": "" },
+    "cursed": { "label": "Przeklęty", "bonus": "" }
   },
   "locations": {
     "random": "Losowo, w skrzyniach i zrzutach zaopatrzenia",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Jeleń", "ability": ["Ataki wręcz zadają więcej obrażeń.", "Obrażenia w walce wręcz rosną z każdym poziomem."] },
     "WinnerD": { "name": "Nurkowanie w Śmietniku", "ability": ["Jedzenie daje dodatkowe leczenie.", "Znajdź jedzenie, gdy wyskoczysz z kryjówek, a także z małą szansą przy otwieraniu pojemników.", "Lepsze jedzenie z każdym poziomem."] },
     "WinnerE": { "name": "Miód", "ability": ["Szansa na stworzenie pszczół w miejscu trafienia, gdy zadajesz obrażenia bronią dystansową."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Wyciągaj wyposażone duszki z przeciwników, gdy ich eliminujesz, i odpychaj pobliskich przeciwników, gdy otrzymujesz obrażenia.", "Zostaniesz oznaczony na mapie, jeśli go usuniesz, więc uważaj!"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Wyciągaj wyposażone duszki z przeciwników, gdy ich eliminujesz, i odpychaj pobliskich przeciwników, gdy otrzymujesz obrażenia.", "Zostaniesz oznaczony na mapie, jeśli go usuniesz, więc uważaj!"] },
+    "StarLight": { "name": "Sweet Dreams", "ability": ["Daje losowy przedmiot na każdym poziomie, wybuchając mitycznym łupem na Maksymalnym Poziomie.", "Wartość łupu rośnie z każdym awansem!"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Otwarcie skrzyni daje zwiększoną prędkość kilofa i prędkość ruchu."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["Tworzy małą falę uderzeniową przy lądowaniu, odrzucając przeciwników.", "Zwiększona siła odrzutu z każdym awansem!"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Generuje efekt soku Siorb podczas odnawiania osłon.", "Skrócony czas odnowienia z każdym awansem!"] },
+    "FeedJet": { "name": "Transponder Snail", "ability": ["Daje dodatkowe zasoby przy podniesieniu, a koledzy z drużyny, którzy również mają założonego tego duszka, otrzymują dodatkowe zasoby!", "Zwiększona ilość otrzymywanych zasobów z każdym awansem!"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Daje szansę na pojawienie się dodatkowego łupu ze skrzyń i niweluje obrażenia od upadku.", "Zwiększona szansa na pojawienie się dodatkowego przedmiotu z każdym awansem!"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Odsłania mapy skarbów i listy gończe.", "Tworzy mapę skarbu na Maksymalnym Poziomie!"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Odnawia zdrowie z czasem podczas przebywania w wodzie.", "Zwiększona ilość zdrowia z każdym awansem!"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Wskoczenie do łowiska łowi ryby i daje dodatkowy łup.", "Zdobądź więcej łupu wraz z awansowaniem."] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["Zaznacza eliminacje na mapie.", "Promień działania rośnie z każdym awansem!"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Zwiększa prędkość przeładowania z szansą na to, że przeładowanie zwróci amunicję.", "Szybsze przeładowanie i większa szansa na zwrot amunicji z każdym awansem!"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Zmniejsza zużycie kondycji taktycznego sprintu w wodzie.", "Zyskaj Szybciora na maksymalnym poziomie!"] },
+    "Compass": { "name": "Wayfinder", "ability": ["Wykrywa pobliskie duszki i daje więcej przedmiotów przy otwieraniu ukrytych skrzyń.", "Promień wykrywania duszków rośnie z każdym awansem!"] }
   }
 }

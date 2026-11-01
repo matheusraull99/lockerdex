@@ -346,7 +346,9 @@
     "holofoil": { "label": "Holographique", "bonus": "5 % de chances pour votre escouade de trouver des variantes d’esprits rares en fouillant les coffres." },
     "cube": { "label": "Cube", "bonus": "" },
     "quack": { "label": "Quack", "bonus": "Booste tous les esprits que vous portez avec de l’XP d’esprit supplémentaire chaque fois qu’ils gagnent de l’XP." },
-    "tricktreat": { "label": "Des bonbons ou un sort", "bonus": "" }
+    "tricktreat": { "label": "Des bonbons ou un sort", "bonus": "" },
+    "jeweled": { "label": "Fortune", "bonus": "" },
+    "cursed": { "label": "Maudit", "bonus": "" }
   },
   "locations": {
     "random": "Au hasard, dans les coffres et les largages de ravitaillement",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "Le Cerf", "ability": ["Les attaques de mêlée infligent plus de dégâts.", "Les dégâts de mêlée augmentent à chaque niveau."] },
     "WinnerD": { "name": "Plongeon en benne", "ability": ["La nourriture donne des soins bonus.", "Trouvez de la nourriture en sortant d’un accessoire de cachette, et avec une faible chance en ouvrant des conteneurs.", "Meilleure nourriture à chaque niveau."] },
     "WinnerE": { "name": "Miel", "ability": ["Chance de faire apparaître des abeilles à l’endroit de l’impact quand vous infligez des dégâts avec une arme à distance."] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["Extrayez les esprits équipés des ennemis quand vous les éliminez et repoussez les ennemis proches quand vous subissez des dégâts.", "Vous êtes marqué sur la carte si vous le retirez, alors faites attention !"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["Extrayez les esprits équipés des ennemis quand vous les éliminez et repoussez les ennemis proches quand vous subissez des dégâts.", "Vous êtes marqué sur la carte si vous le retirez, alors faites attention !"] },
+    "StarLight": { "name": "Doux Rêves", "ability": ["Accorde un objet aléatoire à chaque niveau, explosant avec du butin mythique au niveau max.", "La valeur du butin augmente à chaque montée de niveau !"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["Ouvrir un coffre accorde une vitesse de pioche et une vitesse de déplacement accrues."] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["Crée une petite onde de choc à l'atterrissage, repoussant les ennemis.", "Force de repoussement accrue à chaque montée de niveau !"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["Génère un effet de Gourde du brave quand vous restaurez des boucliers.", "Temps de recharge réduit à chaque montée de niveau !"] },
+    "FeedJet": { "name": "Escargot Transpondeur", "ability": ["Accorde des ressources supplémentaires à la collecte, et les coéquipiers qui ont aussi cet esprit équipé reçoivent également des ressources supplémentaires !", "Quantité de ressources reçues augmentée à chaque montée de niveau !"] },
+    "TreasureChest": { "name": "Chester", "ability": ["Accorde une chance de faire apparaître du butin supplémentaire des coffres au trésor et annule les dégâts de chute.", "Chance accrue de faire apparaître un objet de butin supplémentaire à chaque montée de niveau !"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["Révèle les cartes au trésor et les avis de recherche.", "Fait apparaître une carte au trésor au niveau max !"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["Restaure la santé avec le temps quand vous êtes dans l'eau.", "Quantité de santé augmentée à chaque montée de niveau !"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["Sauter dans un trou de pêche le pêche et donne du butin bonus.", "Obtenez plus de butin à mesure que vous montez de niveau."] },
+    "PeelyBones": { "name": "À moitié pelé", "ability": ["Marque les éliminations sur la carte.", "Le rayon d'effet augmente à chaque montée de niveau !"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["Augmente la vitesse de rechargement, avec une chance que le rechargement rembourse les munitions.", "Rechargez plus vite et plus de chance de remboursement de munitions à chaque montée de niveau !"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Réduit la consommation d'endurance du sprint tactique quand vous êtes dans l'eau.", "Gagnez du Slap au niveau max !"] },
+    "Compass": { "name": "Chercheur de chemin", "ability": ["Révèle les esprits proches et accorde plus d'objets en ouvrant des coffres enterrés.", "Le rayon de détection des esprits augmente à chaque montée de niveau !"] }
   }
 }

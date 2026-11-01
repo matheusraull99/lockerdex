@@ -346,7 +346,9 @@
     "holofoil": { "label": "全像", "bonus": "搜刮寶箱時，你的小隊有 5% 機率找到稀有精靈變體。" },
     "cube": { "label": "方塊", "bonus": "" },
     "quack": { "label": "嘎嘎", "bonus": "你攜帶的所有精靈每次獲得 XP 時，都會額外獲得精靈 XP。" },
-    "tricktreat": { "label": "不給糖就搗蛋", "bonus": "" }
+    "tricktreat": { "label": "不給糖就搗蛋", "bonus": "" },
+    "jeweled": { "label": "Fortune", "bonus": "" },
+    "cursed": { "label": "Cursed", "bonus": "" }
   },
   "locations": {
     "random": "隨機出現在寶箱和補給空投中",
@@ -414,6 +416,19 @@
     "IncreasedMelee": { "name": "鹿", "ability": ["近戰攻擊造成更多傷害。", "近戰傷害隨等級提升。"] },
     "WinnerD": { "name": "垃圾桶跳水", "ability": ["食物提供額外治療。", "從藏身道具中躍出時會找到食物，打開容器時也有小機率找到。", "每升一級，食物更好。"] },
     "WinnerE": { "name": "蜂蜜", "ability": ["用遠程武器造成傷害時，有機率在命中位置生成蜜蜂。"] },
-    "CargoLying": { "name": "One Wish Willow", "ability": ["淘汰敵人時回收其裝備的精靈，受到傷害時將附近敵人擊退。", "如果移除它，你會在地圖上被標記，請小心！"] }
+    "CargoLying": { "name": "One Wish Willow", "ability": ["淘汰敵人時回收其裝備的精靈，受到傷害時將附近敵人擊退。", "如果移除它，你會在地圖上被標記，請小心！"] },
+    "StarLight": { "name": "Sweet Dreams", "ability": ["每升一級獲得隨機道具，達到最高等級時會爆出神話戰利品。", "戰利品價值隨著每次升級而增加！"] },
+    "CoinPile": { "name": "Plundarrgh", "ability": ["打開寶箱可提升鎬頭速度和移動速度。"] },
+    "PlaymakerBrewery": { "name": "Lil' Flacko", "ability": ["落地時產生小型衝擊波，將敵人擊退。", "每升一級，擊退強度增加！"] },
+    "RookGecko": { "name": "Lil' Uzi Vert Jr.", "ability": ["恢復護盾時產生飲用罐效果。", "每升一級，冷卻時間縮短！"] },
+    "FeedJet": { "name": "Transponder Snail", "ability": ["拾取時獲得額外資源，裝備此精靈的隊友也能獲得部分額外資源！", "每升一級，獲得的資源數量增加！"] },
+    "TreasureChest": { "name": "Chester", "ability": ["有機率從寶箱生成額外戰利品並免疫落下傷害。", "每升一級，生成額外戰利品道具的機率增加！"] },
+    "TreasureMap": { "name": "Exmarks", "ability": ["顯示藏寶圖與通緝令。", "達到最高等級時生成藏寶圖！"] },
+    "UnbotheredFish": { "name": "Kelper", "ability": ["身處水中時隨時間恢復生命值。", "每升一級，生命值數量增加！"] },
+    "Squibbly": { "name": "Lil' Squibbly", "ability": ["跳進釣魚點即可完成釣魚並獲得一些獎勵戰利品。", "隨著等級提升獲得更多戰利品。"] },
+    "PeelyBones": { "name": "Halfpeel'd", "ability": ["在地圖上標記淘汰位置。", "每升一級，效果半徑增加！"] },
+    "Parrot": { "name": "Re-Pete", "ability": ["增加裝填速度，裝填時有機率退還彈藥。", "每升一級，裝填更快且彈藥退還機率更高！"] },
+    "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["身處水中時減少戰術衝刺體力消耗。", "達到最高等級時獲得拍拍果！"] },
+    "Compass": { "name": "Wayfinder", "ability": ["顯示附近的精靈，並在打開埋藏的寶箱時獲得更多道具。", "每升一級，精靈偵測半徑增加！id便於讀取"] }
   }
 }

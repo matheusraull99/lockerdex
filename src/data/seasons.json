@@ -71,7 +71,8 @@
       "fggId": 312,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CoinPile_Cursed_L.webp",
       "cost": 2400,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -103,7 +104,8 @@
       "fggId": 307,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PlaymakerBrewery_Cursed_L.webp",
       "cost": 2100,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -113,7 +115,7 @@
     "rarity": "legendary",
     "levels": null,
     "location": "random",
-    "unreleased": false,
+    "unreleased": true,
     "isNew": false,
     "slots": [
      {
@@ -185,7 +187,8 @@
       "fggId": 290,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureChest_Cursed_L.webp",
       "cost": 1800,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -217,7 +220,8 @@
       "fggId": 294,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureMap_Cursed_L.webp",
       "cost": 1800,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -249,7 +253,8 @@
       "fggId": 300,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_UnbotheredFish_Cursed_L.webp",
       "cost": 1800,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -281,7 +286,8 @@
       "fggId": 303,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_SquibblySprite_Cursed_L.webp",
       "cost": 1800,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -313,7 +319,8 @@
       "fggId": 282,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PeelyBones_Cursed_L.webp",
       "cost": 1500,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -345,7 +352,8 @@
       "fggId": 284,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Parrot_Cursed_L.webp",
       "cost": 1500,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -377,7 +385,8 @@
       "fggId": 287,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BarrelOfFish_Cursed_L.webp",
       "cost": 1500,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    },
@@ -409,7 +418,8 @@
       "fggId": 296,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Compass_Cursed_L.webp",
       "cost": 1500,
-      "drop": 0.0
+      "drop": 0.0,
+      "unreleased": true
      }
     ]
    }

@@ -37,6 +37,8 @@ for i, meta in enumerate(SEASONS.values()):
 
 # chave, cor, tem bônus próprio
 VARIANTS = {
+    # Fortune (jeweled) é cristal cor de rubi; Cursed é escura com brilho fantasma verde-água (ícones de 01/11).
+    "43": [("base", "#9aa6c4"), ("jeweled", "#e8445f"), ("cursed", "#3fc2a4")],
     "42": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("cheatmaster", "#4fbf1f"), ("hacker", "#4a47e8"), ("reaper", "#f27bd0"),
            ("tricktreat", "#ff7a1a"), ("quack", "#b07cff")],
     "41": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("candy", "#ff6f91"), ("galaxy", "#6d4bff"), ("gem", "#19c2b0"),
@@ -212,7 +214,9 @@ for sid, meta in SEASONS.items():
     out.append({
         "id": int(sid), **meta,
         "costSource": "community" if sid in COMMUNITY_COST else "game",
-        "variants": [{"key": k, "color": col, "name": VARIANT_NAME.get(k, k)} for k, col in VARIANTS[sid]],
+        # só as variantes que têm figurinhas nesta temporada (a minitemporada não tem Dourada, por exemplo)
+        "variants": [{"key": k, "color": col, "name": VARIANT_NAME.get(k, k)} for k, col in VARIANTS[sid]
+                     if any(sl["variant"] == k for sp in sprites for sl in sp["slots"])],
         "sprites": sprites,
     })
 

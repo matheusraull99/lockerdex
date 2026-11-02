@@ -406,11 +406,11 @@
     },
     "jeweled": {
       "label": "Fortune",
-      "bonus": ""
+      "bonus": "Reveals nearby Chests."
     },
     "cursed": {
       "label": "Cursed",
-      "bonus": ""
+      "bonus": "Increases the chance of rare Sprite variants, but water damages you."
     }
   },
   "locations": {

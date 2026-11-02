@@ -347,8 +347,8 @@
     "cube": { "label": "큐브", "bonus": "" },
     "quack": { "label": "꽥꽥", "bonus": "지니고 있는 모든 정령이 XP를 얻을 때마다 추가 정령 XP를 얻어요." },
     "tricktreat": { "label": "트릭 오어 트릿", "bonus": "" },
-    "jeweled": { "label": "행운", "bonus": "" },
-    "cursed": { "label": "저주", "bonus": "" }
+    "jeweled": { "label": "행운", "bonus": "근처 상자를 표시해요." },
+    "cursed": { "label": "저주", "bonus": "희귀한 정령 변형이 나올 확률이 올라가지만, 물에 닿으면 피해를 입어요." }
   },
   "locations": {
     "random": "무작위, 상자와 보급품에서",

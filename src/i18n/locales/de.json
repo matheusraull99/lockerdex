@@ -347,8 +347,8 @@
     "cube": { "label": "Würfel", "bonus": "" },
     "quack": { "label": "Quack", "bonus": "Verstärkt jeden Geist, den du bei dir trägst, mit zusätzlichen Geister-EP, sobald er EP erhält." },
     "tricktreat": { "label": "Süßes oder Saures", "bonus": "" },
-    "jeweled": { "label": "Glück", "bonus": "" },
-    "cursed": { "label": "Verflucht", "bonus": "" }
+    "jeweled": { "label": "Glück", "bonus": "Zeigt Truhen in der Nähe an." },
+    "cursed": { "label": "Verflucht", "bonus": "Erhöht die Chance auf seltene Geister-Varianten, aber Wasser fügt dir Schaden zu." }
   },
   "locations": {
     "random": "Zufällig, in Truhen und Nachschublieferungen",

@@ -347,8 +347,8 @@
     "cube": { "label": "Kubus", "bonus": "" },
     "quack": { "label": "Kwek", "bonus": "Memberi semua sprite yang kamu bawa tambahan XP sprite setiap kali mereka mendapat XP." },
     "tricktreat": { "label": "Trick or Treat", "bonus": "" },
-    "jeweled": { "label": "Keberuntungan", "bonus": "" },
-    "cursed": { "label": "Terkutuk", "bonus": "" }
+    "jeweled": { "label": "Keberuntungan", "bonus": "Menampilkan peti di sekitar." },
+    "cursed": { "label": "Terkutuk", "bonus": "Meningkatkan peluang varian sprite langka, tetapi air melukaimu." }
   },
   "locations": {
     "random": "Acak, di peti dan supply drop",

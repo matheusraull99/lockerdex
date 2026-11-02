@@ -347,8 +347,8 @@
     "cube": { "label": "คิวบ์", "bonus": "" },
     "quack": { "label": "ก๊าบ", "bonus": "เพิ่ม XP สไปรต์ให้สไปรต์ทุกตัวที่คุณพกอยู่ทุกครั้งที่พวกมันได้รับ XP" },
     "tricktreat": { "label": "หลอกหรือเลี้ยง", "bonus": "" },
-    "jeweled": { "label": "Fortune", "bonus": "" },
-    "cursed": { "label": "Cursed", "bonus": "" }
+    "jeweled": { "label": "Fortune", "bonus": "เผยหีบที่อยู่ใกล้เคียง" },
+    "cursed": { "label": "Cursed", "bonus": "เพิ่มโอกาสพบสไปรต์รูปแบบหายาก แต่น้ำจะทำให้คุณได้รับความเสียหาย" }
   },
   "locations": {
     "random": "สุ่ม ในหีบและซัพพลายดรอป",

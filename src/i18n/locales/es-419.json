@@ -347,8 +347,8 @@
     "cube": { "label": "Cubo", "bonus": "" },
     "quack": { "label": "Quack", "bonus": "Potencia a todos los espíritus que llevas con EXP de espíritu extra siempre que ganan EXP." },
     "tricktreat": { "label": "Dulce o truco", "bonus": "" },
-    "jeweled": { "label": "Fortuna", "bonus": "" },
-    "cursed": { "label": "Maldito", "bonus": "" }
+    "jeweled": { "label": "Fortuna", "bonus": "Revela los cofres cercanos." },
+    "cursed": { "label": "Maldito", "bonus": "Aumenta la probabilidad de variantes raras de espíritus, pero el agua te hace daño." }
   },
   "locations": {
     "random": "Al azar, en cofres y entregas de suministros",

@@ -406,11 +406,11 @@
     },
     "jeweled": {
       "label": "Valioso",
-      "bonus": ""
+      "bonus": "Revela Baús próximos."
     },
     "cursed": {
-      "label": "Amaldiçoado",
-      "bonus": ""
+      "label": "Maldito",
+      "bonus": "Aumenta a chance de variantes raras de Elemental, mas a água causa dano em você."
     }
   },
   "locations": {
@@ -794,7 +794,7 @@
       ]
     },
     "StarLight": {
-      "name": "Sweet Dreams",
+      "name": "Bons Sonhos",
       "ability": [
         "Concede um item aleatório a cada nível, explodindo com saque mítico no Nível Máximo.",
         "O valor do saque aumenta a cada Subida de Nível!"
@@ -807,7 +807,7 @@
       ]
     },
     "PlaymakerBrewery": {
-      "name": "Lil' Flacko",
+      "name": "Flacko Jr.",
       "ability": [
         "Cria uma pequena onda de choque ao aterrissar, empurrando inimigos para longe.",
         "Força de repulsão aumentada a cada Subida de Nível!"
@@ -821,63 +821,63 @@
       ]
     },
     "FeedJet": {
-      "name": "Transponder Snail",
+      "name": "Caracol Telepático",
       "ability": [
         "Concede recursos extras ao coletar, com companheiros de equipe que também tenham este elemental equipado recebendo alguns recursos extras também!",
         "Quantidade de recursos recebidos aumentada a cada Subida de Nível!"
       ]
     },
     "TreasureChest": {
-      "name": "Chester",
+      "name": "Baunardo",
       "ability": [
         "Concede uma chance de gerar saque extra de Baús de Tesouro e anula o dano de queda.",
         "Chance aumentada de gerar um item de saque extra a cada Subida de Nível!"
       ]
     },
     "TreasureMap": {
-      "name": "Exmarks",
+      "name": "Xisconde",
       "ability": [
         "Revela Mapas do Tesouro e Cartazes de Procura-se.",
         "Gera um Mapa do Tesouro no Nível Máximo!"
       ]
     },
     "UnbotheredFish": {
-      "name": "Kelper",
+      "name": "Apatilda",
       "ability": [
         "Restaura vida com o tempo quando estiver na água.",
         "Quantidade de vida aumentada a cada Subida de Nível!"
       ]
     },
     "Squibbly": {
-      "name": "Lil' Squibbly",
+      "name": "Polvitozinho",
       "ability": [
         "Pular em um pesqueiro o pesca e concede algum saque bônus.",
         "Consiga mais saque conforme sobe de nível."
       ]
     },
     "PeelyBones": {
-      "name": "Halfpeel'd",
+      "name": "Descascadinho",
       "ability": [
         "Marca eliminações no mapa.",
         "O raio do efeito aumenta a cada subida de nível!"
       ]
     },
     "Parrot": {
-      "name": "Re-Pete",
+      "name": "Repetácio",
       "ability": [
         "Aumenta a velocidade de recarga, com uma chance de a recarga reembolsar munição.",
         "Recarregue mais rápido e tenha maior chance de reembolso de munição a cada Subida de Nível!"
       ]
     },
     "BarrelOfFish": {
-      "name": "Barry O'Fish",
+      "name": "Barrilson",
       "ability": [
         "Reduz o consumo de estamina de corrida tática quando estiver na água.",
         "Ganhe Suco de Slap no nível máximo!"
       ]
     },
     "Compass": {
-      "name": "Wayfinder",
+      "name": "Localizador",
       "ability": [
         "Revela elementais próximos e concede mais itens ao abrir Baús Enterrados.",
         "Raio de detecção de elementais aumenta a cada Subida de Nível!h"

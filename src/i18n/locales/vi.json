@@ -347,8 +347,8 @@
     "cube": { "label": "Khối", "bonus": "" },
     "quack": { "label": "Quạc", "bonus": "Tăng thêm XP sprite cho mọi sprite bạn mang theo mỗi khi chúng nhận XP." },
     "tricktreat": { "label": "Cho kẹo hay bị ghẹo", "bonus": "" },
-    "jeweled": { "label": "Fortune", "bonus": "" },
-    "cursed": { "label": "Cursed", "bonus": "" }
+    "jeweled": { "label": "Fortune", "bonus": "Hiện các rương ở gần." },
+    "cursed": { "label": "Cursed", "bonus": "Tăng cơ hội gặp biến thể sprite hiếm, nhưng nước sẽ gây sát thương cho bạn." }
   },
   "locations": {
     "random": "Ngẫu nhiên, trong rương và thùng tiếp tế",

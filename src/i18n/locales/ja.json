@@ -347,8 +347,8 @@
     "cube": { "label": "キューブ", "bonus": "" },
     "quack": { "label": "ガーガー", "bonus": "運んでいるすべての精霊が、XPを獲得するたびに追加の精霊XPを得られる。" },
     "tricktreat": { "label": "トリック・オア・トリート", "bonus": "" },
-    "jeweled": { "label": "フォーチュン", "bonus": "" },
-    "cursed": { "label": "カースド", "bonus": "" }
+    "jeweled": { "label": "フォーチュン", "bonus": "近くの宝箱を表示する。" },
+    "cursed": { "label": "カースド", "bonus": "レアな精霊バリアントの出現率が上がるが、水でダメージを受ける。" }
   },
   "locations": {
     "random": "ランダム（宝箱や補給物資から）",

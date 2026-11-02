@@ -347,8 +347,8 @@
     "cube": { "label": "方块", "bonus": "" },
     "quack": { "label": "嘎嘎", "bonus": "你携带的所有精灵每次获得 XP 时，都会额外获得精灵 XP。" },
     "tricktreat": { "label": "不给糖就捣蛋", "bonus": "" },
-    "jeweled": { "label": "财富", "bonus": "" },
-    "cursed": { "label": "诅咒", "bonus": "" }
+    "jeweled": { "label": "财富", "bonus": "显示附近的宝箱。" },
+    "cursed": { "label": "诅咒", "bonus": "提高稀有精灵变体的几率，但水会对你造成伤害。" }
   },
   "locations": {
     "random": "随机出现在宝箱和补给空投中",

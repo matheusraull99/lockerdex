@@ -347,8 +347,8 @@
     "cube": { "label": "方塊", "bonus": "" },
     "quack": { "label": "嘎嘎", "bonus": "你攜帶的所有精靈每次獲得 XP 時，都會額外獲得精靈 XP。" },
     "tricktreat": { "label": "不給糖就搗蛋", "bonus": "" },
-    "jeweled": { "label": "Fortune", "bonus": "" },
-    "cursed": { "label": "Cursed", "bonus": "" }
+    "jeweled": { "label": "Fortune", "bonus": "顯示附近的寶箱。" },
+    "cursed": { "label": "Cursed", "bonus": "提高稀有精靈變體的機率，但水會對你造成傷害。" }
   },
   "locations": {
     "random": "隨機出現在寶箱和補給空投中",

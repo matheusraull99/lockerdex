@@ -347,8 +347,8 @@
     "cube": { "label": "Kubus", "bonus": "" },
     "quack": { "label": "Kwak", "bonus": "Geeft elke sprite die je bij je hebt extra sprite-XP telkens als ze XP krijgen." },
     "tricktreat": { "label": "Trick or Treat", "bonus": "" },
-    "jeweled": { "label": "Fortune", "bonus": "" },
-    "cursed": { "label": "Cursed", "bonus": "" }
+    "jeweled": { "label": "Fortune", "bonus": "Toont kisten in de buurt." },
+    "cursed": { "label": "Cursed", "bonus": "Vergroot de kans op zeldzame sprite-varianten, maar water doet je schade." }
   },
   "locations": {
     "random": "Willekeurig, in kisten en supply drops",

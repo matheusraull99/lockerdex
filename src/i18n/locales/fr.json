@@ -347,8 +347,8 @@
     "cube": { "label": "Cube", "bonus": "" },
     "quack": { "label": "Quack", "bonus": "Booste tous les esprits que vous portez avec de l’XP d’esprit supplémentaire chaque fois qu’ils gagnent de l’XP." },
     "tricktreat": { "label": "Des bonbons ou un sort", "bonus": "" },
-    "jeweled": { "label": "Fortune", "bonus": "" },
-    "cursed": { "label": "Maudit", "bonus": "" }
+    "jeweled": { "label": "Fortune", "bonus": "Révèle les coffres à proximité." },
+    "cursed": { "label": "Maudit", "bonus": "Augmente les chances de variantes rares d'esprits, mais l'eau vous inflige des dégâts." }
   },
   "locations": {
     "random": "Au hasard, dans les coffres et les largages de ravitaillement",

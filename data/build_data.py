@@ -38,7 +38,8 @@ for i, meta in enumerate(SEASONS.values()):
 # chave, cor, tem bônus próprio
 VARIANTS = {
     # Fortune (jeweled) é cristal cor de rubi; Cursed é escura com brilho fantasma verde-água (ícones de 01/11).
-    "43": [("base", "#9aa6c4"), ("jeweled", "#e8445f"), ("cursed", "#3fc2a4")],
+    # A Dourada ("Elemental de Ouro") chega em 12/11 (Epic); só aparece quando o fortnite.gg tiver as figurinhas.
+    "43": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("jeweled", "#e8445f"), ("cursed", "#3fc2a4")],
     "42": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("cheatmaster", "#4fbf1f"), ("hacker", "#4a47e8"), ("reaper", "#f27bd0"),
            ("tricktreat", "#ff7a1a"), ("quack", "#b07cff")],
     "41": [("base", "#9aa6c4"), ("gold", "#f5b642"), ("candy", "#ff6f91"), ("galaxy", "#6d4bff"), ("gem", "#19c2b0"),

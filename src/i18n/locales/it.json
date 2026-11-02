@@ -347,8 +347,8 @@
     "cube": { "label": "Cubo", "bonus": "" },
     "quack": { "label": "Quack", "bonus": "Potenzia ogni spiritello che porti con PE spiritello extra ogni volta che guadagna PE." },
     "tricktreat": { "label": "Dolcetto o scherzetto", "bonus": "" },
-    "jeweled": { "label": "Fortuna", "bonus": "" },
-    "cursed": { "label": "Maledetto", "bonus": "" }
+    "jeweled": { "label": "Fortuna", "bonus": "Rivela i forzieri vicini." },
+    "cursed": { "label": "Maledetto", "bonus": "Aumenta la probabilità di varianti rare degli spiritelli, ma l'acqua ti danneggia." }
   },
   "locations": {
     "random": "Casuale, nei forzieri e nei rifornimenti",

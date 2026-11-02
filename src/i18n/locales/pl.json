@@ -347,8 +347,8 @@
     "cube": { "label": "Kostka", "bonus": "" },
     "quack": { "label": "Kwak", "bonus": "Zwiększa PD wszystkich noszonych duszków: zdobywają dodatkowe PD duszka za każdym razem, gdy zdobywają PD." },
     "tricktreat": { "label": "Cukierek albo psikus", "bonus": "" },
-    "jeweled": { "label": "Fortunny", "bonus": "" },
-    "cursed": { "label": "Przeklęty", "bonus": "" }
+    "jeweled": { "label": "Fortunny", "bonus": "Ujawnia pobliskie skrzynie." },
+    "cursed": { "label": "Przeklęty", "bonus": "Zwiększa szansę na rzadkie warianty duszków, ale woda zadaje ci obrażenia." }
   },
   "locations": {
     "random": "Losowo, w skrzyniach i zrzutach zaopatrzenia",

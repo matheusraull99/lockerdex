@@ -347,8 +347,8 @@
     "cube": { "label": "Küp", "bonus": "" },
     "quack": { "label": "Vak", "bonus": "Taşıdığın tüm büyücüklere, XP kazandıklarında ekstra büyücük XP'si verir." },
     "tricktreat": { "label": "Şeker mi Şaka mı", "bonus": "" },
-    "jeweled": { "label": "Fortune", "bonus": "" },
-    "cursed": { "label": "Cursed", "bonus": "" }
+    "jeweled": { "label": "Fortune", "bonus": "Yakındaki sandıkları gösterir." },
+    "cursed": { "label": "Cursed", "bonus": "Nadir büyücük varyantı şansını artırır ama su sana hasar verir." }
   },
   "locations": {
     "random": "Rastgele, sandıklarda ve ikmal kutularında",

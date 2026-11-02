@@ -347,8 +347,8 @@
     "cube": { "label": "مكعب", "bonus": "" },
     "quack": { "label": "كواك", "bonus": "تعزّز كل روح تحملها بخبرة روح إضافية كلما اكتسبت الخبرة." },
     "tricktreat": { "label": "خدعة أو حلوى", "bonus": "" },
-    "jeweled": { "label": "Fortune", "bonus": "" },
-    "cursed": { "label": "ملعون", "bonus": "" }
+    "jeweled": { "label": "Fortune", "bonus": "يكشف الصناديق القريبة." },
+    "cursed": { "label": "ملعون", "bonus": "يزيد فرصة ظهور نسخ نادرة من الأرواح، لكن الماء يُلحق بك الضرر." }
   },
   "locations": {
     "random": "عشوائي، في الصناديق وصناديق الإمداد",

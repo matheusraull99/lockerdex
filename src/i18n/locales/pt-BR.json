@@ -405,11 +405,11 @@
       "bonus": ""
     },
     "jeweled": {
-      "label": "Fortuna",
+      "label": "Valioso",
       "bonus": ""
     },
     "cursed": {
-      "label": "Amaldiçoada",
+      "label": "Amaldiçoado",
       "bonus": ""
     }
   },
@@ -801,7 +801,7 @@
       ]
     },
     "CoinPile": {
-      "name": "Plundarrgh",
+      "name": "Moedonho",
       "ability": [
         "Abrir Baús concede velocidade da picareta e velocidade de movimento aumentadas."
       ]

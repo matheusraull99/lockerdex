@@ -103,6 +103,9 @@ RARITY_FIX = {"Overshield": "epic"}
 # Já lançados no jogo antes de o fortnite.gg atualizar (lá ainda aparecem como "Unreleased").
 # Vazio desde 28/09/2026, quando o fortnite.gg passou a mostrar o Birthday como lançado.
 RELEASED_FIX = set()
+# Temporadas em que o álbum mostra tudo, sem esconder os "Unreleased" do fortnite.gg: na minitemporada ele marcou as
+# variantes Maldito e o Lil' Uzi Vert Jr. como não lançados, mas os jogadores já têm as Maldito (print de 02/11).
+ALL_RELEASED = {"43"}
 
 # Valores por nível (1 → 5). unit vale para todos; units para pares.
 LEVELS = {
@@ -198,7 +201,7 @@ for sid, meta in SEASONS.items():
             slot = {"variant": vk, "fggId": int(c["sprite"]), "img": c["img"], "cost": cost,
                     "drop": pct(f.get("Sprite Chest"))}
             # Variante que ainda não saiu num elemental que já saiu (ex.: Trick or Treat, a partir de 08/10/2026).
-            if c.get("unreleased") and not (base.get("unreleased") and p not in RELEASED_FIX) and f"{p}:{vk}" not in RELEASED_FIX:
+            if c.get("unreleased") and sid not in ALL_RELEASED and not (base.get("unreleased") and p not in RELEASED_FIX) and f"{p}:{vk}" not in RELEASED_FIX:
                 slot["unreleased"] = True
             slots.append(slot)
         sprites.append({
@@ -207,7 +210,7 @@ for sid, meta in SEASONS.items():
             "rarity": rarity,
             "levels": LEVELS.get(p),
             "location": location,
-            "unreleased": bool(base.get("unreleased")) and p not in RELEASED_FIX,
+            "unreleased": bool(base.get("unreleased")) and p not in RELEASED_FIX and sid not in ALL_RELEASED,
             "isNew": bool(base.get("is-new")),
             "slots": slots,
         })

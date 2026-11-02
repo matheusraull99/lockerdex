@@ -221,7 +221,9 @@ function seoPages(env: Record<string, string>): Plugin {
             ? historyShell(route, code, nav)
             : `<main class="seo-shell"><h1>${esc(rt.title ? t(rt.title) : "Lockerdex")}</h1><p>${esc(desc)}</p><ul>${nav}</ul></main>`;
         let html = template.replace(/<!--seo:start-->[\s\S]*?<!--seo:end-->/, head).replace("<!--seo:body-->", body);
-        html = html.replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${code}" dir="${L.meta.dir === "rtl" ? "rtl" : "ltr"}">`);
+        // translate="no": o site já vem nos 22 idiomas. Sem isso, o Chrome via a página em inglês (antes do JavaScript
+        // trocar o idioma) e traduzia por cima, estragando nomes próprios ("Moedonho" virava "Modonho").
+        html = html.replace(/<html lang="[^"]*"[^>]*>/, `<html lang="${code}" dir="${L.meta.dir === "rtl" ? "rtl" : "ltr"}" translate="no">`);
         return { html, url };
       };
 

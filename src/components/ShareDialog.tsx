@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Season, Slot } from "../lib/data";
-import { storage, type Collection } from "../lib/collection";
+import { shareUrl, storage, type Collection } from "../lib/collection";
+import { copyText } from "../lib/clipboard";
+import { useUi } from "../lib/ui";
 import { useI18n } from "../lib/i18n";
 import { albumPng, imageTheme } from "../lib/exportImage";
 import { cardPng, type CardKind } from "../lib/exportCards";
@@ -37,6 +39,28 @@ export function ShareDialog({ season, slots, collection, friend, onClose }: Prop
   const [busy, setBusy] = useState(false);
   const [layout, setLayout] = useState<Layout>("card");
   const [preview, setPreview] = useState("");
+  const [name, setName] = useState(() => storage.name());
+  const [manual, setManual] = useState(""); // link à mostra quando o navegador não deixa copiar
+  const { toast } = useUi();
+
+  // Link da coleção: quem abrir vê as suas figurinhas e pode comparar com as dele (e fazer o Duelo).
+  // No celular abre o menu de compartilhar do aparelho (WhatsApp etc.); senão copia; se nem isso, mostra o link.
+  const sendLink = async () => {
+    storage.setName(name.trim());
+    const link = shareUrl(collection, name, season.id);
+    if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+      try {
+        await navigator.share({ title: "Lockerdex", text: t("share.linkHint"), url: link });
+        return;
+      } catch (e) {
+        if ((e as Error).name === "AbortError") return; // a pessoa fechou o menu
+      }
+    }
+    if (await copyText(link)) {
+      setManual("");
+      toast(t("share.copied"));
+    } else setManual(link);
+  };
 
   useEffect(() => {
     ref.current?.showModal();
@@ -161,6 +185,18 @@ export function ShareDialog({ season, slots, collection, friend, onClose }: Prop
         <figure className="share-prev" aria-label={t("share.preview")}>
           {preview ? <img src={preview} alt={t(LABEL[layout])} /> : <span className="share-prev-wait" aria-hidden />}
         </figure>
+
+        <div className="share-link">
+          <label htmlFor="sh-name">{t("share.name")}</label>
+          <div className="share-link-row">
+            <input id="sh-name" value={name} maxLength={32} onChange={(e) => setName(e.target.value)} autoComplete="nickname" />
+            <button type="button" className="btn btn-dust" onClick={sendLink}>
+              {t("share.copy")} {t("share.link").toLowerCase()}
+            </button>
+          </div>
+          {manual && <input className="share-link-manual" readOnly value={manual} aria-label={t("share.link")} onFocus={(e) => e.currentTarget.select()} autoFocus />}
+          <p className="share-link-hint">{t("share.linkHint")}</p>
+        </div>
 
         <div className="fmt" role="group" aria-labelledby="fmt-h">
           <p id="fmt-h" className="fmt-h">

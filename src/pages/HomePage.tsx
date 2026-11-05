@@ -2,6 +2,7 @@ import { useI18n } from "../lib/i18n";
 import { HomeFeature } from "../components/HomeFeature";
 import { SeasonCountdown } from "../components/SeasonCountdown";
 import { MyAlbumCard, SeasonStrip, TodayChips } from "../components/HomeMobile";
+import { AppNews } from "../components/AppNews";
 import { MOBILE, useMedia } from "../lib/media";
 
 /**
@@ -21,11 +22,15 @@ export function HomePage() {
             <>
               <SeasonStrip />
               <TodayChips />
+              <AppNews />
             </>
           ) : (
-            <section className="home-season">
-              <SeasonCountdown heading="h2" />
-            </section>
+            <>
+              <section className="home-season">
+                <SeasonCountdown heading="h2" />
+              </section>
+              <AppNews />
+            </>
           )
         }
       />

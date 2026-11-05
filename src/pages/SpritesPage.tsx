@@ -313,7 +313,7 @@ export function SpritesPage() {
       </div>
 
       {detail && <Detail season={season} sprite={detail} collection={viewing} levels={levels} readOnly={readOnly} onSet={setStatus} onLevel={setLevel} onClose={() => setDetail(null)} />}
-      {sharing && <ShareDialog season={season} slots={slots} collection={mine} onClose={() => setSharing(false)} />}
+      {sharing && <ShareDialog season={season} slots={slots} collection={mine} friend={friend ? { collection: friend.collection, name: friend.name } : undefined} onClose={() => setSharing(false)} />}
     </>
   );
 }

@@ -94,9 +94,11 @@ jobs:
       - name: Atualizar jogos grátis da Epic
         run: python data/build_free_games.py || echo "::warning::feed da Epic indisponível; usando o arquivo do repositório"
 
+      # A fortnite-api às vezes derruba a conexão no meio (10/11): tenta de novo e, se falhar, publica com o catálogo do repositório.
       - name: Atualizar catálogo de cosméticos
         if: github.event_name != 'push'
-        run: python data/build_cosmetics.py
+        run: |
+          python data/build_cosmetics.py || { sleep 60; python data/build_cosmetics.py; } || { git checkout -- public/data/cosmetics; echo "::warning::fortnite-api fora do ar; usando o catálogo de cosméticos do repositório"; }
 
       - uses: actions/setup-node@v7
         with:

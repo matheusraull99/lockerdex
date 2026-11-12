@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Descascadinho", "ability": ["Marca eliminações no mapa.", "O raio do efeito aumenta a cada subida de nível!"] },
     "Parrot": { "name": "Repetácio", "ability": ["Aumenta a velocidade de recarga, com uma probabilidade de a recarga devolver munição.", "Recarrega mais depressa e maior probabilidade de devolução de munição a cada subida de nível!"] },
     "BarrelOfFish": { "name": "Barrilson", "ability": ["Reduz o gasto de estamina da corrida tática quando estás na água.", "Ganha Slap no nível máximo!"] },
-    "Compass": { "name": "Localizador", "ability": ["Revela elementais próximos e concede mais itens ao abrir baús enterrados.", "O raio de deteção de elementais aumenta a cada subida de nível!"] }
+    "Compass": { "name": "Localizador", "ability": ["Revela elementais próximos e concede mais itens ao abrir baús enterrados.", "O raio de deteção de elementais aumenta a cada subida de nível!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Concede uma Bolha de Amizade ao fazer um gesto com outros jogadores.", "Tempo de espera reduzido a cada subida de nível!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Concede cargas de corrida do Ponto Zero regeneradoras.", "As cargas máximas aumentam e o tempo de recarga diminui a cada subida de nível!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Concede dano aumentado da Picareta, também concede um aumento temporário de velocidade quando o teu escudo quebra.", "Dano da Picareta aumentado e aumento de velocidade a cada subida de nível!"] },
+    "PirateCalamari": { "name": "Salpicão", "ability": ["Lança uma Bomba de Fumo Curativa com pouca vida.", "Tempo de espera reduzido e duração e cura aumentadas a cada subida de nível!"] }
   }
 }

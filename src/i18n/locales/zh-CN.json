@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["在地图上标记淘汰位置。", "每升一级，效果半径就会扩大！"] },
     "Parrot": { "name": "Re-Pete", "ability": ["提高装填速度，且装填时有几率返还弹药。", "每升一级，装填更快且弹药返还几率更高！"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["在水中时减少战术冲刺体力消耗。", "达到满级时获得斯拉普浆果效果！"] },
-    "Compass": { "name": "Wayfinder", "ability": ["显示附近的精灵，并在打开埋藏的宝箱时获得更多物品。", "每升一级，精灵探测半径就会扩大！"] }
+    "Compass": { "name": "Wayfinder", "ability": ["显示附近的精灵，并在打开埋藏的宝箱时获得更多物品。", "每升一级，精灵探测半径就会扩大！"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["与其他玩家做表情时获得一个友谊泡泡。", "每升一级，冷却时间缩短！"] },
+    "YortMelee": { "name": "Zee", "ability": ["获得可再生的零点冲刺充能。", "每升一级，最大充能数增加且充能时间缩短！"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["提高镐的伤害，并在护盾破裂时获得短暂的速度提升。", "每升一级，镐的伤害和速度提升效果增加！"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["在生命值较低时部署一个治疗烟雾弹。", "每升一级，冷却时间缩短，且持续时间和治疗量增加！"] }
   }
 }

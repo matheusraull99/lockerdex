@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["Avlamaları haritada işaretler.", "Her seviye yükseldikçe etki yarıçapı artar!"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Yeniden yükleme hızını artırır ve yeniden yüklemenin cephaneyi iade etme ihtimali vardır.", "Her Seviye Atlamada daha hızlı yeniden yükleyin ve cephane iadesi şansı daha yüksek!"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Sudayken taktiksel sprint dayanıklılık tüketimini azaltır.", "Maksimum seviyede Tokat kazan!"] },
-    "Compass": { "name": "Wayfinder", "ability": ["Yakındaki Spriteları ortaya çıkarır ve Gömülü Sandıkları açarken daha fazla öğe kazandırır.", "Her Seviye Atlamayla birlikte sprite tespit yarıçapı artar!"] }
+    "Compass": { "name": "Wayfinder", "ability": ["Yakındaki Spriteları ortaya çıkarır ve Gömülü Sandıkları açarken daha fazla öğe kazandırır.", "Her Seviye Atlamayla birlikte sprite tespit yarıçapı artar!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Diğer oyuncularla emote yaparken bir Dostluk Balonu kazandırır.", "Her Seviye Atlamayla bekleme süresi azalır!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Yenilenen Sıfır Noktası atılma yükleri kazandırır.", "Maksimum yükler artar ve yeniden dolum süresi Seviye Atlamayla azalır!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Kazma hasarını artırır, ayrıca Kalkanın kırıldığında geçici bir hız artışı verir.", "Her Seviye Atlamayla artan Kazma hasarı ve hız artışı!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Düşük sağlıkta bir İyileştirici Sis Bombası konuşlandırır.", "Her Seviye Atlamayla azalan bekleme süresi ve artan süre ve iyileştirme!"] }
   }
 }

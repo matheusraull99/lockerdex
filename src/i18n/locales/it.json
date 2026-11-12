@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["Segna le eliminazioni sulla mappa.", "Il raggio d'effetto aumenta a ogni aumento di livello!"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Aumenta la velocità di ricarica, con una probabilità che la ricarica rimborsi le munizioni.", "Ricarica più velocemente e maggiore probabilità di rimborsi munizioni a ogni Aumento di livello!"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Riduce il consumo di resistenza dello scatto tattico quando sei in acqua.", "Ottieni Slap al livello massimo!"] },
-    "Compass": { "name": "Wayfinder", "ability": ["Rivela Spiritelli vicini e concede più oggetti quando apri Forzieri Sepolti.", "Il raggio di rilevamento degli Spiritelli aumenta a ogni Aumento di livello!"] }
+    "Compass": { "name": "Wayfinder", "ability": ["Rivela Spiritelli vicini e concede più oggetti quando apri Forzieri Sepolti.", "Il raggio di rilevamento degli Spiritelli aumenta a ogni Aumento di livello!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Concede una Bolla dell'Amicizia quando fai un'emote con altri giocatori.", "Tempo di ricarica ridotto a ogni Aumento di livello!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Concede cariche di scatto Punto Zero rigeneranti.", "Cariche massime aumentate e tempo di ricarica ridotto a ogni Aumento di livello!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Concede danno del piccone aumentato e concede un potenziamento temporaneo alla velocità quando il tuo scudo si rompe.", "Danno del piccone aumentato e potenziamento alla velocità a ogni Aumento di livello!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Schiera una Bomba Fumogena Curativa con poca salute.", "Tempo di ricarica ridotto e durata e cura aumentate a ogni Aumento di livello!"] }
   }
 }

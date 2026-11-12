@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Medio pelado", "ability": ["Marca las eliminaciones en el mapa.", "El radio del efecto aumenta con cada subida de nivel."] },
     "Parrot": { "name": "Re-Pete", "ability": ["Aumenta la velocidad de recarga, con una probabilidad de que recargar devuelva munición.", "Recarga más rápido y mayor probabilidad de devolución de munición con cada Subida de Nivel."] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Reduce el consumo de resistencia del esprint táctico cuando estás en el agua.", "Ganas Bofetada en el nivel máximo."] },
-    "Compass": { "name": "Buscacaminos", "ability": ["Revela espíritus cercanos y otorga más objetos al abrir cofres enterrados.", "El radio de detección de espíritus aumenta con cada Subida de Nivel."] }
+    "Compass": { "name": "Buscacaminos", "ability": ["Revela espíritus cercanos y otorga más objetos al abrir cofres enterrados.", "El radio de detección de espíritus aumenta con cada Subida de Nivel."] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Otorga una Burbuja de Amistad al usar un gesto con otros jugadores.", "Menor tiempo de recarga con cada Subida de Nivel!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Otorga cargas de esprint de Punto Cero que se regeneran.", "Aumenta el número máximo de cargas y el tiempo de recarga disminuye con cada Subida de Nivel!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Otorga mayor daño de pico y también otorga un aumento de velocidad temporal cuando tu escudo se rompe.", "Mayor daño de pico y aumento de velocidad con cada Subida de Nivel!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Despliega una Bomba de Humo Curativa con poca salud.", "Menor tiempo de recarga y mayor duración y curación con cada Subida de Nivel!"] }
   }
 }

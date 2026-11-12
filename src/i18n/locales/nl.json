@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["Markeert eliminaties op de kaart.", "Effectradius neemt toe bij elke level up!"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Verhoogt de herlaadsnelheid, met een kans dat herladen munitie teruggeeft.", "Sneller herladen en hogere kans op munitie terugbetaling bij elke Level Up!"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Vermindert tactische sprint-uithoudingsvermogenafname als je in water bent.", "Krijg Slap op max level!"] },
-    "Compass": { "name": "Wegwijzer", "ability": ["Onthult Sprites in de buurt en geeft meer items bij het openen van begraven kisten.", "Sprite-detectieradius neemt toe bij elke Level Up!"] }
+    "Compass": { "name": "Wegwijzer", "ability": ["Onthult Sprites in de buurt en geeft meer items bij het openen van begraven kisten.", "Sprite-detectieradius neemt toe bij elke Level Up!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Geeft een Vriendschapsbubbel bij het uitvoeren van een emote met andere spelers.", "Afkoeltijd neemt af bij elke Level Up!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Geeft regenererende Nulpunt-dash-ladingen.", "Maximale ladingen nemen toe en oplaadtijd neemt af bij elke Level Up!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Geeft verhoogde Pikhouweel-schade, geeft ook een tijdelijke snelheidsboost wanneer je schild breekt.", "Verhoogde Pikhouweel-schade en snelheidsboost bij elke Level Up!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Zet een Helende Rookbom in bij lage gezondheid.", "Verminderde afkoeltijd en verhoogde duur en genezing bij elke Level Up!"] }
   }
 }

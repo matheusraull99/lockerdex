@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["在地圖上標記淘汰位置。", "每升一級，效果半徑增加！"] },
     "Parrot": { "name": "Re-Pete", "ability": ["增加裝填速度，裝填時有機率退還彈藥。", "每升一級，裝填更快且彈藥退還機率更高！"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["身處水中時減少戰術衝刺體力消耗。", "達到最高等級時獲得拍拍果！"] },
-    "Compass": { "name": "Wayfinder", "ability": ["顯示附近的精靈，並在打開埋藏的寶箱時獲得更多道具。", "每升一級，精靈偵測半徑增加！id便於讀取"] }
+    "Compass": { "name": "Wayfinder", "ability": ["顯示附近的精靈，並在打開埋藏的寶箱時獲得更多道具。", "每升一級，精靈偵測半徑增加！id便於讀取"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["與其他玩家表情時獲得友誼泡泡。", "每升一級，冷卻時間減少！"] },
+    "YortMelee": { "name": "Zee", "ability": ["獲得再生零點衝刺充能。", "隨著等級提升，最大充能增加且充能時間減少！"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["增加十字鎬傷害，並在護盾破裂時獲得暫時的速度提升。", "每升一級，十字鎬傷害和速度提升！"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["生命值低時部署治療煙霧彈。", "每升一級，冷卻時間減少，持續時間和治療量增加！"] }
   }
 }

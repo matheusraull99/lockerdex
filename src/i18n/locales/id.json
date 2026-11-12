@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["Menandai eliminasi di peta.", "Radius efek meningkat di tiap level up!"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Meningkatkan kecepatan reload, dengan peluang bahwa reload mengembalikan amunisi.", "Reload lebih cepat dan peluang pengembalian amunisi lebih tinggi di tiap Level Up!"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Mengurangi pengurasan stamina sprint taktis saat di dalam air.", "Dapatkan Slap di level maks!"] },
-    "Compass": { "name": "Penunjuk Jalan", "ability": ["Mengungkap Sprite di sekitar dan memberi lebih banyak item saat membuka Peti Terkubur.", "Radius deteksi Sprite meningkat di tiap Level Up!"] }
+    "Compass": { "name": "Penunjuk Jalan", "ability": ["Mengungkap Sprite di sekitar dan memberi lebih banyak item saat membuka Peti Terkubur.", "Radius deteksi Sprite meningkat di tiap Level Up!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Memberi Gelembung Persahabatan saat beremote dengan pemain lain.", "Cooldown berkurang di tiap Level Up!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Memberi charge dash Zero Point yang memulihkan diri.", "Maks charge meningkat dan waktu isi ulang berkurang di tiap Level Up!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Memberi peningkatan damage Pickaxe, juga memberi peningkatan kecepatan sementara saat Shield-mu hancur.", "Peningkatan damage Pickaxe dan peningkatan kecepatan di tiap Level Up!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Mengerahkan Bom Asap Penyembuh saat health rendah.", "Cooldown berkurang dan durasi serta penyembuhan meningkat di tiap Level Up!"] }
   }
 }

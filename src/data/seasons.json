@@ -14,6 +14,11 @@
     "name": "Base"
    },
    {
+    "key": "gold",
+    "color": "#f5b642",
+    "name": "Gold"
+   },
+   {
     "key": "jeweled",
     "color": "#e8445f",
     "name": "Fortune"
@@ -39,6 +44,13 @@
       "fggId": 311,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CoinPile_L.webp",
       "cost": 2000,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 336,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_CoinPile_LiquidGold_L.webp",
+      "cost": 2400,
       "drop": 0.0
      },
      {
@@ -76,6 +88,63 @@
     ]
    },
    {
+    "key": "DaffodilChurn",
+    "name": "Mini Miku",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 332,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_LushlyZest_ui_v2_1_Alpha_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 333,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_LushlyZest_LiquidGold_ui_v1_1_Alpha_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 335,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_LushlyZest_Jeweled_ui_v1_1_Alpha_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 334,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_LushlyZest_Cursed_ui_v1_1_Alpha_L.webp",
+      "cost": 2400,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "YortMelee",
+    "name": "Zee",
+    "rarity": "mythic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 338,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_ZeroPointPiece_ui_v3_1_Alpha_L.webp",
+      "cost": 2000,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
     "key": "PlaymakerBrewery",
     "name": "Lil' Flacko",
     "rarity": "legendary",
@@ -89,6 +158,13 @@
       "fggId": 305,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PlaymakerBrewery_L.webp",
       "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 330,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PlaymakerBrewery_LiquidGold_L.webp",
+      "cost": 2100,
       "drop": 0.0
      },
      {
@@ -114,13 +190,20 @@
     "levels": null,
     "location": "random",
     "unreleased": false,
-    "isNew": true,
+    "isNew": false,
     "slots": [
      {
       "variant": "base",
       "fggId": 308,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_RookGecko_L.webp",
       "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 331,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_RookGecko_LiquidGold_L.webp",
+      "cost": 2100,
       "drop": 0.0
      },
      {
@@ -158,6 +241,45 @@
     ]
    },
    {
+    "key": "WhiteTiger",
+    "name": "Sir Oscar the Second",
+    "rarity": "legendary",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 326,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WhiteTiger_L.webp",
+      "cost": 1750,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 327,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WhiteTiger_LiquidGold_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 328,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WhiteTiger_Jeweled_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 329,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_WhiteTiger_Cursed_L.webp",
+      "cost": 2100,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
     "key": "TreasureChest",
     "name": "Chester",
     "rarity": "epic",
@@ -171,6 +293,13 @@
       "fggId": 289,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureChest_L.webp",
       "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 318,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureChest_LiquidGold_L.webp",
+      "cost": 1800,
       "drop": 0.0
      },
      {
@@ -206,6 +335,13 @@
       "drop": 0.0
      },
      {
+      "variant": "gold",
+      "fggId": 325,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_UnbotheredFish_LiquidGold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
       "variant": "jeweled",
       "fggId": 299,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_UnbotheredFish_Jeweled_L.webp",
@@ -235,6 +371,13 @@
       "fggId": 292,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureMap_L.webp",
       "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 319,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_TreasureMap_LiquidGold_L.webp",
+      "cost": 1800,
       "drop": 0.0
      },
      {
@@ -270,6 +413,13 @@
       "drop": 0.0
      },
      {
+      "variant": "gold",
+      "fggId": 337,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Squibbly_LiquidGold_ui_v1_1_Alpha_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
       "variant": "jeweled",
       "fggId": 304,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_SquibblySprite_Jeweled_L.webp",
@@ -280,6 +430,45 @@
       "variant": "cursed",
       "fggId": 303,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_SquibblySprite_Cursed_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     }
+    ]
+   },
+   {
+    "key": "PirateCalamari",
+    "name": "Squiplash",
+    "rarity": "epic",
+    "levels": null,
+    "location": "random",
+    "unreleased": false,
+    "isNew": true,
+    "slots": [
+     {
+      "variant": "base",
+      "fggId": 321,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PirateCalamari_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 322,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PirateCalamari_LiquidGold_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "jeweled",
+      "fggId": 323,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PirateCalamari_Jeweled_L.webp",
+      "cost": 1800,
+      "drop": 0.0
+     },
+     {
+      "variant": "cursed",
+      "fggId": 324,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PirateCalamari_Cursed_L.webp",
       "cost": 1800,
       "drop": 0.0
      }
@@ -299,6 +488,13 @@
       "fggId": 280,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PeelyBones_L.webp",
       "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 315,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_PeelyBones_LiquidGold_L.webp",
+      "cost": 1500,
       "drop": 0.0
      },
      {
@@ -334,6 +530,13 @@
       "drop": 0.0
      },
      {
+      "variant": "gold",
+      "fggId": 316,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Parrot_LiquidGold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
       "variant": "jeweled",
       "fggId": 285,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Parrot_Jeweled_L.webp",
@@ -366,6 +569,13 @@
       "drop": 0.0
      },
      {
+      "variant": "gold",
+      "fggId": 317,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BarrelOfFish_LiquidGold_L.webp",
+      "cost": 1500,
+      "drop": 0.0
+     },
+     {
       "variant": "jeweled",
       "fggId": 288,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_BarrelOfFish_Jeweled_L.webp",
@@ -395,6 +605,13 @@
       "fggId": 295,
       "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Compass_L.webp",
       "cost": 1250,
+      "drop": 0.0
+     },
+     {
+      "variant": "gold",
+      "fggId": 320,
+      "img": "/img/x/sprites/icons/T_Icon_BR_Creature_Sprite_Compass_LiquidGold_L.webp",
+      "cost": 1500,
       "drop": 0.0
      },
      {

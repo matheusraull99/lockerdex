@@ -907,6 +907,34 @@
         "Reveals nearby Sprites and grants more items when you open Buried Chests.",
         "The Sprite detection radius increases with each level."
       ]
+    },
+    "DaffodilChurn": {
+      "name": "Mini Miku",
+      "ability": [
+        "Grants a Friendship Bubble when you emote with other players.",
+        "The cooldown decreases with each level."
+      ]
+    },
+    "YortMelee": {
+      "name": "Zee",
+      "ability": [
+        "Grants regenerating Zero Point dash charges.",
+        "Max charges increase and recharge time decreases with each level."
+      ]
+    },
+    "WhiteTiger": {
+      "name": "Sir Oscar the Second",
+      "ability": [
+        "Grants increased Pickaxe damage and a temporary speed boost when your Shield breaks.",
+        "Pickaxe damage and the speed boost increase with each level."
+      ]
+    },
+    "PirateCalamari": {
+      "name": "Squiplash",
+      "ability": [
+        "Deploys a Healing Smoke Bomb at low health.",
+        "The cooldown decreases, and duration and healing increase with each level."
+      ]
     }
   }
 }

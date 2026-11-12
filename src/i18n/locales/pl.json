@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["Zaznacza eliminacje na mapie.", "Promień działania rośnie z każdym awansem!"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Zwiększa prędkość przeładowania z szansą na to, że przeładowanie zwróci amunicję.", "Szybsze przeładowanie i większa szansa na zwrot amunicji z każdym awansem!"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Zmniejsza zużycie kondycji taktycznego sprintu w wodzie.", "Zyskaj Szybciora na maksymalnym poziomie!"] },
-    "Compass": { "name": "Wayfinder", "ability": ["Wykrywa pobliskie duszki i daje więcej przedmiotów przy otwieraniu ukrytych skrzyń.", "Promień wykrywania duszków rośnie z każdym awansem!"] }
+    "Compass": { "name": "Wayfinder", "ability": ["Wykrywa pobliskie duszki i daje więcej przedmiotów przy otwieraniu ukrytych skrzyń.", "Promień wykrywania duszków rośnie z każdym awansem!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Daje Bańkę Przyjaźni podczas emotkowania z innymi graczami.", "Skrócony czas odnowienia z każdym awansem!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Daje odnawiające się ładunki doskoku Punktu Zerowego.", "Maksymalna liczba ładunków rośnie, a czas odnowienia skraca się z każdym awansem!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Zwiększa obrażenia kilofa, daje też tymczasowe przyspieszenie, gdy twoja osłona pęka.", "Zwiększone obrażenia kilofa i przyspieszenie z każdym awansem!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Rozstawia leczniczy granat dymny przy niskim poziomie zdrowia.", "Skrócony czas odnowienia oraz zwiększony czas trwania i leczenie z każdym awansem!"] }
   }
 }

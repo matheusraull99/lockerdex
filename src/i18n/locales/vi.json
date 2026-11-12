@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["Đánh dấu các mạng hạ gục trên bản đồ.", "Bán kính hiệu ứng tăng theo mỗi lần lên cấp!"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Tăng tốc độ thay đạn, với cơ hội hoàn trả đạn khi thay đạn.", "Thay đạn nhanh hơn và tăng tỉ lệ hoàn trả đạn theo mỗi lần Lên cấp!"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Giảm tiêu hao thể lực khi chạy nước rút chiến thuật lúc ở dưới nước.", "Nhận hiệu ứng Slap ở cấp tối đa!"] },
-    "Compass": { "name": "Wayfinder", "ability": ["Phát hiện các Sprite ở gần và nhận thêm vật phẩm khi mở Rương Bị Chôn.", "Bán kính phát hiện Sprite tăng theo mỗi lần Lên cấp!"] }
+    "Compass": { "name": "Wayfinder", "ability": ["Phát hiện các Sprite ở gần và nhận thêm vật phẩm khi mở Rương Bị Chôn.", "Bán kính phát hiện Sprite tăng theo mỗi lần Lên cấp!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Nhận Friendship Bubble khi biểu cảm với người chơi khác.", "Giảm thời gian hồi chiêu theo mỗi lần Lên cấp!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Nhận lượt lướt Zero Point hồi phục.", "Số lượt tối đa tăng và thời gian hồi giảm theo mỗi lần Lên cấp!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Tăng sát thương Cuốc chim, đồng thời nhận tăng tốc độ tạm thời khi Lá chắn của bạn bị phá vỡ.", "Sát thương Cuốc chim và tăng tốc độ tăng theo mỗi lần Lên cấp!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Triển khai Lựu đạn Khói Hồi máu khi máu thấp.", "Giảm thời gian hồi chiêu và tăng thời gian hiệu lực cùng lượng hồi máu theo mỗi lần Lên cấp!"] }
   }
 }

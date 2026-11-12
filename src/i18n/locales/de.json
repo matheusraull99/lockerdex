@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "Halfpeel'd", "ability": ["Markiert Eliminierungen auf der Karte.", "Der Effektbereich steigt mit jedem Stufenaufstieg!"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Erhöht die Nachladegeschwindigkeit, mit einer Chance, dass das Nachladen Munition zurückerstattet.", "Lade schneller nach und höhere Chance auf Munitionsrückerstattungen mit jedem Stufenaufstieg!"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Reduziert den Ausdauerverbrauch des taktischen Sprints im Wasser.", "Erhältst Slap auf der Maximalstufe!"] },
-    "Compass": { "name": "Wayfinder", "ability": ["Enthüllt Geister in der Nähe und gewährt mehr Gegenstände beim Öffnen vergrabener Truhen.", "Der Erkennungsradius für Geister steigt mit jedem Stufenaufstieg!"] }
+    "Compass": { "name": "Wayfinder", "ability": ["Enthüllt Geister in der Nähe und gewährt mehr Gegenstände beim Öffnen vergrabener Truhen.", "Der Erkennungsradius für Geister steigt mit jedem Stufenaufstieg!"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Gewährt eine Freundschaftsblase beim Emoten mit anderen Spielern.", "Verringerte Abklingzeit mit jedem Stufenaufstieg!"] },
+    "YortMelee": { "name": "Zee", "ability": ["Gewährt sich regenerierende Nullpunkt-Sprint-Ladungen.", "Maximale Ladungen steigen und die Aufladezeit sinkt mit jedem Stufenaufstieg!"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Gewährt erhöhten Spitzhackenschaden und einen temporären Geschwindigkeitsschub, wenn dein Schild zerbricht.", "Erhöhter Spitzhackenschaden und Geschwindigkeitsschub mit jedem Stufenaufstieg!"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Setzt eine Heilende Rauchbombe bei niedriger Gesundheit ein.", "Verringerte Abklingzeit und erhöhte Dauer und Heilung mit jedem Stufenaufstieg!"] }
   }
 }

@@ -907,6 +907,34 @@
         "Revela elementais próximos e concede mais itens ao abrir Baús Enterrados.",
         "Raio de detecção de elementais aumenta a cada Subida de Nível!h"
       ]
+    },
+    "DaffodilChurn": {
+      "name": "Mini Miku",
+      "ability": [
+        "Concede uma Bolha da Amizade ao fazer um Gesto com outros jogadores.",
+        "Tempo de recarga reduzido a cada Subida de Nível!"
+      ]
+    },
+    "YortMelee": {
+      "name": "Zee",
+      "ability": [
+        "Concede cargas de Disparada Ponto Zero regenerativas.",
+        "Cargas máximas aumentam e tempo de recarga diminui a cada Subida de Nível!"
+      ]
+    },
+    "WhiteTiger": {
+      "name": "Sir Oscar the Second",
+      "ability": [
+        "Concede dano de Picareta aumentado, também concede um impulso de velocidade temporário quando seu Escudo quebra.",
+        "Dano de Picareta e impulso de velocidade aumentados a cada Subida de Nível!"
+      ]
+    },
+    "PirateCalamari": {
+      "name": "Squiplash",
+      "ability": [
+        "Implanta uma Bomba de Fumaça Curativa com pouca vida.",
+        "Tempo de recarga reduzido e duração e cura aumentadas a cada Subida de Nível!"
+      ]
     }
   }
 }

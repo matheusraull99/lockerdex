@@ -454,6 +454,10 @@
     "PeelyBones": { "name": "À moitié pelé", "ability": ["Marque les éliminations sur la carte.", "Le rayon d'effet augmente à chaque montée de niveau !"] },
     "Parrot": { "name": "Re-Pete", "ability": ["Augmente la vitesse de rechargement, avec une chance que le rechargement rembourse les munitions.", "Rechargez plus vite et plus de chance de remboursement de munitions à chaque montée de niveau !"] },
     "BarrelOfFish": { "name": "Barry O'Fish", "ability": ["Réduit la consommation d'endurance du sprint tactique quand vous êtes dans l'eau.", "Gagnez du Slap au niveau max !"] },
-    "Compass": { "name": "Chercheur de chemin", "ability": ["Révèle les esprits proches et accorde plus d'objets en ouvrant des coffres enterrés.", "Le rayon de détection des esprits augmente à chaque montée de niveau !"] }
+    "Compass": { "name": "Chercheur de chemin", "ability": ["Révèle les esprits proches et accorde plus d'objets en ouvrant des coffres enterrés.", "Le rayon de détection des esprits augmente à chaque montée de niveau !"] },
+    "DaffodilChurn": { "name": "Mini Miku", "ability": ["Accorde une Bulle d'amitié en faisant une emote avec d'autres joueurs.", "Temps de recharge réduit à chaque montée de niveau !"] },
+    "YortMelee": { "name": "Zee", "ability": ["Accorde des charges de dash du Point Zéro régénérantes.", "Les charges max augmentent et le temps de recharge diminue à chaque montée de niveau !"] },
+    "WhiteTiger": { "name": "Sir Oscar the Second", "ability": ["Accorde des dégâts de Pioche augmentés, donne aussi un boost de vitesse temporaire quand votre Bouclier se brise.", "Dégâts de Pioche et boost de vitesse augmentés à chaque montée de niveau !"] },
+    "PirateCalamari": { "name": "Squiplash", "ability": ["Déploie une Bombe fumigène de soin à faible santé.", "Temps de recharge réduit et durée et soin augmentés à chaque montée de niveau !"] }
   }
 }
